@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="54px" height="35px" viewBox="0 0 54 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>头像</title>
+    <defs>
+        <path d="M4,0 L36.2591109,0 C37.8739479,-1.62890836e-15 39.3303973,0.970990527 39.9514541,2.46162357 L50.4435885,27.6443811 C51.5056158,30.1934121 50.3001611,33.1207533 47.7511301,34.1827806 C47.1418092,34.4366478 46.4882509,34.5673516 45.8281596,34.5673516 L4,34.5673516 C1.790861,34.5673516 2.23265109e-15,32.7764906 0,30.5673516 L0,4 C-2.705415e-16,1.790861 1.790861,4.05812251e-16 4,0 Z" id="path-1"></path>
+    </defs>
+    <g id="页面-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01_定制跑车-签名" transform="translate(-262.000000, -557.000000)">
+            <g id="签名框" transform="translate(260.000000, 556.000000)">
+                <g id="头像" transform="translate(2.000000, 1.432648)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="头像蒙版"></g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@id/fm_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/rl_edit" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <EditText android:textSize="14.0sp" android:textColor="@color/syc_h" android:gravity="start" android:id="@id/et" android:background="@null" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="175.0dip" android:text="这里是群公告的内容展示区" android:maxLength="512" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/syc_k" android:id="@id/tv_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:text="200/512" android:layout_below="@id/et" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <TextView android:textSize="14.0sp" android:textColor="@color/syc_dark_767676" android:id="@id/tv_default" android:background="@color/syc_x" android:padding="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="\#这里是默认占位的官方安全提示文案，在活动发起者发布活动成功并自动创建群聊后，自动写入到群公告中，成为默认展示的文本内容# 辛苦技术同学注意行间距，避免过密产生阅读障碍！" />
+        </LinearLayout>
+        <TextView android:textSize="16.0sp" android:textColor="@color/syc_j" android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/tv_empty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/group_no_announcement" android:drawableTop="@drawable/icon_no_gtoup_announcement" />
+    </FrameLayout>
+</LinearLayout>

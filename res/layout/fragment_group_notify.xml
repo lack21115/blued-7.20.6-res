@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" style="@style/layout_fill"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/top_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.blued.android.framework.view.pulltorefresh.RenrenPullToRefreshListView android:id="@id/my_groupnotify_pullrefresh" android:visibility="visible" app:ptrHeaderBackground="@color/pull_anim_bgcolor" style="@style/PullToRefreshListView" xmlns:app="http://schemas.android.com/apk/res-auto" />
+    <com.blued.android.module.common.view.NoDataAndLoadFailView android:id="@id/ll_nodata_chats" android:layout_width="fill_parent" android:layout_height="fill_parent" app:default_visible="noData" app:no_data_img_res="@drawable/icon_no_chat" app:no_data_txt_res="@string/group_notify_no" />
+</LinearLayout>

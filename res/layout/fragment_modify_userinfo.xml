@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/top_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ScrollView android:id="@id/scrollView" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/syc_b" android:gravity="center" android:id="@id/tv_auditing" android:background="@color/syc_a" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="36.0dip" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/syc_8F8F91" android:id="@id/tv_user_restricted" android:background="@color/privilege_bg" android:paddingLeft="15.0dip" android:paddingTop="17.0dip" android:paddingRight="15.0dip" android:paddingBottom="17.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_header" android:layout_height="100.0dip" style="@style/modify_user_info_text_layout">
+                <TextView android:layout_gravity="center_vertical" android:id="@id/tv_header_hint" android:layout_width="0.0dip" android:text="@string/modify_avatar" android:layout_weight="1.0" style="@style/modify_user_info_left_text" />
+                <FrameLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center" android:id="@id/header_view" android:focusable="true" android:clickable="false" android:layout_width="59.0dip" android:layout_height="59.0dip" android:src="@drawable/user_bg_round" android:contentDescription="@string/app_name" />
+                    <ImageView android:layout_gravity="bottom|center|right" android:id="@id/img_verify" android:layout_width="18.0dip" android:layout_height="18.0dip" android:contentDescription="@string/imagefailed_exception" />
+                    <com.blued.android.framework.view.shape.ShapeTextView android:textColor="@color/white" android:gravity="center" android:id="@id/tv_upload_avatar_progress" android:visibility="gone" android:layout_width="59.0dip" android:layout_height="59.0dip" app:corner_radius="30.0dip" app:solid_color="@color/three_transparent" />
+                </FrameLayout>
+                <ImageView android:id="@id/iv_goto_modify_header" android:layout_marginLeft="11.0dip" style="@style/icon_right_arrow" />
+            </LinearLayout>
+            <TextView android:background="@color/syc_c" style="@style/large_cut_line_12D5" />
+            <com.blued.community.view.PhotoGridView android:id="@id/grid_view" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:paddingBottom="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:horizontalSpacing="20.0dip" android:verticalSpacing="20.0dip" android:stretchMode="columnWidth" android:numColumns="3" />
+            <LinearLayout android:id="@id/ll_vip_user_bg" style="@style/modify_user_info_text_layout">
+                <TextView android:id="@id/tv_vip_user_bg_desc" android:text="@string/profile_background" style="@style/modify_user_info_left_text" />
+                <ImageView android:id="@id/img_vip_user_bg_icon" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginLeft="4.0dip" android:src="@drawable/icon_vip" />
+                <TextView android:id="@id/tv_vip_user_bg_state" style="@style/modify_user_info_right_text" />
+                <ImageView style="@style/icon_right_arrow" />
+            </LinearLayout>
+            <TextView style="@style/modify_user_info_cut_line" />
+            <LinearLayout android:gravity="center_vertical" android:id="@id/ll_privacy_photo_album" style="@style/modify_user_info_text_layout">
+                <TextView android:id="@id/tv_private_album_hint" android:text="@string/private_album" style="@style/modify_user_info_left_text" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/sara_g" android:gravity="right" android:id="@id/tv_status_privacy_album" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/already_visible" android:layout_weight="1.0" />
+                <ImageView style="@style/icon_right_arrow" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/ll_vip_page" android:visibility="gone" style="@style/modify_user_info_text_layout">
+                <TextView android:id="@id/tv_vip_page_desc" android:text="@string/vip_page" style="@style/modify_user_info_left_text" />
+                <ImageView android:id="@id/img_vip_page_icon" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginLeft="4.0dip" android:src="@drawable/icon_vip" />
+                <TextView android:gravity="right" android:id="@id/tv_vip_page" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/modify_user_info_right_text" />
+                <ToggleButton android:layout_gravity="center" android:id="@id/tglbtn_vip_page" android:layout_marginRight="15.0dip" android:textOn="" android:textOff="" style="@style/toggle_button" />
+            </LinearLayout>
+            <FrameLayout style="@style/modify_user_info_label_layout">
+                <TextView android:text="@string/basic_situation" style="@style/modify_user_info_label_text" />
+            </FrameLayout>
+            <LinearLayout android:id="@id/ll_nickname" style="@style/modify_user_info_text_layout">
+                <TextView android:id="@id/tv_nickname_hint" android:text="@string/nickname" style="@style/modify_user_info_left_text" />
+                <TextView android:id="@id/tv_nickname" style="@style/modify_user_info_right_text" />
+                <ImageView android:id="@id/iv_goto_modify_nickName" style="@style/icon_right_arrow" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/ll_birthday" style="@style/modify_user_info_text_layout">
+                <TextView android:text="@string/my_birthday" style="@style/modify_user_info_left_text" />
+                <TextView android:id="@id/tv_birthday" style="@style/modify_user_info_right_text" />
+                <ImageView style="@style/icon_right_arrow" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/ll_height_weight" style="@style/modify_user_info_text_layout">
+                <TextView android:text="@string/height_weight" style="@style/modify_user_info_left_text" />
+                <TextView android:id="@id/tv_height_weight" style="@style/modify_user_info_right_text" />
+                <ImageView style="@style/icon_right_arrow" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/ll_role" style="@style/modify_user_info_text_layout">
+                <TextView android:text="@string/role" style="@style/modify_user_info_left_text" />
+                <TextView android:id="@id/tv_role" style="@style/modify_user_info_right_text" />
+                <ImageView style="@style/icon_right_arrow" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/ll_description" style="@style/modify_user_info_text_layout">
+                <TextView android:id="@id/tv_description_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/my_description" style="@style/modify_user_info_left_text" />
+                <TextView android:gravity="right" android:id="@id/tv_description" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/user_info_sign" android:layout_weight="1.0" style="@style/modify_user_info_right_text" />
+                <ImageView android:id="@id/iv_goto_modify_description" style="@style/icon_right_arrow" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/ll_tags" android:visibility="gone" style="@style/modify_user_info_text_layout">
+                <TextView android:text="@string/my_tags" style="@style/modify_user_info_left_text" />
+                <TextView android:id="@id/tv_tags" style="@style/modify_user_info_right_text" />
+                <ImageView style="@style/icon_right_arrow" />
+            </LinearLayout>
+            <FrameLayout android:id="@id/fl_personal" style="@style/modify_user_info_label_layout">
+                <TextView android:text="@string/personal_information" style="@style/modify_user_info_label_text" />
+            </FrameLayout>
+            <LinearLayout android:id="@id/ll_relation" style="@style/modify_user_info_text_layout">
+                <TextView android:text="@string/relation_status" style="@style/modify_user_info_left_text" />
+                <TextView android:id="@id/tv_relation" style="@style/modify_user_info_right_text" />
+                <ImageView style="@style/icon_right_arrow" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/ll_making_friends" style="@style/modify_user_info_text_layout">
+                <TextView android:text="@string/making_friends" style="@style/modify_user_info_left_text" />
+                <TextView android:id="@id/tv_making_friends" android:hint="@string/user_info_making_friends" style="@style/modify_user_info_right_text" />
+                <ImageView style="@style/icon_right_arrow" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/ll_ethnicity" android:visibility="gone" style="@style/modify_user_info_text_layout">
+                <TextView android:text="@string/race" style="@style/modify_user_info_left_text" />
+                <TextView android:id="@id/tv_ethnicity" style="@style/modify_user_info_right_text" />
+                <ImageView style="@style/icon_right_arrow" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/ll_hometown" style="@style/modify_user_info_text_layout">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home_town" style="@style/modify_user_info_left_text" />
+                <TextView android:gravity="right" android:id="@id/tv_hometown" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/modify_user_info_right_text" />
+                <ImageView style="@style/icon_right_arrow" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/ll_job_industry" style="@style/modify_user_info_text_layout">
+                <TextView android:text="@string/job_industry" style="@style/modify_user_info_left_text" />
+                <TextView android:id="@id/tv_job_industry" android:hint="@string/user_info_job" style="@style/modify_user_info_right_text" />
+                <ImageView style="@style/icon_right_arrow" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/ll_bloodtype" style="@style/modify_user_info_text_layout">
+                <TextView android:text="@string/blood_type" style="@style/modify_user_info_left_text" />
+                <TextView android:id="@id/tv_bloodtype" style="@style/modify_user_info_right_text" />
+                <ImageView style="@style/icon_right_arrow" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/ll_health_information" android:visibility="gone" style="@style/modify_user_info_text_layout">
+                <TextView android:text="@string/health_information" style="@style/modify_user_info_left_text" />
+                <TextView android:id="@id/tv_health_information" android:hint="@string/health_information_write" style="@style/modify_user_info_right_text" />
+                <ImageView style="@style/icon_right_arrow" />
+            </LinearLayout>
+            <FrameLayout android:id="@id/fl_tags" style="@style/modify_user_info_label_layout">
+                <TextView android:text="@string/my_label" style="@style/modify_user_info_label_text" />
+            </FrameLayout>
+            <LinearLayout android:id="@id/ll_my_shape" style="@style/modify_user_info_text_layout">
+                <TextView android:text="@string/my_shape" style="@style/modify_user_info_left_text" />
+                <TextView android:id="@id/tv_my_shape" android:hint="@string/my_shape_describe" style="@style/modify_user_info_right_text" />
+                <ImageView style="@style/icon_right_arrow" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/ll_my_personality" style="@style/modify_user_info_text_layout">
+                <TextView android:text="@string/my_personality" style="@style/modify_user_info_left_text" />
+                <TextView android:id="@id/tv_my_personality" android:hint="@string/my_personality_describe" style="@style/modify_user_info_right_text" />
+                <ImageView style="@style/icon_right_arrow" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/ll_hobby" style="@style/modify_user_info_text_layout">
+                <TextView android:text="@string/hobby" style="@style/modify_user_info_left_text" />
+                <TextView android:id="@id/tv_hobby" android:hint="@string/hobby_describe" style="@style/modify_user_info_right_text" />
+                <ImageView style="@style/icon_right_arrow" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/ll_douban" style="@style/modify_user_info_text_layout">
+                <TextView android:text="@string/douban" style="@style/modify_user_info_left_text" />
+                <TextView android:id="@id/tv_douban" android:hint="@string/douban_describe" style="@style/modify_user_info_right_text" />
+                <ImageView style="@style/icon_right_arrow" />
+            </LinearLayout>
+            <FrameLayout android:id="@id/fl_my_type" style="@style/modify_user_info_label_layout">
+                <TextView android:text="@string/favorite_types" style="@style/modify_user_info_label_text" />
+            </FrameLayout>
+            <LinearLayout android:id="@id/ll_like_shape" style="@style/modify_user_info_text_layout">
+                <TextView android:text="@string/like_shape" style="@style/modify_user_info_left_text" />
+                <TextView android:id="@id/tv_like_shape" android:hint="@string/like_shape_describe" style="@style/modify_user_info_right_text" />
+                <ImageView style="@style/icon_right_arrow" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/ll_like_personality" style="@style/modify_user_info_text_layout">
+                <TextView android:text="@string/like_personality" style="@style/modify_user_info_left_text" />
+                <TextView android:id="@id/tv_like_personality" android:hint="@string/like_personality_describe" style="@style/modify_user_info_right_text" />
+                <ImageView style="@style/icon_right_arrow" />
+            </LinearLayout>
+            <View android:id="@id/place_view" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="100.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

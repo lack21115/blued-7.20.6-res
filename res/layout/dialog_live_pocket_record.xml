@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.framework.view.shape.ShapeFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:solid_color="@color/syc_dark_14151C" app:top_left_radius="12.0dip" app:top_right_radius="12.0dip">
+        <View android:id="@id/view_bg_top" android:background="@drawable/live_pocket_top_bg" android:layout_width="fill_parent" android:layout_height="150.0dip" />
+    </com.blued.android.framework.view.shape.ShapeFrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_dialog_root" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="18.5dip" android:layout_marginTop="8.5dip" android:layout_marginBottom="8.5dip">
+            <ImageView android:id="@id/iv_back" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/live_pocket_arrow_left" android:layout_centerVertical="true" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <TextView android:textSize="18.0sp" android:textColor="@color/syc_dark_b" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_pocket_record" />
+                <TextView android:textSize="11.0sp" android:textColor="@color/syc_dark_b" android:id="@id/tv_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/live_pocket_3_month" android:alpha="0.4" />
+            </LinearLayout>
+        </RelativeLayout>
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@id/refresh_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ListView android:id="@id/listview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@id/ll_default" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_pocket_no_data" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/syc_dark_777777" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_pocket_no_record" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

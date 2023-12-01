@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/nafio_b" style="@style/layout_fill_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/rl_item0" android:background="@drawable/selector_visitor_bgcolor" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:id="@id/tv_msg_box" android:layout_width="wrap_content" android:text="@string/group_member_sort_default" style="@style/group_right_pup_item" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_msg_box_red_point" android:visibility="gone" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginLeft="30.0dip" android:layout_marginTop="15.0dip" android:src="@drawable/shape_red_point" />
+        <ImageView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:src="@drawable/icon_vip" android:layout_toRightOf="@id/tv_msg_box" android:layout_centerVertical="true" />
+        <CheckBox android:layout_gravity="center_vertical" android:id="@id/checkbox0" android:focusable="false" android:focusableInTouchMode="false" android:visibility="visible" android:layout_marginRight="15.0dip" android:checked="true" android:button="@drawable/selector_common_checkbox" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/layout_wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_item1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:id="@id/tv_item1" android:text="@string/group_member_sort_talk_desc" style="@style/group_right_pup_item" />
+        <CheckBox android:layout_gravity="center_vertical" android:id="@id/checkbox1" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:layout_marginRight="15.0dip" android:checked="true" android:button="@drawable/selector_common_checkbox" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/layout_wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_item2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:id="@id/tv_item2" android:text="@string/group_member_sort_talk_asc" style="@style/group_right_pup_item" />
+        <CheckBox android:layout_gravity="center_vertical" android:id="@id/checkbox2" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:layout_marginRight="15.0dip" android:checked="true" android:button="@drawable/selector_common_checkbox" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/layout_wrap_content" />
+    </RelativeLayout>
+    <TextView android:background="@color/syc_o_line" style="@style/common_cutter_gray" />
+</LinearLayout>

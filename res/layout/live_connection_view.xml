@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.blued.android.module.live_china.view.LivePKCenterView android:id="@id/live_pk_center_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.blued.android.module.live_china.view.LivePKFriendListView android:id="@id/live_pk_friend_list_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.blued.android.module.live_china.view.LivePKInviteView android:id="@id/live_pk_invite_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.blued.android.module.live_china.view.LivePKWholeView android:id="@id/live_pk_whole_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.blued.android.module.live_china.view.LiveConnectInviteMoreView android:id="@id/live_invite_more" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.blued.android.module.live_china.view.LiveConnectPKView android:id="@id/live_connect_pk" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.blued.android.module.live_china.view.LivePKExitView android:id="@id/live_pk_exit" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/nafio_c" style="@style/layout_fill"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/top_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.blued.android.module.common.view.NoDataAndLoadFailView android:id="@id/iv_group_info_dissolution" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/group_dismissed" android:layout_below="@id/top_title" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/sara_d" android:gravity="center_horizontal" android:id="@id/tv_group_info_dissolution" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="45.0dip" android:text="@string/group_info_dissolution" android:layout_below="@id/iv_group_info_dissolution" android:layout_centerHorizontal="true" />
+    <ScrollView android:id="@id/sv_group_info_detail" android:background="@color/nafio_c" android:visibility="visible" android:layout_below="@id/top_title" android:overScrollMode="never" style="@style/layout_fill_wrap">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_group_info" android:background="@color/white" android:visibility="visible" style="@style/layout_fill_wrap">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_group_name_icon" android:layout_width="fill_parent" android:layout_height="91.0dip" android:layout_marginLeft="13.0dip">
+                    <RelativeLayout android:id="@id/rl_group_profile_pic" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:id="@id/iv_group_profile_pic" android:background="@drawable/group_default_head" android:layout_width="60.0dip" android:layout_height="60.0dip" />
+                        <ImageView android:id="@id/iv_group_head_icon" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="2.0dip" android:layout_marginBottom="2.0dip" android:src="@drawable/modify_group_profile" android:scaleType="fitXY" android:layout_alignRight="@id/iv_group_profile_pic" android:layout_alignBottom="@id/iv_group_profile_pic" android:contentDescription="@string/app_name" />
+                    </RelativeLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_marginLeft="15.0dip" android:layout_weight="1.0" android:layout_centerInParent="true" style="@style/layout_fill_wrap">
+                        <LinearLayout android:orientation="horizontal" style="@style/layout_wrap_content">
+                            <TextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_group_lock_icon" android:background="@drawable/shape_msg_group_locked" android:paddingLeft="5.0dip" android:paddingTop="1.5dip" android:paddingRight="5.0dip" android:paddingBottom="1.5dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@string/msg_group_locked" />
+                            <TextView android:textSize="18.0sp" android:textColor="@color/nafio_h" android:id="@id/tv_group_name" android:singleLine="true" style="@style/layout_tv_wrap_content" />
+                        </LinearLayout>
+                        <LinearLayout android:layout_marginTop="8.0dip" style="@style/layout_wrap_content">
+                            <TextView android:textSize="13.0sp" android:textColor="@color/nafio_k" android:id="@id/groupID" style="@style/layout_tv_wrap_content" />
+                            <TextView android:textSize="13.0sp" android:textColor="@color/nafio_k" android:id="@id/tv_group_no" style="@style/layout_tv_wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <ImageView android:id="@id/tv_group_create_arrow" android:visibility="gone" style="@style/icon_right_arrow" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" style="@style/layout_fill_wrap">
+                    <TextView android:layout_marginLeft="13.0dip" style="@style/common_cutter_gray" />
+                    <LinearLayout android:id="@id/ll_group_member" android:layout_height="45.0dip" style="@style/group_info_members">
+                        <TextView android:textSize="15.0sp" android:textColor="@color/nafio_h" android:id="@id/tv_group_members" android:text="@string/group_member" style="@style/layout_wrap_content" />
+                        <TextView android:textSize="13.0sp" android:textColor="@color/nafio_k" android:gravity="center|right" android:id="@id/tv_group_members_amount" style="@style/layout_groupinfo" />
+                        <ImageView android:id="@id/tv_members_count_arrow" style="@style/icon_right_arrow" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/ll_group_member_lists" android:background="@color/white" android:paddingLeft="13.0dip" style="@style/layout_fill_wrap">
+                        <LinearLayout android:orientation="vertical" style="@style/layout_groupinfo">
+                            <LinearLayout android:id="@id/ll_group_members" android:paddingRight="13.0dip" android:paddingBottom="15.0dip" style="@style/layout_fill_wrap">
+                                <RelativeLayout android:id="@id/rl_first_member" style="@style/layout_groupinfo">
+                                    <ImageView android:id="@id/iv_first_member" style="@style/group_info_members_avatar" />
+                                    <ImageView android:id="@id/tv_first_member_role" android:background="@drawable/group_creator_role" android:visibility="gone" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_alignRight="@id/iv_first_member" android:layout_alignBottom="@id/iv_first_member" android:contentDescription="@string/app_name" />
+                                </RelativeLayout>
+                                <RelativeLayout android:id="@id/rl_second_member" style="@style/layout_groupinfo">
+                                    <ImageView android:id="@id/iv_second_member" style="@style/group_info_members_avatar" />
+                                    <ImageView android:id="@id/iv_add_memebers_second" android:visibility="gone" android:src="@drawable/group_member_add" style="@style/group_info_members_avatar" />
+                                    <ImageView android:id="@id/tv_second_member_role" android:layout_alignRight="@id/iv_second_member" android:layout_alignBottom="@id/iv_second_member" android:contentDescription="@string/app_name" style="@style/iv_group_members_role" />
+                                </RelativeLayout>
+                                <RelativeLayout android:id="@id/rl_third_member" style="@style/layout_groupinfo">
+                                    <ImageView android:id="@id/iv_third_member" style="@style/group_info_members_avatar" />
+                                    <ImageView android:id="@id/iv_add_memebers_third" android:visibility="gone" android:src="@drawable/group_member_add" style="@style/group_info_members_avatar" />
+                                    <ImageView android:id="@id/tv_third_member_role" android:layout_alignRight="@id/iv_third_member" android:layout_alignBottom="@id/iv_third_member" android:contentDescription="@string/app_name" style="@style/iv_group_members_role" />
+                                </RelativeLayout>
+                                <RelativeLayout android:id="@id/rl_fourth_member" style="@style/layout_groupinfo">
+                                    <ImageView android:id="@id/iv_fourth_member" style="@style/group_info_members_avatar" />
+                                    <ImageView android:id="@id/iv_add_memebers_fourth" android:visibility="gone" android:src="@drawable/group_member_add" style="@style/group_info_members_avatar" />
+                                    <ImageView android:id="@id/tv_fourth_member_role" android:layout_alignRight="@id/iv_fourth_member" android:layout_alignBottom="@id/iv_fourth_member" android:contentDescription="@string/app_name" style="@style/iv_group_members_role" />
+                                </RelativeLayout>
+                                <RelativeLayout android:id="@id/rl_fifth_member" style="@style/layout_groupinfo">
+                                    <ImageView android:id="@id/iv_fifth_member" style="@style/group_info_members_avatar" />
+                                    <ImageView android:id="@id/iv_add_memebers_fifth" android:visibility="gone" android:src="@drawable/group_member_add" style="@style/group_info_members_avatar" />
+                                    <ImageView android:id="@id/tv_fifth_member_role" android:layout_alignRight="@id/iv_fifth_member" android:layout_alignBottom="@id/iv_fifth_member" android:contentDescription="@string/app_name" style="@style/iv_group_members_role" />
+                                </RelativeLayout>
+                                <RelativeLayout android:id="@id/rl_sixth_member" style="@style/layout_groupinfo">
+                                    <ImageView android:id="@id/iv_sixth_member" style="@style/group_info_members_avatar" />
+                                    <ImageView android:id="@id/iv_add_memebers_sixth" android:visibility="gone" android:src="@drawable/group_member_add" style="@style/group_info_members_avatar" />
+                                    <ImageView android:id="@id/tv_sixth_member_role" android:layout_alignRight="@id/iv_sixth_member" android:layout_alignBottom="@id/iv_sixth_member" android:contentDescription="@string/app_name" style="@style/iv_group_members_role" />
+                                </RelativeLayout>
+                            </LinearLayout>
+                            <TextView style="@style/common_cutter_gray" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <TextView android:textSize="15.0sp" android:textColor="#ff37363b" android:id="@id/tv_group_intro_title_top" android:background="@color/white" android:paddingLeft="13.0dip" android:paddingTop="10.0dip" android:paddingRight="13.0dip" android:text="@string/group_intro" style="@style/layout_fill_wrap" />
+                    <LinearLayout android:id="@id/ll_group_intro_top" android:background="@color/white" android:paddingLeft="13.0dip" android:paddingTop="10.0dip" android:paddingRight="13.0dip" android:paddingBottom="10.0dip" style="@style/layout_fill_wrap">
+                        <TextView android:textSize="15.0sp" android:textColor="@color/nafio_i" android:id="@id/tv_group_intro_top" style="@style/layout_groupinfo" />
+                    </LinearLayout>
+                    <TextView android:id="@id/tv_group_intro_top_line" android:layout_marginLeft="13.0dip" style="@style/common_cutter_gray" />
+                    <LinearLayout android:id="@id/ll_groupinfo_location" android:background="@drawable/selector_textview_bgcolor" android:paddingRight="13.0dip" android:layout_height="45.0dip" style="@style/group_info_members">
+                        <TextView android:textSize="15.0sp" android:textColor="#ff37363b" android:id="@id/tv_group_location" android:text="@string/group_location" style="@style/layout_wrap_content" />
+                        <TextView android:textSize="15.0sp" android:textColor="#ffadafb0" android:gravity="right" android:id="@id/tv_group_location_info" style="@style/layout_groupinfo" />
+                        <ImageView android:id="@id/tv_location_arrow" android:layout_marginRight="0.0dip" style="@style/icon_right_arrow" />
+                    </LinearLayout>
+                    <TextView android:layout_marginLeft="13.0dip" style="@style/common_cutter_gray" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/ll_group_msgRemind" style="@style/layout_fill_wrap">
+                        <TextView android:id="@id/largeline_cutter_live" style="@style/common_cutter_gray_large" />
+                        <LinearLayout android:gravity="center_vertical" android:id="@id/liner_group_admins_set_copy" android:paddingLeft="13.0dip" android:paddingRight="13.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                            <TextView android:textSize="15.0sp" android:textColor="#ff37363b" android:text="@string/biao_v4_chat_setting_nocall" style="@style/layout_groupinfo" />
+                            <ToggleButton android:id="@id/sbt_msgRemind_onoff" android:textOn="" android:textOff="" style="@style/group_toggle_button" />
+                        </LinearLayout>
+                        <TextView android:layout_marginLeft="13.0dip" style="@style/common_cutter_gray" />
+                        <LinearLayout android:gravity="center_vertical" android:id="@id/liner_group_clear_chat" android:background="@drawable/selector_textview_bgcolor" android:paddingLeft="13.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                            <TextView android:textSize="15.0sp" android:textColor="#ff37363b" android:layout_width="0.0dip" android:text="@string/biao_v4_chat_setting_clearchat" android:layout_weight="1.0" style="@style/layout_wrap_content" />
+                            <ImageView style="@style/icon_right_arrow" />
+                        </LinearLayout>
+                        <com.soft.blued.customview.LabeledTextView android:id="@id/chat_setting_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" app:label_text="@string/biao_v4_chat_setting_bg" app:label_text_rigticon="@drawable/icon_vip" app:label_top_line="true" />
+                        <TextView android:id="@id/ll_group_msgRemind_line" style="@style/common_cutter_gray_large" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/only_create_liner" android:visibility="gone" style="@style/layout_fill_wrap">
+                        <LinearLayout android:gravity="center_vertical" android:id="@id/liner_group_admins_set" android:background="@drawable/selector_textview_bgcolor" android:paddingLeft="13.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                            <TextView android:textSize="15.0sp" android:textColor="@color/black323232" android:text="@string/group_admin" style="@style/layout_wrap_content" />
+                            <TextView android:textSize="15.0sp" android:textColor="@color/nafio_k" android:gravity="right" android:id="@id/tv_group_admin_count" style="@style/layout_groupinfo" />
+                            <ImageView style="@style/icon_right_arrow" />
+                        </LinearLayout>
+                        <TextView android:layout_marginLeft="13.0dip" style="@style/common_cutter_gray" />
+                        <LinearLayout android:gravity="center_vertical" android:id="@id/liner_group_count_set" android:background="@drawable/selector_textview_bgcolor" android:paddingLeft="13.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                            <TextView android:textSize="15.0sp" android:textColor="@color/black323232" android:layout_width="0.0dip" android:text="@string/group_upcount" android:layout_weight="1.0" style="@style/layout_wrap_content" />
+                            <ImageView style="@style/icon_right_arrow" />
+                        </LinearLayout>
+                        <TextView style="@style/common_cutter_gray" />
+                    </LinearLayout>
+                    <TextView style="@style/common_cutter_gray_large" />
+                    <LinearLayout android:gravity="center_vertical" android:id="@id/ll_group_term" android:background="@drawable/selector_textview_bgcolor" android:paddingLeft="13.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                        <TextView android:textSize="15.0sp" android:textColor="#ff37363b" android:layout_width="0.0dip" android:text="@string/group_term" android:layout_weight="1.0" style="@style/layout_wrap_content" />
+                        <ImageView style="@style/icon_right_arrow" />
+                    </LinearLayout>
+                    <TextView android:id="@id/tv_group_reportz_line" android:layout_marginLeft="13.0dip" style="@style/common_cutter_gray" />
+                    <LinearLayout android:gravity="center_vertical" android:id="@id/tv_group_report" android:background="@drawable/selector_textview_bgcolor" android:paddingLeft="13.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                        <TextView android:textSize="15.0sp" android:textColor="#ff37363b" android:layout_width="0.0dip" android:text="@string/group_report" android:layout_weight="1.0" style="@style/layout_wrap_content" />
+                        <ImageView style="@style/icon_right_arrow" />
+                    </LinearLayout>
+                    <TextView style="@style/common_cutter_gray_large" />
+                    <TextView android:textSize="15.0sp" android:textColor="#ff37363b" android:id="@id/tv_group_intro_title" android:background="@color/white" android:paddingLeft="13.0dip" android:paddingTop="15.0dip" android:paddingRight="13.0dip" android:text="@string/group_intro" style="@style/layout_fill_wrap" />
+                    <LinearLayout android:id="@id/ll_group_intro" android:padding="13.0dip" android:paddingLeft="13.0dip" android:paddingTop="10.0dip" android:paddingBottom="15.0dip" style="@style/layout_fill_wrap">
+                        <TextView android:textSize="14.0sp" android:textColor="@color/nafio_i" android:id="@id/tv_group_intro" android:layout_width="0.0dip" android:layout_weight="1.0" android:lineSpacingExtra="5.0dip" style="@style/layout_groupinfo" />
+                        <ImageView android:id="@id/tv_arrow" android:visibility="gone" android:layout_marginRight="0.0dip" style="@style/icon_right_arrow" />
+                    </LinearLayout>
+                    <TextView android:id="@id/ll_group_intro_line" style="@style/common_cutter_gray_large" />
+                    <Button android:textSize="15.0sp" android:textColor="@drawable/selector_textview_fontcolor_red" android:gravity="center" android:id="@id/btn_group_options" android:background="@color/sara_f" android:focusable="false" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="@string/btn_quitgroup" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:layout_width="fill_parent" android:layout_height="50.0dip" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_group_info_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView style="@style/common_title_btm_line" />
+        <Button android:textSize="18.0sp" android:textColor="@color/nafio_b" android:id="@id/bt_chat_start" android:background="@color/nafio_a" android:focusable="false" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/chat_start" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_group_info_custom_service" android:background="@color/sara_f" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <ImageView android:layout_width="21.0dip" android:layout_height="21.0dip" android:src="@drawable/icon_custom_service" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/sara_a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="@string/group_info_custom_service" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

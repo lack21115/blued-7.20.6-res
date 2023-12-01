@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" android:state_checked="true" android:drawable="@drawable/tick_on_btn" />
+    <item android:state_enabled="true" android:state_checked="false" android:drawable="@drawable/tick_off_btn" />
+    <item android:state_enabled="false" android:state_checked="true" android:drawable="@drawable/tick_on_disable_btn" />
+    <item android:state_enabled="false" android:state_checked="false" android:drawable="@drawable/tick_off_disable_btn" />
+</selector>

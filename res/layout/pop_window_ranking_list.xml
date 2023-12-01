@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.framework.view.shape.ShapeFrameLayout android:id="@id/tv_hot_tips" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" app:corner_radius="10.0dip" app:solid_color="@color/syc_fef4e8">
+        <com.blued.android.module.live_china.view.TextSwitcherView android:layout_gravity="center" android:id="@id/tsv_vip_switcher" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </com.blued.android.framework.view.shape.ShapeFrameLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="10.0dip" android:layout_weight="1.0" />
+            <com.blued.android.framework.view.shape.ShapeLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_anchor_rank_layout" android:paddingLeft="10.0dip" android:paddingRight="16.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="72.0dip" app:solid_color="@color/syc_dark_b" app:stroke_color="@color/syc_dark_i" app:stroke_width="1.0px" app:top_left_radius="16.0dip" app:top_right_radius="16.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="@color/syc_dark_k" android:id="@id/tv_rank_index" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="15.0dip" />
+                <ImageView android:id="@id/iv_rank_index" android:layout_width="27.0dip" android:layout_height="27.0dip" android:layout_marginRight="9.0dip" android:src="@drawable/live_rank_up_one" />
+                <FrameLayout android:layout_width="52.0dip" android:layout_height="52.0dip">
+                    <ImageView android:layout_gravity="center" android:id="@id/avatar" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/user_bg_round" />
+                    <ImageView android:layout_gravity="center" android:id="@id/live_user_avatar_decorate" android:visibility="gone" android:layout_width="52.0dip" android:layout_height="52.0dip" android:scaleType="fitXY" />
+                </FrameLayout>
+                <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/syc_dark_0a0a0a" android:id="@id/tv_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="name" android:layout_weight="1.0" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/syc_dark_f5a330" android:id="@id/tv_rank" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+                <com.blued.android.framework.view.shape.ShapeTextView android:textSize="12.0sp" android:textColor="@color/syc_dark_b" android:gravity="center" android:id="@id/tv_send_gift" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="28.0dip" android:layout_marginLeft="8.0dip" android:text="@string/live_ranking_tips" app:corner_radius="28.0dip" app:gradient_end_color="@color/syc_dark_922cee" app:gradient_start_color="@color/syc_dark_ff3aaa" />
+            </com.blued.android.framework.view.shape.ShapeLinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="14.0sp" android:textColor="#ff1e1f23" android:gravity="center" android:id="@id/tv_empty_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:text="@string/live_ranking_no_data" android:drawableTop="@drawable/live_icon_no_data_posted" />
+    </FrameLayout>
+</LinearLayout>

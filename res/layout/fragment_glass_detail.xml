@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.blued.android.module.live_china.view.ViewDragHelperLayout android:orientation="vertical" android:id="@id/view_drag_layout" android:background="#19000000" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/lock_layout" android:background="#19000000" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/background_header" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:contentDescription="@string/app_name" />
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/album_lock_icon" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/lock_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/sara_l" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/set_private_album" />
+            </LinearLayout>
+        </FrameLayout>
+    </com.blued.android.module.live_china.view.ViewDragHelperLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@id/loading_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

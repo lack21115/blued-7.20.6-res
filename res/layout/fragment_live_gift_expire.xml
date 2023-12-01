@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/trans_black_four" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="38.0dip" android:layout_marginRight="38.0dip" app:cardBackgroundColor="@color/white" app:cardCornerRadius="6.0dip" app:cardElevation="0.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <ImageView android:layout_gravity="right" android:id="@id/live_gift_expire_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/live_gift_expire_close" />
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/live_gift_expire_img" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_marginTop="14.0dip" android:scaleType="fitCenter" />
+            </FrameLayout>
+            <TextView android:textAppearance="@style/TextAppearance.FontPath.Medium" android:textSize="16.0sp" android:textColor="@color/syc_dark_0a0a0a" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/live_gift_expire_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:includeFontPadding="false" />
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+                <ImageView android:id="@id/live_gift_expire_price_icon" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginRight="7.0dip" android:src="@drawable/live_beans_icon" android:scaleType="fitXY" />
+                <TextView android:textAppearance="@style/TextAppearance.FontPath.Medium" android:textSize="16.0sp" android:textColor="@color/syc_dark_0a0a0a" android:gravity="center" android:id="@id/live_gift_expire_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:includeFontPadding="false" />
+            </LinearLayout>
+            <TextView android:textSize="13.0sp" android:textColor="@color/syc_dark_999999" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/live_gift_expire_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:includeFontPadding="false" />
+            <TextView android:textAppearance="@style/TextAppearance.FontPath.Medium" android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/live_gift_expire_confirm" android:background="@drawable/live_gift_expire_bg" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="40.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="40.0dip" android:layout_marginBottom="20.0dip" android:text="@string/biao_v4_ok" android:includeFontPadding="false" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

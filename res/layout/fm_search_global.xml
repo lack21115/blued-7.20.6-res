@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.module.common.view.SearchView android:orientation="vertical" android:id="@id/search_view" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/search_view">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycle_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.blued.android.module.common.view.NoDataAndLoadFailView android:id="@id/no_data_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/msg_search_view" android:layout_centerInParent="true" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_search_recent" android:background="@color/syc_b" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/search_view">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip">
+            <TextView android:textSize="17.0sp" android:textColor="@color/syc_h" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="@string/friend_global_search_recent" android:layout_alignParentBottom="true" />
+            <ImageView android:id="@id/iv_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:src="@drawable/icon_search_recent_del" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <com.blued.android.module.common.view.FlowLayout android:layout_gravity="center_horizontal" android:id="@id/flow_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="12.0dip" app:flMaxRows="3" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

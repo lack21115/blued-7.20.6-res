@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="50.0dip">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="53.0dip">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/feed_subject_select_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:src="@drawable/icon_close_black" />
+            <TextView android:textAppearance="@style/TextAppearance.FontPath.Medium" android:textSize="16.0sp" android:textColor="@color/syc_h" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="添加主题" android:includeFontPadding="false" />
+        </FrameLayout>
+        <androidx.fragment.app.FragmentContainerView android:name="com.blued.community.ui.subject.fragment.FeedSubjectSearchFragment" android:id="@id/feed_subject_select_fm_container" android:tag="subject_search" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</FrameLayout>

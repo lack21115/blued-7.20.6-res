@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/recommend_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/syc_h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17.0dip" android:layout_marginBottom="5.0dip" android:text="@string/hello_recommend_title" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/syc_j" android:layout_gravity="center_horizontal" android:id="@id/tv_recommend_no_data" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:layout_marginBottom="24.0dip" android:text="@string/no_data" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recommend_recycler_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_filter" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <com.blued.android.framework.view.shape.ShapeTextView android:textSize="16.0sp" android:textColor="@color/syc_h" android:id="@id/tv_sort_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ai_sorting" />
+        <com.blued.android.framework.view.shape.ShapeTextView android:textSize="16.0sp" android:textColor="@color/syc_j" android:id="@id/tv_sort_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:text="@string/nearby_sorting" />
+        <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/btn_filter" android:layout_width="wrap_content" android:layout_height="26.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="@color/syc_h" android:id="@id/tv_filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_filter_close" />
+            <ImageView android:id="@id/iv_filter" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="4.0dip" android:src="@drawable/icon_hello_call_filter_close" android:scaleType="fitXY" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

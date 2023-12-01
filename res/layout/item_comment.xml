@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/rl_comment" android:background="@color/syc_b" android:padding="10.0dip" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/frame_head" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/header_view" android:background="@drawable/user_bg_round" android:layout_width="44.0dip" android:layout_height="44.0dip" />
+        <ImageView android:layout_gravity="bottom|center|right" android:id="@id/img_verify" android:layout_width="16.0dip" android:layout_height="16.0dip" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/frame_head">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="15.0sp" android:textColor="@color/syc_h" android:autoLink="web" android:layout_gravity="center_vertical" android:id="@id/name_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="140.0dip" android:singleLine="true" android:alpha="0.8" />
+            <ImageView android:id="@id/iv_level" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginLeft="5.0dip" />
+            <ImageView android:id="@id/iv_anonymous" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:src="@drawable/anonymous_icon" />
+            <ImageView android:id="@id/img_vip_icon" style="@style/blued_vip_icon" />
+            <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <ImageView android:id="@id/img_comment_like" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/icon_comment_like" android:scaleType="centerInside" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/feed_like" android:gravity="center_vertical" android:id="@id/tv_comment_like_count" android:paddingLeft="3.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0sp" android:textColor="@color/syc_j" android:id="@id/time_view" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/syc_j" android:id="@id/item_comment_ip_location_tv" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/my_relativeLayout" android:background="@drawable/selector_bgcolor_text_button" android:focusable="false" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip">
+            <com.blued.community.view.TextViewFixTouchForDynamic android:textSize="15.0sp" android:textColor="@color/syc_h" android:gravity="center_vertical" android:autoLink="email" android:id="@id/content_view" android:focusable="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:lineSpacingExtra="5.0dip" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/img_delete" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="25.0dip" android:src="@drawable/icon_comment_delete" />
+        </LinearLayout>
+        <com.blued.android.framework.view.shape.ShapeTextView android:textSize="10.0sp" android:textColor="@color/syc_j" android:id="@id/item_comment_anchor_liked" android:paddingLeft="7.5dip" android:paddingTop="3.0dip" android:paddingRight="7.5dip" android:paddingBottom="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="@string/anchor_liked" android:includeFontPadding="false" app:corner_radius="15.0dip" app:solid_color="@color/syc_c" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_img" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+    </LinearLayout>
+</RelativeLayout>

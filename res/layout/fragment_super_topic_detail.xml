@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/syc_b" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" app:hide_btm_line="true" app:right_image="@drawable/icon_title_share" />
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@id/refresh_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    <com.blued.community.view.FloatFooterView android:id="@id/ll_feed_post" android:layout_width="fill_parent" android:layout_height="65.0dip" android:layout_alignParentBottom="true" app:src="@drawable/icon_feed_post_hover_attention" app:text="@string/post" />
+</RelativeLayout>

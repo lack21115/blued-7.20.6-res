@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_all" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.blued.android.module.common.view.FlowLayout android:layout_gravity="left" android:id="@id/flow_super_topic" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="9.0dip" />
+        <FrameLayout android:id="@id/feed_add_post_template_layout_id" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView android:id="@id/feed_add_post_template_bg_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="275.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" app:cardBackgroundColor="@color/transparent" app:cardCornerRadius="10.0dip" app:cardElevation="0.0dip">
+                <ImageView android:id="@id/feed_add_post_template_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+                <View android:background="@color/trans_black_five" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </androidx.cardview.widget.CardView>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+                <LinearLayout android:orientation="vertical" android:id="@id/feed_add_post_template_title_layout_id" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="14.0dip">
+                    <ImageView android:layout_gravity="right" android:id="@id/feed_add_post_template_close" android:paddingLeft="8.0dip" android:paddingTop="12.0dip" android:paddingRight="12.0dip" android:paddingBottom="20.0dip" android:layout_width="40.0dip" android:layout_height="52.0dip" android:src="@drawable/feed_add_post_template_close" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip">
+                        <TextView android:textAppearance="@style/TextAppearance.FontPath.Medium" android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/feed_add_post_template_title_tv" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="2" android:includeFontPadding="false" android:layout_weight="1.0" android:lineSpacingMultiplier="1.1" />
+                        <androidx.cardview.widget.CardView android:id="@id/feed_add_post_template_change" android:layout_width="60.0dip" android:layout_height="22.0dip" android:layout_marginLeft="20.0dip" app:cardBackgroundColor="@color/trans_black_seven" app:cardCornerRadius="11.0dip" app:cardElevation="0.0dip">
+                            <TextView android:textSize="12.0sp" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/feed_post_template_change" android:includeFontPadding="false" />
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                </LinearLayout>
+                <com.blued.community.view.SelectionEditText android:textSize="15.0sp" android:textColor="@color/syc_h" android:textColorHint="@color/syc_i" android:gravity="top" android:id="@id/edt_news_feed" android:background="@color/transparent" android:paddingTop="10.0dip" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="100.0dip" android:hint="@string/feed_post_hint" android:lineSpacingMultiplier="1.1" android:inputType="textMultiLine" app:emojiconSize="15.0sp" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/feed_add_post_text_num_layout" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <CheckBox android:textSize="13.0sp" android:textColor="@color/syc_h" android:id="@id/cb_comment" android:paddingLeft="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="19.0dip" android:checked="false" android:button="@drawable/selector_checkbox_btn" android:text="@string/feed_post_meanwhile_comment" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/syc_k" android:gravity="center_vertical" android:id="@id/feed_post_guide_tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/send_feed_guide_tips" android:includeFontPadding="false" android:drawableLeft="@drawable/feed_post_guide_tips_icon" android:drawablePadding="4.5dip" />
+                    <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                    <com.blued.community.view.EditInputNumView android:textSize="13.0sp" android:id="@id/inv_word_count" android:layout_width="wrap_content" android:layout_height="wrap_content" app:inTextColor="@color/syc_j" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toRightOf="parent" app:outTextColor="@color/syc_g" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+        <com.blued.community.ui.send.view.FeedPostVoteView android:id="@id/feed_post_vote_view_id" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_res" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView android:id="@id/layout_forward" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" app:cardBackgroundColor="@color/syc_x" app:cardCornerRadius="5.0dip" app:cardElevation="0.0dip">
+                <LinearLayout android:orientation="horizontal" android:id="@id/layout_forward_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="1.0px">
+                    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:id="@id/forward_image" android:layout_width="108.0dip" android:layout_height="108.0dip" android:scaleType="centerCrop" />
+                        <include android:id="@id/view_share_corner" android:visibility="gone" layout="@layout/item_post_share_corner" />
+                        <com.blued.android.framework.view.shape.ShapeTextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/view_share_circle" android:paddingLeft="10.0dip" android:paddingTop="4.0dip" android:paddingRight="10.0dip" android:paddingBottom="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/circle_talk" app:bottom_right_radius="6.0dip" app:solid_color="@color/syc_62000000" />
+                    </FrameLayout>
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                        <TextView android:textSize="15.0sp" android:textColor="@color/syc_h" android:ellipsize="end" android:id="@id/forward_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+                        <com.blued.android.module.common.widget.emoji.view.EmojiTextView android:textSize="14.0sp" android:textColor="@color/syc_j" android:ellipsize="end" android:id="@id/forward_content" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:lines="2" android:lineSpacingMultiplier="1.2" />
+                        <LinearLayout android:orientation="vertical" android:id="@id/forward_event" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <ImageView android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/icon_eventcard_clock" />
+                                <TextView android:textSize="14.0sp" android:textColor="@color/syc_h" android:id="@id/forward_event_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:alpha="0.7" />
+                            </LinearLayout>
+                            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                                <ImageView android:id="@id/iv_event_address" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/icon_eventcard_location" />
+                                <TextView android:textSize="14.0sp" android:textColor="@color/syc_h" android:ellipsize="end" android:id="@id/forward_event_location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:lines="1" android:alpha="0.7" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <ImageView android:layout_gravity="center|right|top" android:id="@id/img_event_icon" android:visibility="gone" android:layout_width="72.0dip" android:layout_height="89.0dip" android:src="@drawable/event_enter_right_bg" />
+            </androidx.cardview.widget.CardView>
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_share_root_view" android:background="@color/syc_x" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="114.0dip">
+                <com.blued.community.view.TextViewFixTouchForDynamic android:textSize="13.0sp" android:textColor="@color/sara_c" android:ellipsize="end" android:gravity="center_vertical" android:autoLink="email" android:id="@id/tv_origin_share_content" android:focusable="false" android:layout_width="fill_parent" android:layout_height="35.0dip" android:text="" android:lines="1" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/share_content_layout" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/img_share" android:layout_width="71.0dip" android:layout_height="71.0dip" android:scaleType="centerCrop" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/syc_h" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/tv_share_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:maxLines="2" />
+                </LinearLayout>
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_photo" android:paddingLeft="12.5dip" android:paddingRight="12.5dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <androidx.cardview.widget.CardView android:id="@id/layout_video" android:visibility="gone" android:layout_width="108.0dip" android:layout_height="108.0dip" android:layout_marginLeft="15.0dip" app:cardCornerRadius="5.0dip" app:cardElevation="0.0dip">
+                <ImageView android:id="@id/img_video" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+                <ImageView android:layout_gravity="center|right|top" android:id="@id/iv_video_delete" android:padding="2.0dip" android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@drawable/feed_post_delete" />
+                <View android:layout_gravity="bottom" android:id="@id/video_preview" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="24.0dip" android:alpha="0.5" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/syc_b" android:gravity="center" android:layout_gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="24.0dip" android:text="@string/preview" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

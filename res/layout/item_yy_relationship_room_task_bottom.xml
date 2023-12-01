@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:paddingBottom="@dimen/dp_25" android:layout_width="fill_parent" android:layout_height="@dimen/dp_300"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="12.0sp" android:textColor="@color/syc_dark_999" android:id="@id/tv_task_info" android:paddingTop="@dimen/dp_28" android:layout_width="fill_parent" android:layout_height="@dimen/dp_162" android:layout_marginLeft="@dimen/dp_13" android:layout_marginRight="@dimen/dp_13" android:text="衰减亲密值：连续5天没有增加任何亲密值，则从6天开始衰减亲密值，一天衰减5亲密值，亲密值衰减为0时，关系解除" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

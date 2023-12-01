@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@id/refresh_layout" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" app:srlAccentColor="@android:color/transparent">
+            <com.blued.android.module.common.view.CustomTwoLevelHeader android:id="@id/header" android:background="@color/syc_c" android:layout_width="fill_parent" android:layout_height="wrap_content" app:srlEnableRefresh="false" app:srlFloorRage="1.7">
+                <com.soft.blued.customview.smartrefresh.TwoLevelNearbyRefreshView android:id="@id/refresh_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </com.blued.android.module.common.view.CustomTwoLevelHeader>
+            <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/coordinator" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+                <com.google.android.material.appbar.AppBarLayout android:id="@id/appbar" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip">
+                    <LinearLayout android:orientation="vertical" android:background="@color/syc_c" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="scroll">
+                        <com.blued.android.framework.view.shape.ShapeLinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/search_layout" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="6.0dip" app:corner_radius="17.0dip" app:layout_scrollFlags="scroll" app:solid_color="@color/syc_x">
+                            <ImageView android:id="@id/search_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/icon_search_common" />
+                            <TextView android:textSize="13.0sp" android:textColor="@color/syc_j" android:gravity="center_vertical" android:layout_gravity="center" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/biao_v1_lr_search" android:drawableLeft="@drawable/icon_search_common" android:drawablePadding="4.0dip" />
+                        </com.blued.android.framework.view.shape.ShapeLinearLayout>
+                        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_red_pack_guide" android:background="@color/syc_c" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="90.0dip">
+                            <TextView android:textSize="14.0sp" android:id="@id/tv_card_guide" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="6.0dip" android:text="领100元现金" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                            <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_cash_out_guide" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+                                <ImageView android:id="@id/iv_red_pack" android:layout_width="53.0dip" android:layout_height="48.0dip" android:layout_marginLeft="8.0dip" android:src="@drawable/icon_red_pack_guide" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginLeft="4.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toRightOf="@id/iv_red_pack" app:layout_constraintRight_toLeftOf="@id/tv_cash_out_btn" app:layout_constraintTop_toTopOf="parent">
+                                    <TextView android:textSize="15.0sp" android:textColor="@color/syc_h" android:id="@id/tv_red_pack_guide_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="恭喜您！ 完成30天簽到活動～ " />
+                                    <TextView android:textSize="13.0sp" android:textColor="@color/syc_j" android:id="@id/tv_red_pack_guide_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="明日即可提现" />
+                                </LinearLayout>
+                                <com.blued.android.framework.view.shape.ShapeTextView android:textSize="12.0sp" android:textColor="@color/syc_dark_b" android:id="@id/tv_cash_out_btn" android:paddingLeft="8.0dip" android:paddingTop="6.0dip" android:paddingRight="8.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="28.0dip" android:text="@string/tomorrow_cash_out_btn_content" app:corner_radius="24.0dip" app:layout_constraintBottom_toBottomOf="@id/iv_red_pack" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="@id/iv_red_pack" app:solid_color="@color/syc_a" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                            <androidx.recyclerview.widget.RecyclerView android:id="@id/red_pack_recycler_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_card_guide" />
+                            <ImageView android:id="@id/iv_red_pack_guide_close" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="6.0dip" android:src="@drawable/icon_close_gray" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <FrameLayout android:id="@id/fl_banner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="12.0dip" />
+                        <Space android:layout_width="fill_parent" android:layout_height="1.0px" />
+                        <com.soft.blued.ui.find.view.RecommendViewMixedInNearby android:id="@id/recommend_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <Space android:layout_width="wrap_content" android:layout_height="1.0px" app:layout_scrollFlags="scroll" />
+                    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/view_map_find" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/tab_bar" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/sort_tab_bar" android:paddingLeft="3.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+                        <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                        <RelativeLayout android:id="@id/rl_call_btn" android:background="@drawable/icon_call_outside_bg" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginRight="10.0dip">
+                            <ImageView android:id="@id/iv_call_icon" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/icon_call_default_h" android:layout_centerInParent="true" />
+                            <TextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_call_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_centerInParent="true" />
+                        </RelativeLayout>
+                        <RelativeLayout android:id="@id/rl_call_btn_state" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip">
+                            <RelativeLayout android:id="@id/rl_call_btn_loop" android:background="@drawable/shape_call_bg" android:paddingLeft="11.0dip" android:paddingRight="11.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="25.0dip">
+                                <ImageView android:id="@id/iv_call_btn_loop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/call_icon" android:layout_centerVertical="true" />
+                                <TextView android:textSize="11.0sp" android:textColor="@color/white" android:id="@id/tv_call_btn_loop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/hello_name" android:layout_toRightOf="@id/iv_call_btn_loop" android:layout_centerVertical="true" />
+                            </RelativeLayout>
+                            <ImageView android:id="@id/iv_call_btn_anim" android:layout_width="86.0dip" android:layout_height="25.0dip" android:scaleType="fitEnd" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:id="@id/ll_refresh" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+                        <ProgressBar android:layout_width="24.0dip" android:layout_height="24.0dip" />
+                    </LinearLayout>
+                </com.google.android.material.appbar.AppBarLayout>
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+                <com.blued.android.module.common.view.NoDataAndLoadFailView android:id="@id/nodataview" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+                <com.blued.android.module.common.view.NoDataAndLoadFailView android:id="@id/request_location_nodata_view" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="@string/appbar_scrolling_view_behavior" app:no_data_txt_res="@string/nearby_people_list_request_location" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/ll_guide_animation" android:layout_width="fill_parent" android:layout_height="105.0dip" android:layout_marginTop="3.0dip">
+                    <ImageView android:id="@id/iv_red_pack_guide_animation" android:layout_width="150.0dip" android:layout_height="fill_parent" />
+                </LinearLayout>
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/layout_filter_reset" android:background="@color/syc_a" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="45.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/people_search_less_data_tip" android:layout_weight="1.0" />
+            <com.blued.android.framework.view.shape.ShapeTextView android:textSize="12.0sp" android:textColor="@color/syc_a" android:gravity="center" android:id="@id/stv_filter_reset" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="25.0dip" android:text="@string/people_search_no_data_btn" app:corner_radius="12.0dip" app:solid_color="@color/syc_dark_b" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="bottom|center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="41.0dip">
+        <com.soft.blued.ui.find.view.NearbyChatRoomView android:id="@id/nearby_chat_room" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.soft.blued.ui.find.view.NearbyChatHostRoomView android:id="@id/nearby_chat_room_host" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+</FrameLayout>

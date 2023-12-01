@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/syc_c" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:hide_btm_line="true" />
+    <FrameLayout android:id="@id/frame_layout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.blued.android.module.common.view.NoDataAndLoadFailView android:id="@id/noDataView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <TextView android:textSize="13.0sp" android:textColor="@color/syc_k" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="12.0dip" android:text="* 使用相应的充值满赠券充值后所获得的礼包具体内容，详见站内信" android:includeFontPadding="false" />
+</LinearLayout>

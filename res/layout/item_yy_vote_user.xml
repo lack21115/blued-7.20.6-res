@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_8" android:layout_marginRight="@dimen/dp_8"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.framework.view.shape.ShapeFrameLayout android:id="@id/fl_vote_header" android:padding="@dimen/dp_2" android:layout_width="wrap_content" android:layout_height="wrap_content" app:corner_radius="@dimen/dp_35" app:solid_color="@color/white">
+        <androidx.cardview.widget.CardView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardBackgroundColor="@color/transparent" app:cardCornerRadius="@dimen/dp_34" app:cardElevation="0.0dip">
+            <ImageView android:id="@id/iv_vote_header" android:layout_width="@dimen/dp_68" android:layout_height="@dimen/dp_68" android:src="@drawable/user_bg_round" />
+        </androidx.cardview.widget.CardView>
+    </com.blued.android.framework.view.shape.ShapeFrameLayout>
+    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/tv_vote_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" />
+    <com.blued.android.framework.view.shape.ShapeTextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_check" android:layout_width="@dimen/dp_70" android:layout_height="@dimen/dp_33" android:layout_marginTop="@dimen/dp_10" android:layout_marginBottom="@dimen/dp_32" android:text="@string/yy_mic_vote" app:corner_radius="@dimen/dp_17" app:gradient_end_color="@color/syc_3883FD" app:gradient_start_color="@color/syc_00E0AB" />
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_6">
+        <ImageView android:id="@id/iv_gift_icon" android:padding="@dimen/dp_0" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:layout_marginTop="@dimen/dp_1" android:layout_marginRight="@dimen/dp_6" android:src="@drawable/gift_default_icon" />
+        <TextView android:textSize="@dimen/sp_10" android:textColor="@color/syc_dark_b" android:ellipsize="end" android:id="@id/tv_gift_name" android:padding="@dimen/dp_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_1" android:layout_marginRight="@dimen/dp_2" android:text="@string/yy_wish_gift" android:maxLines="1" android:singleLine="true" android:layout_toRightOf="@id/iv_gift_icon" />
+        <TextView android:textSize="@dimen/sp_10" android:textColor="@color/syc_00E0AB" android:id="@id/tv_reveive_count" android:padding="@dimen/dp_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:layout_toRightOf="@id/iv_gift_icon" android:layout_below="@id/tv_gift_name" />
+        <TextView android:textSize="@dimen/sp_10" android:textColor="@color/syc_dark_j" android:id="@id/tv_count_line" android:padding="@dimen/dp_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="/" android:layout_toRightOf="@id/tv_reveive_count" android:layout_below="@id/tv_gift_name" />
+        <TextView android:textSize="@dimen/sp_10" android:textColor="@color/syc_dark_j" android:id="@id/tv_total_count" android:padding="@dimen/dp_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10" android:layout_toRightOf="@id/tv_count_line" android:layout_below="@id/tv_gift_name" />
+    </RelativeLayout>
+    <ProgressBar android:id="@id/progress_bar" android:padding="@dimen/dp_0" android:layout_width="fill_parent" android:layout_height="@dimen/dp_1" android:layout_marginLeft="@dimen/dp_6" android:layout_marginRight="@dimen/dp_6" android:max="100" android:progress="10" android:progressDrawable="@drawable/progress_bg_c0c0c0" style="?android:progressBarStyleHorizontal" />
+</LinearLayout>

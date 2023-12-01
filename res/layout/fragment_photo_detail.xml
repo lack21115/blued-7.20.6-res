@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.blued.android.module.player.media.view.ViewDragHelperLayout android:orientation="vertical" android:id="@id/view_drag_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.github.chrisbanes.photoview.PhotoView android:layout_gravity="center" android:id="@id/photo_preview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/app_name" />
+    </com.blued.android.module.player.media.view.ViewDragHelperLayout>
+    <FrameLayout android:gravity="center_vertical" android:layout_gravity="top" android:id="@id/top_title" android:tag="@string/title_tag_for_fit_status_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:id="@id/bottom_tab" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/loading_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

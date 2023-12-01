@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="32.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.framework.view.shape.ShapeRelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="6.0dip" android:paddingStart="8.0dip" app:corner_radius="15.0dip" app:solid_color="@color/syc_dark_af161616">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerVertical="true">
+            <TextView android:textSize="12.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="当前正在使用" />
+            <ImageView android:layout_gravity="center" android:id="@id/img_behalf_user_avatar" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_marginStart="6.0dip" android:layout_marginEnd="6.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffffd452" android:ellipsize="end" android:id="@id/tv_behalf_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="6" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="身份送礼" android:lineSpacingExtra="16.0dip" android:layout_marginStart="6.0dip" />
+            <ImageView android:id="@id/img_behalf_qa" android:layout_width="12.0dip" android:layout_height="12.0dip" android:src="@drawable/img_behalf_qa" android:layout_marginStart="5.0dip" />
+        </LinearLayout>
+        <com.blued.android.framework.view.shape.ShapeLinearLayout android:layout_gravity="center|right" android:orientation="horizontal" android:id="@id/rl_behalf_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:paddingStart="3.0dip" android:paddingEnd="5.0dip" android:layout_marginEnd="7.0dip" android:layout_alignParentEnd="true" app:corner_radius="9.0dip" app:solid_color="@color/color_434343">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/img_gift_behalf_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_behalf_gift_disnabel" />
+            <TextView android:textSize="@dimen/hiad_text_12_sp" android:textColor="@color/syc_999999" android:id="@id/tv_gift_behalf_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="本场失效" android:layout_marginStart="7.0dip" />
+        </com.blued.android.framework.view.shape.ShapeLinearLayout>
+    </com.blued.android.framework.view.shape.ShapeRelativeLayout>
+</LinearLayout>

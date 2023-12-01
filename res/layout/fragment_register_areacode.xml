@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.blued.android.framework.activity.keyboardpage.KeyboardListenLinearLayout android:orientation="vertical" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/top_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.blued.android.module.common.view.SearchView android:id="@id/search_view" android:layout_width="fill_parent" android:layout_height="wrap_content" app:search_click_jump="true" />
+    <View android:background="@color/syc_o_line" style="@style/biao_login_register_line_horizontal_gray" />
+    <RelativeLayout android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="5.0dip" android:layout_weight="1.0">
+        <ListView android:id="@id/ac_lv" android:scrollbars="none" android:divider="@null" android:layout_toLeftOf="@id/ac_sb" style="@style/PullToRefreshListView" />
+        <com.soft.blued.ui.login_register.AreaCode.AreaCodeSectionBar android:id="@id/ac_sb" android:layout_width="36.0dip" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</com.blued.android.framework.activity.keyboardpage.KeyboardListenLinearLayout>

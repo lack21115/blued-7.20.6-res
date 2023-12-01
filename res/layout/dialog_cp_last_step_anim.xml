@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="@dimen/dp_220" android:layout_height="@dimen/dp_180" android:layout_marginTop="@dimen/dp_20">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:background="@drawable/shape_raduis_22dp_28282b" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.google.android.material.imageview.ShapeableImageView android:id="@id/iv_source" android:padding="@dimen/dp_4" android:visibility="gone" android:layout_width="@dimen/dp_108" android:layout_height="@dimen/dp_108" android:layout_marginLeft="@dimen/dp_12" android:layout_marginTop="@dimen/dp_70" android:src="@drawable/user_bg_round" app:shapeAppearanceOverlay="@style/circleImageStyle" app:strokeColor="@color/syc_dark_b" app:strokeWidth="@dimen/dp_4" />
+            <com.google.android.material.imageview.ShapeableImageView android:id="@id/iv_target" android:padding="@dimen/dp_4" android:visibility="gone" android:layout_width="@dimen/dp_108" android:layout_height="@dimen/dp_108" android:layout_marginLeft="-10.0dip" android:layout_marginTop="@dimen/dp_70" android:src="@drawable/user_bg_round" app:shapeAppearanceOverlay="@style/circleImageStyle" app:strokeColor="@color/syc_dark_b" app:strokeWidth="@dimen/dp_4" />
+        </LinearLayout>
+        <ImageView android:id="@id/iv_cp_heart" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/cp_step_icon" android:layout_width="@dimen/dp_160" android:layout_height="@dimen/dp_60" />
+</FrameLayout>

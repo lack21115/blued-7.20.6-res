@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/msg_item_root" android:paddingTop="@dimen/chat_two_item_root_top" android:paddingBottom="@dimen/chat_two_item_root_bottom" style="@style/layout_fill_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/tv_date" style="@style/msg_time_style" />
+    <LinearLayout android:layout_gravity="right" android:id="@id/chat_content_root" android:layout_marginLeft="@dimen/chat_two_item_right_qp_marginleft" android:layout_marginRight="@dimen/chat_two_item_left_right_root" style="@style/layout_wrap_content">
+        <ImageView android:id="@id/chat_sending_img" android:visibility="gone" android:contentDescription="@string/app_name" style="@style/chat_send_state_sending" />
+        <ImageView android:id="@id/chat_state_error" android:visibility="gone" android:contentDescription="@string/app_name" style="@style/chat_send_state_error" />
+        <RelativeLayout android:orientation="vertical" android:id="@id/chat_content_in" style="@style/chat_chat_content_in_style">
+            <RelativeLayout android:id="@id/msg_content_translate_root" android:background="@drawable/selector_chat_right_qp_blue" android:paddingLeft="12.5dip" android:paddingRight="12.5dip" style="@style/chat_content_outroot_style">
+                <TextView android:textColor="@color/syc_dark_b" android:textColorLink="@color/syc_dark_b" android:id="@id/tv_message" android:layout_centerInParent="true" style="@style/chat_content_style" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <include layout="@layout/msg_include_avatar_right" />
+    </LinearLayout>
+    <TextView android:id="@id/tv_state" android:visibility="gone" android:layout_below="@id/msg_content_translate_root" style="@style/chat_send_state_style" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_msg_bottom_tips_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

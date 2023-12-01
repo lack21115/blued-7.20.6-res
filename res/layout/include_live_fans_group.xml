@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/shape_live_fans_group_item" android:layout_width="fill_parent" android:layout_height="92.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/cl_select_border" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0" app:cardBackgroundColor="@color/syc_dark_fef9ff" app:cardCornerRadius="12.0dip" app:cardElevation="0.0dip">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <View android:id="@id/view_select_border_coutent" android:background="@drawable/live_fans_group_item_select" android:layout_width="114.0dip" android:layout_height="92.0dip" android:layout_alignParentRight="true" />
+            <View android:background="@drawable/shape_live_fans_group_item_select" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <ImageView android:id="@id/iv_avatar" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/user_bg_round" android:layout_centerVertical="true" />
+    <TextView android:textSize="9.0sp" android:textColor="@color/syc_dark_583dff" android:gravity="center" android:id="@id/tv_fans_badge" android:background="@drawable/shape_live_fans_group_item_fans" android:layout_width="41.0dip" android:layout_height="15.0dip" android:layout_marginLeft="17.0dip" android:layout_marginTop="65.0dip" android:text="@string/live_fans_group" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="80.0dip" android:layout_toRightOf="@id/iv_avatar" android:layout_centerVertical="true">
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/syc_dark_0a0a0a" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我加入的第一个群名" android:maxLines="1" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/syc_dark_767676" android:ellipsize="end" android:id="@id/tv_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="欢迎加入xxxx（主播昵称）的粉丝群~" android:maxLines="2" android:layout_below="@id/tv_title" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/syc_dark_767676" android:id="@id/tv_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="20/50" android:maxLines="1" android:layout_below="@id/tv_subtitle" />
+    </RelativeLayout>
+</RelativeLayout>

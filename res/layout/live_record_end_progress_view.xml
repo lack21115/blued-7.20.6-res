@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="10.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/record_current_ex_tip" android:background="@drawable/live_record_this_ex_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="13.0sp" android:textColor="@color/nafio_f" android:layout_gravity="bottom" android:id="@id/record_current_level" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <FrameLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="8.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="4.0dip" android:layout_weight="1.0">
+            <ProgressBar android:id="@id/record_end_progress" android:layout_width="fill_parent" android:layout_height="fill_parent" android:progressDrawable="@drawable/live_record_end_progress" style="?android:progressBarStyleHorizontal" />
+            <ImageView android:id="@id/record_current_ex_progress" android:background="@drawable/live_this_ex_progress" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <TextView android:textSize="13.0sp" android:textColor="@color/syc_g" android:layout_gravity="bottom" android:id="@id/record_next_level" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

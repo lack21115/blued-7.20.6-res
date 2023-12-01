@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clipChildren="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SurfaceView android:layout_gravity="center" android:id="@id/mo_scanner_preview_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/capture_crop_view" android:background="@drawable/scan_backrand" android:layout_width="248.0dip" android:layout_height="248.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <ImageView android:id="@id/capture_scan_line" android:background="@drawable/scan_line" android:layout_width="248.0dip" android:layout_height="248.0dip" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <View android:background="#b2000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/capture_crop_view" />
+    <View android:background="#b2000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/capture_crop_view" />
+    <View android:background="#b2000000" android:layout_width="fill_parent" android:layout_height="248.0dip" android:layout_toLeftOf="@id/capture_crop_view" android:layout_centerVertical="true" />
+    <View android:background="#b2000000" android:layout_width="fill_parent" android:layout_height="248.0dip" android:layout_toRightOf="@id/capture_crop_view" android:layout_centerVertical="true" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/syc_dark_b" android:gravity="center_horizontal" android:id="@id/tv_start_scan" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/qr_scan_info" android:layout_below="@id/capture_crop_view" />
+    <Button android:textSize="16.0sp" android:textColor="@color/syc_a" android:gravity="center_horizontal" android:id="@id/my_qrcode" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="@string/my_qr" android:layout_below="@id/tv_start_scan" />
+    <RelativeLayout android:gravity="center_vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/mo_scanner_back" android:paddingLeft="11.5dip" android:layout_width="wrap_content" android:layout_height="40.0dip" android:src="@drawable/icon_title_back_white" android:layout_alignParentLeft="true" />
+        <ImageView android:gravity="center" android:id="@id/mo_scanner_light" android:layout_width="wrap_content" android:layout_height="40.0dip" android:src="@drawable/icon_scan_flashlight_on" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/syc_dark_b" android:gravity="center" android:id="@id/mo_scanner_photo" android:background="@color/transparent" android:paddingRight="11.5dip" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="@string/qr_album" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="251.0dip" android:layout_height="251.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/scan_top_right" android:layout_alignParentRight="true" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/scan_top_left" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/scan_btm_left" android:layout_alignParentBottom="true" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/scan_btm_right" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cons" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.framework.view.shape.ShapeLinearLayout android:gravity="center_horizontal" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/ll_select_cover" android:layout_width="fill_parent" android:layout_height="@dimen/dp_300" app:solid_color="@color/syc_1B1B1B" app:top_left_radius="@dimen/dp_12" app:top_right_radius="@dimen/dp_12">
+        <TextView android:textSize="16.0sp" android:textColor="@color/syc_EAEAEA" android:gravity="center" android:layout_width="fill_parent" android:layout_height="@dimen/dp_44" android:text="@string/yy_create_room_up_cover" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/syc_EAEAEA" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:text="@string/yy_create_room_select_cover_mess" />
+        <com.blued.android.framework.view.shape.ShapeLinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/sll_add_cover" android:layout_width="@dimen/dp_100" android:layout_height="@dimen/dp_116" android:layout_marginTop="@dimen/dp_20" app:corner_radius="@dimen/dp_6" app:solid_color="@color/syc_272727">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_yy_add_wish" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/syc_dark_8a8a8a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_17" android:text="@string/yy_click_up_cover" />
+        </com.blued.android.framework.view.shape.ShapeLinearLayout>
+        <com.blued.android.framework.view.shape.ShapeRelativeLayout android:gravity="center" android:orientation="vertical" android:id="@id/sll_cover" android:visibility="gone" android:layout_width="@dimen/dp_100" android:layout_height="@dimen/dp_116" android:layout_marginTop="@dimen/dp_20" app:corner_radius="@dimen/dp_6" app:solid_color="@color/syc_272727">
+            <ImageView android:id="@id/iv_cover" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+            <ImageView android:id="@id/iv_up_cover_close" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:layout_margin="@dimen/dp_4" android:src="@drawable/icon_yy_create_room_up_cover_close" android:layout_alignParentRight="true" />
+        </com.blued.android.framework.view.shape.ShapeRelativeLayout>
+        <com.blued.android.framework.view.shape.ShapeTextView android:textSize="16.0sp" android:textColor="@color/color_ffffffff" android:gravity="center" android:id="@id/tv_up_cover_qd" android:layout_width="@dimen/dp_245" android:layout_height="@dimen/dp_45" android:layout_marginTop="@dimen/dp_31" android:text="@string/yy_create_room_qd" app:corner_radius="@dimen/dp_23" app:gradient_end_color="@color/syc_3883FD" app:gradient_start_color="@color/syc_00E0AB" />
+    </com.blued.android.framework.view.shape.ShapeLinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cons" android:layout_width="@dimen/dp_164" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.framework.view.shape.ShapeLinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/tv_music_pro_style" android:layout_width="wrap_content" android:layout_height="@dimen/dp_20" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.blued.android.module.yy_china.view.YYKtvPro2View android:id="@id/yy_pro" android:layout_width="@dimen/dp_36" android:layout_height="@dimen/dp_125" android:layout_marginTop="@dimen/dp_4" app:is_ktv_giftormusic="true" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_music_pro_style" />
+    <TextView android:textColor="@color/white" android:gravity="left" android:id="@id/tv_add_ktv_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="0.0" app:layout_constraintRight_toLeftOf="@id/yy_pro" app:layout_constraintTop_toTopOf="@id/yy_pro" />
+    <TextView android:textSize="11.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_ktv_num" android:background="@drawable/bg_ktv_gift_pro_num" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_17" android:layout_marginRight="-10.0dip" app:layout_constraintRight_toLeftOf="@id/yy_pro" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

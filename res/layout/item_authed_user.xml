@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.blued.android.framework.view.SlideView android:id="@id/sv_slide_item" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <include layout="@layout/item_privacy_album" />
+            <TextView android:textSize="17.0dip" android:textColor="@color/syc_dark_b" android:gravity="center" android:id="@id/tv_item_button" android:background="@color/sara_g" android:layout_width="67.0dip" android:layout_height="87.5dip" android:text="@string/remove" />
+        </LinearLayout>
+    </com.blued.android.framework.view.SlideView>
+    <TextView android:id="@id/tv_cover_transparent" android:background="#7dffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="87.5dip" />
+</FrameLayout>

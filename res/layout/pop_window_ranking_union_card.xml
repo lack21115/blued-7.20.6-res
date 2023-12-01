@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.card.MaterialCardView android:id="@id/cv_tabbar_root" android:layout_width="wrap_content" android:layout_height="@dimen/dp_26" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:layout_centerHorizontal="true" app:cardBackgroundColor="@color/syc_dark_19777777" app:cardCornerRadius="13.0dip" app:cardElevation="0.0px" app:strokeColor="@color/white" app:strokeWidth="1.0px">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="26.0dip" app:cardBackgroundColor="@color/transparent" app:cardCornerRadius="13.0dip" app:cardElevation="0.0px">
+                <com.blued.android.framework.view.shape.ShapeTextView android:layout_gravity="center_vertical" android:id="@id/view_cursor" android:layout_width="93.0dip" android:layout_height="26.0dip" app:corner_radius="13.0dip" app:solid_color="@color/syc_dark_222222" />
+            </androidx.cardview.widget.CardView>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_tab_top_road" android:layout_width="93.0dip" android:layout_height="fill_parent" android:text="@string/live_union_rank" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_tab_potential_road" android:layout_width="93.0dip" android:layout_height="fill_parent" android:text="@string/live_union_high_ladder" />
+            </LinearLayout>
+        </FrameLayout>
+    </com.google.android.material.card.MaterialCardView>
+    <ImageView android:id="@id/iv_question" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" android:layout_marginTop="3.0dip" android:layout_marginRight="@dimen/dp_7" android:layout_alignTop="@id/cv_tabbar_root" android:layout_alignParentEnd="true" />
+    <com.blued.android.module.common.view.CustomViewPager android:id="@id/live_hour_viewpager" android:layout_below="@id/cv_tabbar_root" style="@style/layout_fill" />
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="100" android:drawable="@drawable/sign_feed_avatar_mask_00" />
+    <item android:duration="100" android:drawable="@drawable/sign_feed_avatar_mask_01" />
+    <item android:duration="100" android:drawable="@drawable/sign_feed_avatar_mask_02" />
+    <item android:duration="100" android:drawable="@drawable/sign_feed_avatar_mask_03" />
+    <item android:duration="100" android:drawable="@drawable/sign_feed_avatar_mask_04" />
+    <item android:duration="100" android:drawable="@drawable/sign_feed_avatar_mask_05" />
+    <item android:duration="100" android:drawable="@drawable/sign_feed_avatar_mask_06" />
+    <item android:duration="100" android:drawable="@drawable/sign_feed_avatar_mask_07" />
+    <item android:duration="100" android:drawable="@drawable/sign_feed_avatar_mask_08" />
+    <item android:duration="100" android:drawable="@drawable/sign_feed_avatar_mask_09" />
+    <item android:duration="100" android:drawable="@drawable/sign_feed_avatar_mask_10" />
+    <item android:duration="100" android:drawable="@drawable/sign_feed_avatar_mask_11" />
+    <item android:duration="100" android:drawable="@drawable/sign_feed_avatar_mask_12" />
+    <item android:duration="100" android:drawable="@drawable/sign_feed_avatar_mask_13" />
+    <item android:duration="100" android:drawable="@drawable/sign_feed_avatar_mask_14" />
+    <item android:duration="100" android:drawable="@drawable/sign_feed_avatar_mask_15" />
+    <item android:duration="100" android:drawable="@drawable/sign_feed_avatar_mask_16" />
+    <item android:duration="100" android:drawable="@drawable/sign_feed_avatar_mask_17" />
+    <item android:duration="100" android:drawable="@drawable/sign_feed_avatar_mask_18" />
+    <item android:duration="100" android:drawable="@drawable/sign_feed_avatar_mask_19" />
+</animation-list>

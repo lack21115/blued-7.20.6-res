@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/syc_dark_b" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_title" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="@color/syc_2A2A2E" android:id="@id/tv_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="@string/cancel" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_center_view" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true">
+            <TextView android:textSize="16.0sp" android:textColor="@color/syc_2A2A2E" android:id="@id/tv_folder_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_album" />
+            <ImageView android:id="@id/iv_arrow" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="16.0dip" android:src="@drawable/media_arrow_down_icon" />
+        </LinearLayout>
+    </RelativeLayout>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@id/refresh_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/rl_title">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_photos" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <LinearLayout android:orientation="vertical" android:id="@id/no_data_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="164.0dip">
+                <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_no_data_posted" />
+                <TextView android:textSize="@dimen/sp_14" android:textColor="@color/syc_dark_h" android:layout_gravity="center" android:id="@id/no_data_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/live_no_data" />
+                <TextView android:textSize="@dimen/sp_16" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/no_data_retry" android:background="@drawable/shape_live_make_friend_btn" android:visibility="gone" android:layout_width="135.0dip" android:layout_height="42.0dip" android:layout_marginTop="20.0dip" android:text="@string/claw_game_try_again" />
+            </LinearLayout>
+        </FrameLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    <com.blued.android.module.live_china.view.LiveListView android:id="@id/folder_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@null" android:dividerHeight="0.0dip" android:layout_below="@id/rl_title" />
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/shape_frame_edit_gray" android:layout_width="fill_parent" android:layout_height="120.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@color/nafio_k" android:layout_marginTop="30.0dip" android:text="@string/msg_item_filter_bottom_tv" android:layout_centerHorizontal="true" style="@style/layout_wrap_content" />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/dp_60"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.imageview.ShapeableImageView android:id="@id/iv_drawer_img" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:src="@drawable/user_bg_round" android:layout_centerVertical="true" app:shapeAppearanceOverlay="@style/circleImageStyle" />
+    <ImageView android:id="@id/iv_prize_img" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:src="@drawable/gift_default_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_marginRight="@dimen/dp_10" android:layout_toLeftOf="@id/iv_prize_img" android:layout_toRightOf="@id/iv_drawer_img" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/sp_15" android:textColor="@color/syc_dark_b" android:ellipsize="end" android:id="@id/tv_drawer_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="依菲美" android:maxLines="1" android:singleLine="true" android:includeFontPadding="false" />
+        <TextView android:textSize="@dimen/sp_12" android:textColor="@color/syc_dark_b" android:ellipsize="end" android:id="@id/tv_open_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_6" android:text="16:22:22" android:maxLines="1" android:singleLine="true" android:includeFontPadding="false" android:alpha="0.5" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.module.yy_china.view.YYBaseUserHeadView android:id="@id/user_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:head_ani_img_width="@dimen/dp_42" app:head_us_img_width="@dimen/dp_30" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.blued.android.framework.view.shape.ShapeTextView android:textSize="@dimen/sp_9" android:textColor="@color/syc_ffffff" android:ellipsize="end" android:gravity="center" android:id="@id/tv_user_name" android:layout_width="@dimen/dp_26" android:layout_height="@dimen/dp_14" android:maxWidth="@dimen/dp_87" android:text="本房" android:maxLines="1" android:singleLine="true" android:includeFontPadding="false" app:corner_radius="@dimen/dp_7" app:layout_constraintLeft_toLeftOf="@id/user_view" app:layout_constraintRight_toRightOf="@id/user_view" app:layout_constraintTop_toBottomOf="@id/user_view" app:solid_color="@color/syc_3883FD" />
+</androidx.constraintlayout.widget.ConstraintLayout>

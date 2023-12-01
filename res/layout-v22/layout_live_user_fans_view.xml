@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_gravity="end|center" android:paddingRight="6.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="6.0dip">
+        <FrameLayout android:id="@id/fl_follow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.blued.android.framework.view.shape.ShapeTextView android:textSize="12.0dip" android:textColor="@color/syc_dark_b" android:gravity="center" android:id="@id/live_follow_btn" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:visibility="visible" android:layout_width="40.0dip" android:layout_height="25.0dip" android:text="@string/live_reward_follow" android:lines="1" android:layout_centerInParent="true" android:paddingHorizontal="3.0dip" app:corner_radius="50.0dip" app:gradient_end_color="@color/syc_dark_ff3aaa" app:gradient_start_color="@color/syc_dark_922cee" />
+            <ImageView android:id="@id/live_add_follow_overshoot_bg" android:layout_width="fill_parent" android:layout_height="25.0dip" />
+        </FrameLayout>
+        <com.blued.android.framework.view.shape.ShapeFrameLayout android:id="@id/fl_live_fans" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="25.0dip" app:corner_radius="100.0dip" app:solid_color="@color/syc_26F5A300">
+            <ImageView android:id="@id/img_live_fans_star" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ImageView android:layout_gravity="center" android:id="@id/img_live_fans_heart_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:layout_gravity="center" android:id="@id/live_fans_start" android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_marginLeft="0.5dip" />
+            <com.blued.android.framework.view.shape.ShapeTextView android:layout_gravity="end" android:id="@id/live_fans_dot_tips" android:visibility="gone" android:layout_width="6.0dip" android:layout_height="6.0dip" app:corner_radius="@dimen/dp_100" app:solid_color="@color/syc_dark_FF2A2A" app:stroke_color="@color/white" app:stroke_width="0.5dip" />
+        </com.blued.android.framework.view.shape.ShapeFrameLayout>
+    </RelativeLayout>
+</FrameLayout>

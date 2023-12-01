@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.blued.android.framework.view.shape.ShapeLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" app:solid_color="@color/syc_b" app:top_left_radius="12.0dip" app:top_right_radius="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0sp" android:textColor="@color/syc_h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="18.0dip" android:layout_marginBottom="6.0dip" android:text="@string/user_also_like" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/syc_j" android:id="@id/tv_recommend_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="6.0dip" android:text="@string/user_see_more" android:drawableRight="@drawable/beans_pre_pay_right_arrow" android:drawablePadding="2.0dip" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recommend_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:layout_marginBottom="18.0dip" />
+</com.blued.android.framework.view.shape.ShapeLinearLayout>

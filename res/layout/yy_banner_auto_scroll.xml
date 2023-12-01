@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/yy_banner_hot_parent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.blued.android.module.common.view.AutoScrollViewPager android:id="@id/yy_banner_hot_new" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintDimensionRatio="H,750:180" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <com.blued.android.module.common.view.LinePageIndicator android:layout_gravity="bottom" android:id="@id/yy_lpi_line" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" app:centered="true" app:gapWidth="3.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:lineHeight="4.0dip" app:lineWidth="4.0dip" app:roundRadius="2.0dip" app:selectedColor="@color/sara_f" app:selectedLineWidth="14.0dip" app:strokeWidth="4.0dip" app:unselectedColor="#73ffffff" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

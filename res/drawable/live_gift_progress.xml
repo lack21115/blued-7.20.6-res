@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape>
+            <solid android:color="#26ffffff" />
+            <corners android:radius="2.0dip" />
+        </shape>
+    </item>
+    <item android:id="@android:id/secondaryProgress">
+        <scale android:drawable="@drawable/live_gift_second_progress_primary" android:scaleWidth="98%" />
+    </item>
+    <item android:id="@android:id/progress">
+        <scale android:drawable="@drawable/live_gift_progress_primary" android:scaleWidth="98%" />
+    </item>
+</layer-list>

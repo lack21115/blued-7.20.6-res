@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/emotion_mall_title" android:layout_width="fill_parent" android:layout_height="wrap_content" app:center_text="@string/emotion_mall" />
+    <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_margin="12.0dip" app:cardBackgroundColor="@color/syc_x" app:cardCornerRadius="12.0dip" app:cardElevation="0.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="2.0dip">
+            <androidx.cardview.widget.CardView android:id="@id/emotion_mall_tab_mall" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" app:cardBackgroundColor="@color/syc_y" app:cardCornerRadius="10.0dip" app:cardElevation="0.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="@color/syc_h" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/emotion_mall" />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:id="@id/emotion_mall_tab_mine" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" app:cardBackgroundColor="@color/syc_y" app:cardCornerRadius="10.0dip" app:cardElevation="0.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="@color/syc_h" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/emotion_mine" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.viewpager.widget.ViewPager android:id="@id/base_view_pager_id" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" />
+</LinearLayout>

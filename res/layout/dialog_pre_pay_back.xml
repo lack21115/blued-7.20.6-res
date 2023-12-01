@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="@dimen/dp_325" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_con" android:background="@drawable/bg_yy_pre_pay_back" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.blued.android.framework.view.shape.ShapeLinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="@dimen/dp_275" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_158" android:layout_centerHorizontal="true" app:corner_radius="@dimen/dp_12">
+            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_20" android:layout_marginRight="@dimen/dp_20" />
+            <com.blued.android.framework.view.shape.ShapeLinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="@dimen/dp_260" android:layout_height="@dimen/dp_110" android:layout_marginTop="@dimen/dp_10" app:corner_radius="@dimen/dp_12" app:solid_color="@color/white">
+                <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center" android:id="@id/rcv" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+            </com.blued.android.framework.view.shape.ShapeLinearLayout>
+            <com.blued.android.framework.view.shape.ShapeTextView android:textSize="16.0sp" android:textColor="@color/syc_FF3E4F" android:gravity="center" android:id="@id/tv_pre_pay" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="@dimen/dp_235" android:layout_height="@dimen/dp_44" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:text="@string/yy_pay_toing" app:corner_radius="28.0dip" app:gradient_end_color="@color/syc_F6D47E" app:gradient_start_color="@color/syc_FEF5C2" />
+        </com.blued.android.framework.view.shape.ShapeLinearLayout>
+    </RelativeLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_26" android:src="@drawable/icon_close_yy_guide" android:layout_below="@id/rl_con" />
+</LinearLayout>

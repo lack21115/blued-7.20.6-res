@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_con" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.blued.android.framework.view.shape.ShapeLinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="@dimen/dp_275" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_18" app:corner_radius="@dimen/dp_12" app:solid_color="@color/syc_151515">
+            <TextView android:textSize="14.0sp" android:textColor="#ffff3e4f" android:id="@id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_31" />
+            <com.blued.android.framework.view.shape.ShapeLinearLayout android:orientation="horizontal" android:layout_width="@dimen/dp_235" android:layout_height="@dimen/dp_115" android:layout_marginTop="@dimen/dp_10" app:corner_radius="@dimen/dp_6" app:solid_color="@color/color_1B1B1B">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <com.blued.android.module.common.view.SquareImageView android:id="@id/iv_gift_left" android:layout_width="@dimen/dp_50" android:layout_height="wrap_content" android:scaleType="centerInside" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/syc_EAEAEA" android:id="@id/tv_gift_left_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/syc_EAEAEA" android:id="@id/tv_gift_left_num" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <com.blued.android.module.common.view.SquareImageView android:id="@id/iv_gift_right" android:layout_width="@dimen/dp_50" android:layout_height="wrap_content" android:scaleType="centerInside" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/syc_EAEAEA" android:id="@id/tv_gift_right_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/syc_EAEAEA" android:id="@id/tv_gift_right_num" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </com.blued.android.framework.view.shape.ShapeLinearLayout>
+            <com.blued.android.framework.view.shape.ShapeTextView android:textSize="15.0sp" android:textColor="@color/syc_dark_b" android:gravity="center" android:id="@id/tv_pre_pay" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="@dimen/dp_235" android:layout_height="@dimen/dp_44" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:text="@string/yy_pay_toing" app:corner_radius="28.0dip" app:gradient_end_color="@color/syc_3883FD" app:gradient_start_color="@color/syc_00E0AB" />
+        </com.blued.android.framework.view.shape.ShapeLinearLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_yy_pre_pay_firstgift_title" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

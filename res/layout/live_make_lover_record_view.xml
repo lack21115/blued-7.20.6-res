@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/fl_make_lover_window_root" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/live_lover_windows_b" />
+    <include layout="@layout/live_lover_windows_c" />
+    <include layout="@layout/live_lover_windows_d" />
+    <include layout="@layout/live_lover_windows_e" />
+    <include layout="@layout/live_lover_windows_f" />
+    <ImageView android:id="@id/live_make_lover_host" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:src="@drawable/live_make_lover_host" />
+    <LinearLayout android:orientation="vertical" android:id="@id/fl_make_btn" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_re_start" android:layout_width="74.0dip" android:layout_height="24.0dip" android:src="@drawable/live_make_lover_re_start" android:scaleType="fitXY" />
+            <ImageView android:id="@id/iv_make_ok" android:layout_width="74.0dip" android:layout_height="24.0dip" android:src="@drawable/live_make_lover_make_gray" android:scaleType="fitXY" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

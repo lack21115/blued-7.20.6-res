@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.framework.view.shape.ShapeFrameLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" app:corner_radius="10.0dip" app:solid_color="@color/syc_dark_6B6B6E">
+        <com.blued.android.framework.view.shape.ShapeLinearLayout android:orientation="horizontal" android:id="@id/ll_it_all" android:layout_width="wrap_content" android:layout_height="wrap_content" app:corner_radius="10.0dip" app:solid_color="@color/syc_dark_010101">
+            <TextView android:textSize="14.0sp" android:textColor="@color/syc_dark_b" android:id="@id/tv_pin" android:paddingLeft="17.0dip" android:paddingTop="10.0dip" android:paddingRight="17.0dip" android:paddingBottom="10.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_pic_pin" />
+            <View android:background="@color/syc_dark_6B6B6E" android:layout_width="1.0px" android:layout_height="fill_parent" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/syc_dark_b" android:id="@id/tv_remove" android:paddingLeft="17.0dip" android:paddingTop="10.0dip" android:paddingRight="17.0dip" android:paddingBottom="10.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="1.0dip" android:text="@string/remove" />
+        </com.blued.android.framework.view.shape.ShapeLinearLayout>
+    </com.blued.android.framework.view.shape.ShapeFrameLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_arrow" android:layout_width="19.0dip" android:layout_height="10.0dip" android:src="@drawable/select_text_view_arrow" />
+</LinearLayout>

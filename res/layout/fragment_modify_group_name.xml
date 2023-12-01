@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" style="@style/layout_fill"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/top_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:padding="15.0dip" android:layout_marginTop="20.0dip" style="@style/layout_fill_wrap">
+        <EditText android:textColor="@color/black" android:textColorHint="@color/common_v4_gray_font" android:gravity="top" android:id="@id/et_group_name" android:background="@null" android:hint="@string/fillin_group_name" android:singleLine="true" style="@style/layout_fill" />
+        <LinearLayout android:gravity="right" style="@style/layout_fill_wrap">
+            <TextView android:textSize="16.0sp" android:textColor="@color/common_v4_blue_frame_font" android:id="@id/tv_word_count" style="@style/layout_wrap_content" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/common_v4_gray_font" android:id="@id/tv_word_total" android:text="/ 15" style="@style/layout_wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

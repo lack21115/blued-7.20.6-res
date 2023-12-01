@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/shape_raduis_tl_tr_12_151515" android:paddingTop="@dimen/dp_10" android:paddingBottom="@dimen/dp_16" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/sp_18" android:textColor="@color/syc_dark_b" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/yy_cp_select_like" />
+    <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center_horizontal" android:id="@id/rv_select_list" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_28" />
+</LinearLayout>

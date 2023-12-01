@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/syc_dark_h" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:background="@drawable/icon_yy_end_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/yy_end_title" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_end_close" android:padding="@dimen/dp_15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_yy_close" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/sp_18" android:textColor="@color/syc_dark_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yy_room_is_end" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <androidx.cardview.widget.CardView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_40" app:cardBackgroundColor="@color/transparent" app:cardCornerRadius="@dimen/dp_36" app:cardElevation="0.0dip">
+            <ImageView android:id="@id/img_view" android:layout_width="@dimen/dp_72" android:layout_height="@dimen/dp_72" android:src="@drawable/user_bg_round" />
+        </androidx.cardview.widget.CardView>
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/syc_dark_b" android:layout_gravity="center_horizontal" android:id="@id/tv_name_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_6" android:text="@string/yy_host_name" />
+        <com.blued.android.framework.view.shape.ShapeTextView android:textSize="@dimen/sp_12" android:textColor="@color/syc_dark_b" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_follow_view" android:layout_width="@dimen/dp_68" android:layout_height="@dimen/dp_25" android:layout_marginTop="@dimen/dp_10" android:text="@string/follow" app:corner_radius="@dimen/dp_13" app:gradient_angle="TL_BR" app:gradient_end_color="@color/syc_3883FD" app:gradient_start_color="@color/syc_00E0AB" />
+        <com.blued.android.module.yy_china.view.RankingView android:id="@id/ranking_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_24" android:layout_weight="1.0" />
+        <com.blued.android.framework.view.shape.ShapeTextView android:textSize="@dimen/sp_14" android:textColor="@color/syc_dark_b" android:gravity="center" android:id="@id/btn_to_activity_details" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dp_44" android:layout_marginLeft="@dimen/dp_23" android:layout_marginTop="@dimen/dp_15" android:layout_marginRight="@dimen/dp_23" android:layout_marginBottom="@dimen/dp_35" android:text="查看庆典小结" app:corner_radius="@dimen/dp_22" app:gradient_end_color="@color/syc_3883FD" app:gradient_start_color="@color/syc_00E0AB" />
+    </LinearLayout>
+</RelativeLayout>

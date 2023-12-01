@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="@dimen/dp_80" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="@dimen/dp_80" android:layout_height="fill_parent">
+        <com.blued.android.module.common.view.SquareImageView android:id="@id/iv_gift_left" android:layout_width="@dimen/dp_50" android:layout_height="wrap_content" android:scaleType="fitXY" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/syc_dark_222" android:ellipsize="end" android:id="@id/tv_gift_left_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:lines="1" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/syc_989898" android:id="@id/tv_gift_left_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" />
+    </LinearLayout>
+</RelativeLayout>

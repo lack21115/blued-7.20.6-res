@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/rootLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.framework.view.shape.ShapeLinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/layoutReadAuth" android:layout_width="fill_parent" android:layout_height="fill_parent" app:solid_color="@color/syc_b" app:top_left_radius="12.0dip" app:top_right_radius="12.0dip">
+        <com.blued.android.framework.view.shape.ShapeTextView android:layout_gravity="center" android:layout_width="33.0dip" android:layout_height="4.0dip" android:layout_marginTop="12.0dip" app:corner_radius="4.0dip" app:solid_color="@color/syc_x" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <ImageView android:id="@id/ivClose" android:padding="6.0dip" android:layout_width="34.0dip" android:layout_height="34.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/icon_title_close" android:scaleType="fitXY" />
+            <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/syc_a" android:id="@id/tvDone" android:padding="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/community_done" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip">
+            <ImageView android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginLeft="16.0sp" android:src="@drawable/feed_post_see" android:scaleType="fitXY" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/nafio_h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/feed_post_see" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/layoutSeeAll" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="@color/nafio_a" android:id="@id/tvSeeAll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="44.0dip" android:text="@string/feed_post_see_all" />
+            <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <ImageView android:id="@id/ivSeeAll" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginRight="24.0dip" android:src="@drawable/feed_post_select" />
+        </LinearLayout>
+        <View android:background="@color/syc_o_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" />
+        <LinearLayout android:gravity="center" android:id="@id/layoutSeeFans" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="@color/nafio_h" android:id="@id/tvSeeFans" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="44.0dip" android:text="@string/feed_post_see_fans" />
+            <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <ImageView android:id="@id/ivSeeFans" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginRight="24.0dip" android:src="@drawable/feed_post_select" />
+        </LinearLayout>
+        <View android:background="@color/syc_o_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" />
+        <LinearLayout android:gravity="center" android:id="@id/layoutSeeSelf" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="@color/nafio_h" android:id="@id/tvSeeSelf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="44.0dip" android:text="@string/feed_post_see_self" />
+            <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <ImageView android:id="@id/ivSeeSelf" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginRight="24.0dip" android:src="@drawable/feed_post_select" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/feed_post_auth_comment_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="8.0dip">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginLeft="16.0sp" android:src="@drawable/feed_post_comment" android:scaleType="fitXY" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/nafio_h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/feed_post_comment" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@id/layoutCommentAll" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <TextView android:textSize="15.0sp" android:textColor="@color/nafio_a" android:id="@id/tvCommentAll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="44.0dip" android:text="@string/feed_post_comment_all" />
+                <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                <ImageView android:id="@id/ivCommentAll" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginRight="24.0dip" android:src="@drawable/feed_post_select" />
+            </LinearLayout>
+            <View android:background="@color/syc_o_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" />
+            <LinearLayout android:gravity="center" android:id="@id/layoutCommentFollowFans" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <TextView android:textSize="15.0sp" android:textColor="@color/nafio_h" android:id="@id/tvCommentFollowFans" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="44.0dip" android:text="@string/feed_post_comment_follow_fans" />
+                <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                <ImageView android:id="@id/ivCommentFollowFans" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginRight="24.0dip" android:src="@drawable/feed_post_select" />
+            </LinearLayout>
+            <View android:background="@color/syc_o_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" />
+            <LinearLayout android:gravity="center" android:id="@id/layoutCommentFollow" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <TextView android:textSize="15.0sp" android:textColor="@color/nafio_h" android:id="@id/tvCommentFollow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="44.0dip" android:text="@string/feed_post_comment_follow" />
+                <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                <ImageView android:id="@id/ivCommentFollow" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginRight="24.0dip" android:src="@drawable/feed_post_select" />
+            </LinearLayout>
+            <View android:background="@color/syc_o_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" />
+            <LinearLayout android:gravity="center" android:id="@id/layoutCommentFans" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <TextView android:textSize="15.0sp" android:textColor="@color/nafio_h" android:id="@id/tvCommentFans" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="44.0dip" android:text="@string/feed_post_comment_fans" />
+                <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                <ImageView android:id="@id/ivCommentFans" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginRight="24.0dip" android:src="@drawable/feed_post_select" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.blued.android.framework.view.shape.ShapeLinearLayout>
+</FrameLayout>

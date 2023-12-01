@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/empty_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <com.blued.android.framework.view.shape.ShapeFrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:solid_color="@color/syc_dark_b" app:top_left_radius="15.0dip" app:top_right_radius="15.0dip">
+        <ImageView android:layout_gravity="right" android:id="@id/iv_close" android:padding="18.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_live_close" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@color/syc_dark_1e1f23" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/live_record_complete" />
+            <androidx.cardview.widget.CardView android:layout_gravity="center_horizontal" android:layout_width="122.0dip" android:layout_height="218.0dip" android:layout_marginTop="20.0dip" app:cardCornerRadius="6.0dip">
+                <TextureView android:id="@id/texture_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <ImageView android:id="@id/iv_pic" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+                <ImageView android:layout_gravity="center" android:id="@id/iv_start" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/live_record_play_start" />
+            </androidx.cardview.widget.CardView>
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:layout_marginBottom="22.0dip">
+                <com.blued.android.framework.view.shape.ShapeTextView android:textSize="16.0sp" android:textColor="@color/syc_dark_b" android:gravity="center" android:id="@id/bt_save" android:layout_width="0.0dip" android:layout_height="44.0dip" android:text="@string/live_record_album" android:layout_weight="1.0" app:corner_radius="44.0dip" app:gradient_end_color="@color/syc_dark_ff3aaa" app:gradient_start_color="@color/syc_dark_922cee" />
+                <com.blued.android.framework.view.shape.ShapeTextView android:textSize="16.0sp" android:textColor="@color/syc_dark_b" android:gravity="center" android:id="@id/bt_share" android:layout_width="0.0dip" android:layout_height="44.0dip" android:layout_marginLeft="19.0dip" android:text="@string/live_record_to_share" android:layout_weight="1.0" app:corner_radius="44.0dip" app:gradient_end_color="@color/syc_dark_ff3aaa" app:gradient_start_color="@color/syc_dark_922cee" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.blued.android.framework.view.shape.ShapeFrameLayout>
+</LinearLayout>

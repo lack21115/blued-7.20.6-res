@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/layout" android:background="@color/black_alpha51" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.framework.view.shape.ShapeLinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/layout_read_auth" android:layout_width="fill_parent" android:layout_height="480.0dip" app:solid_color="@color/syc_b" app:top_left_radius="20.0dip" app:top_right_radius="20.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="54.0dip">
+            <ImageView android:id="@id/iv_close" android:padding="6.0dip" android:layout_width="34.0dip" android:layout_height="34.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/icon_title_close" android:scaleType="fitXY" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/syc_h" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/mine_setting" android:layout_weight="1.0" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/syc_a" android:id="@id/tv_done" android:padding="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/submit" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" style="@style/setting_info_item_ll_privacy">
+                <TextView android:layout_width="wrap_content" android:layout_height="56.0dip" android:text="@string/hide_online_status" style="@style/setting_info_item_tv_no_icon" />
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/icon_vip" />
+                <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                <ToggleButton android:layout_gravity="center" android:id="@id/tglbtn_last_operate_onoff" android:textOn="" android:textOff="" style="@style/toggle_button" />
+            </LinearLayout>
+            <TextView android:text="@string/hide_online_status_tip" style="@style/common_setting_hint_text_gray" />
+            <LinearLayout android:orientation="horizontal" style="@style/setting_info_item_ll_privacy">
+                <TextView android:layout_width="wrap_content" android:text="@string/hide_distance" style="@style/setting_info_item_tv_no_icon" />
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/icon_vip" />
+                <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                <ToggleButton android:layout_gravity="center" android:id="@id/tglbtn_distance_onoff" android:textOn="" android:textOff="" style="@style/toggle_button" />
+            </LinearLayout>
+            <TextView android:text="@string/hide_distance_tip" style="@style/common_setting_hint_text_gray" />
+        </LinearLayout>
+    </com.blued.android.framework.view.shape.ShapeLinearLayout>
+</FrameLayout>

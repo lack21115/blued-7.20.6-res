@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/feed_user_info" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center|right|top" android:id="@id/feed_dynamic_skin" android:layout_width="166.0dip" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="62.0dip" android:layout_height="62.0dip">
+            <androidx.cardview.widget.CardView android:layout_gravity="center" android:id="@id/header_view_card" android:layout_width="38.0dip" android:layout_height="38.0dip" app:cardCornerRadius="38.0dip" app:cardElevation="0.0dip">
+                <ImageView android:id="@id/header_view" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/app_name" />
+            </androidx.cardview.widget.CardView>
+            <ImageView android:layout_gravity="center" android:id="@id/img_live" android:visibility="gone" android:layout_width="44.0dip" android:layout_height="44.0dip" />
+            <ImageView android:layout_gravity="bottom|center|right" android:id="@id/img_verify" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="12.0dip" android:contentDescription="@string/imagefailed_exception" />
+            <ImageView android:layout_gravity="bottom|center|right" android:id="@id/img_online" android:visibility="gone" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="12.0dip" />
+            <ImageView android:id="@id/iv_avatar_widget" android:layout_width="49.0dip" android:layout_height="52.0dip" android:layout_marginTop="3.0dip" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+            <com.blued.android.module.common.view.EllipsizeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0sp" android:textColor="@color/syc_h" android:ellipsize="end" android:id="@id/name_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+                <ImageView android:id="@id/img_anonymous" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginLeft="4.0dip" android:src="@drawable/anonymous_icon" android:scaleType="fitXY" />
+                <ImageView android:id="@id/img_name_verify" android:visibility="gone" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="4.0dip" android:scaleType="fitXY" />
+                <ImageView android:id="@id/img_blued_medal" style="@style/blued_vip_icon" />
+            </com.blued.android.module.common.view.EllipsizeLayout>
+            <com.blued.android.module.common.view.EllipsizeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_distance_and_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+                <TextView android:textSize="12.0sp" android:textColor="@color/syc_k" android:ellipsize="end" android:id="@id/tv_user_kol" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:maxLines="1" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/syc_k" android:id="@id/tv_feed_recommend_source" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:maxLines="1" />
+                <com.blued.android.framework.view.shape.ShapeFrameLayout android:id="@id/dot_icon_recommend" android:layout_width="2.0dip" android:layout_height="2.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="3.0dip" android:layout_marginBottom="3.0dip" app:corner_radius="2.0dip" app:solid_color="@color/syc_k" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/syc_k" android:id="@id/distance_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:maxLines="1" />
+                <com.blued.android.framework.view.shape.ShapeFrameLayout android:id="@id/dot_icon_distance" android:layout_width="2.0dip" android:layout_height="2.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="3.0dip" android:layout_marginBottom="3.0dip" app:corner_radius="2.0dip" app:solid_color="@color/syc_k" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/syc_k" android:id="@id/time_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:maxLines="1" />
+                <com.blued.android.framework.view.shape.ShapeFrameLayout android:id="@id/dot_age_height_weight" android:visibility="gone" android:layout_width="2.0dip" android:layout_height="2.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="3.0dip" android:layout_marginBottom="3.0dip" app:corner_radius="2.0dip" app:solid_color="@color/syc_k" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/syc_k" android:id="@id/tv_age_height_weight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.5dip" android:maxLines="1" />
+                <TextView android:textSize="8.0sp" android:textColor="@color/syc_a" android:gravity="center" android:id="@id/item_feed_sign_new_face" android:background="@drawable/gradient_feed_sign_new_face_bg" android:visibility="gone" android:layout_width="33.0dip" android:layout_height="12.0dip" android:text="@string/feed_list_item_new_face" android:includeFontPadding="false" />
+            </com.blued.android.module.common.view.EllipsizeLayout>
+        </LinearLayout>
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="12.0dip">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_ad_option" android:background="@drawable/shape_round_dark_gray" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="21.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="3.0dip">
+                <TextView android:textSize="12.0sp" android:textColor="@color/nafio_i" android:id="@id/tv_feed_ad" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:id="@id/img_feed_ad_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="0.5dip" android:src="@drawable/icon_feed_arrow_down" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center|right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.blued.android.module.common.user.view.FollowStatusView android:id="@id/follow_status_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/img_feed_sticky" android:visibility="gone" android:layout_width="35.0dip" android:layout_height="15.0dip" android:layout_marginRight="2.0dip" android:src="@drawable/icon_feed_sticky" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/ll_read_num" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:layout_marginEnd="10.0dip">
+                    <com.blued.android.framework.view.shape.ShapeLinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_read" android:layout_width="60.0dip" android:layout_height="37.0dip" app:bottom_left_radius="4.0dip" app:solid_color="@color/syc_x" app:top_left_radius="4.0dip">
+                        <TextView android:textSize="11.0sp" android:textColor="@color/syc_h" android:id="@id/tv_read_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+                        <TextView android:textSize="11.0sp" android:textColor="@color/syc_h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/feed_views" />
+                    </com.blued.android.framework.view.shape.ShapeLinearLayout>
+                    <ImageView android:id="@id/iv_read_extend" android:layout_width="18.0dip" android:layout_height="37.0dip" android:src="@drawable/feed_icon_extend" android:scaleType="fitXY" />
+                </LinearLayout>
+                <ImageView android:id="@id/menu_view" android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@drawable/feed_list_icon_more" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

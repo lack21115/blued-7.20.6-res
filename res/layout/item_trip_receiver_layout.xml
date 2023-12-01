@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/item_root_view" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/ll_portrait_layout" android:layout_width="@dimen/dp_38" android:layout_height="@dimen/dp_38" android:layout_marginTop="@dimen/dp_6" app:cardBackgroundColor="@color/white" app:cardCornerRadius="@dimen/dp_19" app:cardElevation="0.0dip" app:contentPadding="@dimen/dp_1" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:id="@id/img_receiver_portrait" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    </androidx.cardview.widget.CardView>
+    <ImageView android:id="@id/img_checked_symbol" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" android:layout_marginLeft="@dimen/dp_24" android:src="@drawable/yy_trip_user_checked" app:layout_constraintLeft_toLeftOf="@id/ll_portrait_layout" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/sp_11" android:textColor="@color/syc_dark_000000" android:id="@id/tv_role_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_9" android:text="房主" app:layout_constraintLeft_toLeftOf="@id/ll_portrait_layout" app:layout_constraintRight_toRightOf="@id/ll_portrait_layout" app:layout_constraintTop_toBottomOf="@id/ll_portrait_layout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

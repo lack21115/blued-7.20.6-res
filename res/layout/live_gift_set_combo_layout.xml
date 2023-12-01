@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="bottom|center" android:id="@id/live_gift_combo_btn_layout" android:layout_width="fill_parent" android:layout_height="100.0dip">
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_gift_set_combo_btn_shadow" />
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_gift_set_combo_btn_bg" />
+        <ImageView android:layout_gravity="center" android:id="@id/live_gift_combo_btn_click_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_gift_set_combo_btn_click_bg" />
+        <com.blued.android.module.common.view.CircleProgressView android:layout_gravity="center" android:id="@id/live_gift_combo_progress" android:layout_width="78.0dip" android:layout_height="78.0dip" />
+        <ImageView android:layout_gravity="center" android:id="@id/live_gift_combo_btn_mid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_gift_set_combo_btn_mid" />
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_gift_set_combo_icon" />
+        <TextView android:textSize="23.0sp" android:textColor="@color/syc_dark_b" android:layout_gravity="center" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+</FrameLayout>

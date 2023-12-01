@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:focusableInTouchMode="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/feed_bubble_state_content" android:background="@drawable/feed_bubble_profile_state_bg" android:layout_width="wrap_content" android:layout_height="44.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="24.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.5dip">
+            <ImageView android:id="@id/feed_bubble_state_iv" android:layout_width="18.0dip" android:layout_height="18.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/syc_dark_h" android:ellipsize="end" android:id="@id/feed_bubble_state_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:maxWidth="50.0dip" android:maxLines="1" android:includeFontPadding="false" />
+            <ImageView android:id="@id/feed_bubble_arrow_iv" android:visibility="gone" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginLeft="2.0dip" android:src="@drawable/feed_bubble_profile_arrow_anim" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/syc_dark_h" android:ellipsize="end" android:id="@id/feed_bubble_content_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:maxWidth="100.0dip" android:maxLines="1" android:includeFontPadding="false" />
+            <ImageView android:id="@id/feed_bubble_add_iv" android:visibility="gone" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="9.0dip" android:src="@drawable/feed_bubble_add_icon" />
+            <com.blued.android.framework.view.shape.ShapeFrameLayout android:id="@id/feed_bubble_guest_him_lo" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="24.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" app:corner_radius="12.0dip" app:gradient_angle="LEFT_RIGHT">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/feed_bubble_guest_him_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/feed_bubble_guest_him_icon" />
+                <TextView android:textAppearance="@style/TextAppearance.FontPath.Medium" android:textSize="11.0sp" android:textColor="@color/white" android:layout_gravity="center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7.5dip" android:text="@string/usercard_chat" android:includeFontPadding="false" />
+            </com.blued.android.framework.view.shape.ShapeFrameLayout>
+            <View android:id="@id/feed_bubble_space" android:background="@color/transparent" android:layout_width="5.0dip" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <View android:id="@id/feed_bubble_double_click_lo" android:background="@color/transparent" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <ImageView android:id="@id/feed_bubble_host_shine_iv" android:visibility="gone" android:layout_width="97.0dip" android:layout_height="46.0dip" android:src="@drawable/feed_bubble_host_shine_anim" />
+</FrameLayout>

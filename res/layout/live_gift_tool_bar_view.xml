@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/root_view" android:layout_width="wrap_content" android:layout_height="35.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/layout1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip">
+        <TextView android:textColor="@color/nafio_b" android:id="@id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" />
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/point1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:layout_marginTop="6.0dip" android:src="@drawable/icon_red_dot" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/layout2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip">
+        <TextView android:textColor="@color/nafio_b" android:id="@id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" />
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/point2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:layout_marginTop="6.0dip" android:src="@drawable/icon_red_dot" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/layout3" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="32.0dip" android:layout_marginRight="32.0dip" android:layout_weight="1.0">
+        <TextView android:textColor="@color/nafio_b" android:id="@id/text3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" />
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/point3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:layout_marginTop="6.0dip" android:src="@drawable/icon_red_dot" />
+    </FrameLayout>
+</LinearLayout>

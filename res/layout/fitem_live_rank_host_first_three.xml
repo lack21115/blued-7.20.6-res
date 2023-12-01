@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="228.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/iv_bg" android:layout_alignParentBottom="true">
+        <RelativeLayout android:layout_gravity="bottom" android:id="@id/rl_first_two_root" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_14" android:layout_weight="7.0">
+            <RelativeLayout android:id="@id/rl_first_two_avatar" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_above="@id/ll_first_two_name_root" android:layout_centerHorizontal="true">
+                <ImageView android:id="@id/iv_first_two_avatar" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/live_rank_hour_default_avatar" android:layout_centerInParent="true" />
+                <ImageView android:id="@id/iv_first_two_avatar_frame" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <RelativeLayout android:gravity="center" android:id="@id/rl_host_second_living" android:background="@drawable/rank_list_host_live_bg" android:visibility="gone" android:layout_width="52.0dip" android:layout_height="16.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+                    <ImageView android:id="@id/iv_first_two_live_icon" android:layout_width="11.0dip" android:layout_height="11.0dip" android:src="@drawable/rank_live_on_air_icon" android:layout_alignBottom="@id/tv_first_two_live_icon" />
+                    <TextView android:textSize="@dimen/sp_10" android:textColor="@color/white" android:id="@id/tv_first_two_live_icon" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="直播中" android:layout_toEndOf="@id/iv_first_two_live_icon" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <ImageView android:id="@id/iv_union_second_avatar" android:layout_width="74.0dip" android:layout_height="64.0dip" android:layout_above="@id/ll_first_two_name_root" android:layout_centerHorizontal="true" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_first_two_name_root" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_above="@id/ll_first_two_avatars_root" android:layout_centerHorizontal="true">
+                <ImageView android:id="@id/iv_first_two_top" android:layout_width="@dimen/dp_43" android:layout_height="@dimen/dp_19" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/tv_first_two_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_6" android:maxWidth="100.0dip" android:maxLines="1" android:includeFontPadding="false" android:textAlignment="center" />
+                <com.blued.android.module.live_china.view.MarqueeTextView android:textSize="11.0sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/tv_first_two_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_2" android:maxWidth="100.0dip" android:maxLines="1" android:includeFontPadding="false" android:alpha="0.8" android:textAlignment="center" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_first_two_avatars_root" android:layout_width="@dimen/dp_100" android:layout_height="@dimen/dp_32" android:layout_marginTop="8.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+                <RelativeLayout android:id="@id/rl_second_living0" android:layout_width="@dimen/dp_32" android:layout_height="@dimen/dp_32">
+                    <ImageView android:id="@id/iv_first_two_avatar0" android:layout_width="@dimen/dp_28" android:layout_height="@dimen/dp_28" android:layout_centerInParent="true" />
+                    <ImageView android:id="@id/iv_first_two_shadow0" android:layout_width="@dimen/dp_28" android:layout_height="@dimen/dp_28" android:src="@drawable/live_rank_small_icon_living_shadow" android:layout_centerInParent="true" />
+                    <ImageView android:id="@id/iv_first_two_bonus0" android:layout_width="@dimen/dp_10" android:layout_height="@dimen/dp_10" android:layout_alignBottom="@id/iv_first_two_shadow0" android:layout_centerHorizontal="true" />
+                    <ImageView android:id="@id/iv_first_two_frame0" android:layout_width="@dimen/dp_32" android:layout_height="@dimen/dp_32" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/rl_second_living1" android:layout_width="@dimen/dp_32" android:layout_height="@dimen/dp_32">
+                    <ImageView android:id="@id/iv_first_two_avatar1" android:layout_width="@dimen/dp_28" android:layout_height="@dimen/dp_28" android:layout_centerInParent="true" />
+                    <ImageView android:id="@id/iv_first_two_shadow1" android:layout_width="@dimen/dp_28" android:layout_height="@dimen/dp_28" android:src="@drawable/live_rank_small_icon_living_shadow" android:layout_centerInParent="true" />
+                    <ImageView android:id="@id/iv_first_two_bonus1" android:layout_width="@dimen/dp_10" android:layout_height="@dimen/dp_10" android:layout_alignBottom="@id/iv_first_two_shadow1" android:layout_centerHorizontal="true" />
+                    <ImageView android:id="@id/iv_first_two_frame1" android:layout_width="@dimen/dp_32" android:layout_height="@dimen/dp_32" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/rl_second_living2" android:layout_width="@dimen/dp_32" android:layout_height="@dimen/dp_32">
+                    <ImageView android:id="@id/iv_first_two_avatar2" android:layout_width="@dimen/dp_28" android:layout_height="@dimen/dp_28" android:layout_centerInParent="true" />
+                    <ImageView android:id="@id/iv_first_two_shadow2" android:layout_width="@dimen/dp_28" android:layout_height="@dimen/dp_28" android:src="@drawable/live_rank_small_icon_living_shadow" android:layout_centerInParent="true" />
+                    <ImageView android:id="@id/iv_first_two_bonus2" android:layout_width="@dimen/dp_10" android:layout_height="@dimen/dp_10" android:layout_alignBottom="@id/iv_first_two_shadow2" android:layout_centerHorizontal="true" />
+                    <ImageView android:id="@id/iv_first_two_frame2" android:layout_width="@dimen/dp_32" android:layout_height="@dimen/dp_32" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="bottom" android:id="@id/rl_first_one_root" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_14" android:layout_weight="7.0">
+            <RelativeLayout android:id="@id/rl_first_one_avatar" android:layout_width="86.0dip" android:layout_height="86.0dip" android:layout_above="@id/ll_first_one_name_root" android:layout_centerHorizontal="true">
+                <ImageView android:id="@id/iv_first_one_avatar" android:layout_width="66.0dip" android:layout_height="66.0dip" android:src="@drawable/live_rank_hour_default_avatar" android:layout_centerInParent="true" />
+                <ImageView android:id="@id/iv_first_one_avatar_frame" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <RelativeLayout android:gravity="center" android:id="@id/rl_host_first_living" android:background="@drawable/rank_list_host_live_bg" android:visibility="gone" android:layout_width="52.0dip" android:layout_height="16.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+                    <ImageView android:id="@id/iv_first_one_live_icon" android:layout_width="11.0dip" android:layout_height="11.0dip" android:src="@drawable/rank_live_on_air_icon" android:layout_alignBottom="@id/tv_first_one_live_icon" />
+                    <TextView android:textSize="@dimen/sp_10" android:textColor="@color/white" android:id="@id/tv_first_one_live_icon" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="直播中" android:layout_toEndOf="@id/iv_first_one_live_icon" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <ImageView android:id="@id/iv_union_first_avatar" android:layout_width="116.0dip" android:layout_height="100.0dip" android:layout_above="@id/ll_first_one_name_root" android:layout_centerHorizontal="true" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_first_one_name_root" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_above="@id/ll_first_one_avatars_root" android:layout_centerHorizontal="true">
+                <ImageView android:id="@id/iv_first_one_top" android:layout_width="@dimen/dp_54" android:layout_height="@dimen/dp_26" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/tv_first_one_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_6" android:maxWidth="100.0dip" android:maxLines="1" android:includeFontPadding="false" android:textAlignment="center" />
+                <com.blued.android.module.live_china.view.MarqueeTextView android:textSize="11.0sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/tv_first_one_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_2" android:maxWidth="100.0dip" android:maxLines="1" android:includeFontPadding="false" android:alpha="0.8" android:textAlignment="center" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_first_one_avatars_root" android:layout_width="@dimen/dp_100" android:layout_height="@dimen/dp_32" android:layout_marginTop="8.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+                <RelativeLayout android:id="@id/rl_first_living0" android:layout_width="@dimen/dp_32" android:layout_height="@dimen/dp_32">
+                    <ImageView android:id="@id/iv_first_one_avatar0" android:layout_width="@dimen/dp_28" android:layout_height="@dimen/dp_28" android:layout_centerInParent="true" />
+                    <ImageView android:id="@id/iv_first_one_shadow0" android:layout_width="@dimen/dp_28" android:layout_height="@dimen/dp_28" android:src="@drawable/live_rank_small_icon_living_shadow" android:layout_centerInParent="true" />
+                    <ImageView android:id="@id/iv_first_one_bonus0" android:layout_width="@dimen/dp_10" android:layout_height="@dimen/dp_10" android:layout_alignBottom="@id/iv_first_one_shadow0" android:layout_centerHorizontal="true" />
+                    <ImageView android:id="@id/iv_first_one_frame0" android:layout_width="@dimen/dp_32" android:layout_height="@dimen/dp_32" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/rl_first_living1" android:layout_width="@dimen/dp_32" android:layout_height="@dimen/dp_32">
+                    <ImageView android:id="@id/iv_first_one_avatar1" android:layout_width="@dimen/dp_28" android:layout_height="@dimen/dp_28" android:layout_centerInParent="true" />
+                    <ImageView android:id="@id/iv_first_one_shadow1" android:layout_width="@dimen/dp_28" android:layout_height="@dimen/dp_28" android:src="@drawable/live_rank_small_icon_living_shadow" android:layout_centerInParent="true" />
+                    <ImageView android:id="@id/iv_first_one_bonus1" android:layout_width="@dimen/dp_10" android:layout_height="@dimen/dp_10" android:layout_alignBottom="@id/iv_first_one_shadow1" android:layout_centerHorizontal="true" />
+                    <ImageView android:id="@id/iv_first_one_frame1" android:layout_width="@dimen/dp_32" android:layout_height="@dimen/dp_32" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/rl_first_living2" android:layout_width="@dimen/dp_32" android:layout_height="@dimen/dp_32">
+                    <ImageView android:id="@id/iv_first_one_avatar2" android:layout_width="@dimen/dp_28" android:layout_height="@dimen/dp_28" android:layout_centerInParent="true" />
+                    <ImageView android:id="@id/iv_first_one_shadow2" android:layout_width="@dimen/dp_28" android:layout_height="@dimen/dp_28" android:src="@drawable/live_rank_small_icon_living_shadow" android:layout_centerInParent="true" />
+                    <ImageView android:id="@id/iv_first_one_bonus2" android:layout_width="@dimen/dp_10" android:layout_height="@dimen/dp_10" android:layout_alignBottom="@id/iv_first_one_shadow2" android:layout_centerHorizontal="true" />
+                    <ImageView android:id="@id/iv_first_one_frame2" android:layout_width="@dimen/dp_32" android:layout_height="@dimen/dp_32" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="bottom" android:id="@id/rl_first_three_root" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_14" android:layout_weight="7.0">
+            <RelativeLayout android:id="@id/rl_first_three_avatar" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_above="@id/ll_first_three_name_root" android:layout_centerHorizontal="true">
+                <ImageView android:id="@id/iv_first_three_avatar" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/live_rank_hour_default_avatar" android:layout_centerInParent="true" />
+                <ImageView android:id="@id/iv_first_three_avatar_frame" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <RelativeLayout android:gravity="center" android:id="@id/rl_host_third_living" android:background="@drawable/rank_list_host_live_bg" android:visibility="gone" android:layout_width="52.0dip" android:layout_height="16.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+                    <ImageView android:id="@id/iv_first_three_live_icon" android:layout_width="11.0dip" android:layout_height="11.0dip" android:src="@drawable/rank_live_on_air_icon" android:layout_alignBottom="@id/tv_first_three_live_icon" />
+                    <TextView android:textSize="@dimen/sp_10" android:textColor="@color/white" android:id="@id/tv_first_three_live_icon" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="直播中" android:layout_toEndOf="@id/iv_first_three_live_icon" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <ImageView android:id="@id/iv_union_third_avatar" android:layout_width="74.0dip" android:layout_height="64.0dip" android:layout_above="@id/ll_first_three_name_root" android:layout_centerHorizontal="true" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_first_three_name_root" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_above="@id/ll_first_three_avatars_root" android:layout_centerHorizontal="true">
+                <ImageView android:id="@id/iv_first_three_top" android:layout_width="@dimen/dp_43" android:layout_height="@dimen/dp_19" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/tv_first_three_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_6" android:maxWidth="100.0dip" android:maxLines="1" android:includeFontPadding="false" android:textAlignment="center" />
+                <com.blued.android.module.live_china.view.MarqueeTextView android:textSize="11.0sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/tv_first_three_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:maxWidth="100.0dip" android:maxLines="1" android:includeFontPadding="false" android:alpha="0.8" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_first_three_avatars_root" android:layout_width="@dimen/dp_100" android:layout_height="@dimen/dp_32" android:layout_marginTop="8.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+                <RelativeLayout android:id="@id/rl_third_living0" android:layout_width="@dimen/dp_32" android:layout_height="@dimen/dp_32">
+                    <ImageView android:id="@id/iv_first_three_avatar0" android:layout_width="@dimen/dp_28" android:layout_height="@dimen/dp_28" android:layout_centerInParent="true" />
+                    <ImageView android:id="@id/iv_first_three_shadow0" android:layout_width="@dimen/dp_28" android:layout_height="@dimen/dp_28" android:src="@drawable/live_rank_small_icon_living_shadow" android:layout_centerInParent="true" />
+                    <ImageView android:id="@id/iv_first_three_bonus0" android:layout_width="@dimen/dp_10" android:layout_height="@dimen/dp_10" android:layout_alignBottom="@id/iv_first_three_shadow0" android:layout_centerHorizontal="true" />
+                    <ImageView android:id="@id/iv_first_three_frame0" android:layout_width="@dimen/dp_32" android:layout_height="@dimen/dp_32" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/rl_third_living1" android:layout_width="@dimen/dp_32" android:layout_height="@dimen/dp_32">
+                    <ImageView android:id="@id/iv_first_three_avatar1" android:layout_width="@dimen/dp_28" android:layout_height="@dimen/dp_28" android:layout_centerInParent="true" />
+                    <ImageView android:id="@id/iv_first_three_shadow1" android:layout_width="@dimen/dp_28" android:layout_height="@dimen/dp_28" android:src="@drawable/live_rank_small_icon_living_shadow" android:layout_centerInParent="true" />
+                    <ImageView android:id="@id/iv_first_three_bonus1" android:layout_width="@dimen/dp_10" android:layout_height="@dimen/dp_10" android:layout_alignBottom="@id/iv_first_three_shadow1" android:layout_centerHorizontal="true" />
+                    <ImageView android:id="@id/iv_first_three_frame1" android:layout_width="@dimen/dp_32" android:layout_height="@dimen/dp_32" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/rl_third_living2" android:layout_width="@dimen/dp_32" android:layout_height="@dimen/dp_32">
+                    <ImageView android:id="@id/iv_first_three_avatar2" android:layout_width="@dimen/dp_28" android:layout_height="@dimen/dp_28" android:layout_centerInParent="true" />
+                    <ImageView android:id="@id/iv_first_three_shadow2" android:layout_width="@dimen/dp_28" android:layout_height="@dimen/dp_28" android:src="@drawable/live_rank_small_icon_living_shadow" android:layout_centerInParent="true" />
+                    <ImageView android:id="@id/iv_first_three_bonus2" android:layout_width="@dimen/dp_10" android:layout_height="@dimen/dp_10" android:layout_alignBottom="@id/iv_first_three_shadow2" android:layout_centerHorizontal="true" />
+                    <ImageView android:id="@id/iv_first_three_frame2" android:layout_width="@dimen/dp_32" android:layout_height="@dimen/dp_32" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

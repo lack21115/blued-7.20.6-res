@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_main" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/tv_bg" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/ll_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/live_reward_config_layout" android:background="@drawable/live_reward_edit_bg" android:paddingTop="20.0dip" android:paddingBottom="22.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginRight="25.0dip">
+                    <ImageView android:id="@id/live_reward_help" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/live_reward_help" />
+                    <TextView android:textSize="17.0sp" android:textColor="@color/syc_dark_b" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/live_reward" android:layout_weight="1.0" />
+                    <ImageView android:id="@id/live_reward_close" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/live_reward_close" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="25.0dip">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/syc_dark_b" android:layout_width="88.0dip" android:layout_height="wrap_content" android:text="@string/live_total_amount" />
+                    <LinearLayout android:gravity="center_vertical" android:id="@id/live_reward_sum_layout1" android:background="@drawable/selector_live_reward" android:paddingLeft="12.0dip" android:paddingTop="7.0dip" android:paddingRight="12.0dip" android:paddingBottom="7.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip">
+                        <ImageView android:id="@id/live_reward_sum_image1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_white_bean_icon" />
+                        <TextView android:textSize="12.0sp" android:textColor="@color/syc_dark_b" android:id="@id/live_reward_sum1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:id="@id/live_reward_sum_layout2" android:background="@drawable/selector_live_reward" android:paddingLeft="12.0dip" android:paddingTop="7.0dip" android:paddingRight="12.0dip" android:paddingBottom="7.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip">
+                        <ImageView android:id="@id/live_reward_sum_image2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_white_bean_icon" />
+                        <TextView android:textSize="12.0sp" android:textColor="@color/syc_dark_b" android:id="@id/live_reward_sum2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:id="@id/live_reward_sum_layout3" android:background="@drawable/selector_live_reward" android:paddingLeft="12.0dip" android:paddingTop="7.0dip" android:paddingRight="12.0dip" android:paddingBottom="7.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip">
+                        <ImageView android:id="@id/live_reward_sum_image3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_white_bean_icon" />
+                        <TextView android:textSize="12.0sp" android:textColor="@color/syc_dark_b" android:id="@id/live_reward_sum3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="16.0dip">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/syc_dark_b" android:layout_width="88.0dip" android:layout_height="wrap_content" android:text="@string/live_reward_num" />
+                    <Button android:textSize="12.0sp" android:textColor="@color/syc_dark_b" android:gravity="center" android:id="@id/live_reward_num1" android:background="@drawable/selector_live_reward" android:visibility="invisible" android:layout_width="55.0dip" android:layout_height="24.0dip" android:layout_marginLeft="15.0dip" />
+                    <Button android:textSize="12.0sp" android:textColor="@color/syc_dark_b" android:gravity="center" android:id="@id/live_reward_num2" android:background="@drawable/selector_live_reward" android:visibility="invisible" android:layout_width="55.0dip" android:layout_height="24.0dip" android:layout_marginLeft="15.0dip" />
+                    <Button android:textSize="12.0sp" android:textColor="@color/syc_dark_b" android:gravity="center" android:id="@id/live_reward_num3" android:background="@drawable/selector_live_reward" android:visibility="invisible" android:layout_width="55.0dip" android:layout_height="24.0dip" android:layout_marginLeft="7.0dip" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="25.0dip">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/syc_dark_b" android:layout_width="88.0dip" android:layout_height="wrap_content" android:text="@string/live_receive_conditions" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_reward_condition" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <ImageView android:id="@id/live_reward_condition" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_reward_condition_default" />
+                            <TextView android:textSize="12.0sp" android:textColor="@color/syc_dark_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:text="@string/live_chat_attention" />
+                            <TextView android:textSize="12.0sp" android:textColor="@color/syc_dark_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_rick_rank" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_fans_condition" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="11.0dip">
+                            <ImageView android:id="@id/live_fans_condition" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_reward_condition_default" />
+                            <TextView android:textSize="12.0sp" android:textColor="@color/syc_dark_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:text="@string/live_fans_members" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_gift" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="25.0dip">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/syc_dark_b" android:layout_width="88.0dip" android:layout_height="wrap_content" android:text="@string/live_reward_gift" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="28.0dip" android:layout_marginLeft="15.0dip">
+                        <ImageView android:id="@id/iv_gift_delete" android:layout_width="35.0dip" android:layout_height="28.0dip" android:src="@drawable/live_reward_delete_gray" android:scaleType="fitXY" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="41.0dip" android:layout_height="fill_parent">
+                            <TextView android:background="@color/syc_dark_b" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                            <TextView android:textSize="12.0sp" android:textColor="@color/syc_dark_b" android:gravity="center" android:id="@id/tv_reward_gift_num" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="0" android:layout_weight="1.0" />
+                            <TextView android:background="@color/syc_dark_b" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                        </LinearLayout>
+                        <ImageView android:id="@id/iv_gift_add" android:layout_width="35.0dip" android:layout_height="28.0dip" android:src="@drawable/live_reward_add" android:scaleType="fitXY" />
+                        <TextView android:textSize="10.0sp" android:textColor="@color/syc_dark_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="@string/live_reward_not_must" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/ll_gift_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="128.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="25.0dip">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:src="@drawable/live_reward_gift_dot" />
+                    <TextView android:textSize="10.0sp" android:textColor="@color/syc_dark_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/live_reward_gift_tip" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_word" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="25.0dip">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/syc_dark_b" android:layout_width="88.0dip" android:layout_height="wrap_content" android:text="@string/live_reward_word" />
+                    <com.blued.android.framework.view.shape.ShapeLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="145.0dip" android:layout_height="30.0dip" android:layout_marginLeft="15.0dip" app:corner_radius="5.0dip" app:solid_color="@color/syc_dark_b">
+                        <TextView android:textSize="12.0sp" android:textColor="@color/syc_dark_h" android:textColorHint="@color/syc_dark_c6c6c6" android:ellipsize="end" android:id="@id/tv_word" android:paddingLeft="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/live_reward_word_add" android:maxLines="1" android:layout_weight="1.0" />
+                        <ImageView android:id="@id/iv_word_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/live_word_tip_icon" />
+                    </com.blued.android.framework.view.shape.ShapeLinearLayout>
+                    <TextView android:textSize="10.0sp" android:textColor="@color/syc_dark_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="@string/live_reward_not_must" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="27.0dip" android:layout_marginRight="25.0dip">
+                    <TextView android:textSize="13.0sp" android:textColor="@color/syc_dark_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Live_SendPresent_balance" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textSize="13.0sp" android:textColor="@color/syc_dark_b" android:id="@id/price_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <TextView android:textSize="13.0sp" android:textColor="#ffffd4a3" android:id="@id/give_price_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <TextView android:textSize="13.0sp" android:textColor="@color/syc_dark_b" android:id="@id/top_up_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Live_SendPresent_recharge" />
+                    <ImageView android:id="@id/top_up_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:src="@drawable/live_reward_arrow" />
+                </LinearLayout>
+                <com.blued.android.framework.view.shape.ShapeFrameLayout android:id="@id/live_reward_send_btn" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="25.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="25.0dip" app:corner_radius="40.0dip" app:solid_color="@color/syc_dark_8f8c0000">
+                    <TextView android:textColor="@color/syc_dark_800000" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/live_reward" />
+                </com.blued.android.framework.view.shape.ShapeFrameLayout>
+                <TextView android:textSize="10.0sp" android:textColor="@color/syc_dark_b" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="20.0dip" android:text="@string/live_reward_details" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/live_reward_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ProgressBar android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" style="?android:progressBarStyle" />
+            </LinearLayout>
+            <include android:visibility="gone" layout="@layout/pop_reward_help_view" />
+        </FrameLayout>
+        <include android:layout_gravity="bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/pop_reward_word_view" />
+    </FrameLayout>
+</LinearLayout>

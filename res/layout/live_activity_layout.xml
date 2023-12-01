@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="117.0dip" android:layout_height="wrap_content">
+        <com.blued.android.module.live_china.view.LiveActivityViewPager android:id="@id/box_view_pager" android:layout_width="fill_parent" android:layout_height="140.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/fl_box" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+            <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="4.0dip" app:cardBackgroundColor="@color/transparent" app:cardCornerRadius="8.0dip" app:cardElevation="0.0dip">
+                <com.blued.android.module.live_china.view.LiveActiivtyRecycleView android:layout_gravity="bottom|center" android:id="@id/box_rv" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

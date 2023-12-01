@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.framework.view.shape.ShapeLinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/action_sheet" android:layout_width="fill_parent" android:layout_height="52.0dip" app:corner_radius="0.0dip" app:solid_color="@color/syc_b" app:solid_touch_color="@color/syc_c">
+        <ImageView android:id="@id/img_checked_invisible" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/actionsheet_checked" />
+        <ImageView android:id="@id/img_feed" android:visibility="gone" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="-20.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/icon_feed_super_exposure_post" android:scaleType="fitXY" />
+        <ImageView android:id="@id/img_vip_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="14.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/common_icon_vip" android:scaleType="fitXY" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/syc_h" android:id="@id/tv_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/img_checked" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/actionsheet_checked" />
+        <com.blued.android.framework.view.shape.ShapeTextView android:id="@id/img_red_dot" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_marginLeft="5.0dip" app:corner_radius="8.0dip" app:solid_color="@color/syc_g" />
+    </com.blued.android.framework.view.shape.ShapeLinearLayout>
+    <View android:background="@color/syc_x" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

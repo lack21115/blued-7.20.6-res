@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/syc_c" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_hello" android:padding="12.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="@color/syc_h" android:gravity="center" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hello_using_now" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <ImageView android:id="@id/iv_title" android:layout_width="17.0dip" android:layout_height="20.0dip" android:src="@drawable/user_recommend_live_black" app:layout_constraintBottom_toBottomOf="@id/tv_title" app:layout_constraintLeft_toRightOf="@id/tv_title" app:layout_constraintTop_toTopOf="@id/tv_title" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/syc_j" android:gravity="center" android:id="@id/tv_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@string/hello_using_more" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toLeftOf="@id/img_right_arrow" app:layout_constraintTop_toTopOf="parent" />
+        <ImageView android:id="@id/img_right_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/icon_hori_more" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center_vertical" android:id="@id/recycler_view_recommend" android:paddingLeft="12.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/rl_empty" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="86.0dip">
+            <ImageView android:id="@id/iv_empty" android:layout_width="wrap_content" android:layout_height="73.0dip" android:src="@drawable/icon_recommend_empty" />
+        </RelativeLayout>
+    </FrameLayout>
+    <View android:background="@color/syc_o_line" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_marginTop="16.0dip" />
+</LinearLayout>

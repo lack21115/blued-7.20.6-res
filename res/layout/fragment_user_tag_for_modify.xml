@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/top_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="11.0sp" android:textColor="@color/sara_d" android:id="@id/tv_am" android:background="@color/sara_l" android:paddingLeft="13.0dip" android:paddingTop="12.0dip" android:layout_width="fill_parent" android:layout_height="31.0dip" android:text="@string/i_am" />
+            <LinearLayout android:orientation="vertical" android:background="@color/sara_f" android:paddingLeft="13.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/i_bodytype" style="@style/text_usertag_title" />
+                <com.blued.community.view.PhotoGridView android:id="@id/gv_iam_bodytype" style="@style/gv_usertag" />
+                <include android:id="@id/view_my_chara_topline" layout="@layout/common_gray_line" />
+                <TextView android:id="@id/tv_my_chara" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/i_characteristic" style="@style/text_usertag_title" />
+                <com.blued.community.view.PhotoGridView android:id="@id/gv_iam_characteristic" style="@style/gv_usertag" />
+            </LinearLayout>
+            <TextView android:textSize="11.0sp" android:textColor="@color/sara_d" android:gravity="center_vertical" android:id="@id/tv_lookfor" android:background="@color/sara_l" android:paddingLeft="13.0dip" android:paddingTop="12.0dip" android:layout_width="fill_parent" android:layout_height="31.0dip" android:text="@string/i_look_for" />
+            <LinearLayout android:orientation="vertical" android:background="@color/sara_f" android:paddingLeft="13.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/i_like_bodytype" style="@style/text_usertag_title" />
+                <com.blued.community.view.PhotoGridView android:id="@id/gv_lookfor_bodytype" style="@style/gv_usertag" />
+                <include layout="@layout/common_gray_line" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/i_want" style="@style/text_usertag_title" />
+                <com.blued.community.view.PhotoGridView android:id="@id/gv_lookfor_want" style="@style/gv_usertag" />
+                <include android:id="@id/view_lookfor_chara_topline" layout="@layout/common_gray_line" />
+                <TextView android:id="@id/tv_lookfor_chara" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/i_like_characteristic" style="@style/text_usertag_title" />
+                <com.blued.community.view.PhotoGridView android:id="@id/gv_lookfor_characteristic" style="@style/gv_usertag" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

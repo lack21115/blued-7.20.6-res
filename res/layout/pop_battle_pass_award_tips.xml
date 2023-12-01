@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_root" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.framework.view.shape.ShapeRelativeLayout android:id="@id/rl_avatar_pop_root" android:layout_width="172.0dip" android:layout_height="wrap_content" app:corner_radius="8.0dip" app:solid_color="@color/white" app:stroke_color="@color/syc_dark_1900FF" app:stroke_width="1.0dip">
+        <ImageView android:id="@id/iv_icon" android:layout_width="38.0dip" android:layout_height="38.0dip" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/syc_dark_h" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_toRightOf="@id/iv_icon" android:layout_alignTop="@id/iv_icon" android:layout_alignBottom="@id/iv_icon" android:layout_alignParentRight="true" />
+        <View android:background="@drawable/live_battle_award_pop_between" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" android:layout_below="@id/iv_icon" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/syc_dark_h" android:id="@id/tv_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="9.0dip" android:layout_marginBottom="12.0dip" android:layout_below="@id/iv_icon" />
+    </com.blued.android.framework.view.shape.ShapeRelativeLayout>
+    <ImageView android:layout_width="21.0dip" android:layout_height="9.0dip" android:layout_marginTop="-1.0dip" android:src="@drawable/live_battle_award_pop_arrows" android:layout_below="@id/rl_avatar_pop_root" android:layout_centerHorizontal="true" />
+</RelativeLayout>

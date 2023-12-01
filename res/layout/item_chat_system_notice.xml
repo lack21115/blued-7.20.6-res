@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/msg_item_root" android:paddingTop="@dimen/chat_two_item_root_top" android:paddingBottom="@dimen/chat_two_item_root_bottom" style="@style/layout_fill_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.framework.view.shape.ShapeLinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/ll_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" app:bg_default_touch="false" app:corner_radius="10.0dip" app:solid_color="@color/syc_x">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_header" android:layout_width="17.0dip" android:layout_height="17.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" android:src="@drawable/user_bg_round" />
+        <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="@color/syc_j" android:layout_gravity="center" android:id="@id/tv_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:text="刚刚加入本群刚刚加入本群刚刚加入本群刚刚加入本群刚刚加入本群刚刚加入本群刚刚加入本群刚刚加入本群刚刚加入本群刚刚加入本群" />
+    </com.blued.android.framework.view.shape.ShapeLinearLayout>
+</FrameLayout>

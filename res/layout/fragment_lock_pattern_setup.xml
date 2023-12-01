@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/top_title" android:layout_width="fill_parent" android:layout_height="wrap_content" app:hide_btm_line="true" />
+    <com.soft.blued.customview.LockIndicator android:layout_gravity="center" android:id="@id/lock_indicator" android:layout_marginTop="46.0dip" style="@style/layout_wrap_content" />
+    <TextView android:textSize="17.0sp" android:textColor="@color/nafio_h" android:layout_gravity="center" android:id="@id/lock_pattern_hint" android:layout_marginTop="40.0dip" android:text="@string/draw_lock_pattern" style="@style/layout_wrap_content" />
+    <com.soft.blued.customview.LockPatternView android:layout_gravity="center" android:id="@id/lock_pattern" android:layout_width="280.0dip" android:layout_height="280.0dip" android:layout_marginTop="25.0dip" />
+</LinearLayout>

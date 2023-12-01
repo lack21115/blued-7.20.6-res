@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.framework.view.shape.ShapeConstraintLayout android:layout_width="@dimen/dp_240" android:layout_height="@dimen/dp_215" app:corner_radius="@dimen/dp_11" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" app:solid_color="@color/white">
+        <TextView android:textSize="16.0sp" android:textColor="@color/syc_dark_222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_20" android:text="说明" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/syc_dark_222222" android:paddingLeft="@dimen/dp_20" android:paddingRight="@dimen/dp_20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_48" android:text="1. 奖励只针对聊天室的新用户。 \n2. 奖励支持新用户10天内领取，超过10天，再来领取，奖励失效。 \n3. 奖励都会下会发至您的道具，在道具城-我的道具，可以选择是否佩戴；" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <ImageView android:id="@id/iv_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ksad_draw_card_close" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </com.blued.android.framework.view.shape.ShapeConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

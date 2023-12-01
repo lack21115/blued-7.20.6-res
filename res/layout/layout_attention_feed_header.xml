@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="0.5px"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.community.ui.send.view.FeedSendRecyclerView android:id="@id/feed_send_list" android:background="@color/nafio_b" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <View android:id="@id/view_send_list_cut" android:background="@color/nafio_c" android:layout_width="fill_parent" android:layout_height="4.0dip" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="@dimen/dp_70" android:layout_height="@dimen/dp_140">
+        <com.blued.android.framework.view.shape.ShapeFrameLayout android:id="@id/fl_reward_chart" android:layout_width="@dimen/dp_70" android:layout_height="0.0dip" android:layout_alignParentBottom="true" app:corner_radius="@dimen/dp_6" app:solid_color="@color/syc_00E0AB" />
+        <ImageView android:id="@id/iv_reward_gift" android:layout_width="@dimen/dp_70" android:layout_height="@dimen/dp_70" android:src="@drawable/gift_default_icon" android:layout_alignParentBottom="true" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/syc_dark_b" android:id="@id/tv_reward_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_5" android:layout_marginRight="@dimen/dp_5" android:layout_marginBottom="@dimen/dp_5" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/sp_16" android:textColor="@color/syc_dark_b" android:layout_gravity="center_horizontal" android:id="@id/tv_pk_gift_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_6" />
+    <com.blued.android.framework.view.shape.ShapeTextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_give" android:layout_width="@dimen/dp_70" android:layout_height="@dimen/dp_33" android:layout_marginTop="@dimen/dp_10" android:text="@string/yy_mic_vote" app:corner_radius="@dimen/dp_17" app:gradient_end_color="@color/syc_3883FD" app:gradient_start_color="@color/syc_00E0AB" />
+</LinearLayout>

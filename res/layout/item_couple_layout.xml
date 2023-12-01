@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.imageview.ShapeableImageView android:padding="@dimen/dp_4" android:layout_width="@dimen/dp_108" android:layout_height="@dimen/dp_108" android:layout_marginBottom="@dimen/dp_60" android:src="@drawable/user_bg_round" app:shapeAppearanceOverlay="@style/circleImageStyle" app:strokeColor="@color/syc_dark_b" app:strokeWidth="@dimen/dp_4"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

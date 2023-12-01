@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/live_user_layout" android:layout_width="fill_parent" android:layout_height="172.5dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/aariv_cover_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" app:cardCornerRadius="6.0dip" app:cardElevation="0.0px" app:cardUseCompatPadding="false">
+        <ImageView android:id="@id/aariv_cover" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <com.blued.android.module.live_china.view.LiveAutoPlayView android:id="@id/fl_video_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/iv_cover_box" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <ImageView android:id="@id/iv_top_left" android:layout_width="wrap_content" android:layout_height="20.0dip" />
+        <LinearLayout android:gravity="end|bottom|center" android:layout_gravity="bottom" android:orientation="horizontal" android:background="@drawable/live_list_item_cover" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/live_record_level" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.5dip" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/tv_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.5dip" android:layout_marginRight="20.0dip" android:maxLines="1" android:singleLine="true" />
+            </LinearLayout>
+            <com.blued.android.framework.view.shape.ShapeTextView android:textSize="10.0sp" android:textColor="@color/white" android:id="@id/tv_follow_anchor" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="关注" android:drawableLeft="@drawable/icon_follow_live" android:drawablePadding="2.5dip" android:paddingStart="6.5dip" android:paddingEnd="6.0dip" android:layout_marginEnd="10.0dip" app:corner_radius="22.0dip" app:gradient_end_color="@color/syc_dark_922CEE" app:gradient_start_color="@color/syc_dark_FF3AAA" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

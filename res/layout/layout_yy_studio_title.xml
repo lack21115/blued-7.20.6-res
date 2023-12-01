@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/title_root_layout" android:paddingLeft="@dimen/dp_10" android:paddingRight="@dimen/dp_15" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/ll_header" android:layout_centerVertical="true" layout="@layout/view_yy_anchor_layout" />
+    <FrameLayout android:id="@id/fl_title_two" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_6" android:layout_toRightOf="@id/ll_header" android:layout_centerVertical="true">
+        <com.blued.android.framework.view.shape.ShapeTextView android:textSize="@dimen/sp_12" android:textColor="@color/syc_989898" android:gravity="center" android:id="@id/tv_report" android:layout_width="@dimen/dp_44" android:layout_height="@dimen/dp_24" android:text="@string/yy_report" android:includeFontPadding="false" app:corner_radius="@dimen/dp_12" app:solid_color="@color/syc_66000000" />
+        <com.blued.android.module.yy_china.view.YYIncomeView android:id="@id/income_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <com.blued.android.module.yy_china.view.YYAudienceListView android:id="@id/ll_audience_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_6" android:layout_toLeftOf="@id/iv_more" android:layout_toRightOf="@id/fl_title_two" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/iv_more" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:src="@drawable/icon_yy_3_point" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

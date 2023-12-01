@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/nafio_c" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/top_title" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.blued.android.module.common.view.NoDataAndLoadFailView android:id="@id/no_data_view" android:layout_width="fill_parent" android:layout_height="fill_parent" app:default_visible="fail" />
+    <include layout="@layout/fragment_group_name_fillin" />
+    <include layout="@layout/fragment_group_create_condition" />
+</LinearLayout>

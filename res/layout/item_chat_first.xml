@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/msg_item_root" android:paddingTop="@dimen/chat_two_item_root_top" android:paddingBottom="@dimen/chat_two_item_root_bottom" style="@style/layout_fill_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10">
+        <ImageView android:id="@id/iv_img_me" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="45.0dip" android:src="@drawable/user_bg_round" android:scaleType="centerCrop" android:layout_centerInParent="true" app:border_color="@color/syc_h" app:border_width="2.0dip" app:corner_radius="30.0dip" />
+        <ImageView android:id="@id/iv_img_other" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/user_bg_round" android:scaleType="centerCrop" android:layout_centerInParent="true" app:border_color="@color/syc_h" app:border_width="2.0dip" app:corner_radius="30.0dip" />
+    </FrameLayout>
+    <com.blued.android.framework.view.shape.ShapeLinearLayout android:orientation="horizontal" android:id="@id/sll_like" android:paddingLeft="15.0dip" android:paddingTop="@dimen/dp_10" android:paddingRight="15.0dip" android:paddingBottom="@dimen/dp_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="65.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="65.0dip" app:corner_radius="14.0dip" app:solid_color="@color/syc_x">
+        <TextView android:textColor="@color/syc_j" android:id="@id/tv_action" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </com.blued.android.framework.view.shape.ShapeLinearLayout>
+</LinearLayout>

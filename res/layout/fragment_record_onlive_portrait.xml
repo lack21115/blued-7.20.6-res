@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/fl_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/contents_root" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@id/live_top_root" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="38.0dip" android:layout_marginTop="1.5dip">
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="38.0dip" android:layout_marginLeft="6.0dip">
+                <com.blued.android.framework.view.shape.ShapeLinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/live_anchor_layout" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="32.0dip" android:layout_marginLeft="3.0dip" app:corner_radius="16.0dip" app:solid_color="@color/black_alpha30">
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="38.0dip" android:layout_toRightOf="@id/live_header_layout">
+                        <Chronometer android:textSize="10.0sp" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/chronometer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+                        <TextView android:textSize="10.0sp" android:textColor="@color/white" android:id="@id/onlive_all_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:includeFontPadding="false" />
+                    </LinearLayout>
+                    <com.blued.android.framework.view.shape.ShapeFrameLayout android:layout_gravity="center_vertical" android:id="@id/fl_live_fans" android:layout_width="40.0dip" android:layout_height="25.0dip" android:layout_marginLeft="4.5dip" android:layout_marginRight="3.0dip" app:corner_radius="100.0dip" app:solid_color="@color/syc_26F5A300">
+                        <ImageView android:layout_gravity="center" android:id="@id/img_live_fans_heart_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_live_fans_club_heart_bg" />
+                        <ImageView android:layout_gravity="center" android:id="@id/live_fans_start" android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_marginLeft="0.5dip" android:src="@drawable/img_live_fans_followed" />
+                    </com.blued.android.framework.view.shape.ShapeFrameLayout>
+                </com.blued.android.framework.view.shape.ShapeLinearLayout>
+                <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/live_header_layout" android:layout_width="38.0dip" android:layout_height="38.0dip" android:layout_centerVertical="true">
+                    <ImageView android:id="@id/header_view" android:focusable="true" android:clickable="true" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_centerInParent="true" android:contentDescription="@string/app_name" />
+                    <ImageView android:layout_gravity="bottom|center|right" android:id="@id/img_verify" android:visibility="gone" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_margin="3.0dip" android:src="@drawable/v_blue" android:contentDescription="" />
+                    <ImageView android:id="@id/header_level_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/live_anchor_head_bg_90" />
+                </RelativeLayout>
+            </FrameLayout>
+            <FrameLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="38.0dip" android:layout_marginLeft="7.0dip" android:layout_weight="1.0">
+                <com.blued.android.module.live_china.view.LiveViewerListView android:layout_gravity="right" android:id="@id/live_viewer" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+            </FrameLayout>
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/close_btn" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="3.0dip" android:layout_marginRight="9.0dip" android:src="@drawable/live_close_icon" />
+        </LinearLayout>
+        <View android:id="@id/view_space" android:layout_width="0.0dip" android:layout_height="23.0dip" android:layout_below="@id/live_top_root" />
+        <com.blued.android.module.live_china.view.operation.LiveOperationView android:id="@id/live_operation_view" android:visibility="gone" android:layout_width="130.0dip" android:layout_height="45.0dip" android:layout_marginLeft="9.0dip" android:layout_marginTop="5.0dip" android:layout_below="@id/view_space" />
+        <com.blued.android.module.live_china.view.LiveAnnouceView android:id="@id/live_annoce" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginTop="5.0dip" android:layout_below="@id/live_operation_view" />
+        <LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="28.0dip" android:layout_below="@id/live_top_root" android:layout_alignParentRight="true">
+            <com.blued.android.module.live_china.view.righttopfunction.LiveRightTopFunctionPlace android:id="@id/live_right_top_function" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="9.0dip" />
+            <com.blued.android.module.live_china.view.pkdared.PkDaredView android:id="@id/pdv_pk_dared" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginRight="9.0dip" android:layout_marginBottom="6.0dip" />
+            <com.blued.android.module.live_china.view.LiveDefinedRankView android:id="@id/live_defined_rank_layout_id" android:background="@color/transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="9.0dip" android:layout_marginBottom="6.0dip" />
+            <com.blued.android.module.live_china.view.LiveCountDownView android:id="@id/live_record_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/ll_live_record_progress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginTop="5.0dip" android:layout_below="@id/live_top_root">
+            <ImageView android:layout_width="40.0dip" android:layout_height="13.0dip" android:layout_marginTop="2.5dip" android:layout_marginRight="9.0dip" android:src="@drawable/live_watermark" android:layout_alignParentRight="true" />
+            <include android:id="@id/include_beans_banner" android:layout_width="wrap_content" android:layout_height="18.0dip" layout="@layout/live_beans_banner" />
+            <com.blued.android.module.live_china.view.LiveRecordLevelView android:id="@id/live_record_relevel_view" android:layout_width="88.0dip" android:layout_height="18.0dip" android:layout_marginLeft="4.5dip" android:layout_toRightOf="@id/include_beans_banner" />
+            <com.blued.android.module.live_china.view.LiveRankingButtonView android:id="@id/ranking_button_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.5dip" android:layout_toRightOf="@id/live_record_relevel_view" />
+        </RelativeLayout>
+        <com.blued.android.module.live_china.view.BarrageHornView android:id="@id/barrage_horn_view" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_marginTop="100.0dip" />
+        <include android:id="@id/live_msg_main_root" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="67.5dip" android:layout_above="@id/live_bottom_root" layout="@layout/live_msg_main" />
+        <RelativeLayout android:id="@id/live_bottom_root" android:paddingLeft="4.5dip" android:paddingRight="4.5dip" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_marginTop="7.5dip" android:layout_marginBottom="9.0dip" android:layout_alignParentBottom="true">
+            <com.blued.android.module.live_china.view.operation.LiveBottomOperationView android:orientation="horizontal" android:id="@id/live_bottom_operation" android:layout_width="wrap_content" android:layout_height="36.0dip" android:layout_toLeftOf="@id/live_bottom_right_icons" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/live_bottom_right_icons" android:layout_width="wrap_content" android:layout_height="36.0dip" android:layout_alignParentRight="true">
+                <ImageView android:id="@id/live_wish_enter" android:background="@drawable/shape_live_bottom_icon_bg" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginLeft="4.5dip" android:layout_marginRight="4.5dip" android:src="@drawable/live_wish_icon" />
+                <FrameLayout android:id="@id/live_like_view_root" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginLeft="4.5dip" android:layout_marginRight="4.5dip">
+                    <ImageView android:id="@id/live_like_view" android:background="@drawable/shape_live_bottom_icon_bg" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/live_pk_start_btn" />
+                    <ImageView android:layout_gravity="right" android:id="@id/live_pk_new" android:background="@drawable/live_pk_new" android:visibility="gone" android:layout_width="18.199982dip" android:layout_height="9.099976dip" />
+                    <com.blued.android.framework.view.shape.ShapeTextView android:layout_gravity="right" android:id="@id/view_pk_dot" android:visibility="gone" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_marginTop="1.5dip" android:layout_marginRight="1.5dip" app:corner_radius="4.0dip" app:solid_color="@color/syc_g" />
+                </FrameLayout>
+            </LinearLayout>
+            <RelativeLayout android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginLeft="4.5dip" android:layout_marginRight="4.5dip">
+                <ImageView android:id="@id/live_bottom_icon_more" android:background="@drawable/shape_live_bottom_icon_bg" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/live_bottom_icon_more" />
+                <com.blued.android.framework.view.shape.ShapeTextView android:id="@id/tv_dot" android:visibility="gone" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_marginTop="1.5dip" android:layout_marginRight="1.5dip" android:layout_alignParentRight="true" app:corner_radius="8.0dip" app:solid_color="@color/syc_g" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <include android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="67.5dip" layout="@layout/live_msg_barrage" />
+        <com.blued.android.module.live_china.view.AspectLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.blued.android.module.live.base.view.animation.LiveAnimationView android:id="@id/live_animation_layou" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" />
+        </com.blued.android.module.live_china.view.AspectLayout>
+        <com.blued.android.module.live.base.view.animation.LiveAnimationView android:id="@id/live_universal_animation" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" />
+        <com.blued.android.module.live_china.view.LiveTitleView android:id="@id/live_title_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" />
+        <com.blued.android.module.live_china.view.LiveOnlineUserTipsView android:id="@id/view_live_online_user_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/live_top_root" android:layout_marginEnd="60.5dip" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <com.airbnb.lottie.LottieAnimationView android:layout_gravity="bottom|center|right" android:id="@id/animation_view" android:visibility="gone" android:layout_width="200.0dip" android:layout_height="375.0dip" app:lottie_fileName="bao_zan_anim.json" />
+    <com.blued.android.module.live_china.view.BubbleLayout android:layout_gravity="bottom" android:id="@id/ll_bubble" android:layout_width="fill_parent" android:layout_height="230.0dip" android:layout_marginBottom="53.0dip" />
+    <com.blued.android.module.live_china.view.HornViewNew android:id="@id/horn_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="40.0dip" android:layout_marginRight="10.0dip" />
+</FrameLayout>

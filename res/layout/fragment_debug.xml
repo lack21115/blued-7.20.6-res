@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/title" android:layout_width="fill_parent" android:layout_height="45.0dip" app:center_text="@string/blued_debug" app:hide_btm_line="true" app:right_text="@string/claw_game_try_again" />
+    <FrameLayout android:id="@id/tab" android:background="@color/syc_c" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_below="@id/title">
+        <com.blued.android.framework.view.shape.ShapeTextView android:layout_gravity="center" android:id="@id/tab_bg" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" app:corner_radius="12.0dip" app:solid_color="@color/syc_x" />
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/ll_switch_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip">
+            <com.blued.android.framework.view.shape.ShapeTextView android:textColor="@color/syc_h" android:gravity="center" android:id="@id/tv_basic_switch" android:layout_width="fill_parent" android:layout_height="26.0dip" android:text="Basic" android:layout_weight="1.0" app:corner_radius="10.0dip" app:solid_color="@color/syc_y" />
+            <com.blued.android.framework.view.shape.ShapeTextView android:textColor="@color/syc_h" android:gravity="center" android:id="@id/tv_im_switch" android:layout_width="fill_parent" android:layout_height="26.0dip" android:text="IM" android:layout_weight="1.0" app:corner_radius="10.0dip" app:solid_color="@color/syc_x" />
+            <com.blued.android.framework.view.shape.ShapeTextView android:textColor="@color/syc_h" android:gravity="center" android:id="@id/tv_speed_web_switch" android:layout_width="fill_parent" android:layout_height="26.0dip" android:text="Web" android:layout_weight="1.0" app:corner_radius="10.0dip" app:solid_color="@color/syc_x" />
+        </LinearLayout>
+    </FrameLayout>
+    <ScrollView android:background="@color/syc_c" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/tab">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:background="@color/syc_c" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.blued.android.framework.view.shape.ShapeTextView android:textColor="@color/syc_dark_b" android:gravity="center" android:id="@id/tv_info_upload" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_marginLeft="50.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="50.0dip" android:layout_marginBottom="10.0dip" android:text="Upload" app:corner_radius="18.0dip" app:solid_color="@color/syc_a" />
+            </LinearLayout>
+            <TextView android:textSize="13.0sp" android:textColor="@color/syc_h" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="8.0dip" android:text="Basic" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/syc_h" android:id="@id/tv_basic_info_view" android:background="@color/syc_b" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="13.0sp" android:textColor="@color/syc_h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="8.0dip" android:text="Network" />
+                <ProgressBar android:layout_gravity="center_vertical" android:id="@id/pb_network" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="13.0dip" style="?android:progressBarStyle" />
+            </LinearLayout>
+            <TextView android:textSize="12.0sp" android:textColor="@color/syc_h" android:id="@id/tv_network_info_view" android:background="@color/syc_b" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="13.0sp" android:textColor="@color/syc_h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="8.0dip" android:text="Report" />
+                <ProgressBar android:layout_gravity="center_vertical" android:id="@id/pb_report" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="13.0dip" style="?android:progressBarStyle" />
+            </LinearLayout>
+            <TextView android:textSize="12.0sp" android:textColor="@color/syc_h" android:id="@id/tv_report_view" android:background="@color/syc_b" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <androidx.constraintlayout.widget.ConstraintLayout android:orientation="horizontal" android:id="@id/ll_debug" android:paddingLeft="20.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <EditText android:id="@id/et_uid_input" android:layout_width="200.0dip" android:layout_height="wrap_content" android:maxLines="1" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                <TextView android:gravity="center" android:id="@id/tv_go" android:background="@color/syc_i" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text="Jump" app:layout_constraintBottom_toBottomOf="@id/et_uid_input" app:layout_constraintLeft_toRightOf="@id/et_uid_input" app:layout_constraintTop_toTopOf="@id/et_uid_input" />
+                <TextView android:gravity="center" android:id="@id/tv_decrypt" android:background="@color/syc_i" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginLeft="5.0dip" android:text="Decrypt" app:layout_constraintBottom_toBottomOf="@id/et_uid_input" app:layout_constraintLeft_toRightOf="@id/tv_go" app:layout_constraintTop_toTopOf="@id/et_uid_input" />
+                <TextView android:id="@id/tv_result" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/et_uid_input" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+    <ScrollView android:id="@id/sv_im_detail" android:background="@color/syc_c" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/tab">
+        <LinearLayout android:orientation="vertical" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0sp" android:textColor="@color/syc_h" android:id="@id/tv_im_detail" android:background="@color/syc_b" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+    <WebView android:id="@id/speed_web_view" android:background="@color/syc_c" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/tab" />
+</RelativeLayout>

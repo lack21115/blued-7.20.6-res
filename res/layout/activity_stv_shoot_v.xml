@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/background_dark" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.blued.android.module.shortvideo.view.SquareGLSurfaceView android:id="@id/preview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:clipChildren="false" android:layout_width="0.0dip" android:layout_height="0.0dip">
+        <com.blued.android.module.shortvideo.view.FocusIndicator android:id="@id/focus_indicator" android:layout_width="60.0dip" android:layout_height="60.0dip" />
+    </FrameLayout>
+    <com.blued.android.module.shortvideo.view.SectionProgressBar android:id="@id/record_progressbar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="7.0dip" android:layout_alignParentTop="true" />
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/layoutTop" android:tag="@string/title_tag_for_fit_status_bar" android:background="@drawable/stv_title_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/record_progressbar">
+        <ImageView android:id="@id/btnBack" android:background="@drawable/capture_title_back" android:padding="15.0dip" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="15.0dip" android:layout_alignParentLeft="true" android:onClick="onClickBack" />
+        <ImageView android:id="@id/switch_flash" android:background="@drawable/switch_flash_btn_selector" android:padding="5.0dip" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="25.0dip" android:layout_toLeftOf="@id/switch_camera" android:onClick="switchFlash" />
+        <ImageView android:id="@id/switch_camera" android:background="@drawable/stv_switch_carema_default" android:padding="5.0dip" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true" android:onClick="switchCamera" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/lay_music" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_centerHorizontal="true">
+            <ImageView android:layout_gravity="center" android:layout_width="13.0dip" android:layout_height="13.0dip" android:src="@drawable/video_scan_music_icon" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/white" android:ellipsize="marquee" android:id="@id/tv_music" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="160.0dip" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+        </LinearLayout>
+    </RelativeLayout>
+    <com.blued.android.module.shortvideo.view.ConfigView android:id="@id/stv_config_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="110.0dip" android:layout_alignParentRight="true" />
+    <com.blued.android.module.shortvideo.view.ControllerView android:id="@id/stv_controller_view" android:background="@drawable/stv_controller_v_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <com.blued.android.module.shortvideo.view.FilterView android:id="@id/stv_filter_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <com.blued.android.module.shortvideo.view.TimeDownView android:id="@id/stv_timedown_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/stv_guide_switch_camera_v" android:background="@drawable/stv_guide_switch_camera" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="91.0dip" android:layout_marginBottom="33.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

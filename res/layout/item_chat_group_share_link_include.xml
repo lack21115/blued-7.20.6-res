@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.blued.android.framework.view.shape.ShapeRelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="230.0dip" app:corner_radius="10.0dip" app:solid_color="@color/syc_b"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center_vertical" android:id="@id/fm_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_icon" android:layout_width="55.0dip" android:layout_height="55.0dip" />
+        <ImageView android:layout_gravity="bottom|center|right" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/icon_share_link" android:contentDescription="@string/imagefailed_exception" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_toRightOf="@id/fm_img" android:layout_centerVertical="true">
+        <TextView android:textSize="14.0sp" android:textColor="@color/syc_h" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/syc_j" android:ellipsize="end" android:id="@id/tv_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:maxLines="2" />
+    </LinearLayout>
+</com.blued.android.framework.view.shape.ShapeRelativeLayout>

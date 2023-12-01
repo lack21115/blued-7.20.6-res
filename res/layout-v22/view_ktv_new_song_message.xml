@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/bg_yy_new_song_message" android:paddingLeft="@dimen/dp_14" android:paddingRight="@dimen/dp_14" android:layout_width="wrap_content" android:layout_height="@dimen/dp_54" android:paddingHorizontal="@dimen/dp_14"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="#ff20402c" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/tv_add_mess" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/dp_220" android:lines="2" android:drawableLeft="@drawable/icon_yy_shopping_cart" android:drawablePadding="@dimen/dp_6" />
+</FrameLayout>

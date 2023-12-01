@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="@dimen/dp_65" android:layout_marginTop="@dimen/dp_21" android:layout_marginStart="@dimen/dp_75" android:layout_marginEnd="@dimen/dp_70">
+        <TextView android:textSize="12.0sp" android:textColor="#ff34053f" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="幸运值累积到15,下次必中好想你以上礼物" android:maxLines="1" />
+        <TextView android:textSize="10.0sp" android:textColor="#ff34053f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="获得大于盲盒本身礼物，幸运值清空" android:layout_below="@id/tv_title" android:alpha="0.7" />
+    </RelativeLayout>
+    <ImageView android:id="@id/blind_box_pedestal" android:layout_width="@dimen/dp_69" android:layout_height="@dimen/dp_27" android:layout_marginBottom="@dimen/dp_10" android:src="@drawable/blind_box_pedestal" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/dp_3" />
+    <com.blued.android.module.live_china.view.LiveLuckyBagSlopeProgressView android:id="@id/blind_box_progress_view" android:layout_width="@dimen/dp_64" android:layout_height="@dimen/dp_64" android:layout_marginTop="13.0dip" android:layout_marginStart="6.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="@dimen/dp_64" android:layout_height="@dimen/dp_64" android:layout_marginLeft="@dimen/dp_6" android:layout_marginTop="@dimen/dp_13">
+        <TextView android:textSize="@dimen/sp_10" android:textStyle="bold" android:textColor="#ffb542d7" android:id="@id/tv_current_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/sp_10" android:textColor="#ff34053f" android:id="@id/tv_max_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="0.7" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_right_layout" android:layout_width="@dimen/dp_53" android:layout_height="@dimen/dp_114" android:layout_marginEnd="@dimen/dp_11" android:layout_alignParentEnd="true">
+        <ImageView android:id="@id/iv_open_right_icon" android:layout_width="@dimen/dp_44" android:layout_height="@dimen/dp_44" />
+        <TextView android:textSize="@dimen/dp_10" android:textColor="#ffdb8d00" android:id="@id/tv_price" android:background="@drawable/live_blind_box_gift_bg" android:paddingLeft="@dimen/dp_4" android:paddingRight="@dimen/dp_4" android:layout_width="wrap_content" android:layout_height="@dimen/dp_12" android:text="60,000" app:drawableLeftCompat="@drawable/live_beans_icon" />
+        <TextView android:textSize="@dimen/dp_10" android:textColor="#ff34053f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="有几率开出" android:height="12.0dip" android:alpha="0.55" />
+        <TextView android:textSize="@dimen/dp_10" android:textStyle="bold" android:textColor="#ffb542d7" android:ellipsize="end" android:id="@id/tv_price_gift" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+    </LinearLayout>
+</RelativeLayout>

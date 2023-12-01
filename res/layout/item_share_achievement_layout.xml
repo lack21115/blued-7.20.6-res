@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/syc_dark_000000" android:id="@id/tv_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_53" android:text="999" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" app:layout_constraintLeft_toLeftOf="@id/tv_value" app:layout_constraintTop_toBottomOf="@id/tv_value">
+        <ImageView android:id="@id/img_issues_icon" android:layout_width="@dimen/dp_11" android:layout_height="@dimen/dp_11" android:layout_marginRight="@dimen/dp_2" android:src="@drawable/icon_gray_issues" />
+        <TextView android:textSize="@dimen/sp_11" android:textColor="@color/syc_999999" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="祝福人数" android:includeFontPadding="false" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

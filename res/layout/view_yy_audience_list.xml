@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/ll_audience_root" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.module.live.base.view.LimitRecyclerView android:id="@id/rv_fans_list_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_17" android:layout_alignParentRight="true" app:maxWidth="@dimen/dp_78" />
+    <com.blued.android.framework.view.shape.ShapeTextView android:textSize="@dimen/sp_13" android:textColor="@color/syc_dark_b" android:gravity="center" android:id="@id/tv_audience_view" android:paddingLeft="@dimen/dp_6" android:paddingRight="@dimen/dp_6" android:layout_width="wrap_content" android:layout_height="@dimen/dp_26" android:minWidth="@dimen/dp_28" android:includeFontPadding="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:corner_radius="@dimen/dp_13" app:solid_color="@color/syc_66000000" />
+</RelativeLayout>

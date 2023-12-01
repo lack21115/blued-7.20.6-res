@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_chatroom_content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.framework.view.shape.ShapeLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/sll_chatroom_tag" android:padding="1.0dip" android:layout_width="wrap_content" android:layout_height="22.0dip" app:corner_radius="12.0dip" app:gradient_angle="LEFT_RIGHT" app:gradient_end_color="@color/syc_649FFF" app:gradient_start_color="@color/syc_00E0AB">
+        <TextView android:textSize="10.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_chatting" android:layout_marginStart="5.0dip" android:layout_marginEnd="4.0dip" />
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="20.0dip" android:minWidth="1.0dip">
+            <ImageView android:layout_gravity="end" android:id="@id/iv_chatroom_user_header1" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginEnd="29.0dip" />
+            <ImageView android:layout_gravity="end" android:id="@id/iv_chatroom_user_header2" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginEnd="14.0dip" />
+            <ImageView android:layout_gravity="end" android:id="@id/iv_chatroom_user_header3" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+        </FrameLayout>
+    </com.blued.android.framework.view.shape.ShapeLinearLayout>
+    <com.blued.android.module.common.view.BluedMarqueeTextView android:textSize="12.0sp" android:textColor="@color/syc_j" android:ellipsize="marquee" android:id="@id/bmtv_chatroom_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" android:layout_marginStart="5.0dip" android:layout_marginEnd="@dimen/dp_30" />
+</LinearLayout>

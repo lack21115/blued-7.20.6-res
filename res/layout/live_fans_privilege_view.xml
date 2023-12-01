@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_privilege" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="11.5sp" android:textColor="@color/syc_dark_h" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/live_fans_not_add_tip_2" />
+    <View android:id="@id/view_height_9" android:layout_width="wrap_content" android:layout_height="9.0dip" />
+    <View android:id="@id/view_height_25" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="25.0dip" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_privilege" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

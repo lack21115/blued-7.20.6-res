@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0dip" android:textColor="@color/syc_dark_FFB119" android:id="@id/tv_center_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_pk_dared_kill_succeed" android:includeFontPadding="false" android:layout_centerInParent="true" android:alpha="0.0" />
+    <RelativeLayout android:id="@id/rl_pk_root" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0">
+        <View android:id="@id/view_pk_result_background" android:background="@drawable/live_pk_dared_background_alpha" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/iv_pk_result_icon_star" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/iv_pk_result_icon" android:layout_width="wrap_content" android:layout_height="22.0dip" android:layout_marginTop="18.5dip" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/iv_pk_result_icon_highlight" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_mvp_root" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="1.0">
+        <View android:id="@id/view_mvp_background" android:background="@drawable/live_pk_dared_background" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/iv_mvp_avatar" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="5.5dip" android:layout_marginTop="22.0dip" android:src="@color/syc_dark_FFB119" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/syc_dark_b" android:ellipsize="end" android:id="@id/tv_mvp_nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="35.5dip" android:layout_marginTop="21.0dip" android:maxWidth="63.0dip" android:maxLines="1" android:includeFontPadding="false" />
+        <TextView android:textSize="9.0dip" android:textColor="@color/syc_dark_b" android:id="@id/tv_mvp_score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="35.5dip" android:layout_marginTop="1.0dip" android:includeFontPadding="false" android:layout_below="@id/tv_mvp_nickname" />
+        <TextView android:textSize="9.0dip" android:textColor="@color/syc_dark_b" android:gravity="center" android:id="@id/tv_mvp_label" android:background="@drawable/live_pk_dared_mvp_label" android:layout_width="68.0dip" android:layout_height="15.0dip" android:text="@string/live_pk_dared_mvp_title" android:includeFontPadding="false" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

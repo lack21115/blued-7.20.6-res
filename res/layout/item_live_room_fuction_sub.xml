@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="40.0dip" android:layout_height="40.0dip">
+        <ImageView android:id="@id/item_live_room_func_sub_icon" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+        <com.blued.android.framework.view.shape.ShapeTextView android:id="@id/tv_dot" android:visibility="gone" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_marginTop="1.5dip" android:layout_marginRight="1.5dip" android:layout_alignParentRight="true" app:corner_radius="8.0dip" app:solid_color="@color/syc_g" />
+    </RelativeLayout>
+    <TextView android:textSize="10.0sp" android:textColor="@color/syc_dark_989898" android:ellipsize="end" android:gravity="center" android:id="@id/item_live_room_func_sub_name" android:layout_width="67.0dip" android:layout_height="wrap_content" android:layout_marginTop="7.5dip" android:maxLines="1" />
+</LinearLayout>

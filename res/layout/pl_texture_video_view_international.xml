@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/video_root" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.blued.android.module.player.media.view.MediaControllerINT android:layout_gravity="bottom" android:id="@id/seek_lay" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_10" android:minHeight="20.0dip" />
+    <FrameLayout android:id="@id/cover_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/preview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:layout_gravity="center" android:id="@id/video_state_icon" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/video_international_play_icon" />
+        <ImageView android:layout_gravity="right" android:id="@id/video_screent_icon" android:visibility="gone" android:layout_width="27.0dip" android:layout_height="27.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/video_international_full_screen_icon" />
+        <ImageView android:layout_gravity="bottom|center|right" android:id="@id/video_voice_icon" android:visibility="gone" android:layout_width="27.0dip" android:layout_height="27.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" android:src="@drawable/video_international_mute_icon" />
+    </FrameLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@id/LoadingView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateTint="@color/white" android:indeterminateTintMode="src_atop" />
+</FrameLayout>

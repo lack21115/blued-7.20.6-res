@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_root" android:background="@color/transparent" android:paddingLeft="22.0dip" android:paddingRight="22.0dip" android:paddingBottom="11.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="22.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.framework.view.shape.ShapeLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/rl_content" android:paddingLeft="10.0dip" android:paddingTop="6.0dip" android:paddingRight="5.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingVertical="6.0dip" app:corner_radius="6.0dip" app:solid_color="@color/syc_dark_FFF5F1" app:stroke_color="@color/syc_dark_D7BB9C" app:stroke_width="1.0dip">
+        <TextView android:textSize="12.0sp" android:textColor="@color/syc_dark_C84D00" android:id="@id/tv_content" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_toLeftOf="@id/iv_arrows" />
+        <ImageView android:id="@id/iv_arrows" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/live_wishing_well_arrows" />
+    </com.blued.android.framework.view.shape.ShapeLinearLayout>
+    <ImageView android:id="@id/iv_indicate" android:layout_width="11.73999dip" android:layout_height="5.8599854dip" android:layout_marginTop="-1.5dip" android:src="@drawable/live_wishing_well_indicate" android:layout_below="@id/rl_content" android:layout_centerHorizontal="true" />
+</RelativeLayout>

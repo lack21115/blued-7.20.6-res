@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="wrap_content" android:layout_height="172.5dip" android:layout_marginBottom="8.5dip" android:maxWidth="172.5dip" android:layout_marginStart="3.0dip" android:layout_marginEnd="3.0dip" app:cardBackgroundColor="@color/syc_dark_434343" app:cardCornerRadius="6.0dip" app:cardElevation="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/live_recommend_item" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/iv_pic" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <RelativeLayout android:id="@id/rl_user_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:layout_alignParentBottom="true" android:layout_marginStart="4.5dip" android:layout_marginEnd="4.5dip">
+            <TextView android:textSize="12.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/tv_nickname" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="name" android:maxLines="1" android:shadowColor="@color/black" android:shadowDx="0.0" android:shadowDy="0.0" android:shadowRadius="5.0" android:layout_toLeftOf="@id/tv_popularity" android:layout_centerVertical="true" />
+            <TextView android:textSize="11.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/tv_popularity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3,963" android:shadowColor="@color/black" android:shadowDx="0.0" android:shadowDy="0.0" android:shadowRadius="5.0" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <ImageView android:id="@id/iv_pk" android:layout_width="wrap_content" android:layout_height="15.0dip" android:src="@drawable/live_list_pk_label" android:scaleType="fitStart" android:adjustViewBounds="true" />
+        <ImageView android:id="@id/iv_official_recommend" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_margin="5.0dip" android:src="@drawable/live_list_recommend_top" android:scaleType="fitEnd" android:adjustViewBounds="true" android:layout_alignParentRight="true" />
+        <ImageView android:id="@id/iv_level" android:layout_width="wrap_content" android:layout_height="13.0dip" android:layout_marginLeft="4.5dip" android:layout_marginBottom="5.0dip" android:scaleType="fitStart" android:adjustViewBounds="true" android:layout_above="@id/rl_user_info" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

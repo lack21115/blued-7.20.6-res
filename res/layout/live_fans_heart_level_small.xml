@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_level" android:layout_width="wrap_content" android:layout_height="15.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginLeft="1.5dip">
+        <ImageView android:layout_gravity="center" android:id="@id/iv_heart" android:layout_width="17.159973dip" android:layout_height="13.0dip" android:src="@drawable/live_fans_heart_level_badge_heart" android:scaleType="fitXY" />
+        <TextView android:textSize="8.0dip" android:textColor="@color/syc_dark_FF6533" android:layout_gravity="center_horizontal" android:id="@id/tv_level_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:includeFontPadding="false" />
+    </FrameLayout>
+    <TextView android:textSize="10.0sp" android:textColor="@color/syc_dark_b" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/tv_fans_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.5dip" android:layout_marginTop="0.30000007dip" android:layout_marginRight="4.799988dip" android:maxLines="1" android:includeFontPadding="false" android:maxLength="3" />
+</LinearLayout>

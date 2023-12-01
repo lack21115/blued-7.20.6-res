@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_root" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="20.0dip">
+            <TextView android:textSize="11.0sp" android:textColor="@color/syc_dark_222" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/live_random_gift_host_tab_record_time" android:layout_weight="1.0" />
+            <TextView android:textSize="11.0sp" android:textColor="@color/syc_dark_222" android:gravity="center_horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/live_random_gift_host_tab_record_name" android:layout_weight="1.0" />
+            <TextView android:textSize="11.0sp" android:textColor="@color/syc_dark_222" android:gravity="right" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/live_random_gift_host_tab_record_award" android:layout_weight="1.0" />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="16.0dip" />
+    </LinearLayout>
+    <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/rl_empty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0dip">
+        <ImageView android:layout_width="120.0dip" android:layout_height="120.0dip" android:src="@drawable/live_pocket_no_data" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/syc_dark_989898" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="160.0dip" android:text="@string/live_random_gift_record_lottery_period_empty" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/syc_dark_999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="224.0dip" android:text="@string/live_random_gift_record_period_info" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/syc_i" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/top_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/camera_pre_root_v" android:layout_width="fill_parent" android:layout_height="315.0dip" android:layout_marginLeft="30.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="30.0dip">
+        <ImageView android:id="@id/camera_pre_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitStart" />
+        <ImageView android:id="@id/img_cover_layer" android:layout_width="fill_parent" android:layout_height="100.0dip" android:src="@drawable/bg_scan_cover" android:scaleType="fitXY" />
+        <com.blued.android.framework.view.shape.ShapeTextView android:textSize="14.0sp" android:textColor="@color/syc_dark_b" android:gravity="center" android:id="@id/tv_cover_text" android:paddingLeft="20.0dip" android:paddingTop="10.0dip" android:paddingRight="20.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/verifing" android:layout_centerInParent="true" app:corner_radius="6.0dip" app:solid_color="@color/syc_d9000000" />
+    </RelativeLayout>
+</LinearLayout>

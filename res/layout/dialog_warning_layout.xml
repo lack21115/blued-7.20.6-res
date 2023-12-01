@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/shape_raduis_6_ffffff" android:layout_width="@dimen/dp_300" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/sp_16" android:textColor="@color/syc_dark_h" android:gravity="center" android:id="@id/tv_warn_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_30" android:text="@string/yy_warring" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/syc_6A6A70" android:id="@id/tv_warn" android:paddingLeft="@dimen/dp_10" android:paddingRight="@dimen/dp_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" />
+        <View android:background="@color/syc_dark_line" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="@dimen/dp_30" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/syc_3E93FF" android:gravity="center" android:id="@id/tv_ok" android:layout_width="fill_parent" android:layout_height="@dimen/dp_50" android:text="@string/yy_warn_ok" android:layout_weight="1.0" />
+    </LinearLayout>
+</FrameLayout>

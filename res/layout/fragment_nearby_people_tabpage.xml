@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/nafio_b" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:id="@id/nestedScrollView" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.blued.android.module.common.view.NoDataAndLoadFailView android:id="@id/nodataview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_go_buy_vip" android:background="@color/syc_b" android:paddingTop="120.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_vip_selected_present" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/syc_h" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="30.0dip" android:text="@string/svip_get_selected_every_day" />
+                <com.blued.android.framework.view.shape.ShapeTextView android:textSize="16.0sp" android:textColor="@color/syc_f8d7b2" android:id="@id/tv_buy_vip" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="40.0dip" android:layout_marginRight="30.0dip" android:text="@string/vip_privilege_now_buy" android:textAlignment="center" app:corner_radius="18.0dip" app:solid_color="@color/syc_h" />
+            </LinearLayout>
+        </FrameLayout>
+    </androidx.core.widget.NestedScrollView>
+    <ViewFlipper android:id="@id/viewFlipper" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.blued.android.framework.view.pulltorefresh.PullToRefreshRecyclerView android:id="@id/grid_view" android:layout_marginLeft="3.0dip" style="@style/PullToRefreshListView" />
+        <com.blued.android.framework.view.pulltorefresh.PullToRefreshRecyclerView android:id="@id/list_view" android:layout_marginLeft="-1.5dip" style="@style/PullToRefreshListView" />
+    </ViewFlipper>
+    <com.blued.android.framework.view.shape.ShapeTextView android:textSize="14.0sp" android:textColor="@color/syc_b" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_refresh_hint" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginTop="-35.0dip" app:corner_radius="10.0dip" app:solid_color="@color/syc_a" />
+    <com.blued.android.framework.view.shape.ShapeTextView android:textSize="16.0sp" android:textColor="@color/syc_f8d7b2" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/stv_buy_vip" android:paddingLeft="19.0dip" android:paddingTop="12.0dip" android:paddingRight="19.0dip" android:paddingBottom="12.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="48.0dip" android:text="@string/buy_svip_get_selected_every_day" app:corner_radius="18.0dip" app:solid_color="@color/syc_h" />
+</FrameLayout>

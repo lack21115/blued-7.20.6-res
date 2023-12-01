@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginRight="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="7.0">
+        <TextView android:textSize="11.0sp" android:textColor="@color/syc_dark_000000" android:gravity="center_vertical" android:id="@id/tv_name" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_random_gift_probability_gift_name" android:includeFontPadding="false" />
+        <ImageView android:gravity="center_vertical" android:id="@id/iv_icon" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginLeft="4.0dip" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/rl_current_probability" android:background="@color/syc_dark_FFF8F2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="5.0">
+        <TextView android:textSize="11.0sp" android:textColor="@color/syc_dark_000000" android:gravity="center" android:id="@id/tv_current_probability" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/iv_up_arrows" android:layout_width="5.0dip" android:layout_height="8.0dip" android:layout_marginLeft="4.0dip" android:src="@drawable/live_random_gift_up_arrows" android:layout_toRightOf="@id/tv_current_probability" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:textSize="11.0sp" android:textColor="@color/syc_dark_000000" android:gravity="center" android:id="@id/tv_probability" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_weight="5.0" />
+</LinearLayout>

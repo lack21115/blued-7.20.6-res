@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/syc_x" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" app:bg_transparent="true" app:hide_btm_line="true" />
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@id/refresh_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.blued.android.module.common.widget.consecutivescroller.ConsecutiveScrollerLayout android:id="@id/scrollerLayout" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" app:isPermanent="true">
+            <include android:id="@id/view_search" layout="@layout/view_search" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/rl_group_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="42.0dip">
+                    <TextView android:textSize="17.0sp" android:textColor="@color/syc_h" android:id="@id/tv_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="@string/group_my_groups" android:layout_centerVertical="true" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/syc_j" android:id="@id/tv_all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:text="@string/my_new_base_all" android:drawableRight="@drawable/beans_pre_pay_right_arrow" android:drawablePadding="4.5dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/group_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <View android:background="@color/syc_x" android:layout_width="fill_parent" android:layout_height="25.0dip" />
+            <com.blued.android.framework.view.shape.ShapeTextView android:layout_gravity="center" android:id="@id/shape_tab_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" app:corner_radius="12.0dip" app:solid_color="@color/syc_x" />
+            <com.soft.blued.customview.TabPageIndicatorWithDot android:id="@id/tablayout" android:layout_width="wrap_content" android:layout_height="25.0dip" android:layout_marginLeft="12.0dip" app:indicatorRadius="10.0dip" app:indicatorWidth="8.0dip" app:shouldExpand="true" app:tabPadding="6.0dip" app:tabTextSize="15.0sp" />
+            <View android:background="@color/syc_x" android:layout_width="fill_parent" android:layout_height="12.0dip" app:layout_isSticky="true" />
+            <com.blued.android.module.common.widget.consecutivescroller.ConsecutiveViewPager android:id="@id/viewPager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </com.blued.android.module.common.widget.consecutivescroller.ConsecutiveScrollerLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.blued.android.framework.view.shape.ShapeFrameLayout android:id="@id/fl_vote_header" android:padding="@dimen/dp_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_16" app:corner_radius="@dimen/dp_25" app:gradient_end_color="@color/syc_3883FD" app:gradient_start_color="@color/syc_00E0AB"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardBackgroundColor="@color/transparent" app:cardCornerRadius="@dimen/dp_24" app:cardElevation="0.0dip">
+        <ImageView android:id="@id/iv_vote_header" android:layout_width="@dimen/dp_48" android:layout_height="@dimen/dp_48" android:src="@drawable/user_bg_round" />
+    </androidx.cardview.widget.CardView>
+    <ImageView android:layout_gravity="bottom|center|right" android:id="@id/iv_vote" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_yy_select_vote" />
+</com.blued.android.framework.view.shape.ShapeFrameLayout>

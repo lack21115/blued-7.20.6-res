@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.blued.android.framework.activity.keyboardpage.KeyboardListenLinearLayout android:orientation="vertical" android:id="@id/keyboardLinearLayout" android:background="@android:color/background_dark" style="@style/layout_fill"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <com.blued.android.module.shortvideo.view.SquareGLSurfaceView android:id="@id/stv_edit_preview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/layoutTop" android:tag="@string/title_tag_for_fit_status_bar" android:background="@drawable/stv_title_bg" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_alignParentTop="true">
+            <ImageView android:id="@id/btnBack" android:layout_centerVertical="true" style="@style/stv_title_left_back_style" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/lay_music" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="8.0dip" android:layout_centerInParent="true">
+                <ImageView android:layout_width="13.0dip" android:layout_height="13.0dip" android:src="@drawable/video_scan_music_icon" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/white" android:ellipsize="marquee" android:id="@id/tv_music" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="160.0dip" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+            </LinearLayout>
+        </RelativeLayout>
+        <com.blued.android.module.shortvideo.view.ConfigView android:id="@id/stv_config_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="110.0dip" android:layout_alignParentRight="true" />
+        <com.blued.android.module.shortvideo.view.EditMainView android:id="@id/stv_main_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <com.blued.android.module.shortvideo.view.EditVolumeView android:id="@id/stv_volume_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+        <com.blued.android.module.shortvideo.view.FilterView android:id="@id/stv_filter_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+        <com.blued.android.module.shortvideo.view.CoverView android:id="@id/stv_cover_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</com.blued.android.framework.activity.keyboardpage.KeyboardListenLinearLayout>

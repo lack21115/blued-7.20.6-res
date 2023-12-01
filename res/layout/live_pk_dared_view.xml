@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/fl_view_root" android:layout_width="100.0dip" android:layout_height="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="100.0dip" android:layout_height="wrap_content" android:minHeight="57.0dip">
+        <com.blued.android.module.live_china.view.pkdared.PkDaredTextBarView android:id="@id/pptv_text_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="13.0dip" android:layout_marginTop="1.5dip" android:layout_below="@id/card_root" />
+        <androidx.cardview.widget.CardView android:id="@id/card_root" android:clickable="true" android:layout_width="fill_parent" android:layout_height="57.0dip" app:cardBackgroundColor="@color/transparent" app:cardCornerRadius="8.0dip" app:cardElevation="0.0dip">
+            <RelativeLayout android:id="@id/rl_content" android:background="@drawable/live_pk_dared_background_alpha_icon" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.blued.android.module.live_china.view.pkdared.PkDaredMatchView android:id="@id/pdmv_match" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <com.blued.android.module.live_china.view.pkdared.PkDaredBodyView android:id="@id/pdbv_body" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <com.blued.android.module.live_china.view.pkdared.PkDaredEggView android:id="@id/pdev_egg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <com.blued.android.module.live_china.view.pkdared.PkDaredFogView android:id="@id/pdfv_fog" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <com.blued.android.module.live_china.view.pkdared.PkDaredNoticeView android:id="@id/pdnv_notice" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <com.blued.android.module.live_china.view.pkdared.PkDaredResultView android:id="@id/pdrv_result" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <View android:id="@id/view_click" android:layout_width="50.0dip" android:layout_height="57.0dip" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <com.blued.android.module.live_china.view.pkdared.PkDaredPropBarView android:id="@id/ppbv_prop_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/card_root" />
+    </RelativeLayout>
+</FrameLayout>

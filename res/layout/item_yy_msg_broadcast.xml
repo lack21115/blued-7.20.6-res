@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/shape_raduis_16_tran_30_000000" android:padding="@dimen/dp_10" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/sp_13" android:textColor="@color/white" android:id="@id/tv_msg_title" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/yy_room_broadcast" />
+    <TextView android:textSize="@dimen/sp_13" android:textColor="@color/white" android:id="@id/tv_msg_broadcast" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_4" />
+</LinearLayout>

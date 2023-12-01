@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/ll_audience_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.framework.view.shape.ShapeLinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/ll_code_all" android:layout_width="fill_parent" android:layout_height="500.0dip" app:solid_color="@color/syc_b" app:top_left_radius="12.0dip" app:top_right_radius="12.0dip">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="44.0dip">
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/syc_h" android:id="@id/tv_titl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yy_title_code_of_conduct_dialog" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/iv_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/icon_yy_title_close" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <WebView android:id="@id/web" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.blued.android.framework.view.shape.ShapeLinearLayout>
+</FrameLayout>

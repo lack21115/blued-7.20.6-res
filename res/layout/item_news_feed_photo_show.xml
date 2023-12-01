@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_feed_add" android:background="@drawable/feed_photo_add" android:visibility="gone" android:layout_width="77.0dip" android:layout_height="77.0dip" android:scaleType="centerCrop" android:contentDescription="@string/app_name" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/iv_feed_photo" android:layout_width="77.0dip" android:layout_height="77.0dip" android:scaleType="centerCrop" />
+        <ImageView android:id="@id/iv_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/feed_post_delete" android:layout_alignRight="@id/iv_feed_photo" />
+        <ImageView android:id="@id/iv_video_preview" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_video_preview" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

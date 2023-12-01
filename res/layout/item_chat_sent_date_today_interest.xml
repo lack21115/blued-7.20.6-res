@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/msg_item_root" android:paddingTop="@dimen/chat_two_item_root_top" android:paddingBottom="@dimen/chat_two_item_root_bottom" style="@style/layout_fill_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/msg_safe_common_system" />
+    <include layout="@layout/msg_date_layout" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginRight="18.0dip">
+        <TextView android:textSize="12.0sp" android:textColor="@color/syc_k" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/date_today_wait_his_like" />
+    </LinearLayout>
+</LinearLayout>

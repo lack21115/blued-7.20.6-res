@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="156.0dip" android:layout_height="54.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.cardview.widget.CardView android:id="@id/cv_root" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="12.0dip" app:cardBackgroundColor="@android:color/transparent" app:cardCornerRadius="21.0dip" app:cardElevation="0.0dip">
+            <com.blued.android.module.common.view.AutoScrollViewPager android:id="@id/asvp_banner" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </androidx.cardview.widget.CardView>
+        <com.blued.android.module.common.view.LinePageIndicator android:id="@id/lpi_dot" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="6.0dip" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip" android:layout_alignParentBottom="true" android:layout_marginVertical="3.0dip" app:centered="true" app:gapWidth="6.0dip" app:lineHeight="6.0dip" app:lineWidth="6.0dip" app:roundRadius="3.0dip" app:selectedColor="@color/syc_dark_E5E5E5E5" app:selectedLineWidth="6.0dip" app:strokeWidth="6.0dip" app:unselectedColor="@color/syc_dark_66222222" />
+    </RelativeLayout>
+</RelativeLayout>

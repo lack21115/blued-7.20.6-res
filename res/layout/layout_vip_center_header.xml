@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" android:elevation="5.0dip">
+        <ImageView android:id="@id/iv_header_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout android:orientation="vertical" android:id="@id/header" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="20.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/user_info_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginStart="14.0dip" android:layout_marginEnd="130.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+                <ImageView android:id="@id/iv_user_avatar" android:layout_width="46.0dip" android:layout_height="46.0dip" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="8.0dip">
+                    <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/syc_2A7BDF" android:ellipsize="end" android:id="@id/tv_user_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginEnd="20.0dip" />
+                    <TextView android:textSize="11.0sp" android:textColor="@color/syc_2A7BDF" android:id="@id/tv_vip_state" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:id="@id/iv_vip_gradle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:layout_marginStart="16.0dip" />
+            <HorizontalScrollView android:id="@id/scroll_view" android:scrollbars="none" android:fadingEdgeLength="27.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="-3.0dip" android:requiresFadingEdge="horizontal">
+                <com.soft.blued.ui.user.views.VipGradeProgress android:id="@id/progress" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </HorizontalScrollView>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.blued.android.framework.view.shape.ShapeLinearLayout android:id="@id/recycler_parent_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-23.0dip" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" android:elevation="1.0dip" app:corner_radius="16.0dip" app:solid_color="@color/syc_1FFFFFFF">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:layout_marginBottom="15.0dip" />
+    </com.blued.android.framework.view.shape.ShapeLinearLayout>
+    <LinearLayout android:id="@id/banner_root_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip">
+        <include android:id="@id/banner_view" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/item_vip_center_banner" />
+    </LinearLayout>
+</LinearLayout>

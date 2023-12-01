@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/yy_connectting_root" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/fl_seat_view" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.blued.android.module.yy_china.view.YYBaseUserHeadView android:id="@id/base_us_head" android:layout_width="@dimen/dp_56" android:layout_height="wrap_content" android:layout_centerInParent="true" app:head_ani_img_width="@dimen/dp_56" app:head_us_img_width="@dimen/dp_40" />
+        <ImageView android:id="@id/iv_level_img" android:layout_width="@dimen/dp_43" android:layout_height="@dimen/dp_13" android:layout_marginTop="@dimen/dp_41" android:src="@drawable/icon_yy_level_default" android:scaleType="fitXY" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center_vertical" android:id="@id/rv_step_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_apply_list" android:layout_width="@dimen/dp_30" android:layout_height="@dimen/dp_30" android:layout_marginRight="@dimen/dp_10" android:src="@drawable/icon_yy_sale_apply_list" />
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/top_title" android:layout_width="fill_parent" android:layout_height="wrap_content" app:hide_btm_line="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/lock_pattern_open" android:text="@string/lock_pattern_open" style="@style/setting_info_item_tv_no_icon" />
+            <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+            <ToggleButton android:id="@id/tglbtn_pattern_lock_onoff" android:layout_marginRight="15.0dip" android:textOn="" android:textOff="" style="@style/toggle_button" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_lock_pattern_reset" android:background="@color/syc_b" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/syc_32" android:id="@id/tv_lock_pattern_reset" android:clickable="true" android:text="@string/lock_pattern_reset" style="@style/setting_info_item_tv_no_icon" />
+            <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+            <ImageView style="@style/icon_right_arrow" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

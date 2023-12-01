@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/ll_pk_score" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="63.0dip">
+            <com.blued.android.framework.view.shape.ShapeFrameLayout android:layout_width="70.0dip" android:layout_height="fill_parent" app:bottom_left_radius="8.0dip" app:solid_color="@color/syc_dark_457EFF" app:top_left_radius="8.0dip">
+                <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center|right" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="13.0sp" android:textColor="@color/syc_dark_b" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_pk_owner_word" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/syc_dark_b" android:id="@id/tv_my_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/live_pk_owner_word" />
+                </LinearLayout>
+            </com.blued.android.framework.view.shape.ShapeFrameLayout>
+            <ImageView android:layout_width="45.0dip" android:layout_height="fill_parent" android:src="@drawable/live_pk_result_vs_bg" android:scaleType="centerCrop" />
+            <com.blued.android.framework.view.shape.ShapeFrameLayout android:layout_width="70.0dip" android:layout_height="fill_parent" app:bottom_right_radius="8.0dip" app:solid_color="@color/syc_dark_C933CC" app:top_right_radius="8.0dip">
+                <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="13.0sp" android:textColor="@color/syc_dark_b" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_pk_other_word" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/syc_dark_b" android:id="@id/tv_other_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/live_pk_owner_word" />
+                </LinearLayout>
+            </com.blued.android.framework.view.shape.ShapeFrameLayout>
+        </LinearLayout>
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_pk_vs" />
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_pk_icon" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/iv_pk_left_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/live_pk_my_result_icon" android:layout_width="55.0dip" android:layout_height="55.0dip" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/iv_pk_right_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/live_pk_your_result_icon" android:layout_width="55.0dip" android:layout_height="55.0dip" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

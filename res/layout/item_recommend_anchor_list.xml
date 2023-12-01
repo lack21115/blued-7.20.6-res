@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="1.5dip" app:cardCornerRadius="6.0dip" app:cardElevation="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/item_recommend_anchor_avatar" android:layout_width="fill_parent" android:layout_height="121.0dip" android:scaleType="centerCrop" />
+    <View android:layout_gravity="bottom" android:background="@drawable/item_recommend_anchor_bg" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="7.0dip">
+        <TextView android:textSize="10.0sp" android:textColor="@color/syc_b" android:ellipsize="end" android:id="@id/item_recommend_anchor_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:layout_weight="1.0" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_fans_recommend_profile" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/syc_b" android:ellipsize="end" android:id="@id/item_recommend_anchor_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:maxLines="1" android:includeFontPadding="false" />
+    </LinearLayout>
+    <ImageView android:id="@id/item_recommend_anchor_type_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginTop="3.0dip" />
+</androidx.cardview.widget.CardView>

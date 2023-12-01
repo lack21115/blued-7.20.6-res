@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="71.0dip" android:layout_marginLeft="13.0dip">
+        <FrameLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/header_view" android:layout_width="45.0dip" android:layout_height="45.0dip" />
+            <ImageView android:layout_gravity="bottom|center|right" android:id="@id/img_verify" android:layout_width="18.0dip" android:layout_height="18.0dip" android:contentDescription="@string/imagefailed_exception" />
+        </FrameLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="14.0sp" android:textColor="@color/syc_dark_h" android:id="@id/reward_name" style="@style/text_user_list_name" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/syc_dark_i" android:id="@id/reward_time" android:layout_marginTop="6.0dip" style="@style/text_user_list_name" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="3.0dip" android:layout_marginRight="13.0dip">
+            <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/iv_beans" android:layout_width="12.0dip" android:layout_height="11.0dip" android:layout_marginTop="4.0dip" android:src="@drawable/live_reward_list_header_bean_icon" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/syc_dark_h" android:id="@id/reward_beans" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/beast_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+                <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_reward_best_icon" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/nafio_f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/live_reward_list_best" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/nafio_o" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="13.0dip" />
+</LinearLayout>

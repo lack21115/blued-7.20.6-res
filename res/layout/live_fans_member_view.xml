@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@drawable/shape_fans_bg_top_radius" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/ll_member" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" layout="@layout/live_fans_title" />
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@id/smart_members" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <include android:id="@id/ll_nodata" layout="@layout/live_fans_no_member_default" />
+                <include android:visibility="gone" layout="@layout/nodata_live_rank_list_error" />
+                <ProgressBar android:layout_gravity="center" android:id="@id/loading_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_members" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </FrameLayout>
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    </LinearLayout>
+</FrameLayout>

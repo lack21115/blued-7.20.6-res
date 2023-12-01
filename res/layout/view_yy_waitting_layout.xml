@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="@dimen/dp_44" android:layout_height="@dimen/dp_36"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="fill_parent" app:cardBackgroundColor="@color/syc_alpha_3_000000" app:cardCornerRadius="@dimen/dp_6" app:cardElevation="0.0dip" />
+    <com.blued.android.module.yy_china.view.BluedGradientStrokeView android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" app:radius="6.0dip" app:storke_color="@drawable/shape_raduis_6dp_66ffa3_3e93ff_4e9bff" app:stroke_width="1.0dip" />
+    <TextView android:textSize="@dimen/sp_12" android:textColor="@color/syc_00E0AB" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_waitting_count" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

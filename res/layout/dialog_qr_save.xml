@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/qr_dialog_view" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/dialog_shape_corner" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@color/dialog_bottom_up_item" android:gravity="center" android:id="@id/qr_dialog_save" android:layout_width="fill_parent" android:layout_height="49.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/qr_save" />
+        </LinearLayout>
+        <View android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="7.0dip" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/common_v4_gray_font" android:gravity="center" android:id="@id/cancel_agree" android:background="@drawable/dialog_shape_corner" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginBottom="10.0dip" android:text="@string/cancel" />
+    </LinearLayout>
+</FrameLayout>

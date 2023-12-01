@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/user_local_view" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:orientation="horizontal" android:id="@id/user_remote_views" android:layout_width="105.0dip" android:layout_height="187.0dip" android:layout_alignParentRight="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/user_remote_time_left" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/white" android:id="@id/tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/remote_bg_lay" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/remote_header_bg_lay" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/remote_header_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+            <TextView android:background="#af252630" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/header_lay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="180.0dip" android:layout_centerHorizontal="true">
+            <TextView android:textSize="24.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/remote_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:singleLine="true" android:layout_below="@id/header_view" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/remote_connect_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/channel_connecting" android:layout_below="@id/remote_user_name" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/remote_time_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:layout_below="@id/remote_connect_state" />
+            <ImageView android:id="@id/header_view" android:background="@drawable/user_header_square" android:layout_width="123.0dip" android:layout_height="123.0dip" android:scaleType="centerCrop" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/channel_lay" android:background="@drawable/channel_bottom_bg" android:paddingBottom="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="15.0sp" android:textColor="@color/white" android:id="@id/switch_to_voice_tv" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/channel_switch_voice" android:layout_centerHorizontal="true" />
+        <Chronometer android:textSize="15.0sp" android:textColor="@color/white" android:id="@id/chronometer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/switch_to_voice_tv" android:layout_centerHorizontal="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/bottom_lay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" android:layout_below="@id/chronometer">
+            <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/channel_mute_lay" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/channel_muter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/muter_btn" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="19.0dip" android:text="@string/channel_mute" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/channel_voice_lay" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/channel_switch_voice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/channel_voice" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="19.0dip" android:text="@string/channel_switch_voice" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/channel_hold_lay" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/channel_hold_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/channel_hold_off" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:text="@string/channel_hold_off" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/channel_camera_lay" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/channel_switch_camera" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/channel_switch_camera" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="19.0dip" android:text="@string/channel_switch_camera" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/channel_speak_lay" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/channel_speak" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/speaker_btn" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="19.0dip" android:text="@string/channel_speak" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/launch_lay" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/launch_video_header_lay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="21.0dip" android:layout_marginTop="40.0dip">
+            <ImageView android:id="@id/launch_video_header_view" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_centerVertical="true" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_toRightOf="@id/launch_video_header_view" android:layout_centerVertical="true">
+                <TextView android:textSize="17.0sp" android:textColor="@color/white" android:id="@id/launch_video_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/white" android:id="@id/launch_video_connect_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/channel_connecting" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:paddingBottom="18.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/launch_switch_voice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/channel_voice" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/white" android:id="@id/voice_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:text="@string/channel_switch_voice" android:layout_below="@id/launch_switch_voice" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/launch_hold_off" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="35.0dip" android:src="@drawable/channel_hold_off" android:layout_below="@id/voice_tv" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="@string/channel_cancel" android:layout_below="@id/launch_hold_off" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/launch_time_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/accept_lay" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="32.0dip" android:paddingBottom="30.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/accept_hold_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" android:src="@drawable/channel_hold_off" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:text="@string/channel_refuse" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:paddingRight="25.0dip" android:paddingBottom="30.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/accept_switch_voice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/channel_voice" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/accept_voice_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:text="@string/channel_switch_voice" />
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/accept_hold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:src="@drawable/channel_holding" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:text="@string/channel_accept" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

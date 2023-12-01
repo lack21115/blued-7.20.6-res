@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/live_red_layout" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/fl_cover" android:layout_width="fill_parent" android:layout_height="121.0dip" app:cardCornerRadius="6.0dip" app:cardElevation="0.0px" app:cardUseCompatPadding="false">
+        <ImageView android:layout_gravity="top" android:id="@id/aariv_cover" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <com.blued.android.module.live_china.view.LiveAutoPlayView android:id="@id/fl_video_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/grab_reward_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_grab_reward_icon" />
+        <ImageView android:layout_gravity="right" android:id="@id/live_offical_top" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.5dip" android:layout_marginRight="4.5dip" />
+        <ImageView android:layout_gravity="right" android:id="@id/live_level_top" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.5dip" android:layout_marginRight="4.5dip" android:src="@drawable/live_list_level_top" />
+        <ImageView android:layout_gravity="end|center|top" android:id="@id/iv_icon_live" android:visibility="gone" android:layout_width="33.0dip" android:layout_height="15.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="6.0dip" android:src="@drawable/icon_live" android:scaleType="fitXY" />
+        <ImageView android:layout_gravity="right" android:id="@id/live_type_right_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.5dip" android:layout_marginRight="4.5dip" android:src="@drawable/live_pk_win_streak_10" />
+        <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:background="@drawable/live_list_item_cover" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <ImageView android:id="@id/live_record_level" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+                <TextView android:textSize="10.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/tv_username" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/white" android:id="@id/tv_audience_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

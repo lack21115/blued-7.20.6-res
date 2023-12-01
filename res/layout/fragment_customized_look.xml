@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/syc_c" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" app:center_text="@string/customzied_look" app:hide_btm_line="true" app:hide_right="true" />
+    <LinearLayout android:orientation="vertical" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+        <com.soft.blued.customview.LabeledTextView android:id="@id/view_widget" android:layout_width="fill_parent" android:layout_height="wrap_content" app:label_text="@string/customize_avatar_decoration" />
+        <com.soft.blued.customview.LabeledTextView android:id="@id/view_bubble" android:layout_width="fill_parent" android:layout_height="wrap_content" app:label_text="@string/customize_bubble" />
+        <com.soft.blued.customview.LabeledTextView android:id="@id/view_chat_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" app:label_text="@string/vip_customize_chat_bg" />
+        <com.soft.blued.customview.LabeledTextView android:id="@id/view_feed_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" app:label_text="@string/customize_feed_bg" />
+        <com.soft.blued.customview.LabeledTextView android:id="@id/view_app_icon" android:layout_width="fill_parent" android:layout_height="wrap_content" app:label_text="@string/customize_app_icon" />
+    </LinearLayout>
+</LinearLayout>

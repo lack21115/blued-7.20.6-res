@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="39.0dip" android:layout_height="39.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_wishing_well_content" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_width="31.0dip" android:layout_height="31.0dip" android:src="@drawable/icon_live_wishing_well_knocking_float_back" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/iv_wishing_well_knocking_lighting" android:layout_width="39.0dip" android:layout_height="39.0dip" android:src="@drawable/icon_live_wishing_well_knocking_lighting" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/iv_wishing_well_knocking_gift" android:layout_width="27.0dip" android:layout_height="27.0dip" android:layout_marginTop="10.0dip" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <com.blued.android.framework.view.shape.ShapeTextView android:textSize="9.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_wishing_well_knocking_percentage" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:layout_width="wrap_content" android:layout_height="10.5dip" android:text="1" android:includeFontPadding="false" android:layout_alignParentRight="true" app:corner_radius="5.25dip" app:solid_color="@color/syc_dark_FF0035" />
+    <com.blued.android.framework.view.shape.ShapeTextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_wishing_well_knocking_time" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:layout_width="29.5dip" android:layout_height="11.0dip" android:includeFontPadding="false" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:corner_radius="5.5dip" app:solid_color="@color/black_alpha70" />
+</RelativeLayout>

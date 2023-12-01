@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_content" android:background="@drawable/live_battle_random_bg" android:clickable="true" android:layout_width="275.0dip" android:layout_height="176.0dip" android:layout_centerInParent="true" android:elevation="1.0px">
+        <com.blued.android.module.svgaplayer.SVGAImageView android:id="@id/svg_float" android:layout_width="267.0dip" android:layout_height="101.0dip" android:layout_marginBottom="4.0dip" android:scaleType="centerCrop" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:clearsAfterStop="false" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17.0dip" android:text="领取带有“随机得奖”的奖励时" android:layout_centerHorizontal="true" />
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:layout_centerHorizontal="true">
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/tv_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:text="有机会获得" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/syc_dark_ffef5f" android:layout_gravity="center_vertical" android:id="@id/tv_extra" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="额外奖励！" android:layout_centerHorizontal="true" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_btn_root" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_marginTop="9.0dip" android:layout_below="@id/rl_content" android:layout_centerHorizontal="true">
+        <ImageView android:layout_gravity="bottom" android:id="@id/btn_get_all" android:layout_width="83.0dip" android:layout_height="40.0dip" android:src="@drawable/live_battle_btn_take" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip">
+            <ImageView android:id="@id/btn_buy_battle_pass_pro" android:layout_width="158.0dip" android:layout_height="40.0dip" android:src="@drawable/live_battle_shop_buy" android:layout_alignParentBottom="true" />
+            <ImageView android:id="@id/iv_box" android:layout_width="50.0dip" android:layout_height="43.0dip" android:layout_marginLeft="6.0dip" android:layout_marginBottom="7.0dip" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/btn_get_all_big" android:visibility="gone" android:layout_width="188.0dip" android:layout_height="40.0dip" android:layout_marginTop="19.0dip" android:src="@drawable/live_battle_btn_take_big" android:layout_below="@id/rl_content" android:layout_centerHorizontal="true" />
+</RelativeLayout>

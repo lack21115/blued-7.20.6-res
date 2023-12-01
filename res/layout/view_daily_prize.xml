@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/fl_prize_view" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_width="@dimen/dp_30" android:layout_height="@dimen/dp_30" android:src="@drawable/icon_yy_daily_gift" />
+        <ImageView android:layout_gravity="bottom|center|right" android:id="@id/btn_got" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_yy_daily_got_gift" />
+    </FrameLayout>
+    <com.blued.android.framework.view.shape.ShapeTextView android:id="@id/img_done" android:layout_width="@dimen/dp_6" android:layout_height="@dimen/dp_6" android:layout_marginTop="@dimen/dp_5" app:corner_radius="@dimen/dp_3" app:solid_color="@color/syc_202020" />
+    <TextView android:textSize="@dimen/sp_10" android:textColor="@color/syc_989898" android:id="@id/tv_task_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" />
+</LinearLayout>

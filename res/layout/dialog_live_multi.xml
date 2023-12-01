@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/cv_content" android:layout_width="265.0dip" android:layout_height="340.0dip" app:cardBackgroundColor="@color/transparent" app:cardCornerRadius="6.0dip" app:cardElevation="0.0px" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.blued.android.module.live_china.view.PopLiveActivityWebView android:id="@id/web_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/iv_img" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </androidx.cardview.widget.CardView>
+    <TextView android:textSize="15.0sp" android:textColor="@color/syc_dark_b" android:id="@id/tv_auto_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:text="5s 后自动关闭" android:layout_below="@id/cv_content" android:alpha="0.7" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/cv_content" />
+    <ImageView android:id="@id/iv_close" android:padding="10.0dip" android:layout_width="49.0dip" android:layout_height="49.0dip" android:layout_marginLeft="-10.0dip" android:layout_marginBottom="2.0dip" android:src="@drawable/icon_live_multi_close" app:layout_constraintBottom_toTopOf="@id/cv_content" app:layout_constraintLeft_toRightOf="@id/cv_content" />
+</androidx.constraintlayout.widget.ConstraintLayout>

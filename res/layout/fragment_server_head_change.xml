@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="@color/syc_h" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/server_setting_now_server" />
+    <include layout="@layout/common_title_line" />
+    <RadioGroup android:id="@id/rdgrp_servers" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RadioButton android:textColor="@color/syc_h" android:id="@id/rd_online" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/server_setting_online" />
+        <include layout="@layout/common_title_line" />
+        <RadioButton android:textColor="@color/syc_h" android:id="@id/rd_debug" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/server_setting_debug" />
+        <include layout="@layout/common_title_line" />
+        <RadioButton android:textColor="@color/syc_h" android:id="@id/rd_pre_online" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="预发布环境" />
+    </RadioGroup>
+    <include layout="@layout/common_title_line" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_splash" android:background="@drawable/selector_visitor_bgcolor" android:layout_width="fill_parent" android:layout_height="54.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="@color/syc_h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="开机图广告自动化测试" />
+        <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <ImageView android:id="@id/iv_splash_toggle" android:background="@drawable/selector_common_togglebutton" android:layout_width="40.0dip" android:layout_height="23.0dip" android:layout_marginRight="10.0dip" android:textOn="" android:textOff="" style="@style/toggle_button" />
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:textColor="@color/syc_h" android:id="@id/btn_ok" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/biao_v4_ok" android:layout_alignParentBottom="true" />
+        <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/btn_ok" android:layout_alignParentTop="true">
+            <TextView android:textColor="@color/syc_h" android:id="@id/address" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </ScrollView>
+    </RelativeLayout>
+</LinearLayout>

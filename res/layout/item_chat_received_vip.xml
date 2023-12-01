@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/msg_item_root" android:paddingTop="@dimen/chat_two_item_root_top" android:paddingBottom="@dimen/chat_two_item_root_bottom" style="@style/layout_fill_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/msg_date_layout" />
+    <LinearLayout android:id="@id/chat_content_root" android:layout_marginLeft="@dimen/chat_two_item_left_right_root" style="@style/layout_wrap_content">
+        <include layout="@layout/msg_include_avatar_left" />
+        <RelativeLayout android:id="@id/chat_content_in" android:layout_width="235.0dip" android:layout_height="125.0dip" android:layout_marginLeft="7.0dip">
+            <ImageView android:id="@id/img_vip_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/chat_svip_send_bg" android:scaleType="fitXY" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/nafio_bt" android:id="@id/tv_vip_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="84.0dip" android:layout_marginTop="28.0dip" android:text="12" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/nafio_bt" android:id="@id/tv_vip_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="84.0dip" android:layout_marginTop="3.0dip" android:text="12" android:layout_below="@id/tv_vip_time" />
+            <TextView android:textSize="13.0sp" android:textColor="#afffffff" android:id="@id/tv_vip_note" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="19.0dip" android:layout_marginBottom="13.0dip" android:text="1" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_msg_bottom_tips_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

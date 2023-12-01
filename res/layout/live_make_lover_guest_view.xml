@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/fl_make_lover_window_root" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/live_lover_windows_b" />
+    <include layout="@layout/live_lover_windows_c" />
+    <include layout="@layout/live_lover_windows_d" />
+    <include layout="@layout/live_lover_windows_e" />
+    <include layout="@layout/live_lover_windows_f" />
+    <ImageView android:id="@id/live_make_lover_host" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:src="@drawable/live_make_lover_host" />
+</FrameLayout>

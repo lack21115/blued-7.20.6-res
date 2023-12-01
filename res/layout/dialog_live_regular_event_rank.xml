@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/dialog_layout" android:layout_width="fill_parent" android:layout_height="290.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/shape_rank_list_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip">
+        <TextView android:textSize="17.0dip" android:textColor="@color/syc_dark_h" android:gravity="center" android:id="@id/tv_rank_title" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="@string/live_event_rank_title" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.blued.android.framework.view.pulltorefresh.RenrenPullToRefreshListView android:id="@id/rptrlv_live_list" app:ptrHeaderBackground="@color/pull_anim_bgcolor" style="@style/PullToRefreshListView" xmlns:app="http://schemas.android.com/apk/res-auto" />
+            <include android:id="@id/ll_nodata" layout="@layout/nodata_show_live_rank" />
+            <include android:id="@id/ll_error" android:visibility="gone" layout="@layout/nodata_live_rank_list_error" />
+            <ProgressBar android:layout_gravity="center" android:id="@id/loading_view" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

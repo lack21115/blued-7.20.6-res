@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/yy_connectting_root" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.module.yy_china.view.YYGameView android:id="@id/yy_game_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_12" android:layout_marginRight="@dimen/dp_10" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toBottomOf="@id/yy_game_layout">
+        <com.blued.android.module.yy_china.view.YYMemberGameView android:id="@id/user_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <com.blued.android.module.yy_china.view.YYMemberGameView android:id="@id/user_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <com.blued.android.module.yy_china.view.YYMemberGameView android:id="@id/user_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <com.blued.android.module.yy_china.view.YYMemberGameView android:id="@id/user_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <com.blued.android.module.yy_china.view.YYMemberGameView android:id="@id/user_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <com.blued.android.module.yy_china.view.YYMemberGameView android:id="@id/user_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <com.blued.android.module.yy_china.view.YYMemberGameView android:id="@id/user_7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

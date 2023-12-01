@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/syc_f4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/top_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/ll_groupinfo_edit_icon" android:background="@color/white" style="@style/group_info_location">
+        <TextView android:textSize="18.0sp" android:textColor="@color/common_v4_blue_frame_font" android:text="@string/edit_picture" style="@style/layout_wrap_content" />
+        <LinearLayout android:gravity="right" style="@style/layout_groupinfo">
+            <ImageView android:id="@id/iv_group_profile_pic" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/group_default_head" xmlns:app="http://schemas.android.com/apk/res-auto" />
+        </LinearLayout>
+        <ImageView style="@style/icon_right_arrow" />
+    </LinearLayout>
+    <View android:background="@color/divider_e1" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="13.0dip" />
+    <LinearLayout android:id="@id/ll_groupinfo_edit_name" android:background="@color/white" style="@style/group_info_location">
+        <TextView android:textSize="18.0sp" android:textColor="@color/common_v4_blue_frame_font" android:text="@string/group_edit_name" style="@style/layout_wrap_content" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/color_8a" android:gravity="right" android:id="@id/tv_group_edit_name" style="@style/layout_groupinfo" />
+        <ImageView style="@style/icon_right_arrow" />
+    </LinearLayout>
+    <View android:background="@color/divider_e1" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/ll_main" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/tv_bg" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/ll_content" android:background="@drawable/shape_live_make_friend_bg" android:paddingTop="30.0dip" android:paddingRight="35.0dip" android:paddingBottom="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/img_event_icon" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_marginLeft="25.0dip" android:layout_marginRight="25.0dip" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/syc_dark_h" android:id="@id/tv_event_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/img_event_icon" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/syc_dark_i" android:id="@id/tv_event_desc_guest" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:maxLines="2" android:layout_toRightOf="@id/img_event_icon" android:layout_below="@id/tv_event_name" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/btn_event_detail" android:background="@drawable/live_rank_btn" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginTop="23.0dip" android:layout_toRightOf="@id/img_event_icon" android:layout_below="@id/tv_event_desc_guest">
+                <TextView android:textSize="11.0sp" android:textColor="@color/white" android:id="@id/tv_btn_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:text="@string/live_see_box" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginRight="7.0dip" android:src="@drawable/live_beans_jump_icon" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/ll_loading" android:background="@drawable/shape_usercard_bg" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ProgressBar android:layout_gravity="center" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:progressBarStyle" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

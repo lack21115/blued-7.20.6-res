@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="#ff1d1729" android:layout_width="fill_parent" android:layout_height="22.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center_vertical" android:id="@id/content_layout" android:layout_width="fill_parent" android:layout_height="16.0dip" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:background="@drawable/live_pk_progress_left_bg" android:layout_width="16.0dip" android:layout_height="16.0dip" android:scaleType="centerCrop" />
+            <ProgressBar android:id="@id/live_pk_progress_view" android:layout_width="0.0dip" android:layout_height="fill_parent" android:max="100" android:progress="50" android:progressDrawable="@drawable/live_pk_progress" android:layout_weight="1.0" style="?android:progressBarStyleHorizontal" />
+            <ImageView android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/live_pk_progress_right_bg" android:scaleType="centerCrop" />
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip">
+        <FrameLayout android:id="@id/fl_bar" android:layout_width="36.0dip" android:layout_height="22.0dip">
+            <ImageView android:layout_gravity="center" android:layout_width="15.0dip" android:layout_height="22.0dip" android:src="@drawable/live_pk_progress_middle" />
+            <ImageView android:layout_gravity="center" android:id="@id/live_pk_progress_anim" android:layout_width="36.0dip" android:layout_height="22.0dip" android:scaleType="centerCrop" />
+        </FrameLayout>
+    </FrameLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+        <TextView android:textSize="10.0sp" android:textColor="@color/white" android:id="@id/live_pk_our_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/white" android:id="@id/live_pk_other_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</FrameLayout>

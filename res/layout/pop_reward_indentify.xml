@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_gravity="center" android:id="@id/ll_identify" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardCornerRadius="20.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="300.0dip" android:layout_height="wrap_content">
+        <FrameLayout android:background="@color/white" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <TextView android:textSize="12.0sp" android:textColor="@color/syc_dark_h" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="22.0dip" android:text="@string/live_reward_identify" />
+            <ImageView android:layout_gravity="center|right" android:id="@id/iv_close" android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@drawable/live_identify_close" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="198.0dip">
+            <com.ishumei.sdk.captcha.SmCaptchaWebView android:id="@id/sm_captch" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ImageView android:layout_gravity="right" android:id="@id/sm_refresh" android:padding="5.0dip" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_margin="5.0dip" android:src="@drawable/icon_refresh_sm_captcha" />
+        </FrameLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

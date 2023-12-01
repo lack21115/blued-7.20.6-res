@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/feed" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/item_feed_sign_set_content_bg" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="10.5dip">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip">
+                <ImageView android:id="@id/item_feed_sign_set_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/item_feed_sign_set_title" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff7c6e99" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/feed_bubble_set_like_to_poke" android:includeFontPadding="false" />
+                <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff9e94b2" android:gravity="center_vertical" android:id="@id/item_feed_sign_set_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:drawableRight="@drawable/item_feed_sign_set_right" android:drawablePadding="1.5dip" />
+            </LinearLayout>
+            <com.blued.community.ui.subject.fragment.AutoPollRecyclerView android:id="@id/item_feed_sign_set_arv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:overScrollMode="never" />
+            <include android:id="@id/item_feed_sign_set_fake" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" layout="@layout/item_feed_sign_set_flipper_v2_layout" />
+        </LinearLayout>
+        <View android:id="@id/item_feed_sign_set_click_view_id" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <androidx.cardview.widget.CardView android:id="@id/item_feed_sign_set_guide_id" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="10.5dip" app:cardBackgroundColor="@color/trans_black_seven" app:cardCornerRadius="6.0dip" app:cardElevation="0.0dip">
+            <ImageView android:layout_gravity="bottom|center" android:id="@id/item_feed_sign_set_guide_hand_id" android:layout_width="60.0dip" android:layout_height="60.0dip" />
+            <View android:layout_gravity="bottom|center" android:id="@id/item_feed_sign_set_guide_at_id" android:layout_width="1.0dip" android:layout_height="1.0dip" android:layout_marginBottom="9.0dip" />
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+    <include android:id="@id/view_btm_line" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/item_feed_sign_go_list" layout="@layout/item_feed_line" />
+</LinearLayout>

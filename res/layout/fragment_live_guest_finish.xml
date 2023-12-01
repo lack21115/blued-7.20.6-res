@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/syc_dark_32" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/background_header" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:contentDescription="@string/app_name" />
+    <View android:background="@color/color_cc000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="18.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/liveVideo_livingView_tips_liveIsOver" android:includeFontPadding="false" android:layout_centerInParent="true" />
+            <ImageView android:layout_gravity="right" android:id="@id/live_guest_finish_leave_btn" android:padding="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_close_leave_btn" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <com.blued.android.framework.view.shape.ShapeRelativeLayout android:paddingTop="14.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:paddingStart="15.0dip" android:paddingEnd="14.0dip" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip" app:corner_radius="11.0dip" app:solid_color="@color/color_1AD8D8D8">
+            <RelativeLayout android:orientation="horizontal" android:id="@id/rl_head_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/live_guest_finish_anchor_header" android:background="@drawable/shape_live_close_header_bg" android:padding="1.0dip" android:layout_width="54.0dip" android:layout_height="54.0dip" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/syc_dark_b" android:layout_gravity="center_vertical" android:id="@id/live_guest_finish_anchor_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="14.0dip" android:layout_toEndOf="@id/live_guest_finish_anchor_header" />
+                <com.blued.android.framework.view.shape.ShapeTextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:layout_gravity="end|center" android:id="@id/live_guest_finish_anchor_attention" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/follow" android:layout_centerVertical="true" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" android:layout_alignParentEnd="true" app:corner_radius="15.0dip" app:solid_color="@color/syc_1A7EFF" />
+            </RelativeLayout>
+            <View android:id="@id/view_dividing_line" android:background="#1ae2e2e2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="13.0dip" android:layout_below="@id/rl_head_view" />
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_notice_root" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_below="@id/view_dividing_line">
+                <TextView android:textSize="12.0sp" android:textColor="@color/white" android:ellipsize="middle" android:id="@id/tv_notice_time" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:alpha="0.5" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/tv_notice_content" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:maxLines="1" android:alpha="0.5" />
+            </LinearLayout>
+        </com.blued.android.framework.view.shape.ShapeRelativeLayout>
+        <TextView android:textSize="12.0sp" android:textColor="#40ffffff" android:gravity="center" android:id="@id/tv_auto_next_tips_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:text="若无任何操作，8s后自动切换下一个主播" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip">
+            <TextView android:textSize="17.0sp" android:textColor="@color/syc_dark_b" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_close_recommend_online_anchor_text" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/syc_dark_b" android:id="@id/live_guest_finish_changed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/live_close_changed" android:drawablePadding="4.0dip" android:layout_centerVertical="true" android:drawableStart="@drawable/img_live_close_changed" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_recommend_data" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginStart="6.0dip" android:layout_marginEnd="6.0dip" />
+    </LinearLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@id/live_guest_finish_loading_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" />
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/live_guest_finish_recommend_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/live_guest_finish_changed_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ProgressBar android:layout_gravity="center" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:progressBarStyle" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/ll_main" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/live_title_layer" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/ll_content" android:background="@drawable/shape_live_make_friend_bg" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="120.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="15.0sp" android:textColor="@color/syc_dark_h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/live_title_record" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginTop="18.0dip">
+                <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <EditText android:textSize="14.0sp" android:textColor="@color/syc_dark_h" android:textColorHint="@color/syc_dark_h" android:id="@id/live_title_edit" android:background="@drawable/shape_live_title_edit_bg" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/live_title_number_hint" />
+                    <ImageView android:layout_gravity="center|right" android:id="@id/live_title_edit_del" android:paddingRight="20.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_title_edit_del" />
+                </FrameLayout>
+                <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/live_title_save" android:background="@drawable/shape_live_title_btn" android:layout_width="80.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="@string/live_title_save" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/ll_loading" android:background="@drawable/shape_usercard_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ProgressBar android:layout_gravity="center" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:progressBarStyle" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

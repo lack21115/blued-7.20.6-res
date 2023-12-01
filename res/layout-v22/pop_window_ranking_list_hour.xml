@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/rl_empty_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip">
+        <ImageView android:id="@id/iv_empty_view" android:layout_width="91.0dip" android:layout_height="91.0dip" android:src="@drawable/live_icon_no_data_posted" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff1e1f23" android:id="@id/tv_empty_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/live_rank_vacancy" android:layout_below="@id/iv_empty_view" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_list" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/ll_anchor_rank_layout" android:background="@drawable/live_rank_hour_anchor_bar_bg" android:paddingTop="4.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="78.0dip" app:solid_color="@color/syc_dark_b" app:stroke_color="@color/syc_dark_i" app:stroke_width="1.0px" app:top_left_radius="16.0dip" app:top_right_radius="16.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/syc_dark_k" android:gravity="center" android:id="@id/tv_rank_index" android:visibility="gone" android:layout_width="27.0dip" android:layout_height="27.0dip" android:layout_marginLeft="10.0dip" android:text="10" />
+        <ImageView android:id="@id/iv_rank_index" android:visibility="gone" android:layout_width="27.0dip" android:layout_height="27.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/live_rank_up_one" />
+        <RelativeLayout android:id="@id/rl_avatar" android:layout_width="52.0dip" android:layout_height="52.0dip" android:layout_marginLeft="7.0dip">
+            <ImageView android:id="@id/iv_avatar" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/user_bg_round" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/iv_avatar_frame" android:layout_width="52.0dip" android:layout_height="52.0dip" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/syc_dark_222" android:ellipsize="end" android:id="@id/tv_name" android:paddingTop="5.0dip" android:paddingRight="19.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:maxLines="1" android:singleLine="true" android:layout_centerVertical="true" android:paddingVertical="5.0dip" />
+            <ImageView android:id="@id/iv_bounce" android:layout_width="15.0dip" android:layout_height="16.0dip" android:layout_alignRight="@id/tv_name" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView android:textSize="13.0sp" android:textColor="@color/syc_dark_FF5E32" android:id="@id/tv_rank" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:text="" android:layout_marginHorizontal="4.0dip" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/syc_dark_FF5E32" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="闪耀值" />
+    </LinearLayout>
+</FrameLayout>

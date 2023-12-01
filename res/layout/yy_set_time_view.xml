@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/syc_8d8d8e" android:id="@id/tv_time_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yy_gift_pk_time" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_times_lsit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16" />
+</LinearLayout>

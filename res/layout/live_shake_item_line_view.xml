@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.module.live_china.view.LiveShakeScrollView android:id="@id/scroll_view" android:layout_width="32.0dip" android:layout_height="fill_parent" />
+    <com.blued.android.framework.view.shape.ShapeTextView android:layout_gravity="center_vertical" android:id="@id/line_view" android:layout_width="0.85dip" android:layout_height="25.0dip" android:layout_marginLeft="4.5999756dip" android:layout_marginRight="4.5999756dip" app:gradient_angle="TOP_BOTTOM" app:gradient_center_color="@color/syc_dark_FFFF7B41" app:gradient_end_color="@color/syc_dark_00FF5F2C" app:gradient_start_color="@color/syc_dark_00FF9857" />
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/fl_content" android:background="@drawable/live_battle_receive_bg" android:layout_width="317.0dip" android:layout_height="440.0dip" android:layout_centerInParent="true">
+        <com.blued.android.module.svgaplayer.SVGAImageView android:id="@id/svg_backlight" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" app:clearsAfterStop="false" />
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_battle_receive_text" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_list" android:paddingBottom="20.0dip" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_experience" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="31.0dip">
+                <FrameLayout android:background="@drawable/live_battle_gift_experience_bg" android:layout_width="54.0dip" android:layout_height="54.0dip">
+                    <ImageView android:layout_gravity="center" android:layout_width="42.0dip" android:layout_height="25.0dip" android:src="@drawable/live_battle_gift_experience" />
+                </FrameLayout>
+                <TextView android:textSize="14.0sp" android:textColor="@color/syc_dark_FFEF5F" android:id="@id/tv_experience" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+            </LinearLayout>
+            <TextView android:textStyle="bold" android:textColor="@color/syc_dark_000000" android:gravity="center" android:id="@id/tv_ok" android:background="@drawable/live_battle_receive_done" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" android:text="@string/live_battle_receive" />
+        </LinearLayout>
+    </FrameLayout>
+    <ImageView android:id="@id/iv_scatter_flower" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="19.0dip" android:layout_alignTop="@id/fl_content" />
+</RelativeLayout>

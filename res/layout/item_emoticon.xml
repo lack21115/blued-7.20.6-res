@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_parent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:emoji="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/item_iv_face" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" android:layout_centerInParent="true" />
+        <com.blued.android.module.common.widget.emoji.view.EmojiTextView android:textColor="#ff000000" android:gravity="center" android:layout_gravity="center" android:id="@id/emojicon_icon" android:visibility="gone" android:layout_width="36.0dip" android:layout_height="36.0dip" emoji:emojiconSize="26.0sp" />
+    </RelativeLayout>
+    <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:id="@id/item_tv_face" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_below="@id/rl_content" android:layout_centerHorizontal="true" />
+</RelativeLayout>

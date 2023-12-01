@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center_horizontal" android:id="@id/fl_root" android:layout_width="76.0dip" android:layout_height="110.0dip" android:layout_margin="4.5dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/iv_gift_border" android:layout_width="64.0dip" android:layout_height="64.0dip" />
+        <ImageView android:layout_gravity="center" android:id="@id/iv_gift" android:layout_width="42.0dip" android:layout_height="42.0dip" />
+    </FrameLayout>
+    <com.blued.android.framework.view.shape.ShapeTextView android:textSize="12.0dip" android:textColor="@color/white" android:gravity="center" android:layout_gravity="right" android:id="@id/tv_count" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="17.0dip" android:layout_marginRight="2.0dip" android:includeFontPadding="false" android:paddingHorizontal="4.0dip" app:corner_radius="8.0dip" app:solid_color="@color/syc_dark_FF3E4F" />
+    <TextView android:textSize="11.0dip" android:textColor="@color/syc_dark_5cf8ff" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="77.0dip" android:includeFontPadding="false" />
+</FrameLayout>

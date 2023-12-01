@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="64.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/syc_dark_k" android:gravity="center" android:id="@id/tv_rank_index" android:layout_width="27.0dip" android:layout_height="27.0dip" android:layout_marginLeft="10.0dip" android:text="10" />
+    <RelativeLayout android:id="@id/rl_avatar" android:layout_width="52.0dip" android:layout_height="52.0dip" android:layout_marginLeft="7.0dip">
+        <ImageView android:id="@id/iv_avatar" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/user_bg_round" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/iv_avatar_frame" android:layout_width="52.0dip" android:layout_height="52.0dip" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/syc_dark_222" android:ellipsize="end" android:id="@id/tv_name" android:paddingTop="5.0dip" android:paddingRight="19.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:maxLines="1" android:singleLine="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/iv_bounce" android:layout_width="15.0dip" android:layout_height="16.0dip" android:layout_alignRight="@id/tv_name" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:textSize="13.0sp" android:textColor="@color/syc_dark_FF5E32" android:id="@id/tv_rank" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:text="123" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/syc_dark_FF5E32" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="闪耀值" />
+</LinearLayout>

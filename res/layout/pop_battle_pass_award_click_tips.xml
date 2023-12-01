@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/fl_root" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/fl_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:elevation="1.0px">
+        <com.blued.android.module.svgaplayer.SVGAImageView android:id="@id/svg_circular" android:layout_width="125.0dip" android:layout_height="125.0dip" android:scaleType="centerCrop" app:clearsAfterStop="false" />
+        <com.blued.android.module.svgaplayer.SVGAImageView android:id="@id/svg_finger" android:layout_width="130.0dip" android:layout_height="110.0dip" android:layout_marginLeft="43.0dip" android:layout_marginTop="50.0dip" android:scaleType="centerCrop" app:clearsAfterStop="false" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom|center|right" android:id="@id/fl_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="42.0dip" android:layout_marginBottom="116.0dip" android:elevation="1.0px">
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="点击可了解奖励详情" />
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_goto" android:layout_width="105.0dip" android:layout_height="40.0dip" android:layout_marginTop="30.0dip" android:src="@drawable/live_battle_award_btn_goto_try" />
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/top_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ScrollView android:id="@id/scrollView1" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:background="@color/nafio_b" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:id="@id/ll_system" style="@style/setting_info_item">
+                <LinearLayout android:orientation="vertical" style="@style/setting_info_item_ll">
+                    <LinearLayout android:orientation="horizontal" style="@style/setting_height">
+                        <TextView android:textColor="@color/color_52" android:id="@id/tv_system" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/laguage_system" android:layout_weight="1.0" style="@style/setting_info_item_tv" />
+                        <ImageView android:id="@id/tv_select_sys" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/icon_select_right" android:scaleType="fitXY" />
+                    </LinearLayout>
+                    <TextView android:background="@color/syc_o_line" style="@style/common_cutter_gray" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@id/ll_zh_cn" style="@style/setting_info_item">
+                <LinearLayout android:orientation="vertical" style="@style/setting_info_item_ll">
+                    <LinearLayout android:orientation="horizontal" style="@style/setting_height">
+                        <TextView android:textColor="@color/color_52" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/laguage_zhcn" android:layout_weight="1.0" style="@style/setting_info_item_tv" />
+                        <ImageView android:id="@id/tv_select_zhcn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/icon_select_right" android:scaleType="fitXY" />
+                    </LinearLayout>
+                    <TextView android:background="@color/syc_o_line" style="@style/common_cutter_gray" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@id/ll_zh_tw" style="@style/setting_info_item">
+                <LinearLayout android:orientation="vertical" style="@style/setting_info_item_ll">
+                    <LinearLayout android:orientation="horizontal" style="@style/setting_height">
+                        <TextView android:textColor="@color/color_52" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/laguage_zhtw" android:layout_weight="1.0" style="@style/setting_info_item_tv" />
+                        <ImageView android:id="@id/tv_select_zhtw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/icon_select_right" android:scaleType="fitXY" />
+                    </LinearLayout>
+                    <TextView android:background="@color/syc_o_line" style="@style/common_cutter_gray" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_en" android:layout_height="45.0dip" style="@style/setting_info_item">
+                <TextView android:textColor="@color/color_52" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/laguage_english" android:layout_weight="1.0" style="@style/setting_info_item_tv" />
+                <ImageView android:id="@id/tv_select_en" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/icon_select_right" android:scaleType="fitXY" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

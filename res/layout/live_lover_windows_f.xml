@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/live_make_lover_windows_F" android:layout_width="100.0dip" android:layout_height="100.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/live_lover_photo_F" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <com.blued.android.framework.view.shape.ShapeTextView android:textSize="10.0sp" android:textColor="@color/syc_dark_b" android:gravity="center" android:layout_gravity="center" android:id="@id/live_lover_pic_F" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="22.0dip" android:layout_marginLeft="@dimen/dp_5" android:layout_marginRight="@dimen/dp_5" android:text="双击可查看大图哦~" app:corner_radius="11.0dip" app:gradient_end_color="@color/color_465CF2" app:gradient_start_color="@color/color_996AFB" />
+    <FrameLayout android:id="@id/live_lover_free_F" android:background="@drawable/live_make_lover_free_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/live_make_friend_join_icon" />
+            <TextView android:textSize="11.0sp" android:textColor="@color/white_alpha30" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/live_make_lover_select" />
+        </LinearLayout>
+    </FrameLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.blued.android.framework.view.shape.ShapeTextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/live_lover_num_F" android:paddingLeft="5.5dip" android:layout_width="20.5dip" android:layout_height="18.0dip" android:layout_marginTop="12.0dip" android:text="5" android:includeFontPadding="false" app:bottom_left_radius="0.0dip" app:bottom_right_radius="9.0dip" app:solid_color="@color/black_alpha40" app:top_left_radius="0.0dip" app:top_right_radius="9.0dip" />
+        <ImageView android:id="@id/live_lover_mic_F" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="14.0dip" android:src="@drawable/live_make_lover_mac_open" android:layout_toRightOf="@id/live_lover_num_F" />
+        <ImageView android:id="@id/live_lover_close_F" android:visibility="gone" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="4.5dip" android:src="@drawable/live_make_lover_guest_close" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <ImageView android:layout_gravity="bottom" android:id="@id/iv_like_state_f" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginBottom="6.0dip" android:src="@drawable/live_make_lover_like_open" />
+    <FrameLayout android:id="@id/fl_lover_heart_f" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.blued.android.framework.view.shape.ShapeTextView android:layout_width="fill_parent" android:layout_height="fill_parent" app:stroke_color="@color/syc_dark_FF52D6" app:stroke_width="3.0dip" />
+        <ImageView android:layout_gravity="bottom|center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:layout_marginBottom="6.0dip" android:src="@drawable/live_make_lover_heart" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/fl_lover_heart_gray_f" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.blued.android.framework.view.shape.ShapeTextView android:layout_width="fill_parent" android:layout_height="fill_parent" app:stroke_color="@color/syc_dark_8F8F91" app:stroke_width="3.0dip" />
+        <ImageView android:layout_gravity="bottom|center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:layout_marginBottom="6.0dip" android:src="@drawable/live_make_lover_heart_gray" />
+    </FrameLayout>
+</FrameLayout>

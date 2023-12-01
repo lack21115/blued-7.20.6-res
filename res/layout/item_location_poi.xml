@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="13.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_item" android:layout_width="fill_parent" android:layout_height="58.0dip">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="14.0dip" android:textColor="@color/sara_c" android:ellipsize="end" android:id="@id/tv_poi_shortname" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:maxLines="1" />
+            <TextView android:textSize="13.0dip" android:textColor="@color/sara_e" android:ellipsize="end" android:id="@id/tv_poi_address" android:paddingTop="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:maxLines="1" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/img_choosen_mark" android:paddingLeft="8.0dip" android:paddingRight="13.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/location_selected" />
+    </LinearLayout>
+    <TextView android:id="@id/tv_divide" android:background="@color/sara_i" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentTop="true" />
+</RelativeLayout>

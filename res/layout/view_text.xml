@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.blued.android.framework.view.shape.ShapeTextView app:corner_radius="18.0dip" app:solid_color="@color/syc_x" app:solid_touch_color="@color/syc_x" style="@style/GridCodeEditText.TextView"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/sara_f" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/layout_fill"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/fl_floor" android:paddingBottom="7.5dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/second_floor" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/title" layout="@layout/live_title_layout" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.soft.blued.customview.CustomViewPager android:id="@id/main_live_viewpager" style="@style/layout_fill" />
+            <com.soft.blued.ui.find.view.FloatSpreadView android:layout_gravity="bottom|center|right" android:id="@id/fsv_spread" android:visibility="gone" android:layout_width="156.0dip" android:layout_height="54.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="12.0dip" />
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/shape_common_round_frame_alpha_write_solid" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginTop="13.0dip">
+                <RelativeLayout android:paddingLeft="3.0dip" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="11.0sp" android:textColor="@drawable/selector_live_land_text_color" android:id="@id/soft" android:background="@drawable/selector_live_land_style" android:paddingLeft="6.0dip" android:paddingTop="3.0dip" android:paddingRight="6.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="软编" />
+                </RelativeLayout>
+                <RelativeLayout android:paddingTop="3.0dip" android:paddingRight="3.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="11.0sp" android:textColor="@drawable/selector_live_land_text_color" android:id="@id/hard" android:background="@drawable/selector_live_land_style" android:paddingLeft="6.0dip" android:paddingTop="3.0dip" android:paddingRight="6.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="硬编" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/shape_common_round_frame_alpha_write_solid" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginTop="53.0dip">
+                <RelativeLayout android:paddingLeft="3.0dip" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="11.0sp" android:textColor="@drawable/selector_live_land_text_color" android:id="@id/beauty_open" android:background="@drawable/selector_live_land_style" android:paddingLeft="6.0dip" android:paddingTop="3.0dip" android:paddingRight="6.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="美颜开" />
+                </RelativeLayout>
+                <RelativeLayout android:paddingTop="3.0dip" android:paddingRight="3.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="11.0sp" android:textColor="@drawable/selector_live_land_text_color" android:id="@id/beauty_close" android:background="@drawable/selector_live_land_style" android:paddingLeft="6.0dip" android:paddingTop="3.0dip" android:paddingRight="6.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="美颜关" />
+                </RelativeLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

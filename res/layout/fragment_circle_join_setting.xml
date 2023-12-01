@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/syc_x" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" app:center_text="@string/circle_join_setting" app:hide_btm_line="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_direct" android:background="@drawable/selector_visitor_bgcolor" android:layout_width="fill_parent" android:layout_height="54.0dip" android:layout_marginTop="10.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/syc_h" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/circle_join_direct" android:layout_weight="1.0" />
+        <ImageView android:id="@id/iv_direct" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/icon_select_right" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_apply" android:background="@drawable/selector_visitor_bgcolor" android:layout_width="fill_parent" android:layout_height="54.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/syc_h" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/circle_join_apply" android:layout_weight="1.0" />
+        <ImageView android:id="@id/iv_apply" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/icon_select_right" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/rootLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.framework.view.shape.ShapeLinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/layoutReadAuth" android:layout_width="fill_parent" android:layout_height="fill_parent" app:solid_color="@color/syc_b" app:top_left_radius="12.0dip" app:top_right_radius="12.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="18.0dip" android:paddingBottom="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/ivClose" android:padding="6.0dip" android:layout_width="34.0dip" android:layout_height="34.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/icon_title_close" android:scaleType="fitXY" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/syc_h" android:gravity="center" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/circle_delete_post_reason_title" android:layout_weight="1.0" />
+            <TextView android:enabled="false" android:textSize="15.0sp" android:textColor="@color/syc_a" android:id="@id/tvDelete" android:padding="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/delete" android:alpha="0.4" />
+        </LinearLayout>
+        <RadioGroup android:gravity="center_vertical" android:orientation="vertical" android:id="@id/radioGroup" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RadioButton android:textSize="14.0sp" android:textColor="@color/syc_h" android:gravity="center_vertical" android:id="@id/RadioButton1" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="45.0dip" android:button="@drawable/selector_checkbox_btn" android:text="@string/circle_delete_post_reason1" android:layoutDirection="rtl" />
+            <View android:background="@color/syc_o" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <RadioButton android:textSize="14.0sp" android:textColor="@color/syc_h" android:gravity="center_vertical" android:id="@id/RadioButton2" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="45.0dip" android:button="@drawable/selector_checkbox_btn" android:text="@string/circle_delete_post_reason2" android:layoutDirection="rtl" />
+            <View android:background="@color/syc_o" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <RadioButton android:textSize="14.0sp" android:textColor="@color/syc_h" android:gravity="center_vertical" android:id="@id/RadioButton3" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="45.0dip" android:button="@drawable/selector_checkbox_btn" android:text="@string/circle_delete_post_reason3" android:layoutDirection="rtl" />
+            <View android:background="@color/syc_o" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <RadioButton android:textSize="14.0sp" android:textColor="@color/syc_h" android:gravity="center_vertical" android:id="@id/RadioButton4" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="45.0dip" android:button="@drawable/selector_checkbox_btn" android:text="@string/circle_delete_post_reason4" android:layoutDirection="rtl" />
+            <View android:background="@color/syc_o" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <RadioButton android:textSize="14.0sp" android:textColor="@color/syc_h" android:gravity="center_vertical" android:id="@id/RadioButton5" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="45.0dip" android:button="@drawable/selector_checkbox_btn" android:text="@string/circle_delete_post_reason5" android:layoutDirection="rtl" />
+            <View android:background="@color/syc_o" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <RadioButton android:textSize="14.0sp" android:textColor="@color/syc_h" android:gravity="center_vertical" android:id="@id/RadioButton6" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="45.0dip" android:button="@drawable/selector_checkbox_btn" android:text="@string/circle_delete_post_reason6" android:layoutDirection="rtl" />
+        </RadioGroup>
+        <Space android:layout_width="0.0dip" android:layout_height="20.0dip" />
+    </com.blued.android.framework.view.shape.ShapeLinearLayout>
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_close" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <com.blued.android.module.yy_china.view.YYMoreMenuView android:id="@id/move" android:layout_width="@dimen/dp_200" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+</LinearLayout>

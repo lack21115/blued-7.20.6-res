@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/selector_visitor_bgcolor" android:layout_width="fill_parent" android:layout_height="49.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/labeled_margin_default" android:layout_marginRight="10.0dip" android:layout_centerVertical="true">
+        <ImageView android:layout_gravity="center|left" android:id="@id/icon_left" android:visibility="gone" android:scaleType="fitCenter" style="@style/icon_left_my" />
+        <LinearLayout android:layout_gravity="left" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:layout_gravity="left" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/tv_label" android:layout_width="0.0dip" android:text="肯德基斐林试剂" android:maxLines="1" android:layout_weight="1.0" style="@style/setting_info_item_tv_new" />
+                <com.blued.android.framework.view.shape.ShapeTextView android:layout_gravity="center_vertical" android:id="@id/iv_dot" android:visibility="gone" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_marginLeft="4.0dip" app:corner_radius="8.0dip" app:solid_color="@color/nafio_g" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/tv_right_img" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:scaleType="center" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@id/icon_right" android:visibility="gone" android:layout_marginRight="0.0dip" style="@style/icon_right_arrow" />
+    </LinearLayout>
+    <View android:id="@id/top_line" android:visibility="gone" android:layout_marginLeft="@dimen/labeled_margin_default" android:layout_alignParentTop="true" style="@style/common_thin_divider_gray" />
+    <View android:id="@id/bottom_line" android:visibility="gone" android:layout_marginLeft="@dimen/labeled_margin_default" android:layout_alignParentBottom="true" style="@style/common_thin_divider_gray" />
+</RelativeLayout>

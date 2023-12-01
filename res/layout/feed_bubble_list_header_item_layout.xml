@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/feed_bubble_list_header_item_parent" android:layout_width="fill_parent" android:layout_height="68.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/feed_bubble_list_header_item_bg" android:layout_width="wrap_content" android:layout_height="68.0dip" />
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="24.0dip">
+                <ImageView android:id="@id/feed_bubble_list_header_item_iv" android:layout_width="24.0dip" android:layout_height="24.0dip" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/syc_k" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/bubble_list_header_state_tv" android:layout_width="wrap_content" android:layout_height="15.0dip" android:maxWidth="38.0dip" android:text="未打卡" android:includeFontPadding="false" />
+            </FrameLayout>
+            <TextView android:textAppearance="@style/TextAppearance.FontPath.Medium" android:textSize="11.0sp" android:textColor="@color/syc_k" android:gravity="center" android:id="@id/bubble_list_header_confirm_tv" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginTop="3.0dip" android:maxWidth="38.0dip" android:includeFontPadding="false" />
+        </LinearLayout>
+    </FrameLayout>
+    <ImageView android:id="@id/bubble_list_header_indicator_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip" android:src="@drawable/bubble_list_header_indicator" />
+</LinearLayout>

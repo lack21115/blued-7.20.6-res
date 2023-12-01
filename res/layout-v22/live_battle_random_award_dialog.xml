@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/rl_root" android:clickable="true" android:layout_width="275.0dip" android:layout_height="453.0dip" android:alpha="0.0" android:scaleX="0.85" android:scaleY="0.85" app:corner_radius="12.0dip" app:solid_color="@color/syc_dark_4206a7" app:stroke_color="@color/syc_dark_5cf8ff" app:stroke_width="1.0dip">
+        <ImageView android:layout_width="174.0dip" android:layout_height="36.19998dip" android:src="@drawable/live_battle_random_title" android:layout_centerHorizontal="true" android:elevation="2.0px" />
+        <ImageView android:id="@id/iv_close" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginTop="19.0dip" android:src="@drawable/live_battle_random_close" android:layout_alignParentRight="true" android:elevation="2.0px" />
+        <RelativeLayout android:background="@drawable/live_battle_random_bg" android:layout_width="fill_parent" android:layout_height="162.0dip" android:layout_marginTop="18.529999dip" android:elevation="1.0px">
+            <com.blued.android.module.svgaplayer.SVGAImageView android:id="@id/svg_float" android:layout_width="267.0dip" android:layout_height="101.0dip" android:layout_marginBottom="4.0dip" android:scaleType="centerCrop" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:clearsAfterStop="false" />
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.72998dip" android:text="领取带有“随机得奖”的奖励时" android:layout_centerHorizontal="true" />
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="47.72998dip" android:layout_centerHorizontal="true">
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="有机会获得" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/syc_dark_ffef5f" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="额外奖励！" android:layout_centerHorizontal="true" />
+            </LinearLayout>
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_list" android:background="@drawable/live_battle_random_award_bg" android:paddingLeft="11.5dip" android:paddingTop="22.0dip" android:paddingRight="11.5dip" android:paddingBottom="11.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="284.0dip" android:layout_alignParentBottom="true" android:paddingHorizontal="11.5dip" />
+        <ProgressBar android:id="@id/loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="120.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="?android:progressBarStyle" />
+    </RelativeLayout>
+</FrameLayout>

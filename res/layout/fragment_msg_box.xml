@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/top_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.blued.android.framework.view.pulltorefresh.RenrenPullToRefreshListView android:id="@id/friend_list" android:layout_height="fill_parent" app:ptrHeaderBackground="@color/pull_anim_bgcolor" style="@style/PullToRefreshListView" xmlns:app="http://schemas.android.com/apk/res-auto" />
+        <com.blued.android.module.common.view.NoDataAndLoadFailView android:id="@id/nodataview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+</LinearLayout>

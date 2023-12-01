@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/color_130E27" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@drawable/icon_live_medal_wall_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip">
+            <FrameLayout android:id="@id/fl_user_avatar" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center" android:id="@id/iv_avatar" android:layout_width="32.0dip" android:layout_height="32.0dip" android:scaleType="centerCrop" />
+                <ImageView android:layout_gravity="center" android:id="@id/iv_avatar_decorate" android:visibility="invisible" android:layout_width="35.0dip" android:layout_height="35.0dip" android:src="@drawable/live_rank_top_one_bg" android:scaleType="fitXY" />
+            </FrameLayout>
+            <TextView android:textAppearance="@style/TextAppearance.FontPath.Medium" android:textSize="15.0sp" android:textColor="@color/colorWhite" android:gravity="left" android:id="@id/tv_user_nick" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="Tank-L的勋章墙" android:layout_toRightOf="@id/fl_user_avatar" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/iv_medal_explain" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_live_medal_wall_tips" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="38.0dip">
+            <View android:id="@id/dividing_line" android:background="@color/colorWhite" android:layout_width="1.0dip" android:layout_height="12.0dip" android:layout_centerInParent="true" />
+            <TextView android:textAppearance="@style/TextAppearance.FontPath.Medium" android:textSize="@dimen/hiad_text_14_sp" android:textColor="@color/colorWhite" android:gravity="center" android:id="@id/tv_left_tab" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="0.0dip" android:text="主播勋章(10)" android:layout_toLeftOf="@id/dividing_line" />
+            <TextView android:textAppearance="@style/TextAppearance.FontPath.Regular" android:textSize="@dimen/hiad_text_14_sp" android:textColor="@color/colorWhite" android:gravity="center" android:id="@id/tv_right_tab" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="用户勋章(10)" android:layout_toRightOf="@id/dividing_line" android:alpha="0.5" />
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/ic_dividing_line" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_medal_wall" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_empty_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_54">
+                <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_medal_wall_empty" />
+                <TextView android:textAppearance="@style/TextAppearance.FontPath.Regular" android:textSize="14.0sp" android:textColor="@color/colorWhite" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/hiad_10_dp" android:text="@string/live_medal_wall_empty" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

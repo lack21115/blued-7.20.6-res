@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/shape_buy_vip_tip_item_bg" android:layout_width="80.0dip" android:layout_height="85.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip">
+        <ImageView android:id="@id/vip_buy_tip_view" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="5.0dip" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/black" android:gravity="center_horizontal" android:id="@id/vip_buy_tip_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+    </LinearLayout>
+</FrameLayout>

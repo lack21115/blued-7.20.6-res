@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_12"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/live_constellation_item_bg" android:background="@drawable/shape_constellation_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_2" android:scaleType="fitXY" android:layout_marginStart="@dimen/dp_7" android:layout_marginEnd="@dimen/dp_7">
+        <ImageView android:layout_width="fill_parent" android:layout_height="@dimen/dp_120" android:layout_marginTop="@dimen/dp_1" android:src="@drawable/live_constellation_item_top_bg" android:scaleType="fitXY" android:layout_marginStart="@dimen/dp_1" android:layout_marginEnd="@dimen/dp_1" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_title_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" android:layout_centerHorizontal="true">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_constellation_moon" android:layout_marginEnd="@dimen/dp_8" />
+            <TextView android:textSize="@dimen/sp_16" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/tv_constellation_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/dp_8" />
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_constellation_moon" />
+        </LinearLayout>
+        <com.blued.android.module.live_china.view.LiveConstellationHonourTopView android:id="@id/live_top_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/ll_title_container" />
+        <com.blued.android.module.live_china.view.LiveConstellationHonourKingView android:id="@id/live_king_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/live_top_view" />
+        <com.blued.android.module.live_china.view.LiveConstellationHonourSpokenView android:id="@id/live_spoken_view1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/live_king_view" />
+        <com.blued.android.module.live_china.view.LiveConstellationHonourSpokenView android:id="@id/live_spoken_view2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/live_spoken_view1" />
+        <com.blued.android.module.live_china.view.LiveConstellationHonourSpokenView android:id="@id/live_spoken_view3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/live_spoken_view2" />
+        <View android:layout_width="fill_parent" android:layout_height="@dimen/dp_20" android:layout_below="@id/live_spoken_view3" />
+    </RelativeLayout>
+    <ImageView android:id="@id/live_constellation_item_bg_frame" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/live_constellation_frame_" android:scaleType="fitXY" android:layout_marginStart="@dimen/dp_5" android:layout_marginEnd="@dimen/dp_5" />
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/sticker_root_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_gravity="center" android:layout_width="90.0dip" android:layout_height="45.0dip" android:layout_marginTop="20.0dip">
+            <ImageView android:layout_gravity="center" android:id="@id/sticker_image" android:layout_width="90.0dip" android:layout_height="45.0dip" />
+            <ImageView android:id="@id/sticker_image_bg" android:background="@drawable/shape_live_guest_select" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ImageView android:id="@id/sticker_from_source" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_sticker_shop" />
+        </FrameLayout>
+        <TextView android:textSize="9.0sp" android:textColor="@color/syc_dark_j" android:layout_gravity="center_horizontal" android:id="@id/sticker_time_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</FrameLayout>

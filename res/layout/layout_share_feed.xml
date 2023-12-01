@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@id/root_card" android:background="@null" android:layout_width="230.0dip" android:layout_height="wrap_content" app:cardBackgroundColor="@color/chat_share_feed_bg" app:cardCornerRadius="10.0dip" app:cardElevation="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.framework.view.shape.ShapeLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="64.0dip">
+            <FrameLayout android:id="@id/fm_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="12.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_header" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+                <ImageView android:layout_gravity="bottom|center|right" android:id="@id/img_verify" android:layout_width="15.0dip" android:layout_height="15.0dip" />
+            </FrameLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" app:layout_constraintLeft_toRightOf="@id/fm_header" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="@id/fm_header">
+                <TextView android:textSize="14.0sp" android:textColor="@color/syc_h" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:drawablePadding="4.0dip" />
+            </LinearLayout>
+            <com.soft.blued.customview.adapttextview.FontAdjustTextView android:textSize="14.0sp" android:textColor="@color/syc_j" android:ellipsize="end" android:id="@id/tv_content" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginRight="12.0dip" android:maxLines="1" app:layout_constraintLeft_toLeftOf="@id/ll_title" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/ll_title" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <View android:id="@id/line" android:background="@color/syc_p" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" />
+        <androidx.cardview.widget.CardView android:id="@id/content_card" android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardElevation="0.0dip">
+            <com.blued.android.framework.view.shape.ShapeLinearLayout android:orientation="vertical" android:id="@id/ll_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.soft.blued.customview.adapttextview.FontAdjustTextView android:textSize="14.0sp" android:textColor="@color/syc_j" android:ellipsize="end" android:id="@id/tv_repost_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="15.0dip" android:maxLines="2" />
+                <FrameLayout android:id="@id/fmPic" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.soft.blued.ui.msg.view.MultiPicLayout android:id="@id/multiPic" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <RelativeLayout android:id="@id/rl_vote" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <ImageView android:id="@id/iv_vote" android:layout_width="fill_parent" android:layout_height="150.0dip" android:scaleType="centerCrop" />
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="150.0dip">
+                            <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="1.0dip" android:src="@drawable/vote_a" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                            </RelativeLayout>
+                            <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:src="@drawable/vote_b" android:layout_centerVertical="true" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/rl_video" android:layout_width="fill_parent" android:layout_height="280.0dip">
+                        <ImageView android:id="@id/iv_video" android:layout_width="fill_parent" android:layout_height="280.0dip" android:scaleType="centerCrop" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_msg_feed_play" android:layout_centerInParent="true" />
+                        <TextView android:textSize="12.0sp" android:textColor="@color/syc_dark_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/post_shine_video" android:drawableLeft="@drawable/icon_msg_feed_video" android:drawablePadding="4.0dip" android:layout_alignParentBottom="true" />
+                    </RelativeLayout>
+                </FrameLayout>
+            </com.blued.android.framework.view.shape.ShapeLinearLayout>
+        </androidx.cardview.widget.CardView>
+    </com.blued.android.framework.view.shape.ShapeLinearLayout>
+</androidx.cardview.widget.CardView>

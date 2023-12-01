@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.blued.android.framework.view.shape.ShapeLinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_living_count" android:layout_width="fill_parent" android:layout_height="26.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="10.0dip" android:adjustViewBounds="true" app:corner_radius="10.0dip" app:solid_color="@color/syc_live"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.framework.view.shape.ShapeTextView android:layout_width="7.0dip" android:layout_height="7.0dip" android:layout_marginLeft="10.0dip" app:corner_radius="7.0dip" app:solid_color="@color/syc_g" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/syc_h" android:id="@id/tv_living_count" android:layout_width="0.0dip" android:layout_marginLeft="6.0dip" android:adjustViewBounds="true" android:layout_weight="1.0" style="@style/layout_wrap_content" />
+    <ImageView android:id="@id/iv_arrow_right" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/icon_common_right_arrow_new" />
+</com.blued.android.framework.view.shape.ShapeLinearLayout>

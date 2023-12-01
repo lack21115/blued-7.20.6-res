@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_header" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_margin="10.0dip" />
+    <com.blued.android.framework.view.shape.ShapeTextView android:textSize="9.0sp" android:textColor="@color/circle_top_text" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tv_identity" android:paddingLeft="7.0dip" android:paddingRight="7.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginRight="5.0dip" android:text="群主" app:bg_default_touch="false" app:corner_radius="22.0dip" app:solid_color="@color/syc_b" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/syc_h" android:layout_gravity="center_vertical" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="一二三四" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_verify" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="4.0dip" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_vip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" />
+</LinearLayout>

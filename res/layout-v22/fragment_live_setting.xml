@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/syc_c" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/top_title" android:layout_width="fill_parent" android:layout_height="wrap_content" app:center_text="@string/live_setting" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="12.0sp" android:textColor="@color/syc_j" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="13.0dip" android:layout_marginBottom="6.0dip" android:text="@string/live_setting" android:layout_marginHorizontal="13.0dip" />
+            <LinearLayout android:orientation="horizontal" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/setting_info_item_ll_privacy_and_icon">
+                <TextView android:layout_width="wrap_content" android:text="@string/live_background_play" style="@style/setting_info_item_tv_and_icon" />
+                <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <ToggleButton android:layout_gravity="center" android:id="@id/tglbtn_live_background_play" android:textOn="" android:textOff="" style="@style/toggle_button" />
+            </LinearLayout>
+            <TextView android:paddingRight="80.0dip" android:text="@string/live_background_play_info" style="@style/common_setting_hint_text_gray" />
+            <LinearLayout android:orientation="horizontal" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/setting_info_item_ll_privacy_and_icon">
+                <TextView android:layout_width="wrap_content" android:text="@string/live_float_play" style="@style/setting_info_item_tv_and_icon" />
+                <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <ToggleButton android:layout_gravity="center" android:id="@id/tglbtn_live_float_play" android:textOn="" android:textOff="" style="@style/toggle_button" />
+            </LinearLayout>
+            <TextView android:paddingRight="80.0dip" android:text="@string/live_float_play_info" style="@style/common_setting_hint_text_gray" />
+            <LinearLayout android:orientation="horizontal" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/setting_info_item_ll_privacy_and_icon">
+                <TextView android:layout_width="wrap_content" android:text="@string/live_setting_gift_sound" style="@style/setting_info_item_tv_and_icon" />
+                <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <ToggleButton android:layout_gravity="center" android:id="@id/tglbtn_live_gift_sound" android:textOn="" android:textOff="" style="@style/toggle_button" />
+            </LinearLayout>
+            <TextView android:paddingRight="80.0dip" android:text="@string/live_setting_gift_sound_tips" style="@style/common_setting_hint_text_gray" />
+            <LinearLayout android:orientation="horizontal" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/setting_info_item_ll_privacy_and_icon">
+                <TextView android:layout_width="wrap_content" android:text="@string/live_setting_gift_buzz" style="@style/setting_info_item_tv_and_icon" />
+                <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <ToggleButton android:layout_gravity="center" android:id="@id/tglbtn_live_gift_vibrate" android:textOn="" android:textOff="" style="@style/toggle_button" />
+            </LinearLayout>
+            <TextView android:paddingRight="80.0dip" android:text="@string/live_setting_gift_buzz_tips" style="@style/common_setting_hint_text_gray" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/syc_j" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="13.0dip" android:layout_marginBottom="6.0dip" android:text="@string/live_privilege_setting" android:layout_marginHorizontal="13.0dip" />
+            <LinearLayout android:orientation="horizontal" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/setting_info_item_ll_privacy_and_icon">
+                <TextView android:layout_width="wrap_content" android:text="@string/live_rank_cloaking" style="@style/setting_info_item_tv_and_icon" />
+                <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <ToggleButton android:layout_gravity="center" android:id="@id/tglbtn_live_rank_cloaking" android:textOn="" android:textOff="" style="@style/toggle_button" />
+            </LinearLayout>
+            <TextView android:paddingRight="80.0dip" android:text="@string/live_rank_cloaking_info" style="@style/common_setting_hint_text_gray" />
+            <LinearLayout android:orientation="horizontal" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/setting_info_item_ll_privacy_and_icon">
+                <TextView android:layout_width="wrap_content" android:text="@string/live_jopin_cloaking" style="@style/setting_info_item_tv_and_icon" />
+                <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <ToggleButton android:layout_gravity="center" android:id="@id/tglbtn_live_join_cloaking" android:textOn="" android:textOff="" style="@style/toggle_button" />
+            </LinearLayout>
+            <TextView android:paddingRight="80.0dip" android:text="@string/live_jopin_cloaking_info" style="@style/common_setting_hint_text_gray" />
+            <RelativeLayout android:id="@id/rl_live_privilege" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/setting_info_item_ll_privacy_and_icon">
+                <TextView android:id="@id/tv_live_privilege" android:layout_width="wrap_content" android:text="@string/live_grievance_privilege" style="@style/setting_info_item_tv_and_icon" />
+                <TextView android:paddingRight="80.0dip" android:text="@string/live_grievance_privilege_explain" android:layout_below="@id/tv_live_privilege" style="@style/common_setting_hint_text_gray" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_privilege_icon" android:layout_centerVertical="true" android:layout_marginEnd="10.0dip" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

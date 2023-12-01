@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/shape_raduis_topleft_topright_15_ffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/sp_18" android:textColor="@color/syc_dark_b" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_9" android:text="@string/room_member" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@id/refresh_view" android:layout_width="fill_parent" android:layout_height="fill_parent" app:srlAccentColor="@android:color/transparent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+        <FrameLayout android:id="@id/fl_loading_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+            <ProgressBar android:layout_gravity="center" android:layout_width="49.0dip" android:layout_height="49.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

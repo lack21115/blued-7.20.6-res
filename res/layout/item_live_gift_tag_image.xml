@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/item_live_gift_tag_iv" android:layout_width="25.0dip" android:layout_height="14.0dip" android:scaleType="fitXY" />
+    <ImageView android:id="@id/item_live_gift_tag_apng_iv" android:layout_width="25.0dip" android:layout_height="14.0dip" />
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/fl_root" android:layout_width="54.0dip" android:layout_height="54.0dip" android:layout_margin="4.5dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/iv_icon" android:layout_width="40.889984dip" android:layout_height="40.889984dip" />
+    <TextView android:textSize="9.899994sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="right" android:layout_gravity="bottom|center|right" android:id="@id/tv_count" android:background="@drawable/live_battle_award_item_num_back" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="16.0dip" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:layout_marginBottom="2.0dip" android:minWidth="41.0dip" android:maxLines="1" android:shadowColor="@color/trans_black_one" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="5.0" android:layout_marginHorizontal="2.0dip" android:paddingHorizontal="3.0dip" />
+</FrameLayout>

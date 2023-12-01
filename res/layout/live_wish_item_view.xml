@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.blued.android.framework.view.shape.ShapeRelativeLayout android:layout_width="87.5dip" android:layout_height="37.0dip" app:corner_radius="6.0dip" app:solid_color="@color/black_alpha30"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_wish_icon" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginLeft="4.5dip" android:layout_marginTop="6.0dip" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/syc_dark_b" android:id="@id/tv_wish_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.5dip" android:layout_marginTop="4.0dip" android:includeFontPadding="false" android:layout_toRightOf="@id/iv_wish_icon" android:alpha="0.8" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/syc_dark_ffb219" android:id="@id/tv_wish_cur" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.5dip" android:layout_marginTop="1.0dip" android:includeFontPadding="false" android:layout_toRightOf="@id/iv_wish_icon" android:layout_below="@id/tv_wish_name" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/syc_dark_b" android:id="@id/tv_wish_total" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:includeFontPadding="false" android:layout_toRightOf="@id/tv_wish_cur" android:layout_below="@id/tv_wish_name" />
+    <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginLeft="4.5dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="4.5dip" android:layout_alignParentBottom="true" app:cardBackgroundColor="@color/transparent" app:cardCornerRadius="0.5dip" app:cardElevation="0.0px">
+        <ProgressBar android:id="@id/live_wish_progress_view" android:layout_width="fill_parent" android:layout_height="2.0dip" android:max="100" android:progress="0" android:progressDrawable="@drawable/live_wish_progress" style="?android:progressBarStyleHorizontal" />
+    </androidx.cardview.widget.CardView>
+</com.blued.android.framework.view.shape.ShapeRelativeLayout>

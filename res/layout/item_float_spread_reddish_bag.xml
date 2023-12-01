@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/syc_dark_F14E6A" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_avatar" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_margin="5.0dip" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/iv_avatar" android:layout_centerVertical="true">
+        <TextView android:textSize="13.0sp" android:textColor="@color/white" android:id="@id/tv_bag_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_reddish_bag" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_quick_to_grab" />
+    </LinearLayout>
+</RelativeLayout>

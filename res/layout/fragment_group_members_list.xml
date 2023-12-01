@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.blued.android.framework.activity.keyboardpage.KeyboardListenLinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:background="@color/nafio_c" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/top_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:layout_gravity="bottom" android:id="@id/ll_group_members_remove" android:background="@color/sara_f" android:padding="15.0dip" android:visibility="gone" android:layout_alignParentBottom="true" style="@style/layout_fill_wrap">
+            <TextView android:textSize="18.0sp" android:textColor="@color/black" android:text="@string/group_members_remove" style="@style/layout_wrap_content" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/black" android:id="@id/tv_members_remove_count" android:layout_marginLeft="5.0dip" style="@style/layout_wrap_content" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/common_v4_blue_frame_font" android:gravity="right" android:id="@id/tv_members_remove_confirm" android:text="@string/cancel" style="@style/layout_groupinfo" />
+        </LinearLayout>
+        <com.blued.android.framework.view.pulltorefresh.RenrenPullToRefreshListView android:id="@id/rptrlv_group_member_list" android:visibility="visible" android:layout_height="fill_parent" android:layout_above="@id/ll_group_members_remove" android:layout_below="@id/top_title" app:ptrHeaderBackground="@color/pull_anim_bgcolor" style="@style/PullToRefreshListView" xmlns:app="http://schemas.android.com/apk/res-auto" />
+        <TextView android:id="@id/tv_divider" android:layout_below="@id/rptrlv_group_member_list" style="@style/common_cutter_gray" />
+    </RelativeLayout>
+</com.blued.android.framework.activity.keyboardpage.KeyboardListenLinearLayout>

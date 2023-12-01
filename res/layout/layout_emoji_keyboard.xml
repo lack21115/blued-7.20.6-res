@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.viewpager.widget.ViewPager android:layout_gravity="center_vertical" android:id="@id/fragment_emoji_keyboard_pager" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/fragment_emoji_keyboard_tab" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <LinearLayout android:gravity="center" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageButton android:id="@id/fragment_emoji_keyboard_0_recents" android:background="@drawable/emoji_circle_bg" android:padding="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_emoji_recent" android:scaleType="center" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageButton android:id="@id/fragment_emoji_keyboard_1_people" android:background="@null" android:padding="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_emoji_people" android:scaleType="center" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageButton android:id="@id/fragment_emoji_keyboard_2_nature" android:background="@null" android:padding="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_emoji_nature" android:scaleType="center" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageButton android:id="@id/fragment_emoji_keyboard_3_food" android:background="@null" android:padding="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_emoji_food" android:scaleType="center" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageButton android:id="@id/fragment_emoji_keyboard_4_sport" android:background="@null" android:padding="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_emoji_activity" android:scaleType="center" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageButton android:id="@id/fragment_emoji_keyboard_5_cars" android:background="@null" android:padding="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_emoji_travel" android:scaleType="center" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageButton android:id="@id/fragment_emoji_keyboard_6_objects" android:background="@null" android:padding="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_emoji_objects" android:scaleType="center" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageButton android:id="@id/fragment_emoji_keyboard_7_symbols" android:background="@null" android:padding="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_emoji_symbols" android:scaleType="center" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageButton android:id="@id/fragment_emoji_keyboard_8_flags" android:background="@null" android:padding="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_emoji_flags" android:scaleType="center" />
+        </LinearLayout>
+        <ImageButton android:id="@id/fragment_emoji_keyboard_backspace" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/emoji_delete" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

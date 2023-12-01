@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/shape_raduis_22dp_28282b" android:layout_width="@dimen/dp_220" android:layout_height="@dimen/dp_134" android:layout_marginTop="@dimen/dp_25">
+        <TextView android:textSize="@dimen/sp_18" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/cp_step_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_60" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/syc_8d8d8e" android:layout_gravity="center_horizontal" android:id="@id/cp_step_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" />
+    </LinearLayout>
+    <com.blued.android.module.svgaplayer.SVGAImageView android:layout_gravity="center_horizontal" android:id="@id/cp_step_icon_svga" android:layout_width="@dimen/dp_80" android:layout_height="@dimen/dp_80" android:scaleType="centerCrop" />
+</FrameLayout>

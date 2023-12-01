@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_fog_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_fog_right" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/live_pk_dared_fog_right" />
+    <ImageView android:id="@id/iv_fog_left" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/live_pk_dared_fog_left" />
+    <TextView android:textSize="10.0dip" android:textColor="@color/syc_dark_b" android:gravity="center" android:id="@id/tv_fog_time" android:background="@drawable/live_pk_dared_blued_ribbon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.5dip" android:minWidth="82.0dip" android:minHeight="18.0dip" android:text="@string/live_pk_dared_fog_hide" android:layout_centerHorizontal="true" />
+</RelativeLayout>

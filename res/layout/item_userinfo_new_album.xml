@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="100.0dip" android:layout_height="90.0dip" app:cardElevation="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/img_cover" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:src="@drawable/user_header_square" />
+    <com.blued.android.framework.view.shape.ShapeTextView android:textSize="13.0sp" android:textColor="@color/syc_dark_b" android:gravity="center" android:id="@id/tv_under_review" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:text="@string/pic_in_review" app:corner_radius="6.0dip" app:solid_color="@color/syc_cc1E1F23" />
+    <ImageView android:id="@id/img_lock" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:src="@drawable/icon_userinfo_new_album_unlock" />
+</FrameLayout>

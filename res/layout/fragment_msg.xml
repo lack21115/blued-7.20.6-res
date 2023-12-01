@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.soft.blued.customview.TouchEnableKeyboardLinearLayout android:id="@id/keyboardRelativeLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="@color/syc_c" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/r_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.blued.android.framework.view.pulltorefresh.RenrenPullToRefreshListView android:id="@id/msg_frient_pullrefresh" android:layout_height="fill_parent" style="@style/PullToRefreshListView" xmlns:app="http://schemas.android.com/apk/res-auto" />
+                <View android:id="@id/keyboard_view" android:background="#b3000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="65.0dip" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:id="@id/cover_view" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/msg_filter_guide_iv" android:background="@drawable/msg_filter_guide_img" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="45.0dip" android:layout_marginBottom="6.0dip" android:layout_above="@id/msg_filter_view" android:layout_alignParentRight="true" />
+        <com.soft.blued.ui.msg.customview.MsgFilterView android:id="@id/msg_filter_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+        <com.blued.android.module.common.view.TranslationAnimHintView android:id="@id/bottom_hint_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" app:direct="BOTTOM" />
+    </RelativeLayout>
+</com.soft.blued.customview.TouchEnableKeyboardLinearLayout>

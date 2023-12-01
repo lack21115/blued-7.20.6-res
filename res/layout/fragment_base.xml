@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/nafio_b" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@id/content_v" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title" />
+    <androidx.core.widget.NestedScrollView android:id="@id/error_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/title">
+        <com.blued.android.module.common.view.NoDataAndLoadFailView android:id="@id/nodataview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </androidx.core.widget.NestedScrollView>
+    <FrameLayout android:id="@id/guide_v" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:id="@id/base_loading" android:visibility="gone" layout="@layout/common_loading_layout" />
+</RelativeLayout>

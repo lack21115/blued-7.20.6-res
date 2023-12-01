@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@id/smart_refresh" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/rl_empty_view" android:background="@drawable/rank_all_empty_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="227.0dip" android:layout_marginStart="3.0dip" android:layout_marginEnd="3.0dip">
+        <ImageView android:id="@id/iv_empty_view" android:layout_width="91.0dip" android:layout_height="91.0dip" android:layout_marginTop="@dimen/dp_68" android:src="@drawable/live_icon_no_data_posted" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff9d9d9d" android:id="@id/tv_empty_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/live_rank_vacancy" android:layout_below="@id/iv_empty_view" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</FrameLayout>

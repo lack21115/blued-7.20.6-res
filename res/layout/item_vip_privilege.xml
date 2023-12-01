@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/vip_privilege_view" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="15.0dip" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/syc_h" android:gravity="center_horizontal" android:id="@id/vip_privilege_name" android:layout_width="90.0dip" android:layout_height="40.0dip" android:layout_marginTop="10.0dip" android:maxLines="2" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/msg_group_show_root" style="@style/chat_group_nickname_root"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/msg_group_number_nickname" style="@style/chat_group_nickname" />
+    <com.blued.android.framework.view.shape.ShapeTextView android:textSize="9.0sp" android:textColor="@color/syc_a" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/msg_group_role_icon_show" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="15.0dip" android:text="管理" app:bg_default_touch="false" app:corner_radius="22.0dip" app:layout_constraintTop_toBottomOf="@id/iv_icon" app:solid_color="@color/msg_group_manager_tag_bg" />
+    <ImageView android:id="@id/msg_group_vip_icon" style="@style/blued_vip_icon" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/distance_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip">
+        <View android:background="@color/syc_y" android:layout_width="1.0dip" android:layout_height="8.0dip" />
+        <TextView android:id="@id/tv_distance" android:layout_marginLeft="5.0dip" style="@style/chat_text_distance_style" />
+    </LinearLayout>
+</LinearLayout>

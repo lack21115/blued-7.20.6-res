@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.blued.android.module.common.view.ViewPagerContainer android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <androidx.viewpager.widget.ViewPager android:id="@id/base_view_pager_id" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" />
+        </com.blued.android.module.common.view.ViewPagerContainer>
+        <com.blued.android.module.common.view.LiveGiftIndicatorView android:gravity="center" android:orientation="horizontal" android:id="@id/base_gift_indicator_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@id/base_gift_parent_no_data_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/base_gift_parent_no_data_iv" android:layout_width="120.0dip" android:layout_height="120.0dip" android:src="@drawable/icon_no_data_common" android:scaleType="fitXY" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff989898" android:id="@id/base_gift_parent_no_data_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="空空如也" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/screenshot_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="18.0sp" android:textColor="@color/syc_dark_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/liveVideo_livingView_tips_liveIsOver" />
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <TextView android:textSize="13.0sp" android:textColor="@color/nafio_f" android:id="@id/live_record_this_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_record_this_ex" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/live_record_this_faq" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_faq_icon" android:layout_toRightOf="@id/live_record_this_text" />
+    </RelativeLayout>
+    <TextView android:textSize="25.0sp" android:textColor="@color/nafio_f" android:id="@id/live_record_this_ex" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/tv_double_exp" android:paddingTop="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="35.0dip" layout="@layout/live_record_end_progress_view" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="13.0sp" android:textColor="@color/nafio_f" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_all_dou_count" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/nafio_f" android:layout_gravity="center_horizontal" android:id="@id/live_all_dou_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+            <TextView android:textSize="11.0sp" android:textColor="@color/nafio_k" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/liveVideo_livingView_tips_viewersCount" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/live_all_count_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="11.0sp" android:textColor="@color/nafio_k" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/liveVideo_livingView_tips_viewersAtSameTime" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/live_same_count_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="13.0sp" android:textColor="@color/nafio_f" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_this_dou_count" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/nafio_f" android:layout_gravity="center_horizontal" android:id="@id/live_this_dou_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+            <TextView android:textSize="11.0sp" android:textColor="@color/nafio_k" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/liveVideo_livingView_tips_likeCount" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/live_all_like_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="11.0sp" android:textColor="@color/nafio_k" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/liveVideo_livingView_tips_liveTime" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/live_time_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:layout_marginBottom="25.0dip" android:src="@drawable/live_end_ranktitle" android:scaleType="centerCrop" />
+</LinearLayout>

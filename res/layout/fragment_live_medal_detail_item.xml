@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_medal_detail" android:layout_width="132.0dip" android:layout_height="110.0dip" android:layout_marginTop="14.0dip" android:src="@drawable/anchor_badge_default" />
+        <RelativeLayout android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="54.0dip" android:layout_marginTop="3.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="#ff0a0a0a" android:gravity="center" android:id="@id/tv_medal_name" android:background="@drawable/ic_medal_name_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <TextView android:textSize="15.0sp" android:textColor="#ffffb219" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_medal_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:maxLines="1" android:layout_marginStart="30.0dip" android:layout_marginEnd="30.0dip" />
+        <TextView android:textAppearance="@style/TextAppearance.FontPath.Medium" android:textSize="12.0sp" android:textColor="@color/colorWhite" android:layout_gravity="center_horizontal" android:id="@id/tv_get_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:lineSpacingExtra="18.0dip" />
+        <TextView android:textAppearance="@style/TextAppearance.FontPath.Medium" android:textSize="12.0sp" android:textColor="@color/colorWhite" android:gravity="left" android:layout_gravity="center_horizontal" android:id="@id/tv_valid_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="18.0dip" android:alpha="0.37" />
+    </LinearLayout>
+</FrameLayout>

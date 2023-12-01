@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/rootLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.framework.view.shape.ShapeLinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/layoutReadAuth" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.blued.android.framework.view.shape.ShapeFrameLayout android:id="@id/titleTouch" android:layout_width="fill_parent" android:layout_height="12.0dip" app:solid_color="@color/syc_b" app:top_left_radius="12.0dip" app:top_right_radius="12.0dip">
+            <com.blued.android.framework.view.shape.ShapeTextView android:layout_gravity="bottom|center" android:visibility="gone" android:layout_width="33.0dip" android:layout_height="4.0dip" app:corner_radius="4.0dip" app:solid_color="@color/syc_x" />
+        </com.blued.android.framework.view.shape.ShapeFrameLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <View android:id="@id/viewTitleBg" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+                <View android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </LinearLayout>
+            <FrameLayout android:id="@id/fragment_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <View android:id="@id/titleBarTouch" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+        </FrameLayout>
+    </com.blued.android.framework.view.shape.ShapeLinearLayout>
+</FrameLayout>

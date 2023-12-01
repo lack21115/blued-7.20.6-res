@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@id/refreshLayout" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:srlAccentColor="@android:color/transparent">
+        <com.blued.android.module.common.view.CustomTwoLevelHeader android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" app:srlEnableRefresh="false">
+            <com.soft.blued.customview.smartrefresh.TwoLevelRefreshView android:id="@id/refresh_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </com.blued.android.module.common.view.CustomTwoLevelHeader>
+        <com.soft.blued.customview.LiveHotPullToRefreshLayout android:id="@id/swipe_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</FrameLayout>

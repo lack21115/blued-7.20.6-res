@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingTop="@dimen/dp_2" android:layout_width="fill_parent" android:layout_height="70.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/shape_raduis_6_b1b1b1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_7" android:layout_marginRight="@dimen/dp_9">
+        <View android:id="@id/view_border" android:background="@drawable/shape_gift_select" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/syc_EAEAEA" android:id="@id/tv_beans" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="42" android:drawableLeft="@drawable/icon_yy_pre_pay_smal_bean" android:drawablePadding="5.0dip" />
+            <TextView android:textSize="15.0sp" android:textColor="#ff989898" android:id="@id/tv_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_3" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/iv_icon_first_gift" android:visibility="invisible" android:layout_width="@dimen/dp_33" android:layout_height="wrap_content" android:src="@drawable/icon_yy_pey_pay_first_gift" android:layout_alignParentRight="true" />
+</RelativeLayout>

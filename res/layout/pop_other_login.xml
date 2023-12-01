@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.framework.view.shape.ShapeRelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="210.0dip" app:solid_color="@color/syc_b" app:top_left_radius="12.0dip" app:top_right_radius="12.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="@color/syc_h" android:layout_gravity="center_horizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="选择登录方式" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/syc_h" android:id="@id/tv_email" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login_email_login" android:drawableTop="@drawable/icon_email_login" android:drawablePadding="6.0dip" android:layout_centerInParent="true" />
+    </com.blued.android.framework.view.shape.ShapeRelativeLayout>
+</FrameLayout>

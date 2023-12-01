@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_card_root" android:layout_width="fill_parent" android:layout_height="@dimen/dp_213" android:layout_marginLeft="4.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_gallery_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/gift_gallery_bg" android:scaleType="fitXY" />
+    <ImageView android:id="@id/iv_gallery_gifticon" android:layout_width="@dimen/dp_100" android:layout_height="@dimen/dp_100" android:layout_marginTop="@dimen/dp_10" android:scaleType="centerCrop" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="14.0sp" android:textColor="#ffffe1a6" android:id="@id/tv_gallery_giftname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_44" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_alignParentBottom="true">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_gallery_usericon" android:layout_width="@dimen/dp_18" android:layout_height="@dimen/dp_18" android:layout_marginRight="@dimen/dp_4" android:scaleType="centerCrop" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/black" android:layout_gravity="center_vertical" android:id="@id/tv_gallery_username" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

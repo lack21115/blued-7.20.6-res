@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/item_root_view" android:background="@drawable/icon_car_color_normal" android:layout_width="@dimen/dp_94" android:layout_height="@dimen/dp_70" android:layout_marginLeft="@dimen/dp_4" android:layout_marginRight="@dimen/dp_4"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/sp_13" android:textColor="@color/syc_dark_b" android:ellipsize="end" android:id="@id/tv_color_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_4" android:text="经典黑" android:maxLines="1" android:singleLine="true" android:includeFontPadding="false" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" />
+    <ImageView android:id="@id/item_car_color" android:layout_width="@dimen/dp_25" android:layout_height="@dimen/dp_25" android:layout_marginTop="@dimen/dp_10" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

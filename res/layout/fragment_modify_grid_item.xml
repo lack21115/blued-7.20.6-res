@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/header_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/feed_photo_add" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/syc_dark_b" android:layout_gravity="center" android:id="@id/tv_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/syc_dark_b" android:gravity="center" android:id="@id/tv_under_review" android:background="@drawable/shape_album_review_position" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/pic_in_review" />
+    <TextView android:layout_gravity="center" android:id="@id/tv_shadow" android:background="@drawable/shape_album_position" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:id="@id/ll_lock_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/iv_lock_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:src="@drawable/icon_userinfo_new_album_lock" />
+    </LinearLayout>
+</FrameLayout>

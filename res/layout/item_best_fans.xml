@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.imageview.ShapeableImageView android:id="@id/item_avatar" android:padding="@dimen/dp_1" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:src="@drawable/user_bg_round" app:shapeAppearanceOverlay="@style/circleImageStyle" app:strokeColor="@color/syc_dark_b" app:strokeWidth="@dimen/dp_1" />
+    <TextView android:textSize="@dimen/sp_12" android:textColor="@color/syc_dark_777777" android:ellipsize="end" android:id="@id/tv_fans_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:maxLines="1" android:singleLine="true" />
+</LinearLayout>

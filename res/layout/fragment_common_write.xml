@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/top_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <EditText android:textSize="14.0sp" android:textColor="@color/syc_h" android:textColorHint="@color/syc_k" android:gravity="top" android:id="@id/write_et" android:background="@null" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:inputType="textMultiLine" />
+    <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip">
+        <com.blued.community.view.EditInputNumView android:textSize="13.0sp" android:id="@id/inv_word_count" android:layout_width="wrap_content" android:layout_height="wrap_content" app:inTextColor="@color/syc_j" app:outTextColor="@color/syc_g" />
+    </LinearLayout>
+</LinearLayout>

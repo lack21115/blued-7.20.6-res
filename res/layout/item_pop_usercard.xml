@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/ll_main" android:background="@color/transparent" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/tv_bg" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/ll_content" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/item_layout_usercard_main_content" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_loading" android:background="@drawable/shape_usercard_bg_top_radius" android:visibility="gone" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_marginTop="-36.0dip" android:src="@drawable/user_bg_round" android:scaleType="fitXY" />
+            <ProgressBar android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" style="?android:progressBarStyle" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_trans_content" android:background="@drawable/shape_msg_content_translate_status_bg_send" android:paddingLeft="15.0dip" android:paddingTop="8.0dip" android:paddingRight="15.0dip" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/syc_h" android:visibility="gone" style="@style/chat_content_style" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/tv_message_translate_status_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_translate_done" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/syc_i" android:layout_gravity="center_vertical" android:id="@id/tv_message_translate_status_notice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" />
+    </LinearLayout>
+</LinearLayout>

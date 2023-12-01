@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_main_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_active" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="14.0sp" android:textColor="@color/syc_dark_h" android:id="@id/tv_active_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_fans_member_active" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/syc_dark_h" android:id="@id/tv_active_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/ll_active_line" android:background="@drawable/live_rank_list_follow_bg" android:visibility="visible" android:layout_width="20.0dip" android:layout_height="4.0dip" android:layout_marginTop="4.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_today" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="14.0sp" android:textColor="@color/syc_dark_h" android:id="@id/tv_today_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_fans_member_added" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/syc_dark_h" android:id="@id/tv_today_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/ll_today_line" android:background="@drawable/live_rank_list_follow_bg" android:visibility="visible" android:layout_width="20.0dip" android:layout_height="4.0dip" android:layout_marginTop="4.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_all" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="14.0sp" android:textColor="@color/syc_dark_h" android:id="@id/tv_all_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_fans_member_group" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/syc_dark_h" android:id="@id/tv_all_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/ll_all_line" android:background="@drawable/live_rank_list_follow_bg" android:visibility="visible" android:layout_width="20.0dip" android:layout_height="4.0dip" android:layout_marginTop="4.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_fans_group" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="14.0sp" android:textColor="@color/syc_dark_h" android:id="@id/tv_fans_group_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_fans_group" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/syc_dark_h" android:id="@id/tv_fans_group_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/ll_fans_group_line" android:background="@drawable/live_rank_list_follow_bg" android:visibility="visible" android:layout_width="20.0dip" android:layout_height="4.0dip" android:layout_marginTop="4.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <com.blued.android.module.common.view.CustomViewPager android:id="@id/dialog_rank_viewpager" style="@style/layout_fill" />
+</LinearLayout>

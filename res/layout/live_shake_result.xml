@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/fl_shake_beans" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_beans_close" android:layout_width="29.0dip" android:layout_height="29.0dip" android:src="@drawable/live_shake_close" android:layout_toRightOf="@id/ll_main" android:layout_above="@id/ll_main" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_main" android:background="@drawable/live_shake_result_bg_1" android:layout_width="253.5dip" android:layout_height="213.0dip" android:layout_marginTop="15.0dip" android:layout_centerInParent="true">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/live_shake_result_bg_2" android:layout_width="198.0dip" android:layout_height="79.0dip" android:layout_marginLeft="27.5dip" android:layout_marginTop="84.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/syc_dark_FB4053" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.5dip" android:text="@string/live_shake_tip_3" />
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_shake_result_bean" />
+                <TextView android:textSize="26.0sp" android:textColor="@color/syc_dark_FB4053" android:id="@id/tv_beans" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="10.0sp" android:textColor="@color/syc_dark_8f000000" android:layout_gravity="center_horizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.5dip" android:text="@string/live_shake_tip_4" />
+    </LinearLayout>
+</RelativeLayout>

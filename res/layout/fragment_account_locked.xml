@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" app:center_text="@string/account_locked" app:hide_right="true" />
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="190.0dip" android:layout_height="190.0dip" android:layout_marginTop="40.0dip" android:src="@drawable/cover_account_locked" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/syc_h" android:gravity="center" android:id="@id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="30.0dip" android:lineSpacingExtra="3.0dip" />
+    <TextView android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <com.blued.android.framework.view.shape.ShapeTextView android:textSize="14.0sp" android:textColor="@color/nafio_a" android:gravity="center" android:id="@id/tv_appeal" android:layout_width="225.0dip" android:layout_height="44.0dip" android:layout_marginLeft="5.0dip" android:text="@string/contact_with_us" app:corner_radius="18.0dip" app:stroke_color="@color/syc_a" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/nafio_h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="30.0dip" android:text="@string/any_issue_click" />
+</LinearLayout>

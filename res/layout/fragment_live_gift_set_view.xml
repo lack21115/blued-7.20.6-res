@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="330.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.module.live_china.view.LiveGiftSetBannerView android:id="@id/banner" android:layout_width="fill_parent" android:layout_height="31.0dip" />
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:theme="@style/Theme.AppCompat" android:orientation="vertical" android:id="@id/coordinator" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="6.0dip">
+        <com.blued.android.framework.view.shape.ShapeFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:solid_color="@color/syc_dark_201C19" app:top_left_radius="15.0dip" app:top_right_radius="15.0dip">
+            <com.blued.android.framework.view.shape.ShapeFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:gradient_angle="TOP_BOTTOM" app:gradient_end_color="@color/syc_dark_005D231B" app:gradient_start_color="@color/syc_dark_BC763B" app:top_left_radius="15.0dip" app:top_right_radius="15.0dip">
+                <FrameLayout android:background="@drawable/live_gift_set_card_bg_1" android:layout_width="fill_parent" android:layout_height="225.0dip" />
+            </com.blued.android.framework.view.shape.ShapeFrameLayout>
+        </com.blued.android.framework.view.shape.ShapeFrameLayout>
+        <com.google.android.material.appbar.AppBarLayout android:id="@id/appbar" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" app:elevation="0.0dip">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" app:layout_scrollFlags="scroll">
+                <com.blued.android.framework.view.shape.ShapeFrameLayout android:id="@id/fl_tab" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginLeft="43.0dip" android:layout_marginRight="43.0dip" app:corner_radius="18.0dip" app:solid_color="@color/syc_dark_59000000">
+                    <com.blued.android.module.common.view.PageTabLayout android:layout_gravity="center" android:id="@id/tab_layout" android:layout_width="fill_parent" android:layout_height="26.0dip" android:layout_marginLeft="4.5dip" android:layout_marginRight="4.5dip" app:tabBackground="@null" app:tabIndicatorColor="@color/syc_dark_C9642E" app:tabIndicatorHeight="26.0dip" app:tabIndicatorRadius="13.0dip" app:tabModePage="fixed" app:tabSelectedTextColor="@color/syc_dark_b" app:tabTextAppearance="@style/TabLayoutTextStyle" app:tabTextColor="@color/syc_dark_B3ffffff" app:tabTextLines="1" app:tabTextSize="12.0sp" />
+                    <com.blued.android.module.common.view.PageTabLayout android:layout_gravity="center" android:id="@id/tab_layout_4" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="26.0dip" android:layout_marginLeft="4.5dip" android:layout_marginRight="4.5dip" app:tabBackground="@null" app:tabIndicatorColor="@color/syc_dark_C9642E" app:tabIndicatorHeight="26.0dip" app:tabIndicatorRadius="13.0dip" app:tabModePage="fixed" app:tabSelectedTextColor="@color/syc_dark_b" app:tabTextAppearance="@style/TabLayoutTextStyle" app:tabTextColor="@color/syc_dark_B3ffffff" app:tabTextLines="1" app:tabTextSize="11.0sp" />
+                </com.blued.android.framework.view.shape.ShapeFrameLayout>
+                <ImageView android:layout_gravity="center|right" android:id="@id/iv_qa" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginRight="16.0dip" android:src="@drawable/live_gift_set_qa" />
+            </FrameLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <androidx.viewpager.widget.ViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

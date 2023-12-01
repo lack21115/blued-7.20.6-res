@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.module.live_china.view.LiveMsgBgFrameLayout android:gravity="center_vertical" android:id="@id/live_msg_content_root" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.5dip" android:layout_marginRight="6.0dip">
+        <TextView android:textSize="13.0sp" android:textColor="@color/biao_live_msg_content" android:ellipsize="none" android:gravity="center_vertical" android:id="@id/live_msg_content_text" android:paddingLeft="6.0dip" android:paddingTop="4.0dip" android:paddingRight="6.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="30.0dip" android:lineSpacingExtra="3.0dip" android:textDirection="ltr" />
+        <FrameLayout android:id="@id/fl_icon_root" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="fill_parent" app:cardBackgroundColor="@color/transparent" app:cardCornerRadius="15.0dip" app:cardElevation="0.0dip" app:contentPadding="0.0dip">
+            <ImageView android:id="@id/live_msg_light" android:background="@drawable/entrance_white_light" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="fill_parent" />
+            <ImageView android:layout_gravity="bottom|center|right" android:id="@id/live_msg_vip_shadow" android:visibility="gone" android:layout_width="66.0dip" android:layout_height="17.0dip" android:src="@drawable/live_msg_list_shadow" android:scaleType="fitXY" />
+        </androidx.cardview.widget.CardView>
+    </com.blued.android.module.live_china.view.LiveMsgBgFrameLayout>
+    <ImageView android:layout_gravity="right" android:id="@id/live_msg_content_star" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginTop="1.5dip" android:src="@drawable/live_msg_list_star" android:scaleType="fitXY" />
+</FrameLayout>

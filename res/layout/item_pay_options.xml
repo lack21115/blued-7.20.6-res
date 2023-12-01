@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@color/syc_b" app:cardCornerRadius="6.0dip" app:cardElevation="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="54.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:src="@drawable/icon_gold_bean" />
+        <TextView android:textAppearance="@style/TextAppearance.FontPath.Medium" android:textSize="16.0sp" android:textColor="@color/syc_h" android:id="@id/tv_wandou" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="1000" android:includeFontPadding="false" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/sara_p" android:id="@id/tv_extra" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:includeFontPadding="false" />
+        <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <TextView android:textAppearance="@style/TextAppearance.FontPath.Medium" android:textSize="16.0sp" android:textColor="@color/syc_dark_FF5E32" android:gravity="center|right" android:id="@id/tv_rmb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="5元" android:maxLines="1" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:paddingRight="@dimen/dp_2" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll" android:background="@drawable/shape_relation_gift_select" android:layout_width="@dimen/dp_90" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.blued.android.module.common.view.SquareImageView android:id="@id/iv" android:layout_width="@dimen/dp_50" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_11" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/black" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_6" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" android:layout_marginBottom="@dimen/dp_7">
+            <com.blued.android.module.common.view.SquareImageView android:layout_width="@dimen/dp_12" android:layout_height="wrap_content" android:src="@drawable/icon_yy_relation_invited_beans" />
+            <TextView android:textSize="11.0sp" android:textColor="#ffffb930" android:id="@id/tv_bean" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_2" android:text="0" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

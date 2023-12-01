@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.blued.android.framework.ui.custom.KeyboardListenLinearLayout android:orientation="vertical" android:id="@id/keyboard_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" app:center_text="@string/circle_info_setting" app:hide_btm_line="true" app:right_text="@string/common_save" />
+    <View android:background="@color/syc_x" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_header" android:background="@drawable/selector_textview_bgcolor" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="@color/syc_h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/circle_header" />
+        <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <androidx.cardview.widget.CardView android:layout_width="85.0dip" android:layout_height="85.0dip" app:cardCornerRadius="6.0dip" app:cardElevation="0.0dip">
+            <ImageView android:id="@id/iv_header" android:layout_width="85.0dip" android:layout_height="85.0dip" android:src="@drawable/circle_header_default" />
+            <FrameLayout android:layout_gravity="bottom" android:id="@id/fl_header_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <View android:background="@color/black" android:layout_width="fill_parent" android:layout_height="24.0dip" android:alpha="0.6" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_edit" android:layout_width="fill_parent" android:layout_height="24.0dip" android:text="@string/modify" />
+            </FrameLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <View android:background="@color/syc_x" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/syc_h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="17.0dip" android:text="@string/circle_profile" />
+    <EditText android:textSize="14.0sp" android:textColor="@color/syc_h" android:textColorHint="@color/syc_j" android:gravity="center|left|top" android:id="@id/edt_info" android:background="@null" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="-3.0dip" android:hint="@string/circle_description_number_less_toast" android:layout_weight="1.0" />
+    <LinearLayout android:layout_gravity="right" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip">
+        <com.blued.community.view.EditInputNumView android:textSize="13.0sp" android:id="@id/inv_word_count" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:inTextColor="@color/syc_j" app:outTextColor="@color/syc_g" />
+    </LinearLayout>
+</com.blued.android.framework.ui.custom.KeyboardListenLinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/live_pk_pay_first_bg" android:layout_width="104.0dip" android:layout_height="22.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center_vertical" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="-1.0dip" android:src="@drawable/live_pk_first_pay_icon" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/syc_dark_b" android:ellipsize="marquee" android:layout_gravity="center_vertical" android:id="@id/tv_msg" android:paddingRight="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_pk_first_pay_tip" android:singleLine="true" />
+</LinearLayout>

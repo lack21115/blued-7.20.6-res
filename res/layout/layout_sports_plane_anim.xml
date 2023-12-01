@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/cloud_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center" android:id="@id/cloud1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/plane_cloud1" />
+        <ImageView android:layout_gravity="center" android:id="@id/cloud2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/plane_cloud2" />
+        <ImageView android:layout_gravity="center" android:id="@id/cloud3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/plane_cloud3" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/plane_root_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="100.0dip" android:layout_marginBottom="24.0dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/plane_back" />
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="98.0dip" android:layout_marginBottom="25.0dip" android:rotationY="40.0">
+            <ImageView android:id="@id/plane_back_propeller" android:layout_width="23.0dip" android:layout_height="23.0dip" android:src="@drawable/plane_back_propeller" />
+        </FrameLayout>
+        <ImageView android:layout_gravity="center" android:id="@id/super_plane" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/super_plane" />
+        <FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="27.0dip" android:layout_marginBottom="34.0dip" android:rotationX="60.0">
+            <ImageView android:id="@id/plane_propeller" android:layout_width="185.0dip" android:layout_height="185.0dip" android:src="@drawable/plane_propeller" />
+        </FrameLayout>
+    </FrameLayout>
+</FrameLayout>

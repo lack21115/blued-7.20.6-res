@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.framework.view.shape.ShapeRelativeLayout android:id="@id/live_background" android:layout_width="0.0dip" android:layout_height="45.0dip" app:corner_radius="6.0dip" app:solid_color="@color/black_alpha30" />
+    <com.blued.android.module.live_china.view.operation.LiveOperationListView android:id="@id/live_view_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.blued.android.module.live_china.view.operation.LiveOperationDescView android:id="@id/live_desc" android:layout_width="fill_parent" android:layout_height="fill_parent" android:translationY="45.0dip" />
+</FrameLayout>

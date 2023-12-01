@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/syc_c" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/top_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:id="@id/ll_system_permission" android:background="@color/item_bg_almost_white" android:layout_marginTop="10.0dip" style="@style/setting_info_item">
+                <TextView android:id="@id/tv_system_manage" android:clickable="false" android:layout_width="0.0dip" android:text="@string/system_permissions" android:layout_weight="1.0" style="@style/setting_info_item_tv" />
+                <ImageView style="@style/icon_right_arrow" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" style="@style/setting_info_item_ll_privacy_and_icon">
+                <TextView android:layout_width="wrap_content" android:text="@string/hide_my_active_time" style="@style/setting_info_item_tv_and_icon" />
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/icon_vip" />
+                <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <ToggleButton android:layout_gravity="center" android:id="@id/tglbtn_last_operate_onoff" android:textOn="" android:textOff="" style="@style/toggle_button" />
+            </LinearLayout>
+            <TextView android:text="@string/note_hide_my_active_time" style="@style/common_setting_hint_text_gray" />
+            <LinearLayout android:orientation="horizontal" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/setting_info_item_ll_privacy_and_icon">
+                <TextView android:layout_width="wrap_content" android:text="@string/hide_my_location" style="@style/setting_info_item_tv_and_icon" />
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/icon_vip" />
+                <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <ToggleButton android:layout_gravity="center" android:id="@id/tglbtn_distance_onoff" android:textOn="" android:textOff="" style="@style/toggle_button" />
+            </LinearLayout>
+            <TextView android:text="@string/note_hide_my_location" style="@style/common_setting_hint_text_gray" />
+            <LinearLayout android:id="@id/ll_msg_box" android:background="@color/syc_b" style="@style/setting_info_item_ll_privacy_and_icon">
+                <TextView android:clickable="false" android:layout_width="wrap_content" android:text="@string/message_box" style="@style/setting_info_item_tv_and_icon" />
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/icon_vip" />
+                <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <ImageView style="@style/icon_right_arrow" />
+            </LinearLayout>
+            <TextView android:id="@id/tv_msg_box_desc" android:text="@string/message_box_desc" style="@style/common_setting_hint_text_gray" />
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_half_invisible" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" style="@style/setting_info_item_ll_privacy">
+                    <TextView android:layout_width="wrap_content" android:text="@string/partly_incognito_login" style="@style/setting_info_item_tv_no_icon" />
+                    <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/icon_vip" />
+                    <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    <ToggleButton android:layout_gravity="center" android:id="@id/tglbtn_invisible_half_onoff" android:textOn="" android:textOff="" style="@style/toggle_button" />
+                </LinearLayout>
+                <TextView android:text="@string/note_partly_incognito_login" style="@style/common_setting_hint_text_gray" />
+                <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/ll_half_range_text" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="12.0sp" android:textColor="@color/syc_h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginTop="-5.0dip" android:text="@string/half_invisible_range_desc" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/nafio_f" android:id="@id/tv_half_range_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+                </LinearLayout>
+                <com.soft.blued.ui.find.view.TwoWaysBar android:id="@id/half_range_bar" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="13.0dip" android:layout_marginRight="13.0dip" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/ll_custom_invisible" android:background="@color/item_bg_almost_white" style="@style/setting_info_item_ll_privacy">
+                <TextView android:clickable="false" android:layout_width="wrap_content" android:text="@string/custom_invisible" style="@style/setting_info_item_tv_and_icon" />
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/icon_svip_small" />
+                <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <ImageView style="@style/icon_right_arrow" />
+            </LinearLayout>
+            <TextView android:id="@id/tv_custom_invisible_desc" android:text="@string/custom_invisible_desc" style="@style/common_setting_hint_text_gray" />
+            <RelativeLayout android:orientation="horizontal" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/setting_info_item_ll_privacy">
+                <ToggleButton android:layout_gravity="center" android:id="@id/tglbtn_msg_disturb_onoff" android:layout_marginTop="9.0dip" android:textOn="" android:textOff="" android:layout_alignParentRight="true" style="@style/toggle_button" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/ll_privacy_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_disturb" style="@style/setting_info_item_tv_and_icon" />
+                </LinearLayout>
+                <TextView android:text="@string/no_disturb_hint" android:layout_toLeftOf="@id/tglbtn_msg_disturb_onoff" android:layout_below="@id/ll_privacy_name" style="@style/common_setting_hint_text_gray" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_marginTop="10.0dip" style="@style/setting_info_item_ll_privacy_and_icon">
+                <TextView android:layout_width="wrap_content" android:text="@string/incognito_visitor" style="@style/setting_info_item_tv_and_icon" />
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/icon_svip_small" />
+                <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <ToggleButton android:layout_gravity="center" android:id="@id/tglbtn_incognito_visitor_onoff" android:textOn="" android:textOff="" style="@style/toggle_button" />
+            </LinearLayout>
+            <TextView android:text="@string/note_incognito_visitor" style="@style/common_setting_hint_text_gray" />
+            <LinearLayout android:orientation="horizontal" android:background="@color/item_bg_almost_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:id="@id/tv_secret_setting" android:clickable="true" android:text="@string/secret_list_author" style="@style/setting_info_item_tv_no_icon" />
+                    <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/icon_svip_small" />
+                </LinearLayout>
+                <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <ToggleButton android:layout_gravity="center_vertical" android:id="@id/tglbtn_secret_onoff" android:textOn="" android:textOff="" style="@style/toggle_button" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:id="@id/tv_attention_list_setting" android:clickable="true" android:text="@string/attiontion_list_other_author" style="@style/setting_info_item_tv_no_icon" />
+                <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <ToggleButton android:layout_gravity="center" android:id="@id/tglbtn_attention_onoff" android:textOn="" android:textOff="" style="@style/toggle_button" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/tv_fans_list_setting" android:clickable="true" android:text="@string/fans_list_other_author" style="@style/setting_info_item_tv_no_icon" />
+                <com.blued.android.framework.view.shape.ShapeTextView android:id="@id/tv_fans_list_red_point" android:visibility="gone" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginLeft="5.0dip" app:corner_radius="10.0dip" app:solid_color="@color/syc_g" app:stroke_color="@color/syc_b" app:stroke_width="1.0dip" />
+                <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <ToggleButton android:layout_gravity="center" android:id="@id/tglbtn_fans_onoff" android:textOn="" android:textOff="" style="@style/toggle_button" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/tv_map_finder_setting" android:clickable="true" android:text="@string/map_finder_setting" style="@style/setting_info_item_tv_no_icon" />
+                <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                <ToggleButton android:id="@id/tglbtn_map_finder_onoff" android:textOn="" android:textOff="" style="@style/toggle_button" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_allow_see_group" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/tv_see_groups" android:clickable="true" android:text="@string/setting_private_see_groups" style="@style/setting_info_item_tv_no_icon" />
+                <com.blued.android.framework.view.shape.ShapeTextView android:id="@id/tv_group_list_red_point" android:visibility="gone" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginLeft="5.0dip" app:corner_radius="10.0dip" app:solid_color="@color/syc_g" app:stroke_color="@color/syc_b" app:stroke_width="1.0dip" />
+                <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <ToggleButton android:id="@id/tglbtn_see_groups" android:textOn="" android:textOff="" style="@style/toggle_button" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/ll_black_list" android:background="@color/item_bg_almost_white" android:layout_marginTop="10.0dip" style="@style/setting_info_item">
+                <TextView android:id="@id/tv_black_list" android:clickable="false" android:layout_width="0.0dip" android:text="@string/my_black_list" android:layout_weight="1.0" style="@style/setting_info_item_tv" />
+                <TextView android:textColor="@color/syc_h" android:id="@id/tv_black_list_count" android:clickable="false" android:layout_width="wrap_content" android:text="" style="@style/setting_info_item_tv_right" />
+                <TextView android:textColor="@color/syc_h" android:id="@id/tv_black_count_max" android:clickable="false" android:layout_width="wrap_content" android:text="" style="@style/setting_info_item_tv_right" />
+                <ImageView style="@style/icon_right_arrow" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/ll_custom_options" android:background="@color/item_bg_almost_white" android:layout_marginTop="10.0dip" style="@style/setting_info_item">
+                <TextView android:clickable="false" android:layout_width="0.0dip" android:text="@string/settings_custom_options" android:layout_weight="1.0" style="@style/setting_info_item_tv" />
+                <ImageView style="@style/icon_right_arrow" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

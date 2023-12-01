@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_main" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_list" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_weight="1.0" style="@style/PullToRefreshListView" />
+        <com.blued.android.framework.view.shape.ShapeTextView android:textSize="15.0sp" android:textColor="@color/syc_dark_b" android:gravity="center" android:id="@id/tv_use" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.5dip" android:layout_marginRight="15.0dip" android:text="@string/live_pocket_use" app:corner_radius="44.0dip" app:gradient_end_color="@color/syc_dark_ff3aaa" app:gradient_start_color="@color/syc_dark_922cee" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/syc_dark_777777" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="9.0dip" android:text="@string/live_pocket_press_detail" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@id/ll_default" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_pocket_no_data" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/syc_dark_777777" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_pocket_no_props" />
+    </LinearLayout>
+</FrameLayout>

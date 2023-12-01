@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.framework.view.shape.ShapeLinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" app:solid_color="@color/syc_dark_b" app:top_left_radius="10.0dip" app:top_right_radius="10.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/syc_dark_1e1f23" android:gravity="center" android:id="@id/tv_exit" android:layout_width="fill_parent" android:layout_height="52.0dip" android:text="@string/live_invite_connect_exit_tip" />
+        <View android:background="@color/syc_dark_f8f8f8" android:layout_width="fill_parent" android:layout_height="5.0dip" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/syc_dark_1e1f23" android:gravity="center" android:id="@id/tv_cancel" android:layout_width="fill_parent" android:layout_height="52.0dip" android:text="@string/cancel" />
+    </com.blued.android.framework.view.shape.ShapeLinearLayout>
+</FrameLayout>

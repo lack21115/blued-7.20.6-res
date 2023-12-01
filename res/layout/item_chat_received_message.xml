@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/msg_item_root" android:paddingTop="@dimen/chat_two_item_root_top" android:paddingBottom="@dimen/chat_two_item_root_bottom" style="@style/layout_fill_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/msg_safe_common_system" />
+    <include layout="@layout/msg_date_layout" />
+    <LinearLayout android:orientation="vertical" android:id="@id/chat_content_root" android:layout_marginLeft="@dimen/chat_two_item_left_right_root" android:layout_marginRight="@dimen/chat_two_item_left_qp_marginright" style="@style/layout_fill_wrap">
+        <include android:id="@id/msg_group_show_root" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="55.0dip" layout="@layout/item_chat_group_head_layout" style="@style/chat_group_nickname_root" />
+        <RelativeLayout android:gravity="left" android:id="@id/chat_content_out_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" style="@style/chat_chat_content_in_left_style">
+            <include android:id="@id/msg_include_avatar_left" android:layout_width="@dimen/chat_two_item_avatar_size" android:layout_height="@dimen/chat_two_item_avatar_size" android:layout_marginTop="@dimen/msg_item_header_margin_top" layout="@layout/msg_include_avatar_left" />
+            <RelativeLayout android:id="@id/chat_content_in" android:background="@drawable/bubble_left" android:layout_width="wrap_content" android:layout_marginLeft="2.0dip" android:layout_toRightOf="@id/msg_include_avatar_left" style="@style/chat_content_outroot_style">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/ll_quote" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+                        <View android:layout_gravity="center_vertical" android:background="@color/syc_k" android:layout_width="1.0dip" android:layout_height="14.0dip" android:layout_marginRight="3.0dip" />
+                        <TextView android:textSize="12.0sp" android:textColor="@color/syc_k" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/tv_quote" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:maxLines="1" />
+                    </LinearLayout>
+                    <com.soft.blued.customview.selectabletextview.SelectFrameLayout android:id="@id/select_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.soft.blued.customview.adapttextview.FontAdjustTextView android:textColor="@color/syc_h" android:id="@id/tv_message" style="@style/chat_content_style" />
+                    </com.soft.blued.customview.selectabletextview.SelectFrameLayout>
+                    <TextView android:textSize="10.0sp" android:id="@id/translate_line" android:background="@color/syc_i" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="@string/biao_msg_content_translate_done" />
+                    <com.soft.blued.customview.selectabletextview.SelectFrameLayout android:id="@id/select_layout2" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.soft.blued.customview.adapttextview.FontAdjustTextView android:textColor="@color/syc_h" android:id="@id/tv_message_translate" android:visibility="gone" style="@style/chat_content_style" />
+                    </com.soft.blued.customview.selectabletextview.SelectFrameLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <include android:id="@id/msg_content_translate_status_root" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="52.0dip" android:layout_marginTop="-8.0dip" layout="@layout/msg_include_text_content_translate_status" />
+    </LinearLayout>
+    <include layout="@layout/msg_safe_sensitive" />
+    <include layout="@layout/msg_source" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_msg_bottom_tips_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

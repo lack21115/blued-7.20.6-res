@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/feed_subject_list_search" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="12.0dip" app:cardBackgroundColor="@color/syc_c" app:cardCornerRadius="17.0dip" app:cardElevation="0.0dip">
+        <TextView android:textSize="13.0sp" android:textColor="@color/syc_j" android:gravity="center_vertical" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/topic_search" android:includeFontPadding="false" android:drawableLeft="@drawable/icon_search_common" android:drawablePadding="4.0dip" />
+    </androidx.cardview.widget.CardView>
+    <LinearLayout android:orientation="vertical" android:id="@id/feed_subject_list_mine_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="36.0dip">
+            <TextView android:textAppearance="@style/TextAppearance.FontPath.Medium" android:textSize="15.0sp" android:textColor="@color/syc_h" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/my_super_topic" android:includeFontPadding="false" />
+            <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/syc_j" android:gravity="center_vertical" android:id="@id/feed_subject_list_my_join_all" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/subject_see_all" android:includeFontPadding="false" android:drawableRight="@drawable/feed_subject_list_right_arrow" android:drawablePadding="5.0dip" />
+        </LinearLayout>
+        <GridView android:id="@id/feed_subject_list_my_join_grid" android:paddingTop="2.5dip" android:paddingBottom="2.5dip" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="9.0dip" android:layout_marginBottom="12.0dip" android:horizontalSpacing="10.0dip" android:numColumns="2" android:overScrollMode="never" />
+    </LinearLayout>
+    <TextView android:textAppearance="@style/TextAppearance.FontPath.Medium" android:textSize="15.0sp" android:textColor="@color/syc_h" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_marginLeft="12.0dip" android:text="@string/subject_recommend" android:includeFontPadding="false" />
+</LinearLayout>

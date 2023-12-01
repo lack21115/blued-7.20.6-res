@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.blued.android.framework.view.shape.ShapeFrameLayout android:padding="@dimen/dp_1" android:clickable="false" android:layout_width="@dimen/dp_18" android:layout_height="@dimen/dp_18" app:corner_radius="@dimen/dp_9" app:solid_color="@color/white"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:background="@color/transparent" android:clickable="false" android:layout_width="@dimen/dp_16" android:layout_height="@dimen/dp_16" app:cardBackgroundColor="@color/transparent" app:cardCornerRadius="@dimen/dp_8">
+        <ImageView android:id="@id/iv_user" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/user_bg_round" />
+    </androidx.cardview.widget.CardView>
+</com.blued.android.framework.view.shape.ShapeFrameLayout>

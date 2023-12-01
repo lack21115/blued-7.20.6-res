@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.framework.view.shape.ShapeFrameLayout android:layout_gravity="center" android:id="@id/fl_root" android:clickable="true" android:layout_width="300.0dip" android:layout_height="310.0dip" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:layout_marginHorizontal="30.0dip" app:corner_radius="8.0dip" app:gradient_angle="TOP_BOTTOM" app:gradient_end_color="@color/syc_dark_FFFCEA" app:gradient_start_color="@color/syc_dark_FFF1FA" app:stroke_color="@color/white" app:stroke_width="1.5dip">
+        <ImageView android:layout_gravity="right" android:id="@id/iv_close" android:layout_width="22.0dip" android:layout_height="24.0dip" android:layout_margin="18.0dip" android:src="@drawable/live_random_gift_info_close" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/syc_dark_2A2A2E" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/live_random_gift_host_tab_record" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/syc_dark_222" android:id="@id/tv_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="60.0dip" android:layout_marginRight="20.0dip" android:text="@string/live_random_gift_record_lottery_period_desc" android:layout_marginHorizontal="20.0dip" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_list" android:layout_width="fill_parent" android:layout_height="169.0dip" android:layout_marginTop="89.0dip" />
+        <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/rl_empty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="89.0dip">
+            <ImageView android:layout_width="120.0dip" android:layout_height="120.0dip" android:src="@drawable/live_pocket_no_data" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/syc_dark_989898" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="132.0dip" android:text="@string/live_random_gift_record_lottery_period_empty" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <View android:background="@color/syc_dark_F3F5F7" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="258.0dip" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/syc_dark_999" android:layout_gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="@string/live_random_gift_record_period_info" />
+        <com.blued.android.module.common.view.SlopeLoadingView android:layout_gravity="center" android:id="@id/loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:slope_diameter="45.0dip" app:slope_line_width="6.0dip" />
+    </com.blued.android.framework.view.shape.ShapeFrameLayout>
+</FrameLayout>

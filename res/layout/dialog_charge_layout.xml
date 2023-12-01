@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/shape_raduis_6_ffffff" android:layout_width="@dimen/dp_300" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/syc_6A6A70" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_30" android:text="@string/yy_charge_con_1" />
+        <View android:background="@color/syc_line" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="@dimen/dp_30" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dp_50">
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/syc_A5A6B3" android:gravity="center" android:id="@id/close" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/cancel" android:layout_weight="1.0" />
+            <View android:background="@color/syc_dark_line" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/syc_3599FF" android:gravity="center" android:id="@id/tv_ok" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/yy_recharge" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

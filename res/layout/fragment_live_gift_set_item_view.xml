@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+        <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/pro_bar" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100.0dip" style="?android:progressBarStyle" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_main" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="276.0dip">
+                <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/live_gift_set_card_title_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="26.0dip">
+                        <ImageView android:id="@id/iv_count_down" android:layout_width="wrap_content" android:layout_height="22.0dip" android:src="@drawable/live_gift_set_count_downing" />
+                        <com.blued.android.framework.view.shape.ShapeTextView android:textSize="18.0sp" android:textColor="@color/syc_dark_FCE3BA" android:gravity="center" android:id="@id/tv_count_down" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="22.0dip" android:layout_marginLeft="15.0dip" app:corner_radius="23.0dip" app:solid_color="@color/syc_dark_201C19" />
+                    </LinearLayout>
+                    <TextView android:textSize="12.0sp" android:textColor="@color/syc_dark_99562211" android:id="@id/tv_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="3.0dip" android:text="@string/live_gift_set_all_send_90" />
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" />
+                    <com.blued.android.module.live.base.view.clickanimview.BamTextView android:textSize="15.0sp" android:textColor="@color/syc_dark_b" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_all_send" android:background="@drawable/live_gift_set_card_send_bg" android:layout_width="135.0dip" android:layout_height="40.0dip" android:layout_marginTop="14.0dip" android:text="@string/live_gift_set_all_send" />
+                </LinearLayout>
+                <ImageView android:layout_gravity="right" android:visibility="gone" android:layout_width="77.0dip" android:layout_height="80.0dip" android:src="@drawable/live_gift_set_gift_icon" />
+            </FrameLayout>
+            <com.blued.android.framework.view.shape.ShapeFrameLayout android:id="@id/sf_task" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.5dip" app:corner_radius="12.0dip" app:solid_color="@color/syc_dark_302A26">
+                <FrameLayout android:background="@drawable/live_gift_set_card_bg_2" android:layout_width="fill_parent" android:layout_height="112.0dip" android:layout_marginBottom="12.0dip" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="16.0dip" android:src="@drawable/live_gift_set_send_task" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/ll_task" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="13.5dip" />
+                </LinearLayout>
+            </com.blued.android.framework.view.shape.ShapeFrameLayout>
+            <com.blued.android.framework.view.shape.ShapeFrameLayout android:id="@id/fl_extra" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.5dip" android:layout_marginBottom="40.0dip" app:corner_radius="12.0dip" app:solid_color="@color/syc_dark_302A26">
+                <FrameLayout android:background="@drawable/live_gift_set_card_bg_2" android:layout_width="fill_parent" android:layout_height="112.0dip" />
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_extra" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="33.0dip" android:layout_marginRight="33.0dip" android:layout_marginBottom="18.0dip" />
+            </com.blued.android.framework.view.shape.ShapeFrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+</androidx.core.widget.NestedScrollView>

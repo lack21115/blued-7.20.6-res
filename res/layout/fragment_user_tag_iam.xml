@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/top_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/syc_h" android:layout_gravity="left" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="30.0dip" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/syc_h" android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="40.0dip" android:text="@string/my_label" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/syc_i" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="30.0dip" android:text="@string/tag_guide_hint" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="30.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0sp" android:textColor="@color/syc_h" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/my_shape" android:layout_weight="1.0" />
+        </LinearLayout>
+        <com.blued.community.view.PhotoGridView android:id="@id/gv_bodytype" android:layout_marginTop="15.0dip" style="@style/gv_usertag" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/syc_h" android:id="@id/tv_my_chara" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/my_personality" />
+        <com.blued.community.view.PhotoGridView android:id="@id/gv_characteristic" android:layout_marginTop="15.0dip" style="@style/gv_usertag" />
+    </LinearLayout>
+</LinearLayout>

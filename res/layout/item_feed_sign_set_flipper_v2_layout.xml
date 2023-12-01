@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/item_feed_sign_content_bg" android:background="@drawable/feed_sign_set_new_item_bg" android:layout_width="wrap_content" android:layout_height="77.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="3.0dip">
+        <FrameLayout android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginLeft="6.0dip" android:layout_marginTop="14.5dip">
+            <ImageView android:id="@id/item_feed_sign_set_avatar" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <View android:background="@drawable/feed_sign_avatar_mask_static" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="18.0dip">
+            <TextView android:textSize="13.0sp" android:textColor="@color/syc_h" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/item_feed_sign_set_user_name" android:layout_width="fill_parent" android:layout_height="18.5dip" android:layout_marginLeft="4.5dip" android:maxWidth="80.0dip" android:maxLines="1" android:includeFontPadding="false" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/syc_k" android:ellipsize="end" android:id="@id/item_feed_sign_set_user_info_tv" android:layout_width="wrap_content" android:layout_height="16.5dip" android:layout_marginLeft="4.5dip" android:maxWidth="70.0dip" android:maxLines="1" android:includeFontPadding="false" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginTop="1.5dip">
+                <ImageView android:id="@id/item_feed_sign_set_state_iv" android:layout_width="18.0dip" android:layout_height="18.0dip" android:scaleType="centerCrop" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/syc_j" android:ellipsize="end" android:id="@id/item_feed_sign_set_state_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.5dip" android:maxWidth="50.0dip" android:maxLines="1" android:includeFontPadding="false" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/syc_j" android:ellipsize="end" android:id="@id/item_feed_sign_set_content_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.5dip" android:maxWidth="100.0dip" android:maxLines="1" android:includeFontPadding="false" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

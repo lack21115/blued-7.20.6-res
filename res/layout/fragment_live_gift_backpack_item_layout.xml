@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_pager_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.blued.android.module.live_china.mine.backpack.LiveGiftBagItemTabView android:id="@id/base_gift_toolbar_view" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginStart="16.0dip" />
+        <com.blued.android.module.live_china.mine.ViewPagerContainer android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.viewpager.widget.ViewPager android:id="@id/base_view_pager_id" android:layout_width="fill_parent" android:layout_height="265.0dip" />
+        </com.blued.android.module.live_china.mine.ViewPagerContainer>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@id/base_gift_page_no_data_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/base_gift_page_no_data_iv" android:layout_width="120.0dip" android:layout_height="120.0dip" android:src="@drawable/icon_no_data_common" />
+        <TextView android:textAppearance="@style/TextAppearance.FontPath.Regular" android:textSize="12.0sp" android:textColor="@color/color_999AB0" android:id="@id/base_gift_page_no_data_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:text="空空如也" />
+    </LinearLayout>
+</FrameLayout>

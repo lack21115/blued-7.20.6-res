@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:id="@id/linearLayout2" android:background="@color/nafio_b" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/top_title" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.blued.android.framework.view.pulltorefresh.PullToRefreshRecyclerView android:id="@id/list_view" android:layout_height="0.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/top_title" style="@style/PullToRefreshListView" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_scroll_top_filter" android:background="@color/syc_b" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" app:layout_constraintTop_toBottomOf="@id/top_title">
+        <com.blued.android.framework.view.shape.ShapeTextView android:textSize="16.0sp" android:textColor="@color/syc_h" android:id="@id/tv_sort_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/ai_sorting" />
+        <com.blued.android.framework.view.shape.ShapeTextView android:textSize="16.0sp" android:textColor="@color/syc_j" android:id="@id/tv_sort_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:text="@string/nearby_sorting" />
+        <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/btn_filter" android:layout_width="wrap_content" android:layout_height="26.0dip" android:layout_marginRight="10.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="@color/syc_h" android:id="@id/tv_filter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_filter_close" />
+            <ImageView android:id="@id/iv_filter" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="4.0dip" android:src="@drawable/icon_hello_call_filter_close" android:scaleType="fitXY" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.blued.community.view.FloatFooterView android:id="@id/ffv_bottom" android:layout_width="0.0dip" android:layout_height="55.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:text="@string/hello_name" />
+</androidx.constraintlayout.widget.ConstraintLayout>

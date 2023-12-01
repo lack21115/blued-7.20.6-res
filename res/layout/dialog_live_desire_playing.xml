@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_content" android:background="@drawable/shape_live_make_friend_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_header" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginTop="16.0dip" android:layout_marginBottom="7.0dip">
+            <FrameLayout android:id="@id/live_header_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_centerVertical="true">
+                <ImageView android:layout_gravity="center" android:id="@id/header_view" android:focusable="true" android:clickable="true" android:layout_width="36.0dip" android:layout_height="36.0dip" android:contentDescription="@string/app_name" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/header_level_bg" android:visibility="gone" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/live_anchor_head_bg_90" />
+            </FrameLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="50.0dip" android:layout_toRightOf="@id/live_header_layout" android:layout_centerVertical="true">
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/syc_dark_0a0a0a" android:layout_gravity="center_horizontal" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_desire_title" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/syc_dark_767676" android:id="@id/tv_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/live_desire_subtitle_playing" android:layout_below="@id/tv_title" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <ImageView android:id="@id/iv_refresh" android:padding="5.0dip" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/icon_live_refresh" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@id/smart_refresh" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/rl_header">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:paddingTop="4.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    <RelativeLayout android:id="@id/loading" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/rl_header">
+        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:progressBarStyle" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/nafio_b" style="@style/layout_fill_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/tv_item0" android:background="@drawable/selector_visitor_bgcolor" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/tv_msg_box" android:layout_width="wrap_content" android:text="@string/msg_mute_box" android:drawableLeft="@drawable/icon_msg_box" style="@style/biao_msg_right_pup_item" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_msg_box_red_point" android:visibility="gone" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginLeft="30.0dip" android:layout_marginTop="15.0dip" android:src="@drawable/shape_red_point" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:src="@drawable/icon_vip" android:layout_toRightOf="@id/tv_msg_box" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:id="@id/tv_item1" android:text="@string/biao_v4_right_pup_one" android:drawableLeft="@drawable/ignore_unread_messages" style="@style/biao_msg_right_pup_item" />
+    <TextView android:id="@id/tv_item2" android:text="@string/biao_v4_right_pup_two" android:drawableLeft="@drawable/ignore_unread_delete" style="@style/biao_msg_right_pup_item" />
+    <RelativeLayout android:id="@id/lay_item4" android:background="@drawable/selector_visitor_bgcolor" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerVertical="true">
+            <TextView android:layout_gravity="center_vertical" android:id="@id/tv_item4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/biao_v4_right_pup_four_open" android:drawableLeft="@drawable/menu_open_private_msg" style="@style/biao_msg_right_pup_item" />
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/icon_svip" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/tv_item3" android:text="@string/biao_v4_right_pup_three" android:drawableLeft="@drawable/menu_msg_setting" style="@style/biao_msg_right_pup_item" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/menu_msg_black_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:background="@color/syc_o_line" style="@style/common_cutter_gray" />
+</LinearLayout>

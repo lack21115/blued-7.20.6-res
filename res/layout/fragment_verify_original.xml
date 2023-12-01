@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/nafio_b" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/top_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:id="@id/tv_page_title" android:text="@string/change_secure_email" style="@style/no_title_page_first_text" />
+    <TextView android:textSize="14.0sp" android:id="@id/tv_intro" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="30.0dip" android:text="@string/verify_original_email" />
+    <com.blued.android.module.common.view.CommonEdittextView android:id="@id/cev_email" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="50.0dip" android:layout_marginRight="30.0dip" app:hint_text="@string/verify_original_email_hint" app:show_areacode="false" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/nafio_a" android:gravity="right" android:id="@id/tv_to_mobile_verify" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="30.0dip" android:text="@string/change_mobile_verify" />
+    <TextView android:enabled="false" android:id="@id/tv_confirm" android:clickable="false" android:text="@string/next_step" style="@style/large_btn_rnd_corner_with_white_text" />
+</LinearLayout>

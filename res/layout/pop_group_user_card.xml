@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.framework.view.shape.ShapeLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" app:layout_constraintTop_toTopOf="@id/rl_icon" app:solid_color="@color/syc_b" app:top_left_radius="15.0dip" app:top_right_radius="15.0dip">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="45.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="@color/syc_h" android:layout_gravity="center_vertical" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="一二三四" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_verify" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="4.0dip" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_vip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/ll_personal_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:id="@id/age_view" style="@style/text_user_group_card" />
+            <TextView android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="@string/cut_line" style="@style/text_user_group_card" />
+            <TextView android:id="@id/height_view" style="@style/text_user_group_card" />
+            <TextView android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="@string/cut_line" style="@style/text_user_group_card" />
+            <TextView android:id="@id/weight_view" style="@style/text_user_group_card" />
+            <TextView android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:text="@string/cut_line" style="@style/text_user_group_card" />
+            <TextView android:id="@id/role_view" style="@style/text_user_group_card" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:textSize="12.0sp" android:layout_gravity="center_horizontal" android:id="@id/tv_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="88.88km · " style="@style/text_user_group_card" />
+            <TextView android:textSize="12.0sp" android:layout_gravity="center_horizontal" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10分钟前" style="@style/text_user_group_card" />
+        </LinearLayout>
+        <View android:background="@color/syc_o" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="20.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="48.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="@color/syc_j" android:gravity="center" android:id="@id/tv_view_user" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/group_user_card_profile" android:layout_weight="1.0" />
+            <View android:background="@color/syc_o" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="18.0dip" android:layout_marginBottom="18.0dip" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/syc_j" android:gravity="center" android:id="@id/tv_at_him" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/group_at_him" android:layout_weight="1.0" />
+            <View android:background="@color/syc_o" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="18.0dip" android:layout_marginBottom="18.0dip" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/syc_a" android:gravity="center" android:id="@id/tv_chat" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/group_user_card_chat" android:layout_weight="1.0" />
+        </LinearLayout>
+    </com.blued.android.framework.view.shape.ShapeLinearLayout>
+    <RelativeLayout android:id="@id/rl_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="13.0dip" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent">
+        <ImageView android:id="@id/iv_icon" android:layout_width="70.0dip" android:layout_height="70.0dip" android:src="@drawable/re_head_icon" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <com.blued.android.framework.view.shape.ShapeTextView android:textSize="9.0sp" android:textColor="@color/circle_top_text" android:gravity="center" android:id="@id/tv_identity" android:paddingLeft="7.0dip" android:paddingRight="7.0dip" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginTop="60.0dip" android:text="群主" android:layout_centerHorizontal="true" app:bg_default_touch="false" app:corner_radius="22.0dip" app:layout_constraintTop_toBottomOf="@id/iv_icon" app:solid_color="@color/syc_b" />
+    </RelativeLayout>
+    <com.blued.android.framework.view.shape.ShapeTextView android:textSize="10.0sp" android:textColor="@color/syc_a" android:id="@id/kick_out" android:paddingLeft="12.0dip" android:paddingTop="5.0dip" android:paddingRight="12.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="45.0dip" android:layout_marginRight="10.0dip" android:text="@string/group_kick_out" app:corner_radius="11.0dip" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" app:stroke_color="@color/syc_a" app:stroke_width="1.0dip" />
+</androidx.constraintlayout.widget.ConstraintLayout>

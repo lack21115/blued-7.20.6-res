@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.blued.android.framework.view.shape.ShapeFrameLayout android:id="@id/fl_vote_time" android:padding="@dimen/dp_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_8" app:corner_radius="@dimen/dp_22" app:gradient_end_color="@color/syc_3883FD" app:gradient_start_color="@color/syc_00E0AB"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.framework.view.shape.ShapeTextView android:textSize="@dimen/sp_14" android:textColor="@color/syc_8d8d8e" android:gravity="center" android:id="@id/tv_vote_time" android:layout_width="@dimen/dp_76" android:layout_height="@dimen/dp_40" app:corner_radius="@dimen/dp_20" app:solid_color="@color/syc_dark_28282b" />
+</com.blued.android.framework.view.shape.ShapeFrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_root" android:layout_width="100.0dip" android:layout_height="57.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="11.0dip" android:textColor="@color/syc_dark_4D98FF" android:id="@id/tv_notice_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:text="@string/live_pk_dared_use_prop" android:includeFontPadding="false" />
+    <TextView android:textSize="9.0dip" android:textColor="@color/syc_dark_b" android:id="@id/tv_notice_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="3.0dip" android:text="@string/live_pk_dared_prop_info" android:includeFontPadding="false" android:layout_below="@id/tv_notice_title" />
+    <ImageView android:id="@id/iv_icon" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginRight="7.5dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

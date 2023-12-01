@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardCornerRadius="5.0dip" app:cardElevation="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="#198a65ff" android:layout_width="65.0dip" android:layout_height="85.0dip">
+        <FrameLayout android:background="#ffe1d8ff" android:layout_width="fill_parent" android:layout_height="19.0dip">
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/live_charge_gift_icon" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginRight="4.0dip" android:src="@drawable/live_charge_bean" />
+                <TextView android:textAppearance="@style/TextAppearance.FontPath.Medium" android:textSize="9.0sp" android:textColor="#fff5a300" android:gravity="center" android:layout_gravity="center" android:id="@id/live_charge_gift_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" />
+            </LinearLayout>
+        </FrameLayout>
+        <ImageView android:id="@id/live_charge_gift_iv" android:layout_width="50.0dip" android:layout_height="50.0dip" android:scaleType="fitXY" />
+        <TextView android:textAppearance="@style/TextAppearance.FontPath.Medium" android:textSize="9.0sp" android:textColor="#ff5745fc" android:gravity="center" android:id="@id/live_charge_gift_count" android:layout_width="fill_parent" android:layout_height="14.0dip" android:includeFontPadding="false" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_near_group1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="13.0sp" android:textColor="@color/sara_e" android:id="@id/tv_group_count" android:layout_marginBottom="7.0dip" android:singleLine="true" style="@style/layout_wrap_content" />
+                <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout style="@style/layout_wrap_content">
+                        <ImageView android:id="@id/iv_group_profile_photo1" android:layout_width="36.0dip" android:layout_height="36.0dip" android:scaleType="centerCrop" />
+                        <ImageView android:id="@id/iv_verify_icon1" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_alignRight="@id/iv_group_profile_photo1" android:layout_alignBottom="@id/iv_group_profile_photo1" android:contentDescription="@string/app_name" />
+                    </RelativeLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_marginLeft="10.0dip" style="@style/layout_groupinfo">
+                        <LinearLayout style="@style/layout_fill_wrap">
+                            <TextView android:textSize="15.0sp" android:textColor="@color/sara_c" android:id="@id/tv_group_name_info1" android:text="@string/group_name" android:singleLine="true" style="@style/layout_wrap_content" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_marginTop="2.0dip" style="@style/layout_wrap_content">
+                            <LinearLayout android:gravity="center_vertical" style="@style/layout_wrap_content">
+                                <ImageView android:src="@drawable/icon_group_member" style="@style/layout_wrap_content" />
+                                <TextView android:textSize="11.0sp" android:textColor="@color/sara_e" android:id="@id/tv_groupSize1" android:layout_marginLeft="2.0dip" style="@style/layout_wrap_content" />
+                            </LinearLayout>
+                            <LinearLayout android:gravity="center_vertical" android:layout_marginLeft="8.0dip" style="@style/layout_groupinfo">
+                                <ImageView android:src="@drawable/icon_group_position" style="@style/layout_wrap_content" />
+                                <TextView android:textSize="11.0sp" android:textColor="@color/sara_e" android:id="@id/tv_group_distance1" android:layout_marginLeft="2.0dip" android:singleLine="true" style="@style/layout_wrap_content" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_near_group2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="33.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="13.0sp" android:textColor="#ffcccccc" android:layout_marginBottom="9.0dip" android:singleLine="true" style="@style/layout_wrap_content" />
+                <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout style="@style/layout_wrap_content">
+                        <ImageView android:id="@id/iv_group_profile_photo2" android:layout_width="36.0dip" android:layout_height="36.0dip" android:scaleType="centerCrop" />
+                        <ImageView android:id="@id/iv_verify_icon2" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_alignRight="@id/iv_group_profile_photo2" android:layout_alignBottom="@id/iv_group_profile_photo2" android:contentDescription="@string/app_name" />
+                    </RelativeLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_marginLeft="10.0dip" style="@style/layout_groupinfo">
+                        <LinearLayout style="@style/layout_fill_wrap">
+                            <TextView android:textSize="15.0sp" android:textColor="@color/sara_c" android:id="@id/tv_group_name_info2" android:text="@string/group_name" android:singleLine="true" style="@style/layout_wrap_content" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_marginTop="2.0dip" style="@style/layout_wrap_content">
+                            <LinearLayout android:gravity="center_vertical" style="@style/layout_wrap_content">
+                                <ImageView android:src="@drawable/icon_group_member" style="@style/layout_wrap_content" />
+                                <TextView android:textSize="11.0sp" android:textColor="@color/sara_e" android:id="@id/tv_groupSize2" android:layout_marginLeft="2.0dip" style="@style/layout_wrap_content" />
+                            </LinearLayout>
+                            <LinearLayout android:gravity="center_vertical" android:layout_marginLeft="8.0dip" style="@style/layout_groupinfo">
+                                <ImageView android:src="@drawable/icon_group_position" style="@style/layout_wrap_content" />
+                                <TextView android:textSize="11.0sp" android:textColor="@color/sara_e" android:id="@id/tv_group_distance2" android:layout_marginLeft="2.0dip" android:singleLine="true" style="@style/layout_wrap_content" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView style="@style/icon_right_arrow" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

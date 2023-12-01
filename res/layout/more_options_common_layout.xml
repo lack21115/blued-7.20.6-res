@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.framework.view.shape.ShapeLinearLayout android:orientation="vertical" android:id="@id/ll_all" android:layout_width="fill_parent" android:layout_height="wrap_content" app:solid_color="@color/syc_c" app:top_left_radius="10.0dip" app:top_right_radius="10.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_main" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.blued.android.framework.view.ResilienceHorizontalScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <androidx.recyclerview.widget.RecyclerView android:layout_gravity="left" android:id="@id/lv_share_options" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.5dip" />
+                </RelativeLayout>
+            </com.blued.android.framework.view.ResilienceHorizontalScrollView>
+            <com.blued.android.framework.view.ResilienceHorizontalScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <androidx.recyclerview.widget.RecyclerView android:layout_gravity="left" android:id="@id/lv_other_options" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.5dip" />
+                </RelativeLayout>
+            </com.blued.android.framework.view.ResilienceHorizontalScrollView>
+        </LinearLayout>
+        <TextView android:textSize="20.0sp" android:textColor="@color/syc_h" android:gravity="center" android:id="@id/tv_cancel" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_marginTop="10.0dip" android:text="@string/ssdk_oks_cancel" />
+    </com.blued.android.framework.view.shape.ShapeLinearLayout>
+</LinearLayout>

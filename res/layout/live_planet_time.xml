@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="111.0dip" android:layout_height="33.0dip" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/fl_time_root" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/iv_time_1" android:layout_width="25.0dip" android:layout_height="fill_parent" android:layout_marginTop="1.0dip" android:layout_marginBottom="1.0dip" android:layout_marginStart="4.819977dip" />
+        <ImageView android:id="@id/iv_time_2" android:layout_width="25.0dip" android:layout_height="fill_parent" android:layout_marginTop="1.0dip" android:layout_marginBottom="1.0dip" android:layout_marginStart="23.819977dip" />
+        <ImageView android:id="@id/iv_time_division" android:layout_width="25.0dip" android:layout_height="fill_parent" android:layout_marginTop="1.0dip" android:layout_marginBottom="1.0dip" android:src="@drawable/live_planet_num_division" android:layout_marginStart="42.819977dip" />
+        <ImageView android:id="@id/iv_time_3" android:layout_width="25.0dip" android:layout_height="fill_parent" android:layout_marginTop="1.0dip" android:layout_marginBottom="1.0dip" android:layout_marginStart="61.819977dip" />
+        <ImageView android:id="@id/iv_time_4" android:layout_width="25.0dip" android:layout_height="fill_parent" android:layout_marginTop="1.0dip" android:layout_marginBottom="1.0dip" android:layout_marginStart="80.81998dip" />
+    </FrameLayout>
+    <TextView android:textSize="16.529999dip" android:textColor="@color/syc_dark_5cf8ff" android:layout_gravity="center" android:id="@id/tv_probe_ing" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_planet_probe_ing" android:includeFontPadding="false" />
+    <View android:background="@drawable/live_planet_time_background" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

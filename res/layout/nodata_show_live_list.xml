@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/syc_b" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_no_live_posted" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/syc_k" android:id="@id/tv_live_detail_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/liveVideo_videoList_label_noLiveNotice" android:includeFontPadding="false" />
+    <TextView android:textSize="15.0sp" android:textColor="#ffc0c0c0" android:id="@id/tv_live_start_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:text="@string/liveVideo_videoList_label_startToLiveNotice" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_live_start_btn" android:background="@drawable/live_list_nodata_btn" android:layout_width="113.0dip" android:layout_height="40.0dip" android:layout_marginTop="18.0dip" android:text="@string/liveVideo_videoList_label_startToLiveButton" />
+</LinearLayout>

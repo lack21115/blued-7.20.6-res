@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/syc_f4" style="@style/layout_fill"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/top_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_group_notify_info_user" android:background="@color/white" android:paddingLeft="13.0dip" android:paddingTop="18.0dip" android:paddingBottom="18.0dip" android:layout_marginTop="1.0dip" style="@style/layout_fill_wrap">
+            <RelativeLayout android:id="@id/ll_group_profile_pic" style="@style/layout_wrap_content">
+                <ImageView android:id="@id/iv_group_profile_pic" android:background="@drawable/group_default_head" android:layout_width="58.0dip" android:layout_height="58.0dip" />
+                <ImageView android:id="@id/iv_group_notify_info_verify_icon" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_alignRight="@id/iv_group_profile_pic" android:layout_alignBottom="@id/iv_group_profile_pic" android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_marginLeft="10.0dip" android:layout_weight="1.0" android:layout_centerInParent="true" style="@style/layout_tv_wrap_content">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_group_notify_lock_icon" android:background="@drawable/shape_msg_group_locked" android:paddingLeft="5.0dip" android:paddingTop="1.5dip" android:paddingRight="5.0dip" android:paddingBottom="1.5dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@string/msg_group_locked" />
+                    <TextView android:textSize="15.0sp" android:textColor="@color/sara_c" android:id="@id/tv_user_name" android:text="测试" android:singleLine="true" style="@style/layout_tv_wrap_content" />
+                </LinearLayout>
+                <TextView android:textSize="13.0sp" android:textColor="@color/sara_d" android:id="@id/tv_user_info" android:layout_marginTop="9.0dip" android:text="测试" style="@style/layout_tv_wrap_content" />
+            </LinearLayout>
+            <ImageView style="@style/icon_right_arrow" />
+        </LinearLayout>
+        <View android:background="@color/divider_e1" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="83.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_group_notify_info_detail" android:background="@color/sara_f" android:paddingLeft="13.0dip" android:paddingTop="17.0dip" android:paddingRight="13.0dip" android:paddingBottom="17.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="10.0sp" android:textColor="@color/sara_e" android:id="@id/tv_group_notify_info_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="时间" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/sara_d" android:id="@id/tv_group_notify_info_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.5dip" android:text="描述" android:lineSpacingExtra="7.0dip" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/sara_a" android:id="@id/tv_group_notify_info_site" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="群规地址" />
+        </LinearLayout>
+        <TextView android:id="@id/tv_group_notify_info_division" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <TextView android:textSize="17.0sp" android:textColor="@color/sara_f" android:gravity="center" android:id="@id/tv_group_notify_info_groups" android:background="@drawable/shape_common_rectangle_blue" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginLeft="12.5dip" android:layout_marginRight="12.5dip" android:layout_marginBottom="15.0dip" android:text="@string/group_notify_info_browse_groups" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_group_notify_apply_detail" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:background="@color/sara_f" android:paddingLeft="13.0dip" android:paddingTop="13.0dip" android:paddingRight="13.0dip" style="@style/layout_fill_wrap">
+                <TextView android:textSize="13.0sp" android:textColor="@color/black323232" android:text="@string/group_apply_hint" style="@style/layout_tv_wrap_content" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/common_bg_bottom" android:id="@id/tv_group_name" android:layout_marginLeft="10.0dip" style="@style/layout_tv_wrap_content" />
+            </LinearLayout>
+            <TextView android:textSize="13.0sp" android:textColor="@color/white8d8d8d" android:id="@id/tv_group_apply_describe" android:background="@color/white" android:paddingLeft="13.0dip" android:paddingTop="10.0dip" android:paddingRight="13.0dip" android:paddingBottom="20.0dip" style="@style/layout_fill_wrap" />
+            <TextView android:textSize="13.0sp" android:textColor="#ff636363" android:gravity="right" android:id="@id/tv_group_join_time" android:background="@color/white" android:paddingRight="13.0dip" android:paddingBottom="15.0dip" android:singleLine="true" style="@style/layout_fill_wrap" />
+            <LinearLayout android:id="@id/ll_group_notify_oprate" android:layout_marginTop="10.0dip" style="@style/layout_fill_wrap">
+                <Button android:textSize="15.0sp" android:textColor="@color/black" android:id="@id/btn_group_refuse" android:background="@drawable/shape_common_round_frame_blue_solid_group_notify_left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginRight="6.0dip" android:text="@string/group_notify_decline" android:layout_weight="1.0" />
+                <Button android:textSize="15.0sp" android:textColor="@color/white" android:id="@id/btn_group_agree" android:background="@drawable/shape_common_round_frame_blue_solid_group_notify" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="13.0dip" android:text="@string/groupjoin_agree" android:layout_weight="1.0" />
+            </LinearLayout>
+            <TextView android:textSize="13.0sp" android:textColor="#ff636363" android:gravity="center" android:id="@id/group_apply_result" android:layout_marginTop="13.0dip" style="@style/layout_fill_wrap" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:background="@drawable/live_planet_record_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="30.0dip">
+        <com.blued.android.module.live.base.view.subscaleview.SubsamplingScaleImageView android:id="@id/iv_planet" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="21.0dip" android:layout_marginTop="46.0dip" android:layout_marginRight="21.0dip" />
+        <ImageView android:id="@id/iv_back" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="21.0dip" android:layout_marginTop="55.0dip" android:src="@drawable/live_planet_rule_back" />
+    </FrameLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="190.0dip" android:layout_height="61.0dip" android:src="@drawable/live_planet_icon" />
+</FrameLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/popup_view_cont" android:background="@drawable/shape_filter_title_bg" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/top_title" android:layout_width="fill_parent" android:layout_height="wrap_content" app:hide_btm_line="true" />
+        <androidx.core.widget.NestedScrollView android:id="@id/scrollView" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/ll_filter_root" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:id="@id/ll_fiter_onoff" style="@style/filter_item_layout">
+                    <TextView android:text="@string/filter_switch" style="@style/filter_item_name" />
+                    <ImageView android:id="@id/img_filter_dot" style="@style/new_remind" />
+                    <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    <ImageView android:id="@id/sbt_fiter_onoff" android:background="@drawable/selector_common_togglebutton" android:layout_width="40.0dip" android:layout_height="23.0dip" android:layout_marginRight="0.0dip" android:textOn="" android:textOff="" style="@style/toggle_button" />
+                </LinearLayout>
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:gravity="center_vertical" android:background="@color/syc_b" android:paddingTop="20.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="12.0sp" android:textColor="@color/syc_j" android:paddingLeft="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vip_filter" />
+                            <ImageView android:visibility="visible" android:layout_marginLeft="10.0dip" android:layout_marginTop="2.0dip" style="@style/blued_vip_icon" />
+                        </LinearLayout>
+                        <LinearLayout android:id="@id/ll_verify_onoff" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_height="wrap_content" style="@style/filter_item_layout">
+                            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                <TextView android:id="@id/verify_text" android:text="@string/filter_verified" style="@style/filter_item_name" />
+                                <TextView android:textSize="12.0sp" android:textColor="@color/syc_j" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/vip_verify_filter_desc" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toBottomOf="@id/verify_text" />
+                            </LinearLayout>
+                            <ImageView android:id="@id/sbt_verify_onoff" android:background="@drawable/selector_common_togglebutton" android:layout_width="40.0dip" android:layout_height="23.0dip" android:textOn="" android:textOff="" />
+                        </LinearLayout>
+                        <LinearLayout android:id="@id/ll_vip_only_onoff" style="@style/filter_item_layout">
+                            <TextView android:layout_width="0.0dip" android:text="@string/filter_vip_only" android:layout_weight="1.0" style="@style/filter_item_name" />
+                            <ImageView android:id="@id/sbt_vip_only_onoff" android:background="@drawable/selector_common_togglebutton" android:layout_width="40.0dip" android:layout_height="23.0dip" android:textOn="" android:textOff="" />
+                        </LinearLayout>
+                        <androidx.constraintlayout.widget.ConstraintLayout android:paddingTop="15.0dip" android:layout_height="wrap_content" style="@style/filter_item_layout">
+                            <TextView android:id="@id/tv_distance_title" android:text="@string/distance" style="@style/filter_item_name" />
+                            <TextView android:textSize="16.0sp" android:textColor="@color/nafio_f" android:id="@id/tv_distance_range" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" app:layout_constraintLeft_toRightOf="@id/tv_distance_title" app:layout_constraintTop_toTopOf="parent" />
+                            <TextView android:textSize="12.0sp" android:textColor="@color/syc_j" android:id="@id/tv_distance_desc" android:background="@color/syc_b" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/distance_desc" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_distance_title" />
+                            <com.soft.blued.ui.find.view.TwoWaysBar android:id="@id/bar_distance" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_below="@id/tv_distance_title" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_distance_desc" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <androidx.constraintlayout.widget.ConstraintLayout android:paddingTop="15.0dip" android:layout_height="wrap_content" style="@style/filter_item_layout">
+                            <TextView android:id="@id/tv_time_title" android:text="@string/online_time" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/filter_item_name" />
+                            <TextView android:textSize="16.0sp" android:textColor="@color/nafio_f" android:id="@id/tv_time_range" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" app:layout_constraintLeft_toRightOf="@id/tv_time_title" app:layout_constraintTop_toTopOf="parent" />
+                            <TextView android:textSize="12.0sp" android:textColor="@color/syc_j" android:id="@id/tv_time_desc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/online_time_desc" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_time_title" />
+                            <com.soft.blued.ui.find.view.TwoWaysBar android:id="@id/bar_time" android:layout_width="fill_parent" android:layout_height="50.0dip" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_time_desc" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <View android:background="@color/syc_o_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                        <TextView android:textSize="12.0sp" android:textColor="@color/syc_j" android:gravity="center_vertical" android:background="@color/syc_b" android:paddingLeft="16.0dip" android:paddingTop="20.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/normal_filter" />
+                        <LinearLayout android:id="@id/ll_photo_onoff" style="@style/filter_item_layout">
+                            <TextView android:id="@id/photo_text" android:layout_width="0.0dip" android:text="@string/filter_header" android:layout_weight="1.0" style="@style/filter_item_name" />
+                            <ImageView android:id="@id/sbt_photo_onoff" android:background="@drawable/selector_common_togglebutton" android:layout_width="40.0dip" android:layout_height="23.0dip" android:textOn="" android:textOff="" />
+                        </LinearLayout>
+                        <LinearLayout android:id="@id/ll_AI_photo_onoff" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_height="wrap_content" style="@style/filter_item_layout">
+                            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                <TextView android:text="@string/filter_ai_photo" style="@style/filter_item_name" />
+                                <TextView android:textSize="12.0sp" android:textColor="@color/nafio_k" android:ellipsize="end" android:id="@id/tv_ai_photo_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/filter_ai_photo_desc" android:maxLines="1" />
+                            </LinearLayout>
+                            <ImageView android:id="@id/sbt_ai_photo_onoff" android:background="@drawable/selector_common_togglebutton" android:layout_width="40.0dip" android:layout_height="23.0dip" android:textOn="" android:textOff="" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_height="wrap_content" style="@style/filter_item_layout">
+                            <TextView android:id="@id/type_text" android:text="@string/filter_type" style="@style/filter_item_name" />
+                            <com.blued.community.view.PhotoGridView android:id="@id/gv_role" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/gv_usertag" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_height="wrap_content" style="@style/filter_item_layout">
+                            <TextView android:text="@string/my_shape" style="@style/filter_item_name" />
+                            <com.blued.community.view.PhotoGridView android:id="@id/gv_heis_bodytype" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/gv_usertag" />
+                        </LinearLayout>
+                        <androidx.constraintlayout.widget.ConstraintLayout android:paddingTop="15.0dip" android:layout_height="wrap_content" style="@style/filter_item_layout">
+                            <TextView android:id="@id/tv_age_title" android:text="@string/filter_age" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/filter_item_name" />
+                            <TextView android:textSize="16.0sp" android:textColor="@color/nafio_f" android:id="@id/tv_age_range" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" app:layout_constraintLeft_toRightOf="@id/tv_age_title" app:layout_constraintTop_toTopOf="parent" />
+                            <com.soft.blued.ui.find.view.TwoWaysBar android:id="@id/bar_age" android:layout_width="fill_parent" android:layout_height="50.0dip" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_age_range" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <androidx.constraintlayout.widget.ConstraintLayout android:paddingTop="15.0dip" android:layout_height="wrap_content" style="@style/filter_item_layout">
+                            <TextView android:id="@id/tv_height_title" android:text="@string/filter_height" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/filter_item_name" />
+                            <TextView android:textSize="16.0sp" android:textColor="@color/nafio_f" android:id="@id/tv_height_range" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" app:layout_constraintLeft_toRightOf="@id/tv_height_title" app:layout_constraintTop_toTopOf="parent" />
+                            <com.soft.blued.ui.find.view.TwoWaysBar android:id="@id/bar_height" android:layout_width="fill_parent" android:layout_height="50.0dip" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_height_range" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <androidx.constraintlayout.widget.ConstraintLayout android:paddingTop="15.0dip" android:layout_height="wrap_content" style="@style/filter_item_layout">
+                            <TextView android:id="@id/tv_weight_title" android:text="@string/filter_weight" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/filter_item_name" />
+                            <TextView android:textSize="16.0sp" android:textColor="@color/nafio_f" android:id="@id/tv_weight_range" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" app:layout_constraintLeft_toRightOf="@id/tv_weight_title" app:layout_constraintTop_toTopOf="parent" />
+                            <com.soft.blued.ui.find.view.TwoWaysBar android:id="@id/bar_weight" android:layout_width="fill_parent" android:layout_height="50.0dip" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_weight_range" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                        <LinearLayout android:id="@id/ll_filter_heis" style="@style/filter_item_layout">
+                            <TextView android:id="@id/heis_text" android:text="@string/his_tags" style="@style/filter_item_name" />
+                            <TextView android:textSize="12.0sp" android:textColor="@color/syc_h" android:ellipsize="end" android:gravity="right" android:id="@id/tv_filter_heis" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:singleLine="true" android:layout_weight="1.0" />
+                            <ImageView android:id="@id/tv_heis_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/icon_arrow_down" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:id="@id/ll_heis" android:background="@color/syc_b" android:padding="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="12.0sp" android:textColor="@color/syc_h" android:id="@id/tv_heis_char_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/my_personality" />
+                            <com.blued.community.view.PhotoGridView android:id="@id/gv_heis_chara" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/gv_usertag" />
+                        </LinearLayout>
+                        <LinearLayout android:id="@id/ll_filter_lookfor" style="@style/filter_item_layout">
+                            <TextView android:id="@id/lookfor_text" android:text="@string/his_types" style="@style/filter_item_name" />
+                            <TextView android:textSize="12.0sp" android:textColor="@color/syc_h" android:gravity="right" android:id="@id/tv_filter_lookfor" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:singleLine="true" android:layout_weight="1.0" />
+                            <ImageView android:id="@id/tv_lookforis_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/icon_arrow_down" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:id="@id/ll_lookforis" android:background="@color/syc_b" android:padding="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="12.0sp" android:textColor="@color/syc_h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/my_shape" />
+                            <com.blued.community.view.PhotoGridView android:id="@id/gv_lookfor_bodytype" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/gv_usertag" />
+                            <TextView android:textSize="12.0sp" android:textColor="@color/syc_h" android:id="@id/tv_lookfor_char_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/my_personality" />
+                            <com.blued.community.view.PhotoGridView android:id="@id/gv_lookfor_chara" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/gv_usertag" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_height="wrap_content" style="@style/filter_item_layout">
+                            <TextView android:id="@id/relation_text" android:text="@string/relation_status" style="@style/filter_item_name" />
+                            <com.blued.community.view.PhotoGridView android:id="@id/gv_relation" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/gv_usertag" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_height="wrap_content" style="@style/filter_item_layout">
+                            <TextView android:text="@string/making_friends" style="@style/filter_item_name" />
+                            <com.blued.community.view.PhotoGridView android:id="@id/gv_lookfor_want" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/gv_usertag" />
+                        </LinearLayout>
+                        <LinearLayout android:id="@id/ll_fiter_race" android:visibility="gone" style="@style/filter_item_layout">
+                            <TextView android:id="@id/race_text" android:text="@string/filter_race" style="@style/filter_item_name" />
+                            <TextView android:textSize="12.0sp" android:textColor="@color/syc_h" android:gravity="right" android:id="@id/tv_fiter_race" android:layout_width="0.0dip" android:layout_height="wrap_content" android:width="150.0dip" android:singleLine="true" android:layout_weight="1.0" />
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/icon_common_right_arrow" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View android:id="@id/filter_lay" android:background="@color/filter_shade" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                </FrameLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_alignParentBottom="true" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+    <RelativeLayout android:background="@drawable/shape_filter_complete_bg" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_complete" android:background="@drawable/shape_filter_complete_tv_bg" android:layout_width="225.0dip" android:layout_height="44.0dip" android:text="@string/confirm" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

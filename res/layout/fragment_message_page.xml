@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.blued.android.framework.view.badgeview.QBadgeContainer android:id="@id/find_badge_container" android:layout_width="fill_parent" android:layout_height="fill_parent" app:badge_offx="1.0dip" app:badge_offy="0.0dip" app:badge_textSize="10.0sp" style="@style/layout_fill"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/top_title" layout="@layout/common_top_title_tabs" />
+    <com.soft.blued.customview.CustomViewPager android:id="@id/main_msg_viewpager" android:layout_below="@id/top_title" style="@style/layout_fill" />
+</com.blued.android.framework.view.badgeview.QBadgeContainer>

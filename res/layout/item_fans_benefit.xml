@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:layout_marginBottom="@dimen/dp_8"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/img_prize_picture" android:layout_width="@dimen/dp_50" android:layout_height="@dimen/dp_50" android:src="@drawable/gift_default_icon" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/syc_dark_222" android:id="@id/tv_prize_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_6" android:text="专属铭牌" app:layout_constraintLeft_toLeftOf="@id/img_prize_picture" app:layout_constraintRight_toRightOf="@id/img_prize_picture" app:layout_constraintTop_toBottomOf="@id/img_prize_picture" />
+    <TextView android:textSize="@dimen/sp_12" android:textColor="@color/syc_999999" android:id="@id/tv_prize_usage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" android:text="入团即可开启" app:layout_constraintLeft_toLeftOf="@id/img_prize_picture" app:layout_constraintRight_toRightOf="@id/img_prize_picture" app:layout_constraintTop_toBottomOf="@id/tv_prize_name" />
+</androidx.constraintlayout.widget.ConstraintLayout>

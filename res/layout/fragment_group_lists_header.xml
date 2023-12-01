@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" style="@style/layout_fill"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:id="@id/ll_group_options" style="@style/layout_fill_wrap">
+        <TextView android:textSize="13.0sp" android:textColor="@color/common_v4_blue_frame_font" android:gravity="center_horizontal" android:id="@id/tv_same_city" android:padding="10.0dip" android:text="@string/groups_lists_nearby" style="@style/layout_groupinfo" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/common_v4_blue_frame_font" android:text="@string/group_divided_line" style="@style/layout_wrap_content" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/common_v4_blue_frame_font" android:gravity="center_horizontal" android:id="@id/tv_recommended_category" android:padding="10.0dip" android:text="@string/group_recommended_category" style="@style/layout_groupinfo" />
+    </LinearLayout>
+    <com.blued.android.module.common.view.SearchView android:id="@id/group_search" android:layout_width="fill_parent" android:layout_height="wrap_content" app:search_click_jump="true" />
+</LinearLayout>

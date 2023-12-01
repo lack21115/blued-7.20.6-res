@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="68.0dip" android:maxWidth="68.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/stv_cover_img" android:background="@drawable/defaultpicture" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_centerInParent="true" android:alpha="0.6" />
+    <ImageView android:id="@id/stv_cover_selected_icon" android:background="@drawable/stv_cover_selected_icon" android:layout_width="68.0dip" android:layout_height="68.0dip" />
+</RelativeLayout>

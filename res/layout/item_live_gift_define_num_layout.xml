@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/trans_black_nine" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/white" android:gravity="center" android:layout_width="fill_parent" android:layout_height="34.0dip" android:text="自定义数量" />
+</FrameLayout>

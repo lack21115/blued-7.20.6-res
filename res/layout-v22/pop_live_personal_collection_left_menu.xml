@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/nafio_b" style="@style/layout_fill_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_personal_collection" android:paddingLeft="13.0dip" android:paddingTop="15.0dip" android:paddingRight="13.0dip" android:paddingBottom="15.0dip" android:clipToPadding="false" android:paddingHorizontal="13.0dip" android:paddingVertical="15.0dip" style="@style/layout_fill_wrap" />
+</RelativeLayout>

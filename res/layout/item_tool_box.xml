@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="@dimen/dp_8" android:paddingRight="@dimen/dp_8" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.blued.android.module.common.view.SquareImageView android:id="@id/tool_img" android:layout_width="@dimen/dp_44" android:layout_height="wrap_content" android:src="@drawable/icon_yy_anim" />
+        <com.blued.android.framework.view.shape.ShapeTextView android:layout_gravity="right" android:id="@id/img_red_dot" android:visibility="gone" android:layout_width="@dimen/dp_6" android:layout_height="@dimen/dp_6" android:layout_marginTop="@dimen/dp_4" android:layout_marginRight="@dimen/dp_4" app:corner_radius="@dimen/dp_3" app:solid_color="@color/syc_FF3E4F" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/sp_13" android:textColor="@color/syc_dark_b" android:gravity="center" android:id="@id/tool_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:maxWidth="@dimen/dp_60" android:text="真爱套系礼物" />
+</LinearLayout>

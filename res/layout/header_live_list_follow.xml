@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textColor="@color/syc_j" android:gravity="center_vertical" android:id="@id/tv_living_count" android:background="@color/syc_x" android:paddingLeft="17.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="34.0dip" android:text="@string/Live_liveList_noOneHosting" />
+    <include android:id="@id/ll_recommend_layout" layout="@layout/recommend_feed_layout" />
+</LinearLayout>

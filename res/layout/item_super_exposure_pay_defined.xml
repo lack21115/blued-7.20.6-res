@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/item_super_exposure_pay_content_layout" android:background="@drawable/super_exposure_pay_content_bg" android:layout_width="fill_parent" android:layout_height="110.0dip" android:layout_marginTop="9.0dip">
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/item_super_exposure_pay_define_price_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textAppearance="@style/TextAppearance.FontPath.Bold" android:textSize="15.0sp" android:textColor="#fff37422" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥" android:includeFontPadding="false" />
+                <TextView android:textAppearance="@style/TextAppearance.FontPath.Bold" android:textSize="28.0sp" android:textColor="#fff37422" android:id="@id/item_super_exposure_pay_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:includeFontPadding="false" />
+            </LinearLayout>
+            <ImageView android:id="@id/item_super_exposure_pay_define_edit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_exposure_edit" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff79818d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/user_define_price" android:includeFontPadding="false" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

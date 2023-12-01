@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.blued.android.framework.view.shape.ShapeLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/view_anony" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:layout_width="wrap_content" android:layout_height="32.0dip" app:corner_radius="5.0dip" app:solid_color="@color/syc_b" app:stroke_color="@color/syc_o" app:stroke_width="1.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="13.0sp" android:textColor="@color/syc_j" android:id="@id/chat_anonymous_from_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/super_topic_from_anonymous" />
+    <androidx.cardview.widget.CardView android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="6.0dip" android:elevation="0.0dip" app:cardBackgroundColor="@color/syc_p" app:cardCornerRadius="5.0dip" app:cardElevation="0.0dip">
+        <ImageView android:id="@id/iv_pic" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <TextView android:textSize="6.0sp" android:textColor="@color/syc_j" android:gravity="center" android:id="@id/tv_content" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </androidx.cardview.widget.CardView>
+    <ImageView android:id="@id/iv_close" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="6.0dip" android:src="@drawable/chat_anon_close" />
+</com.blued.android.framework.view.shape.ShapeLinearLayout>

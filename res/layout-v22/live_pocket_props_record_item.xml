@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/view_root" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.framework.view.shape.ShapeFrameLayout android:id="@id/view_main" android:layout_width="fill_parent" android:layout_height="84.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" app:corner_radius="12.0dip" app:solid_color="@color/syc_dark_5f2F364E" app:stroke_color="@color/syc_dark_14FFFFFF" app:stroke_width="0.5dip">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_icon" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="12.0dip" android:src="@drawable/live_pocket_arrow_right" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.5dip" android:layout_marginRight="12.0dip">
+                <TextView android:textColor="@color/syc_dark_b" android:ellipsize="end" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:autoSizeTextType="uniform" android:autoSizeStepGranularity="0.5sp" android:autoSizeMinTextSize="14.0sp" android:autoSizeMaxTextSize="15.0sp" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip">
+                    <TextView android:textSize="11.0sp" android:textColor="@color/syc_dark_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_pocket_user_exp" android:alpha="0.4" />
+                    <TextView android:textSize="11.0sp" android:textColor="@color/syc_ff6533" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_dead" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+                    <TextView android:textSize="11.0sp" android:textColor="@color/syc_dark_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_pocket_dead_time" android:alpha="0.4" />
+                    <TextView android:textSize="11.0sp" android:textColor="@color/syc_ff6533" android:id="@id/tv_dead_time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.blued.android.framework.view.shape.ShapeFrameLayout>
+</FrameLayout>

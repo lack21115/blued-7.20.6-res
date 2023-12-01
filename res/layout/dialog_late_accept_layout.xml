@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/shape_raduis_6_ffffff" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/sp_16" android:textColor="@color/syc_dark_h" android:gravity="center" android:id="@id/tv_apply_content" android:paddingTop="@dimen/dp_15" android:paddingBottom="@dimen/dp_20" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:background="@color/syc_dark_line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dp_50">
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/syc_A5A6B3" android:gravity="center" android:id="@id/tv_apply_reject" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/yy_reject_seat" android:layout_weight="1.0" />
+        <View android:background="@color/syc_dark_line" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/syc_3E93FF" android:gravity="center" android:id="@id/tv_apply_now" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/yy_apply_now" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

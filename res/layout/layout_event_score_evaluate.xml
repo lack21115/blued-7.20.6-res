@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_event_score" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="12.0sp" android:textColor="@color/syc_k" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/feed_post_event_score" />
+        <ImageView android:id="@id/iv_score_1" android:visibility="gone" android:layout_width="12.0dip" android:layout_height="12.0dip" android:src="@drawable/icon_score_selected_clean_space" />
+        <ImageView android:id="@id/iv_score_2" android:visibility="gone" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginLeft="4.5dip" android:src="@drawable/icon_score_selected_clean_space" />
+        <ImageView android:id="@id/iv_score_3" android:visibility="gone" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginLeft="4.5dip" android:src="@drawable/icon_score_selected_clean_space" />
+        <ImageView android:id="@id/iv_score_4" android:visibility="gone" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginLeft="4.5dip" android:src="@drawable/icon_score_selected_clean_space" />
+        <ImageView android:id="@id/iv_score_5" android:visibility="gone" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginLeft="4.5dip" android:src="@drawable/icon_score_selected_clean_space" />
+    </LinearLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@color/syc_k" android:ellipsize="end" android:id="@id/tv_event_evaluate" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/feed_post_event_evaluate" android:lines="2" />
+</LinearLayout>

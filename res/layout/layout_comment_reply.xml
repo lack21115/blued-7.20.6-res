@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.blued.android.framework.view.shape.ShapeLinearLayout android:orientation="vertical" android:id="@id/ll_reply" android:padding="10.0dip" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="60.0dip" android:layout_marginRight="10.0dip" app:corner_radius="10.0dip" app:solid_color="@color/syc_x"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="13.0sp" android:textColor="@color/syc_h" android:ellipsize="end" android:id="@id/feed_comment_replay_first_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:includeFontPadding="false" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/syc_h" android:ellipsize="end" android:id="@id/feed_comment_replay_second_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:includeFontPadding="false" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_more_reply" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip">
+        <TextView android:textSize="12.0sp" android:textColor="@color/syc_j" android:id="@id/tv_reply_num_pre" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+        <TextView android:textAppearance="@style/TextAppearance.FontPath.Bold" android:textSize="12.0sp" android:textColor="@color/syc_square_tab_selected" android:id="@id/tv_reply_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+        <ImageView android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/feed_more_icon" android:scaleType="fitXY" />
+    </LinearLayout>
+</com.blued.android.framework.view.shape.ShapeLinearLayout>

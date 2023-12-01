@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_nodata_groups" android:visibility="visible" style="@style/layout_fill"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="53.0dip" android:src="@drawable/icon_no_group" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/nafio_l" android:id="@id/tv_nodata_groups" android:text="@string/my_group_no_join" android:drawablePadding="8.0dip" style="@style/layout_wrap_content" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/nafio_l" android:layout_marginTop="10.0dip" android:layout_marginBottom="15.0dip" android:text="@string/my_group_you_can" style="@style/layout_wrap_content" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/nafio_b" android:gravity="center" android:id="@id/tv_group_look" android:background="@drawable/shape_common_round_blue_solid" android:layout_width="150.0dip" android:layout_height="42.0dip" android:text="@string/my_group_look_for" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/nafio_l" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:text="@string/my_group_or" style="@style/layout_wrap_content" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/nafio_b" android:gravity="center" android:id="@id/tv_group_create" android:background="@drawable/shape_common_round_blue_solid" android:layout_width="150.0dip" android:layout_height="42.0dip" android:text="@string/my_group_create" />
+</LinearLayout>

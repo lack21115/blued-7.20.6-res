@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/trans_black_four" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <com.blued.android.module.live_china.mine.LiveGiftScrawlPaintView android:id="@id/live_gift_scrawl_paint_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <FrameLayout android:id="@id/live_gift_scrawl_guide_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/live_gift_scrawl_guide_iv" android:layout_width="175.0dip" android:layout_height="175.0dip" />
+                    <TextView android:textSize="15.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="开始绘制涂鸦" android:includeFontPadding="false" />
+                </LinearLayout>
+            </FrameLayout>
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/shape_live_gift_card_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="52.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/live_gift_scrawl_tips_tv" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:text="礼物数量不少于10个" android:layout_weight="1.0" />
+                <ImageView android:id="@id/live_gift_scrawl_undo" android:paddingLeft="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_gift_scrawl_undo" />
+                <ImageView android:id="@id/live_gift_scrawl_clear" android:paddingLeft="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_gift_scrawl_clear" />
+                <ImageView android:id="@id/live_gift_scrawl_close" android:paddingLeft="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_gift_scrawl_close" />
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/live_gift_scrawl_rv" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="109.0dip" android:layout_marginTop="13.0dip" android:overScrollMode="never" />
+            <com.blued.android.module.common.view.LiveGiftIndicatorView android:gravity="center" android:orientation="horizontal" android:id="@id/live_gift_scrawl_indicator_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="2.0dip" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="51.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="@style/TextAppearance.FontPath.Medium" android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/live_gift_scrawl_price_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:drawableLeft="@drawable/live_gift_bean_icon" android:drawablePadding="5.0dip" />
+                    <TextView android:textSize="9.0sp" android:textColor="@color/syc_dark_j" android:id="@id/live_gift_scrawl_give_bean_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginTop="2.0dip" android:includeFontPadding="false" />
+                </LinearLayout>
+                <TextView android:textSize="12.0sp" android:textColor="#ffffb119" android:gravity="center" android:id="@id/live_gift_scrawl_charge" android:background="@drawable/live_gift_switcher_bg" android:layout_width="45.0dip" android:layout_height="27.0dip" android:layout_marginLeft="10.0dip" android:text="@string/Live_SendPresent_recharge" />
+                <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_weight="1.0" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/live_gift_switcher_bg" android:layout_width="117.0dip" android:layout_height="31.0dip" android:layout_marginRight="10.0dip">
+                    <TextView android:textSize="13.0sp" android:textColor="@color/syc_b" android:gravity="center" android:id="@id/live_gift_scrawl_num" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="0" android:includeFontPadding="false" android:layout_weight="1.0" />
+                    <TextView android:textAppearance="@style/TextAppearance.FontPath.Bold" android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/live_gift_scrawl_confirm" android:background="@drawable/live_gift_switcher_selected" android:layout_width="60.0dip" android:layout_height="fill_parent" android:text="@string/live_give_gift" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@id/live_gift_scrawl_notice_parent_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.blued.android.framework.view.shape.ShapeLinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/live_gift_scrawl_notice_layout" android:layout_width="300.0dip" android:layout_height="181.0dip" app:corner_radius="6.0dip" app:solid_color="@color/white">
+            <TextView android:textAppearance="@style/TextAppearance.FontPath.Medium" android:textSize="16.0sp" android:textColor="#ff2a2a2e" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="15.0dip" android:text="提示" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff6a6a70" android:gravity="center" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="28.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="13.0dip" android:text="直播间禁止绘制和发布违规图形，违者将进行处罚，情节严重将封号处理" android:layout_weight="1.0" />
+            <View android:background="#fff3f5f7" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="#ffa5a6b3" android:gravity="center" android:id="@id/live_gift_scrawl_notice_cancel" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="取消" android:layout_weight="1.0" />
+                <View android:background="#fff3f5f7" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff3699ff" android:gravity="center" android:id="@id/live_gift_scrawl_notice_confirm" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="确定" android:layout_weight="1.0" />
+            </LinearLayout>
+        </com.blued.android.framework.view.shape.ShapeLinearLayout>
+    </FrameLayout>
+    <com.blued.android.framework.view.shape.ShapeLinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/live_gift_scrawl_need_charge_layout" android:visibility="gone" android:layout_width="300.0dip" android:layout_height="131.0dip" app:corner_radius="6.0dip" app:solid_color="@color/white">
+        <TextView android:textSize="16.0sp" android:textColor="#ff2a2a2e" android:gravity="center" android:id="@id/live_gift_scrawl_need_charge_tv" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="20.0dip" android:layout_weight="1.0" />
+        <View android:background="#fff3f5f7" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="#ffa5a6b3" android:gravity="center" android:id="@id/live_gift_scrawl_need_charge_cancel" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="取消" android:layout_weight="1.0" />
+            <View android:background="#fff3f5f7" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff3699ff" android:gravity="center" android:id="@id/live_gift_scrawl_need_charge_confirm" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="充值并赠送" android:layout_weight="1.0" />
+        </LinearLayout>
+    </com.blued.android.framework.view.shape.ShapeLinearLayout>
+</FrameLayout>

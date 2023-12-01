@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:orientation="vertical" android:id="@id/coordinator" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@id/refreshLayout" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:srlAccentColor="@android:color/transparent">
+        <com.blued.android.module.common.view.CustomTwoLevelHeader android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" app:srlEnableRefresh="false">
+            <com.blued.android.module.live_china.view.LiveTwoLevelRefreshView android:id="@id/refresh_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </com.blued.android.module.common.view.CustomTwoLevelHeader>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="100.0dip">
+                <include android:id="@id/live_default_empty" layout="@layout/nodata_show_live_list" />
+            </FrameLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" style="@style/PullToRefreshListView" />
+        </FrameLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

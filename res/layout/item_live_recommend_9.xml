@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/root_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="4.0dip">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/bg_recommend_user" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                <ImageView android:id="@id/img_close" android:padding="9.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-5.0dip" android:layout_marginRight="-5.0dip" android:src="@drawable/icon_grid_close_recommend" android:scaleType="fitXY" />
+            </LinearLayout>
+            <FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/tv_live_follow_head" android:layout_width="65.0dip" android:layout_height="65.0dip" android:src="@drawable/user_bg_round" android:scaleType="centerCrop" android:layout_centerHorizontal="true" app:corner_radius="32.5dip" />
+                <ImageView android:layout_gravity="bottom|center|right" android:id="@id/img_verify" android:visibility="gone" android:layout_width="17.0dip" android:layout_height="17.0dip" android:layout_marginRight="2.0dip" android:layout_marginBottom="2.0dip" android:src="@drawable/v_red" />
+            </FrameLayout>
+            <TextView android:textSize="13.0sp" android:textColor="@color/nafio_h" android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:lines="1" />
+            <ImageView android:layout_gravity="center" android:id="@id/img_living" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:src="@drawable/live_recommend_onlive_icon" />
+        </LinearLayout>
+        <ImageView android:id="@id/img_living_game" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="9.0dip" android:src="@drawable/live_recommend_game_icon" />
+    </FrameLayout>
+</FrameLayout>

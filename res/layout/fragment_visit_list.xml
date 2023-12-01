@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/frame_layout" android:background="@color/syc_b" style="@style/layout_fill"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.framework.view.pulltorefresh.RenrenPullToRefreshListView android:id="@id/list_view" style="@style/PullToRefreshListView" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="bottom|center" android:id="@id/tv_edit_tip" android:background="@drawable/visitor_edit_tip" android:paddingLeft="10.0dip" android:paddingTop="15.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="45.0dip" android:layout_marginTop="70.0dip" android:text="@string/visitor_edit_tip" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toLeftOf="@id/guideline5" app:layout_constraintTop_toTopOf="@id/layout_part1" />
+</FrameLayout>

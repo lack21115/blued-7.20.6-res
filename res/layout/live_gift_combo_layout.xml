@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="bottom|center" android:id="@id/live_gift_combo_count_parent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="25.0dip">
+        <View android:layout_gravity="bottom|center" android:id="@id/live_gift_combo_line" android:background="@drawable/live_gift_combo_line" android:layout_width="24.0dip" android:layout_height="85.0dip" />
+        <FrameLayout android:layout_gravity="bottom|center" android:id="@id/live_gift_combo_count_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="75.0dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_gift_combo_count_bg" />
+            <TextView android:textAppearance="@style/TextAppearance.FontPath.Bold" android:textSize="18.0sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/live_gift_combo_count_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" />
+        </FrameLayout>
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="bottom|center" android:id="@id/live_gift_combo_btn_layout" android:layout_width="fill_parent" android:layout_height="100.0dip">
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_gift_combo_btn_shadow" />
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_gift_combo_btn_bg" />
+        <ImageView android:layout_gravity="center" android:id="@id/live_gift_combo_btn_click_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_gift_combo_btn_click_bg" />
+        <com.blued.android.module.common.view.CircleProgressView android:layout_gravity="center" android:id="@id/live_gift_combo_progress" android:layout_width="78.0dip" android:layout_height="78.0dip" />
+        <ImageView android:layout_gravity="center" android:id="@id/live_gift_combo_btn_mid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_gift_combo_btn_mid" />
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_gift_combo_icon" />
+    </FrameLayout>
+</FrameLayout>

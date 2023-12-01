@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="67.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <FrameLayout android:id="@id/fl_plus_task" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="42.5dip" android:layout_marginBottom="2.0dip">
+            <ImageView android:id="@id/iv_plus_task_icon" android:layout_width="72.5dip" android:layout_height="17.0dip" android:src="@drawable/live_pk_plus_task_icon" />
+            <com.blued.android.framework.view.shape.ShapeLinearLayout android:orientation="vertical" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="72.5dip" android:layout_height="30.0dip" android:layout_marginTop="12.5dip" app:corner_radius="4.5dip" app:solid_color="@color/syc_dark_8f000000">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+                    <TextView android:textSize="7.5sp" android:textColor="@color/syc_dark_b" android:id="@id/tv_task_plus" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    <ImageView android:id="@id/iv_task_plus_num_check" android:layout_width="7.0dip" android:layout_height="7.0dip" android:src="@drawable/live_pk_plus_task_un_complete" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dip">
+                    <ImageView android:id="@id/iv_task_plus_beans" android:layout_width="7.0dip" android:layout_height="7.0dip" android:src="@drawable/live_pk_plus_task_beans" />
+                    <TextView android:textSize="7.5sp" android:textColor="@color/syc_dark_b" android:id="@id/tv_task_plus_value" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    <ImageView android:id="@id/iv_task_plus_value_check" android:layout_width="7.0dip" android:layout_height="7.0dip" android:src="@drawable/live_pk_plus_task_un_complete" />
+                </LinearLayout>
+                <ProgressBar android:id="@id/live_plus_task_progres" android:layout_width="55.0dip" android:layout_height="1.5dip" android:max="100" android:progress="0" android:progressDrawable="@drawable/live_pk_plus_progress" style="?android:progressBarStyleHorizontal" />
+            </com.blued.android.framework.view.shape.ShapeLinearLayout>
+        </FrameLayout>
+        <androidx.cardview.widget.CardView android:gravity="center_vertical" android:id="@id/pk_plus_left" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="22.0dip" app:cardBackgroundColor="@color/syc_dark_00000000" app:cardCornerRadius="22.0dip" app:cardElevation="0.0dip">
+            <com.blued.android.framework.view.shape.ShapeFrameLayout android:layout_width="wrap_content" android:layout_height="fill_parent" app:corner_radius="22.0dip" app:gradient_end_color="@color/syc_dark_004867B2" app:gradient_start_color="@color/syc_dark_A3BDFF">
+                <com.blued.android.framework.view.shape.ShapeFrameLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_margin="1.0dip" app:corner_radius="22.0dip" app:gradient_end_color="@color/syc_dark_4f5180F7" app:gradient_start_color="@color/syc_dark_457EFF">
+                    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <ImageView android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginLeft="1.5dip" android:src="@drawable/live_pk_win_streak_left" />
+                        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip">
+                            <TextView android:textSize="12.0dip" android:textColor="@color/syc_dark_b" android:id="@id/tv_plus_left" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <TextView android:textSize="12.0dip" android:textColor="@color/syc_dark_b" android:id="@id/tv_plus_left_copy" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        </FrameLayout>
+                        <TextView android:textSize="12.0dip" android:textColor="@color/syc_dark_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginRight="8.0dip" android:text="@string/live_pk_win_word" />
+                    </LinearLayout>
+                    <ImageView android:id="@id/pk_light_left" android:background="@drawable/live_pk_win_trans_anim" android:visibility="gone" android:layout_width="27.0dip" android:layout_height="fill_parent" />
+                </com.blued.android.framework.view.shape.ShapeFrameLayout>
+            </com.blued.android.framework.view.shape.ShapeFrameLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <androidx.cardview.widget.CardView android:gravity="center_vertical" android:id="@id/pk_plus_right" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="22.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" app:cardBackgroundColor="@color/syc_dark_00000000" app:cardCornerRadius="22.0dip" app:cardElevation="0.0dip">
+        <com.blued.android.framework.view.shape.ShapeFrameLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" app:corner_radius="22.0dip" app:gradient_end_color="@color/syc_dark_FD75FF" app:gradient_start_color="@color/syc_dark_00823C9A">
+            <com.blued.android.framework.view.shape.ShapeFrameLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_margin="1.0dip" app:corner_radius="22.0dip" app:gradient_end_color="@color/syc_dark_C933CC" app:gradient_start_color="@color/syc_dark_4fC933CC">
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip">
+                        <TextView android:textSize="12.0dip" android:textColor="@color/syc_dark_b" android:id="@id/tv_plus_right" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <TextView android:textSize="12.0dip" android:textColor="@color/syc_dark_b" android:id="@id/tv_plus_right_copy" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </FrameLayout>
+                    <TextView android:textSize="12.0dip" android:textColor="@color/syc_dark_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginRight="3.0dip" android:text="@string/live_pk_win_word" />
+                    <ImageView android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginRight="1.5dip" android:src="@drawable/live_pk_win_streak_right" />
+                </LinearLayout>
+                <ImageView android:id="@id/pk_light_right" android:background="@drawable/live_pk_win_trans_anim" android:visibility="gone" android:layout_width="27.0dip" android:layout_height="fill_parent" />
+            </com.blued.android.framework.view.shape.ShapeFrameLayout>
+        </com.blued.android.framework.view.shape.ShapeFrameLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

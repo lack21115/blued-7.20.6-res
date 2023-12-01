@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_fans_added" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.framework.view.shape.ShapeLinearLayout android:orientation="vertical" android:paddingLeft="15.0dip" android:paddingTop="20.0dip" android:paddingRight="20.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/syc_dark_1e1f23" android:id="@id/tv_fans_added_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <ImageView android:id="@id/iv_fans_added_qa" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/icon_fans_qa" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.blued.android.module.live_china.view.LiveFansProgressView android:layout_gravity="center_vertical" android:id="@id/bar_fans" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_weight="1.0" />
+                <include android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="36.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" layout="@layout/live_fans_heart_level_big" />
+            </LinearLayout>
+            <TextView android:textSize="11.0sp" android:textColor="@color/syc_dark_999999" android:id="@id/tv_bar_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/syc_dark_999999" android:id="@id/tv_bar_day_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" />
+        </LinearLayout>
+    </com.blued.android.framework.view.shape.ShapeLinearLayout>
+    <View android:background="@color/syc_dark_F7F7F7" android:layout_width="fill_parent" android:layout_height="5.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="15.0dip">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_tab_rank" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="23.0dip">
+            <TextView android:textSize="13.0sp" android:textColor="@color/syc_dark_k" android:id="@id/tv_rank" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_fans_rank" />
+            <com.blued.android.framework.view.shape.ShapeFrameLayout android:id="@id/line_rank" android:layout_width="19.0dip" android:layout_height="3.0dip" android:layout_marginTop="2.0dip" app:corner_radius="3.0dip" app:solid_color="@color/syc_dark_595ff4" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_tab_task" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="23.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="@color/syc_dark_h" android:id="@id/tv_task" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_fans_task" />
+            <com.blued.android.framework.view.shape.ShapeFrameLayout android:id="@id/line_task" android:layout_width="19.0dip" android:layout_height="3.0dip" android:layout_marginTop="2.0dip" app:corner_radius="3.0dip" app:solid_color="@color/syc_dark_595ff4" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_tab_group" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="13.0sp" android:textColor="@color/syc_dark_k" android:id="@id/tv_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_fans_group" />
+                <com.blued.android.framework.view.shape.ShapeFrameLayout android:id="@id/line_group" android:layout_width="19.0dip" android:layout_height="3.0dip" android:layout_marginTop="2.0dip" app:corner_radius="3.0dip" app:solid_color="@color/syc_dark_595ff4" />
+            </LinearLayout>
+            <ImageView android:id="@id/iv_group_qa" android:paddingLeft="4.0dip" android:paddingTop="4.0dip" android:paddingRight="14.0dip" android:paddingBottom="4.0dip" android:visibility="visible" android:layout_width="30.0dip" android:layout_height="20.0dip" android:src="@drawable/icon_fans_qa" android:paddingVertical="4.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.viewpager.widget.ViewPager android:id="@id/view_pager" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="300.0dip" />
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:theme="@style/Theme.AppCompat" android:orientation="vertical" android:id="@id/coordinator" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/appbar" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_top" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="scroll">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+                <include android:id="@id/live_banner" layout="@layout/live_new_banner_auto_scroll" />
+            </FrameLayout>
+            <include android:id="@id/living_count" android:visibility="gone" layout="@layout/fragment_live_list_new_header" />
+            <TextView android:background="@color/syc_o_line" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/fl_up_tab" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="scroll">
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_tab" android:background="@color/nafio_b" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/recycle_view_cateroty" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:overScrollMode="never" />
+            </LinearLayout>
+        </FrameLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.soft.blued.customview.CustomViewPager android:id="@id/main_live_new_viewpager" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <FrameLayout android:id="@id/fl_down_tab" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

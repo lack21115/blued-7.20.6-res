@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/syc_dark_b" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/page_title" android:paddingTop="25.0dip" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" app:bg_transparent="true" app:center_text="@string/vip_center" app:hide_btm_line="true" app:hide_right="true" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" app:left_image="@drawable/icon_title_back_white" />
+            <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/page_title_hover" android:background="@color/syc_dark_b" android:paddingTop="25.0dip" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" app:bg_transparent="true" app:center_text="@string/vip_center" app:hide_btm_line="true" app:hide_right="true" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" app:left_image="@drawable/icon_common_title_back" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.core.widget.NestedScrollView android:id="@id/scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never">
+            <LinearLayout android:orientation="vertical" android:background="@color/transparent" android:paddingBottom="90.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:id="@id/header_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                    <include layout="@layout/layout_vip_center_new_user_header" />
+                </LinearLayout>
+                <com.blued.android.framework.view.shape.ShapeLinearLayout android:orientation="vertical" android:paddingTop="20.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" app:corner_radius="12.0dip" app:solid_color="@color/syc_dark_b">
+                    <androidx.constraintlayout.widget.ConstraintLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="14.0dip" android:layout_marginEnd="12.0dip">
+                        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/syc_dark_h" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vip_new_page_privilege" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                        <TextView android:textSize="12.0sp" android:textColor="@color/syc_dark_j" android:id="@id/tv_can_use_privilege" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="5.0dip" app:layout_constraintBottom_toBottomOf="@id/tv_title" app:layout_constraintStart_toEndOf="@id/tv_title" />
+                        <LinearLayout android:gravity="center" android:id="@id/btn_privilege_detail" android:layout_width="wrap_content" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="@id/tv_title" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/tv_title">
+                            <TextView android:textSize="12.0sp" android:textColor="@color/syc_B6B6B6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vip_new_page_privilege_detail" android:layout_marginStart="5.0dip" />
+                            <ImageView android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginTop="3.0px" android:src="@drawable/icon_privilege_detail_arrow_right" />
+                        </LinearLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/tab_recycler_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" />
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/privilege_recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginStart="4.0dip" android:layout_marginEnd="4.0dip" />
+                </com.blued.android.framework.view.shape.ShapeLinearLayout>
+                <com.blued.android.framework.view.shape.ShapeLinearLayout android:orientation="vertical" android:paddingTop="10.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" app:corner_radius="12.0dip" app:solid_color="@color/syc_dark_b">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_renewal_statement" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginBottom="10.0dip">
+                        <TextView android:textSize="12.0sp" android:textColor="@color/syc_5C6E77" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vip_new_page_service_title" />
+                        <TextView android:textSize="12.0sp" android:textColor="@color/syc_B6BDC1" android:id="@id/tv_explain" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:background="@color/syc_dark_b" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/vip_service_terms" android:background="@color/syc_dark_b" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                            <TextView android:textSize="16.0sp" android:textColor="@color/syc_5C6E77" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/vip_service_clause" android:layout_weight="1.0" android:layout_marginStart="16.0dip" />
+                            <ImageView android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/icon_vip_center_terms_arrow_right" android:layout_marginEnd="12.0dip" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/vip_protocol_terms" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                            <TextView android:textSize="16.0sp" android:textColor="@color/syc_5C6E77" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/vip_service_protocol" android:layout_weight="1.0" android:layout_marginStart="16.0dip" />
+                            <ImageView android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/icon_vip_center_terms_arrow_right" android:layout_marginEnd="12.0dip" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/vip_privacy_clause" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                            <TextView android:textSize="16.0sp" android:textColor="@color/syc_5C6E77" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/privacy_clause" android:layout_weight="1.0" android:layout_marginStart="16.0dip" />
+                            <ImageView android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/icon_vip_center_terms_arrow_right" android:layout_marginEnd="12.0dip" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/vip_protocol_exp_lvl" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                            <TextView android:textSize="16.0sp" android:textColor="@color/syc_5C6E77" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/vip_exp_lvl" android:layout_weight="1.0" android:layout_marginStart="16.0dip" />
+                            <ImageView android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/icon_vip_center_terms_arrow_right" android:layout_marginEnd="12.0dip" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/vip_order_record" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                            <TextView android:textSize="16.0sp" android:textColor="@color/syc_5C6E77" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/vip_order_change" android:layout_weight="1.0" android:layout_marginStart="16.0dip" />
+                            <ImageView android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/icon_vip_center_terms_arrow_right" android:layout_marginEnd="12.0dip" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/vip_help_center" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                            <TextView android:textSize="16.0sp" android:textColor="@color/syc_5C6E77" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/vip_help_center" android:layout_weight="1.0" android:layout_marginStart="16.0dip" />
+                            <ImageView android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/icon_vip_center_terms_arrow_right" android:layout_marginEnd="12.0dip" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.blued.android.framework.view.shape.ShapeLinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+    <FrameLayout android:id="@id/buy_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+        <ImageView android:id="@id/iv_buy_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_svip_new_page_buy_btn_bg" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/syc_dark_b" android:layout_gravity="center" android:id="@id/tv_buy_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

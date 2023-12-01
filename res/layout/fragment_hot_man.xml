@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/nafio_c" style="@style/layout_fill"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewFlipper android:orientation="horizontal" android:id="@id/viewFlipper" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.blued.android.framework.view.pulltorefresh.PullToRefreshRecyclerView android:id="@id/gird_view" android:layout_marginLeft="4.5dip" android:layout_marginRight="6.0dip" app:ptrHeaderBackground="@color/pull_anim_bgcolor" style="@style/PullToRefreshListView" />
+        <com.blued.android.framework.view.pulltorefresh.PullToRefreshRecyclerView android:id="@id/list_view" android:layout_marginLeft="-1.5dip" app:ptrHeaderBackground="@color/pull_anim_bgcolor" style="@style/PullToRefreshListView" />
+    </ViewFlipper>
+</LinearLayout>

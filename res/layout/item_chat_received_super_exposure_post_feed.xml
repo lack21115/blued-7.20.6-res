@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/msg_item_root" style="@style/layout_fill_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="12.0sp" android:textColor="@color/syc_k" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/msg_super_exposure_post_feed_tips" />
+    <com.blued.android.framework.view.shape.ShapeConstraintLayout android:id="@id/msg_feed_item" android:layout_width="fill_parent" android:layout_height="96.0dip" android:layout_marginTop="16.0dip" android:layout_marginStart="45.0dip" android:layout_marginEnd="45.0dip" app:corner_radius="6.0dip" app:solid_color="@color/syc_b">
+        <ImageView android:id="@id/icon_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_msg_chat_super_exposure_feed" android:layout_marginEnd="20.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" />
+        <com.blued.android.framework.view.shape.ShapeLinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" app:corner_radius="3.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="@id/icon_bg" app:layout_constraintStart_toEndOf="@id/icon_bg" app:solid_color="@color/black_alpha20">
+            <TextView android:textSize="10.0sp" android:textColor="@color/syc_dark_b" android:id="@id/tv_feed_right_bottom_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0px" android:layout_marginBottom="1.0px" android:text="@string/find_feed" android:layout_marginStart="5.0dip" android:layout_marginEnd="5.0dip" />
+        </com.blued.android.framework.view.shape.ShapeLinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="3.0dip">
+            <FrameLayout android:layout_gravity="center_vertical" android:id="@id/fl_feed_img" android:layout_width="72.0dip" android:layout_height="72.0dip" android:layout_marginStart="9.0dip">
+                <ImageView android:id="@id/iv_feed_img" android:layout_width="72.0dip" android:layout_height="72.0dip" android:src="@drawable/user_header_square" />
+                <ImageView android:layout_gravity="center" android:id="@id/iv_video_preview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_video_preview_small" />
+            </FrameLayout>
+            <TextView android:textSize="16.0sp" android:textColor="@color/syc_h" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/tv_feed_content" android:layout_width="0.0dip" android:layout_height="wrap_content" android:lines="2" android:layout_weight="1.0" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip" />
+        </LinearLayout>
+    </com.blued.android.framework.view.shape.ShapeConstraintLayout>
+</LinearLayout>

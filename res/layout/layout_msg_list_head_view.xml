@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/header_root" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.framework.view.shape.ShapeLinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/search_layout" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="12.0dip" app:corner_radius="17.0dip" app:solid_color="@color/syc_x">
+        <ImageView android:id="@id/search_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/icon_search_common" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/syc_j" android:gravity="center_vertical" android:layout_gravity="center" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/biao_v1_lr_search" android:drawableLeft="@drawable/icon_search_common" android:drawablePadding="4.0dip" />
+    </com.blued.android.framework.view.shape.ShapeLinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/search_layout">
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.blued.android.module.common.view.TranslationAnimHintView android:id="@id/anim_hint_view" android:layout_width="fill_parent" android:layout_height="wrap_content" app:direct="TOP" />
+            <ViewStub android:id="@id/stub_push_remind" android:layout="@layout/view_stub_push_check_toast" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ViewStub android:id="@id/stub_push_remind_permanent" android:layout="@layout/view_stub_push_check_toast" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_hello" android:paddingLeft="12.0dip" android:paddingTop="17.0dip" android:paddingBottom="12.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="17.0sp" android:textColor="@color/syc_h" android:gravity="center" android:id="@id/gtv_hello_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hello_ing_title" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/syc_j" android:gravity="right" android:id="@id/tv_more" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@string/hello_using_more" android:layout_weight="1.0" />
+            <ImageView android:id="@id/iv_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:src="@drawable/icon_hori_more" />
+        </LinearLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <include android:id="@id/header_b" android:visibility="gone" layout="@layout/layout_recommend_header_b" />
+                <com.soft.blued.customview.HorizontalScrollView android:orientation="vertical" android:id="@id/scroll_view" android:tag="viewpager_dispatch" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/hello_recycler_view" android:paddingBottom="15.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <com.soft.blued.customview.VerticalTextView android:textSize="13.0sp" android:textColor="@color/syc_i" android:gravity="center_vertical" android:id="@id/tv_hello_more" android:paddingLeft="10.0dip" android:visibility="gone" android:layout_width="32.0dip" android:layout_height="86.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="-65.0dip" android:layout_marginBottom="10.0dip" android:layout_toRightOf="@id/hello_recycler_view" android:layout_alignTop="@id/recycler" android:layout_alignBottom="@id/recycler" />
+                </com.soft.blued.customview.HorizontalScrollView>
+            </LinearLayout>
+            <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/rl_hello_empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="86.0dip">
+                <ImageView android:id="@id/iv_hello_empty" android:layout_width="wrap_content" android:layout_height="73.0dip" android:src="@drawable/icon_recommend_empty" />
+            </RelativeLayout>
+        </FrameLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/layout_new_hello" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:id="@id/view_line" android:background="@color/syc_o" android:layout_width="0.0dip" android:layout_height="10.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+            <ImageView android:id="@id/iv_hello_bg" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_margin="15.0dip" android:src="@drawable/msg_hello_top_bg" android:scaleType="fitXY" app:layout_constraintBottom_toTopOf="@id/view_line" app:layout_constraintDimensionRatio="w,690:180" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <com.soft.blued.customview.RiseNumberTextView android:textSize="27.0sp" android:textColor="@color/syc_a" android:id="@id/rtv_multiple" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:text="0.0" app:layout_constraintLeft_toLeftOf="@id/iv_hello_bg" app:layout_constraintTop_toTopOf="@id/iv_hello_bg" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/syc_j" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginBottom="4.0dip" android:text="@string/hello_times_exposure" app:layout_constraintBottom_toBottomOf="@id/rtv_multiple" app:layout_constraintLeft_toRightOf="@id/rtv_multiple" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/syc_j" android:id="@id/text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/hello_period" app:layout_constraintLeft_toLeftOf="@id/rtv_multiple" app:layout_constraintTop_toBottomOf="@id/rtv_multiple" />
+            <com.soft.blued.customview.RiseNumberTextView android:textSize="27.0sp" android:textColor="@color/syc_a" android:id="@id/rtv_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginBottom="8.0dip" android:text="0" app:layout_constraintBottom_toBottomOf="@id/text_view" app:layout_constraintLeft_toRightOf="@id/text_view" app:layout_constraintTop_toTopOf="@id/text_view" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/syc_j" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="@string/hello_people_see" app:layout_constraintBottom_toBottomOf="@id/text_view" app:layout_constraintLeft_toRightOf="@id/rtv_num" app:layout_constraintTop_toTopOf="@id/text_view" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <com.blued.android.module.common.view.NoDataAndLoadFailView android:id="@id/ll_nodata_chats" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</RelativeLayout>

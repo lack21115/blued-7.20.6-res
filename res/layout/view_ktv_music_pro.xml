@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="@dimen/dp_164" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_music_pro_style" android:layout_width="wrap_content" android:layout_height="@dimen/dp_22" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.blued.android.module.yy_china.view.YYKtvPro2View android:id="@id/yy_pro" android:layout_width="@dimen/dp_36" android:layout_height="@dimen/dp_124" android:layout_marginTop="@dimen/dp_4" app:is_ktv_giftormusic="false" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/iv_music_pro_style" />
+    <TextView android:textColor="@color/white" android:gravity="left" android:id="@id/tv_add_ktv_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+99" android:alpha="0.0" app:layout_constraintLeft_toRightOf="@id/yy_pro" app:layout_constraintTop_toTopOf="@id/yy_pro" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_ktv_mess" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_60" android:alpha="0.0" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:id="@id/iv_ktv" android:layout_width="@dimen/dp_61" android:layout_height="@dimen/dp_30" />
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/tv_ktv_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_3" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_ktv_mess_pre" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_60" android:alpha="0.0" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:id="@id/iv_ktv_pre" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/tv_ktv_num_pre" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_3" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

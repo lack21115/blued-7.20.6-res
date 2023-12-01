@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.blued.android.module.live_china.view.CustomLinearLayout android:orientation="vertical" android:id="@id/keyboardLinearLayout" android:fitsSystemWindows="true" android:keepScreenOn="true" style="@style/layout_fill"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.framework.view.shape.ShapeFrameLayout android:id="@id/live_host_content_fl" android:layout_width="fill_parent" android:layout_height="fill_parent" app:gradient_angle="LEFT_RIGHT" app:gradient_end_color="@color/syc_dark_20111F" app:gradient_start_color="@color/syc_dark_0F163D">
+        <com.blued.android.framework.view.shape.ShapeTextView android:id="@id/view_dating_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:gradient_angle="TOP_BOTTOM" app:gradient_end_color="@color/syc_dark_35224C" app:gradient_start_color="@color/syc_dark_1E3450" />
+        <ImageView android:id="@id/live_switch_screen" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <FrameLayout android:id="@id/live_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <FrameLayout android:id="@id/live_window_root_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <FrameLayout android:id="@id/live_window_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                <FrameLayout android:id="@id/cameraPreview_afl" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                    <FrameLayout android:id="@id/camera_preview_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                        <TextureView android:layout_gravity="center" android:id="@id/cameraPreview_surfaceView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                                    </FrameLayout>
+                                    <com.blued.android.module.live_china.view.livegame.GameVideoView android:id="@id/VideoView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                                    <com.blued.android.module.live_china.view.LivePKBubbleLayout android:id="@id/live_pk_my_bubble" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                                    <ImageView android:id="@id/live_make_friend_photo_A" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+                                    <ImageView android:layout_gravity="center|right|top" android:id="@id/live_make_friends_close_btn" android:visibility="gone" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginTop="13.5dip" android:layout_marginRight="4.5dip" android:src="@drawable/live_make_friend_close" />
+                                    <ImageView android:id="@id/live_make_friend_num_host" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:src="@drawable/live_make_friend_host" />
+                                </FrameLayout>
+                                <FrameLayout android:id="@id/live_window_layout_B" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                    <FrameLayout android:id="@id/RemoteWindowB" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                        <FrameLayout android:id="@id/fl_RemoteGLSurfaceViewB" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                            <TextureView android:id="@id/RemoteGLSurfaceViewB" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                                        </FrameLayout>
+                                        <ImageView android:layout_gravity="right" android:id="@id/iv_pk_voice_switchB" android:padding="4.0dip" android:clickable="true" android:layout_width="34.0dip" android:layout_height="34.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/live_icon_pk_voice_open" />
+                                        <FrameLayout android:id="@id/remote_loading_layoutB" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                            <View android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                                            <com.blued.android.module.live_china.same.loadingIndicator.AVLoadingIndicatorView android:layout_gravity="center" android:id="@id/remote_loading_viewB" android:layout_width="30.0dip" android:layout_height="30.0dip" app:indicator="BallSpinFadeLoader" />
+                                        </FrameLayout>
+                                        <ImageView android:layout_gravity="center|right|top" android:id="@id/out_userB_btn" android:padding="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_rtc_close_btn_icon" />
+                                        <TextView android:textSize="11.0sp" android:textColor="@color/white" android:layout_gravity="bottom|center|left" android:id="@id/remote_nameB" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginBottom="5.0dip" android:maxWidth="80.0dip" android:singleLine="true" />
+                                        <com.blued.android.module.live_china.view.LivePKBubbleLayout android:id="@id/live_pk_your_bubble" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                                    </FrameLayout>
+                                </FrameLayout>
+                                <FrameLayout android:id="@id/live_make_friend_windows_B" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                    <FrameLayout android:id="@id/live_make_friend_free_B" android:background="#33ffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                            <ImageView android:layout_gravity="center_horizontal" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/live_make_friend_join_icon" />
+                                            <TextView android:textSize="11.0sp" android:textColor="@color/white_alpha30" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/live_make_friend_free" />
+                                        </LinearLayout>
+                                    </FrameLayout>
+                                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+                                        <ImageView android:id="@id/live_make_friend_mic_B" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:src="@drawable/live_make_friend_mic_close" />
+                                    </LinearLayout>
+                                    <TextView android:textSize="11.0sp" android:textColor="@color/syc_dark_b" android:layout_gravity="bottom|center|left" android:id="@id/live_make_friend_name_B" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginBottom="5.0dip" android:maxWidth="80.0dip" android:singleLine="true" />
+                                </FrameLayout>
+                                <FrameLayout android:id="@id/live_window_layoutC" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                    <FrameLayout android:id="@id/RemoteWindowC" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                        <FrameLayout android:id="@id/fl_RemoteGLSurfaceViewC" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                            <TextureView android:id="@id/RemoteGLSurfaceViewC" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                                        </FrameLayout>
+                                        <FrameLayout android:id="@id/remote_loading_layoutC" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                            <View android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                                            <com.blued.android.module.live_china.same.loadingIndicator.AVLoadingIndicatorView android:layout_gravity="center" android:id="@id/remote_loading_viewC" android:layout_width="30.0dip" android:layout_height="30.0dip" app:indicator="BallSpinFadeLoader" />
+                                        </FrameLayout>
+                                        <ImageView android:layout_gravity="center|right|top" android:id="@id/out_userC_btn" android:padding="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_rtc_close_btn_icon" />
+                                        <TextView android:textSize="11.0sp" android:textColor="@color/syc_dark_b" android:layout_gravity="bottom|center|left" android:id="@id/remote_nameC" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginBottom="5.0dip" android:maxWidth="80.0dip" android:singleLine="true" />
+                                    </FrameLayout>
+                                </FrameLayout>
+                                <FrameLayout android:id="@id/live_make_friend_windows_C" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                    <FrameLayout android:id="@id/live_make_friend_free_C" android:background="#33ffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                            <ImageView android:layout_gravity="center_horizontal" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/live_make_friend_join_icon" />
+                                            <TextView android:textSize="11.0sp" android:textColor="@color/white_alpha30" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/live_make_friend_free" />
+                                        </LinearLayout>
+                                    </FrameLayout>
+                                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="6.0dip">
+                                        <ImageView android:id="@id/live_make_friend_mic_C" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:src="@drawable/live_make_friend_mic_close" />
+                                    </LinearLayout>
+                                    <TextView android:textSize="11.0sp" android:textColor="@color/syc_dark_b" android:layout_gravity="bottom|center|left" android:id="@id/live_make_friend_name_C" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginBottom="5.0dip" android:maxWidth="80.0dip" android:singleLine="true" />
+                                </FrameLayout>
+                                <FrameLayout android:id="@id/live_window_layoutD" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                    <FrameLayout android:id="@id/RemoteWindowD" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                        <FrameLayout android:id="@id/fl_RemoteGLSurfaceViewD" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                            <TextureView android:id="@id/RemoteGLSurfaceViewD" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                                        </FrameLayout>
+                                        <FrameLayout android:id="@id/remote_loading_layoutD" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                            <View android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                                            <com.blued.android.module.live_china.same.loadingIndicator.AVLoadingIndicatorView android:layout_gravity="center" android:id="@id/remote_loading_viewD" android:layout_width="30.0dip" android:layout_height="30.0dip" app:indicator="BallSpinFadeLoader" />
+                                        </FrameLayout>
+                                        <ImageView android:layout_gravity="center|right|top" android:id="@id/out_userD_btn" android:padding="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_rtc_close_btn_icon" />
+                                        <TextView android:textSize="11.0sp" android:textColor="@color/syc_dark_b" android:layout_gravity="bottom|center|left" android:id="@id/remote_nameD" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginBottom="5.0dip" android:maxWidth="80.0dip" android:singleLine="true" />
+                                    </FrameLayout>
+                                    <TextView android:textSize="11.0sp" android:textColor="@color/syc_dark_b" android:layout_gravity="bottom|center|left" android:id="@id/live_make_friend_name_D" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginBottom="5.0dip" android:maxWidth="80.0dip" android:singleLine="true" />
+                                </FrameLayout>
+                                <FrameLayout android:id="@id/live_make_friend_windows_D" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                    <FrameLayout android:id="@id/live_make_friend_free_D" android:background="#26ffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                            <ImageView android:layout_gravity="center_horizontal" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/live_make_friend_join_icon" />
+                                            <TextView android:textSize="11.0sp" android:textColor="@color/white_alpha30" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/live_make_friend_free" />
+                                        </LinearLayout>
+                                    </FrameLayout>
+                                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="6.0dip">
+                                        <ImageView android:id="@id/live_make_friend_mic_D" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:src="@drawable/live_make_friend_mic_close" />
+                                    </LinearLayout>
+                                </FrameLayout>
+                                <FrameLayout android:id="@id/live_window_layoutE" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                    <FrameLayout android:id="@id/RemoteWindowE" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                        <FrameLayout android:id="@id/fl_RemoteGLSurfaceViewE" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                            <TextureView android:id="@id/RemoteGLSurfaceViewE" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                                        </FrameLayout>
+                                        <FrameLayout android:id="@id/remote_loading_layoutE" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                            <View android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                                            <com.blued.android.module.live_china.same.loadingIndicator.AVLoadingIndicatorView android:layout_gravity="center" android:id="@id/remote_loading_viewE" android:layout_width="30.0dip" android:layout_height="30.0dip" app:indicator="BallSpinFadeLoader" />
+                                        </FrameLayout>
+                                        <ImageView android:layout_gravity="center|right|top" android:id="@id/out_userE_btn" android:padding="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_rtc_close_btn_icon" />
+                                        <TextView android:textSize="11.0sp" android:textColor="@color/syc_dark_b" android:layout_gravity="bottom|center|left" android:id="@id/remote_nameE" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginBottom="5.0dip" android:maxWidth="80.0dip" android:singleLine="true" />
+                                    </FrameLayout>
+                                    <TextView android:textSize="11.0sp" android:textColor="@color/syc_dark_b" android:layout_gravity="bottom|center|left" android:id="@id/live_make_friend_name_E" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginBottom="5.0dip" android:maxWidth="80.0dip" android:singleLine="true" />
+                                </FrameLayout>
+                                <FrameLayout android:id="@id/live_window_layoutF" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                    <FrameLayout android:id="@id/RemoteWindowF" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                        <FrameLayout android:id="@id/fl_RemoteGLSurfaceViewF" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                            <TextureView android:id="@id/RemoteGLSurfaceViewF" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                                        </FrameLayout>
+                                        <FrameLayout android:id="@id/remote_loading_layoutF" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                            <View android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                                            <com.blued.android.module.live_china.same.loadingIndicator.AVLoadingIndicatorView android:layout_gravity="center" android:id="@id/remote_loading_viewF" android:layout_width="30.0dip" android:layout_height="30.0dip" app:indicator="BallSpinFadeLoader" />
+                                        </FrameLayout>
+                                        <ImageView android:layout_gravity="center|right|top" android:id="@id/out_userF_btn" android:padding="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_rtc_close_btn_icon" />
+                                        <TextView android:textSize="11.0sp" android:textColor="@color/syc_dark_b" android:layout_gravity="bottom|center|left" android:id="@id/remote_nameF" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginBottom="5.0dip" android:maxWidth="80.0dip" android:singleLine="true" />
+                                    </FrameLayout>
+                                    <TextView android:textSize="11.0sp" android:textColor="@color/syc_dark_b" android:layout_gravity="bottom|center|left" android:id="@id/live_make_friend_name_F" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginBottom="5.0dip" android:maxWidth="80.0dip" android:singleLine="true" />
+                                </FrameLayout>
+                                <FrameLayout android:id="@id/fl_multi_connection" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                                <com.blued.android.module.live_china.view.LivePKRoundDotView android:id="@id/pk_round_dot" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                                <com.blued.android.module.live_china.view.LivePKCountDownView android:layout_gravity="center_horizontal" android:id="@id/live_pk_count_down_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                                <com.blued.android.module.live_china.view.LivePKFirstPayView android:layout_gravity="bottom|center" android:id="@id/live_pk_first_pay" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" />
+                                <com.blued.android.module.live_china.view.LivePKPayMVPView android:id="@id/pk_pay_mvp" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                                <LinearLayout android:gravity="center_horizontal" android:layout_gravity="bottom|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                    <com.blued.android.module.live_china.view.LivePKRoundToastView android:id="@id/pk_round_toast_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                                </LinearLayout>
+                                <com.blued.android.module.live.base.view.animation.LiveAnimationView android:id="@id/live_pk_start_anim" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                                <com.blued.android.module.live_china.view.PKDoubleAnimView android:layout_gravity="center_horizontal" android:id="@id/pk_double_anim_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+                                <com.blued.android.module.live_china.view.LivePKResult android:id="@id/pk_result" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                                <com.blued.android.module.live_china.view.LivePKPlusView android:layout_gravity="bottom" android:id="@id/pk_plus_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" />
+                                <com.blued.android.module.live_china.view.LivePKRoundStartView android:layout_gravity="center" android:id="@id/pk_round_start" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                                <com.blued.android.module.live_china.view.LivePkRoundCountDownView android:layout_gravity="center" android:id="@id/pk_round_count" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            </FrameLayout>
+                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <com.blued.android.module.live_china.view.LivePKProgressView android:id="@id/live_pk_progress" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="22.0dip" />
+                                <FrameLayout android:id="@id/live_pk_user_layout_id" android:layout_width="fill_parent" android:layout_height="38.0dip">
+                                    <com.blued.android.module.live_china.view.LivePKUserBanner android:layout_gravity="center" android:id="@id/live_pk_banner" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="38.0dip" />
+                                    <com.blued.android.module.live_china.view.LivePKRoundTimeView android:layout_gravity="center" android:id="@id/pk_round_time" android:layout_width="90.0dip" android:layout_height="30.0dip" />
+                                </FrameLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <com.blued.android.module.live_china.view.LiveMakeLoverRootRecordView android:id="@id/live_make_lover_record_root_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    </FrameLayout>
+                </FrameLayout>
+            </RelativeLayout>
+        </ScrollView>
+        <ImageView android:background="@drawable/live_top_shape" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ImageView android:layout_gravity="bottom" android:background="@drawable/live_buttom_ground" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.blued.android.module.live_china.mine.LiveGiftScrawlPlayView android:id="@id/live_gift_scrawl_play_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <include android:layout_gravity="top" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="425.0dip" layout="@layout/live_pk_operate_layout" />
+        <include android:layout_gravity="bottom|center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="9.0dip" android:layout_marginBottom="47.0dip" layout="@layout/live_bottom_right_view" />
+        <FrameLayout android:id="@id/switch_orientation_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:layout_gravity="center|right|top" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <FrameLayout android:id="@id/RemoteWindowA" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <FrameLayout android:id="@id/fl_RemoteGLSurfaceViewA" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <TextureView android:id="@id/RemoteGLSurfaceViewA" android:visibility="invisible" android:layout_width="105.0dip" android:layout_height="187.0dip" />
+                </FrameLayout>
+                <ImageView android:layout_gravity="center|right|top" android:id="@id/out_userA_btn" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_rtc_close_btn_icon" />
+                <TextView android:textSize="11.0sp" android:textColor="@color/syc_dark_b" android:layout_gravity="bottom|center|left" android:id="@id/remote_nameA" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginBottom="5.0dip" android:maxWidth="80.0dip" android:singleLine="true" />
+            </FrameLayout>
+        </LinearLayout>
+        <com.blued.android.module.live_china.view.LiveCommentTipView android:id="@id/live_comment" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginTop="44.0dip" android:layout_marginRight="9.0dip" />
+        <com.blued.android.module.live_china.view.LiveConnectionView android:id="@id/live_connection_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <include android:id="@id/live_loading_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/live_loading_layout" />
+        <ImageView android:id="@id/all_gif_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerInside" />
+        <FrameLayout android:id="@id/live_my_header_layout" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/live_my_header_view" android:layout_width="60.0dip" android:layout_height="106.0dip" android:scaleType="centerInside" />
+        </FrameLayout>
+        <com.blued.android.module.live_china.view.LiveConnectionInviteView android:id="@id/live_connection_invite_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.blued.android.module.live_china.view.LiveMakeFriendListView android:id="@id/live_make_friend_list_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <include layout="@layout/live_record_sticker" />
+        <include android:id="@id/live_interrupt_layout" android:visibility="gone" layout="@layout/live_error_layout_tips" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/loading_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.blued.android.module.live_china.view.StartLiveView android:id="@id/start_live_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <FrameLayout android:id="@id/live_music_container_layout_id" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <FrameLayout android:id="@id/live_record_post_layout_id" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.blued.android.module.live_china.view.PopLiveActivityWebView android:id="@id/live_activity_web_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <FrameLayout android:id="@id/live_music" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:id="@id/live_music_id" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+    </com.blued.android.framework.view.shape.ShapeFrameLayout>
+</com.blued.android.module.live_china.view.CustomLinearLayout>

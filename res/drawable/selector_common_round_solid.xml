@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:textColor="@color/syc_b" android:state_selected="true" android:drawable="@drawable/user_job_text_select_bg" />
+    <item android:textColor="@color/syc_h" android:state_selected="false" android:drawable="@drawable/user_job_text_bg" />
+</selector>

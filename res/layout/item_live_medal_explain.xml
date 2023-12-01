@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.FontPath.Regular" android:textSize="14.0sp" android:textColor="@color/color_FF8F8F91" android:gravity="left" android:id="@id/tv_live_desc_num" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1." />
+    <TextView android:textAppearance="@style/TextAppearance.FontPath.Regular" android:textSize="14.0sp" android:textColor="@color/colorWhite" android:id="@id/tv_live_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="这里是介绍占位符。该活动的详细描述将于此区域详细显示。这里是介绍占位符。该活动的详细描述将于此区域详细显示。" android:lineSpacingExtra="2.0dip" />
+</LinearLayout>

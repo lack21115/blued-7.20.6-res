@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/beauty_root_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="53.0dip" android:layout_height="53.0dip" android:layout_marginLeft="12.5dip" android:layout_marginRight="12.5dip">
+            <ImageView android:layout_gravity="center" android:id="@id/beauty_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/beauty_close_icon" />
+            <ImageView android:id="@id/beauty_image_bg" android:background="@drawable/shape_live_beauty_select" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <androidx.cardview.widget.CardView android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:cardCornerRadius="30.0dip" app:cardElevation="0.0dip" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/syc_dark_b" android:layout_gravity="center" android:id="@id/beauty_progress_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <TextView android:textSize="13.0sp" android:textColor="@color/syc_dark_j" android:gravity="center" android:layout_gravity="center" android:id="@id/beauty_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+    </LinearLayout>
+</FrameLayout>

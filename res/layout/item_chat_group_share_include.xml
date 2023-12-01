@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.blued.android.framework.view.shape.ShapeLinearLayout android:orientation="horizontal" android:layout_width="230.0dip" android:layout_height="wrap_content" app:corner_radius="10.0dip" app:solid_color="@color/syc_b"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center_vertical" android:id="@id/rl_header" android:layout_width="wrap_content" android:layout_height="70.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip">
+        <ImageView android:id="@id/iv_header" android:layout_width="65.0dip" android:layout_height="65.0dip" android:src="@drawable/group_default_head" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <com.blued.android.framework.view.shape.ShapeTextView android:textSize="9.0sp" android:textColor="@color/syc_a" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tv_type" android:paddingLeft="7.0dip" android:paddingRight="7.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="15.0dip" android:text="@string/group_chat" app:bg_default_touch="false" app:corner_radius="22.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:solid_color="@color/msg_group_manager_tag_bg" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="15.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/syc_h" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:maxLines="1" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/syc_j" android:ellipsize="end" android:id="@id/tv_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:maxLines="2" />
+    </LinearLayout>
+</com.blued.android.framework.view.shape.ShapeLinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/icon_yy_menu_bg" android:layout_width="@dimen/dp_72" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/sp_12" android:textColor="@color/syc_ffffff" android:gravity="center" android:id="@id/tv_invite" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/dp_30" android:text="@string/yy_hold_people" />
+    <View android:id="@id/ll_line" android:background="@color/syc_tran10_FFFFFF" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/dp_1" android:layout_marginLeft="@dimen/dp_12" android:layout_marginRight="@dimen/dp_12" />
+    <TextView android:textSize="@dimen/sp_12" android:textColor="@color/syc_ffffff" android:gravity="center" android:id="@id/tv_status" android:layout_width="fill_parent" android:layout_height="@dimen/dp_30" android:text="@string/yy_seat_status_disable" />
+</LinearLayout>

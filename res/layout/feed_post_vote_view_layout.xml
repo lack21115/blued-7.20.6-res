@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.framework.view.shape.ShapeLinearLayout android:orientation="vertical" android:id="@id/feed_post_vote_content_lo" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" app:corner_radius="10.0dip" app:stroke_width="0.5dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <TextView android:textSize="12.0sp" android:textColor="@color/syc_k" android:id="@id/feed_post_vote_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/feed_vote_post_add_pic_tips" android:layout_weight="1.0" />
+            <ImageView android:id="@id/feed_post_vote_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/feed_post_vote_close" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <androidx.cardview.widget.CardView android:id="@id/feed_post_vote_cv_a" android:layout_width="fill_parent" android:layout_height="154.0dip" app:cardBackgroundColor="#fff3f4f4" app:cardCornerRadius="10.0dip" app:cardElevation="0.0dip">
+                    <ImageView android:id="@id/feed_post_vote_img_a" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/feed_post_vote_add" android:scaleType="center" />
+                    <ImageView android:layout_gravity="center|right|top" android:id="@id/feed_post_vote_delete_a" android:padding="3.0dip" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/feed_post_delete" />
+                </androidx.cardview.widget.CardView>
+                <TextView android:textSize="12.0sp" android:textColor="@color/syc_j" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:layout_marginBottom="12.0dip" android:text="@string/feed_vote_option_a" android:includeFontPadding="false" />
+            </LinearLayout>
+            <Space android:layout_width="12.0dip" android:layout_height="fill_parent" />
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <androidx.cardview.widget.CardView android:id="@id/feed_post_vote_cv_b" android:layout_width="fill_parent" android:layout_height="154.0dip" app:cardBackgroundColor="#fff3f4f4" app:cardCornerRadius="10.0dip" app:cardElevation="0.0dip">
+                    <ImageView android:id="@id/feed_post_vote_img_b" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/feed_post_vote_add" android:scaleType="center" />
+                    <ImageView android:layout_gravity="center|right|top" android:id="@id/feed_post_vote_delete_b" android:padding="3.0dip" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/feed_post_delete" />
+                </androidx.cardview.widget.CardView>
+                <TextView android:textSize="12.0sp" android:textColor="@color/syc_j" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:layout_marginBottom="12.0dip" android:text="@string/feed_vote_option_b" android:includeFontPadding="false" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.blued.android.framework.view.shape.ShapeLinearLayout>
+</FrameLayout>

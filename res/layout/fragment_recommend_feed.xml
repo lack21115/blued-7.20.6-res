@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_square" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@id/refresh_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/coordinator" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <com.google.android.material.appbar.AppBarLayout android:id="@id/appbar" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="scroll">
+                    <com.blued.community.view.CommAutoScrollBannerView android:layout_gravity="center_horizontal" android:id="@id/fl_ads" android:background="@color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="12.0dip" app:layout_scrollFlags="scroll" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_entry" android:layout_width="fill_parent" android:layout_height="84.0dip" app:layout_scrollFlags="scroll" />
+                    <View android:id="@id/line_entry" android:background="@color/syc_c" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="9.0dip" app:layout_scrollFlags="scroll" />
+                </LinearLayout>
+            </com.google.android.material.appbar.AppBarLayout>
+            <com.blued.android.module.common.view.NoDataAndLoadFailView android:id="@id/view_nodata" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    <com.blued.community.view.FloatFooterView android:id="@id/ll_feed_post" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_alignParentBottom="true" app:src="@drawable/icon_feed_post_hover_attention" app:text="@string/post" />
+    <LinearLayout android:layout_width="240.0dip" android:layout_height="125.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <ImageView android:layout_gravity="bottom" android:id="@id/img_guide" android:visibility="gone" android:layout_width="240.0dip" android:layout_height="wrap_content" android:scaleType="fitCenter" android:maxHeight="120.0dip" />
+    </LinearLayout>
+    <com.blued.android.framework.view.shape.ShapeLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/feed_refresh_guide_layout" android:paddingLeft="15.0dip" android:paddingTop="7.0dip" android:paddingRight="15.0dip" android:paddingBottom="7.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="67.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:corner_radius="20.0dip" app:solid_color="@color/syc_474D55">
+        <com.blued.android.module.svgaplayer.SVGAImageView android:id="@id/feed_refresh_guide_iv" android:layout_width="18.0dip" android:layout_height="18.0dip" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginLeft="1.0dip" android:text="@string/slide_down_to_see_more" android:includeFontPadding="false" />
+    </com.blued.android.framework.view.shape.ShapeLinearLayout>
+    <com.blued.community.view.FeedOperationFloatView android:id="@id/feed_operation_float_view_id" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="60.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

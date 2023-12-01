@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/x_title_bar" layout="@layout/view_yy_title_bar_layout" />
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_status_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_60" android:src="@drawable/icon_yy_apply_ing" />
+    <TextView android:textSize="@dimen/sp_18" android:textColor="@color/syc_dark_h" android:layout_gravity="center_horizontal" android:id="@id/tv_apply_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16" android:text="@string/yy_apply_state_ing" />
+    <TextView android:textSize="@dimen/sp_16" android:textColor="@color/syc_dark_h" android:layout_gravity="center_horizontal" android:id="@id/tv_apply_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_28" android:layout_marginTop="@dimen/dp_16" android:layout_marginRight="@dimen/dp_28" android:text="@string/yy_apply_ing_des" />
+    <com.blued.android.framework.view.shape.ShapeTextView android:textColor="@color/syc_dark_b" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_create" android:visibility="gone" android:layout_width="@dimen/dp_160" android:layout_height="@dimen/dp_44" android:layout_marginTop="@dimen/dp_32" android:text="@string/yy_create_room" app:corner_radius="@dimen/dp_22" app:gradient_angle="TL_BR" app:gradient_end_color="@color/syc_3883FD" app:gradient_start_color="@color/syc_00E0AB" />
+</LinearLayout>

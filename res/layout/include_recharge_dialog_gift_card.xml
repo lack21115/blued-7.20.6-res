@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_gift_card" android:layout_width="97.0dip" android:layout_height="139.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/view_background" android:background="@drawable/live_recharge_dialog_gift_card" android:layout_width="97.0dip" android:layout_height="139.0dip" />
+    <ImageView android:id="@id/iv_gift" android:layout_width="68.5dip" android:layout_height="68.5dip" android:layout_marginTop="18.0dip" android:layout_centerHorizontal="true" />
+    <FrameLayout android:layout_width="79.0dip" android:layout_height="24.699982dip" android:layout_marginBottom="8.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/syc_dark_D43B05" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_gift_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_list" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="10.0dip" android:layout_weight="1.0" />
+        <com.blued.android.framework.view.shape.ShapeLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_anchor_rank_layout" android:paddingLeft="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="72.0dip" app:solid_color="@color/syc_dark_b" app:stroke_color="@color/syc_dark_3f000000" app:stroke_width="1.0px" app:top_left_radius="16.0dip" app:top_right_radius="16.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="@color/syc_dark_k" android:id="@id/tv_rank_index" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="18.0dip" />
+            <ImageView android:id="@id/iv_rank_index" android:layout_width="27.0dip" android:layout_height="27.0dip" android:layout_marginRight="12.0dip" android:src="@drawable/live_rank_up_one" />
+            <ImageView android:id="@id/avatar" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/user_bg_round" />
+            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/syc_dark_0a0a0a" android:id="@id/tv_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="name" android:layout_weight="1.0" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/syc_dark_f5a330" android:id="@id/tv_rank" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="16.0dip" />
+        </com.blued.android.framework.view.shape.ShapeLinearLayout>
+    </LinearLayout>
+    <include layout="@layout/pop_window_pk_list_empty" />
+</FrameLayout>

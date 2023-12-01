@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/msg_item_root" android:paddingTop="@dimen/chat_two_item_root_top" android:paddingBottom="@dimen/chat_two_item_root_bottom" style="@style/layout_fill_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/msg_safe_common_system" />
+    <include layout="@layout/msg_date_layout" />
+    <RelativeLayout android:background="@drawable/shape_date_today_chat_item_bg" android:layout_width="fill_parent" android:layout_height="90.0dip" android:layout_marginLeft="18.0dip" android:layout_marginRight="18.0dip" android:paddingStart="20.0dip" android:paddingEnd="20.0dip">
+        <FrameLayout android:id="@id/fl_header" android:background="@drawable/shape_date_today_search_header" android:layout_width="62.0dip" android:layout_height="55.0dip" android:layout_centerVertical="true">
+            <ImageView android:id="@id/iv_header" android:layout_width="55.0dip" android:layout_height="55.0dip" />
+            <ImageView android:layout_gravity="end|bottom|center" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/icon_date_today_received_interest" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="140.0dip" android:layout_height="wrap_content" android:layout_toRightOf="@id/fl_header" android:layout_centerVertical="true" android:layout_marginStart="10.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/syc_h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/date_today_he_like_you" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/syc_j" android:id="@id/tv_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/date_today_like_him_back" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_like" android:background="@drawable/shape_date_today_chat_item_like" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+            <ImageView android:id="@id/iv_date_today_like" android:layout_width="15.0dip" android:layout_height="14.0dip" android:src="@drawable/icon_date_today_heart_gray_small" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/syc_h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/date_today_like" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

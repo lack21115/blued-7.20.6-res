@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/rl_root" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:clipChildren="false" android:layout_width="375.0dip" android:layout_height="197.5dip">
+        <RelativeLayout android:id="@id/rl_root_our" android:background="@drawable/live_pk_dared_jion_root_background_our" android:layout_width="222.0dip" android:layout_height="74.0dip" android:layout_marginTop="52.0dip">
+            <ImageView android:id="@id/iv_avatar_our" android:layout_width="51.0dip" android:layout_height="51.0dip" android:layout_marginLeft="26.0dip" android:src="@color/syc_dark_00D5FF" android:layout_centerVertical="true" />
+            <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="@color/syc_dark_b" android:ellipsize="end" android:id="@id/tv_nickname_our" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:maxWidth="70.0dip" android:maxLines="1" android:layout_toRightOf="@id/iv_avatar_our" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/rl_root_opposite" android:background="@drawable/live_pk_dared_jion_root_background_opposite" android:layout_width="222.5dip" android:layout_height="74.0dip" android:layout_marginLeft="152.5dip" android:layout_marginTop="79.0dip">
+            <ImageView android:id="@id/iv_avatar_opposite" android:layout_width="51.0dip" android:layout_height="51.0dip" android:layout_marginRight="26.0dip" android:src="@color/syc_dark_FF99E1" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="@color/syc_dark_b" android:ellipsize="end" android:gravity="right" android:id="@id/tv_nickname_opposite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="9.0dip" android:maxWidth="70.0dip" android:maxLines="1" android:layout_toLeftOf="@id/iv_avatar_opposite" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:id="@id/view_flare_light_our" android:background="@drawable/live_pk_dared_jion_flare_light_our" android:layout_width="128.0dip" android:layout_height="129.0dip" android:layout_marginLeft="149.5dip" />
+        <View android:id="@id/view_flare_light_opposite" android:background="@drawable/live_pk_dared_jion_flare_light_opposite" android:layout_width="130.5dip" android:layout_height="129.5dip" android:layout_marginLeft="101.5dip" android:layout_marginTop="68.0dip" />
+        <ImageView android:id="@id/iv_s" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="167.5dip" android:layout_marginTop="82.5dip" android:src="@drawable/live_pk_dared_jion_s" />
+        <ImageView android:id="@id/iv_v" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="151.5dip" android:layout_marginTop="68.0dip" android:src="@drawable/live_pk_dared_jion_v" />
+        <ImageView android:id="@id/iv_star_1" android:layout_width="25.319977dip" android:layout_height="25.319977dip" android:layout_marginLeft="101.59dip" android:layout_marginTop="125.32999dip" android:src="@drawable/live_pk_dared_jion_star_small" />
+        <ImageView android:id="@id/iv_star_2" android:layout_width="34.5dip" android:layout_height="34.5dip" android:layout_marginLeft="120.5dip" android:layout_marginTop="125.23999dip" android:src="@drawable/live_pk_dared_jion_star_big" />
+        <ImageView android:id="@id/iv_star_3" android:layout_width="34.5dip" android:layout_height="34.5dip" android:layout_marginLeft="217.0dip" android:layout_marginTop="42.73999dip" android:src="@drawable/live_pk_dared_jion_star_big" />
+        <ImageView android:id="@id/iv_star_4" android:layout_width="25.319977dip" android:layout_height="25.319977dip" android:layout_marginLeft="245.09dip" android:layout_marginTop="30.329987dip" android:src="@drawable/live_pk_dared_jion_star_small" />
+    </FrameLayout>
+</FrameLayout>

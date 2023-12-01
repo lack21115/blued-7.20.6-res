@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_time_root" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/iv_road" android:layout_width="24.0dip" android:layout_height="8.0dip" android:src="@drawable/live_rank_hour_road" />
+        <ImageView android:id="@id/iv_time_hour" android:layout_width="15.0dip" android:layout_height="24.0dip" android:layout_below="@id/iv_road" />
+        <ImageView android:id="@id/iv_time_minute" android:layout_width="15.0dip" android:layout_height="24.0dip" android:layout_toRightOf="@id/iv_time_hour" android:layout_below="@id/iv_road" />
+        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/syc_dark_0a0a0a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginBottom="1.0dip" android:text="@string/live_rank_hour_dot" android:includeFontPadding="false" android:layout_toRightOf="@id/iv_time_minute" android:layout_alignBottom="@id/iv_time_minute" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_left_root" android:layout_width="152.0dip" android:layout_height="fill_parent" android:layout_marginRight="4.0dip" android:layout_toLeftOf="@id/rl_time_root">
+        <ImageView android:layout_width="150.0dip" android:layout_height="48.0dip" android:layout_marginRight="2.0dip" android:src="@drawable/live_rank_hour_previous_item_top" android:layout_centerVertical="true" />
+        <RelativeLayout android:id="@id/rl_left_avatar" android:layout_width="52.0dip" android:layout_height="52.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:id="@id/iv_left_avatar" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/live_rank_hour_default_avatar" android:layout_centerInParent="true" />
+            <com.blued.android.framework.view.shape.ShapeTextView android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_centerInParent="true" app:corner_radius="21.0dip" app:stroke_color="@color/syc_dark_b" app:stroke_width="1.0dip" />
+            <ImageView android:id="@id/iv_left_avatar_frame" android:layout_width="52.0dip" android:layout_height="52.0dip" />
+        </RelativeLayout>
+        <TextView android:textSize="12.0sp" android:textColor="@color/syc_dark_b" android:ellipsize="end" android:id="@id/tv_left_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:maxWidth="72.0dip" android:maxLines="1" android:singleLine="true" android:layout_toLeftOf="@id/rl_left_avatar" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/iv_left_bounce" android:layout_width="15.0dip" android:layout_height="16.0dip" android:layout_marginRight="4.0dip" android:layout_toLeftOf="@id/tv_left_name" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_right_root" android:layout_width="152.0dip" android:layout_height="fill_parent" android:layout_marginLeft="4.0dip" android:layout_toRightOf="@id/rl_time_root">
+        <ImageView android:layout_width="150.0dip" android:layout_height="48.0dip" android:layout_marginLeft="2.0dip" android:src="@drawable/live_rank_hour_previous_item_previous" android:layout_centerVertical="true" />
+        <RelativeLayout android:id="@id/rl_right_avatar" android:layout_width="52.0dip" android:layout_height="52.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <ImageView android:id="@id/iv_right_avatar" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/live_rank_hour_default_avatar" android:layout_centerInParent="true" />
+            <com.blued.android.framework.view.shape.ShapeTextView android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_centerInParent="true" app:corner_radius="21.0dip" app:stroke_color="@color/syc_dark_b" app:stroke_width="1.0dip" />
+            <ImageView android:id="@id/iv_right_avatar_frame" android:layout_width="52.0dip" android:layout_height="52.0dip" />
+        </RelativeLayout>
+        <TextView android:textSize="12.0sp" android:textColor="@color/syc_dark_h" android:ellipsize="end" android:id="@id/tv_right_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:maxWidth="72.0dip" android:maxLines="1" android:singleLine="true" android:layout_toRightOf="@id/rl_right_avatar" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/iv_right_bounce" android:layout_width="15.0dip" android:layout_height="16.0dip" android:layout_marginLeft="4.0dip" android:layout_toRightOf="@id/tv_right_name" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

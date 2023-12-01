@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root" android:layout_width="fill_parent" android:layout_height="225.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.framework.view.shape.ShapeFrameLayout android:layout_width="fill_parent" android:layout_height="205.0dip" android:layout_marginLeft="20.0dip" app:bottom_left_radius="12.0dip" app:bottom_right_radius="12.0dip" app:solid_color="@color/syc_dark_4206a7" app:stroke_color="@color/syc_dark_5cf8ff" app:stroke_width="1.0dip">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_list_advance" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="31.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="31.0dip" android:layout_marginBottom="54.0dip" />
+        <View android:layout_gravity="bottom|center" android:background="@drawable/live_battle_advance_down_bg" android:layout_width="fill_parent" android:layout_height="101.0dip" />
+    </com.blued.android.framework.view.shape.ShapeFrameLayout>
+    <TextView android:textSize="20.0sp" android:textColor="@color/syc_dark_000000" android:gravity="center" android:layout_gravity="bottom|center" android:background="@drawable/live_battle_advance_done" android:layout_width="151.0dip" android:layout_height="39.0dip" android:layout_marginLeft="10.0dip" android:text="9999" />
+    <ImageView android:layout_gravity="bottom|center" android:layout_width="82.0dip" android:layout_height="28.0dip" android:layout_marginLeft="10.0dip" android:layout_marginBottom="30.0dip" android:src="@drawable/live_battle_advance_red_buy" />
+</FrameLayout>

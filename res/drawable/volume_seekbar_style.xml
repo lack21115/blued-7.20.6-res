@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background" android:height="5.0dip">
+        <selector>
+            <item android:state_enabled="true">
+                <shape>
+                    <corners android:radius="2.5dip" />
+                    <solid android:color="@color/nafio_b" />
+                </shape>
+            </item>
+            <item android:state_enabled="false">
+                <shape>
+                    <corners android:radius="2.5dip" />
+                    <solid android:color="@color/stv_seekbar_second_progress_bg" />
+                </shape>
+            </item>
+        </selector>
+    </item>
+    <item android:id="@android:id/secondaryProgress" android:height="5.0dip">
+        <scale android:scaleWidth="100%">
+            <shape>
+                <corners android:radius="2.5dip" />
+                <solid android:color="@color/transparent" />
+            </shape>
+        </scale>
+    </item>
+    <item android:id="@android:id/progress" android:height="5.0dip">
+        <scale android:scaleWidth="100%">
+            <shape>
+                <corners android:radius="2.5dip" />
+                <solid android:color="@color/stv_yellow_color" />
+            </shape>
+        </scale>
+    </item>
+</layer-list>

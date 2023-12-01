@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/item_live_defined_rank_content_layout" android:layout_width="fill_parent" android:layout_height="36.0dip">
+        <FrameLayout android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginLeft="3.0dip">
+            <ImageView android:id="@id/item_live_defined_rank_index_iv" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <TextView android:textAppearance="@style/TextAppearance.FontPath.Medium" android:textSize="12.0sp" android:textColor="#4cffffff" android:gravity="center" android:id="@id/item_live_defined_rank_index_tv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:includeFontPadding="false" />
+        </FrameLayout>
+        <androidx.cardview.widget.CardView android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="7.0dip" android:layout_marginRight="13.0dip" app:cardBackgroundColor="@color/white" app:cardCornerRadius="6.0dip" app:cardElevation="0.0dip">
+            <ImageView android:layout_gravity="center" android:id="@id/item_live_defined_rank_avatar" android:layout_width="23.5dip" android:layout_height="23.5dip" />
+        </androidx.cardview.widget.CardView>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="7.0dip">
+            <TextView android:textAppearance="@style/TextAppearance.FontPath.Medium" android:textSize="12.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/item_live_defined_rank_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" />
+            <TextView android:textAppearance="@style/TextAppearance.FontPath.Medium" android:textSize="12.0sp" android:textColor="@color/syc_ffd452" android:ellipsize="end" android:id="@id/item_live_defined_rank_count" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:maxLines="1" android:includeFontPadding="false" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/item_live_defined_rank_bottom" android:layout_width="fill_parent" android:layout_height="62.0dip" />
+</LinearLayout>

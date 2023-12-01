@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.blued.android.module.live_china.view.LiveAutoScrollViewPager android:id="@id/view_page_wish" android:layout_width="87.5dip" android:layout_height="37.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.blued.android.framework.view.shape.ShapeLinearLayout android:orientation="horizontal" android:id="@id/ll_income" android:paddingLeft="@dimen/dp_6" android:paddingRight="@dimen/dp_6" android:layout_width="wrap_content" android:layout_height="@dimen/dp_24" app:corner_radius="@dimen/dp_12" app:solid_color="@color/syc_66000000"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_yy_beans_grey" />
+    <TextView android:textSize="@dimen/sp_10" android:textColor="@color/syc_989898" android:layout_gravity="center_vertical" android:id="@id/tv_gold_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_4" android:text="0" android:includeFontPadding="false" />
+</com.blued.android.framework.view.shape.ShapeLinearLayout>

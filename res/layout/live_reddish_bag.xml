@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/shape_reddish_bag_bg" android:layout_width="wrap_content" android:layout_height="43.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/reddish_bag_header" android:layout_width="33.0dip" android:layout_height="33.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip">
+        <TextView android:textSize="13.0sp" android:textColor="@color/white" android:id="@id/reddish_bag_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_reddish_bag" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_quick_to_grab" />
+    </LinearLayout>
+</LinearLayout>

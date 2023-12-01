@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@drawable/shape_raduis_topleft_topright_15_ffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dp_30"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center_horizontal" android:id="@id/rv_bonus_list" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_72" android:layout_marginBottom="@dimen/dp_80" />
+    <com.blued.android.framework.view.shape.ShapeTextView android:textSize="@dimen/sp_14" android:textColor="@color/syc_dark_b" android:gravity="center" android:layout_gravity="center" android:id="@id/no_data_view" android:paddingLeft="@dimen/dp_15" android:paddingRight="@dimen/dp_15" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/dp_30" android:text="@string/reload" app:corner_radius="@dimen/dp_17" app:gradient_end_color="@color/syc_3883FD" app:gradient_start_color="@color/syc_00E0AB" />
+</FrameLayout>

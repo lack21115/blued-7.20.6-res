@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.blued.android.framework.view.pulltorefresh.RenrenPullToRefreshListView android:id="@id/rptrlv_live_list" android:visibility="visible" android:layout_above="@id/ll_group_members_remove" app:ptrHeaderBackground="@color/pull_anim_bgcolor" style="@style/PullToRefreshListView" xmlns:app="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout android:id="@id/ll_group_members_remove" android:padding="15.0dip" android:visibility="gone" android:layout_alignParentBottom="true" android:layout_centerInParent="true" style="@style/layout_fill_wrap">
+        <TextView android:textSize="18.0sp" android:textColor="@color/black" android:text="@string/group_members_remove" style="@style/layout_wrap_content" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/black" android:id="@id/tv_members_remove_count" android:layout_marginLeft="5.0dip" style="@style/layout_wrap_content" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/common_v4_blue_frame_font" android:gravity="right" android:id="@id/tv_members_remove_confirm" android:text="@string/cancel" style="@style/layout_groupinfo" />
+    </LinearLayout>
+    <include android:id="@id/ll_nodata_rank" layout="@layout/nodata_show_live_rank_guest" />
+    <include android:id="@id/ll_nodata_error" android:visibility="gone" layout="@layout/nodata_live_rank_list_error" />
+    <ProgressBar android:id="@id/loading_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/tv_live_camera_remind" android:background="@drawable/live_live_camera_first_icon" android:visibility="gone" android:layout_width="127.0dip" android:layout_height="29.0dip" android:layout_marginTop="-10.0dip" android:layout_marginRight="13.0dip" android:text="@string/liveVideo_videoList_title_liveGuideNotice" android:layout_alignParentRight="true" />
+</RelativeLayout>

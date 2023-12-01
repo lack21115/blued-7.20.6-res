@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/dp_50"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_back" android:padding="13.0dip" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="12.0dip" android:src="@drawable/live_goods_wall_back" android:layout_centerVertical="true" />
+    <TextView android:textSize="16.0sp" android:textColor="#ffffe1a6" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="定制展馆" android:includeFontPadding="false" android:layout_centerInParent="true" />
+    <View android:background="@color/white" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" android:alpha="0.1" />
+</RelativeLayout>

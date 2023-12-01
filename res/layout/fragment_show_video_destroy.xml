@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/sara_j" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/root_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="105.0dip" android:layout_height="110.0dip" android:layout_marginTop="170.0dip" android:src="@drawable/show_photo_destroy_icon" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/nafio_j" android:id="@id/second_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="19.0dip" android:text="@string/long_hold_the_screen" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/nafio_k" android:id="@id/first_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/can_only_check_once" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/video_layout" android:background="#ff282828" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:id="@id/video_progress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="100" style="?android:progressBarStyleHorizontal" />
+        <include android:id="@id/surface_view" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/surface_view" />
+    </LinearLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@id/loading_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

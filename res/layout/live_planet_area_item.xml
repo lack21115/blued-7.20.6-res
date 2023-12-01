@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clipChildren="false" android:layout_width="108.0dip" android:layout_height="wrap_content" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignStart="@id/fl_count_root" android:layout_alignEnd="@id/fl_count_root">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/ll_name_root" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/iv_name" android:layout_width="wrap_content" android:layout_height="21.0dip" android:adjustViewBounds="true" />
+            <FrameLayout android:id="@id/fl_power" android:background="@drawable/live_planet_item_power" android:layout_width="37.0dip" android:layout_height="16.0dip" android:layout_marginLeft="1.8999939dip" android:layout_marginTop="3.0dip">
+                <TextView android:textSize="11.0dip" android:textStyle="bold" android:textColor="@color/black" android:layout_gravity="center" android:id="@id/tv_power" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <com.blued.android.module.live.base.view.clickanimview.BamFrameLayout android:id="@id/fl_count_root" android:layout_width="100.0dip" android:layout_height="39.0dip" android:layout_marginTop="19.0dip" android:layout_centerHorizontal="true" android:animateLayoutChanges="true">
+        <ImageView android:id="@id/iv_border_default" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/live_planet_item_default" />
+        <ImageView android:id="@id/iv_border_gold" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/live_planet_item_select" />
+        <ImageView android:id="@id/iv_border_blue" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/live_planet_item_dispatch" />
+        <ImageView android:layout_gravity="center|right" android:id="@id/iv_close" android:layout_width="15.0dip" android:layout_height="25.0dip" android:layout_marginRight="7.5dip" android:src="@drawable/live_planet_close_blue" />
+        <TextView android:textSize="14.0dip" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/tv_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="1.0dip" android:text="0" android:includeFontPadding="false" android:alpha="0.5" />
+    </com.blued.android.module.live.base.view.clickanimview.BamFrameLayout>
+    <ImageView android:id="@id/iv_lottery_border" android:visibility="gone" android:layout_width="108.0dip" android:layout_height="45.0dip" android:layout_marginTop="16.0dip" android:src="@drawable/live_planet_item_lottery_ing" />
+    <ImageView android:id="@id/iv_lottery_border_jack" android:visibility="gone" android:layout_width="108.0dip" android:layout_height="45.0dip" android:layout_marginTop="16.0dip" />
+    <View android:id="@id/iv_dispatch_ing" android:background="@drawable/live_planet_item_dispatch_ing_text" android:layout_width="65.0dip" android:layout_height="16.0dip" android:layout_marginLeft="9.0dip" android:layout_marginTop="57.5dip" android:alpha="0.0" android:layout_alignStart="@id/fl_count_root" />
+</RelativeLayout>

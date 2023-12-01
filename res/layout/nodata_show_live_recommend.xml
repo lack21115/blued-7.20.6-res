@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="100.0dip" android:layout_height="100.0dip" android:src="@drawable/icon_no_live_posted" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/nafio_k" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:text="@string/live_recommend_nodata" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/nafio_k" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_recommend_nodata1" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_live_start_btn" android:background="@drawable/live_list_nodata_btn" android:layout_width="100.0dip" android:layout_height="32.0dip" android:layout_marginTop="18.0dip" android:text="@string/live_recommend_hot" />
+</LinearLayout>

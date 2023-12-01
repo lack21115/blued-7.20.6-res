@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/msg_item_root" android:paddingTop="@dimen/chat_two_item_root_top" android:paddingBottom="@dimen/chat_two_item_root_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/layout_fill_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/tv_date" android:text="@string/app_name_test_short" style="@style/msg_time_style" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/chat_two_item_left_right_root">
+        <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:id="@id/chat_content_root" android:layout_toLeftOf="@id/fm_header" style="@style/layout_wrap_content">
+            <ImageView android:id="@id/chat_sending_img" android:contentDescription="@string/app_name" style="@style/chat_send_state_sending" />
+            <ImageView android:id="@id/chat_state_error" android:visibility="gone" android:contentDescription="@string/app_name" style="@style/chat_send_state_error" />
+            <RelativeLayout android:id="@id/chat_content_in" android:paddingRight="0.0dip" style="@style/chat_chat_content_in_style">
+                <include android:id="@id/chat_include_invite_share" layout="@layout/layout_share_feed" />
+            </RelativeLayout>
+        </LinearLayout>
+        <FrameLayout android:id="@id/fm_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+            <include layout="@layout/msg_include_avatar_right" />
+        </FrameLayout>
+    </RelativeLayout>
+    <TextView android:id="@id/tv_state" android:visibility="gone" style="@style/chat_send_state_style" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_msg_bottom_tips_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

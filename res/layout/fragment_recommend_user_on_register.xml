@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" style="@style/layout_fill"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/fragment_recommend_user_on_register_header" />
+        <com.blued.android.framework.view.pulltorefresh.RenrenPullToRefreshListView android:id="@id/list_view" android:layout_height="0.0dip" android:layout_weight="1.0" style="@style/PullToRefreshListView" />
+    </LinearLayout>
+    <RelativeLayout android:layout_gravity="bottom" android:id="@id/bottom_lay" android:background="@drawable/img_white_gradual_change" android:layout_width="fill_parent" android:layout_height="160.0dip">
+        <com.blued.android.framework.view.shape.ShapeTextView android:textSize="16.0sp" android:textColor="@color/syc_b" android:gravity="center" android:id="@id/go_home" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:layout_marginBottom="30.0dip" android:text="@string/card_tip_three" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:corner_radius="18.0dip" app:solid_color="@color/syc_a" app:solid_touch_color="@color/syc_m" app:solid_unable_color="@color/syc_a_20" />
+    </RelativeLayout>
+    <com.soft.blued.customview.swipecard.SwipeFlingAdapterView android:id="@id/swipe_view" android:background="#7f000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:max_visible="7" app:min_adapter_stack="3" app:x_offset_step="230.0dip" />
+</FrameLayout>

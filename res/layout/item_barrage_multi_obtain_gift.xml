@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="27.5dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_main" android:background="@drawable/shape_common_round_fill_red_subtrans" android:layout_width="wrap_content" android:layout_height="25.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="小新新" />
+        <TextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="@string/live_box_get" />
+        <ImageView android:id="@id/img_gift" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginLeft="6.0dip" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="x" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/tv_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="10.0dip" android:text="999" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="44.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <TextView android:textSize="15.0sp" android:textColor="@color/syc_dark_j" android:layout_gravity="center" android:id="@id/live_gift_tab_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <View android:layout_gravity="bottom|center" android:id="@id/live_gift_tab_item_indicator" android:background="@drawable/shape_live_gift_tab_item_divider_bg" android:visibility="visible" android:layout_width="18.0dip" android:layout_height="3.0dip" />
+        <ImageView android:layout_gravity="right" android:id="@id/live_gift_tab_item_dot" android:visibility="gone" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginTop="9.5dip" android:src="@drawable/icon_red_dot" android:layout_marginStart="30.0dip" />
+    </FrameLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/live_gift_tab_item_qa" android:visibility="gone" android:layout_width="12.0dip" android:layout_height="12.0dip" android:src="@drawable/question" android:layout_marginStart="6.0dip" />
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/tv_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/ll_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="12.0sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/live_beauty_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <SeekBar android:layout_gravity="center" android:id="@id/filter_seekbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:maxHeight="4.0dip" android:progressDrawable="@drawable/filter_seekbar" android:minHeight="4.0dip" android:thumb="@drawable/shape_live_beauty_progress" android:thumbOffset="3.0dip" />
+            </LinearLayout>
+            <ImageView android:layout_gravity="bottom" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/live_beauty_progress_icon" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/shape_live_make_friend_bg" android:layout_width="fill_parent" android:layout_height="180.0dip">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="28.0dip" android:layout_margin="25.0dip">
+                <com.blued.android.module.live_china.view.LiveBeautyToolBarView android:id="@id/live_beauty_tool_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/live_beauty_reset_btn" android:paddingLeft="15.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_beauty_reset_icon" />
+                    <TextView android:textSize="11.0sp" android:textColor="#ff79818d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_beauty_reset" />
+                </LinearLayout>
+            </LinearLayout>
+            <com.blued.android.module.common.view.CustomViewPager android:id="@id/live_beauty_viewpager" android:background="@color/syc_dark_b" android:layout_marginLeft="12.5dip" style="@style/layout_fill" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

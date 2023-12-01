@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:paddingTop="@dimen/dp_19" android:paddingBottom="@dimen/dp_30" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="12.0sp" android:textColor="@color/syc_999999" android:gravity="start" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_24" android:layout_marginRight="@dimen/dp_24" android:text="注：榜单整体按照亲密值排名，亲密值相同的，优先显示有效期长的，有效期相同的，优先显示最近配对成功的，只显示前50名。" android:layout_marginHorizontal="@dimen/dp_24" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

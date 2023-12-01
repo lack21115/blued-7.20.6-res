@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/fl_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center" android:layout_width="375.0dip" android:layout_height="632.0dip">
+        <ImageView android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/live_first_charge_bg" />
+        <ImageView android:layout_gravity="right" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginTop="80.0dip" android:layout_marginRight="21.0dip" android:src="@drawable/live_charge_close" />
+        <ImageView android:layout_gravity="right" android:id="@id/iv_qa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="203.0dip" android:layout_marginRight="39.0dip" android:src="@drawable/live_first_charge_qa" />
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="262.0dip">
+            <TextView android:textSize="11.0sp" android:textColor="@color/syc_dark_b" android:layout_gravity="center_horizontal" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_first_charge_dialog_title" />
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_first_charge" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="right" android:orientation="horizontal" android:id="@id/ll_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:textSize="12.0sp" android:textColor="@color/syc_dark_C2FCEB66" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_first_charge_dialog_more" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_first_charge_arrow_right" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip">
+                <FrameLayout android:layout_width="130.0dip" android:layout_height="46.0dip">
+                    <TextView android:textSize="10.0sp" android:textColor="@color/syc_dark_FBF56D" android:id="@id/tv_l_dou" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginTop="2.0dip" android:text="123" android:rotation="-45.0" />
+                    <TextView android:textSize="20.0sp" android:textColor="@color/syc_dark_A44011" android:layout_gravity="center" android:id="@id/tv_l_beans" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="123" />
+                </FrameLayout>
+                <FrameLayout android:layout_width="130.0dip" android:layout_height="46.0dip" android:layout_marginLeft="18.0dip">
+                    <TextView android:textSize="10.0sp" android:textColor="@color/syc_dark_FBF56D" android:id="@id/tv_r_dou" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginTop="2.0dip" android:text="123" android:rotation="-45.0" />
+                    <TextView android:textSize="20.0sp" android:textColor="@color/syc_dark_A44011" android:layout_gravity="center" android:id="@id/tv_r_beans" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="123" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <RelativeLayout android:id="@id/rl_gift_anim_root" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

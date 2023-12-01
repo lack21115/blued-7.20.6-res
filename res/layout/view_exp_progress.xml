@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="4.0dip" android:layout_marginTop="8.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <View android:id="@id/exp_left_line" android:background="@color/transparent" android:layout_width="52.0dip" android:layout_height="fill_parent" />
+            <View android:id="@id/exp_middle_line" android:background="#ff387ea8" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <View android:id="@id/exp_right_line" android:background="#ffd9dadb" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <View android:id="@id/exp_right_trans_line" android:background="@color/transparent" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/left_level_layout" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="100.0dip">
+        <androidx.cardview.widget.CardView android:id="@id/left_level_circle" android:layout_width="20.0dip" android:layout_height="20.0dip" app:cardBackgroundColor="#ff387ea8" app:cardCornerRadius="10.0dip" app:cardElevation="0.0dip" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/SVIP_387EA8" android:id="@id/left_level_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="LV.1" android:includeFontPadding="false" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/right_level_layout" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="300.0dip">
+        <androidx.cardview.widget.CardView android:id="@id/right_level_circle" android:layout_width="20.0dip" android:layout_height="20.0dip" app:cardBackgroundColor="#ff387ea8" app:cardCornerRadius="10.0dip" app:cardElevation="0.0dip" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/SVIP_387EA8" android:id="@id/right_level_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="LV.2" android:includeFontPadding="false" />
+    </LinearLayout>
+</FrameLayout>

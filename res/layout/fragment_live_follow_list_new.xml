@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/msg_toast" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/view_stub_push_check_toast" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/msg_toast">
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@id/refresh_follow_list" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:srlAccentColor="@android:color/transparent">
+            <androidx.coordinatorlayout.widget.CoordinatorLayout android:orientation="vertical" android:id="@id/coordinator" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.google.android.material.appbar.AppBarLayout android:id="@id/appbar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip">
+                    <include android:id="@id/live_no_follow_banner" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="scroll" layout="@layout/live_follow_no_data_banner" />
+                </com.google.android.material.appbar.AppBarLayout>
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_follow_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    <com.blued.android.module.common.view.NoDataAndLoadFailView android:id="@id/ll_no_internet" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                </FrameLayout>
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@id/refresh_new_user_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/live_default_empty" android:background="@color/syc_b" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_no_live_posted" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/syc_k" android:id="@id/tv_live_detail_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/liveVideo_videoList_label_noLiveNotice" android:includeFontPadding="false" />
+                    <TextView android:textSize="15.0sp" android:textColor="#ffc0c0c0" android:id="@id/tv_live_start_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:text="@string/liveVideo_videoList_label_startToLiveNotice" />
+                    <TextView android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_live_start_btn" android:background="@drawable/live_list_nodata_btn" android:layout_width="113.0dip" android:layout_height="40.0dip" android:layout_marginTop="18.0dip" android:text="@string/liveVideo_videoList_label_startToLiveButton" />
+                </LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:overScrollMode="never" style="@style/PullToRefreshListView" />
+            </FrameLayout>
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    </RelativeLayout>
+</RelativeLayout>

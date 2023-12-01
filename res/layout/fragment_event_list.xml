@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/syc_c" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" app:hide_btm_line="true" app:layout_constraintTop_toTopOf="parent" />
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@id/refresh_layout" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/title">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycle_view" android:background="@color/syc_c" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    <com.blued.android.module.common.view.NoDataAndLoadFailView android:id="@id/noDataView" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/title" />
+    <com.blued.community.view.FloatFooterView android:layout_gravity="bottom" android:id="@id/event_post" android:layout_width="wrap_content" android:layout_height="65.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:src="@drawable/icon_event_post_btn_left" app:text="@string/event_post_event_btn_content" />
+</androidx.constraintlayout.widget.ConstraintLayout>

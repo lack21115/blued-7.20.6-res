@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_body_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_info_root" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/iv_pk_icon" android:layout_width="17.0dip" android:layout_height="11.0dip" android:layout_marginTop="16.0dip" android:src="@drawable/live_pk_dared_vs" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/iv_pk_icon_apng" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <TextView android:textSize="9.0dip" android:textColor="@color/syc_dark_b" android:id="@id/tv_name_our" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.5dip" android:layout_marginTop="7.5dip" android:text="@string/live_pk_dared_our" android:includeFontPadding="false" />
+        <TextView android:textSize="9.0dip" android:textColor="@color/syc_dark_b" android:ellipsize="end" android:gravity="right" android:id="@id/tv_name_opposite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.5dip" android:layout_marginRight="4.5dip" android:maxWidth="36.0dip" android:maxLines="1" android:includeFontPadding="false" android:layout_alignParentRight="true" />
+        <RelativeLayout android:id="@id/rl_score_root" android:background="@drawable/live_pk_dared_score_background" android:layout_width="fill_parent" android:layout_height="17.0dip" android:layout_marginTop="19.0dip">
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="13.0dip" android:textColor="@color/syc_dark_b" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_score_our" android:layout_width="36.0dip" android:layout_height="17.0dip" android:layout_marginLeft="4.5dip" android:maxLines="1" app:autoSizeMaxTextSize="13.0dip" app:autoSizeMinTextSize="3.0dip" app:autoSizeTextType="uniform" />
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="13.0dip" android:textColor="@color/syc_dark_b" android:gravity="center|right" android:id="@id/tv_score_opposite" android:layout_width="36.0dip" android:layout_height="17.0dip" android:layout_marginRight="4.5dip" android:maxLines="1" android:layout_alignParentRight="true" app:autoSizeMaxTextSize="13.0dip" app:autoSizeMinTextSize="3.0dip" app:autoSizeTextType="uniform" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_hint_root" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="10.0dip" android:textColor="@color/syc_dark_FFB119" android:id="@id/tv_hint_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.5dip" android:text="@string/live_pk_dared_egg_title" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="9.0dip" android:textColor="@color/syc_dark_b" android:id="@id/tv_hint_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_pk_dared_egg_prediction" android:layout_below="@id/tv_hint_title" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <com.blued.android.module.live_china.view.pkdared.PkDaredProgressView android:id="@id/ppv_progress" android:layout_width="fill_parent" android:layout_height="16.0dip" android:layout_margin="3.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

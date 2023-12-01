@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/shape_raduis_topleft_topright_15_ffffff" android:paddingTop="@dimen/dp_12" android:paddingBottom="@dimen/dp_12" android:layout_width="fill_parent" android:layout_height="@dimen/dp_500"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/sp_16" android:textColor="@color/white" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="娱乐厅玩法" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/syc_dark_8a8a8a" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_12" android:layout_marginTop="@dimen/dp_15" android:layout_marginRight="@dimen/dp_12" android:text="1. 娱乐厅设有主持位和贵宾位；\n2. 房主和场控可以上麦主持麦位，房主可以设置场控；\n3. 主持麦位用户有封麦、解麦、禁言、邀请人上麦、踢出房间等各种功能；\n" />
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/syc_dark_5cf8ff" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="32.0dip">
+        <View android:background="@color/syc_dark_5cf8ff" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/syc_dark_5cf8ff" android:gravity="center" android:id="@id/tv_time" android:layout_width="70.0dip" android:layout_height="fill_parent" />
+        <View android:background="@color/syc_dark_5cf8ff" android:layout_width="0.5dip" android:layout_height="fill_parent" android:alpha="0.5" />
+        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/syc_dark_5cf8ff" android:gravity="center" android:id="@id/tv_name" android:layout_width="84.0dip" android:layout_height="fill_parent" />
+        <View android:background="@color/syc_dark_5cf8ff" android:layout_width="0.5dip" android:layout_height="fill_parent" android:alpha="0.5" />
+        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/syc_dark_5cf8ff" android:gravity="center" android:id="@id/tv_select" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <View android:background="@color/syc_dark_5cf8ff" android:layout_width="0.5dip" android:layout_height="fill_parent" android:alpha="0.5" />
+        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/syc_dark_5cf8ff" android:gravity="center" android:id="@id/tv_num" android:layout_width="51.0dip" android:layout_height="fill_parent" />
+        <View android:background="@color/syc_dark_5cf8ff" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <View android:background="@color/syc_dark_5cf8ff" android:layout_width="fill_parent" android:layout_height="0.5dip" android:alpha="0.5" />
+</LinearLayout>

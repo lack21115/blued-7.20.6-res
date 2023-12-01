@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_active_list" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_active_list" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/circle_active_list_close" android:scaleType="fitXY" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/syc_dark_i" android:id="@id/tv_active_list" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/circle_active_list" />
+    <ImageView android:id="@id/iv_active_list_help" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginLeft="2.0dip" android:src="@drawable/circle_active_list_help" android:scaleType="fitXY" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_active_header_all" android:layout_width="wrap_content" android:layout_height="19.0dip" android:layout_marginLeft="5.0dip">
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_active_header" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        <ImageView android:layout_gravity="center_vertical" android:visibility="visible" android:layout_width="3.5dip" android:layout_height="7.0dip" android:layout_marginLeft="4.0dip" android:src="@drawable/circle_reward_arrow" />
+    </LinearLayout>
+</LinearLayout>

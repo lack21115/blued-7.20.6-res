@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/nafio_b" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/top_title" android:layout_width="fill_parent" android:layout_height="wrap_content" app:center_text="@string/titlle_binding_safe_email" app:hide_btm_line="true" />
+    <com.blued.android.module.common.view.CommonEdittextView android:id="@id/cev_email" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="40.0dip" android:layout_marginRight="30.0dip" app:hint_text="@string/binding_hint_secure_email" app:show_areacode="false" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="30.0dip">
+        <com.blued.android.module.common.view.CommonEdittextView android:layout_gravity="bottom" android:id="@id/cev_captcha" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" app:hint_text="@string/biao_v1_lr_ver_code_input" />
+        <ImageView android:id="@id/aariv_captcha" android:background="@color/group_light_gray" android:layout_width="80.0dip" android:layout_height="44.0dip" android:layout_marginLeft="10.0dip" android:scaleType="fitXY" />
+    </LinearLayout>
+    <TextView android:id="@id/tv_next_step" android:layout_height="44.0dip" android:layout_marginTop="67.0dip" android:text="@string/biao_new_register_next" style="@style/large_btn_rnd_corner_with_white_text" />
+</LinearLayout>

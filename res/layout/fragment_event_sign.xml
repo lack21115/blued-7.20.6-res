@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="148.0dip">
+        <ImageView android:id="@id/event_sign_dlg_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        <ImageView android:layout_gravity="center|right|top" android:id="@id/event_sign_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/icon_close_black" />
+        <TextView android:textAppearance="@style/TextAppearance.FontPath.Medium" android:textSize="20.0sp" android:textColor="@color/syc_dark_0a0a0a" android:layout_gravity="bottom|center" android:id="@id/event_sign_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="39.0dip" android:text="@string/event_sign_in" android:includeFontPadding="false" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/syc_j" android:layout_gravity="bottom|center" android:id="@id/event_sign_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="14.0dip" android:text="@string/sign_in_first" android:includeFontPadding="false" />
+    </FrameLayout>
+    <FrameLayout android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="186.0dip">
+        <View android:layout_gravity="center" android:id="@id/event_sign_outer_bg" android:background="@drawable/event_sign_btn_outer_bg" android:visibility="invisible" android:layout_width="130.0dip" android:layout_height="130.0dip" />
+        <FrameLayout android:layout_gravity="center" android:id="@id/event_sign_inner_bg" android:background="@drawable/event_sign_btn_inner_bg" android:layout_width="120.0dip" android:layout_height="120.0dip">
+            <TextView android:textAppearance="@style/TextAppearance.FontPath.Medium" android:textSize="18.0sp" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sign_in_now" android:includeFontPadding="false" />
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

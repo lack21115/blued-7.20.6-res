@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="65.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/root_hour" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <com.blued.android.framework.view.shape.ShapeLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_hour" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="18.0dip" android:minWidth="50.0dip" app:corner_radius="10.0dip" app:solid_color="@color/syc_dark_3f000000">
+            <ImageView android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/live_sign_hour" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/syc_dark_b" android:id="@id/tv_hour" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginRight="4.0dip" android:text="小时榜" />
+            <com.blued.android.module.live_china.view.MarqueeTextView android:textSize="10.0sp" android:textColor="@color/white" android:id="@id/tv_hour_tips" android:visibility="gone" android:layout_width="33.0dip" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:lines="1" />
+        </com.blued.android.framework.view.shape.ShapeLinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="65.0dip">
+            <com.blued.android.framework.view.shape.ShapeFrameLayout android:id="@id/fl_hour" android:visibility="gone" android:layout_width="102.0dip" android:layout_height="20.0dip" app:corner_radius="10.0dip" app:solid_color="@color/syc_dark_afb218ff">
+                <ImageView android:id="@id/iv_hour_bg_top" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/live_hour_bg_last" android:scaleType="fitXY" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageView android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginLeft="4.5dip" android:src="@drawable/live_hour_icon_last" />
+                    <TextView android:textSize="10.0sp" android:textColor="@color/syc_dark_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.5dip" android:text="@string/live_hour_count_down" />
+                    <TextView android:textSize="10.0sp" android:textColor="@color/syc_dark_b" android:id="@id/tv_hour_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.5dip" android:text="00:00" />
+                    <Space android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                    <ImageView android:id="@id/iv_hour_down" android:paddingLeft="4.5dip" android:paddingTop="5.0dip" android:paddingRight="4.5dip" android:paddingBottom="5.0dip" android:layout_width="17.0dip" android:layout_height="16.0dip" android:layout_marginRight="4.5dip" android:src="@drawable/live_hour_right_last" android:paddingHorizontal="4.5dip" android:paddingVertical="5.0dip" />
+                </LinearLayout>
+                <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="fill_parent" app:cardBackgroundColor="@color/transparent" app:cardCornerRadius="10.0dip" app:cardElevation="0.0dip">
+                    <ImageView android:id="@id/iv_hour_anim" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+                </androidx.cardview.widget.CardView>
+            </com.blued.android.framework.view.shape.ShapeFrameLayout>
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="45.0dip">
+                <com.blued.android.module.live_china.view.LiveHourExpanView android:id="@id/hour_expan_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_marginRight="@dimen/dp_10"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/rl_prize_view" android:layout_width="@dimen/dp_60" android:layout_height="@dimen/dp_60">
+        <ImageView android:id="@id/img_prize_view" android:layout_width="@dimen/dp_50" android:layout_height="@dimen/dp_50" android:src="@drawable/gift_default_icon" android:layout_centerInParent="true" />
+        <RelativeLayout android:id="@id/rl_chat_prize" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:id="@id/img_prize_chat" android:layout_width="@dimen/dp_49" android:layout_height="@dimen/dp_40" android:src="@drawable/gift_default_icon" android:layout_centerVertical="true" />
+            <com.blued.android.module.common.view.SquareImageView android:id="@id/img_effect" android:layout_width="@dimen/dp_32" android:layout_height="@dimen/dp_32" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <ImageView android:id="@id/img_enter_effect" android:visibility="gone" android:layout_width="@dimen/dp_160" android:layout_height="@dimen/dp_30" android:scaleType="fitCenter" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/sp_14" android:textColor="@color/syc_EAEAEA" android:id="@id/tv_prize_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_11" />
+    <TextView android:textSize="@dimen/sp_12" android:textColor="@color/syc_989898" android:id="@id/tv_due_day" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_6" />
+</LinearLayout>

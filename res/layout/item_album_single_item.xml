@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:orientation="vertical" android:id="@id/fl_item" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginLeft="1.5dip" android:layout_weight="1.0" app:cardCornerRadius="2.0dip" app:cardElevation="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/album_pic" android:background="@color/sara_n" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_over_layout" android:background="#1a000000" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center" android:id="@id/img_icon_center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_userinfo_album_center_lock" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/sara_f" android:id="@id/tv_private_album_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="bottom|center|right" android:id="@id/album_lock" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginRight="3.0dip" android:layout_marginBottom="3.0dip" android:src="@drawable/icon_userinfo_album_unlock" />
+</androidx.cardview.widget.CardView>

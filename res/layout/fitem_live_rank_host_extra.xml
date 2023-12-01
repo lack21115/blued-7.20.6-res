@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:background="@drawable/rank_extra_host_item_bg" android:layout_width="fill_parent" android:layout_height="29.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_list_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <TextView android:textSize="11.0sp" android:textColor="@color/syc_dark_777777" android:id="@id/tv_extra_rank_index" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="@dimen/dp_3" android:text="排名" android:layout_alignParentBottom="true" />
+    <TextView android:textSize="11.0sp" android:textColor="@color/syc_dark_777777" android:id="@id/tv_extra_rank_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="57.0dip" android:layout_marginBottom="@dimen/dp_3" android:layout_alignParentBottom="true" />
+    <RelativeLayout android:gravity="center_horizontal" android:id="@id/rl_extra_rank_label" android:background="@drawable/rank_extra_host_bg" android:layout_width="@dimen/dp_77" android:layout_height="@dimen/dp_16" android:layout_marginBottom="@dimen/dp_3" android:layout_alignParentBottom="true" android:layout_marginEnd="@dimen/dp_14" android:layout_alignParentEnd="true">
+        <ImageView android:id="@id/iv_extra_rank_icon" android:layout_width="@dimen/dp_14" android:layout_height="@dimen/dp_14" android:layout_centerVertical="true" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/white" android:id="@id/tv_extra_rank_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toEndOf="@id/iv_extra_rank_icon" />
+    </RelativeLayout>
+</RelativeLayout>

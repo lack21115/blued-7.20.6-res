@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="right" android:orientation="vertical" android:id="@id/ll_btm_right" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.module.live_china.view.LiveMakeLoverManagerRecordView android:id="@id/live_lover_manage_record_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="36.0dip" android:layout_marginBottom="8.0dip" />
+    <com.blued.android.module.live_china.view.LiveMakeLoverManageGuestView android:id="@id/live_lover_manage_guest_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" />
+    <com.blued.android.module.live_china.view.LiveMakeFriendManageView android:id="@id/live_make_friend_manage_view" android:visibility="gone" android:layout_width="94.0dip" android:layout_height="36.0dip" android:layout_marginBottom="8.0dip" />
+    <com.blued.android.module.live_china.view.LiveMusicFloatView android:id="@id/music_float_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" />
+    <com.blued.android.module.live_china.view.LiveShoutCardStatusView android:id="@id/live_shout_card_status_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" />
+    <com.blued.android.module.live_china.view.LiveActivityView android:id="@id/liveActivityView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" />
+    <View android:id="@id/btm_space" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="28.0dip" />
+</LinearLayout>

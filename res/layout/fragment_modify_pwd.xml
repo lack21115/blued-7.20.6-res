@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/top_title" android:layout_width="fill_parent" android:layout_height="wrap_content" app:center_text="@string/modify_pwd" app:hide_btm_line="true" />
+    <LinearLayout android:orientation="vertical" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="45.0dip">
+        <com.blued.android.module.common.view.CommonEdittextView android:id="@id/et_origion_pwd" android:layout_width="fill_parent" android:layout_height="wrap_content" app:hint_text="@string/input_current" app:show_areacode="false" />
+        <com.blued.android.module.common.view.CommonEdittextView android:id="@id/et_new_pwd" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" app:hint_text="@string/input_new" app:show_areacode="false" />
+        <com.blued.android.module.common.view.CommonEdittextView android:id="@id/et_new_pwd_confirm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" app:hint_text="@string/input_confirm" app:show_areacode="false" />
+        <com.soft.blued.utils.password.PasswordStatusView android:id="@id/pwd_check_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+    </LinearLayout>
+    <TextView android:id="@id/tv_btn" android:layout_marginTop="45.0dip" android:text="@string/confirm" style="@style/large_btn_rnd_corner_with_white_text" />
+</LinearLayout>

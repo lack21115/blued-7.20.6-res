@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/top_title" android:layout_width="fill_parent" android:layout_height="wrap_content" app:hide_right="false" app:right_image="@drawable/icon_yy_home_gift_rank" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/top_title">
+        <com.soft.blued.customview.TabPageIndicatorWithDot android:layout_gravity="center_horizontal" android:id="@id/tablayout" android:paddingLeft="@dimen/dp_4" android:paddingTop="@dimen/dp_9" android:paddingRight="@dimen/dp_4" android:paddingBottom="@dimen/dp_3" android:layout_width="fill_parent" android:layout_height="@dimen/dp_44" android:layout_marginBottom="@dimen/dp_6" app:indicatorRadius="@dimen/dp_10" app:indicatorWidth="@dimen/dp_8" app:shouldExpand="false" />
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@id/refresh_layout" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/top_title">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/coordinator" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <com.google.android.material.appbar.AppBarLayout android:id="@id/appbar" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip">
+                        <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/dp_10" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="enterAlways|scroll">
+                            <include layout="@layout/yy_banner_auto_scroll" />
+                        </LinearLayout>
+                    </com.google.android.material.appbar.AppBarLayout>
+                    <androidx.viewpager.widget.ViewPager android:id="@id/room_view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+                </androidx.coordinatorlayout.widget.CoordinatorLayout>
+                <com.blued.android.module.common.view.NoDataAndLoadFailView android:id="@id/no_data_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </RelativeLayout>
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    </LinearLayout>
+    <com.blued.android.framework.view.shape.ShapeTextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_match_room" android:visibility="gone" android:layout_width="@dimen/dp_160" android:layout_height="@dimen/dp_44" android:layout_marginBottom="@dimen/dp_20" android:text="@string/yy_match_room" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:corner_radius="@dimen/dp_22" app:gradient_angle="TL_BR" app:gradient_end_color="@color/syc_3883FD" app:gradient_start_color="@color/syc_00E0AB" />
+    <com.blued.android.framework.view.shape.ShapeLinearLayout android:orientation="horizontal" android:id="@id/shall_home_bottoms" android:visibility="gone" android:layout_width="@dimen/dp_250" android:layout_height="@dimen/dp_44" android:layout_marginBottom="@dimen/dp_20" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:corner_radius="@dimen/dp_22" app:gradient_angle="TL_BR" app:gradient_end_color="@color/syc_3883FD" app:gradient_start_color="@color/syc_00E0AB">
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_match_room_bottom" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/yy_match_room" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center" android:background="@color/white" android:layout_width="@dimen/dp_1" android:layout_height="@dimen/dp_10" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_create_room_bottom" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/yy_create" android:layout_weight="1.0" />
+    </com.blued.android.framework.view.shape.ShapeLinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_red_envelope" android:background="@drawable/icon_bg_red" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_80" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_14" android:src="@drawable/icon_hongbao_small" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/syc_ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_5" android:text="领取红包" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/fl_code_of_condut_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

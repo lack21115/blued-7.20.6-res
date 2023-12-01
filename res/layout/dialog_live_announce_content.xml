@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.blued.android.framework.view.shape.ShapeLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="364.0dip" app:solid_color="@color/syc_dark_b" app:top_left_radius="15.0dip" app:top_right_radius="15.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/syc_dark_767676" android:id="@id/tv_cancel" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/syc_dark_1e1f23" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/live_announce_content_anno" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/syc_dark_1A7EFF" android:id="@id/tv_save" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_title_save" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recy_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="15.0dip" />
+</com.blued.android.framework.view.shape.ShapeLinearLayout>

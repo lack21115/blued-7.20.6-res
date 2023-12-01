@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.blued.android.module.media.selector.view.SquareLayout android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:id="@id/vr_select_item_v" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/vr_header_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <ImageView android:id="@id/vr_select_view" android:layout_width="38.0dip" android:layout_height="38.0dip" android:src="@drawable/selector_photo_select_icon" android:scaleType="fitXY" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="center" android:id="@id/vr_video_type_cover_v" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:background="@drawable/selected_video_bg" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_alignParentBottom="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/tv_video_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</com.blued.android.module.media.selector.view.SquareLayout>

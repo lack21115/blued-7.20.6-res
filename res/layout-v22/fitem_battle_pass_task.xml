@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:layout_marginBottom="11.0dip" android:layout_marginVertical="11.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/live_battle_task_item_back" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="8.0dip">
+        <ImageView android:layout_width="30.0dip" android:layout_height="18.0dip" android:layout_marginTop="5.0dip" android:src="@drawable/live_battle_task_item_icon" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/syc_dark_ffef5f" android:id="@id/tv_exp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0" android:layout_marginHorizontal="10.0dip">
+        <TextView android:textSize="13.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/tv_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/syc_dark_ffef5f" android:ellipsize="end" android:id="@id/tv_current" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:layout_below="@id/tv_desc" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/syc_dark_5cf8ff" android:ellipsize="end" android:id="@id/tv_target" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_toRightOf="@id/tv_current" android:layout_alignBottom="@id/tv_current" />
+    </RelativeLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_btn" android:layout_width="66.0dip" android:layout_height="30.0dip" android:layout_marginRight="10.0dip" />
+</LinearLayout>

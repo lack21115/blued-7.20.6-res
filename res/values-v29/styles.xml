@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="@style/ThemeLightNoTitleBar">
+        <item name="android:windowBackground">@color/window_bg_color</item>
+        <item name="android:windowAnimationStyle">@style/activityAnimation</item>
+        <item name="android:alertDialogTheme">@style/Theme.AlertDialogStyle</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="calendarViewStyle">@style/Widget.Holo.CalendarView</item>
+        <item name="colorAccent">@color/syc_a</item>
+        <item name="colorPrimary">@color/syc_a</item>
+        <item name="datePickerStyle">@style/Widget.Holo.DatePicker</item>
+        <item name="numberPickerStyle">@style/NPWidget.Holo.NumberPicker</item>
+    </style>
+    <style name="FirstActivityLoading" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/app_loading_bg</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:fitsSystemWindows">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+    <style name="Theme_NoBackground" parent="@style/ThemeLightNoTitleBar">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+    <style name="Theme_trans" parent="@style/ThemeLightNoTitleBar">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+</resources>

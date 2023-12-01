@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="right" android:id="@id/iv_pk_voice_switch" android:visibility="gone" android:layout_width="26.0dip" android:layout_height="26.0dip" android:layout_margin="9.0dip" android:src="@drawable/live_icon_pk_voice_open" />
+    <com.blued.android.framework.view.shape.ShapeLinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/sl_rank" android:paddingLeft="1.0px" android:paddingRight="6.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginLeft="4.5dip" android:layout_marginBottom="7.5dip" app:corner_radius="20.0dip" app:solid_color="@color/syc_dark_66000000" app:stroke_color="@color/syc_dark_33ffffff" app:stroke_width="0.5dip">
+        <ImageView android:id="@id/iv_icon" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/live_multi_gift_icon" />
+        <ImageView android:id="@id/iv_icon_ac" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="10.0sp" android:textColor="@color/syc_dark_b" android:id="@id/tv_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/syc_dark_b" android:id="@id/tv_num_copy" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+        </FrameLayout>
+    </com.blued.android.framework.view.shape.ShapeLinearLayout>
+    <com.blued.android.framework.view.shape.ShapeLinearLayout android:gravity="center_vertical" android:layout_gravity="bottom|center|right" android:orientation="horizontal" android:id="@id/sl_user_info" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginRight="7.5dip" android:layout_marginBottom="7.5dip" app:corner_radius="20.0dip" app:solid_color="@color/syc_dark_66000000" app:stroke_color="@color/syc_dark_33ffffff" app:stroke_width="0.5dip">
+        <TextView android:textSize="10.0sp" android:textColor="@color/syc_dark_b" android:ellipsize="end" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.5dip" android:maxWidth="56.0dip" android:maxLines="1" />
+        <ImageView android:id="@id/iv_attention" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.5dip" android:layout_marginRight="3.0dip" android:src="@drawable/live_add_attention" />
+    </com.blued.android.framework.view.shape.ShapeLinearLayout>
+    <androidx.cardview.widget.CardView android:gravity="center_vertical" android:layout_gravity="bottom|center|right" android:id="@id/sl_pk_stream" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginRight="7.5dip" android:layout_marginBottom="7.5dip" app:cardBackgroundColor="@color/syc_dark_00000000" app:cardCornerRadius="22.0dip" app:cardElevation="0.0dip">
+        <com.blued.android.framework.view.shape.ShapeFrameLayout android:gravity="center_vertical" android:id="@id/fl_streak" android:layout_width="wrap_content" android:layout_height="fill_parent" app:corner_radius="22.0dip" app:gradient_end_color="@color/syc_dark_FD75FF" app:gradient_start_color="@color/syc_dark_00823C9A">
+            <com.blued.android.framework.view.shape.ShapeFrameLayout android:gravity="center_vertical" android:id="@id/fl_streak_in" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_margin="1.0dip" app:corner_radius="22.0dip" app:gradient_end_color="@color/syc_dark_C933CC" app:gradient_start_color="@color/syc_dark_4fC933CC">
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip">
+                        <TextView android:textSize="10.0dip" android:textColor="@color/syc_dark_b" android:id="@id/tv_plus_right" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <TextView android:textSize="10.0dip" android:textColor="@color/syc_dark_b" android:id="@id/tv_plus_right_copy" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </FrameLayout>
+                    <TextView android:textSize="10.0dip" android:textColor="@color/syc_dark_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:text="@string/live_pk_win_word" />
+                    <ImageView android:id="@id/iv_streak" android:layout_width="17.0dip" android:layout_height="17.0dip" android:layout_marginRight="1.0dip" android:src="@drawable/live_multi_streak_icon" />
+                </LinearLayout>
+                <ImageView android:id="@id/pk_light_right" android:background="@drawable/live_pk_win_trans_anim" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="2.0dip" />
+            </com.blued.android.framework.view.shape.ShapeFrameLayout>
+        </com.blued.android.framework.view.shape.ShapeFrameLayout>
+    </androidx.cardview.widget.CardView>
+    <com.blued.android.framework.view.shape.ShapeFrameLayout android:gravity="center" android:layout_gravity="bottom|center|right" android:id="@id/tv_group_wrap" android:layout_width="30.0dip" android:layout_height="15.0dip" android:layout_marginRight="7.5dip" android:layout_marginBottom="30.5dip" app:corner_radius="30.0dip" app:gradient_end_color="@color/syc_dark_DB19D3" app:gradient_start_color="@color/syc_dark_66DB19D3">
+        <com.blued.android.framework.view.shape.ShapeTextView android:textSize="9.0sp" android:textColor="@color/syc_dark_b" android:gravity="center" android:id="@id/tv_group" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="0.5dip" android:text="@string/live_pk_dared_our" app:corner_radius="30.0dip" app:gradient_end_color="@color/syc_dark_DB19D3" app:gradient_start_color="@color/syc_dark_66DB19D3" />
+    </com.blued.android.framework.view.shape.ShapeFrameLayout>
+    <ImageView android:layout_gravity="bottom" android:id="@id/iv_result" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.5dip" android:layout_marginBottom="27.5dip" />
+</FrameLayout>

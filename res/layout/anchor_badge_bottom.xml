@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/ll_main" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/tv_bg" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/ll_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.blued.android.module.common.view.CustomViewPager android:layout_gravity="bottom" android:id="@id/vp_badge" android:background="@drawable/shape_live_make_friend_bg" android:layout_width="fill_parent" android:layout_height="162.0dip" />
+        <com.blued.android.module.live_china.same.CirclePageIndicator android:layout_gravity="bottom" android:id="@id/indicator" android:paddingTop="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/ll_loading" android:background="@drawable/shape_usercard_bg" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ProgressBar android:layout_gravity="center" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:progressBarStyle" />
+        </LinearLayout>
+        <ImageView android:gravity="right" android:layout_gravity="center|right|top" android:id="@id/tv_close" android:padding="15.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_close_land" />
+    </FrameLayout>
+</FrameLayout>

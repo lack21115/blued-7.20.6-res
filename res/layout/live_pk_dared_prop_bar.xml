@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ll_prop_root" android:layout_width="fill_parent" android:layout_height="19.599976dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/rl_prop_our" android:layout_width="fill_parent" android:layout_height="19.599976dip" android:layout_marginLeft="-0.26dip" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/rl_prop_opposite" android:layout_width="fill_parent" android:layout_height="19.599976dip" android:layout_marginRight="-0.26dip" android:layout_alignParentRight="true" />
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center" android:id="@id/feed_subject_send_bg" android:visibility="gone" android:layout_width="128.0dip" android:layout_height="42.0dip" android:src="@drawable/feed_subject_send_bg" android:scaleType="fitXY" />
+    <com.blued.android.framework.view.shape.ShapeFrameLayout android:layout_gravity="center" android:id="@id/btn" android:layout_width="128.0dip" android:layout_height="42.0dip" app:corner_radius="22.0dip" app:gradient_angle="TOP_BOTTOM" app:gradient_end_color="@color/syc_1C8DFF" app:gradient_start_color="@color/syc_1A66FF">
+        <TextView android:textAppearance="@style/TextAppearance.FontPath.Medium" android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/feed_subject_send_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/post" android:includeFontPadding="false" android:drawableLeft="@drawable/icon_feed_post_hover_attention" android:drawablePadding="2.0dip" />
+    </com.blued.android.framework.view.shape.ShapeFrameLayout>
+</FrameLayout>

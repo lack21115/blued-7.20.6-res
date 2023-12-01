@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="1.5dip" android:layout_marginBottom="1.5dip">
+        <include android:id="@id/view_left" android:visibility="invisible" layout="@layout/item_album_single_item" />
+        <include android:id="@id/view_middle" android:visibility="invisible" layout="@layout/item_album_single_item" />
+        <include android:id="@id/view_right" android:visibility="invisible" layout="@layout/item_album_single_item" />
+    </LinearLayout>
+</LinearLayout>

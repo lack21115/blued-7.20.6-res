@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/syc_c" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/ll_title" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/ll_system" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:minHeight="70.0dip" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/ll_title">
+        <ToggleButton android:id="@id/tb_skin" android:layout_marginLeft="15.0dip" android:layout_marginTop="9.0dip" android:textOn="" android:textOff="" android:layout_alignParentRight="true" style="@style/toggle_button" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:layout_toLeftOf="@id/tb_skin">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_to_system" style="@style/setting_info_item_tv_no_icon" />
+            <TextView android:textSize="@dimen/sp_12" android:textColor="@color/syc_j" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:text="@string/to_system_tip" />
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:textColor="@color/syc_j" android:id="@id/ll_custom" android:paddingLeft="15.0dip" android:paddingTop="15.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/msg_select_manually" app:layout_constraintTop_toBottomOf="@id/ll_system" />
+    <LinearLayout android:orientation="vertical" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/ll_custom">
+        <CheckedTextView android:textSize="@dimen/sp_16" android:textColor="@color/syc_h" android:gravity="center_vertical" android:id="@id/tv_nomarl" android:layout_width="fill_parent" android:layout_height="54.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="10.0dip" android:text="@string/blued_light_mode" />
+        <CheckedTextView android:textSize="@dimen/sp_16" android:textColor="@color/syc_h" android:gravity="center_vertical" android:id="@id/tv_dark" android:layout_width="fill_parent" android:layout_height="54.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="10.0dip" android:checkMark="@null" android:text="@string/blued_dark_mode" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

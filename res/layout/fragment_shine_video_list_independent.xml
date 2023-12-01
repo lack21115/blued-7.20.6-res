@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_main" style="@style/layout_fill"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/top_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.soft.blued.customview.CustomViewPager android:id="@id/viewpager" style="@style/layout_fill" />
+</LinearLayout>

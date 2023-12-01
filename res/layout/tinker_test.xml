@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sample patch!" />
+    <Button android:id="@id/loadPatch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="load patch" android:layout_below="@id/textView" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" />
+    <Button android:id="@id/loadLibrary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="load library" android:layout_below="@id/loadPatch" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" />
+    <Button android:id="@id/cleanPatch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="clean patch" android:layout_below="@id/loadLibrary" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" />
+    <Button android:id="@id/killSelf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="kill self" android:layout_below="@id/cleanPatch" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" />
+    <Button android:id="@id/showInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="show info" android:layout_below="@id/killSelf" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" />
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:paddingLeft="@dimen/dp_5" android:paddingRight="@dimen/dp_5" android:paddingBottom="@dimen/dp_10" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.module.yy_china.view.ban.BGABanner android:id="@id/banner" android:layout_width="0.0dip" android:layout_height="0.0dip" app:banner_pointDrawable="@drawable/yy_banner_selector_point_solid_title" app:layout_constraintDimensionRatio="h,690:177" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

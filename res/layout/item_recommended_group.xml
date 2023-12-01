@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_root_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="157.0dip" android:minHeight="156.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_width="0.0dip" android:layout_height="0.0dip" android:src="@drawable/background_white_round_corner_shadow" android:scaleType="fitXY" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/aariv_group_avatar" android:layout_width="59.0dip" android:layout_height="59.0dip" android:layout_marginTop="22.5dip" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/iv_verify_icon" android:layout_width="18.0dip" android:layout_height="18.0dip" android:contentDescription="@string/app_name" app:layout_constraintBottom_toBottomOf="@id/aariv_group_avatar" app:layout_constraintRight_toRightOf="@id/aariv_group_avatar" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/nafio_h" android:ellipsize="end" android:id="@id/tv_group_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:maxEms="6" android:singleLine="true" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/aariv_group_avatar" />
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="18.5dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_group_name">
+        <ImageView android:layout_width="14.0dip" android:layout_height="14.0dip" android:src="@drawable/icon_group_member" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/nafio_j" android:id="@id/tv_group_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" />
+        <ImageView android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/icon_group_position" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/nafio_j" android:id="@id/tv_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/fl_root" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/card_top" android:layout_width="125.0dip" android:layout_height="45.0dip" app:cardCornerRadius="6.0dip" app:cardElevation="0.0dip">
+        <ImageView android:id="@id/iv_bg_top" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        <com.blued.android.framework.view.shape.ShapeFrameLayout android:orientation="horizontal" android:id="@id/fl_bg_top" android:layout_width="fill_parent" android:layout_height="fill_parent" app:corner_radius="6.0dip" app:gradient_angle="LEFT_RIGHT" app:gradient_end_color="@color/syc_dark_17B016" app:gradient_start_color="@color/syc_dark_69DCFF" />
+        <com.blued.android.framework.view.shape.ShapeFrameLayout android:orientation="horizontal" android:id="@id/fl_bg_progress_top" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="5.0dip" app:corner_radius="6.0dip" app:gradient_angle="LEFT_RIGHT" app:gradient_end_color="@color/syc_dark_17B016" app:gradient_start_color="@color/syc_dark_69DCFF" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/iv_avatar_top" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="6.5dip" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.5dip">
+                <TextView android:textSize="13.0sp" android:textColor="@color/syc_dark_b" android:ellipsize="end" android:id="@id/tv1_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/syc_dark_b" android:ellipsize="end" android:id="@id/tv2_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView android:id="@id/card_btm" android:visibility="gone" android:layout_width="125.0dip" android:layout_height="45.0dip" app:cardCornerRadius="6.0dip" app:cardElevation="0.0dip">
+        <ImageView android:id="@id/iv_bg_btm" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        <com.blued.android.framework.view.shape.ShapeFrameLayout android:orientation="horizontal" android:id="@id/fl_bg_btm" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:corner_radius="6.0dip" app:gradient_angle="LEFT_RIGHT" app:gradient_end_color="@color/syc_dark_17B016" app:gradient_start_color="@color/syc_dark_69DCFF" />
+        <com.blued.android.framework.view.shape.ShapeFrameLayout android:orientation="horizontal" android:id="@id/fl_bg_progress_btm" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="1.5dip" app:corner_radius="6.0dip" app:gradient_angle="LEFT_RIGHT" app:gradient_end_color="@color/syc_dark_17B016" app:gradient_start_color="@color/syc_dark_69DCFF" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/iv_avatar_btm" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="6.5dip" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.5dip">
+                <TextView android:textSize="13.0sp" android:textColor="@color/syc_dark_b" android:ellipsize="end" android:id="@id/tv1_btm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/syc_dark_b" android:ellipsize="end" android:id="@id/tv2_btm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/syc_c" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/top" android:background="@color/syc_b" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dip" android:layout_height="0.0dip" android:alpha="0.0" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.blued.android.module.common.view.ObservableScrollView android:id="@id/scroll_view" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/top">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.blued.android.framework.view.shape.ShapeTextView android:layout_width="fill_parent" android:layout_height="400.0dip" app:gradient_angle="TOP_BOTTOM" app:gradient_end_color="@color/syc_c" app:gradient_start_color="@color/syc_c" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_user_info" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/header_view" android:background="@drawable/user_bg_round" android:layout_width="72.0dip" android:layout_height="72.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="34.0dip" android:src="@drawable/user_bg_round" android:contentDescription="@string/app_name" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                    <ImageView android:id="@id/iv_avatar_widget" android:layout_width="90.0dip" android:layout_height="95.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="18.0dip" app:layout_constraintBottom_toBottomOf="@id/header_view" app:layout_constraintLeft_toLeftOf="@id/header_view" app:layout_constraintRight_toRightOf="@id/header_view" app:layout_constraintTop_toTopOf="@id/header_view" />
+                    <ImageView android:id="@id/iv_verify" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_margin="2.0dip" android:contentDescription="@string/imagefailed_exception" app:layout_constraintBottom_toBottomOf="@id/header_view" app:layout_constraintRight_toRightOf="@id/header_view" />
+                    <com.blued.android.framework.view.shape.ShapeTextView android:textSize="16.0sp" android:textColor="@color/syc_dark_b" android:ellipsize="end" android:id="@id/tv_login_register" android:paddingLeft="16.0dip" android:paddingTop="8.0dip" android:paddingRight="16.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="11.0dip" android:layout_marginRight="12.0dip" android:text="@string/tourist_btn_content" android:maxLines="1" app:corner_radius="18.0dip" app:layout_constraintBottom_toBottomOf="@id/header_view" app:layout_constraintLeft_toRightOf="@id/header_view" app:layout_constraintTop_toTopOf="@id/header_view" app:solid_color="@color/syc_a" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-6.0dip">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_my_attentions" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="68.0dip" app:layout_constraintBottom_toBottomOf="@id/header_view" app:layout_constraintLeft_toLeftOf="@id/tv_my_name" app:layout_constraintTop_toBottomOf="@id/header_view">
+                        <TextView android:textSize="18.0sp" android:textColor="@color/syc_h" android:id="@id/tv_attentions_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="—" />
+                        <TextView android:textSize="13.0sp" android:textColor="@color/syc_j" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/attention" />
+                    </LinearLayout>
+                    <Space android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_my_fans" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="68.0dip" app:layout_constraintBottom_toBottomOf="@id/ll_my_attentions" app:layout_constraintLeft_toRightOf="@id/ll_my_attentions" app:layout_constraintTop_toTopOf="@id/ll_my_attentions">
+                        <TextView android:textSize="18.0sp" android:textColor="@color/syc_h" android:id="@id/tv_fans_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="—" />
+                        <TextView android:textSize="13.0sp" android:textColor="@color/syc_j" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/fans" />
+                    </LinearLayout>
+                </LinearLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_per_entry" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/iv_visit" android:padding="4.5dip" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginTop="8.0dip" android:src="@drawable/mine_icon_visit" android:scaleType="fitXY" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                    <TextView android:textSize="13.0sp" android:textColor="@color/syc_h" android:id="@id/tv_visit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginBottom="8.0dip" android:text="@string/visitors" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="@id/iv_visit" app:layout_constraintRight_toRightOf="@id/iv_visit" app:layout_constraintTop_toBottomOf="@id/iv_visit" />
+                    <ImageView android:id="@id/iv_interact" android:padding="4.5dip" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/mine_icon_interact" android:scaleType="fitXY" app:layout_constraintHorizontal_bias="0.4" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toLeftOf="@id/iv_visit" app:layout_constraintTop_toTopOf="@id/iv_visit" />
+                    <TextView android:textSize="13.0sp" android:textColor="@color/syc_h" android:id="@id/tv_interact" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/feed_interacted_page_title" app:layout_constraintLeft_toLeftOf="@id/iv_interact" app:layout_constraintRight_toRightOf="@id/iv_interact" app:layout_constraintTop_toBottomOf="@id/iv_interact" />
+                    <ImageView android:id="@id/iv_feed" android:padding="4.5dip" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/mine_icon_feed" android:scaleType="fitXY" app:layout_constraintHorizontal_bias="0.6" app:layout_constraintLeft_toRightOf="@id/iv_visit" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="@id/iv_visit" />
+                    <TextView android:textSize="13.0sp" android:textColor="@color/syc_h" android:id="@id/tv_feed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="0 动态" app:layout_constraintLeft_toLeftOf="@id/iv_feed" app:layout_constraintRight_toRightOf="@id/iv_feed" app:layout_constraintTop_toBottomOf="@id/iv_feed" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/ll_top_entry" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip">
+                    <com.blued.android.framework.view.shape.ShapeLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_beans" android:padding="8.0dip" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_weight="1.0" app:corner_radius="6.0dip" app:solid_color="@color/syc_b">
+                        <androidx.constraintlayout.utils.widget.ImageFilterView android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/mine_icon_beans" />
+                        <TextView android:textSize="12.0sp" android:textColor="@color/syc_f" android:id="@id/tv_beans" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="—" />
+                        <Space android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                        <com.blued.android.framework.view.shape.ShapeTextView android:textSize="12.0sp" android:textColor="@color/syc_f" android:gravity="center" android:id="@id/beans_icon" android:layout_width="22.0dip" android:layout_height="22.0dip" android:text="充" app:corner_radius="22.0dip" app:solid_color="@color/syc_f_12" />
+                    </com.blued.android.framework.view.shape.ShapeLinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_health" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dip">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="17.0sp" android:textColor="@color/syc_h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/mine_health_service" />
+                        <Space android:layout_width="50.0dip" android:layout_height="0.0dip" />
+                        <ViewFlipper android:id="@id/vf_health" android:layout_width="fill_parent" android:layout_height="22.0dip" android:inAnimation="@anim/anim_view_flipper_translate_in" android:outAnimation="@anim/anim_view_flipper_translate_out" android:flipInterval="3000" android:autoStart="true" />
+                    </LinearLayout>
+                    <com.blued.android.framework.view.shape.ShapeLinearLayout android:orientation="horizontal" android:id="@id/ll_health_entry" android:layout_width="fill_parent" android:layout_height="wrap_content" app:corner_radius="6.0dip" app:solid_color="@color/syc_b" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_other" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dip">
+                    <TextView android:textSize="17.0sp" android:textColor="@color/syc_h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/mine_other_service" />
+                    <LinearLayout android:orientation="horizontal" android:id="@id/ll_other_entry" android:layout_width="fill_parent" android:layout_height="49.0dip">
+                        <com.blued.android.framework.view.shape.ShapeLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_rainbow" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" app:corner_radius="6.0dip" app:solid_color="@color/syc_b">
+                            <TextView android:textSize="14.0sp" android:textColor="@color/syc_h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/mine_rainbow_rights_points" />
+                            <TextView android:textSize="14.0sp" android:textColor="#ff00cccc" android:id="@id/tv_rainbow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="—" />
+                            <Space android:layout_width="10.0dip" android:layout_height="0.0dip" />
+                            <TextView android:textSize="12.0sp" android:textColor="@color/syc_k" android:ellipsize="end" android:gravity="right" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@string/mine_rainbow_rights" android:maxLines="1" android:singleLine="true" android:layout_weight="1.0" />
+                            <ImageView android:visibility="gone" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/mine_icon_more_gray" />
+                        </com.blued.android.framework.view.shape.ShapeLinearLayout>
+                        <com.blued.android.framework.view.shape.ShapeLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_help" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_weight="1.0" app:corner_radius="6.0dip" app:solid_color="@color/syc_b">
+                            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                                <TextView android:textSize="14.0sp" android:textColor="@color/syc_h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/help_and_feedback" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                                <com.blued.android.framework.view.badgeview.QBadgeContainer android:layout_gravity="center_vertical" android:id="@id/badge_container" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="12.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:badge_offx="0.0dip" app:badge_offy="0.0dip" app:badge_textSize="10.0sp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+                                    <View android:id="@id/bindView" android:layout_width="25.0dip" android:layout_height="25.0dip" />
+                                </com.blued.android.framework.view.badgeview.QBadgeContainer>
+                                <ImageView android:id="@id/helper_arrow" android:visibility="invisible" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/mine_icon_more_gray" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </com.blued.android.framework.view.shape.ShapeLinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_live" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dip">
+                    <TextView android:textSize="17.0sp" android:textColor="@color/syc_h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:text="@string/mine_live_channel" />
+                    <com.blued.android.framework.view.shape.ShapeLinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_live_level" android:layout_width="fill_parent" android:layout_height="49.0dip" android:layout_marginTop="9.0dip" app:corner_radius="6.0dip" app:solid_color="@color/syc_b">
+                        <TextView android:textSize="14.0sp" android:textColor="@color/syc_h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/mine_live_level" />
+                        <ImageView android:id="@id/iv_live_level" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" />
+                    </com.blued.android.framework.view.shape.ShapeLinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="49.0dip" android:layout_marginTop="9.0dip">
+                        <com.blued.android.framework.view.shape.ShapeLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_live_fans" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" app:corner_radius="6.0dip" app:solid_color="@color/syc_b">
+                            <TextView android:textSize="14.0sp" android:textColor="@color/syc_h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/mine_live_fan_club" />
+                            <Space android:layout_width="10.0dip" android:layout_height="0.0dip" />
+                            <TextView android:textSize="12.0sp" android:textColor="@color/syc_k" android:ellipsize="end" android:gravity="right" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@string/mine_live_fan_club_tip" android:maxLines="1" android:singleLine="true" android:layout_weight="1.0" />
+                            <ImageView android:visibility="gone" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/mine_icon_more_gray" />
+                        </com.blued.android.framework.view.shape.ShapeLinearLayout>
+                        <com.blued.android.framework.view.shape.ShapeLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_live_wealth" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_weight="1.0" app:corner_radius="6.0dip" app:solid_color="@color/syc_b">
+                            <TextView android:textSize="14.0sp" android:textColor="@color/syc_h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/rick_rank" />
+                            <Space android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                            <TextView android:textSize="12.0sp" android:textColor="@color/syc_f" android:id="@id/tv_live_wealth" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="LV—" />
+                            <ImageView android:visibility="gone" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/mine_icon_more_gray" />
+                        </com.blued.android.framework.view.shape.ShapeLinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <Space android:layout_width="0.0dip" android:layout_height="57.0dip" />
+            </LinearLayout>
+        </FrameLayout>
+    </com.blued.android.module.common.view.ObservableScrollView>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/title" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="44.0dip" android:alpha="0.0" app:layout_constraintTop_toBottomOf="@id/top">
+        <ImageView android:id="@id/title_header" android:layout_width="34.0dip" android:layout_height="34.0dip" android:layout_marginLeft="12.0dip" android:src="@drawable/user_bg_round" />
+        <Space android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/syc_h" android:id="@id/title_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mine" />
+        <Space android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <ImageView android:padding="5.0dip" android:visibility="invisible" android:layout_width="37.0dip" android:layout_height="37.0dip" android:layout_marginRight="10.0dip" />
+    </LinearLayout>
+    <ImageView android:id="@id/title_id_photo" android:layout_width="37.0dip" android:layout_height="37.0dip" android:layout_marginRight="12.0dip" android:src="@drawable/mine_icon_title_id_photo" app:layout_constraintBottom_toBottomOf="@id/title" app:layout_constraintRight_toLeftOf="@id/title_setting" app:layout_constraintTop_toTopOf="@id/title" />
+    <ImageView android:id="@id/title_setting" android:layout_width="37.0dip" android:layout_height="37.0dip" android:layout_marginRight="12.0dip" android:src="@drawable/mine_icon_title_setting" app:layout_constraintBottom_toBottomOf="@id/title" app:layout_constraintRight_toRightOf="@id/title" app:layout_constraintTop_toTopOf="@id/title" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent">
+        <com.blued.android.framework.view.badgeview.QBadgeContainer android:id="@id/find_badge_container" app:badge_backgroundColor="@color/syc_g" app:badge_offx="12.0dip" app:badge_offy="2.0dip" app:badge_textSize="10.0sp" style="@style/layout_main_navigation">
+            <RelativeLayout android:id="@id/ll_main_find" android:background="@drawable/ripple_mask_syc_i" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/iv_main_find" android:src="@drawable/icon_find_nor" android:contentDescription="@string/app_name" style="@style/iv_main_navigation" />
+                <TextView android:textColor="@drawable/selector_tab_main_text" android:id="@id/tv_main_find" android:text="@string/common_main_find" android:layout_below="@id/iv_main_find" style="@style/tv_main_navigation" />
+            </RelativeLayout>
+        </com.blued.android.framework.view.badgeview.QBadgeContainer>
+        <com.blued.android.framework.view.badgeview.QBadgeContainer android:id="@id/live_badge_container" app:badge_backgroundColor="@color/syc_g" app:badge_offx="12.0dip" app:badge_offy="2.0dip" app:badge_textSize="10.0sp" style="@style/layout_main_navigation">
+            <RelativeLayout android:id="@id/ll_main_live" android:background="@drawable/ripple_mask_syc_i" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/iv_main_live" android:src="@drawable/icon_live_nor" android:contentDescription="@string/app_name" style="@style/iv_main_navigation" />
+                <TextView android:textColor="@drawable/selector_tab_main_text" android:id="@id/tv_main_live" android:text="@string/liveVideo_live" android:layout_below="@id/iv_main_live" style="@style/tv_main_navigation" />
+            </RelativeLayout>
+        </com.blued.android.framework.view.badgeview.QBadgeContainer>
+        <com.blued.android.framework.view.badgeview.QBadgeContainer android:id="@id/feed_badge_container" app:badge_backgroundColor="@color/syc_g" app:badge_offx="3.0dip" app:badge_offy="0.0dip" app:badge_textSize="10.0sp" style="@style/layout_main_navigation">
+            <RelativeLayout android:id="@id/ll_main_feed" android:background="@drawable/ripple_mask_syc_i" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/iv_main_feed" android:src="@drawable/icon_discovery_nor" android:contentDescription="@string/app_name" style="@style/iv_main_navigation" />
+                <TextView android:textColor="@drawable/selector_tab_main_text" android:id="@id/tv_main_feed" android:text="@string/discovery" android:layout_below="@id/iv_main_feed" style="@style/tv_main_navigation" />
+            </RelativeLayout>
+        </com.blued.android.framework.view.badgeview.QBadgeContainer>
+        <com.blued.android.framework.view.badgeview.QBadgeContainer android:id="@id/msg_badge_container" app:badge_backgroundColor="@color/syc_g" app:badge_offx="10.0dip" app:badge_offy="0.0dip" app:badge_textSize="10.0sp" style="@style/layout_main_navigation">
+            <RelativeLayout android:id="@id/ll_main_msg" android:background="@drawable/ripple_mask_syc_i" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/iv_main_msg" android:src="@drawable/icon_msg_nor" android:contentDescription="@string/app_name" style="@style/iv_main_navigation" />
+                <TextView android:textColor="@drawable/selector_tab_main_text" android:id="@id/tv_main_msg" android:text="@string/common_main_msg" android:layout_below="@id/iv_main_msg" style="@style/tv_main_navigation" />
+            </RelativeLayout>
+        </com.blued.android.framework.view.badgeview.QBadgeContainer>
+        <com.blued.android.framework.view.badgeview.QBadgeContainer android:id="@id/other_badge_container" app:badge_backgroundColor="@color/syc_g" app:badge_offx="12.0dip" app:badge_offy="2.0dip" app:badge_textSize="10.0sp" style="@style/layout_main_navigation">
+            <RelativeLayout android:id="@id/ll_main_others" android:background="@drawable/ripple_mask_syc_i" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/iv_main_others" android:src="@drawable/icon_mine_sel" android:contentDescription="@string/app_name" style="@style/iv_main_navigation" />
+                <TextView android:textColor="@color/syc_a" android:id="@id/tv_main_others" android:text="@string/mine" android:layout_below="@id/iv_main_others" style="@style/tv_main_navigation" />
+            </RelativeLayout>
+        </com.blued.android.framework.view.badgeview.QBadgeContainer>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

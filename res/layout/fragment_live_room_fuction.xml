@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="bottom" android:background="@drawable/live_room_function_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ListView android:id="@id/live_room_function_lv" android:paddingTop="21.0dip" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="292.0dip" android:divider="@color/transparent" android:dividerHeight="0.0dip" android:overScrollMode="never" />
+    </FrameLayout>
+</FrameLayout>

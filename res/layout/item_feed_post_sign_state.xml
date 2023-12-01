@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/item_feed_post_sign_state_iv_layout" android:background="@drawable/item_feed_post_sign_state_iv_bg" android:layout_width="85.0dip" android:layout_height="85.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/item_feed_post_sign_state_iv" android:layout_width="54.0dip" android:layout_height="54.0dip" android:scaleType="centerCrop" />
+        <ImageView android:layout_gravity="center|right|top" android:id="@id/item_feed_post_sign_classify_iv" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="17.5dip" />
+        <ImageView android:layout_gravity="center|right|top" android:id="@id/item_feed_post_sign_da_zi_iv" android:visibility="gone" android:layout_width="39.0dip" android:layout_height="17.5dip" android:src="@drawable/feed_bubble_classify_part_icon" />
+    </FrameLayout>
+    <TextView android:textSize="14.0sp" android:textColor="@color/syc_h" android:id="@id/item_feed_post_sign_state_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="30.0dip" android:maxLines="1" android:includeFontPadding="false" />
+</LinearLayout>

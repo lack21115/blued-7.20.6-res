@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/fl_music_avatar" android:background="@drawable/live_yy_music_circle_bg" android:layout_width="@dimen/dp_34" android:layout_height="@dimen/dp_34" android:layout_marginLeft="@dimen/dp_10"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/iv_music_avatar" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_20" />
+</FrameLayout>

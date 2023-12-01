@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/live_shake_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/fl_anim" android:layout_width="320.0dip" android:layout_height="500.0dip" android:layout_centerInParent="true">
+            <ImageView android:layout_gravity="right" android:id="@id/iv_close" android:layout_width="29.0dip" android:layout_height="29.0dip" android:layout_marginTop="30.0dip" android:src="@drawable/live_shake_close" />
+            <FrameLayout android:id="@id/fl_main" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="61.0dip">
+                <ImageView android:id="@id/iv_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/live_shake_bg" />
+                <FrameLayout android:gravity="center" android:id="@id/fl_shake" android:layout_width="fill_parent" android:layout_height="82.0dip" android:layout_marginLeft="56.0dip" android:layout_marginTop="66.5dip" android:layout_marginRight="64.0dip">
+                    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/ll_shake" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+                </FrameLayout>
+            </FrameLayout>
+            <ImageView android:id="@id/iv_fly" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="215.0dip" android:layout_marginTop="61.0dip" android:src="@drawable/live_shake_color_fly" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/syc_dark_cfffffff" android:ellipsize="end" android:gravity="center" android:id="@id/tv_tip" android:layout_width="fill_parent" android:layout_height="19.5dip" android:layout_marginLeft="77.0dip" android:layout_marginTop="244.0dip" android:layout_marginRight="83.5dip" android:maxLines="1" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="276.0dip" android:layout_centerHorizontal="true">
+                <ImageView android:id="@id/iv_reward" android:layout_width="fill_parent" android:layout_height="85.0dip" android:src="@drawable/live_shake_reward" />
+                <TextView android:textSize="18.0sp" android:textColor="@color/syc_b" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_shake" android:background="@drawable/live_shake_state_1" android:visibility="gone" android:layout_width="166.0dip" android:layout_height="49.0dip" android:shadowColor="@color/syc_dark_b000000" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/syc_b" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_shake_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/live_shake_tip_2" />
+            </LinearLayout>
+        </FrameLayout>
+    </RelativeLayout>
+</FrameLayout>

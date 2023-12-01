@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="fill_parent" app:cardBackgroundColor="@color/transparent" app:cardCornerRadius="8.0dip" app:cardElevation="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@color/syc_dark_77B6FF" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.blued.android.module.live_china.view.pkdared.PkDaredScoreProgressView android:id="@id/ppsv_score" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <TextView android:textSize="10.0dip" android:textColor="@color/syc_dark_b" android:gravity="center" android:id="@id/tv_score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <View android:id="@id/view_mask" android:background="@color/syc_dark_2c2c2c" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0" />
+        <com.blued.android.module.live_china.view.pkdared.PkDaredTimeProgressView android:id="@id/pptv_time" android:layout_width="18.0dip" android:layout_height="12.0dip" android:layout_marginLeft="2.0dip" android:layout_centerVertical="true" />
+        <TextView android:textSize="7.0dip" android:textColor="@color/syc_dark_b" android:gravity="center" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/pptv_time" android:layout_alignTop="@id/pptv_time" android:layout_alignRight="@id/pptv_time" android:layout_alignBottom="@id/pptv_time" android:layout_centerVertical="true" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/live_pk_dared_progress_border" android:scaleType="fitXY" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

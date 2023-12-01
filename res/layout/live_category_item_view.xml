@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="49.0dip">
+        <ImageView android:id="@id/iv_category" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="14.0dip" android:layout_marginTop="9.0dip" android:layout_marginRight="14.0dip" android:scaleType="centerCrop" />
+        <ImageView android:layout_gravity="right" android:id="@id/img_more_dot" android:visibility="gone" android:layout_marginTop="9.0dip" android:layout_marginRight="15.0dip" style="@style/new_remind" />
+        <ImageView android:id="@id/img_dot" android:visibility="gone" android:layout_width="29.0dip" android:layout_height="14.0dip" android:layout_marginLeft="34.0dip" android:layout_marginTop="2.0dip" android:src="@drawable/new_icon" />
+    </FrameLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@color/syc_h" android:layout_gravity="center_horizontal" android:id="@id/tv_category" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="3.0dip" />
+</LinearLayout>

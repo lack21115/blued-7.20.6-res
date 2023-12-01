@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/syc_x" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout android:orientation="vertical" android:background="@color/syc_x" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:id="@id/layout_list" layout="@layout/vip_buy_option_list" />
+            <include android:id="@id/layout_new_list" layout="@layout/vip_buy_option_new_list" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <TextView android:textSize="16.0sp" android:textColor="@color/syc_dark_b" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/tv_buy_btn" android:background="@drawable/icon_svip_new_page_buy_btn_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:text="@string/get_it_right_now" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/layout_upgrade_blued_x" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="20.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/syc_a" android:gravity="center" android:id="@id/tv_pay_bluedx_btn" android:background="@drawable/icon_pay_bluedx_btn_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vip_upgrade_pay_bluedx_btn" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/syc_dark_b" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/tv_upgrade_btn" android:background="@drawable/icon_svip_new_page_buy_btn_short_bg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/vip_upgrade_bluedx" android:layout_weight="3.0" android:layout_marginStart="10.0dip" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

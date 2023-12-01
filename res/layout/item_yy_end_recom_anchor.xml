@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/dp_12" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardBackgroundColor="@color/transparent" app:cardCornerRadius="@dimen/dp_35" app:cardElevation="0.0dip">
+            <ImageView android:id="@id/iv_anchor" android:layout_width="@dimen/dp_70" android:layout_height="@dimen/dp_70" android:src="@drawable/user_bg_round" android:scaleType="centerCrop" />
+        </androidx.cardview.widget.CardView>
+        <com.blued.android.framework.view.shape.ShapeTextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="@dimen/dp_48" android:layout_height="@dimen/dp_19" android:layout_marginTop="@dimen/dp_51" android:text="@string/user_chatting" app:corner_radius="@dimen/dp_22" app:gradient_end_color="@color/syc_3883FD" app:gradient_start_color="@color/syc_00E0AB" />
+    </FrameLayout>
+    <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_anchor_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_8" android:maxWidth="@dimen/dp_78" android:text="name" android:lines="1" />
+</LinearLayout>

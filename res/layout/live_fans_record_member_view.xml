@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/rl_list_title" android:background="@color/syc_dark_ecedf0" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="30.0dip">
+        <TextView android:textSize="12.0sp" android:textColor="@color/syc_dark_j" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/live_fans_info" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/syc_dark_h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="@string/live_fans_relation_title" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@id/smart_members" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:id="@id/ll_nodata" layout="@layout/live_fans_no_member_default" />
+            <include android:id="@id/ll_nodata_error" android:visibility="gone" layout="@layout/nodata_live_rank_list_error" />
+            <ProgressBar android:layout_gravity="center" android:id="@id/loading_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_members" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="30.0dip" />
+        </FrameLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</FrameLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.framework.view.badgeview.QBadgeContainer android:id="@id/find_badge_container" app:badge_backgroundColor="@color/syc_g" app:badge_offx="12.0dip" app:badge_offy="2.0dip" app:badge_textSize="10.0sp" style="@style/layout_main_navigation">
+        <RelativeLayout android:id="@id/ll_main_find" android:background="@drawable/ripple_mask_syc_i" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_main_find" android:src="@drawable/icon_find_nor" android:contentDescription="@string/app_name" style="@style/iv_main_navigation" />
+            <TextView android:textColor="@drawable/selector_tab_main_text" android:id="@id/tv_main_find" android:text="@string/common_main_find" android:layout_below="@id/iv_main_find" style="@style/tv_main_navigation" />
+            <com.blued.android.framework.view.shape.ShapeTextView android:id="@id/tv_find_dot" android:visibility="gone" android:layout_width="10.0dip" android:layout_height="10.0dip" app:corner_radius="10.0dip" app:solid_color="@color/syc_g" app:stroke_color="@color/syc_b" app:stroke_width="1.0dip" style="@style/tv_main_new_dot" />
+            <ImageView android:id="@id/iv_find_mark" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="3.0dip" android:layout_centerHorizontal="true" android:translationX="14.0dip" />
+        </RelativeLayout>
+    </com.blued.android.framework.view.badgeview.QBadgeContainer>
+    <com.blued.android.framework.view.badgeview.QBadgeContainer android:id="@id/live_badge_container" app:badge_backgroundColor="@color/syc_g" app:badge_offx="12.0dip" app:badge_offy="2.0dip" app:badge_textSize="10.0sp" style="@style/layout_main_navigation">
+        <RelativeLayout android:id="@id/ll_main_live" android:background="@drawable/ripple_mask_syc_i" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_main_live" android:src="@drawable/icon_live_nor" android:contentDescription="@string/app_name" style="@style/iv_main_navigation" />
+            <TextView android:textColor="@drawable/selector_tab_main_text" android:id="@id/tv_main_live" android:text="@string/liveVideo_live" android:layout_below="@id/iv_main_live" style="@style/tv_main_navigation" />
+            <com.blued.android.framework.view.shape.ShapeTextView android:id="@id/tv_live_dot" android:visibility="gone" android:layout_width="10.0dip" android:layout_height="10.0dip" app:corner_radius="10.0dip" app:solid_color="@color/syc_g" app:stroke_color="@color/syc_b" app:stroke_width="1.0dip" style="@style/tv_main_new_dot" />
+            <ImageView android:id="@id/iv_live_mark" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="3.0dip" android:layout_centerHorizontal="true" android:translationX="14.0dip" />
+        </RelativeLayout>
+        <ImageView android:id="@id/image_live_bubble" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/ll_main_live" android:layout_alignBottom="@id/ll_main_live" android:layout_centerInParent="true" />
+    </com.blued.android.framework.view.badgeview.QBadgeContainer>
+    <com.blued.android.framework.view.badgeview.QBadgeContainer android:id="@id/feed_badge_container" app:badge_backgroundColor="@color/syc_g" app:badge_offx="3.0dip" app:badge_offy="0.0dip" app:badge_textSize="10.0sp" style="@style/layout_main_navigation">
+        <RelativeLayout android:id="@id/ll_main_feed" android:background="@drawable/ripple_mask_syc_i" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_main_feed" android:src="@drawable/icon_discovery_nor" android:contentDescription="@string/app_name" style="@style/iv_main_navigation" />
+            <TextView android:textColor="@drawable/selector_tab_main_text" android:id="@id/tv_main_feed" android:text="@string/discovery" android:layout_below="@id/iv_main_feed" style="@style/tv_main_navigation" />
+            <com.blued.android.framework.view.shape.ShapeTextView android:id="@id/tv_feed_dot" android:visibility="gone" android:layout_width="10.0dip" android:layout_height="10.0dip" app:corner_radius="10.0dip" app:solid_color="@color/syc_g" app:stroke_color="@color/syc_b" app:stroke_width="1.0dip" style="@style/tv_main_new_dot" />
+            <ImageView android:id="@id/iv_feed_mark" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_centerHorizontal="true" android:translationX="14.0dip" />
+        </RelativeLayout>
+        <ImageView android:id="@id/img_discovery_bubble_avatar" android:visibility="gone" android:layout_width="35.0dip" android:layout_height="35.0dip" android:src="@drawable/user_bg_round" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/img_discovery_bubble" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="49.0dip" android:layout_centerInParent="true" />
+    </com.blued.android.framework.view.badgeview.QBadgeContainer>
+    <com.blued.android.framework.view.badgeview.QBadgeContainer android:id="@id/msg_badge_container" app:badge_backgroundColor="@color/syc_g" app:badge_offx="10.0dip" app:badge_offy="0.0dip" app:badge_textSize="10.0sp" style="@style/layout_main_navigation">
+        <RelativeLayout android:id="@id/ll_main_msg" android:background="@drawable/ripple_mask_syc_i" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_main_msg" android:src="@drawable/icon_msg_nor" android:contentDescription="@string/app_name" style="@style/iv_main_navigation" />
+            <TextView android:textColor="@drawable/selector_tab_main_text" android:id="@id/tv_main_msg" android:text="@string/common_main_msg" android:layout_below="@id/iv_main_msg" style="@style/tv_main_navigation" />
+            <com.blued.android.framework.view.shape.ShapeTextView android:id="@id/tv_msg_dot" android:visibility="gone" android:layout_width="10.0dip" android:layout_height="10.0dip" app:corner_radius="10.0dip" app:solid_color="@color/syc_g" app:stroke_color="@color/syc_b" app:stroke_width="1.0dip" style="@style/tv_main_new_dot" />
+            <ImageView android:id="@id/iv_msg_mark" android:visibility="gone" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginTop="3.0dip" android:scaleType="centerCrop" android:layout_centerHorizontal="true" android:translationX="14.0dip" />
+        </RelativeLayout>
+    </com.blued.android.framework.view.badgeview.QBadgeContainer>
+    <com.blued.android.framework.view.badgeview.QBadgeContainer android:id="@id/other_badge_container" app:badge_backgroundColor="@color/syc_g" app:badge_offx="12.0dip" app:badge_offy="2.0dip" app:badge_textSize="10.0sp" style="@style/layout_main_navigation">
+        <RelativeLayout android:id="@id/ll_main_others" android:background="@drawable/ripple_mask_syc_i" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_main_others" android:src="@drawable/icon_mine_nor" android:contentDescription="@string/app_name" style="@style/iv_main_navigation" />
+            <TextView android:textColor="@drawable/selector_tab_main_text" android:id="@id/tv_main_others" android:text="@string/mine" android:layout_below="@id/iv_main_others" style="@style/tv_main_navigation" />
+            <com.blued.android.framework.view.shape.ShapeTextView android:id="@id/tv_others_dot" android:visibility="gone" android:layout_width="10.0dip" android:layout_height="10.0dip" app:corner_radius="10.0dip" app:solid_color="@color/syc_g" app:stroke_color="@color/syc_b" app:stroke_width="1.0dip" style="@style/tv_main_new_dot" />
+            <ImageView android:id="@id/iv_others_mark" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="3.0dip" android:layout_centerHorizontal="true" android:translationX="14.0dip" />
+        </RelativeLayout>
+    </com.blued.android.framework.view.badgeview.QBadgeContainer>
+</LinearLayout>

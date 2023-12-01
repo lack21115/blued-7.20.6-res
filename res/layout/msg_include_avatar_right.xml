@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="@dimen/chat_two_item_avatar_size" android:layout_height="@dimen/chat_two_item_avatar_size"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_avatar" style="@style/chat_two_avatar_style" />
+    <ImageView android:id="@id/msg_item_avatar_v" style="@style/chat_two_avatar_vbadge_style" />
+</RelativeLayout>

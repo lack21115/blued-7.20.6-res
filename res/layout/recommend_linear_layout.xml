@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/recommend_linear_root" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/view_top_line" android:background="@color/syc_o_line" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <ImageView android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/icon_hori_live" />
+        <TextView android:textAppearance="@style/TextAppearance.FontPath.Bold" android:textSize="16.0sp" android:textColor="@color/syc_h" android:gravity="center_vertical" android:id="@id/tv_recommend_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/they_are_broadcasting" android:includeFontPadding="false" />
+    </LinearLayout>
+    <com.blued.android.framework.view.pulltorefresh.PullToRefreshRecyclerView android:id="@id/live_recommend_hListView" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:id="@id/view_btm_line_large" android:background="@color/syc_o_line" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="15.0dip" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/fl_make_lover" android:background="#ff0b0e44" android:layout_width="120.0dip" android:layout_height="120.0dip">
+        <ImageView android:id="@id/iv_avatar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <ImageView android:id="@id/iv_mic" android:visibility="gone" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginLeft="23.5dip" android:layout_marginTop="20.0dip" android:src="@drawable/live_make_lover_mac_open" android:scaleType="fitXY" />
+    </FrameLayout>
+</FrameLayout>

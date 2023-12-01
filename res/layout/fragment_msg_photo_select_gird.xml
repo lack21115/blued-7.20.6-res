@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/title" android:background="@color/syc_x" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/padding_top">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="13.0sp" android:textColor="@color/nafio_i" android:id="@id/ctt_left" android:paddingLeft="11.5dip" android:paddingTop="8.0dip" android:paddingRight="11.5dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/nafio_i" android:id="@id/ctt_right" android:paddingLeft="11.5dip" android:paddingTop="8.0dip" android:paddingRight="11.5dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/preview" android:layout_alignParentRight="true" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/lay_center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <TextView android:id="@id/ctt_center" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/biao_common_title_notrans_center" />
+                <ImageView android:gravity="center_vertical" android:id="@id/ctt_center_right" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_icon_arrow_down" style="@style/biao_common_title_notrans_center" />
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView style="@style/common_title_btm_line" />
+    </LinearLayout>
+    <GridView android:gravity="center" android:id="@id/gird_view" android:paddingRight="-1.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:horizontalSpacing="2.0dip" android:verticalSpacing="2.0dip" android:stretchMode="columnWidth" android:numColumns="4" android:layout_weight="1.0" />
+    <View android:background="#ffdadada" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <com.soft.blued.customview.SelectPhotoBarView android:id="@id/bottom_bar_view" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_alignParentBottom="true" />
+</LinearLayout>

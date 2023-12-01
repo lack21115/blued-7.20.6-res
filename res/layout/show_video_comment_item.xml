@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="horizontal" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/frame_head" android:paddingTop="14.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/header_view" android:background="@drawable/user_bg_round" android:layout_width="44.0dip" android:layout_height="44.0dip" />
+            <ImageView android:layout_gravity="bottom|center|right" android:id="@id/img_verify" android:layout_width="15.0dip" android:layout_height="15.0dip" />
+        </FrameLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/coo_lay" android:paddingTop="8.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/frame_head">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="13.0sp" android:textColor="@color/syc_i" android:autoLink="web" android:layout_gravity="center_vertical" android:id="@id/name_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="100.0dip" android:text="this's the namesdf" android:singleLine="true" />
+                <ImageView android:id="@id/img_vip_icon" style="@style/blued_vip_icon" />
+                <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            </LinearLayout>
+            <com.blued.community.view.TextViewFixTouchForDynamic android:textSize="14.0sp" android:textColor="@color/syc_dark_b" android:autoLink="email" android:id="@id/content_view" android:paddingRight="35.0dip" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_weight="1.0" android:lineSpacingExtra="5.0dip" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="13.0sp" android:textColor="@color/nafio_k" android:id="@id/time_view" android:clickable="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="4分钟" android:layout_weight="1.0" />
+            </LinearLayout>
+            <TextView android:id="@id/tv_bottom_cutter" android:background="#ff151515" android:layout_marginTop="12.0dip" style="@style/common_cutter_gray" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/lay_like" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:paddingBottom="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/img_comment_like" android:visibility="visible" android:layout_width="25.0dip" android:layout_height="wrap_content" android:src="@drawable/show_video_comment_liked" android:scaleType="centerInside" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/nafio_k" android:layout_gravity="center_vertical" android:id="@id/tv_comment_like_count" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_more_hot_comment" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+        <TextView android:layout_width="0.0dip" android:layout_marginRight="15.0dip" android:layout_weight="1.0" style="@style/common_cutter_gray" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/nafio_k" android:id="@id/tv_more_hot_comment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/more_hot_comment" />
+        <ImageView android:id="@id/img_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginTop="1.0dip" android:src="@drawable/icon_feed_list_more_comment" />
+        <TextView android:background="#8fffffff" android:layout_width="0.0dip" android:layout_marginLeft="15.0dip" android:layout_weight="1.0" style="@style/common_cutter_gray" />
+    </LinearLayout>
+</LinearLayout>

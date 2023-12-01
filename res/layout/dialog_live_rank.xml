@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/dialog_layout" android:background="@drawable/shape_rank_list_bg" android:layout_width="fill_parent" android:layout_height="360.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="46.0dip">
+            <ImageView android:id="@id/iv_station_all_rank" android:layout_width="91.0dip" android:layout_height="27.0dip" android:layout_marginBottom="4.0dip" android:src="@drawable/live_all_station_rank_entrance" android:layout_alignParentBottom="true" android:layout_marginStart="12.0dip" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/syc_dark_h" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:text="@string/live_rank_consumption" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+            <RelativeLayout android:id="@id/rl_cloaking_root" android:background="@drawable/live_cloaking" android:visibility="gone" android:layout_width="103.0dip" android:layout_height="32.0dip" android:layout_marginTop="14.0dip" android:layout_alignParentRight="true">
+                <ImageView android:id="@id/iv_cloaking_help" android:padding="8.0dip" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginRight="7.0dip" android:src="@drawable/live_cloaking_help" android:layout_alignParentRight="true" />
+                <ImageView android:padding="4.0dip" android:layout_width="66.0dip" android:layout_height="32.0dip" android:layout_marginRight="7.0dip" android:src="@drawable/live_cloaking_close" />
+                <ImageView android:id="@id/iv_cloaking_open" android:padding="4.0dip" android:layout_width="66.0dip" android:layout_height="32.0dip" android:layout_marginRight="7.0dip" android:src="@drawable/live_cloaking_open" />
+            </RelativeLayout>
+            <ImageView android:id="@id/iv_common_help" android:padding="8.0dip" android:visibility="gone" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginRight="7.0dip" android:src="@drawable/live_cloaking_help" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <LinearLayout android:id="@id/ll_rank" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/rank_popular_layout_id" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="14.0sp" android:textColor="@color/syc_dark_h" android:gravity="center_horizontal" android:id="@id/rank_popular" android:paddingTop="9.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/live_rank_thisSession" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/rank_left_line" android:background="@drawable/live_rank_list_follow_bg" android:visibility="visible" android:layout_width="20.0dip" android:layout_height="4.0dip" android:layout_marginTop="4.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/rank_money_layout_id" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="14.0sp" android:textColor="@color/syc_dark_j" android:gravity="center_horizontal" android:id="@id/rank_money" android:paddingTop="9.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/monthly_rank" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/rank_right_line" android:background="@drawable/live_rank_list_follow_bg" android:visibility="visible" android:layout_width="20.0dip" android:layout_height="4.0dip" android:layout_marginTop="4.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <com.blued.android.module.common.view.CustomViewPager android:id="@id/dialog_rank_viewpager" android:layout_marginTop="15.0dip" style="@style/layout_fill" />
+</LinearLayout>

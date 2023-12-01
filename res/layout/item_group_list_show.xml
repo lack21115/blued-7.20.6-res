@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/layout_fill_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/ll_group_list_title" android:background="@drawable/group_distance_bg" android:paddingLeft="13.0dip" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" style="@style/layout_fill_wrap">
+        <TextView android:textSize="12.0sp" android:textColor="@color/sara_e" android:id="@id/tv_group_list_title" android:singleLine="true" style="@style/layout_wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:id="@id/ll_group_info" android:background="@drawable/selector_textview_bgcolor" android:paddingLeft="15.0dip" android:paddingTop="18.0dip" android:paddingRight="15.0dip" android:paddingBottom="18.0dip" android:baselineAligned="false" style="@style/layout_fill_wrap">
+            <RelativeLayout style="@style/layout_wrap_content">
+                <ImageView android:id="@id/iv_group_profile_photo" android:layout_width="59.0dip" android:layout_height="59.0dip" />
+                <ImageView android:id="@id/iv_verify_icon" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_alignRight="@id/iv_group_profile_photo" android:layout_alignBottom="@id/iv_group_profile_photo" android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:layout_marginLeft="15.0dip" style="@style/layout_groupinfo">
+                <LinearLayout android:paddingRight="15.0dip" style="@style/layout_fill_wrap">
+                    <TextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_group_lock_icon" android:background="@drawable/shape_msg_group_locked" android:paddingLeft="5.0dip" android:paddingTop="1.5dip" android:paddingRight="5.0dip" android:paddingBottom="1.5dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@string/msg_group_locked" />
+                    <TextView android:textSize="15.0sp" android:textColor="@color/nafio_h" android:ellipsize="end" android:id="@id/tv_group_name_info" android:text="@string/group_name" android:singleLine="true" style="@style/layout_wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:paddingRight="15.0dip" android:layout_marginTop="8.0dip" style="@style/layout_wrap_content">
+                    <TextView android:textSize="13.0sp" android:textColor="@color/nafio_i" android:layout_gravity="center_vertical" android:id="@id/tv_groupSize" android:drawableLeft="@drawable/icon_group_member" android:drawablePadding="3.0dip" style="@style/layout_wrap_content" />
+                    <TextView android:textSize="13.0sp" android:textColor="@color/nafio_i" android:id="@id/tv_group_distance" android:layout_marginLeft="13.0dip" android:singleLine="true" android:drawableLeft="@drawable/icon_group_position" android:drawablePadding="3.0dip" style="@style/layout_groupinfo" />
+                </LinearLayout>
+                <TextView android:textSize="13.0sp" android:textColor="@color/nafio_k" android:ellipsize="end" android:id="@id/tv_group_location_details" android:layout_marginTop="5.0dip" android:singleLine="true" style="@style/layout_wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:id="@id/view_btm_cut" android:background="@color/nafio_o" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="89.0dip" />
+    </LinearLayout>
+</RelativeLayout>

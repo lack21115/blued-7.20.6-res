@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/nafio_b" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" app:center_text="@string/adult_verify" app:hide_right="true" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <FrameLayout android:id="@id/fl_cover" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip">
+                    <ImageView android:id="@id/img_cover" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/cover_adult_verify_start" android:scaleType="fitXY" />
+                    <ImageView android:layout_gravity="bottom|center|right" android:id="@id/img_btm_icon" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_av_success" android:scaleType="fitXY" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/nafio_h" android:layout_gravity="center" android:id="@id/tv_up_id_front" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="47.0dip" android:text="@string/av_upload_id_card_upfront" />
+                </FrameLayout>
+                <TextView android:textSize="18.0sp" android:textColor="@color/nafio_h" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:layout_marginBottom="10.0dip" android:lineSpacingExtra="5.0dip" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/nafio_h" android:id="@id/tv_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:lineSpacingExtra="7.0dip" />
+                <TextView android:textColor="@color/nafio_e" android:id="@id/tv_confirm_to_submit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="30.0dip" android:text="@string/av_confirm_to_submit" />
+                <View android:layout_width="fill_parent" android:layout_height="40.0dip" />
+                <com.blued.android.framework.view.shape.ShapeTextView android:textSize="14.0sp" android:textColor="@color/syc_dark_b" android:gravity="center" android:id="@id/btn_solid" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:layout_marginBottom="10.0dip" android:text="@string/go_to_verify" app:corner_radius="3.0dip" app:solid_color="@color/nafio_a" />
+                <com.blued.android.framework.view.shape.ShapeTextView android:textSize="14.0sp" android:textColor="@color/nafio_a" android:gravity="center" android:id="@id/btn_stroke" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:text="@string/report_submit" app:corner_radius="3.0dip" app:stroke_color="@color/nafio_a" app:stroke_width="1.0px" />
+            </LinearLayout>
+        </ScrollView>
+        <com.blued.android.module.common.view.NoDataAndLoadFailView android:id="@id/nodataview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</LinearLayout>

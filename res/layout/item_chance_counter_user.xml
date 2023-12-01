@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_avatar" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_margin="10.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginStart="10.0dip" app:layout_constraintBottom_toBottomOf="@id/iv_avatar" app:layout_constraintLeft_toRightOf="@id/iv_avatar" app:layout_constraintRight_toLeftOf="@id/btn_to_chat" app:layout_constraintTop_toTopOf="@id/iv_avatar">
+        <TextView android:textSize="14.0sp" android:textColor="@color/syc_dark_h" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/syc_dark_8F8F91" android:id="@id/tv_number_of_times" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginEnd="5.0dip">
+            <HorizontalScrollView android:id="@id/scroll_view" android:scrollbars="none" android:fadingEdgeLength="27.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="26.0dip" android:requiresFadingEdge="horizontal">
+                <LinearLayout android:orientation="horizontal" android:id="@id/ll_tag_view" android:background="@color/syc_dark_b" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </HorizontalScrollView>
+        </LinearLayout>
+    </LinearLayout>
+    <com.blued.android.framework.view.shape.ShapeTextView android:textSize="12.0sp" android:textColor="@color/syc_dark_b" android:id="@id/btn_to_chat" android:paddingLeft="22.0dip" android:paddingTop="3.0dip" android:paddingRight="22.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="21.0dip" android:text="@string/chat_msg" app:corner_radius="22.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" app:solid_color="@color/syc_a" />
+</androidx.constraintlayout.widget.ConstraintLayout>

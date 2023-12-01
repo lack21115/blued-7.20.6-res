@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_content" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/msg_recent_bar_view">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/msg_recent_pic_recycler" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:id="@id/msg_recent_photos_no_pics_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerHorizontal="true">
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/msg_recent_guide_album" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+                <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/msg_recent_photo_no_pics" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/nafio_k" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/msg_no_recent_photo" android:includeFontPadding="false" />
+            </LinearLayout>
+            <ImageView android:id="@id/msg_recent_guide_album" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/msg_recent_photos_no_pics_tip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+    <com.soft.blued.customview.SelectPhotoBarView android:id="@id/msg_recent_bar_view" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/fl_banner" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/asvp_banner_hot_parent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.blued.android.module.common.view.AutoScrollViewPager android:id="@id/asvp_banner_hot_new" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <com.blued.android.module.common.view.LinePageIndicator android:layout_gravity="bottom" android:id="@id/lpi_line" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" app:centered="true" app:gapWidth="3.0dip" app:lineHeight="3.0dip" app:lineWidth="4.0dip" app:roundRadius="1.5dip" app:selectedColor="@color/syc_a" app:selectedLineWidth="14.0dip" app:strokeWidth="3.0dip" app:unselectedColor="#73ffffff" />
+        <ImageView android:id="@id/aariv_banner_new" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="90.0dip" android:scaleType="centerCrop" />
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_group_check" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_cover" android:layout_width="56.0dip" android:layout_height="56.0dip" android:layout_marginLeft="15.0dip" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/syc_h" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="北京的朋友们" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/syc_j" android:ellipsize="end" android:id="@id/tv_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="欢迎社会各界老少爷们儿加入～" android:maxLines="1" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/syc_g" android:id="@id/tv_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="80/50" />
+    </LinearLayout>
+</LinearLayout>

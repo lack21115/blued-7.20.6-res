@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.framework.view.shape.ShapeConstraintLayout android:id="@id/con" android:layout_width="@dimen/dp_290" android:layout_height="0.0dip" app:corner_radius="@dimen/dp_15" app:layout_constraintDimensionRatio="H,290:29" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" app:solid_color="@color/color_300067">
+        <ImageView android:id="@id/iv_select" android:layout_width="@dimen/dp_145" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/color_300067" android:gravity="center" android:id="@id/tv_zxsc" android:layout_width="0.0dip" android:layout_height="0.0dip" android:text="尊享时长" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toLeftOf="@id/tv_gbz" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/color_300067" android:gravity="center" android:id="@id/tv_gbz" android:layout_width="0.0dip" android:layout_height="0.0dip" android:text="告白值" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toRightOf="@id/tv_zxsc" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </com.blued.android.framework.view.shape.ShapeConstraintLayout>
+    <androidx.viewpager.widget.ViewPager android:id="@id/vp" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/con" />
+</androidx.constraintlayout.widget.ConstraintLayout>

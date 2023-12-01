@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_create_group" android:visibility="gone" style="@style/layout_fill"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:textSize="15.0sp" android:textColorHint="@color/nafio_k" android:ellipsize="end" android:id="@id/et_group_name" android:background="@color/nafio_b" android:paddingLeft="13.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip" android:hint="@string/group_name_headline" android:maxLines="1" android:layout_centerInParent="true" />
+    <TextView style="@style/common_cutter_gray_large" />
+    <LinearLayout android:orientation="vertical" android:background="@color/nafio_b" android:paddingLeft="13.0dip" android:paddingRight="13.0dip" android:paddingBottom="13.0dip" android:layout_height="200.0dip" style="@style/layout_fill_wrap">
+        <EditText android:textSize="15.0sp" android:textColor="@color/black" android:textColorHint="@color/sara_e" android:gravity="top" android:id="@id/et_group_description" android:background="@null" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="15.0dip" android:hint="@string/group_intro_desc" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="right" android:layout_marginTop="20.0dip" style="@style/layout_fill_wrap">
+            <TextView android:textSize="13.0sp" android:textColor="@color/nafio_k" android:id="@id/tv_word_count" style="@style/layout_wrap_content" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/nafio_k" android:id="@id/tv_word_total" android:text="@string/group_name_total" style="@style/layout_wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@color/nafio_k" android:id="@id/tv_group_term" android:background="@color/nafio_c" android:paddingLeft="13.0dip" android:paddingTop="7.0dip" android:paddingRight="13.0dip" android:paddingBottom="7.0dip" android:text="@string/group_create_remind" style="@style/layout_wrap_content" />
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/color_f4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/top_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/liner_update" android:background="@color/white" style="@style/layout_fill_wrap">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="13.0dip" android:paddingRight="15.0dip" style="@style/layout_fill_wrap">
+            <ImageView android:id="@id/iv_group_profile_pic1" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="9.0dip" android:layout_marginBottom="9.0dip" android:src="@drawable/group_default_head" />
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_upgrade_info" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="15.0sp" android:textColor="@color/sara_c" android:text="@string/one_hundred" android:singleLine="true" style="@style/layout_wrap_content" />
+                <LinearLayout android:id="@id/up_verify_title_liner" android:layout_marginTop="3.0dip" style="@style/layout_wrap_content">
+                    <TextView android:textSize="13.0sp" android:textColor="@color/sara_d" android:text="@string/up_condition" style="@style/layout_tv_wrap_content" />
+                    <TextView android:textSize="13.0sp" android:textColor="@color/syc_g" android:id="@id/up_verify_title" android:text="@string/up_condition_need_icon_verify" style="@style/layout_tv_wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="12.0sp" android:textColor="@color/sara_f" android:gravity="center" android:id="@id/up_group_verify" android:background="@drawable/shape_common_round_blue_solid_12dp_corner" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="23.0dip" android:text="@string/up_verify" android:singleLine="true" />
+            <LinearLayout android:gravity="center_vertical" android:id="@id/ll_already_upgraded" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_width="14.0dip" android:layout_height="14.0dip" android:src="@drawable/icon_upgraded" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/sara_c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="@string/up_upgraded" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@color/sara_i" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="13.0dip" />
+        <RelativeLayout android:background="@color/white" android:paddingLeft="13.0dip" android:paddingRight="15.0dip" style="@style/layout_fill_wrap">
+            <ImageView android:id="@id/iv_group_profile_pic2" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="9.0dip" android:layout_marginBottom="9.0dip" android:src="@drawable/group_default_head" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="5.0dip" android:layout_toLeftOf="@id/ll_vip_already_upgraded" android:layout_toRightOf="@id/iv_group_profile_pic2" android:layout_centerVertical="true">
+                <LinearLayout style="@style/layout_wrap_content">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/sara_c" android:text="@string/group_upgrade" android:singleLine="true" style="@style/layout_wrap_content" />
+                    <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_vip_icon" android:layout_width="35.0dip" android:layout_height="15.0dip" android:layout_marginLeft="6.0dip" android:src="@drawable/icon_vip" android:scaleType="center" />
+                </LinearLayout>
+                <TextView android:textSize="13.0sp" android:textColor="@color/sara_d" android:layout_marginTop="3.0dip" android:text="@string/vip_svip_people" style="@style/layout_tv_wrap_content" />
+            </LinearLayout>
+            <TextView android:textSize="12.0sp" android:textColor="@color/sara_f" android:gravity="center" android:id="@id/up_vip_group_verify" android:background="@drawable/shape_common_round_blue_solid_12dp_corner" android:visibility="visible" android:layout_width="50.0dip" android:layout_height="23.0dip" android:text="@string/up_upgrade" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_vip_already_upgraded" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <ImageView android:layout_width="14.0dip" android:layout_height="14.0dip" android:src="@drawable/icon_upgraded" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/sara_c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="@string/up_upgraded" />
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:background="@color/sara_i" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="13.0dip" />
+    </LinearLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@color/sara_e" android:paddingLeft="13.0dip" android:paddingRight="15.0dip" android:layout_marginTop="10.0dip" android:text="@string/only_up_not_down" style="@style/layout_wrap_content" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/no_update" android:paddingLeft="20.0dip" android:paddingRight="25.0dip" android:visibility="gone" android:layout_marginTop="30.0dip" android:text="@string/only_up_not_down" style="@style/layout_fill_wrap" />
+</LinearLayout>

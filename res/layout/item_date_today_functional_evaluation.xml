@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_functional_evaluation_layout" android:layout_width="70.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_functional_evaluation_icon" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/icon_date_today_a_normal" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/syc_k" android:id="@id/tv_functional_evaluation_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/date_today_evaluation_a" />
+</LinearLayout>

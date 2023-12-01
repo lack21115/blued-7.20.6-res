@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/rl_root" android:layout_width="wrap_content" android:layout_height="413.0dip">
+            <ImageView android:layout_width="fill_parent" android:layout_height="360.0dip" android:src="@drawable/live_planet_lottery_result_background" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+            <ImageView android:layout_width="375.0dip" android:layout_height="wrap_content" android:src="@drawable/live_planet_lottery_result_title" android:adjustViewBounds="true" android:layout_centerHorizontal="true" />
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="65.0dip" android:layout_alignParentRight="true">
+                <RelativeLayout android:id="@id/rl_close" android:background="@drawable/live_planet_lottery_result_close_background" android:layout_width="63.0dip" android:layout_height="22.0dip" android:alpha="0.0" android:layout_marginEnd="10.0dip">
+                    <ImageView android:id="@id/iv_close" android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@drawable/live_planet_close_square" android:layout_alignParentRight="true" />
+                    <TextView android:textSize="16.0dip" android:textColor="@color/syc_dark_5cf8ff" android:gravity="center" android:id="@id/tv_close" android:layout_width="fill_parent" android:layout_height="fill_parent" android:includeFontPadding="false" android:layout_toLeftOf="@id/iv_close" />
+                </RelativeLayout>
+            </FrameLayout>
+            <TextView android:textSize="14.0dip" android:textColor="@color/syc_dark_5cf8ff" android:id="@id/tv_winning_planet" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="98.0dip" android:includeFontPadding="false" android:layout_centerHorizontal="true" />
+            <RelativeLayout android:id="@id/rl_not_winning_root" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="109.0dip" android:layout_centerHorizontal="true" android:scaleX="0.0" android:scaleY="0.0">
+                <ImageView android:id="@id/iv_not_winning_loop" android:layout_width="268.0dip" android:layout_height="268.0dip" android:src="@drawable/live_planet_probe_result_booth" />
+                <ImageView android:id="@id/iv_winning_planet" android:layout_width="150.0dip" android:layout_height="115.0dip" android:layout_centerInParent="true" />
+                <RelativeLayout android:orientation="horizontal" android:id="@id/ll_winning_planet_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="127.5dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+                    <ImageView android:id="@id/iv_winning_planet_name_img" android:layout_width="wrap_content" android:layout_height="46.0dip" android:adjustViewBounds="true" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/iv_power" android:layout_width="79.0dip" android:layout_height="32.0dip" android:layout_marginLeft="4.0dip" android:layout_toRightOf="@id/iv_winning_planet_name_img" android:layout_centerVertical="true" />
+                    <TextView android:textSize="24.099976dip" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@id/tv_power" android:paddingBottom="2.5dip" android:layout_width="79.0dip" android:layout_height="37.0dip" android:layout_marginLeft="4.0dip" android:includeFontPadding="false" android:layout_toRightOf="@id/iv_winning_planet_name_img" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <TextView android:textSize="14.0dip" android:textColor="@color/syc_dark_5cf8ff" android:id="@id/tv_not_bet" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="190.0dip" android:text="@string/live_planet_losing_lottery" android:includeFontPadding="false" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rl_winning_root" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="116.0dip">
+                <ImageView android:id="@id/iv_winning_planet_lucky" android:layout_width="90.0dip" android:layout_height="69.0dip" android:layout_centerHorizontal="true" android:scaleX="0.0" android:scaleY="0.0" />
+                <RelativeLayout android:orientation="horizontal" android:id="@id/ll_winning_planet_info_lucky" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_centerHorizontal="true" android:scaleX="0.0" android:scaleY="0.0">
+                    <ImageView android:id="@id/iv_winning_planet_name_img_lucky" android:layout_width="wrap_content" android:layout_height="21.0dip" android:adjustViewBounds="true" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/iv_power_lucky" android:layout_width="37.0dip" android:layout_height="15.0dip" android:layout_marginLeft="1.0dip" android:layout_toRightOf="@id/iv_winning_planet_name_img_lucky" android:layout_centerVertical="true" />
+                    <TextView android:textSize="11.0dip" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@id/tv_power_lucky" android:layout_width="37.0dip" android:layout_height="15.0dip" android:layout_marginLeft="1.0dip" android:includeFontPadding="false" android:layout_toRightOf="@id/iv_winning_planet_name_img_lucky" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <ImageView android:id="@id/iv_winning_background" android:layout_width="fill_parent" android:layout_height="215.0dip" android:src="@drawable/live_planet_probe_result_award_background" android:scaleType="fitXY" android:layout_alignParentBottom="true" android:alpha="0.0" android:scaleX="0.0" />
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_winning_planet_info_root_lucky" android:layout_width="fill_parent" android:layout_height="215.0dip" android:layout_alignParentBottom="true" android:alpha="0.0">
+                    <TextView android:textSize="14.0dip" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/tv_winning_planet_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:includeFontPadding="false" />
+                    <TextView android:textSize="14.0dip" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/tv_winning_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:includeFontPadding="false" />
+                    <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center_horizontal" android:id="@id/rv_list" android:layout_width="wrap_content" android:layout_height="110.0dip" android:layout_marginTop="27.5dip" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </FrameLayout>
+</FrameLayout>

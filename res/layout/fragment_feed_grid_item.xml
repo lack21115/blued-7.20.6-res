@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.blued.android.module.common.view.SquareLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/photo_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.blued.android.framework.view.shape.ShapeTextView android:textSize="10.0sp" android:textColor="@color/syc_dark_b" android:gravity="center" android:layout_gravity="bottom|center|right" android:id="@id/stv_long_pic_icon" android:paddingLeft="6.0dip" android:paddingTop="2.0dip" android:paddingRight="6.0dip" android:paddingBottom="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="长图" android:alpha="0.8" app:corner_radius="3.0dip" app:solid_color="@color/syc_a" />
+</com.blued.android.module.common.view.SquareLayout>

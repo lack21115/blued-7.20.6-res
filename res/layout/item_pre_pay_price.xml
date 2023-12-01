@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bg_pre_pay_item" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_marginLeft="3.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="3.0dip" android:layout_marginBottom="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/view_border" android:background="@drawable/bg_pre_pay_item_select" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/syc_dark_FF161616" android:id="@id/tv_beans" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="42" android:drawableLeft="@drawable/icon_live_rank_beans_28_27" android:drawablePadding="5.0dip" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/syc_dark_767676" android:id="@id/tv_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="12元" android:layout_below="@id/tv_beans" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/live_charge_coupon_gift_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_charge_coupon_gift" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+</RelativeLayout>

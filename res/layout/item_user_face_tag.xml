@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/syc_b" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.framework.view.shape.ShapeLinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" app:corner_radius="24.0dip" app:solid_color="@color/syc_x" app:stroke_color="@color/syc_a" app:stroke_width="4.0dip">
+        <ImageView android:id="@id/iv_user_face" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="15.0dip" />
+    </com.blued.android.framework.view.shape.ShapeLinearLayout>
+</LinearLayout>

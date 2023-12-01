@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_nodata_blacklist" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="11.0sp" android:textColor="#ffe1e1e1" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_network_error" android:drawableTop="@drawable/live_rank_list_nodata" android:drawablePadding="10.0dip" />
+    <TextView android:textSize="13.0sp" android:textColor="#ffe1e1e1" android:gravity="center" android:id="@id/tv_live_reload" android:background="@drawable/shape_live_rank_start_bg" android:layout_width="70.0dip" android:layout_height="25.0dip" android:layout_marginTop="13.0dip" android:text="@string/reload" />
+</LinearLayout>

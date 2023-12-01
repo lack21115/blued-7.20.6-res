@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_city_list" android:paddingLeft="@dimen/dp_5" android:paddingRight="@dimen/dp_5" android:layout_width="fill_parent" android:layout_height="@dimen/dp_0" app:layout_constraintBottom_toTopOf="@id/tv_notice" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/sp_13" android:textColor="@color/syc_689BA4" android:id="@id/tv_notice" android:padding="@dimen/dp_20" android:layout_width="@dimen/dp_0" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" />
+    <ImageView android:id="@id/img_empty_view" android:layout_width="@dimen/dp_200" android:layout_height="@dimen/dp_200" android:layout_marginTop="@dimen/dp_68" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/sp_13" android:textColor="@color/syc_117A8B" android:id="@id/tv_empty_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_131" android:text="暂未收集到任何地点" app:layout_constraintLeft_toLeftOf="@id/img_empty_view" app:layout_constraintRight_toRightOf="@id/img_empty_view" app:layout_constraintTop_toTopOf="@id/img_empty_view" />
+</androidx.constraintlayout.widget.ConstraintLayout>

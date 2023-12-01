@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_create_failed" android:background="@color/nafio_b" android:visibility="gone" style="@style/layout_fill"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/nafio_h" android:paddingLeft="30.5dip" android:paddingTop="30.0dip" android:layout_height="wrap_content" android:text="@string/group_create_condition" style="@style/layout_fill_wrap" />
+    <LinearLayout android:layout_gravity="left" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="13.0dip">
+        <RelativeLayout android:layout_width="145.0dip" android:layout_height="185.0dip">
+            <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/bg_group_create_condition" android:scaleType="fitXY" />
+            <ImageView android:id="@id/iv_acount_judge" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginTop="40.0dip" android:layout_centerHorizontal="true" android:contentDescription="@string/app_name" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/nafio_h" android:id="@id/tv_group_created_account" android:layout_width="100.0dip" android:layout_marginTop="25.0dip" android:layout_below="@id/iv_acount_judge" android:layout_centerHorizontal="true" android:textAlignment="center" style="@style/layout_wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="145.0dip" android:layout_height="185.0dip" android:layout_marginLeft="15.0dip">
+            <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/bg_group_create_condition" android:scaleType="fitXY" />
+            <ImageView android:id="@id/iv_group_judge" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginTop="40.0dip" android:layout_centerHorizontal="true" android:contentDescription="@string/app_name" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/nafio_h" android:id="@id/tv_group_created_amount" android:layout_width="100.0dip" android:layout_marginTop="25.0dip" android:layout_below="@id/iv_group_judge" android:layout_centerHorizontal="true" style="@style/layout_wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView android:textSize="13.0sp" android:textColor="@color/nafio_h" android:gravity="center" android:id="@id/tv_verify_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.5dip" android:layout_marginTop="25.0dip" android:text="@string/verify_for_three_groups" android:lineSpacingExtra="4.0dip" />
+    <TextView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <TextView android:id="@id/tv_btn_verify" android:layout_marginBottom="90.0dip" android:text="@string/up_verify" style="@style/large_btn_rnd_corner_with_white_text" />
+</LinearLayout>

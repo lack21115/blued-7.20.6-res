@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/rootView" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/arrow_up" android:visibility="gone" android:layout_width="10.5dip" android:layout_height="5.0dip" android:src="@drawable/icon_guide_arrow_up" android:scaleType="fitXY" />
+    <com.blued.android.framework.view.shape.ShapeLinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/bubble" android:layout_width="wrap_content" android:layout_height="40.0dip" app:corner_radius="8.0dip" app:solid_color="@color/syc_a">
+        <Space android:layout_width="12.0dip" android:layout_height="0.0dip" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/syc_b" android:id="@id/tv_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_pic_pin_guide" />
+        <Space android:layout_width="12.0dip" android:layout_height="0.0dip" />
+    </com.blued.android.framework.view.shape.ShapeLinearLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/arrow_down" android:visibility="gone" android:layout_width="10.5dip" android:layout_height="5.0dip" android:src="@drawable/gesture_anim_tip_arrow" android:scaleType="fitXY" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_view" android:layout_width="341.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/item_recommend1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="12.0dip" layout="@layout/item_recommend_circle" />
+    <include android:id="@id/item_recommend2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="12.0dip" layout="@layout/item_recommend_circle" />
+    <include android:id="@id/item_recommend3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" layout="@layout/item_recommend_circle" />
+</LinearLayout>

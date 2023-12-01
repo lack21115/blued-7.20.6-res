@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root_rank" android:background="@drawable/rank_all_host_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/title_bar" android:layout_width="fill_parent" android:layout_height="@dimen/dp_50" android:layout_below="@id/view_status_bar" layout="@layout/live_rank_bar_title" />
+    <View android:id="@id/view_status_bar" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+    <RelativeLayout android:id="@id/cv_tabbar_root" android:layout_width="fill_parent" android:layout_height="22.0dip" android:layout_marginTop="@dimen/dp_15" android:layout_below="@id/title_bar">
+        <com.blued.android.module.live_china.rank.LiveRankToolBarView android:id="@id/live_rank_tool_bar" android:layout_width="fill_parent" android:layout_height="@dimen/dp_22" android:layout_marginLeft="22.0dip" android:layout_marginRight="22.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/iv_flash_bg" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/dp_322" android:scaleType="fitXY" android:layout_below="@id/title_bar" />
+    <com.blued.android.module.common.view.CustomViewPager android:id="@id/live_rank_viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/cv_tabbar_root" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/ll_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_gravity="center" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:progressBarStyle" />
+    </LinearLayout>
+</RelativeLayout>

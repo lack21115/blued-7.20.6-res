@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="164.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/nearby_chat_room_long_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/iv_notice" android:layout_width="fill_parent" android:layout_height="20.0dip" android:scaleType="centerCrop" />
+        <com.blued.android.framework.view.shape.ShapeLinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="47.0dip" app:bottom_left_radius="24.0dip" app:gradient_end_color="@color/syc_3883FD" app:gradient_start_color="@color/syc_00E0AB" app:top_left_radius="24.0dip">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/nearby_chat_room_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:src="@drawable/nearby_chatroom_icon" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yy_chat_room" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/white" android:ellipsize="marquee" android:id="@id/nearby_chat_room_num" android:focusableInTouchMode="true" android:layout_width="@dimen/dp_100" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/yy_chat_room_talk" android:scrollHorizontally="true" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" android:fontFamily="sans-serif-medium" />
+            </LinearLayout>
+        </com.blued.android.framework.view.shape.ShapeLinearLayout>
+    </LinearLayout>
+    <com.blued.android.framework.view.shape.ShapeLinearLayout android:orientation="vertical" android:id="@id/nearby_chat_room_short_layout" android:paddingLeft="@dimen/dp_4" android:visibility="gone" android:layout_width="@dimen/dp_47" android:layout_height="@dimen/dp_47" android:layout_marginTop="@dimen/dp_20" app:bottom_left_radius="24.0dip" app:gradient_end_color="@color/syc_3883FD" app:gradient_start_color="@color/syc_00E0AB" app:top_left_radius="24.0dip">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:src="@drawable/nearby_chatroom_icon" />
+        <TextView android:textSize="10.0dip" android:textColor="@color/white" android:ellipsize="end" android:layout_gravity="center_horizontal" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/yy_chat_rooms" android:singleLine="true" />
+    </com.blued.android.framework.view.shape.ShapeLinearLayout>
+</RelativeLayout>

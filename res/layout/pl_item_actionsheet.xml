@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/selector_bgcolor_text_button" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <ImageView android:id="@id/img_checked_invisible" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/actionsheet_checked" />
+        <ImageView android:id="@id/img_feed" android:visibility="gone" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="-20.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/icon_feed_super_exposure_post" android:scaleType="fitXY" />
+        <ImageView android:id="@id/img_vip_icon" android:visibility="gone" android:layout_width="35.0dip" android:layout_height="15.0dip" android:layout_marginLeft="-45.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/icon_vip" android:scaleType="fitXY" />
+        <TextView android:textSize="15.0sp" android:id="@id/tv_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="赞过得人" />
+        <ImageView android:id="@id/img_checked" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/actionsheet_checked" />
+    </LinearLayout>
+    <TextView style="@style/common_cutter_gray" />
+</LinearLayout>

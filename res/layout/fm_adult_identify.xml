@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" app:hide_btm_line="true" />
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/icon_adult_identify" android:scaleType="centerCrop" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/syc_h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="30.0dip" android:text="@string/login_adult_hint" />
+    <com.blued.android.framework.view.shape.ShapeTextView android:textSize="16.0sp" android:textColor="@color/syc_dark_b" android:gravity="center" android:id="@id/tv_identify" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="30.0dip" android:layout_marginTop="49.0dip" android:layout_marginRight="30.0dip" android:text="@string/login_adult_identify" app:corner_radius="22.0dip" app:solid_color="@color/syc_a" app:solid_touch_color="@color/syc_m" app:solid_unable_color="@color/syc_a_20" />
+</LinearLayout>

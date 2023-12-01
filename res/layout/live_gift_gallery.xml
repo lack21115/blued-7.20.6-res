@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="fill_parent" android:layout_height="@dimen/dp_150" android:src="@drawable/gift_gallery_list_bg" android:scaleType="fitXY" />
+    <include android:id="@id/header_root" layout="@layout/live_gift_gallery_header" />
+    <View android:background="#ff14151c" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_140" />
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_default" android:background="#ff14151c" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_140">
+        <ImageView android:layout_width="180.0dip" android:layout_height="180.0dip" android:src="@drawable/icon_no_data_common" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/syc_dark_j" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_goods_wall_not_data" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_list" android:clipToPadding="false" android:layout_width="375.0dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_50" android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/cttnt_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@id/fl_progress" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ProgressBar android:layout_gravity="center" android:id="@id/pb_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <com.blued.android.module.common.view.NoDataAndLoadFailView android:id="@id/ll_no_internet" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/fl_tab" android:background="@color/nafio_b" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="44.5dip">
+        <com.blued.android.module.common.view.TabTitleTrackIndicatorWithDot android:layout_gravity="center_vertical" android:id="@id/tttiwd_picture_tabs" android:background="@color/nafio_b" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" app:tabPaddingLeft="20.0dip" app:tabPaddingRight="20.0dip" app:tabTextColor="@color/nafio_i" />
+        <ImageView android:layout_gravity="right" android:id="@id/iv_open_tabs" android:layout_width="47.5dip" android:layout_height="fill_parent" android:src="@drawable/icon_arrow_down_waterfall" android:scaleType="centerCrop" />
+    </LinearLayout>
+    <TextView android:id="@id/tv_divider" android:background="@color/nafio_o" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <com.soft.blued.customview.CustomViewPager android:id="@id/vp_picture_pages" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

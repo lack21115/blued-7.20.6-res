@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#fff2f8ff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/app_loading_top_left" />
+    <ImageView android:layout_gravity="center|right|top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/app_loading_top_right" />
+    <ImageView android:layout_gravity="bottom|center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/app_loading_bottom_left" />
+    <ImageView android:layout_gravity="bottom|center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/app_loading_bottom_right" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toRightOf="parent" />
+    <ImageView android:id="@id/iv_pictrue" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@android:color/transparent" android:scaleType="fitXY" />
+    <ImageView android:layout_gravity="bottom|center|right" android:id="@id/img_ad_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="85.0dip" android:src="@drawable/ad_icon" />
+    <ImageView android:layout_gravity="bottom|center" android:id="@id/iv_baidu_ads" android:background="@drawable/default_baidu_ads" android:visibility="gone" android:layout_marginBottom="25.0dip" android:contentDescription="@string/app_name" style="@style/layout_wrap_content" />
+    <com.blued.android.framework.view.shape.ShapeLinearLayout android:gravity="center" android:layout_gravity="bottom|center" android:orientation="horizontal" android:id="@id/ll_jump" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginLeft="33.0dip" android:layout_marginRight="33.0dip" android:layout_marginBottom="95.0dip" app:corner_radius="30.0dip" app:solid_color="@color/black_50" app:stroke_color="@color/white" app:stroke_width="3.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/splash_text_click" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/ad_jump_icon" />
+    </com.blued.android.framework.view.shape.ShapeLinearLayout>
+    <FrameLayout android:id="@id/fl_intercept" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="65.0dip" android:layout_marginBottom="135.0dip" />
+    <FrameLayout android:id="@id/fl_intercept_top" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="65.0dip" android:layout_marginRight="95.0dip" />
+    <FrameLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:gravity="center" android:layout_gravity="right" android:id="@id/tv_daotime" android:background="@drawable/shape_common_oval_welcome_time" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_margin="10.0dip" />
+        <LinearLayout android:gravity="center|right|top" android:layout_gravity="right" android:orientation="horizontal" android:id="@id/ll_click_skip" android:paddingLeft="72.0dip" android:paddingTop="15.0dip" android:paddingRight="15.0dip" android:paddingBottom="72.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="15.0sp" android:textColor="@color/nafio_h" android:gravity="center_vertical" android:id="@id/tv_click_more" android:background="@drawable/shape_welcome_detail_bg" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text="@string/feed_skip" />
+        </LinearLayout>
+    </FrameLayout>
+    <ImageView android:layout_gravity="bottom" android:id="@id/view_btm_bar" android:padding="18.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/icon_blued_banner_logo" android:scaleType="centerInside" />
+</FrameLayout>

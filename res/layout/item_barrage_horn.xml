@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/horn_layout" android:layout_width="wrap_content" android:layout_height="40.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="40.0dip">
+            <ImageView android:id="@id/left_bg" android:layout_width="40.0dip" android:layout_height="40.0dip" android:scaleType="fitXY" />
+            <ImageView android:id="@id/middle_bg" android:layout_width="0.0dip" android:layout_height="40.0dip" android:scaleType="fitXY" android:layout_weight="1.0" />
+            <ImageView android:id="@id/right_bg" android:layout_width="40.0dip" android:layout_height="40.0dip" android:scaleType="fitXY" />
+        </LinearLayout>
+        <ImageView android:id="@id/horn_icon" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/live_horn_icon_new" android:scaleType="fitXY" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/syc_dark_b" android:layout_gravity="bottom" android:id="@id/horn_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginRight="24.0dip" android:layout_marginBottom="4.0dip" android:singleLine="true" />
+    </FrameLayout>
+</FrameLayout>

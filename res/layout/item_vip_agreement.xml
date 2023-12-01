@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:background="@drawable/selector_bgcolor_text_button" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.soft.blued.customview.LabeledTextView android:id="@id/tv_name" android:layout_width="fill_parent" android:layout_height="wrap_content" app:label_text="@string/vip_help_center" />
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/line" android:background="@color/syc_b" android:layout_width="15.0dip" android:layout_height="1.0dip" />
+        <TextView android:background="@color/syc_o_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/ll_main" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/tv_bg" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/ll_content" android:layout_width="300.0dip" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/shape_live_play_exit_center_bg" android:layout_width="fill_parent" android:layout_height="219.0dip" android:layout_marginTop="40.0dip">
+            <TextView android:textSize="13.0sp" android:textColor="@color/nafio_i" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="55.0dip" android:text="@string/live_play_exit_tip" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/syc_dark_b" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/live_play_exit_follow_btn" android:background="@drawable/live_play_exit_follow_btn_bg" android:layout_width="220.0dip" android:layout_height="44.0dip" android:layout_marginTop="25.0dip" android:text="@string/live_play_exit_follow" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/nafio_k" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/live_play_exit_leave_btn" android:background="@drawable/live_play_exit_leave_btn_bg" android:layout_width="220.0dip" android:layout_height="44.0dip" android:layout_marginTop="10.0dip" android:text="@string/live_play_exit_leave" />
+        </LinearLayout>
+        <FrameLayout android:layout_gravity="center_horizontal" android:background="@drawable/shape_live_exit_header_bg" android:layout_width="80.0dip" android:layout_height="80.0dip">
+            <ImageView android:layout_gravity="center" android:id="@id/live_play_exit_header" android:layout_width="78.0dip" android:layout_height="78.0dip" />
+        </FrameLayout>
+    </FrameLayout>
+</FrameLayout>

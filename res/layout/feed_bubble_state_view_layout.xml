@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.framework.view.shape.ShapeLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/feed_bubble_state_content" android:layout_width="wrap_content" android:layout_height="16.0dip" android:layout_marginLeft="3.0dip" app:corner_radius="8.0dip" app:gradient_angle="LEFT_RIGHT">
+        <ImageView android:id="@id/feed_bubble_state_iv" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="3.0dip" />
+        <TextView android:textSize="10.0sp" android:textColor="#ff766a9f" android:ellipsize="end" android:id="@id/feed_bubble_state_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:layout_marginRight="5.0dip" android:maxLines="1" android:includeFontPadding="false" />
+    </com.blued.android.framework.view.shape.ShapeLinearLayout>
+</FrameLayout>

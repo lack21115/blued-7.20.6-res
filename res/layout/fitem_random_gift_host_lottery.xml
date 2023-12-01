@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.framework.view.shape.ShapeRelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="9.0dip" android:minHeight="50.0dip" android:animateLayoutChanges="true" android:elevation="15.0px" app:corner_radius="8.0dip" app:solid_color="@color/white">
+        <com.blued.android.module.common.view.TabPageIndicatorWithDot android:id="@id/tab_layout" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="12.0dip" app:indicatorHeight="4.0dip" app:indicatorRadius="2.0dip" app:indicatorWidth="10.0dip" app:shouldExpand="true" app:tabTextColor="@color/syc_dark_777777" app:tabTextSelectdSize="15.0sp" app:tabTextSize="15.0sp" app:textChangeColor="@color/syc_dark_222" />
+        <androidx.viewpager.widget.ViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="288.0dip" android:layout_below="@id/tab_layout" />
+    </com.blued.android.framework.view.shape.ShapeRelativeLayout>
+</FrameLayout>

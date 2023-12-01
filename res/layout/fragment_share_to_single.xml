@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.blued.android.framework.activity.keyboardpage.KeyboardListenLinearLayout android:orientation="vertical" android:id="@id/keyboard_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/fl_root_view" android:background="@color/syc_b" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.blued.android.framework.view.pulltorefresh.PullToRefreshRecyclerView android:id="@id/ptrrv_list" app:ptrHeaderBackground="@color/pull_anim_bgcolor" style="@style/PullToRefreshListView" />
+        <View android:id="@id/keyboard_view" android:background="#7f2a2a2e" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="54.0dip" />
+    </FrameLayout>
+</com.blued.android.framework.activity.keyboardpage.KeyboardListenLinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.framework.view.pulltorefresh.RenrenPullToRefreshListView android:id="@id/group_visit_pullrefresh" android:visibility="visible" app:ptrHeaderBackground="@color/pull_anim_bgcolor" style="@style/PullToRefreshListView" />
+    <com.blued.android.module.common.view.NoDataAndLoadFailView android:id="@id/ll_nodata_visited" android:layout_width="fill_parent" android:layout_height="fill_parent" app:no_data_img_res="@drawable/icon_no_data_join" app:no_data_txt_res="@string/no_content_for_now" />
+</FrameLayout>

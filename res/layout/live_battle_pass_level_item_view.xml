@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/fl_root" android:layout_width="77.0dip" android:layout_height="26.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.blued.android.module.live_china.view.battlepass.BattlePassLevelProgressItemView android:layout_gravity="center_vertical" android:id="@id/bppiv" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_marginRight="41.5dip" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/black" android:gravity="center" android:layout_gravity="right" android:id="@id/tv_level" android:layout_width="48.0dip" android:layout_height="26.0dip" />
+</FrameLayout>

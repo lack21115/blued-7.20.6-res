@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.blued.android.framework.view.shape.ShapeFrameLayout android:id="@id/sf_lay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="10.0dip" android:minHeight="40.0dip" android:elevation="15.0px" android:layout_marginHorizontal="16.0dip" android:layout_marginVertical="10.0dip" app:corner_radius="20.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="14.0sp" android:textColor="@color/syc_dark_6a6a70" android:layout_gravity="center" android:id="@id/tv_name" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="123" />
+</com.blued.android.framework.view.shape.ShapeFrameLayout>

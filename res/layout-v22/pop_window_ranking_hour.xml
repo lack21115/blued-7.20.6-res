@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:id="@id/ll_hour_rank" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/rl_star_root" android:layout_width="fill_parent" android:layout_height="111.0dip">
+            <com.blued.android.module.common.view.AutoScrollViewPager android:id="@id/asvp_star_banner" android:layout_width="fill_parent" android:layout_height="111.0dip" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_cursor_root" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="4.0dip" android:layout_marginBottom="4.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+                <androidx.cardview.widget.CardView android:layout_width="10.299988dip" android:layout_height="4.0dip" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:layout_marginHorizontal="2.0dip" app:cardBackgroundColor="@color/black_alpha18" app:cardElevation="0.0px">
+                    <com.blued.android.framework.view.shape.ShapeTextView android:id="@id/view_cursor_top" android:layout_width="fill_parent" android:layout_height="fill_parent" app:corner_radius="2.0dip" app:solid_color="@color/syc_dark_A55EF3" />
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView android:layout_width="10.299988dip" android:layout_height="4.0dip" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:layout_marginHorizontal="2.0dip" app:cardBackgroundColor="@color/black_alpha18" app:cardElevation="0.0px">
+                    <com.blued.android.framework.view.shape.ShapeTextView android:id="@id/view_cursor_potential" android:layout_width="fill_parent" android:layout_height="fill_parent" android:translationX="-10.299988dip" app:corner_radius="2.0dip" app:solid_color="@color/syc_dark_7C64FE" />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/rl_star_root">
+            <com.blued.android.module.live_china.view.PopRankingHourCardView android:id="@id/hour_card_current" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginHorizontal="5.0dip" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

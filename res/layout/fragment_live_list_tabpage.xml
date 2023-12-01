@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/top_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@id/refresh_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="100.0dip">
+                <com.blued.android.module.common.view.NoDataAndLoadFailView android:id="@id/ll_no_internet" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <include android:id="@id/ll_default_empty" layout="@layout/nodata_show_live_list" />
+            </FrameLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/grid_view" style="@style/PullToRefreshListView" />
+        </FrameLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

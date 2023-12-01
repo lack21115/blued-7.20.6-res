@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/ll_gift_ani_root" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+        <include android:id="@id/ll_gift_ani_c1" android:visibility="invisible" layout="@layout/inflater_live_msg_gift_ani" />
+        <View android:layout_width="fill_parent" android:layout_height="2.5dip" />
+        <include android:id="@id/ll_gift_ani_c2" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.5dip" android:layout_marginBottom="48.0dip" layout="@layout/inflater_live_msg_gift_ani" />
+        <View android:id="@id/simple_model_high" android:layout_width="fill_parent" android:layout_height="368.0dip" />
+        <View android:id="@id/simple_model_low" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="38.0dip" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/live_msg_list" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/live_msg_content_pullrefresh" android:paddingLeft="9.0dip" android:fadingEdgeLength="30.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="13.0dip" android:layout_marginRight="143.0dip" android:layout_weight="1.0" android:requiresFadingEdge="vertical" style="@style/ListViewForLiveContent" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0" android:animateLayoutChanges="true">
+            <com.blued.android.framework.view.shape.ShapeLinearLayout android:orientation="horizontal" android:id="@id/fl_back_to_last_live_room" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="31.0dip" android:layout_marginTop="3.0dip" app:bottom_right_radius="17.0dip" app:gradient_center_color="@color/syc_dark_AFC232D0" app:gradient_end_color="@color/syc_dark_3FFF3AAA" app:gradient_start_color="@color/syc_dark_922CEE" app:top_right_radius="17.0dip">
+                <ImageView android:layout_gravity="center_vertical" android:paddingLeft="9.0dip" android:paddingRight="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_live_back_to_previous_live" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/syc_dark_b" android:layout_gravity="center_vertical" android:id="@id/tv_back_to_last_live_room_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="9.0dip" android:text="返回上个直播间" />
+                <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="31.0dip" android:layout_height="31.0dip">
+                    <com.blued.android.module.common.view.CircleProgressView android:id="@id/circle_progress" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+                    <ImageView android:id="@id/iv_last_avatar" android:layout_width="24.0dip" android:layout_height="24.0dip" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </com.blued.android.framework.view.shape.ShapeLinearLayout>
+            <com.blued.android.framework.view.shape.ShapeTextView android:textSize="13.0sp" android:textColor="@color/syc_h" android:gravity="center" android:id="@id/tv_msg_scroll_to_bottom" android:paddingLeft="9.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="34.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="3.0dip" android:text="@string/live_msg_bottom" app:corner_radius="17.0dip" app:solid_color="@color/syc_e6ffffff" />
+            <FrameLayout android:id="@id/live_msg_rv" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/live_msg_hot_word_rv" android:visibility="gone" android:fadingEdge="horizontal" android:fadingEdgeLength="30.0dip" android:layout_width="fill_parent" android:layout_height="28.0dip" android:layout_marginLeft="9.0dip" android:layout_marginTop="7.5dip" android:layout_marginRight="9.0dip" android:overScrollMode="always" />
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/live_msg_emoji_rv" android:visibility="gone" android:fadingEdge="horizontal" android:fadingEdgeLength="30.0dip" android:layout_width="fill_parent" android:layout_height="28.0dip" android:layout_marginLeft="9.0dip" android:layout_marginTop="7.5dip" android:layout_marginRight="9.0dip" android:overScrollMode="always" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

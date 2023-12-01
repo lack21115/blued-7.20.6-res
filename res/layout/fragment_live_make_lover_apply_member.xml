@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@id/smart_members" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/live_make_lover_no_apply_default" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/loading_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_members" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

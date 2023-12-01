@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/ll_main" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/tv_bg" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/ll_content" android:background="@drawable/shape_live_make_friend_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/box_detail_layout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_left_part" android:paddingTop="30.0dip" android:paddingBottom="30.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip">
+                <ImageView android:id="@id/pop_grab_box_image" android:layout_width="70.0dip" android:layout_height="70.0dip" android:scaleType="centerInside" />
+                <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <TextView android:textSize="9.0sp" android:textColor="@color/syc_dark_i" android:id="@id/pop_grab_box_progress_left" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="9.0sp" android:textColor="@color/syc_dark_i" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="/" />
+                    <TextView android:textSize="9.0sp" android:textColor="@color/syc_dark_i" android:id="@id/pop_grab_box_progress_right" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+                    <TextView android:textSize="9.0sp" android:textColor="@color/syc_dark_i" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="累计：" />
+                    <TextView android:textSize="9.0sp" android:textColor="@color/syc_dark_i" android:layout_gravity="center_horizontal" android:id="@id/pop_grab_box_wandou" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_right_part" android:paddingTop="30.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginRight="30.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/syc_dark_h" android:id="@id/pop_grab_box_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/syc_dark_i" android:ellipsize="end" android:id="@id/pop_grab_box_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:maxLines="2" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/pop_grab_box_detail_btn" android:background="@drawable/live_rank_btn" android:layout_width="wrap_content" android:layout_height="23.0dip" android:layout_marginTop="17.0dip">
+                    <TextView android:textSize="11.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:text="@string/live_see_box" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginRight="7.0dip" android:src="@drawable/live_beans_jump_icon" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/ll_loading" android:background="@drawable/shape_usercard_bg" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ProgressBar android:layout_gravity="center" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:progressBarStyle" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

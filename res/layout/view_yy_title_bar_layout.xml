@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/dp_44"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_back_img" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/icon_title_back" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+    <TextView android:textSize="@dimen/sp_18" android:textColor="@color/syc_h" android:gravity="center" android:id="@id/tv_title_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+</RelativeLayout>

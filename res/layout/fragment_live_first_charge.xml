@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/fl_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center" android:id="@id/fl_main" android:layout_width="375.0dip" android:layout_height="732.0dip">
+        <ImageView android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/live_first_charge_bg" />
+        <ImageView android:layout_gravity="right" android:id="@id/iv_close" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginTop="80.0dip" android:layout_marginRight="21.0dip" android:src="@drawable/live_charge_close" />
+        <ImageView android:layout_gravity="right" android:id="@id/iv_qa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="203.0dip" android:layout_marginRight="39.0dip" android:src="@drawable/live_first_charge_qa" />
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="47.0dip" android:layout_marginTop="262.0dip" android:layout_marginRight="47.0dip">
+            <TextView android:textSize="11.0sp" android:textColor="@color/syc_dark_b" android:layout_gravity="center_horizontal" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_first_charge_dialog_title" />
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="220.0dip" android:layout_marginTop="15.0dip">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_no_data" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="33.0dip">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_live_network_error" />
+                    <TextView android:textSize="11.0sp" android:textColor="@color/syc_dark_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_first_charge_no_net" />
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_first_charge" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </FrameLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="right" android:orientation="horizontal" android:id="@id/ll_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:textSize="12.0sp" android:textColor="@color/syc_dark_C2FCEB66" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_first_charge_dialog_more" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_first_charge_arrow_right" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip">
+                <FrameLayout android:id="@id/fl_pay_1" android:background="@drawable/live_first_charge_pay_bg" android:layout_width="130.0dip" android:layout_height="48.0dip">
+                    <TextView android:textSize="9.0sp" android:textColor="@color/syc_dark_FBF56D" android:gravity="center" android:id="@id/tv_l_dou" android:layout_width="30.0dip" android:layout_height="30.0dip" android:rotation="-45.0" />
+                    <TextView android:textSize="20.0sp" android:textColor="@color/syc_dark_A44011" android:layout_gravity="center" android:id="@id/tv_l_beans" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </FrameLayout>
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <FrameLayout android:id="@id/fl_pay_2" android:background="@drawable/live_first_charge_pay_bg" android:layout_width="130.0dip" android:layout_height="48.0dip" android:layout_marginLeft="18.0dip">
+                        <TextView android:textSize="8.0sp" android:textColor="@color/syc_dark_FBF56D" android:gravity="center" android:id="@id/tv_r_dou" android:layout_width="30.0dip" android:layout_height="30.0dip" android:rotation="-45.0" />
+                        <TextView android:textSize="20.0sp" android:textColor="@color/syc_dark_A44011" android:layout_gravity="center" android:id="@id/tv_r_beans" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </FrameLayout>
+                    <ImageView android:layout_gravity="right" android:id="@id/view_hand" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_charge_hand" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center" android:id="@id/rv_success_root" android:visibility="gone" android:layout_width="300.0dip" android:layout_height="480.0dip">
+        <RelativeLayout android:layout_gravity="center" android:id="@id/rv_success" android:clickable="true" android:layout_width="300.0dip" android:layout_height="380.0dip">
+            <View android:id="@id/view_top" android:background="@drawable/live_first_charge_dialog_succeed_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="165.0dip">
+                <TextView android:textSize="22.0sp" android:textStyle="bold" android:textColor="@color/syc_dark_2A2A2E" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_first_charge_dialog_lable" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/syc_dark_6a6a70" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="22.0dip" android:text="@string/live_recharge_dialog_succeed_content" android:layout_centerHorizontal="true" />
+                <com.blued.android.framework.view.shape.ShapeTextView android:textSize="14.0sp" android:textColor="@color/syc_dark_b" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_roger" android:layout_width="220.0dip" android:layout_height="44.0dip" android:layout_marginTop="48.0dip" android:text="@string/live_first_charge_dialog_ok" app:corner_radius="44.0dip" app:gradient_end_color="@color/syc_dark_922CEE" app:gradient_start_color="@color/syc_dark_ff3aaa" />
+            </LinearLayout>
+            <ImageView android:id="@id/iv_recharge_succeed_close" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginTop="115.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/live_first_charge_dialog_close" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </FrameLayout>
+    <com.blued.android.framework.view.shape.ShapeLinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@id/ll_qa" android:visibility="gone" android:layout_width="300.0dip" android:layout_height="251.0dip" app:corner_radius="6.0dip" app:solid_color="@color/syc_dark_b">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="30.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="30.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="14.0sp" android:textColor="@color/syc_dark_2A2A2E" android:id="@id/tv_rule" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_first_charge_tips" />
+        </ScrollView>
+        <TextView android:background="@color/syc_dark_F3F5F7" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/syc_dark_3699FF" android:gravity="center" android:id="@id/tv_qa_ok" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/live_first_charge_dialog_ok" />
+    </com.blued.android.framework.view.shape.ShapeLinearLayout>
+    <ImageView android:layout_gravity="bottom|center|right" android:id="@id/view_gift_bag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/live_gift_default" android:alpha="0.0" />
+    <RelativeLayout android:id="@id/rl_gift_anim_root" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

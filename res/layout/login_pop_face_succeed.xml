@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.framework.view.shape.ShapeRelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:corner_radius="6.0dip" app:solid_color="@color/syc_b">
+        <TextView android:textSize="16.0sp" android:textColor="@color/syc_h" android:id="@id/tv_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="70.0dip" android:layout_marginTop="40.0dip" android:layout_marginRight="70.0dip" android:text="@string/login_adult_identify_succeed" android:layout_centerHorizontal="true" />
+        <com.blued.android.framework.view.shape.ShapeTextView android:textSize="16.0sp" android:textColor="@color/syc_dark_b" android:gravity="center" android:id="@id/tv_identify" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="40.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="40.0dip" android:layout_marginBottom="20.0dip" android:text="@string/login_adult_enter_blued" android:layout_below="@id/tv_hint" app:corner_radius="22.0dip" app:solid_color="@color/syc_a" app:solid_touch_color="@color/syc_m" app:solid_unable_color="@color/syc_a_20" />
+    </com.blued.android.framework.view.shape.ShapeRelativeLayout>
+</FrameLayout>

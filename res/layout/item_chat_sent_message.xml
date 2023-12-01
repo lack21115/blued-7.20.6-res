@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/msg_item_root" android:paddingTop="@dimen/chat_two_item_root_top" android:paddingBottom="@dimen/chat_two_item_root_bottom" style="@style/layout_fill_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/tv_date" style="@style/msg_time_style" />
+    <LinearLayout android:layout_gravity="right" android:id="@id/chat_content_root" android:layout_marginLeft="@dimen/chat_two_item_right_qp_marginleft" android:layout_marginRight="@dimen/chat_two_item_left_right_root" style="@style/layout_wrap_content">
+        <ImageView android:id="@id/chat_sending_img" android:visibility="invisible" android:layout_marginRight="0.0dip" android:contentDescription="@string/app_name" style="@style/chat_send_state_sending" />
+        <ImageView android:id="@id/chat_state_error" android:visibility="gone" android:contentDescription="@string/app_name" style="@style/chat_send_state_error" />
+        <RelativeLayout android:id="@id/chat_content_in" android:layout_marginRight="0.0dip" style="@style/chat_chat_content_in_style">
+            <RelativeLayout android:id="@id/msg_content_translate_root" android:background="@drawable/bubble_right" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_marginRight="2.0dip" android:layout_centerInParent="true" style="@style/chat_content_outroot_style">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/ll_quote" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+                        <View android:layout_gravity="center_vertical" android:background="@color/syc_b" android:layout_width="1.0dip" android:layout_height="14.0dip" android:layout_marginRight="3.0dip" />
+                        <TextView android:textSize="12.0sp" android:textColor="@color/syc_b" android:ellipsize="end" android:id="@id/tv_quote" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:maxLines="1" />
+                    </LinearLayout>
+                    <com.soft.blued.customview.selectabletextview.SelectFrameLayout android:id="@id/select_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.soft.blued.customview.adapttextview.FontAdjustTextView android:textColor="@color/white" android:textColorLink="@color/syc_dark_b" android:id="@id/tv_message" style="@style/chat_content_style" />
+                    </com.soft.blued.customview.selectabletextview.SelectFrameLayout>
+                    <TextView android:textSize="10.0sp" android:id="@id/translate_line" android:background="@color/syc_i" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="@string/biao_msg_content_translate_done" />
+                    <com.soft.blued.customview.selectabletextview.SelectFrameLayout android:id="@id/select_layout2" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.soft.blued.customview.adapttextview.FontAdjustTextView android:textColor="@color/white" android:id="@id/tv_message_translate" android:visibility="gone" style="@style/chat_content_style" />
+                    </com.soft.blued.customview.selectabletextview.SelectFrameLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <include android:id="@id/msg_include_avatar_right" android:layout_width="@dimen/chat_two_item_avatar_size" android:layout_height="@dimen/chat_two_item_avatar_size" android:layout_marginTop="@dimen/msg_item_header_margin_top" layout="@layout/msg_include_avatar_right" />
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="right" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginTop="-8.0dip" android:layout_marginRight="65.0dip">
+        <include android:id="@id/msg_content_translate_status_root" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintRight_toRightOf="parent" layout="@layout/msg_include_text_content_translate_status" />
+        <TextView android:id="@id/tv_state" android:visibility="gone" android:layout_marginRight="0.0dip" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/msg_content_translate_status_root" style="@style/chat_send_state_style" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_msg_bottom_tips_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

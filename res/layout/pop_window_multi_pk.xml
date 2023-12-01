@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/bg_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.blued.android.framework.view.shape.ShapeLinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/ll_content" android:layout_width="fill_parent" android:layout_height="480.0dip" app:solid_color="@color/syc_dark_b" app:top_left_radius="16.0dip" app:top_right_radius="16.0dip">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <LinearLayout android:orientation="horizontal" android:padding="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <TextView android:textSize="18.0sp" android:textColor="@color/syc_dark_222222" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="110.0dip" android:maxLines="1" />
+                <TextView android:textSize="18.0sp" android:textColor="@color/syc_dark_222222" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_multi_pking_title" android:maxLines="1" />
+            </LinearLayout>
+            <ImageView android:id="@id/iv_help" android:paddingLeft="16.0dip" android:paddingTop="6.0dip" android:paddingRight="16.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_multi_pk_rank_qa" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include layout="@layout/pop_window_pk_list" />
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/ll_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ProgressBar android:layout_gravity="center" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:progressBarStyle" />
+            </LinearLayout>
+        </FrameLayout>
+    </com.blued.android.framework.view.shape.ShapeLinearLayout>
+</FrameLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/nafio_b" style="@style/layout_fill_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_filter" android:background="@drawable/selector_visitor_bgcolor" android:layout_width="fill_parent" android:layout_height="54.0dip">
+        <ImageView android:id="@id/iv_filter_mode" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/icon_nearby_filter_off" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/syc_h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/filter" />
+        <com.blued.android.framework.view.shape.ShapeTextView android:id="@id/iv_filter_dot" android:visibility="gone" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginLeft="2.0dip" android:layout_marginBottom="5.0dip" app:corner_radius="8.0dip" app:solid_color="@color/syc_g" />
+        <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/syc_j" android:id="@id/tv_filter_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+        <ImageView android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/icon_common_right_arrow_new" android:scaleType="fitXY" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_map" android:background="@drawable/selector_visitor_bgcolor" android:layout_width="fill_parent" android:layout_height="54.0dip">
+        <ImageView android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/icon_nearby_map_finder" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/syc_h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/map_find" />
+        <com.blued.android.framework.view.shape.ShapeTextView android:id="@id/iv_map_dot" android:visibility="gone" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginLeft="2.0dip" android:layout_marginBottom="5.0dip" app:corner_radius="8.0dip" app:solid_color="@color/syc_g" />
+        <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/syc_j" android:id="@id/avatar_is_opening" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+        <ImageView android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/icon_common_right_arrow_new" android:scaleType="fitXY" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_search" android:background="@drawable/selector_visitor_bgcolor" android:layout_width="fill_parent" android:layout_height="54.0dip">
+        <ImageView android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/icon_nearby_search_user" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/syc_h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/biao_b_search" />
+        <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <ImageView android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/icon_common_right_arrow_new" android:scaleType="fitXY" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_custom_invisible" android:background="@drawable/selector_visitor_bgcolor" android:layout_width="fill_parent" android:layout_height="54.0dip">
+        <ImageView android:id="@id/iv_custom_invisible" android:layout_width="wrap_content" android:layout_height="24.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/icon_nearby_custom_invisible" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/syc_h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/custom_invisible" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:src="@drawable/icon_svip" android:layout_centerVertical="true" />
+        <com.blued.android.framework.view.shape.ShapeTextView android:id="@id/iv_custom_invisible_dot" android:visibility="gone" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginLeft="2.0dip" android:layout_marginBottom="5.0dip" app:corner_radius="8.0dip" app:solid_color="@color/syc_g" />
+        <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/syc_j" android:id="@id/tv_custom_invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+        <ImageView android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/icon_common_right_arrow_new" android:scaleType="fitXY" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_list" android:background="@drawable/selector_visitor_bgcolor" android:layout_width="fill_parent" android:layout_height="54.0dip">
+        <ImageView android:id="@id/iv_list_mode" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/icon_nearby_list_mode" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/syc_h" android:id="@id/tv_list_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/list_model" />
+        <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_splash" android:background="@drawable/selector_visitor_bgcolor" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="54.0dip">
+        <ImageView android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/icon_nearby_list_mode" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/syc_h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="开机图广告自动化测试" />
+        <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <ImageView android:id="@id/iv_splash_toggle" android:background="@drawable/selector_common_togglebutton" android:layout_width="40.0dip" android:layout_height="23.0dip" android:layout_marginRight="10.0dip" android:textOn="" android:textOff="" style="@style/toggle_button" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_splash_home" android:background="@drawable/selector_visitor_bgcolor" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="54.0dip">
+        <ImageView android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/icon_nearby_list_mode" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/syc_h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="首页广告Banner1 2 自动化测试" />
+        <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <ImageView android:id="@id/iv_splash_toggle_home" android:background="@drawable/selector_common_togglebutton" android:layout_width="40.0dip" android:layout_height="23.0dip" android:layout_marginRight="10.0dip" android:textOn="" android:textOff="" style="@style/toggle_button" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_uetool" android:background="@drawable/selector_visitor_bgcolor" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="54.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="@color/syc_h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="UETool开关" />
+        <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <ImageView android:id="@id/iv_uetool_toggle" android:background="@drawable/selector_common_togglebutton" android:layout_width="40.0dip" android:layout_height="23.0dip" android:layout_marginRight="10.0dip" android:textOn="" android:textOff="" style="@style/toggle_button" />
+    </LinearLayout>
+</LinearLayout>

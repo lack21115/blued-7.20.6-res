@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.blued.android.framework.view.shape.ShapeRelativeLayout android:layout_width="fill_parent" android:layout_height="320.0dip" app:solid_color="@color/white" app:top_left_radius="12.0dip" app:top_right_radius="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/fl_top_bar" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/syc_dark_222222" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_virtual_image_cart" android:layout_marginStart="15.0dip" />
+        <FrameLayout android:layout_gravity="end" android:id="@id/fl_close" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginEnd="7.0dip">
+            <ImageView android:layout_gravity="center" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/icon_virtual_image_cart_close" />
+        </FrameLayout>
+    </FrameLayout>
+    <RelativeLayout android:id="@id/fl_bottom_bar" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_alignParentBottom="true">
+        <View android:background="@color/syc_dark_e5e5e5" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="15.0dip">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="@color/syc_dark_222222" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_virtual_image_total" />
+                <ImageView android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/icon_gold_bean" android:layout_marginEnd="4.0dip" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/black" android:gravity="center_horizontal" android:id="@id/tv_total_price" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView android:textSize="12.0sp" android:textColor="@color/syc_999999" android:id="@id/tv_total_good_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" />
+        </LinearLayout>
+        <com.blued.android.framework.view.shape.ShapeTextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/stv_pay" android:layout_width="120.0dip" android:layout_height="40.0dip" android:text="@string/user_virtual_image_go_to_pay" android:layout_centerVertical="true" android:layout_marginEnd="15.0dip" android:layout_alignParentEnd="true" app:corner_radius="20.0dip" app:solid_color="@color/syc_dark_222222" />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_good_list" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/fl_bottom_bar" android:layout_below="@id/fl_top_bar" />
+</com.blued.android.framework.view.shape.ShapeRelativeLayout>

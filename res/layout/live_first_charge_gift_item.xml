@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip">
+        <ImageView android:layout_width="89.0dip" android:layout_height="102.0dip" android:src="@drawable/live_first_charge_item_bg" />
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_avatar" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="8.5dip" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/syc_dark_6C28A6" android:ellipsize="end" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/tv_name" android:layout_width="77.0dip" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:maxLines="1" />
+    </FrameLayout>
+    <TextView android:textSize="10.0sp" android:textColor="@color/syc_dark_D12F00" android:gravity="center" android:id="@id/iv_count" android:background="@drawable/live_first_charge_lable" android:layout_width="31.0dip" android:layout_height="17.0dip" />
+</FrameLayout>

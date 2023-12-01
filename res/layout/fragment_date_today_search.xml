@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@drawable/shape_date_today_search" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="190.0dip">
+        <FrameLayout android:layout_width="280.0dip" android:layout_height="190.0dip" android:layout_marginStart="-60.0dip">
+            <View android:id="@id/bg_top_anim11" android:layout_width="140.0dip" android:layout_height="50.0dip" />
+            <View android:layout_gravity="end" android:id="@id/bg_top_anim12" android:layout_width="140.0dip" android:layout_height="50.0dip" />
+            <View android:layout_gravity="bottom" android:id="@id/bg_bottom_anim1" android:layout_width="280.0dip" android:layout_height="140.0dip" />
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="280.0dip" android:layout_height="190.0dip">
+            <View android:id="@id/bg_top_anim21" android:layout_width="140.0dip" android:layout_height="50.0dip" />
+            <View android:layout_gravity="end" android:id="@id/bg_top_anim22" android:layout_width="140.0dip" android:layout_height="50.0dip" />
+            <View android:layout_gravity="bottom" android:id="@id/bg_bottom_anim2" android:layout_width="280.0dip" android:layout_height="140.0dip" />
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="end" android:layout_width="280.0dip" android:layout_height="190.0dip" android:layout_marginEnd="-60.0dip">
+            <View android:id="@id/bg_top_anim31" android:layout_width="140.0dip" android:layout_height="50.0dip" />
+            <View android:layout_gravity="end" android:id="@id/bg_top_anim32" android:layout_width="140.0dip" android:layout_height="50.0dip" />
+            <View android:layout_gravity="bottom" android:id="@id/bg_bottom_anim3" android:layout_width="280.0dip" android:layout_height="140.0dip" android:layout_marginEnd="-60.0dip" />
+        </FrameLayout>
+    </FrameLayout>
+    <ImageView android:layout_width="95.0dip" android:layout_height="32.0dip" android:layout_marginTop="70.0dip" android:src="@drawable/icon_date_today_search_title" android:layout_marginStart="20.0dip" />
+    <FrameLayout android:layout_gravity="end" android:id="@id/fl_modify_purpose" android:layout_width="wrap_content" android:layout_height="29.0dip" android:layout_marginTop="70.0dip" android:layout_marginEnd="15.0dip">
+        <TextView android:textSize="12.0sp" android:textColor="@color/syc_b" android:gravity="center" android:layout_gravity="bottom" android:background="@drawable/shape_date_today_search_modify_purpose" android:layout_width="fill_parent" android:layout_height="27.0dip" android:text="@string/date_today_purpose" android:paddingStart="26.0dip" android:paddingEnd="13.0dip" android:layout_marginStart="5.0dip" />
+        <ImageView android:layout_width="29.0dip" android:layout_height="29.0dip" android:src="@drawable/icon_date_today_search_edit_purpose" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/fl_search" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="16.0sp" android:textColor="@color/syc_h" android:layout_gravity="center_horizontal" android:id="@id/tv_search_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="470.0dip" android:text="@string/date_today_searching1" />
+        <com.blued.android.module.svgaplayer.SVGAImageView android:id="@id/svga_match_small_heart_anim" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.blued.android.module.svgaplayer.SVGAImageView android:id="@id/svga_match_heart_anim" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <FrameLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="306.0dip" android:layout_height="126.0dip" android:layout_marginTop="300.0dip">
+            <FrameLayout android:id="@id/fl_header_self" android:background="@drawable/shape_date_today_search_header" android:layout_width="126.0dip" android:layout_height="126.0dip">
+                <ImageView android:layout_gravity="center" android:id="@id/iv_header_self" android:layout_width="110.0dip" android:layout_height="110.0dip" />
+            </FrameLayout>
+            <FrameLayout android:layout_gravity="end" android:id="@id/fl_header_him" android:background="@drawable/shape_date_today_search_header" android:layout_width="126.0dip" android:layout_height="126.0dip">
+                <ImageView android:layout_gravity="center" android:id="@id/iv_header_him" android:layout_width="110.0dip" android:layout_height="110.0dip" />
+            </FrameLayout>
+            <com.blued.android.module.svgaplayer.SVGAImageView android:layout_gravity="center" android:id="@id/svga_search_anim" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginStart="2.0dip" android:layout_marginEnd="2.0dip" />
+            <ImageView android:layout_gravity="center" android:id="@id/iv_match_success" android:visibility="gone" android:layout_width="43.0dip" android:layout_height="43.0dip" android:src="@drawable/icon_date_today" />
+        </FrameLayout>
+        <TextView android:textSize="16.0sp" android:textColor="@color/syc_h" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/tv_cancel" android:background="@drawable/shape_date_today_cancel" android:layout_width="270.0dip" android:layout_height="44.0dip" android:layout_marginBottom="40.0dip" android:text="@string/cancel" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/fl_search_failure" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="222.0dip">
+        <ImageView android:layout_width="240.0dip" android:layout_height="240.0dip" android:src="@drawable/icon_date_today_search_failure" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/syc_h" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/date_today_search_failure" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/syc_b" android:gravity="center" android:id="@id/tv_try_later" android:background="@drawable/shape_date_today_search_failure" android:layout_width="190.0dip" android:layout_height="44.0dip" android:layout_marginTop="24.0dip" android:text="@string/date_today_try_later" />
+    </LinearLayout>
+</FrameLayout>

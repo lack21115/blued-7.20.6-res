@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/conver_view" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="@drawable/shape_raduis_topleft_topright_12_151515" android:layout_width="fill_parent" android:layout_height="@dimen/dp_500">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/dp_44">
+            <com.blued.android.module.common.view.TabPageIndicatorWithDot android:id="@id/tablayout" android:paddingLeft="@dimen/dp_4" android:paddingTop="@dimen/dp_9" android:paddingRight="@dimen/dp_4" android:layout_width="wrap_content" android:layout_height="@dimen/dp_44" android:layout_marginBottom="@dimen/dp_3" android:layout_centerHorizontal="true" android:paddingHorizontal="@dimen/dp_4" app:indicatorRadius="@dimen/dp_10" app:indicatorWidth="@dimen/dp_8" app:shouldExpand="false" />
+            <ImageView android:id="@id/iv_pk_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_12" android:src="@drawable/yy_icn_pk_more" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <androidx.viewpager.widget.ViewPager android:id="@id/pk_category" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</FrameLayout>

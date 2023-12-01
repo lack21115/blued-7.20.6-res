@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/msg_item_root" android:paddingTop="@dimen/chat_two_item_root_top" android:paddingBottom="@dimen/chat_two_item_root_bottom" style="@style/layout_fill_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.framework.view.shape.ShapeLinearLayout android:id="@id/ll_privilege_source_tips" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="6.0dip" android:paddingEnd="6.0dip" app:corner_radius="5.0dip" app:stroke_color="@color/syc_o" app:stroke_width="1.0px">
+        <TextView android:textSize="13.0sp" android:textColor="@color/syc_j" android:id="@id/tv_privilege_source_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_super_call_tips" />
+    </com.blued.android.framework.view.shape.ShapeLinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root_layout" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/content_layout" android:layout_width="217.0dip" android:layout_height="102.5dip">
+        <ImageView android:id="@id/bg_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/syc_h" android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="27.0dip" android:layout_marginRight="27.0dip" android:layout_marginBottom="24.5dip" android:text="@string/feed_mine_visit_tips_text" android:includeFontPadding="false" />
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/arrow_up" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.5dip" android:src="@drawable/feed_mine_visit_tips_arrow_up" />
+        <ImageView android:layout_gravity="bottom|center" android:id="@id/arrow_down" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="7.5dip" android:src="@drawable/feed_mine_visit_tips_arrow_down" />
+    </FrameLayout>
+</FrameLayout>

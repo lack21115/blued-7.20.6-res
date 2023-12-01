@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_fans" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="12.0sp" android:textColor="@color/syc_dark_k" android:gravity="center" android:id="@id/tv_live_rank" android:layout_width="25.0dip" android:layout_height="35.0dip" />
+    <ImageView android:layout_gravity="center" android:id="@id/live_end_user_pic" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_live_rank_name" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0sp" android:textColor="@color/syc_dark_0a0a0a" android:ellipsize="end" android:id="@id/live_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="115.0dip" android:singleLine="true" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/anythink_color_999999" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="115.0dip" android:text=" 代 " android:singleLine="true" android:layout_marginStart="6.0dip" android:layout_marginEnd="6.0dip" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/syc_dark_0a0a0a" android:ellipsize="end" android:id="@id/live_user_behalf_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="115.0dip" android:singleLine="true" />
+        </LinearLayout>
+        <TextView android:textSize="12.0sp" android:textColor="#fff5a300" android:id="@id/live_user_score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="6,578" android:maxLines="1" android:drawablePadding="6.0dip" android:drawableStart="@drawable/img_live_behalf_bean" />
+    </LinearLayout>
+</LinearLayout>

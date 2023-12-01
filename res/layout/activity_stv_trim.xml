@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/background_dark" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <VideoView android:id="@id/stv_trim_preview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/layoutTop" android:tag="@string/title_tag_for_fit_status_bar" android:background="@drawable/stv_title_bg" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/btnBack" android:layout_centerVertical="true" style="@style/stv_title_left_back_style" />
+    </RelativeLayout>
+    <com.blued.android.module.shortvideo.view.TrimNewBottomView android:id="@id/stv_trim_bottom_v" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>

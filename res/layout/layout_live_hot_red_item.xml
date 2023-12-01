@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/live_recommend_user_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/aariv_cover_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" app:cardCornerRadius="6.0dip" app:cardElevation="0.0px" app:cardUseCompatPadding="false">
+        <com.blued.android.module.live_china.view.LiveRecommendHotAnchorView android:id="@id/live_recommend_hot_anchor" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="left" android:layout_gravity="bottom" android:id="@id/tv_live_recommend_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:text="当红主播" android:layout_alignParentBottom="true" android:layout_marginStart="8.0dip" />
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

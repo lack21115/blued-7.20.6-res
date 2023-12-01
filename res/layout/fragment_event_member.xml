@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/top_title" android:layout_width="fill_parent" android:layout_height="wrap_content" app:center_text="@string/event_signuped" />
+    <FrameLayout android:id="@id/fl_tab_title" android:background="@color/syc_b" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <com.blued.android.framework.view.shape.ShapeTextView android:layout_gravity="center" android:id="@id/shape_tab" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" app:corner_radius="12.0dip" app:solid_color="@color/syc_x" />
+        <com.blued.android.module.common.view.PageTabLayout android:layout_gravity="center" android:id="@id/tab_layout" android:layout_width="fill_parent" android:layout_height="26.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" app:tabBackground="@null" app:tabIndicatorColor="@color/syc_b" app:tabIndicatorHeight="26.0dip" app:tabIndicatorRadius="10.0dip" app:tabModePage="fixed" app:tabSelectedTextColor="@color/syc_h" app:tabTextAppearance="@style/TabLayoutTextStyle" app:tabTextColor="@color/syc_h" app:tabTextLines="1" />
+    </FrameLayout>
+    <androidx.viewpager.widget.ViewPager android:id="@id/base_view_pager_id" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.blued.android.framework.activity.keyboardpage.KeyboardListenLinearLayout android:orientation="vertical" android:id="@id/keyboardRelativeLayout" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/top_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginRight="30.0dip">
+                <LinearLayout android:gravity="center_vertical" android:id="@id/ll_avatar" android:focusable="true" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginLeft="30.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/syc_h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_avatar" />
+                    <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="60.0dip" android:layout_height="60.0dip">
+                        <ImageView android:id="@id/header_view" android:background="@drawable/user_bg_round" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                        <ImageView android:layout_width="17.0dip" android:layout_height="17.0dip" android:src="@drawable/re_head_icon" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:id="@id/ll_name" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="30.0dip" android:layout_marginTop="20.0dip" android:layout_marginBottom="15.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/syc_h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/biao_v1_lr_info_nickname" />
+                    <com.blued.android.framework.view.shape.ShapeFrameLayout android:id="@id/sfl_nick" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" app:corner_radius="18.0dip" app:solid_color="@color/syc_x">
+                        <com.blued.android.module.common.view.ClearEditText android:textSize="16.0sp" android:textColor="@color/syc_h" android:textColorHint="@color/syc_i" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/et_nickname" android:background="@null" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/error_nickname_over_length" android:singleLine="true" />
+                    </com.blued.android.framework.view.shape.ShapeFrameLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:id="@id/ll_birthday" android:focusable="true" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="30.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/syc_h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/biao_new_register_birthday" />
+                    <TextView android:textSize="15.0sp" android:textColor="@color/syc_h" android:gravity="center|right" android:id="@id/tv_birthday" android:focusable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                    <ImageView android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/icon_common_right_arrow_new" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:id="@id/ll_height_weight" android:focusable="true" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="30.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/syc_h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/biao_v1_lr_info_height_weight" />
+                    <TextView android:textSize="15.0sp" android:textColor="@color/syc_h" android:gravity="center|right" android:id="@id/tv_height_weight" android:focusable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                    <ImageView android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/icon_common_right_arrow_new" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="15.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/syc_h" android:id="@id/textView9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/choose_unit_system" />
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                        <TextView android:textSize="14.0sp" android:textColor="@color/syc_b" android:gravity="center" android:id="@id/tv_cm" android:background="@drawable/user_job_text_select_bg" android:padding="0.0dip" android:focusable="true" android:layout_width="71.0dip" android:layout_height="26.0dip" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/syc_h" android:gravity="center" android:id="@id/tv_feet" android:background="@drawable/login_user_job_text_bg" android:focusable="true" android:layout_width="71.0dip" android:layout_height="26.0dip" android:layout_marginLeft="10.0dip" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_role" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/syc_h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:text="@string/biao_v1_lr_info_role" />
+                    <com.blued.android.module.common.view.FlowLayout android:id="@id/role_flow_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" />
+                    <LinearLayout android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                        <TextView android:textSize="14.0sp" android:textColor="@color/syc_h" android:gravity="center" android:id="@id/tv_role_1" android:background="@drawable/selector_common_round_solid" android:focusable="true" android:clickable="true" android:layout_width="71.0dip" android:layout_height="26.0dip" android:text="@string/role_1" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/syc_h" android:gravity="center" android:id="@id/tv_role_075" android:background="@drawable/selector_common_round_solid" android:focusable="true" android:clickable="true" android:layout_width="71.0dip" android:layout_height="26.0dip" android:layout_marginLeft="10.0dip" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/syc_h" android:gravity="center" android:id="@id/tv_role_05" android:background="@drawable/selector_common_round_solid" android:focusable="true" android:clickable="true" android:layout_width="71.0dip" android:layout_height="26.0dip" android:layout_marginLeft="10.0dip" android:text="@string/role_05" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/syc_h" android:gravity="center" android:id="@id/tv_role_025" android:background="@drawable/selector_common_round_solid" android:focusable="true" android:clickable="true" android:layout_width="71.0dip" android:layout_height="26.0dip" android:layout_marginLeft="10.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                        <TextView android:textSize="14.0sp" android:textColor="@color/syc_h" android:gravity="center" android:id="@id/tv_role_0" android:background="@drawable/selector_common_round_solid" android:focusable="true" android:clickable="true" android:layout_width="71.0dip" android:layout_height="26.0dip" android:text="@string/role_0" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/syc_h" android:gravity="center" android:id="@id/tv_role_others" android:background="@drawable/selector_common_round_solid" android:focusable="true" android:clickable="true" android:layout_width="71.0dip" android:layout_height="26.0dip" android:layout_marginLeft="10.0dip" android:text="@string/register_info_role_other" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:id="@id/ll_health" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="30.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/syc_h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/health_information" />
+                    <TextView android:textSize="15.0sp" android:textColor="@color/syc_h" android:gravity="center|right" android:id="@id/tv_health" android:focusable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                    <ImageView android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/icon_common_right_arrow_new" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="15.0sp" android:textColor="@color/sara_e" android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="10.0dip" android:text="@string/register_info_notice" />
+            <com.blued.android.framework.view.shape.ShapeTextView android:textSize="16.0sp" android:textColor="@color/syc_dark_b" android:gravity="center" android:id="@id/tv_confirm" android:focusable="true" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="30.0dip" android:layout_marginTop="40.0dip" android:layout_marginRight="30.0dip" android:text="@string/biao_v1_lr_finish" app:corner_radius="18.0dip" app:solid_color="@color/syc_a" app:solid_touch_color="@color/syc_m" app:solid_unable_color="@color/syc_a_20" />
+        </LinearLayout>
+    </ScrollView>
+</com.blued.android.framework.activity.keyboardpage.KeyboardListenLinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/line" android:background="@color/syc_o" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <FrameLayout android:id="@id/tablayout_root" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.blued.android.module.common.view.PageTabLayout android:layout_gravity="center_horizontal" android:id="@id/tablayout" android:paddingLeft="2.25dip" android:paddingRight="2.25dip" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="41.0dip" android:paddingHorizontal="2.25dip" app:tabBackground="@null" app:tabModePage="scrollable" app:tabPaddingEnd="0.0dip" app:tabPaddingStart="0.0dip" app:tabSelectedTextColor="@color/syc_h" app:tabTextAppearance="@style/TabLayoutTextStyle" app:tabTextColor="@color/syc_h" app:tabTextLines="1" />
+    </FrameLayout>
+    <androidx.viewpager.widget.ViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

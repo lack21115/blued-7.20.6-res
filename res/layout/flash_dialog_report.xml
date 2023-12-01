@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/shape_round_white_swipe_badge_card" android:layout_width="260.0dip" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:text="@string/choose_report_reason" style="@style/report_textview_with_bggray" />
+        <include android:id="@id/layout_sex" layout="@layout/item_report_choose_with_icon" />
+        <include android:id="@id/layout_poli" layout="@layout/item_report_choose_with_icon" />
+        <include android:id="@id/layout_ad" layout="@layout/item_report_choose_with_icon" />
+        <include android:id="@id/layout_drug" layout="@layout/item_report_choose_with_icon" />
+        <include android:id="@id/layout_other" layout="@layout/item_report_choose_with_icon" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/nafio_b" android:gravity="center" android:id="@id/tv_submit" android:background="@drawable/shape_common_round_hery_solid" android:layout_width="fill_parent" android:layout_height="41.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="20.0dip" android:text="@string/report_submit" />
+    </LinearLayout>
+</RelativeLayout>

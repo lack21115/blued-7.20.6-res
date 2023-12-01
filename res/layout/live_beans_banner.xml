@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.blued.android.framework.view.shape.ShapeLinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="18.0dip" app:corner_radius="9.0dip" app:solid_color="@color/black_alpha20"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/live_beans_btn_root" android:layout_width="wrap_content" android:layout_height="18.0dip">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginLeft="4.5dip" android:src="@drawable/live_hot_icon" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/white" android:id="@id/onlive_current_beans" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.5dip" />
+        <ImageView android:id="@id/live_guest_beans_arrow" android:layout_width="4.0dip" android:layout_height="6.5dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="9.5dip" android:src="@drawable/live_beans_jump_to_icon" />
+    </LinearLayout>
+</com.blued.android.framework.view.shape.ShapeLinearLayout>

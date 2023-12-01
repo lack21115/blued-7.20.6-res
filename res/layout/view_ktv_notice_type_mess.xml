@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_back" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.blued.android.framework.view.shape.ShapeLinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="@dimen/dp_280" android:layout_height="wrap_content" app:corner_radius="@dimen/dp_15" app:solid_color="@color/white">
+        <TextView android:textSize="17.0sp" android:textColor="@color/syc_dark_222222" android:gravity="center" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_15" android:layout_marginTop="@dimen/dp_30" android:layout_marginRight="@dimen/dp_15" />
+        <com.blued.android.framework.view.shape.ShapeTextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_sha_qd" android:layout_width="@dimen/dp_220" android:layout_height="@dimen/dp_40" android:layout_marginTop="@dimen/dp_30" app:corner_radius="@dimen/dp_22" app:solid_color="@color/color_2b68d2" />
+        <TextView android:textColor="@color/syc_dark_777777" android:layout_gravity="center_horizontal" android:id="@id/tv_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_15" android:layout_marginBottom="@dimen/dp_30" android:text="@string/yy_ignore" />
+    </com.blued.android.framework.view.shape.ShapeLinearLayout>
+</FrameLayout>

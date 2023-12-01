@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="54.0dip">
+        <TextView android:layout_width="wrap_content" android:text="@string/incognito_visitor" style="@style/setting_info_item_tv_no_icon" />
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/icon_svip" />
+        <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <ToggleButton android:layout_gravity="center" android:id="@id/tglbtn_incognito_visitor_onoff" android:textOn="" android:textOff="" style="@style/toggle_button" />
+    </LinearLayout>
+    <TextView android:text="@string/note_incognito_visitor" style="@style/common_setting_hint_text_gray" />
+</LinearLayout>

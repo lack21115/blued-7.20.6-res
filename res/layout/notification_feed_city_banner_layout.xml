@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root_view" android:layout_width="fill_parent" android:layout_height="182.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="@style/TextAppearance.FontPath.Medium" android:textSize="15.0sp" android:textColor="@color/syc_h" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="114.5dip" android:layout_marginTop="67.0dip" android:includeFontPadding="false" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/syc_j" android:id="@id/des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="114.5dip" android:layout_marginTop="90.0dip" android:includeFontPadding="false" />
+    <FrameLayout android:layout_gravity="bottom|center|right" android:id="@id/click_layout" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:layout_marginBottom="15.0dip">
+        <com.blued.android.framework.view.shape.ShapeTextView android:textAppearance="@style/TextAppearance.FontPath.Medium" android:textSize="14.0sp" android:textColor="@color/syc_b" android:gravity="center" android:id="@id/btn" android:layout_width="100.0dip" android:layout_height="36.0dip" android:text="去看看" app:corner_radius="20.0dip" app:solid_color="@color/syc_h" />
+    </FrameLayout>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="52.5dip" android:src="@drawable/notification_feed_city_fake_avatar" />
+    <FrameLayout android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginLeft="67.5dip" android:layout_marginTop="50.5dip">
+        <ImageView android:id="@id/avatar_one" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/feed_sign_avatar_mask_static" android:alpha="0.8" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginLeft="33.0dip" android:layout_marginTop="79.0dip">
+        <ImageView android:id="@id/avatar_two" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/feed_sign_avatar_mask_static" />
+    </FrameLayout>
+</FrameLayout>

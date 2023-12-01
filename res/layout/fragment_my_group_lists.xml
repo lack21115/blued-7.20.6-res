@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" style="@style/layout_fill"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/top_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.blued.android.framework.view.stickylistheaders.StickyListHeadersListView android:scrollbarStyle="outsideOverlay" android:id="@id/my_grouplist_pullrefresh" android:focusable="false" android:clipToPadding="false" android:drawSelectorOnTop="true" android:fastScrollEnabled="false" android:overScrollMode="never" style="@style/layout_fill" />
+    <include android:id="@id/ll_nodata_show_groups" layout="@layout/nodata_show_my_groups" />
+    <com.blued.android.module.common.view.NoDataAndLoadFailView android:id="@id/nodataview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

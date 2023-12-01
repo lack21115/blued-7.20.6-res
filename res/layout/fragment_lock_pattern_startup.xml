@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" style="@style/layout_fill_wrap">
+        <ImageView android:layout_gravity="center" android:id="@id/iv_user_profile_pic" android:layout_width="75.0dip" android:layout_height="75.0dip" android:layout_marginTop="30.0dip" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/nafio_h" android:layout_gravity="center" android:id="@id/lock_pattern_enter" android:layout_marginTop="40.0dip" android:text="@string/lock_pattern_input" style="@style/layout_wrap_content" />
+        <com.soft.blued.customview.LockPatternView android:layout_gravity="center" android:id="@id/lock_pattern" android:layout_width="280.0dip" android:layout_height="280.0dip" android:layout_marginTop="25.0dip" />
+    </LinearLayout>
+    <TextView android:textSize="14.0sp" android:textColor="@color/nafio_a" android:id="@id/tv_forgot_pattern" android:layout_marginBottom="30.0dip" android:text="@string/lock_pattern_forgot" android:layout_alignParentBottom="true" android:layout_centerInParent="true" style="@style/layout_wrap_content" />
+</RelativeLayout>

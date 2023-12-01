@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="9.0sp" android:textColor="@color/white_alpha60" android:gravity="center" android:id="@id/tv_mess" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_11" android:layout_marginTop="@dimen/dp_13" android:layout_marginRight="@dimen/dp_11" android:layout_marginBottom="@dimen/dp_13" android:text="注：根据自然周内占据尊享告白位的时长降序排列，只显示前50名，每周日23:59:59清空" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rec" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginTop="@dimen/dp_13" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_mess" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_null" android:paddingTop="@dimen/dp_40" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.blued.android.module.common.view.SquareImageView android:id="@id/iv_null" android:layout_width="@dimen/dp_185" android:layout_height="wrap_content" android:scaleType="fitXY" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/white_alpha60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="当前无告白产生，快去告白吧～" />
+        <TextView android:textSize="17.0sp" android:textColor="@color/color_3D047F" android:gravity="center" android:id="@id/btn_to_confeefed_null" android:layout_width="@dimen/dp_123" android:layout_height="@dimen/dp_44" android:layout_marginTop="@dimen/dp_27" android:text="去告白" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

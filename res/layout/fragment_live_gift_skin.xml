@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="362.0dip">
+        <View android:layout_gravity="bottom" android:background="#ff151515" android:layout_width="fill_parent" android:layout_height="220.0dip" />
+        <ImageView android:id="@id/live_gift_skin_bg_iv" android:layout_width="fill_parent" android:layout_height="160.0dip" android:scaleType="fitXY" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip">
+                <TextView android:textSize="18.0sp" android:textColor="@color/syc_EAEAEA" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="礼物皮肤" android:includeFontPadding="false" />
+                <ImageView android:layout_gravity="bottom|center|right" android:id="@id/live_gift_skin_qa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="17.0dip" android:src="@drawable/live_gift_skin_qa" />
+            </FrameLayout>
+            <ListView android:id="@id/live_gift_skin_lv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip" android:listSelector="@color/transparent" android:divider="@color/transparent" android:dividerHeight="20.0dip" android:overScrollMode="never" />
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/live_gift_skin_tips_layout" android:background="@color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="bottom|center|right" android:id="@id/live_gift_skin_tips_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:layout_marginBottom="354.0dip" />
+    </FrameLayout>
+</FrameLayout>

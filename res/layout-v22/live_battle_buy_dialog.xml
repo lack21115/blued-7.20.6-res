@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.framework.view.shape.ShapeLinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="275.0dip" android:layout_height="wrap_content" app:corner_radius="12.0dip" app:solid_color="@color/syc_dark_4206a7" app:stroke_color="@color/syc_dark_5cf8ff" app:stroke_width="1.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/syc_dark_b" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="26.0dip" android:text="@string/live_battle_unlock_one" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/syc_dark_b" android:id="@id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="10.0dip" android:text="@string/live_battle_unlock_beans_1" />
+        <ImageView android:id="@id/view_line" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="1.0dip" android:src="@drawable/live_battle_unlock_line" android:layout_marginHorizontal="1.0dip" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/syc_dark_5cf8ff" android:id="@id/tv_gift_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:text="全部解锁可得奖励" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_list" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.5dip" android:layout_marginTop="12.5dip" android:layout_marginRight="8.5dip" android:layout_marginHorizontal="8.5dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17.0dip" android:layout_marginBottom="16.72998dip">
+            <ImageView android:id="@id/iv_cancel" android:layout_width="105.0dip" android:layout_height="40.0dip" android:src="@drawable/live_battle_cancel" />
+            <ImageView android:id="@id/iv_unlock" android:layout_width="105.0dip" android:layout_height="40.0dip" android:layout_marginLeft="8.0dip" android:src="@drawable/live_battle_confirm" />
+        </LinearLayout>
+    </com.blued.android.framework.view.shape.ShapeLinearLayout>
+</FrameLayout>

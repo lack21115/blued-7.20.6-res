@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0dip" android:textColor="@color/qr_login_ok" android:gravity="center_vertical" android:id="@id/scan_qr_login_close" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="45.0dip" android:text="关闭" android:layout_alignParentTop="true" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_width="209.0dip" android:layout_height="120.0dip" android:src="@drawable/qr_login_logo" android:scaleType="centerCrop" />
+        <TextView android:textSize="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:layout_marginBottom="20.0dip" android:text="@string/qr_scan_login_confirm" />
+        <TextView android:textSize="15.0dip" android:id="@id/scan_login_remind" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/qr_scan_login_failed" />
+    </LinearLayout>
+    <TextView android:textSize="15.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/scan_qr_url_login" android:background="@color/qr_login_ok" android:layout_width="fill_parent" android:layout_height="49.0dip" android:text="@string/qr_scan_login" android:layout_alignParentBottom="true" />
+</RelativeLayout>

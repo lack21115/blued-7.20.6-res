@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/shape_live_bottom_icon_bg" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginLeft="4.5dip" android:layout_marginRight="4.5dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_wishing_well" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/iv_wishing_well" android:layout_width="27.5dip" android:layout_height="27.5dip" android:src="@drawable/icon_live_wishing_well_knocking" android:layout_centerInParent="true" />
+        <com.blued.android.framework.view.shape.ShapeRelativeLayout android:id="@id/iv_wishing_well_dot" android:visibility="gone" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_marginTop="1.5dip" android:layout_marginRight="1.5dip" android:layout_alignParentRight="true" app:corner_radius="4.0dip" app:solid_color="@color/syc_dark_FF2424" app:stroke_color="@color/syc_dark_b" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_wishing_well_knocking" android:visibility="gone" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:background="@drawable/icon_live_wishing_well_knocking_back" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/iv_wishing_well_knocking" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/iv_knocking_tag" android:background="@drawable/icon_live_wishing_well_knocking_icon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

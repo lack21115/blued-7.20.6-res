@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" app:cardBackgroundColor="@color/transparent" app:cardCornerRadius="@dimen/dp_28" app:cardElevation="0.0dip">
+        <ImageView android:id="@id/iv_member_view" android:layout_width="@dimen/dp_56" android:layout_height="@dimen/dp_56" android:src="@drawable/user_bg_round" />
+    </androidx.cardview.widget.CardView>
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/dp_10" android:paddingRight="@dimen/dp_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/syc_dark_b" android:ellipsize="end" android:id="@id/tv_member_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yy_rmember_name" android:maxLines="1" android:singleLine="true" android:textDirection="ltr" />
+        <TextView android:textSize="@dimen/sp_11" android:textColor="@color/syc_dark_j" android:id="@id/tv_member_style" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" android:text="@string/yy_user_info_age_height" />
+    </LinearLayout>
+    <com.blued.android.framework.view.shape.ShapeTextView android:textSize="@dimen/sp_12" android:textColor="@color/syc_dark_b" android:gravity="center" android:id="@id/tv_follow" android:layout_width="@dimen/dp_68" android:layout_height="@dimen/dp_25" android:layout_marginRight="@dimen/dp_10" android:text="@string/follow" app:corner_radius="@dimen/dp_12" app:gradient_angle="TL_BR" app:gradient_end_color="@color/syc_3883FD" app:gradient_start_color="@color/syc_00E0AB" />
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/syc_3f000000" android:paddingLeft="@dimen/dp_2" android:paddingRight="@dimen/dp_2" android:layout_width="fill_parent" android:layout_height="@dimen/dp_56"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/fl_first_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_8" />
+    <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_8" android:layout_marginRight="@dimen/dp_8" android:layout_weight="1.0">
+        <com.blued.android.framework.view.shape.ShapeTextView android:textColor="@color/syc_dark_b" android:gravity="center_vertical" android:id="@id/tv_chat" android:paddingLeft="@dimen/dp_18" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dp_40" android:text="@string/yy_talking_somethings" app:autoSizeMaxTextSize="@dimen/sp_16" app:corner_radius="@dimen/dp_20" app:solid_color="@color/syc_1affffff" />
+        <ImageView android:id="@id/iv_pulbic_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_yy_public_message" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/ll_room_pk" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_8">
+        <ImageView android:id="@id/iv_room_pk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_yy_room_pk" />
+        <com.blued.android.framework.view.shape.ShapeTextView android:layout_gravity="right" android:id="@id/img_pk_dot" android:visibility="gone" android:layout_width="@dimen/dp_6" android:layout_height="@dimen/dp_6" android:layout_marginTop="@dimen/dp_3" android:layout_marginRight="@dimen/dp_3" app:corner_radius="@dimen/dp_3" app:solid_color="@color/syc_FF3E4F" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_8">
+        <ImageView android:id="@id/iv_tool_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_yy_tool_box" />
+        <com.blued.android.framework.view.shape.ShapeTextView android:layout_gravity="right" android:id="@id/img_red_dot" android:visibility="gone" android:layout_width="@dimen/dp_6" android:layout_height="@dimen/dp_6" android:layout_marginTop="@dimen/dp_3" android:layout_marginRight="@dimen/dp_3" app:corner_radius="@dimen/dp_3" app:solid_color="@color/syc_FF3E4F" />
+    </FrameLayout>
+    <ImageView android:id="@id/iv_recharge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_8" android:src="@drawable/icon_yy_recharge" />
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_8">
+        <ImageView android:id="@id/iv_gift" android:layout_width="@dimen/dp_36" android:layout_height="@dimen/dp_36" android:src="@drawable/icon_gift" />
+        <com.blued.android.framework.view.shape.ShapeTextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_gift_time" android:visibility="gone" android:layout_width="@dimen/dp_36" android:layout_height="@dimen/dp_11" android:layout_marginTop="@dimen/dp_19" android:text="120s" android:includeFontPadding="false" app:corner_radius="@dimen/dp_6" app:gradient_end_color="@color/syc_dark_DB82F7" app:gradient_start_color="@color/syc_dark_FCB8D9" />
+    </FrameLayout>
+    <FrameLayout android:gravity="center_vertical" android:id="@id/fl_last_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_8" />
+</LinearLayout>

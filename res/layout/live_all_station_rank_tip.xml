@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.framework.view.shape.ShapeRelativeLayout android:layout_gravity="center" android:layout_width="275.0dip" android:layout_height="340.0dip" app:corner_radius="12.0dip" app:solid_color="@color/white" app:stroke_color="@color/white" app:stroke_width="1.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="#ff222222" android:gravity="center" android:id="@id/tv_title" android:layout_width="136.0dip" android:layout_height="29.0dip" android:layout_marginTop="10.0dip" android:text="榜单说明" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/iv_close" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginTop="4.0dip" android:src="@drawable/icon_close_ad_gray" android:layout_alignParentRight="true" android:layout_marginEnd="4.0dip" />
+        <com.blued.android.module.live.base.view.subscaleview.SubsamplingScaleImageView android:id="@id/iv_large" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="13.0dip" android:layout_marginTop="51.0dip" android:layout_marginRight="13.0dip" android:layout_marginBottom="13.0dip" />
+    </com.blued.android.framework.view.shape.ShapeRelativeLayout>
+</FrameLayout>

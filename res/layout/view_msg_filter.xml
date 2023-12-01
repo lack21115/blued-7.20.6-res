@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/msg_filter_switch_ll" android:background="@drawable/msg_filter_switch_bg_selector" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0sp" android:textColor="@color/nafio_b" android:id="@id/msg_filter_switch_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/msg_filter_switch_right_iv" android:background="@drawable/icon_arrow_white_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/msg_filter_close_ll" android:background="@drawable/msg_filter_close_tv_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="11.0sp" android:textColor="@color/nafio_b" android:layout_gravity="center" android:id="@id/msg_filter_close_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_filter_close_tv" />
+            <com.blued.android.framework.view.shape.ShapeTextView android:layout_gravity="top" android:id="@id/msg_filter_close_dot" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginLeft="4.0dip" android:layout_marginTop="3.0dip" app:corner_radius="6.0dip" app:solid_color="@color/nafio_g" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/msg_filter_switch_bottom_line" android:background="@drawable/msg_filter_switch_bottom_line_selector" android:layout_width="fill_parent" android:layout_height="3.0dip" />
+    <RelativeLayout android:id="@id/msg_filter_content_v" android:background="@color/nafio_b" android:paddingLeft="15.0dip" android:paddingTop="20.0dip" android:paddingRight="15.0dip" android:paddingBottom="20.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="13.0sp" android:textColor="@color/nafio_h" android:id="@id/msg_filter_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_filter_title_tv" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/msg_filter_reset_tv_color" android:id="@id/msg_filter_reset" android:paddingLeft="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_filter_reset_tv" android:layout_alignParentRight="true" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_below="@id/msg_filter_title">
+            <TextView android:id="@id/msg_filter_initiator" android:visibility="gone" android:text="@string/msg_filter_initiator" style="@style/msg_filter_item_tv" />
+            <TextView android:id="@id/msg_filter_follower" android:text="@string/msg_filter_follower" style="@style/msg_filter_item_tv" />
+            <TextView android:id="@id/msg_filter_nearby" android:layout_marginLeft="12.0dip" android:text="@string/msg_filter_nearby" style="@style/msg_filter_item_tv" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

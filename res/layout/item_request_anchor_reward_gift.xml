@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/request_live_reward_default_bg" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="106.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/request_anchor_reward_gift_iv" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="15.0dip" />
+    <TextView android:textAppearance="@style/TextAppearance.FontPath.Medium" android:textSize="14.0sp" android:textColor="@color/syc_h" android:id="@id/request_anchor_reward_gift_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:maxLines="1" android:includeFontPadding="false" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="10.0dip">
+        <ImageView android:layout_width="11.0dip" android:layout_height="11.0dip" android:src="@drawable/live_beans_icon" android:scaleType="fitXY" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/syc_j" android:id="@id/request_anchor_reward_gift_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:includeFontPadding="false" />
+    </LinearLayout>
+</LinearLayout>

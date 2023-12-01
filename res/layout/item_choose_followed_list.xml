@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/selector_visitor_bgcolor" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:gravity="center_vertical" android:id="@id/img_header" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="13.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/user_bg_round" />
+    <ImageView android:id="@id/img_verify" android:layout_width="17.0dip" android:layout_height="17.0dip" android:layout_marginLeft="-17.0dip" android:layout_marginTop="33.0dip" android:src="@drawable/v_blue" android:layout_toRightOf="@id/img_header" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.5dip" android:layout_toRightOf="@id/img_header" android:layout_centerVertical="true">
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_name" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="15.0sp" android:textColor="@color/syc_h" android:ellipsize="end" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="200.0dip" android:maxLines="1" />
+            <ImageView android:id="@id/img_vip_icon" style="@style/blued_vip_icon" />
+            <ImageView android:id="@id/img_online" style="@style/online_dot" />
+            <ImageView android:id="@id/img_blued_medal" android:layout_marginTop="2.0dip" style="@style/blued_vip_icon" />
+        </LinearLayout>
+        <TextView android:textSize="12.0sp" android:textColor="@color/syc_j" android:id="@id/tv_note" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+    </LinearLayout>
+    <View android:background="@color/syc_x" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="13.0dip" android:layout_below="@id/img_header" />
+</RelativeLayout>

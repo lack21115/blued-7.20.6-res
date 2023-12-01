@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/tv_cutter" android:layout_marginLeft="13.0dip" style="@style/common_cutter_gray" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/syc_80" android:gravity="center_vertical" android:id="@id/tv_group" android:background="@color/syc_f4" android:paddingLeft="13.0dip" android:layout_width="fill_parent" android:layout_height="16.0dip" android:text="A" />
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/selector_bgcolor_text_button" android:paddingLeft="13.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="@color/syc_32" android:layout_gravity="center" android:id="@id/tv_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <ImageView android:id="@id/tv_rightArrow" android:layout_marginRight="25.0dip" style="@style/icon_right_arrow" />
+    </LinearLayout>
+</LinearLayout>

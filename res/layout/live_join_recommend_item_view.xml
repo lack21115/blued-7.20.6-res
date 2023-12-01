@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_root" android:paddingLeft="3.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="119.0dip" android:layout_height="119.0dip">
+        <ImageView android:id="@id/auto_avatar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="6.0dip">
+            <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="10.0sp" android:textColor="@color/syc_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="@string/live_fans" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/syc_b" android:id="@id/fans_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_fans" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_width="wrap_content" android:layout_height="14.0dip" android:src="@drawable/live_fans_recommend_profile" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/syc_b" android:id="@id/atten_count" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <TextView android:textSize="11.0sp" android:textColor="@color/syc_b" android:ellipsize="end" android:id="@id/tv_name" android:layout_width="99.0dip" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:maxLines="1" />
+</LinearLayout>

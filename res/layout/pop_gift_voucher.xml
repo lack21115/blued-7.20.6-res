@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_root" android:background="@drawable/shape_gift_voucher_pop_bg" android:layout_width="fill_parent" android:layout_height="475.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/top_title" android:layout_width="fill_parent" android:layout_height="wrap_content" app:bg_transparent="true" app:hide_btm_line="true" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="12.0dip" android:layout_above="@id/tv_ok" android:layout_below="@id/top_title" />
+    <com.blued.android.framework.view.shape.ShapeTextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_ok" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="20.0dip" android:text="@string/confirm" android:layout_alignParentBottom="true" app:corner_radius="16.0dip" app:solid_color="@color/syc_a" app:solid_touch_color="@color/syc_m" app:solid_unable_color="@color/syc_a_20" />
+</RelativeLayout>

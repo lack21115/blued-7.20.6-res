@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.blued.android.framework.view.shape.ShapeLinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="210.0dip" android:layout_height="wrap_content" app:corner_radius="6.0dip" app:solid_color="@color/syc_dark_000000"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_anim" android:layout_width="210.0dip" android:layout_height="89.0dip" android:layout_marginTop="18.0dip" android:src="@drawable/live_pk_round_prize_small" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/syc_dark_b" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/live_pk_round_wait_1" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/syc_dark_b" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="21.0dip" android:text="@string/live_pk_round_wait_2" />
+</com.blued.android.framework.view.shape.ShapeLinearLayout>

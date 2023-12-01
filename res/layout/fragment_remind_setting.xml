@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/syc_c" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/top_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="@color/syc_c" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <LinearLayout android:orientation="horizontal" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:text="@string/setting_other_push" style="@style/setting_info_item_tv_no_icon" />
+                <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                <ToggleButton android:id="@id/tglbtn_other_push" android:textOn="" android:textOff="" style="@style/toggle_button" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@color/item_bg_almost_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:text="@string/remind_message" style="@style/setting_info_item_tv_no_icon_remind" />
+                <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                <ToggleButton android:id="@id/tb_onoff_message" android:layout_marginTop="10.0dip" android:textOn="" android:textOff="" style="@style/toggle_button" />
+            </LinearLayout>
+            <TextView android:textSize="12.0sp" android:textColor="@color/syc_j" android:id="@id/tv_tip_blued_msg" android:background="@color/nafio_b" android:paddingLeft="13.0dip" android:paddingRight="17.0dip" android:paddingBottom="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/intro_blued_message" />
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_group_remind_setting" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:background="@color/item_bg_almost_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:text="@string/remind_group_notify" style="@style/setting_info_item_tv_no_icon_remind" />
+                    <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                    <ToggleButton android:id="@id/tb_onoff_group_notify" android:layout_marginTop="10.0dip" android:textOn="" android:textOff="" style="@style/toggle_button" />
+                </LinearLayout>
+                <TextView android:textSize="12.0sp" android:textColor="@color/syc_j" android:id="@id/tv_tip_blued_group_msg" android:background="@color/nafio_b" android:paddingLeft="13.0dip" android:paddingRight="17.0dip" android:paddingBottom="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/intro_blued_group_message" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/tv_push_notice" android:text="@string/push_msg" style="@style/setting_info_item_tv_no_icon" />
+                <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                <ToggleButton android:id="@id/tglbtn_push_notice_onoff" android:textOn="" android:textOff="" style="@style/toggle_button" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:id="@id/tv_private_chat_hint" android:text="@string/private_chat_hint" style="@style/setting_info_item_tv_no_icon" />
+                <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                <ToggleButton android:id="@id/tglbtn_private_chat_hint_onoff" android:textOn="" android:textOff="" style="@style/toggle_button" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/liner_using_blued_hint_onoff" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/tv_using_blued_hint" android:text="@string/using_blued_hint" style="@style/setting_info_item_tv_no_icon_remind" />
+                <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                <ToggleButton android:id="@id/tglbtn_using_blued_hint_onoff" android:layout_marginTop="10.0dip" android:textOn="" android:textOff="" style="@style/toggle_button" />
+            </LinearLayout>
+            <TextView android:textSize="12.0sp" android:textColor="@color/syc_j" android:id="@id/tv_tip_blued_sound" android:background="@color/nafio_b" android:paddingLeft="13.0dip" android:paddingRight="17.0dip" android:paddingBottom="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/intro_blued_sound" />
+            <LinearLayout android:orientation="horizontal" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/tv_private_chat_vibrate" android:text="@string/private_chat_vibrate" style="@style/setting_info_item_tv_no_icon" />
+                <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                <ToggleButton android:id="@id/tglbtn_private_chat_vibrate_onoff" android:textOn="" android:textOff="" style="@style/toggle_button" />
+            </LinearLayout>
+            <TextView android:textSize="12.0sp" android:textColor="@color/syc_j" android:background="@color/nafio_b" android:paddingLeft="13.0dip" android:paddingRight="20.0dip" android:paddingBottom="7.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/intro_vibration" />
+            <LinearLayout android:orientation="horizontal" android:background="@color/syc_b" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:text="@string/remind_system" style="@style/setting_info_item_tv_no_icon" />
+                <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                <ToggleButton android:id="@id/tb_onoff_system" android:textOn="" android:textOff="" style="@style/toggle_button" />
+            </LinearLayout>
+            <TextView android:textSize="12.0sp" android:textColor="@color/syc_j" android:paddingLeft="15.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/live_notice" />
+            <LinearLayout android:orientation="horizontal" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:text="@string/remind_live" style="@style/setting_info_item_tv_no_icon_remind" />
+                <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                <ToggleButton android:id="@id/tglbtn_onoff_live_push" android:layout_marginTop="10.0dip" android:textOn="" android:textOff="" style="@style/toggle_button" />
+            </LinearLayout>
+            <TextView android:textSize="12.0sp" android:textColor="@color/syc_j" android:id="@id/tv_tip_blued_live" android:background="@color/nafio_b" android:paddingLeft="13.0dip" android:paddingRight="17.0dip" android:paddingBottom="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/remind_live_desc" />
+            <LinearLayout android:orientation="horizontal" android:background="@color/syc_b" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:text="@string/remind_live_recommend" style="@style/setting_info_item_tv_no_icon" />
+                <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                <ToggleButton android:id="@id/tb_onoff_recommend_live" android:textOn="" android:textOff="" style="@style/toggle_button" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:text="@string/remind_followed" style="@style/setting_info_item_tv_no_icon" />
+                <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                <ToggleButton android:id="@id/tb_onoff_followed" android:textOn="" android:textOff="" style="@style/toggle_button" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@color/item_bg_almost_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:text="@string/remind_visitors" style="@style/setting_info_item_tv_no_icon" />
+                <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                <ToggleButton android:id="@id/tb_onoff_visited" android:textOn="" android:textOff="" style="@style/toggle_button" />
+            </LinearLayout>
+            <TextView android:textSize="12.0sp" android:textColor="@color/syc_j" android:paddingLeft="15.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/interactive_notice" />
+            <LinearLayout android:orientation="horizontal" android:background="@color/item_bg_almost_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:text="@string/remind_praise" style="@style/setting_info_item_tv_no_icon" />
+                <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                <ToggleButton android:id="@id/tglbtn_onoff_feed_praise" android:textOn="" android:textOff="" style="@style/toggle_button" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:text="@string/remind_comments" style="@style/setting_info_item_tv_no_icon" />
+                <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                <ToggleButton android:id="@id/tglbtn_onoff_comments" android:textOn="" android:textOff="" style="@style/toggle_button" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@color/item_bg_almost_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:text="@string/remind_feed_at" style="@style/setting_info_item_tv_no_icon" />
+                <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                <ToggleButton android:id="@id/tglbtn_onoff_feed_at" android:textOn="" android:textOff="" style="@style/toggle_button" />
+            </LinearLayout>
+            <TextView android:textSize="12.0sp" android:textColor="@color/syc_j" android:paddingLeft="15.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/content_subscrip_notice" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_circle_push_setting" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:text="@string/circle_hot_push_notice" style="@style/setting_info_item_tv_no_icon" />
+                <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                <ToggleButton android:id="@id/tb_onoff_circle_hot_notify" android:textOn="" android:textOff="" style="@style/toggle_button" />
+            </LinearLayout>
+            <TextView android:textSize="12.0sp" android:textColor="@color/syc_j" android:background="@color/nafio_b" android:paddingLeft="13.0dip" android:paddingRight="17.0dip" android:paddingBottom="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/open_circle_hot_push_content" />
+            <LinearLayout android:orientation="horizontal" android:background="@color/item_bg_almost_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:text="@string/followed_post_new_feed" style="@style/setting_info_item_tv_no_icon" />
+                <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                <ToggleButton android:id="@id/tb_onoff_followed_new_feed_notify" android:textOn="" android:textOff="" style="@style/toggle_button" />
+            </LinearLayout>
+            <TextView android:textSize="12.0sp" android:textColor="@color/syc_j" android:background="@color/nafio_b" android:paddingLeft="13.0dip" android:paddingRight="17.0dip" android:paddingBottom="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/open_followed_post_new_feed_content" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/syc_j" android:paddingLeft="15.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/chat_room_notice" />
+            <LinearLayout android:orientation="horizontal" android:background="@color/item_bg_almost_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:text="@string/chat_room_starts_noti" style="@style/setting_info_item_tv_no_icon" />
+                <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                <ToggleButton android:id="@id/tb_onoff_open_chatroom_notify" android:textOn="" android:textOff="" style="@style/toggle_button" />
+            </LinearLayout>
+            <TextView android:textSize="12.0sp" android:textColor="@color/syc_j" android:background="@color/nafio_b" android:paddingLeft="13.0dip" android:paddingRight="17.0dip" android:paddingBottom="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/receive_chat_room_starts" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/syc_j" android:paddingLeft="15.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/message_notice" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_message_notify" android:background="@color/item_bg_almost_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:text="@string/message_remind" style="@style/setting_info_item_tv_no_icon" />
+                <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                <ImageView android:layout_gravity="center_vertical" android:layout_marginRight="15.0dip" style="@style/icon_right_arrow_my" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_view" android:background="@color/syc_x" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/top_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/shadow_top_bg" android:scaleType="fitXY" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/shadow_title" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/nafio_b" android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.5dip" android:text="@string/shadow_open" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="91.0dip">
+                <LinearLayout android:orientation="vertical" android:background="@drawable/shape_shadow_bg" android:layout_width="fill_parent" android:layout_height="156.5dip" android:layout_marginLeft="15.5dip" android:layout_marginRight="15.5dip">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip">
+                        <LinearLayout android:orientation="horizontal" android:id="@id/shadow_price_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip">
+                            <TextView android:textSize="32.0sp" android:textColor="@color/syc_h" android:id="@id/shadow_price" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <TextView android:textSize="15.0sp" android:textColor="@color/syc_h" android:id="@id/shadow_price_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:id="@id/shadow_renew_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip">
+                            <TextView android:textSize="16.0sp" android:textColor="@color/syc_h" android:id="@id/shadow_renew" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <TextView android:textSize="10.0sp" android:textColor="@color/syc_i" android:id="@id/shadow_renew_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginTop="2.0dip" />
+                        </LinearLayout>
+                        <ImageView android:id="@id/shadow_top_up_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/shadow_top_up" android:layout_alignParentRight="true" />
+                    </RelativeLayout>
+                    <View android:background="@color/syc_x" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="15.0dip" />
+                    <TextView android:textSize="10.0sp" android:textColor="@color/syc_i" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:text="@string/shadow_subscribe_details" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/shadow_mine_layout" android:background="@drawable/shape_shadow_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.5dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.5dip">
+                    <RelativeLayout android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="16.0sp" android:textColor="@color/color_photo_remove" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:text="@string/shadow_mine" />
+                        <TextView android:textSize="12.0sp" android:textColor="#ffff4d4f" android:id="@id/shadow_close" android:paddingTop="17.5dip" android:paddingBottom="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shadow_close" android:layout_alignParentRight="true" />
+                    </RelativeLayout>
+                    <View android:background="@color/syc_x" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="15.0dip" />
+                    <RelativeLayout android:id="@id/shadow_setting_layout" android:paddingLeft="15.0dip" android:paddingRight="10.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <ImageView android:id="@id/shadow_mine_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:src="@drawable/shadow_mine_icon" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/color_photo_remove" android:id="@id/shadow_address" android:layout_width="188.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:text="@string/shadow_mine" android:maxLines="2" android:layout_toRightOf="@id/shadow_mine_icon" />
+                        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                            <TextView android:textSize="12.0sp" android:textColor="@color/syc_h" android:id="@id/shadow_setting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="27.5dip" android:text="@string/shadow_setting" android:layout_alignParentRight="true" />
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:src="@drawable/shadow_setting_row" android:layout_toRightOf="@id/shadow_setting" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/shadow_open_layout" android:background="@drawable/shape_shadow_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.5dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.5dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/color_photo_remove" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:text="@string/shadow_how" />
+                    <View android:background="@color/syc_x" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="15.0dip" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/shadow_step_item1" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip">
+                            <TextView android:textSize="14.0sp" android:textColor="@color/syc_h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shadow_how_1" />
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:src="@drawable/shadow_step_1" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="12.5dip">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/shadow_step_item2" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip">
+                            <TextView android:textSize="14.0sp" android:textColor="@color/syc_h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shadow_how_2" />
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:src="@drawable/shadow_step_2" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="12.5dip" android:layout_marginBottom="12.0dip">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/shadow_step_item2" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip">
+                            <TextView android:textSize="14.0sp" android:textColor="@color/syc_h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shadow_how_3" />
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:src="@drawable/shadow_step_3" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/shadow_what_layout" android:background="@drawable/shape_shadow_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.5dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.5dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/syc_h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="17.0dip" android:text="@string/shadow_what" />
+                    <View android:background="@color/syc_x" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/shadow_head_icon" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/color_photo_remove" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="@string/shadow_what_1" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="15.0dip">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/shadow_head_icon" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/color_photo_remove" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="@string/shadow_what_2" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="15.0dip">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/shadow_head_icon" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/color_photo_remove" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="@string/shadow_what_3" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="20.0dip">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/shadow_head_icon" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/color_photo_remove" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="@string/shadow_what_4" />
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:textSize="10.0sp" android:textColor="@color/syc_i" android:id="@id/shadow_tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:text="@string/shadow_tips" />
+                <LinearLayout android:orientation="vertical" android:background="@drawable/shape_shadow_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.5dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.5dip" android:layout_marginBottom="49.0dip">
+                    <RelativeLayout android:id="@id/shadow_privacy_clause" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="15.0sp" android:textColor="@color/color_photo_remove" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:text="@string/privacy_clause" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:src="@drawable/shadow_row" android:layout_alignParentRight="true" />
+                    </RelativeLayout>
+                    <View android:background="@color/syc_x" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="15.0dip" />
+                    <RelativeLayout android:id="@id/shadow_renew_agreement" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="15.0sp" android:textColor="@color/color_photo_remove" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:text="@string/shadow_renew_agreement" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:src="@drawable/shadow_row" android:layout_alignParentRight="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </ScrollView>
+</LinearLayout>

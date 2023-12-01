@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/msg_item_root" android:paddingTop="@dimen/chat_two_item_root_top" android:paddingBottom="@dimen/chat_two_item_root_bottom" style="@style/layout_fill_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/msg_safe_common_system" />
+    <include layout="@layout/msg_date_layout" />
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/chat_sending_img" android:contentDescription="@string/app_name" style="@style/chat_send_state_sending" />
+        <ImageView android:id="@id/chat_state_error" android:contentDescription="@string/app_name" style="@style/chat_send_state_error" />
+        <com.blued.android.framework.view.shape.ShapeLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" app:corner_radius="5.0dip" app:solid_color="@color/white">
+            <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/icon_chat_receive_vi_hi" android:layout_marginEnd="6.0dip" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/syc_999999" android:layout_gravity="center_vertical" android:id="@id/tv_hi" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </com.blued.android.framework.view.shape.ShapeLinearLayout>
+    </LinearLayout>
+    <TextView android:id="@id/tv_state" android:visibility="gone" style="@style/chat_send_state_style" />
+</LinearLayout>

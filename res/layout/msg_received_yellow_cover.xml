@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.blued.android.framework.view.shape.ShapeLinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/sll_img_cover" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" app:corner_radius="6.0dip" app:solid_color="@color/color_64000000"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/msg_yellow_pic_alert_message" />
+    <com.blued.android.framework.view.shape.ShapeTextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/stv_remove_img_cover" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_yellow_pic_alert_confirm" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" app:corner_radius="30.0dip" app:solid_color="@color/color_48FFFFFF" />
+</com.blued.android.framework.view.shape.ShapeLinearLayout>

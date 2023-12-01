@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="60.0dip" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="9.0dip">
+        <RelativeLayout android:id="@id/rl_header" android:background="@drawable/icon_hello_header_bg" android:layout_width="55.0dip" android:layout_height="55.0dip" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <ImageView android:id="@id/header_view" android:layout_width="51.0dip" android:layout_height="51.0dip" android:layout_centerInParent="true" />
+            <com.blued.android.framework.view.shape.ShapeFrameLayout android:id="@id/fm_header_shape" android:layout_width="51.0dip" android:layout_height="51.0dip" android:layout_centerInParent="true" app:corner_radius="50.0dip" app:solid_color="@color/syc_66000000">
+                <ImageView android:layout_gravity="center" android:id="@id/iv_call" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="18.0sp" android:textColor="@color/syc_dark_b" android:layout_gravity="center" android:id="@id/tv_call" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </com.blued.android.framework.view.shape.ShapeFrameLayout>
+        </RelativeLayout>
+        <com.blued.android.framework.view.shape.ShapeTextView android:textSize="11.0sp" android:textColor="@color/syc_dark_b" android:ellipsize="end" android:gravity="center" android:id="@id/tv_hint" android:layout_width="60.0dip" android:layout_height="20.0dip" android:layout_marginTop="6.0dip" android:maxLines="1" app:corner_radius="10.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="@id/rl_header" app:layout_constraintRight_toRightOf="@id/rl_header" app:layout_constraintTop_toBottomOf="@id/rl_header" app:solid_color="@color/syc_v" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/gift_progress_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+        <TextView android:textSize="13.0sp" android:textColor="@color/syc_dark_C933CC" android:id="@id/current_level" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+        <ProgressBar android:id="@id/gift_progress" android:layout_width="0.0dip" android:layout_height="4.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:progressDrawable="@drawable/live_gift_progress" android:layout_weight="1.0" style="?android:progressBarStyleHorizontal" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/syc_dark_C933CC" android:id="@id/next_level" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+    </LinearLayout>
+    <TextView android:textSize="9.0sp" android:textColor="@color/syc_dark_b" android:layout_gravity="center_horizontal" android:id="@id/grow_up_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_audio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_microphone" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/tv_up_seat" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_audience_apply_seat" />
+</FrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Space android:id="@id/space_top" android:layout_width="0.0dip" android:layout_height="12.0dip" />
+    <ImageView android:id="@id/live_gift" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_below="@id/space_top" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/syc_dark_0a0a0a" android:id="@id/tv_gift_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="热气球" android:layout_below="@id/live_gift" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="11.0sp" android:textColor="@color/syc_dark_767676" android:gravity="center_vertical" android:id="@id/tv_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="120,000" android:drawableLeft="@drawable/icon_live_rank_beans" android:drawablePadding="3.0dip" android:layout_below="@id/tv_gift_name" android:layout_centerHorizontal="true" />
+    <Space android:id="@id/space_bottom" android:layout_width="0.0dip" android:layout_height="12.0dip" android:layout_below="@id/tv_price" />
+    <View android:id="@id/view_border" android:background="@drawable/shape_live_desire_select_gift_item" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/space_top" android:layout_alignBottom="@id/space_bottom" android:alpha="0.0" />
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="300.0dip" android:layout_height="500.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_event_picture" android:layout_width="300.0dip" android:layout_height="450.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" />
+    <FrameLayout android:id="@id/fl_event_close" android:layout_width="40.0dip" android:layout_height="50.0dip" app:layout_constraintBottom_toTopOf="@id/iv_event_picture" app:layout_constraintRight_toRightOf="@id/iv_event_picture" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:layout_gravity="end|center" android:id="@id/iv_event_close" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/icon_virtual_image_event_close" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

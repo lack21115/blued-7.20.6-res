@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" style="@style/layout_fill_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="13.0sp" android:textColor="@color/nafio_l" android:gravity="center_vertical" android:id="@id/tv_msg_title" android:layout_width="wrap_content" android:layout_height="32.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:singleLine="true" />
+    <TextView android:background="@color/nafio_c" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.soft.blued.customview.XRoundedImageView android:id="@id/xriv_viewpoint_cover" android:layout_width="0.0dip" android:layout_height="0.0dip" android:scaleType="centerCrop" app:layout_constraintDimensionRatio="H,442:255" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:leftBottomRadius="8.0dip" app:leftTopRadius="0.0dip" app:rightBottomRadius="8.0dip" app:rightTopRadius="0.0dip" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

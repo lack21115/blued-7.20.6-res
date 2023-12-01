@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:id="@id/tv_text" android:text="@string/cancel" style="@style/pop_sheet_item" />
+    <TextView style="@style/common_cutter_gray" />
+</LinearLayout>

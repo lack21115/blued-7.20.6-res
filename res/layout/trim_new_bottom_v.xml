@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/stv_bottom_transparent_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_marginTop="10.0dip">
+        <com.blued.android.module.shortvideo.view.VideoFrameView android:layout_gravity="center_vertical" android:id="@id/stv_video_frame_view" android:layout_width="fill_parent" android:layout_height="55.0dip" />
+        <com.blued.android.module.shortvideo.view.TrimSeekBar android:id="@id/seekbar_position_icon" android:layout_width="fill_parent" android:layout_height="wrap_content" android:progressDrawable="@drawable/transparent" android:thumb="@drawable/lf_ugc_publish_pos" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="55.0dip">
+            <View android:background="#66000000" android:layout_width="39.0dip" android:layout_height="fill_parent" />
+            <LinearLayout android:orientation="vertical" android:id="@id/stv_video_trim_seek_layout" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_centerVertical="true" />
+            <View android:background="#66000000" android:layout_width="39.0dip" android:layout_height="fill_parent" />
+        </LinearLayout>
+    </FrameLayout>
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="16.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/nafio_b" android:id="@id/stv_editor_bottom_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:id="@id/stv_bottom_save" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/stv_save_btn_style" />
+    </RelativeLayout>
+</LinearLayout>

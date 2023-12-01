@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="fill_parent" android:elevation="0.0dip" app:cardBackgroundColor="@color/transparent" app:cardCornerRadius="0.0dip" app:cardElevation="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <ViewFlipper android:id="@id/view_flipper" android:layout_width="fill_parent" android:layout_height="fill_parent" android:inAnimation="@anim/anim_view_flipper_alpha_in" android:outAnimation="@anim/anim_view_flipper_alpha_out" android:flipInterval="4000" />
+</androidx.cardview.widget.CardView>

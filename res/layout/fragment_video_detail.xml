@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.blued.android.module.player.media.view.ViewDragHelperLayout android:orientation="vertical" android:id="@id/view_drag_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:id="@id/video_view_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:id="@id/surface_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+    </com.blued.android.module.player.media.view.ViewDragHelperLayout>
+</FrameLayout>

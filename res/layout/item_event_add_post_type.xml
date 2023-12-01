@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.blued.android.framework.view.shape.ShapeLinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ly_type" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_margin="5.0dip" app:corner_radius="32.0dip" app:solid_color="@color/syc_x" app:stroke_color="@color/syc_o" app:stroke_width="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="14.0sp" android:textColor="@color/syc_j" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/iv_more" android:visibility="gone" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginRight="-6.0dip" android:src="@drawable/icon_common_right_arrow_gray" />
+</com.blued.android.framework.view.shape.ShapeLinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title" layout="@layout/common_top_title_tabs" />
+    <com.soft.blued.customview.NoScrollH5ViewPager android:id="@id/viewpager" android:background="@color/sara_f" style="@style/layout_fill" />
+</LinearLayout>

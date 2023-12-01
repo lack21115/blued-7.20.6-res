@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/live_make_friend_wait_layout" android:background="@drawable/live_make_friend_manage" android:layout_width="94.0dip" android:layout_height="36.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/live_make_friend_manage_head" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="5.5dip" android:src="@drawable/live_make_friend_manage_icon" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.5dip" android:layout_marginRight="9.0dip">
+        <TextView android:textSize="12.0sp" android:textColor="@color/syc_dark_b" android:id="@id/live_make_friend_wait_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_make_friend_manage" />
+        <TextView android:textSize="9.0sp" android:textColor="@color/syc_dark_b" android:id="@id/live_make_friend_wait_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:text="@string/live_make_friend_wait" android:alpha="0.6" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/ll_root" android:layout_width="fill_parent" android:layout_height="62.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/syc_dark_EDF1F7" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <com.blued.android.framework.view.shape.ShapeLinearLayout android:orientation="horizontal" android:id="@id/ll_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="1.0dip">
+        <FrameLayout android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <RelativeLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/iv_gift" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_centerVertical="true" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/syc_dark_0A0A0A" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_toRightOf="@id/iv_gift" android:layout_centerVertical="true" android:layout_marginStart="4.0dip" />
+            </RelativeLayout>
+        </FrameLayout>
+        <View android:background="@color/syc_dark_EDF1F7" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <FrameLayout android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <RelativeLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/iv_beans" android:layout_width="12.0dip" android:layout_height="12.0dip" android:src="@drawable/icon_live_rank_beans_28_27" android:layout_centerVertical="true" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/syc_dark_0A0A0A" android:id="@id/tv_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:includeFontPadding="false" android:layout_toRightOf="@id/iv_beans" android:layout_centerVertical="true" android:layout_marginStart="5.0dip" />
+            </RelativeLayout>
+        </FrameLayout>
+        <View android:background="@color/syc_dark_EDF1F7" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/syc_dark_0A0A0A" android:ellipsize="end" android:gravity="center" android:id="@id/tv_probability" android:layout_width="0.0dip" android:layout_height="fill_parent" android:includeFontPadding="false" android:layout_weight="1.0" />
+    </com.blued.android.framework.view.shape.ShapeLinearLayout>
+</FrameLayout>

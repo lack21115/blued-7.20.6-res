@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:paddingRight="@dimen/dp_12" android:layout_width="wrap_content" android:layout_height="@dimen/dp_45"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.framework.view.shape.ShapeTextView android:textSize="14.0sp" android:textColor="@color/syc_dark_222" android:gravity="center" android:id="@id/tv" android:paddingLeft="@dimen/dp_9" android:paddingRight="@dimen/dp_9" android:layout_width="wrap_content" android:layout_height="@dimen/dp_27" android:minWidth="@dimen/dp_46" android:lines="1" app:corner_radius="@dimen/dp_14" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

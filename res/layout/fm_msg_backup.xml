@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/syc_c" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/top_title" android:layout_width="fill_parent" android:layout_height="wrap_content" app:hide_btm_line="true" />
+    <LinearLayout android:id="@id/ll_backup_chat_record" android:layout_marginTop="10.0dip" style="@style/setting_info_item">
+        <TextView android:layout_width="0.0dip" android:text="@string/msg_backup_chat" android:layout_weight="1.0" style="@style/setting_info_item_tv" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/syc_h" android:id="@id/tv_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+        <ImageView style="@style/icon_right_arrow" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/ll_restore_chat_record" style="@style/setting_info_item">
+        <TextView android:layout_width="0.0dip" android:text="@string/msg_restore_chat" android:layout_weight="1.0" style="@style/setting_info_item_tv" />
+        <ImageView style="@style/icon_right_arrow" />
+    </LinearLayout>
+    <TextView android:textSize="16.0sp" android:textColor="@color/syc_g" android:gravity="center" android:id="@id/tv_delete" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="54.0dip" android:layout_marginTop="10.0dip" android:text="@string/msg_delete_copy" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/syc_k" android:gravity="left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:text="@string/msg_backup_tips" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="13.0sp" android:textColor="@color/syc_k" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="@string/system_msg_backup_support" android:layout_above="@id/tv_link" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/syc_k" android:id="@id/tv_link" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="30.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

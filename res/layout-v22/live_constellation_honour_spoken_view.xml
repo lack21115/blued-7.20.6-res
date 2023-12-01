@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/dp_76"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/sp_14" android:textStyle="bold" android:textColor="@color/color_AD97FF" android:id="@id/tv_top_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/rl_honour_main" android:layout_width="fill_parent" android:layout_height="@dimen/dp_30" android:layout_marginTop="@dimen/dp_8" android:layout_below="@id/tv_top_title" android:layout_marginStart="@dimen/dp_20" android:layout_marginEnd="@dimen/dp_20">
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="@dimen/dp_28" android:layout_weight="80.0">
+            <ImageView android:id="@id/iv_anchor_avatar" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="2.5dip" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/iv_anchor_avatar_frame" android:layout_width="@dimen/dp_28" android:layout_height="@dimen/dp_28" android:src="@drawable/live_constellation_honour_avatar_frame" />
+            <TextView android:textSize="@dimen/sp_10" android:textColor="@color/white" android:ellipsize="end" android:id="@id/tv_anchor_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/dp_50" android:lines="1" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_2" android:layout_toEndOf="@id/iv_anchor_avatar_frame" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="@dimen/dp_28" android:layout_weight="80.0" android:layout_marginStart="@dimen/dp_16">
+            <ImageView android:id="@id/iv_user_avatar" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="2.5dip" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/iv_user_avatar_frame" android:layout_width="@dimen/dp_28" android:layout_height="@dimen/dp_28" android:src="@drawable/live_constellation_honour_avatar_frame" />
+            <TextView android:textSize="@dimen/sp_10" android:textColor="@color/white" android:ellipsize="end" android:id="@id/tv_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/dp_50" android:lines="1" android:layout_toRightOf="@id/iv_user_avatar_frame" android:layout_centerVertical="true" android:layout_marginStart="@dimen/dp_2" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="52.0" android:layout_marginStart="@dimen/dp_16">
+            <TextView android:textSize="@dimen/sp_10" android:textColor="@color/white" android:ellipsize="end" android:id="@id/tv_constellation_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:alpha="0.75" android:layout_alignParentEnd="true" />
+            <TextView android:textSize="@dimen/sp_10" android:textColor="@color/white" android:id="@id/tv_constellation_num_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="星座值" android:maxLines="1" android:layout_below="@id/tv_constellation_num" android:alpha="0.75" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="80.0" android:layout_marginStart="@dimen/dp_16">
+            <TextView android:textSize="@dimen/sp_10" android:textColor="@color/white" android:ellipsize="end" android:gravity="end" android:id="@id/tv_constellation_bonus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:alpha="0.75" android:layout_alignParentEnd="true" />
+            <TextView android:textSize="@dimen/sp_10" android:textColor="@color/white" android:id="@id/tv_constellation_bonus_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_below="@id/tv_constellation_bonus" android:alpha="0.75" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@id/line" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/dp_10" android:layout_marginRight="@dimen/dp_10" android:layout_alignParentTop="true" android:alpha="0.2" android:layout_marginHorizontal="@dimen/dp_10" />
+</RelativeLayout>

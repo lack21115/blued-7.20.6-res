@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:background="@color/syc_b" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/bubble_list_header_bg" android:layout_width="fill_parent" android:layout_height="195.0dip" android:src="@drawable/bubble_list_header_bg" android:scaleType="fitXY" />
+        <LinearLayout android:orientation="vertical" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="43.0dip">
+                <ImageView android:id="@id/bubble_list_header_title_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bubble_list_header_title" />
+                <TextView android:textAppearance="@style/TextAppearance.FontPath.Bold" android:textSize="18.0sp" android:textColor="@color/syc_h" android:id="@id/bubble_list_header_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:includeFontPadding="false" />
+            </LinearLayout>
+            <TextView android:textSize="12.0sp" android:textColor="#ff806baa" android:gravity="center_vertical" android:id="@id/bubble_list_header_des_tv" android:layout_width="wrap_content" android:layout_height="16.5dip" android:maxLines="1" android:includeFontPadding="false" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/bubble_list_header_date_layout" android:paddingTop="12.0dip" android:layout_width="fill_parent" android:layout_height="90.5dip" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-1.0dip">
+                <FrameLayout android:layout_width="0.0dip" android:layout_height="33.0dip" android:layout_marginLeft="12.5dip" android:layout_weight="1.0">
+                    <TextView android:textAppearance="@style/TextAppearance.FontPath.Medium" android:textSize="13.0sp" android:textColor="@color/syc_h" android:layout_gravity="center_vertical" android:id="@id/bubble_list_header_not_start_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/feed_bubble_sign_tips" android:maxLines="1" android:includeFontPadding="false" />
+                    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/bubble_list_header_progress_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="33.0dip">
+                        <TextView android:textAppearance="@style/TextAppearance.FontPath.Medium" android:textSize="13.0sp" android:textColor="@color/syc_h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已完成" android:includeFontPadding="false" />
+                        <androidx.cardview.widget.CardView android:layout_width="wrap_content" android:layout_height="18.0dip" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" app:cardBackgroundColor="@color/trans_black_nine" app:cardCornerRadius="4.0dip" app:cardElevation="0.0dip">
+                            <TextView android:textAppearance="@style/TextAppearance.FontPath.Medium" android:textSize="15.0sp" android:textColor="@color/syc_h" android:id="@id/bubble_list_header_progress_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.5dip" android:layout_marginRight="3.5dip" android:includeFontPadding="false" />
+                        </androidx.cardview.widget.CardView>
+                        <TextView android:textAppearance="@style/TextAppearance.FontPath.Medium" android:textSize="13.0sp" android:textColor="@color/syc_h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/feed_bubble_sign_continue" android:includeFontPadding="false" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/bubble_list_header_finish_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="33.0dip">
+                        <ImageView android:id="@id/bubble_list_header_finish_icon_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bubble_list_header_finish_icon" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.5dip">
+                            <TextView android:textAppearance="@style/TextAppearance.FontPath.Medium" android:textSize="12.0sp" android:textColor="@color/syc_h" android:gravity="center_vertical" android:id="@id/bubble_list_header_finish_des_tv" android:layout_width="wrap_content" android:layout_height="17.0dip" android:text="@string/feed_bubble_sign_finish" android:includeFontPadding="false" />
+                            <TextView android:textSize="10.0sp" android:textColor="#ff806baa" android:gravity="center_vertical" android:id="@id/bubble_list_header_finish_time_tv" android:layout_width="wrap_content" android:layout_height="14.0dip" android:includeFontPadding="false" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </FrameLayout>
+                <TextView android:textAppearance="@style/TextAppearance.FontPath.Medium" android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/bubble_list_header_confirm_tv" android:layout_width="72.0dip" android:layout_height="30.0dip" android:layout_marginTop="1.0dip" android:layout_marginRight="3.5dip" android:text="立即打卡" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <View android:background="@color/syc_c" android:layout_width="fill_parent" android:layout_height="9.0dip" />
+</LinearLayout>

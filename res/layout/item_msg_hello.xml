@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="55.0dip" android:layout_height="wrap_content" android:layout_marginRight="9.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_header" android:background="@drawable/icon_hello_header_bg" android:layout_width="55.0dip" android:layout_height="55.0dip" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:id="@id/header_view" android:layout_width="51.0dip" android:layout_height="51.0dip" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/img_verify" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginRight="3.0dip" android:layout_marginBottom="3.0dip" android:src="@drawable/v_blue" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:contentDescription="@string/imagefailed_exception" />
+    </RelativeLayout>
+    <TextView android:textSize="13.0sp" android:textColor="@color/syc_h" android:ellipsize="end" android:gravity="center" android:id="@id/tv_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:maxLines="1" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="@id/rl_header" app:layout_constraintRight_toRightOf="@id/rl_header" app:layout_constraintTop_toBottomOf="@id/rl_header" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/tv_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/ll_main" android:background="@drawable/shape_round_white" android:layout_width="400.0dip" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/syc_dark_h" android:gravity="center" android:id="@id/btn_cancel" android:background="@drawable/shape_round_white" android:text="@string/cancel" style="@style/pop_sheet_item" />
+    </LinearLayout>
+</FrameLayout>

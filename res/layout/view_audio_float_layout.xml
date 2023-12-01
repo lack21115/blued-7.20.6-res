@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_talking_view" android:background="@color/transparent" android:layout_width="@dimen/dp_110" android:layout_height="@dimen/dp_110" />
+    <com.blued.android.framework.view.shape.ShapeFrameLayout android:layout_gravity="center" android:layout_width="@dimen/dp_80" android:layout_height="@dimen/dp_80" app:corner_radius="@dimen/dp_40" app:solid_color="@color/syc_dark_b">
+        <androidx.cardview.widget.CardView android:layout_gravity="center" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardBackgroundColor="@color/transparent" app:cardCornerRadius="@dimen/dp_39" app:cardElevation="0.0dip">
+            <ImageView android:id="@id/iv_header" android:layout_width="@dimen/dp_78" android:layout_height="@dimen/dp_78" android:src="@drawable/user_bg_round" android:scaleType="fitXY" />
+        </androidx.cardview.widget.CardView>
+    </com.blued.android.framework.view.shape.ShapeFrameLayout>
+    <ImageView android:layout_gravity="right" android:id="@id/float_colse" android:padding="@dimen/dp_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:layout_marginRight="@dimen/dp_10" android:src="@drawable/icon_float_close" />
+</FrameLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/msg_item_root" android:paddingTop="@dimen/chat_two_item_root_top" android:paddingBottom="@dimen/chat_two_item_root_bottom" style="@style/layout_fill_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/msg_safe_common_system" />
+    <include layout="@layout/msg_date_layout" />
+    <include android:id="@id/msg_group_show_root" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="65.0dip" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/item_chat_group_head_layout" style="@style/chat_group_nickname_root" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/chat_content_root" android:layout_marginLeft="@dimen/chat_two_item_left_right_root" android:layout_marginRight="@dimen/chat_two_item_left_qp_marginright" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/layout_fill_wrap">
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_voice" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintLeft_toLeftOf="parent" style="@style/layout_wrap_content">
+                <include android:id="@id/msg_include_avatar_left" android:layout_width="@dimen/chat_two_item_avatar_size" android:layout_height="@dimen/chat_two_item_avatar_size" android:layout_marginTop="@dimen/msg_item_header_margin_top" layout="@layout/msg_include_avatar_left" />
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.soft.blued.customview.selectabletextview.SelectFrameLayout android:id="@id/select_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <RelativeLayout android:id="@id/chat_content_in" android:background="@drawable/voice_left" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_marginLeft="2.0dip" style="@style/chat_content_voice_style">
+                                <RelativeLayout android:id="@id/rl_anim" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_centerVertical="true">
+                                    <ImageView android:id="@id/chat_img_audio" android:background="@drawable/chat_audio_left_play" android:visibility="invisible" android:layout_centerVertical="true" android:contentDescription="@string/app_name" style="@style/layout_wrap_content" />
+                                    <ImageView android:id="@id/chat_img_audio_custom" android:layout_width="17.0dip" android:layout_height="17.0dip" android:src="@drawable/voice_left_play" android:layout_centerVertical="true" android:contentDescription="@string/app_name" />
+                                </RelativeLayout>
+                                <com.soft.blued.customview.adapttextview.FontAdjustTextView android:textSize="16.0sp" android:textColor="@color/syc_h" android:id="@id/chat_tv_time_audio" android:layout_marginLeft="7.0dip" android:layout_toRightOf="@id/rl_anim" android:layout_centerVertical="true" style="@style/layout_wrap_content" />
+                            </RelativeLayout>
+                        </com.soft.blued.customview.selectabletextview.SelectFrameLayout>
+                        <ImageView android:id="@id/voice_has_state" android:visibility="gone" android:layout_marginTop="10.0dip" android:src="@drawable/shape_common_oval_red_light" android:contentDescription="@string/app_name" style="@style/shape_red_point" />
+                    </LinearLayout>
+                    <com.soft.blued.customview.selectabletextview.SelectFrameLayout android:id="@id/select_layout2" android:background="@drawable/bubble_left" android:padding="13.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="2.0dip">
+                        <com.soft.blued.customview.adapttextview.FontAdjustTextView android:textColor="@color/syc_h" android:layout_gravity="center_vertical" android:id="@id/tv_turn_text" android:maxWidth="200.0dip" style="@style/chat_content_style" />
+                    </com.soft.blued.customview.selectabletextview.SelectFrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <include android:id="@id/view_process" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="16.0dip" android:layout_marginRight="15.0dip" app:layout_constraintRight_toRightOf="@id/chat_content_root" app:layout_constraintTop_toBottomOf="@id/chat_content_root" layout="@layout/layout_chat_turn_text_process" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <include layout="@layout/msg_source" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_msg_bottom_tips_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

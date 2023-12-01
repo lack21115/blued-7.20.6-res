@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/shape_raduis_topleft_topright_15_ffffff" android:paddingLeft="@dimen/dp_10" android:paddingTop="@dimen/dp_15" android:paddingRight="@dimen/dp_10" android:paddingBottom="@dimen/dp_15" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/sp_16" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yy_mic_voteing" />
+    <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center_horizontal" android:id="@id/rv_vote_user_list" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_28" />
+    <com.blued.android.framework.view.shape.ShapeTextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_close_vote" android:layout_width="fill_parent" android:layout_height="@dimen/dp_44" android:layout_marginLeft="@dimen/dp_5" android:layout_marginTop="@dimen/dp_34" android:layout_marginRight="@dimen/dp_5" android:text="@string/yy_mic_vote_close" app:corner_radius="@dimen/dp_22" app:solid_color="@color/syc_dark_28282b" />
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/syc_c" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" app:center_text="@string/settings_custom_options" app:hide_btm_line="true" app:hide_right="true" />
+    <RelativeLayout android:orientation="horizontal" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" style="@style/setting_info_item_ll_privacy">
+        <ToggleButton android:id="@id/tglbtnCustomRecommend" android:layout_marginTop="9.0dip" android:textOn="" android:textOff="" android:layout_alignParentRight="true" style="@style/toggle_button" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_privacy_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginRight="60.0dip">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/custom_recommend" style="@style/setting_info_item_tv_no_icon" />
+        </LinearLayout>
+        <TextView android:layout_marginTop="5.0dip" android:text="@string/custom_recommend_desc" android:layout_toLeftOf="@id/tglbtn_msg_disturb_onoff" android:layout_below="@id/ll_privacy_name" style="@style/common_setting_hint_text_gray" />
+    </RelativeLayout>
+</LinearLayout>

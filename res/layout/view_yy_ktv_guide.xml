@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/shape_raduis_topleft_topright_15_ffffff" android:paddingTop="@dimen/dp_12" android:paddingBottom="@dimen/dp_12" android:layout_width="fill_parent" android:layout_height="@dimen/dp_500"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/sp_16" android:textColor="@color/white" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="K歌房玩法" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_15" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_12" android:layout_marginRight="@dimen/dp_12">
+            <TextView android:textSize="@dimen/sp_16" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="上麦K歌：" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/syc_dark_8a8a8a" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_6" android:text="上麦后可参与点歌。每送出1张「点唱卡」礼物，房间点唱次数增加1次。房间内点唱次数麦上所有用户皆可使用，成功点歌后将消耗1个点唱次数。" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/syc_dark_8a8a8a" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_6" android:text="点歌后请耐心等待排麦，按点歌顺序进行排麦，点的歌曲只能自己演唱。每次只能点一首歌进行等待排麦，待唱完后可继续点歌。" />
+            <TextView android:textSize="@dimen/sp_16" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_18" android:text="点歌次数：" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/syc_dark_8a8a8a" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_6" android:text="房间内每送出1张「点唱卡」礼物，房间点唱次数增加1次。" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/syc_dark_8a8a8a" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_6" android:text="点歌后将消耗点歌次数。放弃演唱点歌次数不恢复。房间解散后点唱次数清空。" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

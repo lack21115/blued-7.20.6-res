@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/shape_live_bottom_icon_bg" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginLeft="4.5dip" android:layout_marginRight="4.5dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_icon" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.blued.android.framework.view.shape.ShapeRelativeLayout android:id="@id/iv_h5_well_dot" android:visibility="gone" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_marginTop="1.5dip" android:layout_marginRight="1.5dip" android:layout_alignParentRight="true" app:corner_radius="4.0dip" app:solid_color="@color/syc_dark_FF2424" app:stroke_color="@color/syc_dark_b" />
+</RelativeLayout>

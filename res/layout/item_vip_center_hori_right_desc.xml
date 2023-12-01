@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="90.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/img_cover" android:layout_width="50.0dip" android:layout_height="50.0dip" android:contentDescription="@string/about_blued" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/syc_h" android:ellipsize="end" android:gravity="center" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:maxWidth="80.0dip" android:maxLines="2" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/img_cover" />
+    <ImageView android:id="@id/img_svip" android:layout_width="wrap_content" android:layout_height="10.0dip" android:src="@drawable/icon_svip" android:scaleType="fitEnd" app:layout_constraintRight_toRightOf="@id/img_cover" app:layout_constraintTop_toTopOf="parent" />
+    <com.blued.android.framework.view.shape.ShapeLinearLayout android:id="@id/view_red_dot" android:layout_width="7.0dip" android:layout_height="7.0dip" app:corner_radius="5.0dip" app:layout_constraintLeft_toRightOf="@id/tv_name" app:layout_constraintTop_toTopOf="@id/tv_name" app:solid_color="@color/syc_g" />
+</androidx.constraintlayout.widget.ConstraintLayout>

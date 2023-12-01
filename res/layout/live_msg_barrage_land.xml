@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.blued.android.module.live.base.view.animation.LiveAnimationView android:id="@id/live_enter_animation" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.blued.android.module.live_china.view.BarrageView android:id="@id/barrage" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.blued.android.module.live_china.view.EntranceNormalLayout android:id="@id/approach_normal_barrage" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+            <com.blued.android.module.live_china.view.EntranceEffectLayout android:id="@id/approach_effect_barrage" android:layout_width="fill_parent" android:layout_height="134.0dip" />
+        </FrameLayout>
+        <TextView android:layout_width="fill_parent" android:layout_height="88.0dip" />
+    </LinearLayout>
+</RelativeLayout>

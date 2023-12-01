@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/msg_item_root" android:paddingTop="@dimen/chat_two_item_root_top" android:paddingBottom="@dimen/chat_two_item_root_bottom" style="@style/layout_fill_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/tv_date" android:text="12:13" style="@style/msg_time_style" />
+    <TextView android:gravity="center" android:id="@id/tv_notify_text" android:layout_marginLeft="@dimen/chat_two_item_left_qp_marginright" android:layout_marginRight="@dimen/chat_two_item_left_qp_marginright" style="@style/msg_time_style" />
+</LinearLayout>

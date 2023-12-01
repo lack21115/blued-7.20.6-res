@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_msg_f_root" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="81.0dip" android:baselineAligned="false">
+        <CheckBox android:id="@id/cb_member_invite" android:paddingLeft="10.0dip" android:focusable="false" android:focusableInTouchMode="false" android:visibility="visible" android:button="@drawable/selector_common_checkbox" style="@style/layout_wrap_content" />
+        <RelativeLayout android:layout_width="58.0dip" android:layout_height="58.0dip">
+            <ImageView android:id="@id/msg_friend_item_avatar" android:layout_width="54.0dip" android:layout_height="54.0dip" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/msg_friend_item_avatar_v" android:visibility="gone" android:layout_width="16.0dip" android:layout_height="16.0dip" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:contentDescription="@string/app_name" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+            <LinearLayout android:gravity="center_vertical" style="@style/layout_fill_wrap">
+                <LinearLayout android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_group_icon" android:background="@drawable/shape_msg_group_icon_blue_solid" android:paddingLeft="5.0dip" android:paddingTop="1.5dip" android:paddingRight="5.0dip" android:paddingBottom="1.5dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@string/biao_v4_chat_b_group" />
+                    <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@id/msg_friend_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                    <ImageView android:id="@id/img_vip_icon" style="@style/blued_vip_icon" />
+                    <ImageView android:id="@id/msg_group_remind_soundoff" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:src="@drawable/icon_title_silence" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_marginTop="8.0dip" style="@style/layout_fill_wrap">
+                <ImageView android:id="@id/msg_friend_item_status" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/icon_msg_sending" />
+                <include layout="@layout/item_msg_list_secret" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/common_v4_gray_font" android:id="@id/msg_friend_item_content" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:singleLine="true" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:layout_marginLeft="108.0dip" android:layout_below="@id/ll_msg_f_root" style="@style/common_cutter_gray" />
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/nafio_c" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/nafio_b" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/top_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:id="@id/ll_consult_online" android:background="@color/nafio_b" style="@style/ll_discover">
+            <ImageView android:src="@drawable/icon_helpcenter_online" style="@style/icon_left_my" />
+            <RelativeLayout style="@style/tv_help_center_item">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/help_service_center" style="@style/tv_help_center_item" />
+                <com.blued.android.framework.view.badgeview.QBadgeContainer android:layout_gravity="center_vertical" android:id="@id/badge_container" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:badge_offx="0.0dip" app:badge_offy="0.0dip" app:badge_textSize="11.0sp">
+                    <View android:id="@id/bindView" android:layout_width="25.0dip" android:layout_height="25.0dip" />
+                </com.blued.android.framework.view.badgeview.QBadgeContainer>
+            </RelativeLayout>
+            <ImageView style="@style/icon_right_arrow" />
+        </LinearLayout>
+        <include android:id="@id/top_divider" layout="@layout/view_common_large_divider" />
+        <LinearLayout android:id="@id/ll_termes" android:background="@color/nafio_b" style="@style/ll_discover">
+            <ImageView android:src="@drawable/icon_helpcenter_user" style="@style/icon_left_my" />
+            <TextView android:text="@string/termes" style="@style/tv_help_center_item" />
+            <ImageView style="@style/icon_right_arrow" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/ll_privacy_clause" android:background="@color/nafio_b" style="@style/ll_discover">
+            <ImageView android:src="@drawable/icon_privacy_clause" style="@style/icon_left_my" />
+            <TextView android:text="@string/privacy_clause" style="@style/tv_help_center_item" />
+            <ImageView style="@style/icon_right_arrow" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/ll_code_of_conduct" android:background="@color/nafio_b" style="@style/ll_discover">
+            <ImageView android:src="@drawable/icon_helpcenter_behave" style="@style/icon_left_my" />
+            <TextView android:text="@string/code_of_conduct" style="@style/tv_help_center_item" />
+            <ImageView style="@style/icon_right_arrow" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/ll_live_specification" android:background="@color/nafio_b" style="@style/ll_discover">
+            <ImageView android:src="@drawable/icon_helpcenter_live" style="@style/icon_left_my" />
+            <TextView android:text="@string/live_specification" style="@style/tv_help_center_item" />
+            <ImageView style="@style/icon_right_arrow" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/ll_contact" android:background="@color/nafio_b" style="@style/ll_discover">
+            <ImageView android:src="@drawable/icon_helpcenter_contact" style="@style/icon_left_my" />
+            <TextView android:text="@string/contact" style="@style/tv_help_center_item" />
+            <ImageView style="@style/icon_right_arrow" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/ll_invoice" android:background="@color/nafio_b" android:visibility="gone" style="@style/ll_discover">
+            <ImageView android:src="@drawable/icon_helpcenter_contact" style="@style/icon_left_my" />
+            <TextView android:text="@string/help_bill_invoice" style="@style/tv_help_center_item" />
+            <ImageView style="@style/icon_right_arrow" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

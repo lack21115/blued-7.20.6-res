@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/fl_root" android:layout_width="0.0dip" android:layout_height="41.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:id="@id/fl_child_root" android:layout_width="39.0dip" android:layout_height="39.0dip" android:layout_marginLeft="1.5dip" android:layout_marginRight="1.5dip" />
+    <View android:layout_gravity="center|right" android:id="@id/view_split_line" android:background="@color/white" android:layout_width="0.5dip" android:layout_height="14.0dip" android:alpha="0.1" />
+</FrameLayout>

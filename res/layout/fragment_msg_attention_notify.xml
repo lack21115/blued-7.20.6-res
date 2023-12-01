@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/keyboardRelativeLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/top_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@id/msg_frient_pullrefresh" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ListView android:id="@id/notice_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@color/transparent" android:dividerHeight="0.0dip" />
+            <com.blued.android.module.common.view.NoDataAndLoadFailView android:id="@id/ll_nodata_chats" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:default_visible="hide" app:no_data_img_res="@drawable/icon_no_chat" app:no_data_txt_res="@string/biao_msg_notify_attention_nocontent" />
+        </RelativeLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

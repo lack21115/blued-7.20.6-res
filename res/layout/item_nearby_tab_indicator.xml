@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.blued.android.framework.view.badgeview.QBadgeContainer android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_main" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <FrameLayout android:id="@id/item_nearby_tab_indicator_content_ly" android:layout_width="wrap_content" android:layout_height="24.0dip" android:layout_centerHorizontal="true">
+                <TextView android:textAppearance="@style/TextAppearance.FontPath.Medium" android:textSize="16.0sp" android:textColor="@color/syc_j" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/item_nearby_tab_indicator_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="110.0dip" android:maxLines="1" android:includeFontPadding="false" />
+            </FrameLayout>
+            <com.blued.android.framework.view.shape.ShapeTextView android:id="@id/item_nearby_tab_indicator_dot" android:visibility="gone" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_alignParentRight="true" app:corner_radius="8.0dip" app:solid_color="@color/syc_g" app:stroke_color="@color/syc_b" app:stroke_width="1.0dip" />
+            <ImageView android:id="@id/item_nearby_tab_indicator_avatar" android:visibility="invisible" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginTop="4.0dip" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</com.blued.android.framework.view.badgeview.QBadgeContainer>

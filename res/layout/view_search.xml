@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.framework.view.shape.ShapeLinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/search_layout" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="12.0dip" app:corner_radius="17.0dip" app:solid_color="@color/syc_y">
+        <ImageView android:id="@id/search_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/icon_search_common" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/syc_j" android:gravity="center_vertical" android:layout_gravity="center" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/biao_v1_lr_search" android:drawableLeft="@drawable/icon_search_common" android:drawablePadding="4.0dip" />
+    </com.blued.android.framework.view.shape.ShapeLinearLayout>
+</FrameLayout>

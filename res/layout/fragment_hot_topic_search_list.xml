@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.blued.android.framework.activity.keyboardpage.KeyboardListenLinearLayout android:orientation="vertical" style="@style/layout_fill"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.module.common.view.SearchView android:id="@id/search_view" android:layout_width="fill_parent" android:layout_height="wrap_content" app:search_hint="@string/topic_search" />
+    <com.blued.android.framework.view.pulltorefresh.PullToRefreshRecyclerView android:scrollbarStyle="outsideOverlay" android:id="@id/list_view_search" android:fadingEdge="none" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transparent" android:drawSelectorOnTop="true" android:scrollingCache="false" android:cacheColorHint="@color/transparent" android:groupIndicator="@null" app:ptrHeaderBackground="@color/pull_anim_bgcolor" />
+</com.blued.android.framework.activity.keyboardpage.KeyboardListenLinearLayout>

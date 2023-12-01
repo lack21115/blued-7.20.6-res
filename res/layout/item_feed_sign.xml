@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/feed" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/feed_visible" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/item_feed_visible" />
+        <include android:id="@id/feed_user_info" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/item_feed_user_info_sign" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="76.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip">
+            <ImageView android:id="@id/item_feed_sign_bg_corner_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/item_feed_sign_bg_corner" />
+            <View android:id="@id/item_feed_sign_bg_id" android:background="@drawable/gradient_feed_bubble_item_bg" android:layout_width="fill_parent" android:layout_height="67.5dip" android:layout_marginTop="8.5dip" />
+            <ImageView android:layout_gravity="bottom" android:id="@id/feed_bubble_nearby_guide_anim_iv" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="67.5dip" />
+            <ImageView android:layout_gravity="bottom|center|right" android:id="@id/feed_bubble_nearby_guide_up_anim_iv" android:visibility="gone" android:layout_width="72.0dip" android:layout_height="20.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="45.0dip" />
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="67.5dip" android:layout_marginTop="8.5dip">
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:layout_weight="1.0">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <ImageView android:id="@id/item_feed_sign_state_iv" android:layout_width="19.5dip" android:layout_height="19.5dip" android:scaleType="centerCrop" />
+                        <TextView android:textSize="13.0sp" android:textColor="@color/syc_h" android:id="@id/item_feed_sign_state_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:includeFontPadding="false" />
+                        <ImageView android:id="@id/item_feed_sign_complete_style_iv" android:layout_width="55.0dip" android:layout_height="14.0dip" android:layout_marginLeft="6.0dip" />
+                    </LinearLayout>
+                    <TextView android:textSize="12.0sp" android:textColor="@color/syc_j" android:ellipsize="end" android:id="@id/item_feed_sign_content_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:maxLines="1" android:includeFontPadding="false" />
+                </LinearLayout>
+                <FrameLayout android:layout_gravity="bottom" android:id="@id/item_feed_sign_say_hi_btn" android:background="@drawable/gradient_feed_sign_poke_btn_bg" android:layout_width="72.0dip" android:layout_height="27.0dip" android:layout_marginBottom="18.0dip">
+                    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:id="@id/item_feed_sign_say_hi_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/item_feed_sign_say_hi_hand" />
+                        <TextView android:textSize="12.0sp" android:textColor="@color/syc_b" android:id="@id/item_feed_sign_say_hi_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="@string/feed_list_item_click_sign" android:includeFontPadding="false" />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+            <ImageView android:layout_gravity="bottom|center|right" android:id="@id/feed_bubble_nearby_guide_btn_anim_iv" android:visibility="gone" android:layout_width="72.0dip" android:layout_height="27.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="18.0dip" />
+            <ImageView android:layout_gravity="right" android:id="@id/sign_feed_guide_poke_hand_iv" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="10.0dip" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/item_feed_sign_fun_layout" android:paddingLeft="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/feed_info">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/item_feed_sign_go_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                <com.blued.android.module.common.view.GradientTextView android:textSize="12.0sp" android:textColor="#ff3071fe" android:id="@id/item_feed_sign_go_list_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/feed_list_item_enter_sign" android:includeFontPadding="false" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/item_feed_sign_go_list_arrow" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/item_feed_sign_poke_me_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                <ImageView android:id="@id/item_feed_sign_poke_me_avatar_1" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/user_bg_round" android:scaleType="centerCrop" />
+                <ImageView android:id="@id/item_feed_sign_poke_me_avatar_2" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginLeft="-3.0dip" android:src="@drawable/user_bg_round" android:scaleType="centerCrop" />
+                <ImageView android:id="@id/item_feed_sign_poke_me_avatar_3" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginLeft="-3.0dip" android:src="@drawable/user_bg_round" android:scaleType="centerCrop" />
+                <ImageView android:id="@id/item_feed_sign_poke_me_more_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-3.0dip" android:src="@drawable/item_feed_sign_poke_me_more" />
+                <TextView android:textSize="11.0sp" android:textColor="@color/syc_k" android:ellipsize="end" android:id="@id/item_feed_sign_poke_me_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.5dip" android:maxLines="1" android:includeFontPadding="false" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/item_feed_sign_poke_me_arrow" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/item_feed_sign_classify_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                <ImageView android:id="@id/item_feed_sign_classify_avatar_1" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/user_bg_round" android:scaleType="centerCrop" />
+                <ImageView android:id="@id/item_feed_sign_classify_more_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-3.0dip" android:src="@drawable/item_feed_sign_poke_me_more" />
+                <TextView android:textSize="11.0sp" android:textColor="@color/syc_k" android:ellipsize="end" android:id="@id/item_feed_sign_classify_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.5dip" android:maxLines="1" android:includeFontPadding="false" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/item_feed_sign_poke_me_arrow" />
+            </LinearLayout>
+        </FrameLayout>
+        <include android:id="@id/view_btm_line" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/item_feed_sign_fun_layout" layout="@layout/item_feed_line" />
+    </LinearLayout>
+    <ImageView android:id="@id/feed_sign_avatar_mask" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginLeft="-19.0dip" android:layout_marginTop="-19.0dip" android:src="@drawable/feed_sign_avatar_mask_anim" />
+    <ImageView android:id="@id/feed_sign_guide_avatar_hand" android:visibility="gone" android:clickable="false" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="3.0dip" android:layout_marginTop="7.0dip" />
+</FrameLayout>

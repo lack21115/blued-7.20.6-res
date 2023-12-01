@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_auxiliary_dialog" android:background="@drawable/shape_permission" android:padding="12.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:layout_alignParentTop="true">
+        <TextView android:textSize="14.0sp" android:textColor="#ff222222" android:id="@id/tv_auxiliary_dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="13.0sp" android:textColor="#ff777777" android:id="@id/tv_auxiliary_dialog_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_setting_alert_dialog" android:background="@drawable/shape_permission" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip">
+        <TextView android:textSize="17.0sp" android:textColor="#ff000000" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/tv_title" android:paddingTop="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" />
+        <TextView android:textSize="15.0sp" android:textColor="#ff36383b" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/tv_des" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textDirection="locale" android:textAlignment="center" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" />
+        <TextView android:layout_gravity="center_horizontal" android:background="#ffe1e1e1" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="15.0sp" android:textColor="#ff2593f4" android:gravity="center" android:id="@id/tv_cancel" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <TextView android:layout_gravity="center_horizontal" android:id="@id/tv_divide" android:background="#ffe1e1e1" android:layout_width="1.0px" android:layout_height="fill_parent" />
+            <TextView android:textSize="15.0sp" android:textColor="#ff2593f4" android:gravity="center" android:id="@id/tv_ok" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

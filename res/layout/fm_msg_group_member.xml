@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_title" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <ImageView android:id="@id/ctt_left_img" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/icon_title_back" android:layout_alignParentLeft="true" android:layout_centerInParent="true" style="@style/biao_common_title_notrans_left" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/syc_h" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/group_member_lists" android:layout_centerInParent="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_right" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_delete" android:paddingLeft="5.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/icon_group_member_manager" />
+            <ImageView android:id="@id/iv_sort" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/icon_group_member_sort" />
+        </LinearLayout>
+    </RelativeLayout>
+    <com.blued.android.module.common.view.SearchView android:orientation="vertical" android:id="@id/search_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@id/frame_layout" android:background="@color/syc_x" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.blued.android.framework.view.pulltorefresh.RenrenPullToRefreshListView android:id="@id/member_list" style="@style/PullToRefreshListView" />
+            <RelativeLayout android:id="@id/rl_bottom" android:background="@color/syc_b" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignParentBottom="true">
+                <com.blued.android.framework.view.shape.ShapeTextView android:textSize="16.0sp" android:textColor="@color/syc_dark_b" android:gravity="center" android:id="@id/tv_delete" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="@string/group_kick_out" app:corner_radius="22.0dip" app:solid_color="@color/syc_g" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <FrameLayout android:id="@id/fm_search_list" android:background="@color/color_4D000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.blued.android.framework.view.pulltorefresh.RenrenPullToRefreshListView android:id="@id/search_list" android:background="@color/syc_x" android:visibility="gone" style="@style/PullToRefreshListView" />
+            <com.blued.android.module.common.view.NoDataAndLoadFailView android:id="@id/noDataView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

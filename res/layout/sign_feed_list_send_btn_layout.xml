@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/sign_feed_list_send_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/sign_feed_list_send_bg" android:visibility="gone" android:layout_width="154.0dip" android:layout_height="44.0dip" android:src="@drawable/gradient_feed_post_sign_btn_bg" />
+    <View android:layout_gravity="center" android:background="@drawable/gradient_feed_post_sign_btn_bg" android:layout_width="154.0dip" android:layout_height="44.0dip" />
+    <FrameLayout android:id="@id/sign_feed_list_icon_layout" android:layout_width="73.5dip" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center|right" android:id="@id/sign_feed_list_btn_apng" android:layout_width="62.0dip" android:layout_height="44.0dip" />
+        <ImageView android:layout_gravity="right" android:id="@id/sign_feed_list_btn_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.5dip" android:layout_marginRight="1.5dip" android:src="@drawable/sign_feed_list_btn_icon" />
+    </FrameLayout>
+    <TextView android:textAppearance="@style/TextAppearance.FontPath.Bold" android:textSize="16.0sp" android:textColor="@color/white" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="73.5dip" android:text="@string/sign_post_bubble" android:includeFontPadding="false" />
+</FrameLayout>

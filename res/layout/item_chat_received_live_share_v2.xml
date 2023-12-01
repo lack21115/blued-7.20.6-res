@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/msg_item_root" android:paddingTop="@dimen/chat_two_item_root_top" android:paddingBottom="@dimen/chat_two_item_root_bottom" style="@style/layout_fill_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/msg_date_layout" />
+    <LinearLayout android:id="@id/chat_content_root" android:layout_marginStart="@dimen/chat_two_item_left_right_root" style="@style/layout_wrap_content">
+        <include layout="@layout/msg_include_avatar_left" />
+        <com.blued.android.framework.view.shape.ShapeRelativeLayout android:id="@id/chat_content_in" android:layout_width="190.0dip" android:layout_height="130.0dip" android:layout_marginStart="7.0dip" app:corner_radius="6.0dip" app:gradient_angle="LEFT_RIGHT" app:gradient_end_color="@color/syc_DCE8FF" app:gradient_start_color="@color/syc_D2FBF9">
+            <com.blued.android.framework.view.shape.ShapeTextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/stv_room_tag" android:layout_width="36.0dip" android:layout_height="18.0dip" android:maxLines="1" app:bottom_right_radius="6.0dip" app:top_left_radius="6.0dip" />
+            <ImageView android:id="@id/iv_room_pic" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="15.0dip" android:layout_centerHorizontal="true" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_room_name" android:layout_width="wrap_content" android:layout_height="21.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="4.0dip" android:layout_below="@id/iv_room_pic" android:layout_centerHorizontal="true" android:layout_marginStart="21.0dip" android:layout_marginEnd="21.0dip">
+                <Space android:id="@id/space_room_name" android:layout_width="36.0dip" android:layout_height="15.0dip" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/syc_dark_222222" android:ellipsize="end" android:gravity="center" android:id="@id/tv_room_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="112.0dip" android:maxLines="1" android:includeFontPadding="false" android:layout_marginEnd="6.0dip" />
+                <ImageView android:id="@id/iv_room_level_pic" android:layout_width="30.0dip" android:layout_height="15.0dip" />
+            </LinearLayout>
+            <TextView android:textSize="13.0sp" android:textColor="@color/syc_dark_777777" android:ellipsize="end" android:id="@id/tv_room_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:layout_below="@id/ll_room_name" android:layout_centerHorizontal="true" android:layout_marginStart="21.0dip" android:layout_marginEnd="21.0dip" />
+        </com.blued.android.framework.view.shape.ShapeRelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_msg_bottom_tips_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

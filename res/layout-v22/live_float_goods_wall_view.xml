@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/fl_root" android:layout_width="87.0dip" android:layout_height="36.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.framework.view.shape.ShapeFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:corner_radius="6.0dip" app:solid_color="@color/syc_dark_701F1637">
+        <View android:background="@drawable/live_goods_wall_float_bg" android:layout_width="fill_parent" android:layout_height="29.0dip" />
+        <ImageView android:id="@id/iv_icon" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginLeft="4.0dip" android:layout_marginTop="5.5dip" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/syc_tran80_FFFFFF" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="27.5dip" android:layout_marginTop="3.5dip" android:text="@string/live_goods_wall_tab_goods_wall" android:includeFontPadding="false" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/white" android:id="@id/tv_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="27.5dip" android:layout_marginTop="16.5dip" android:includeFontPadding="false" />
+        <com.blued.android.module.live_china.view.LineProgressView android:layout_gravity="bottom" android:id="@id/view_progress" android:layout_width="fill_parent" android:layout_height="3.0dip" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="4.0dip" android:layout_marginHorizontal="4.0dip" app:lpv_color="@color/syc_dark_ffb219" app:lpv_color_under="@color/syc_tran30_FFFFFF" app:lpv_zero_has_dot="false" />
+    </com.blued.android.framework.view.shape.ShapeFrameLayout>
+</FrameLayout>

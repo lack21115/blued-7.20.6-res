@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/selector_textview_bgcolor" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_gravity="top" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/header_view" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/user_bg_round" />
+            <ImageView android:layout_gravity="bottom|center|right" android:id="@id/img_verify" android:layout_width="14.0dip" android:layout_height="14.0dip" android:contentDescription="@string/imagefailed_exception" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="1.0">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="13.0sp" android:textColor="@color/syc_h" android:ellipsize="end" android:gravity="top" android:id="@id/name_view" android:layout_height="wrap_content" style="@style/text_user_list_name" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_anonymous" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginLeft="4.0dip" android:src="@drawable/anonymous_icon" android:scaleType="fitXY" />
+                <ImageView android:id="@id/img_vip_icon" style="@style/blued_vip_icon" />
+            </LinearLayout>
+            <TextView android:textSize="12.0sp" android:textColor="@color/syc_j" android:gravity="center_vertical" android:id="@id/location_view" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:singleLine="true" style="@style/text_user_list_other_info" />
+            <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+                <TextView android:textSize="12.0sp" android:textColor="@color/syc_j" android:id="@id/age_view" android:text="" style="@style/text_user_list_other_info" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/syc_j" android:id="@id/textView14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:text="@string/cut_point" style="@style/text_user_list_other_info" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/syc_j" android:id="@id/height_view" android:text="" style="@style/text_user_list_other_info" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/syc_j" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:text="@string/cut_point" style="@style/text_user_list_other_info" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/syc_j" android:id="@id/weight_view" android:text="" style="@style/text_user_list_other_info" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/syc_j" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:text="@string/separator" style="@style/text_user_list_other_info" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/nafio_i" android:id="@id/role_view" android:text="" style="@style/text_user_list_other_info" />
+            </LinearLayout>
+        </LinearLayout>
+        <com.blued.android.module.common.user.view.FollowStatusView android:id="@id/follow_status_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" />
+    </LinearLayout>
+    <View android:background="@color/syc_c" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+</LinearLayout>

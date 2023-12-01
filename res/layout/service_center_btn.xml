@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.framework.view.shape.ShapeRelativeLayout android:id="@id/btn_service" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_alignParentBottom="true" app:corner_radius="22.0dip" app:solid_color="@color/syc_a">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="16.0sp" android:textColor="@color/syc_dark_b" android:id="@id/tv_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/help_service_online" />
+            <com.blued.android.framework.view.badgeview.QBadgeContainer android:layout_gravity="center_vertical" android:id="@id/badge_container" android:visibility="gone" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="4.5dip" android:layout_alignParentRight="true" app:badge_offx="0.0dip" app:badge_offy="0.0dip" app:badge_textSize="11.0sp">
+                <View android:id="@id/bindView" android:layout_width="25.0dip" android:layout_height="25.0dip" />
+            </com.blued.android.framework.view.badgeview.QBadgeContainer>
+        </LinearLayout>
+    </com.blued.android.framework.view.shape.ShapeRelativeLayout>
+</FrameLayout>

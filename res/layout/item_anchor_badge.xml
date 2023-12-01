@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/ll_main" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_score" android:background="@drawable/shape_popmedal_point_bg" android:layout_width="40.0dip" android:layout_height="17.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" />
+    <ImageView android:layout_gravity="top" android:id="@id/img_badge" android:layout_width="90.0dip" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/anchor_badge_default" android:scaleType="fitStart" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_toRightOf="@id/img_badge">
+        <TextView android:textSize="17.0sp" android:textColor="@color/syc_dark_h" android:id="@id/tv_badge_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/syc_dark_i" android:id="@id/tv_gained_cond" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:maxLines="2" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/syc_dark_i" android:id="@id/tv_lvlup_cond" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/syc_dark_i" android:id="@id/tv_valid_date" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

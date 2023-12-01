@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_root" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_header" android:visibility="visible" android:layout_width="72.0dip" android:layout_height="79.0dip" android:layout_marginRight="10.0dip" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <RelativeLayout android:layout_width="72.0dip" android:layout_height="72.0dip">
+            <ImageView android:id="@id/iv_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/icon_find_recommend_header_bg_pink" />
+            <ImageView android:id="@id/header_view" android:layout_width="66.0dip" android:layout_height="66.0dip" android:layout_centerInParent="true" android:contentDescription="@string/app_name" />
+        </RelativeLayout>
+        <ImageView android:id="@id/iv_live_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@color/syc_h" android:ellipsize="end" android:id="@id/tv_name" android:paddingTop="5.0dip" android:paddingBottom="2.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:maxEms="4" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="@id/rl_header" app:layout_constraintRight_toRightOf="@id/rl_header" app:layout_constraintTop_toBottomOf="@id/rl_header" />
+    <RelativeLayout android:id="@id/rl_header_new" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <androidx.cardview.widget.CardView android:layout_width="@dimen/dp_72" android:layout_height="@dimen/dp_72" app:cardBackgroundColor="@color/transparent" app:cardCornerRadius="6.0dip" app:cardElevation="0.0dip">
+            <ImageView android:id="@id/header_view_new" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/user_header_square" android:scaleType="centerCrop" />
+        </androidx.cardview.widget.CardView>
+        <ImageView android:id="@id/iv_live_type_new" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@color/syc_h" android:ellipsize="end" android:id="@id/tv_name_new" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:lines="1" android:maxEms="4" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="@id/rl_header_new" app:layout_constraintTop_toBottomOf="@id/rl_header_new" />
+</androidx.constraintlayout.widget.ConstraintLayout>

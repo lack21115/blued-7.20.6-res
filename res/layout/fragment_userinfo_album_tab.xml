@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@id/refresh_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    <com.blued.android.module.common.view.NoDataAndLoadFailView android:id="@id/nodataview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/loading_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="38.0dip">
+        <ProgressBar android:layout_gravity="center_horizontal" android:visibility="visible" android:layout_width="25.0dip" android:layout_height="25.0dip" android:indeterminateTint="@color/syc_j" android:indeterminateTintMode="src_atop" style="?android:progressBarStyle" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/syc_j" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/live_music_loading" />
+    </LinearLayout>
+</FrameLayout>

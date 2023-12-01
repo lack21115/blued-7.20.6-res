@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/trans_black_five" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="37.5dip" android:layout_marginRight="37.5dip" app:cardBackgroundColor="@color/syc_b" app:cardCornerRadius="6.0dip" app:cardElevation="0.0dip">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textAppearance="@style/TextAppearance.FontPath.Medium" android:textSize="16.0sp" android:textColor="@color/syc_h" android:id="@id/common_edit_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/event_introduce" android:includeFontPadding="false" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/syc_j" android:id="@id/common_edit_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/event_valid_in_event" android:includeFontPadding="false" />
+            <androidx.cardview.widget.CardView android:id="@id/common_edit_cv" android:layout_width="fill_parent" android:layout_height="105.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" app:cardBackgroundColor="@color/syc_x" app:cardCornerRadius="6.0dip" app:cardElevation="0.0dip">
+                <com.blued.community.view.SelectionEditText android:textSize="14.0sp" android:textColor="@color/syc_h" android:textColorHint="@color/syc_k" android:gravity="center|left|top" android:id="@id/common_edit_et" android:background="@null" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="12.0dip" android:hint="@string/event_signature_hint_host" android:overScrollMode="never" app:emojiconSize="14.0sp" />
+                <com.blued.community.view.EditInputNumView android:textSize="12.0sp" android:textColor="@color/syc_k" android:layout_gravity="bottom|center|right" android:id="@id/common_edit_num_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:layout_marginBottom="12.0dip" android:includeFontPadding="false" app:editMaxLength="256" app:editShowType="has_focus" app:inTextColor="@color/syc_k" app:outTextColor="@color/syc_g" />
+            </androidx.cardview.widget.CardView>
+            <View android:background="@color/syc_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="12.0dip" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="44.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="@color/syc_k" android:gravity="center" android:id="@id/common_edit_cancel" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/common_cancel" android:includeFontPadding="false" android:layout_weight="1.0" />
+                <View android:background="@color/syc_line" android:layout_width="1.0px" android:layout_height="fill_parent" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/syc_dark_d0d0d0" android:gravity="center" android:id="@id/common_edit_confirm" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/common_ok" android:includeFontPadding="false" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

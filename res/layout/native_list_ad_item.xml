@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/fl_main" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.anythink.nativead.api.ATNativeAdView android:id="@id/ad_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/self_render_view" android:visibility="gone" layout="@layout/native_ad_item" />
+    </com.anythink.nativead.api.ATNativeAdView>
+</FrameLayout>

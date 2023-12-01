@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/rl_" android:background="@color/syc_b" android:layout_width="0.0dip" android:layout_height="@dimen/dp_54" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.blued.android.module.common.view.SquareImageView android:id="@id/iv" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:layout_marginLeft="@dimen/dp_15" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/syc_h" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_6" android:text="荣誉等级" />
+        <ImageView android:id="@id/iv_rydj_red" android:visibility="gone" android:layout_width="@dimen/dp_8" android:layout_height="@dimen/dp_8" android:layout_marginBottom="@dimen/dp_5" android:src="@drawable/shape_common_oval_red" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <ImageView android:id="@id/iv_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_12" android:src="@drawable/icon_yy_home_black" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

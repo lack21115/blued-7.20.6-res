@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:id="@id/live_pk_invite_layer" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <FrameLayout android:id="@id/fl_main" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.blued.android.framework.view.shape.ShapeLinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/content_layout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="240.0dip" app:solid_color="@color/syc_dark_b" app:top_left_radius="12.0dip" app:top_right_radius="12.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/syc_dark_222222" android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:text="@string/live_invite_connecting" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/ll_invite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0dip" />
+                <Space android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                <LinearLayout android:id="@id/ll_btn_root" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="6.5dip">
+                    <com.blued.android.framework.view.shape.ShapeTextView android:textSize="16.0sp" android:textColor="@color/syc_dark_222222" android:gravity="center" android:id="@id/live_invite_cancel" android:layout_width="0.0dip" android:layout_height="44.0dip" android:text="@string/live_invite_connect_exit" android:layout_weight="1.0" app:corner_radius="44.0dip" app:solid_color="@color/syc_dark_f5f5f5" />
+                    <FrameLayout android:id="@id/fl_invite_pk_root" android:layout_width="0.0dip" android:layout_height="44.0dip" android:layout_marginLeft="7.5dip" android:layout_weight="1.0">
+                        <com.blued.android.framework.view.shape.ShapeTextView android:textSize="16.0sp" android:textColor="@color/syc_dark_b" android:gravity="center" android:id="@id/live_invite_pk" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/live_multi_pk_start" app:corner_radius="44.0dip" app:gradient_end_color="@color/syc_dark_ff3aaa" app:gradient_start_color="@color/syc_dark_922cee" />
+                        <com.blued.android.framework.view.shape.ShapeTextView android:layout_gravity="right" android:id="@id/view_dot" android:visibility="gone" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="37.0dip" app:corner_radius="4.0dip" app:solid_color="@color/syc_g" app:stroke_color="@color/white" app:stroke_width="0.75dip" />
+                    </FrameLayout>
+                </LinearLayout>
+                <TextView android:textSize="12.0sp" android:textColor="@color/syc_dark_989898" android:id="@id/live_btm_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="@string/live_invite_connect_cancel_tip" />
+            </com.blued.android.framework.view.shape.ShapeLinearLayout>
+            <ProgressBar android:layout_gravity="center" android:id="@id/ll_loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:progressBarStyle" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

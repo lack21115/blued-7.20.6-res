@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/rl_comment" android:background="@color/syc_b" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/item_comment" />
+        <View android:id="@id/comment_blue_mask" android:background="@color/syc_a" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" android:alpha="0.1" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_reply" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip" android:layout_marginBottom="8.0dip">
+        <include android:id="@id/ll_reply" android:background="@color/syc_b" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/layout_comment_reply_circle" />
+        <View android:id="@id/reply_blue_mask" android:background="@color/syc_a" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" android:alpha="0.1" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View android:id="@id/comment_line" android:background="@color/syc_o" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="10.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_more_hot_comment" android:background="@color/syc_b" android:paddingLeft="15.0dip" android:paddingTop="20.0dip" android:paddingRight="15.0dip" android:paddingBottom="20.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="0.0dip" android:layout_marginRight="15.0dip" android:layout_weight="1.0" style="@style/common_cutter_gray" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/nafio_k" android:id="@id/tv_more_hot_comment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/more_hot_comment" />
+        <ImageView android:id="@id/img_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginTop="1.0dip" android:src="@drawable/icon_feed_list_more_comment" />
+        <TextView android:layout_width="0.0dip" android:layout_marginLeft="15.0dip" android:layout_weight="1.0" style="@style/common_cutter_gray" />
+    </LinearLayout>
+</LinearLayout>

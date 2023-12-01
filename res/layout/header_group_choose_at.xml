@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/syc_x" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="87.0dip" android:layout_marginBottom="10.0dip">
+        <com.blued.android.framework.view.shape.ShapeTextView android:textSize="14.0sp" android:textColor="@color/syc_b" android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_marginLeft="10.0dip" android:text="ALL" app:corner_radius="44.0dip" app:solid_color="@color/msg_group_at_header_bg" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/syc_h" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="\@所有人" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:paddingBottom="90.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.framework.view.shape.ShapeTextView android:layout_width="0.0dip" android:layout_height="0.0dip" app:corner_radius="6.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="@id/view_content" app:layout_constraintRight_toRightOf="@id/view_content" app:layout_constraintTop_toTopOf="parent" app:stroke_color="@color/vip_ecbf8d" app:stroke_width="1.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/view_content" android:paddingLeft="8.0dip" android:paddingTop="3.0dip" android:paddingRight="8.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textSize="10.0sp" android:textColor="@color/syc_h" android:id="@id/tv_date" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/vip_ecbf8d" android:id="@id/tv_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

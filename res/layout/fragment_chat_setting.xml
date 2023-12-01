@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/top_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/rl_detail_setting" android:background="@drawable/selector_mine_head_graynblue" android:paddingTop="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="60.0dip" android:layout_height="60.0dip">
+            <ImageView android:id="@id/chat_setting_avatar" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/user_bg_round" />
+            <ImageView android:id="@id/chat_setting_avatar_v" android:visibility="gone" android:layout_width="16.0dip" android:layout_height="16.0dip" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:contentDescription="@string/app_name" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/msg_ll_detail" android:paddingBottom="30.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip">
+                <TextView android:textSize="18.0sp" android:textColor="@color/syc_h" android:ellipsize="end" android:id="@id/chat_setting_nickname_or_note" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+                <ImageView android:id="@id/img_vip_icon" style="@style/blued_vip_icon" />
+            </LinearLayout>
+            <TextView android:textSize="14.0sp" android:textColor="@color/common_v4_gray_font" android:id="@id/chat_setting_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/app_name_test_short" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/nafio_i" android:ellipsize="end" android:id="@id/chat_setting_nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/app_name_test_short" />
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/view_common_large_divider" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/chat_setting_remark_root" android:background="@drawable/selector_textview_bgcolor" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/syc_h" android:text="@string/biao_v4_chat_setting_remark" android:layout_centerVertical="true" style="@style/layout_wrap_content" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/common_v4_gray_font" android:ellipsize="end" android:gravity="right" android:id="@id/chat_setting_remark" android:layout_width="0.0dip" android:layout_marginRight="6.0dip" android:text="@string/app_name_test_short" android:maxLines="1" android:layout_weight="1.0" android:layout_centerVertical="true" style="@style/layout_wrap_content" />
+        <ImageView android:layout_marginRight="15.0dip" style="@style/icon_right_arrow" />
+    </LinearLayout>
+    <TextView android:layout_marginLeft="13.0dip" style="@style/common_cutter_gray" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/rl_special_care" android:background="@drawable/selector_textview_bgcolor" android:paddingLeft="13.0dip" android:paddingRight="13.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="@color/syc_32" android:id="@id/tv_special_care" android:layout_width="wrap_content" android:text="@string/msg_special_care" android:layout_centerVertical="true" style="@style/layout_wrap_content" />
+            <com.blued.android.framework.view.shape.ShapeTextView android:id="@id/tv_special_care_remind" android:visibility="gone" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginTop="2.0dip" android:layout_alignTop="@id/tv_special_care" android:layout_centerVertical="true" android:layout_marginStart="2.0dip" android:layout_toEndOf="@id/tv_special_care" app:corner_radius="10.0dip" app:solid_color="@color/nafio_g" app:stroke_color="@color/syc_b" app:stroke_width="1.0dip" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_vip" android:layout_centerVertical="true" android:layout_marginStart="5.0dip" android:layout_toEndOf="@id/tv_special_care_remind" />
+            <ImageView android:id="@id/iv_special_care_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_gift_wall_question" android:layout_centerVertical="true" android:layout_marginEnd="10.0dip" android:layout_toStartOf="@id/msg_setting_special_care" />
+            <ImageView android:id="@id/msg_setting_special_care" android:background="@drawable/selector_common_togglebutton" android:layout_width="48.0dip" android:layout_height="30.0dip" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/rl_lie_top" android:background="@drawable/selector_textview_bgcolor" android:paddingLeft="13.0dip" android:paddingRight="13.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="@color/syc_32" android:id="@id/tv_lie_top" android:layout_width="wrap_content" android:text="@string/msg_lie_top" android:layout_centerVertical="true" style="@style/layout_wrap_content" />
+            <com.blued.android.framework.view.shape.ShapeTextView android:layout_gravity="center_vertical" android:id="@id/red_point" android:visibility="gone" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginLeft="4.0dip" android:layout_toRightOf="@id/tv_lie_top" android:layout_centerVertical="true" app:corner_radius="10.0dip" app:solid_color="@color/nafio_g" app:stroke_color="@color/syc_b" app:stroke_width="1.0dip" />
+            <ImageView android:id="@id/msg_setting_lie_top" android:background="@drawable/selector_common_togglebutton" android:layout_width="48.0dip" android:layout_height="30.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView android:layout_marginLeft="13.0dip" style="@style/common_cutter_gray" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_no_call" android:background="@drawable/selector_textview_bgcolor" android:paddingLeft="15.0dip" android:paddingRight="13.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/syc_h" android:layout_width="0.0dip" android:text="@string/biao_v4_chat_setting_nocall" android:layout_weight="1.0" android:layout_centerVertical="true" style="@style/layout_wrap_content" />
+            <ToggleButton android:id="@id/msg_setting_nocall_toggle" android:background="@drawable/selector_common_togglebutton" android:layout_width="48.0dip" android:layout_height="30.0dip" android:textOn="" android:textOff="" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </LinearLayout>
+        <TextView android:id="@id/tv_no_call_line" android:layout_marginLeft="13.0dip" style="@style/common_cutter_gray" />
+        <com.soft.blued.customview.LabeledTextView android:id="@id/chat_setting_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" app:label_bottom_line="true" app:label_text="@string/biao_v4_chat_setting_bg" app:label_text_rigticon="@drawable/icon_vip" />
+        <TextView android:layout_marginLeft="13.0dip" style="@style/common_cutter_gray" />
+        <com.soft.blued.customview.LabeledTextView android:id="@id/chat_setting_bubble" android:layout_width="fill_parent" android:layout_height="wrap_content" app:label_bottom_line="true" app:label_text="@string/msg_setting_bubble" app:label_text_rigticon="@drawable/icon_vip" />
+        <TextView android:layout_marginLeft="13.0dip" style="@style/common_cutter_gray" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/syc_h" android:gravity="center_vertical" android:id="@id/chat_setting_clearchat" android:background="@drawable/selector_textview_bgcolor" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="@string/biao_v4_chat_setting_clearchat" />
+    </LinearLayout>
+    <TextView android:layout_marginLeft="13.0dip" style="@style/common_cutter_gray" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_setting_report" android:background="@drawable/selector_textview_bgcolor" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="@color/syc_h" android:gravity="center_vertical" android:id="@id/chat_setting_report" android:background="@drawable/selector_textview_bgcolor" android:layout_width="0.0dip" android:layout_height="45.0dip" android:layout_marginLeft="15.0dip" android:text="@string/biao_v4_chat_setting_report" android:layout_weight="1.0" />
+        <ImageView android:layout_marginRight="15.0dip" style="@style/icon_right_arrow" />
+    </LinearLayout>
+    <include layout="@layout/view_common_large_divider" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/sara_g" android:gravity="center" android:id="@id/chat_setting_toblack" android:layout_height="45.0dip" android:text="@string/biao_v4_chat_setting_toblack" style="@style/chat_setting_item_tool_red" />
+    <View android:background="@color/syc_c" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

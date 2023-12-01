@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_cover" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintDimensionRatio="H,123:165" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/syc_h" android:gravity="center_vertical" android:id="@id/tv_first" android:background="@drawable/video_scan_music_first_bg" android:paddingLeft="4.0dip" android:paddingRight="6.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="18.0dip" android:layout_marginLeft="6.0dip" android:layout_marginTop="7.0dip" android:text="@string/music_starting" app:layout_constraintLeft_toLeftOf="@id/iv_cover" app:layout_constraintTop_toTopOf="@id/iv_cover" />
+</androidx.constraintlayout.widget.ConstraintLayout>

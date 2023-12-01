@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/root_view" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/layout1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="16.0sp" android:textColor="@color/syc_dark_h" android:id="@id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <View android:id="@id/view1" android:background="@drawable/shape_live_record_level_tool_bar" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="4.0dip" android:layout_marginTop="4.0dip" />
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/layout2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="16.0sp" android:textColor="@color/syc_dark_k" android:id="@id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <View android:id="@id/view2" android:background="@drawable/shape_live_record_level_tool_bar" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="4.0dip" android:layout_marginTop="4.0dip" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

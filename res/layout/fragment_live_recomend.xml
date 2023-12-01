@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout android:id="@id/refresh_view" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:srlAccentColor="@android:color/transparent">
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:orientation="vertical" android:id="@id/coordinator" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.google.android.material.appbar.AppBarLayout android:id="@id/appbar" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip">
+                <include android:id="@id/live_banner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" app:layout_scrollFlags="scroll" layout="@layout/live_new_banner_auto_scroll" />
+            </com.google.android.material.appbar.AppBarLayout>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+                <FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="100.0dip">
+                    <com.blued.android.module.common.view.NoDataAndLoadFailView android:id="@id/ll_no_internet" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    <include android:id="@id/ll_default_empty" layout="@layout/nodata_show_live_list" />
+                </FrameLayout>
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/grid_view" android:overScrollMode="never" style="@style/PullToRefreshListView" />
+            </FrameLayout>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</FrameLayout>

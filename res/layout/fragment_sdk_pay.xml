@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/title_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="180.0dip">
+        <TextView android:textSize="35.0sp" android:textColor="@color/nafio_f" android:id="@id/tv_beans_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/live_wandou_icon" android:drawablePadding="5.0dip" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/nafio_j" android:id="@id/tv_order_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.5dip" />
+    </LinearLayout>
+    <View android:background="@color/nafio_n" android:layout_width="fill_parent" android:layout_height="12.5dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="15.0sp" android:textColor="@color/nafio_h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:text="@string/sdk_pay_payee" android:drawableLeft="@drawable/sdk_pay_money" android:drawablePadding="12.5dip" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/nafio_k" android:id="@id/tv_payee_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/nafio_n" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="15.0sp" android:textColor="@color/nafio_h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:text="@string/sdk_pay_goods" android:drawableLeft="@drawable/sdk_pay_icon_goods" android:drawablePadding="12.5dip" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/nafio_k" android:id="@id/tv_goods_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/nafio_n" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <Button android:textSize="15.0sp" android:textColor="@color/nafio_b" android:layout_gravity="center_horizontal" android:id="@id/btn_pay" android:background="@color/nafio_a" android:layout_width="200.0dip" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:text="@string/sdk_pay_payment" />
+    <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <View android:background="@color/nafio_n" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/nafio_h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sdk_pay_balance" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/nafio_f" android:id="@id/tv_balance_count" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/nafio_a" android:gravity="center" android:id="@id/tv_topup" android:background="@drawable/shape_pay_round_blue" android:layout_width="48.0dip" android:layout_height="27.0dip" android:text="@string/sdk_pay_topup" />
+    </LinearLayout>
+</LinearLayout>

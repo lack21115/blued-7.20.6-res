@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_msg_fans_reopen" android:background="@drawable/shape_live_reopen_fans__bg" android:paddingLeft="10.0dip" android:paddingTop="6.0dip" android:paddingRight="10.0dip" android:paddingBottom="6.0dip" android:visibility="gone" android:layout_width="249.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textColor="@color/syc_dark_b" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/live_fans_re_open_tip" android:lineSpacingExtra="3.0dip" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_msg_fans_reopen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="23.0dip" android:layout_alignParentRight="true">
+        <TextView android:textSize="12.0sp" android:textColor="@color/syc_dark_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_fans_indicate_pay" />
+        <TextView android:background="@color/syc_dark_b" android:layout_width="48.0dip" android:layout_height="0.5dip" />
+    </LinearLayout>
+</RelativeLayout>

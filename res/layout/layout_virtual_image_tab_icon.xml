@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/v_split_line_1" android:background="@color/syc_dark_e5e5e5" android:visibility="gone" android:layout_width="0.5dip" android:layout_height="18.0dip" android:layout_centerVertical="true" />
+    <View android:id="@id/v_split_line_2" android:background="@drawable/ic_virtual_image_split_line" android:visibility="gone" android:layout_width="4.0dip" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/fl_tab_icon" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_centerVertical="true">
+        <ImageView android:id="@id/iv_tab_icon" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <View android:layout_gravity="end|center|top" android:id="@id/v_tab_red_dot" android:background="@drawable/shape_round_filled_red_dot_ff3e4f" android:visibility="gone" android:layout_width="6.0dip" android:layout_height="6.0dip" />
+    </FrameLayout>
+</RelativeLayout>

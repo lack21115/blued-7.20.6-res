@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/background_header" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:contentDescription="@string/app_name" />
+    <View android:background="@color/color_cc000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="18.0sp" android:textColor="@color/syc_dark_b" android:id="@id/live_guest_error_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="75.0dip" android:layout_marginRight="75.0dip" android:text="主播已经休息了" />
+        <TextView android:textSize="12.0sp" android:textColor="#40ffffff" android:gravity="center" android:id="@id/tv_error_finish_countdown_tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="17.0dip" android:layout_marginTop="14.0dip" />
+        <com.blued.android.framework.view.shape.ShapeTextView android:textSize="15.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/live_guest_error_btn" android:layout_width="216.0dip" android:layout_height="40.0dip" android:layout_marginTop="30.0dip" android:text="知道了" app:corner_radius="20.0dip" app:solid_color="@color/color_33ffffff" />
+    </LinearLayout>
+</FrameLayout>

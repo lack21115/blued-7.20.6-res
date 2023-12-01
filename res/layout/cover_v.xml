@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/stv_video_frame_selected_icon_h"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.blued.android.module.shortvideo.view.VideoFrameView android:layout_gravity="center_vertical" android:id="@id/stv_video_frame_list" android:layout_width="fill_parent" android:layout_height="@dimen/stv_bottom_video_frame_h" />
+    <com.blued.android.module.shortvideo.widget.CoverSlideView android:id="@id/stv_cover_slide_v" android:background="@drawable/stv_cover_selected_icon" android:layout_width="@dimen/stv_video_frame_selected_icon_h" android:layout_height="@dimen/stv_video_frame_selected_icon_h" />
+</FrameLayout>

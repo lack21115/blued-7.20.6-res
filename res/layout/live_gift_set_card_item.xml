@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/view_root" android:background="@drawable/live_gift_set_card_item_bg" android:layout_width="89.0dip" android:layout_height="122.0dip">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/live_gift_set_card_item_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center" android:id="@id/iv_icon" android:layout_width="55.0dip" android:layout_height="55.0dip" android:scaleType="centerInside" />
+                <com.blued.android.framework.view.shape.ShapeTextView android:textSize="10.0sp" android:textColor="@color/syc_dark_b" android:gravity="center" android:layout_gravity="right" android:id="@id/tv_num" android:layout_width="22.5dip" android:layout_height="14.0dip" android:layout_marginTop="4.5dip" android:layout_marginRight="4.5dip" app:corner_radius="7.0dip" app:solid_color="@color/syc_dark_FF3E4F" />
+            </FrameLayout>
+            <TextView android:textSize="14.0sp" android:textColor="@color/syc_dark_49240B" android:ellipsize="end" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_width="19.0dip" android:layout_height="19.0dip" android:src="@drawable/live_gift_set_beans" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/syc_dark_49240B" android:id="@id/tv_beans" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <com.blued.android.module.live.base.view.clickanimview.BamFrameLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="24.0dip">
+            <com.blued.android.framework.view.shape.ShapeTextView android:textSize="12.0sp" android:textColor="@color/syc_dark_b" android:gravity="center" android:id="@id/tv_send" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="2.0dip" android:text="@string/live_give_gift" app:bottom_left_radius="7.0dip" app:bottom_right_radius="7.0dip" app:gradient_angle="TOP_BOTTOM" app:gradient_end_color="@color/syc_dark_EB7A3A" app:gradient_start_color="@color/syc_dark_EB5F2A" />
+        </com.blued.android.module.live.base.view.clickanimview.BamFrameLayout>
+    </FrameLayout>
+</FrameLayout>

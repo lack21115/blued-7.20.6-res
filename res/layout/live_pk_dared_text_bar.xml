@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.blued.android.framework.view.shape.ShapeRelativeLayout android:id="@id/rl_text_root" android:layout_width="fill_parent" android:layout_height="13.0dip" app:corner_radius="6.5dip" app:solid_color="@color/black_alpha60"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="8.0dip" android:textColor="@color/syc_dark_b" android:gravity="center" android:id="@id/tv_text" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.blued.android.framework.view.shape.ShapeRelativeLayout>

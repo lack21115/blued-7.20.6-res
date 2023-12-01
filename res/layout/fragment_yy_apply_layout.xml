@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/x_title_bar" layout="@layout/view_yy_title_bar_layout" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/syc_h" android:id="@id/tv_tip_one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_32" android:layout_marginRight="@dimen/dp_10" android:text="@string/yy_apply_content_1" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/syc_j" android:id="@id/tv_tip_two" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_5" android:layout_marginRight="@dimen/dp_10" android:text="@string/yy_apply_content_2" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_32" android:layout_marginRight="@dimen/dp_10">
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/syc_h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yy_bind_phone" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/syc_a" android:id="@id/tv_bind_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yy_bind_now" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_16" android:layout_marginRight="@dimen/dp_10">
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/syc_h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yy_2_user_info" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10">
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/syc_j" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16" android:text="@string/yy_apply_host_name" />
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_name" android:layout_width="200.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_16">
+                <EditText android:textSize="@dimen/sp_14" android:textColor="@color/syc_h" android:textColorHint="@color/syc_j" android:id="@id/tv_name" android:background="@null" android:paddingBottom="@dimen/dp_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/yy_apply_host_name_hit" android:inputType="text" />
+                <TextView android:background="@color/syc_j" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_16">
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/syc_j" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yy_apply_host_num" />
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_id" android:layout_width="200.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10">
+                <EditText android:textSize="@dimen/sp_14" android:textColor="@color/syc_h" android:textColorHint="@color/syc_j" android:id="@id/tv_cardnum" android:background="@null" android:paddingBottom="@dimen/dp_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/yy_apply_host_num_hit" android:maxLength="18" android:digits="0123456789qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM" />
+                <TextView android:background="@color/syc_j" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <com.blued.android.framework.view.shape.ShapeTextView android:textColor="@color/syc_dark_b" android:gravity="center" android:id="@id/go_auth" android:layout_width="fill_parent" android:layout_height="@dimen/dp_44" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="@dimen/dp_32" android:layout_marginRight="@dimen/dp_10" android:text="@string/yy_go_auth" app:corner_radius="@dimen/dp_22" app:gradient_angle="TL_BR" app:gradient_end_color="@color/syc_3883FD" app:gradient_start_color="@color/syc_00E0AB" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/ll_clause" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_16" android:layout_marginRight="@dimen/dp_10">
+        <ImageView android:id="@id/iv_terms" android:paddingLeft="@dimen/dp_10" android:paddingTop="@dimen/dp_8" android:paddingRight="@dimen/dp_5" android:paddingBottom="@dimen/dp_8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_terms_unread" />
+        <TextView android:textSize="@dimen/sp_13" android:textColor="@color/syc_i" android:id="@id/live_agree" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/blued_apply_host_agreement" />
+    </LinearLayout>
+</LinearLayout>

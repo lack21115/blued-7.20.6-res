@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/color_130E27" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:background="@drawable/icon_live_medal_wall_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="54.0dip">
+            <ImageView android:id="@id/iv_live_medal_title_back" android:padding="10.0dip" android:layout_width="44.0dip" android:layout_height="44.0dip" android:src="@drawable/live_goods_wall_close" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/colorWhite" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="勋章墙" android:layout_centerInParent="true" android:lineSpacingExtra="18.0dip" />
+        </RelativeLayout>
+        <androidx.viewpager.widget.ViewPager android:id="@id/vp_medal_detail" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_54" />
+        <RelativeLayout android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="54.0dip" android:layout_marginTop="181.0dip">
+            <ImageView android:id="@id/iv_left_slip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_left_slip" android:layout_alignParentStart="true" />
+            <ImageView android:id="@id/iv_right_slip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_right_slip" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <com.blued.android.module.common.view.LinePageIndicator android:layout_gravity="bottom" android:id="@id/indicator_medal" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:layout_marginBottom="10.0dip" app:centered="true" app:gapWidth="4.0dip" app:lineHeight="4.0dip" app:lineWidth="4.0dip" app:roundRadius="7.0dip" app:selectedColor="#ffcfced3" app:selectedLineWidth="10.0dip" app:strokeWidth="4.0dip" app:unselectedColor="#ff2a2a2e" />
+    </FrameLayout>
+</FrameLayout>

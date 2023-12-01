@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/img_pwd_status" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/icon_pwd_checking" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/syc_j" android:id="@id/tv_pwd_str" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/login_modify_pwd_hint" android:includeFontPadding="false" app:layout_constraintLeft_toRightOf="@id/img_pwd_status" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="@id/img_pwd_status" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/syc_c" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/top_title" android:layout_width="fill_parent" android:layout_height="wrap_content" app:hide_btm_line="true" />
+    <LinearLayout android:orientation="vertical" android:background="@color/nafio_b" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_binding_cellphone" style="@style/ll_setting_item">
+            <TextView android:layout_width="wrap_content" android:text="@string/cellphone_number" style="@style/setting_info_item_tv" />
+            <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <ImageView style="@style/icon_right_arrow_my" />
+        </LinearLayout>
+        <TextView android:layout_marginLeft="15.0dip" style="@style/common_thin_divider_gray" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_binding_wechat" style="@style/ll_setting_item">
+            <TextView android:layout_width="wrap_content" android:text="@string/weichat_bind" style="@style/setting_info_item_tv" />
+            <TextView android:textColor="@color/syc_g" android:ellipsize="end" android:gravity="center|right" android:id="@id/tv_binding_wechat_status" android:layout_width="wrap_content" android:text="@string/unbinded" android:maxLines="1" android:layout_weight="5.0" style="@style/setting_info_item_tv_right" />
+            <ImageView style="@style/icon_right_arrow_my" />
+        </LinearLayout>
+        <TextView android:layout_marginLeft="15.0dip" style="@style/common_thin_divider_gray" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_binding_mail" style="@style/ll_setting_item">
+            <TextView android:layout_width="wrap_content" android:text="@string/titlle_binding_safe_email" style="@style/setting_info_item_tv" />
+            <TextView android:textColor="@color/syc_g" android:ellipsize="end" android:gravity="center|right" android:id="@id/tv_binding_mail_status" android:layout_width="wrap_content" android:text="@string/unbinded" android:maxLines="1" android:layout_weight="5.0" style="@style/setting_info_item_tv_right" />
+            <ImageView style="@style/icon_right_arrow_my" />
+        </LinearLayout>
+        <include layout="@layout/view_common_large_divider" />
+        <LinearLayout android:id="@id/ll_modify_pwd" style="@style/ll_setting_item">
+            <TextView android:id="@id/tv_modify_pwd" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/Live_setting_passwordSetting" android:layout_weight="1.0" style="@style/setting_info_item_tv" />
+            <ImageView style="@style/icon_right_arrow_my" />
+        </LinearLayout>
+        <include layout="@layout/view_common_large_divider" />
+        <LinearLayout android:id="@id/ll_login_protection" style="@style/ll_setting_item">
+            <TextView android:layout_width="wrap_content" android:text="@string/login_protection" style="@style/setting_info_item_tv" />
+            <TextView android:textColor="@color/syc_g" android:ellipsize="end" android:gravity="center|right" android:id="@id/tv_login_protection_status" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/opened" android:maxLines="1" android:layout_weight="1.0" style="@style/setting_info_item_tv_right" />
+            <ImageView style="@style/icon_right_arrow_my" />
+        </LinearLayout>
+        <include layout="@layout/view_common_large_divider" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_remove_account" android:visibility="gone" style="@style/ll_setting_item">
+            <TextView android:layout_width="wrap_content" android:text="@string/remove_account" style="@style/setting_info_item_tv" />
+            <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <ImageView style="@style/icon_right_arrow_my" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

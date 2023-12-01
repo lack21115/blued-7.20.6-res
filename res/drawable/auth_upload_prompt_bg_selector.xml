@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/video_shadow_top" android:state_activated="true" />
+    <item android:drawable="@color/color_lock_pattern_error" android:state_activated="false" />
+</selector>

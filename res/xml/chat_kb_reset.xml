@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ConstraintSet android:id="@id/reset"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Constraint android:id="@id/content_layout" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/rl_chat_bottom" app:layout_constraintTop_toBottomOf="@id/fm_top" />
+    <Constraint android:id="@id/bottom_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="parent" />
+</ConstraintSet>

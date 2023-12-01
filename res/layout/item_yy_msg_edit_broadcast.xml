@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/shape_raduis_16_tran_30_000000" android:padding="@dimen/dp_10" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/sp_13" android:textColor="@color/syc_dark_b" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/yy_room_broadcast" />
+    <TextView android:textSize="@dimen/sp_13" android:textColor="@color/syc_dark_b" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/yy_room_broadcast_info" />
+    <com.blued.android.framework.view.shape.ShapeTextView android:textSize="@dimen/sp_12" android:textColor="@color/syc_dark_b" android:gravity="center" android:id="@id/tv_edit" android:layout_width="@dimen/dp_92" android:layout_height="@dimen/dp_25" android:layout_marginTop="@dimen/dp_10" android:text="@string/yy_edit_room_notic" app:corner_radius="@dimen/dp_13" app:gradient_angle="TL_BR" app:gradient_end_color="@color/syc_3883FD" app:gradient_start_color="@color/syc_00E0AB" />
+</LinearLayout>

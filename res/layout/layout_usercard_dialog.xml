@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_card_info" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@drawable/shape_usercard_bg_top_radius" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/ll_userinfo" android:layout_alignBottom="@id/ll_userinfo" />
+        <androidx.cardview.widget.CardView android:id="@id/cv_background_root" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/ll_userinfo" android:layout_alignBottom="@id/ll_userinfo" app:cardBackgroundColor="@color/transparent" app:cardCornerRadius="12.0dip" app:cardElevation="0.0px" app:cardMaxElevation="0.0px">
+            <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/iv_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:adjustViewBounds="true" />
+            </ScrollView>
+        </androidx.cardview.widget.CardView>
+        <RelativeLayout android:id="@id/rl_userinfo" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/ll_userinfo" android:layout_alignBottom="@id/ll_userinfo">
+            <FrameLayout android:id="@id/view_over30_ribbon" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-77.0dip">
+                <ImageView android:layout_gravity="bottom|center|left" android:id="@id/img_ribbon" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+            </FrameLayout>
+        </RelativeLayout>
+        <ImageView android:id="@id/iv_streamer" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginTop="-30.0dip" android:scaleType="fitXY" android:layout_alignTop="@id/rl_userinfo" />
+        <ImageView android:id="@id/iv_avatar_decorate" android:layout_width="320.0dip" android:layout_height="135.0dip" android:layout_marginTop="-80.0dip" android:layout_alignTop="@id/rl_userinfo" android:layout_centerHorizontal="true" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="104.0dip" android:layout_marginTop="-41.399994dip" android:layout_alignTop="@id/rl_userinfo">
+            <FrameLayout android:id="@id/fl_avatar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ImageView android:layout_gravity="center" android:id="@id/header_view" android:background="@drawable/user_bg_round" android:focusable="true" android:clickable="false" android:layout_width="80.0dip" android:layout_height="80.0dip" android:scaleType="centerCrop" android:contentDescription="@string/app_name" />
+                <com.blued.android.framework.view.shape.ShapeTextView android:id="@id/tv_avatar_gold_border" android:layout_width="80.0dip" android:layout_height="80.0dip" app:corner_radius="40.0dip" app:stroke_color="@color/syc_r" app:stroke_width="2.0dip" />
+            </FrameLayout>
+            <FrameLayout android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ImageView android:id="@id/live_user_avatar_decorate" android:layout_width="104.0dip" android:layout_height="104.0dip" />
+                <ImageView android:layout_gravity="bottom|center|right" android:id="@id/img_verify" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginRight="18.0dip" android:layout_marginBottom="14.5dip" android:contentDescription="" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/fl_rank_top_one" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="8.0dip" android:layout_toRightOf="@id/fl_avatar" android:layout_alignParentBottom="true">
+                <com.blued.android.framework.view.shape.ShapeFrameLayout android:layout_gravity="center" android:layout_width="33.0dip" android:layout_height="33.0dip" app:corner_radius="33.0dip" app:solid_color="@color/syc_dark_F2F2F2" />
+                <ImageView android:layout_gravity="center" android:id="@id/iv_rank_avatar_one" android:layout_width="35.0dip" android:layout_height="35.0dip" android:scaleType="centerCrop" />
+                <ImageView android:layout_gravity="center" android:id="@id/live_user_card_avatar_decorate" android:layout_width="45.0dip" android:layout_height="45.0dip" />
+            </FrameLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_userinfo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="80.0dip">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip">
+                <ImageView android:id="@id/iv_to_live" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_to_his_live_room" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/syc_dark_999999" android:layout_gravity="left" android:id="@id/tv_report" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/report" android:shadowColor="@color/white" android:shadowDx="0.0" android:shadowDy="0.0" android:shadowRadius="4.0" />
+                <TextView android:layout_width="0.0dip" android:layout_height="45.0dip" android:layout_weight="1.0" />
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_right" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip">
+                        <TextView android:textSize="12.0sp" android:textColor="@color/syc_dark_999999" android:gravity="center" android:id="@id/tv_kick" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/liveVideo_livingView_label_kick" android:shadowColor="@color/white" android:shadowDx="0.0" android:shadowDy="0.0" android:shadowRadius="4.0" />
+                        <TextView android:id="@id/tv_line" android:background="@color/syc_dark_e5e5e5" android:layout_width="0.5dip" android:layout_height="10.0dip" />
+                        <TextView android:textSize="12.0sp" android:textColor="@color/syc_dark_999999" android:gravity="center" android:id="@id/tv_silence" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/liveVideo_livingView_label_forbidToSpeakButton" android:shadowColor="@color/white" android:shadowDx="0.0" android:shadowDy="0.0" android:shadowRadius="4.0" />
+                    </LinearLayout>
+                    <com.blued.android.framework.view.shape.ShapeTextView android:textSize="12.0sp" android:layout_gravity="end" android:id="@id/tv_user_card_behalf_status" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="代我送礼" android:drawablePadding="2.0dip" android:drawableStart="@drawable/img_behalf_gift_disnabel" android:paddingStart="3.0dip" android:paddingEnd="3.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="15.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="27.0dip" android:layout_marginRight="27.0dip">
+                        <TextView android:textSize="18.0sp" android:textColor="@color/syc_dark_1e1f23" android:ellipsize="end" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" />
+                        <ImageView android:id="@id/img_manager_icon" android:visibility="gone" android:layout_width="29.0dip" android:layout_height="15.0dip" android:layout_marginLeft="4.5dip" android:src="@drawable/icon_live_manager_new" />
+                        <ImageView android:id="@id/img_chat_badge_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginLeft="4.5dip" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip">
+                        <TextView android:textSize="12.0sp" android:textColor="@color/syc_dark_8F8F91" android:id="@id/tv_userinfo_line1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.5dip" android:src="@drawable/icon_usercard_distance_new" />
+                        <TextView android:textSize="12.0sp" android:textColor="@color/syc_dark_8F8F91" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/tv_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="0.00km" />
+                    </LinearLayout>
+                    <com.blued.android.module.live_china.view.LiveUserCardModuleView android:id="@id/module_view" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginTop="19.5dip" />
+                    <com.blued.android.module.live_china.view.LiveGiftAndMedalCardView android:id="@id/live_gift_medal_card_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:id="@id/tv_cut_bottom" android:background="@color/syc_o" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/syc_dark_k" android:gravity="center_horizontal" android:id="@id/tv_block" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:text="@string/liveVideo_livingView_label_userBlockYou" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_bottom_button" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <LinearLayout android:id="@id/ll_view_profile" style="@style/usercard_button_linearlayout">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/syc_dark_767676" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/view_personal_mainpage" />
+                </LinearLayout>
+                <TextView android:layout_gravity="center_vertical" android:id="@id/tv_cut_chat" android:background="@color/syc_o" android:layout_width="1.0px" android:layout_height="19.0dip" />
+                <LinearLayout android:id="@id/ll_reply" style="@style/usercard_button_linearlayout">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_usercard_chat" />
+                    <TextView android:textSize="15.0sp" android:textColor="@color/syc_dark_767676" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/usercard_chat" />
+                </LinearLayout>
+                <TextView android:layout_gravity="center_vertical" android:id="@id/tv_cut_attention" android:background="@color/syc_o" android:layout_width="1.0px" android:layout_height="19.0dip" />
+                <LinearLayout android:id="@id/ll_attention" style="@style/usercard_button_linearlayout">
+                    <TextView android:textSize="15.0sp" android:textColor="#ff2b72ff" android:id="@id/tv_attention" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/attention" />
+                </LinearLayout>
+                <TextView android:layout_gravity="center_vertical" android:id="@id/tv_cut_silence" android:background="@color/syc_o" android:visibility="gone" android:layout_width="1.0px" android:layout_height="19.0dip" />
+                <LinearLayout android:id="@id/ll_manage" android:visibility="gone" style="@style/usercard_button_linearlayout">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/syc_dark_767676" android:id="@id/tv_manage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/live_manage" />
+                </LinearLayout>
+                <TextView android:layout_gravity="center_vertical" android:id="@id/tv_cut_connect" android:background="@color/syc_o" android:visibility="gone" android:layout_width="1.0px" android:layout_height="19.0dip" />
+                <LinearLayout android:id="@id/ll_connect" android:visibility="gone" style="@style/usercard_button_linearlayout">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/syc_dark_767676" android:id="@id/tv_connect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/live_connect" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

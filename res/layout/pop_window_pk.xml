@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/bg_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.blued.android.framework.view.shape.ShapeLinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/ll_content" android:layout_width="fill_parent" android:layout_height="480.0dip" app:solid_color="@color/syc_dark_b" app:top_left_radius="16.0dip" app:top_right_radius="16.0dip">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_pk_title" android:layout_centerInParent="true" />
+            <TextView android:textSize="14.0sp" android:id="@id/iv_help" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_pk_tip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <com.blued.android.framework.view.shape.ShapeFrameLayout android:layout_gravity="center_horizontal" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="210.0dip" android:layout_height="38.0dip" android:layout_marginTop="8.0dip" app:corner_radius="38.0dip" app:solid_color="@color/syc_dark_f3f3f3">
+            <com.blued.android.framework.view.shape.ShapeFrameLayout android:layout_gravity="center_vertical" android:id="@id/fl_owner" android:layout_width="100.0dip" android:layout_height="30.0dip" app:corner_radius="30.0dip" app:solid_color="@color/syc_dark_b">
+                <TextView android:textColor="@color/syc_dark_0a0a0a" android:layout_gravity="center" android:id="@id/tv_owner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_pk_owner" />
+            </com.blued.android.framework.view.shape.ShapeFrameLayout>
+            <com.blued.android.framework.view.shape.ShapeFrameLayout android:layout_gravity="center|right" android:id="@id/fl_other" android:layout_width="100.0dip" android:layout_height="30.0dip">
+                <TextView android:textColor="@color/syc_dark_767676" android:layout_gravity="center" android:id="@id/tv_other" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_pk_other" />
+            </com.blued.android.framework.view.shape.ShapeFrameLayout>
+        </com.blued.android.framework.view.shape.ShapeFrameLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.blued.android.module.common.view.CustomViewPager android:id="@id/live_pk_viewpager" android:background="@color/syc_dark_b" style="@style/layout_fill" />
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/ll_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ProgressBar android:layout_gravity="center" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:progressBarStyle" />
+            </LinearLayout>
+        </FrameLayout>
+    </com.blued.android.framework.view.shape.ShapeLinearLayout>
+</FrameLayout>

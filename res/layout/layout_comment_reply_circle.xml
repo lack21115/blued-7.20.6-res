@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.blued.android.framework.view.shape.ShapeLinearLayout android:orientation="vertical" android:id="@id/ll_reply" android:padding="10.0dip" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="60.0dip" android:layout_marginRight="10.0dip" app:corner_radius="10.0dip" app:solid_color="@color/syc_x"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_reply_first" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="13.0sp" android:textColor="@color/syc_a" android:id="@id/tv_reply_first_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/iv_reply_first" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginLeft="5.0dip" />
+            <ImageView android:id="@id/iv_anonymous_first" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:src="@drawable/anonymous_icon" />
+        </LinearLayout>
+        <TextView android:textSize="13.0sp" android:textColor="@color/syc_h" android:ellipsize="end" android:id="@id/tv_reply_first" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_reply_second" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="13.0sp" android:textColor="@color/syc_a" android:id="@id/tv_reply_second_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/iv_reply_second" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginLeft="5.0dip" />
+            <ImageView android:id="@id/iv_anonymous_second" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:src="@drawable/anonymous_icon" />
+        </LinearLayout>
+        <TextView android:textSize="13.0sp" android:textColor="@color/syc_h" android:ellipsize="end" android:id="@id/tv_reply_second" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_more_reply" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip">
+        <TextView android:textSize="12.0sp" android:textColor="@color/syc_h" android:id="@id/tv_reply_num" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/feed_more_icon" android:scaleType="fitXY" />
+    </LinearLayout>
+</com.blued.android.framework.view.shape.ShapeLinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/syc_c" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/top_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.blued.android.framework.view.pulltorefresh.RenrenPullToRefreshListView android:id="@id/rprlv_authed_users_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ll_bottom" app:ptrHeaderBackground="@color/pull_anim_bgcolor" style="@style/ListViewWithoutBgColor" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <TextView android:id="@id/tv_cutter" style="@style/common_cutter_gray" />
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="17.0sp" android:textColor="@color/sara_g" android:gravity="center" android:id="@id/tv_bottom_button" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="49.0dip" android:text="@string/clean_all_authed_users" />
+                <TextView android:id="@id/tv_cover_transparent" android:background="#7dffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="49.0dip" />
+            </FrameLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="240.0dip" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/msg_recent_photos_item_iv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <ImageView android:id="@id/msg_recent_photos_select_iv" android:clickable="true" android:layout_margin="5.0dip" android:src="@drawable/selector_common_seleced" android:layout_alignParentTop="true" android:layout_alignParentRight="true" style="@style/layout_wrap_content" />
+    <ImageView android:id="@id/msg_recent_photos_pin_iv" android:clickable="true" android:layout_margin="5.0dip" android:src="@drawable/icon_pic_recent_top" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/layout_wrap_content" />
+</RelativeLayout>

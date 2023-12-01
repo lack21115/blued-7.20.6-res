@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="39.0dip" android:layout_height="39.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_icon" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <androidx.cardview.widget.CardView android:layout_width="30.0dip" android:layout_height="11.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:cardBackgroundColor="@color/black_alpha70" app:cardCornerRadius="5.5dip" app:cardElevation="0.0dip">
+        <com.blued.android.module.live_china.view.MarqueeTextView android:textSize="8.0dip" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/tv_chicken_content" android:layout_width="wrap_content" android:layout_height="fill_parent" android:lines="1" android:includeFontPadding="false" />
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

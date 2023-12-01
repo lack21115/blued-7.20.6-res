@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.framework.view.shape.ShapeFrameLayout android:layout_gravity="bottom" android:id="@id/content_layout" android:visibility="invisible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="240.0dip" app:bg_default_touch="false" app:solid_color="@color/syc_dark_b" app:top_left_radius="12.0dip" app:top_right_radius="12.0dip">
+        <androidx.cardview.widget.CardView android:layout_gravity="center_horizontal" android:id="@id/cv_tab_root" android:layout_width="153.0dip" android:layout_height="32.0dip" android:layout_marginTop="11.0dip" app:cardBackgroundColor="@color/syc_dark_f5f5f5" app:cardCornerRadius="16.0dip" app:cardElevation="0.0px">
+            <RelativeLayout android:padding="1.5dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.blued.android.framework.view.shape.ShapeTextView android:id="@id/view_cursor" android:layout_width="75.0dip" android:layout_height="fill_parent" android:layout_centerVertical="true" app:bg_default_touch="false" app:corner_radius="16.0dip" app:solid_color="@color/white" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/syc_dark_222" android:gravity="center" android:id="@id/tv_tab_each" android:layout_width="75.0dip" android:layout_height="fill_parent" android:text="@string/group_pk_tab_each" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/syc_dark_777777" android:gravity="center" android:id="@id/tv_tab_group" android:layout_width="75.0dip" android:layout_height="fill_parent" android:text="@string/group_pk_tab_group" android:layout_alignParentRight="true" />
+                <com.blued.android.framework.view.shape.ShapeTextView android:id="@id/view_dot" android:visibility="gone" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" app:corner_radius="4.0dip" app:solid_color="@color/syc_g" app:stroke_color="@color/white" app:stroke_width="0.75dip" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <TextView android:textSize="16.0sp" android:textColor="@color/syc_dark_222" android:layout_gravity="center_horizontal" android:id="@id/tv_title_pk_ing" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:text="@string/group_pk_ing" android:includeFontPadding="false" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_user_list_bg" android:layout_width="fill_parent" android:layout_height="110.0dip" android:layout_marginTop="60.0dip" android:alpha="0.0">
+            <View android:id="@id/view_pk_icon_left" android:background="@drawable/live_connet_pk_group_bg_left" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <FrameLayout android:background="@drawable/live_connet_pk_group_bg_centre" android:layout_width="51.0dip" android:layout_height="fill_parent">
+                <ImageView android:id="@id/iv_pk" android:layout_width="51.0dip" android:layout_height="30.0dip" android:layout_marginTop="22.0dip" android:src="@drawable/live_connet_pk_group_pk" android:scaleX="0.3" android:scaleY="0.6" android:elevation="1.0px" />
+            </FrameLayout>
+            <View android:background="@drawable/live_connet_pk_group_bg_right" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_user_list" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="110.0dip" android:layout_marginTop="60.0dip" android:animateLayoutChanges="true" android:paddingHorizontal="12.0dip">
+            <com.blued.android.module.live_china.view.LiveConnectPKUserItemView android:id="@id/user_1" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <com.blued.android.module.live_china.view.LiveConnectPKUserItemView android:id="@id/user_2" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <ImageView android:id="@id/iv_pk_cloak" android:layout_width="51.0dip" android:layout_height="0.0dip" />
+            <com.blued.android.module.live_china.view.LiveConnectPKUserItemView android:id="@id/user_3" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <com.blued.android.module.live_china.view.LiveConnectPKUserItemView android:id="@id/user_4" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <View android:id="@id/view_carry" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+        </LinearLayout>
+        <TextView android:textSize="12.0sp" android:textColor="@color/syc_dark_989898" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_start_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="213.5dip" android:layout_marginRight="15.0dip" android:text="@string/live_invite_pk_cancel_tip" android:layout_marginHorizontal="15.0dip" />
+        <com.blued.android.framework.view.shape.ShapeTextView android:textSize="16.0sp" android:textColor="@color/syc_dark_b" android:gravity="center" android:id="@id/bt_start_pk" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="165.5dip" android:layout_marginRight="15.0dip" android:text="@string/group_pk_start" android:layout_marginHorizontal="15.0dip" app:corner_radius="22.0dip" app:gradient_end_color="@color/syc_dark_ff3aaa" app:gradient_start_color="@color/syc_dark_922cee" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:progressBarStyle" />
+    </com.blued.android.framework.view.shape.ShapeFrameLayout>
+</FrameLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:orientation="vertical" android:paddingLeft="@dimen/dp_20" android:paddingRight="@dimen/dp_20" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.framework.view.shape.ShapeLinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/ll_main" android:layout_width="@dimen/dp_240" android:layout_height="wrap_content" app:corner_radius="@dimen/dp_5" app:solid_color="@color/white">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.blued.android.framework.view.shape.ShapeTextView android:textSize="11.0sp" android:textColor="@color/sara_a" android:gravity="center" android:id="@id/tv_score" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="19.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="11点" app:corner_radius="@dimen/dp_5" app:solid_color="@color/transparent" app:stroke_color="@color/sara_a" app:stroke_width="1.0px" />
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/img_badge" android:layout_width="130.0dip" android:layout_height="130.0dip" android:scaleType="fitCenter" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="32.0dip" android:paddingRight="32.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:layout_marginBottom="26.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="#ff36383b" android:id="@id/tv_badge_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="无敌勋章" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff898d90" android:gravity="center" android:id="@id/tv_gained_cond" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="获得条件获得条件获得条件获得条件获得条件获得条件获得" android:maxLines="2" />
+            <TextView android:textSize="11.0sp" android:textColor="#ff898d90" android:gravity="center" android:id="@id/tv_lvlup_cond" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="升级条件" />
+            <TextView android:textSize="10.0sp" android:textColor="#ffadafb0" android:id="@id/tv_valid_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="有效期blalblal" />
+        </LinearLayout>
+    </com.blued.android.framework.view.shape.ShapeLinearLayout>
+</FrameLayout>

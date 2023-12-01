@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_back" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/shape_raduis_topleft_topright_15_ffffff" android:paddingTop="@dimen/dp_12" android:paddingBottom="@dimen/dp_12" android:layout_width="fill_parent" android:layout_height="@dimen/dp_375" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/sp_16" android:textColor="@color/white" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="抢唱房型玩法" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_12" android:layout_marginTop="@dimen/dp_15" android:layout_marginRight="@dimen/dp_12" android:text="1. 房主可以开启和结束抢唱。 \n2. 开启抢唱，会开始播放歌曲，歌曲播放都是高潮片段。 \n3. 用户只要上麦，点击【抢】，即可参与抢唱。 \n4. 完成演唱或者收到爆灯、礼物，即挑战成功。 \n5. 用户不满意推荐的抢唱歌曲，可以自行点歌，点的歌曲会出现在愿望歌单，房主或场控可以操作同意或者拒绝，同意的歌曲会出现在待抢唱列表，用户可以正常抢唱该歌曲。\n" android:lineSpacingExtra="@dimen/dp_5" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/car_flash_light" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-12.0dip" android:src="@drawable/car_flash_light" />
+    <FrameLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center" android:id="@id/car_right_door" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="32.0dip" android:src="@drawable/car_right_door" />
+    </FrameLayout>
+    <ImageView android:layout_gravity="center" android:id="@id/super_car" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/super_car" />
+    <FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17.5dip" android:layout_marginRight="51.0dip" android:rotationY="20.0">
+        <ImageView android:id="@id/super_wheel1" android:layout_width="37.0dip" android:layout_height="37.0dip" android:src="@drawable/super_wheel" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="113.0dip" android:layout_marginTop="12.0dip" android:rotationY="30.0">
+        <ImageView android:id="@id/super_wheel2" android:layout_width="37.0dip" android:layout_height="37.0dip" android:src="@drawable/super_wheel" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center" android:id="@id/car_left_door" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:src="@drawable/car_left_door" />
+    </FrameLayout>
+    <ImageView android:layout_gravity="center" android:id="@id/automative_lighting" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="100.0dip" android:src="@drawable/automative_lighting" />
+    <ImageView android:layout_gravity="center" android:id="@id/car_lightning" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginBottom="15.0dip" />
+</FrameLayout>

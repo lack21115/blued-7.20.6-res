@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <com.blued.android.framework.view.shape.ShapeFrameLayout android:id="@id/sfl_areacode" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" app:corner_radius="22.0dip" app:solid_color="@color/syc_x">
+            <TextView android:textSize="15.0sp" android:textColor="@color/nafio_a" android:gravity="center_vertical" android:id="@id/tv_areacode" android:paddingLeft="16.0dip" android:paddingTop="12.0dip" android:paddingRight="16.0dip" android:paddingBottom="12.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        </com.blued.android.framework.view.shape.ShapeFrameLayout>
+        <com.blued.android.framework.view.shape.ShapeFrameLayout android:id="@id/sfl_input" android:layout_width="fill_parent" android:layout_height="fill_parent" app:corner_radius="22.0dip" app:solid_color="@color/syc_x">
+            <com.blued.android.module.common.view.ClearEditText android:textSize="16.0sp" android:textColor="@color/syc_h" android:textColorHint="@color/syc_j" android:gravity="center|left" android:layout_gravity="center_vertical" android:id="@id/edittext" android:background="@null" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:maxLines="1" android:drawableRight="@drawable/edit_clear" />
+        </com.blued.android.framework.view.shape.ShapeFrameLayout>
+    </LinearLayout>
+</LinearLayout>

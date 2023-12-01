@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/ll_all" android:background="@drawable/shape_user_profile_btns_bg" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:id="@id/ll_left" android:background="@drawable/userinfo_hover_follow" android:paddingBottom="10.0dip" android:layout_width="188.0dip" android:layout_height="63.0dip">
+        <ImageView android:id="@id/img_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_userinfo_hover_attention" android:scaleType="fitXY" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/tv_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/send_feed" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/ll_right" android:background="@drawable/userinfo_hover_chat" android:paddingBottom="10.0dip" android:layout_width="188.0dip" android:layout_height="63.0dip">
+        <ImageView android:id="@id/img_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_userinfo_hover_chat" android:scaleType="fitXY" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/tv_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/chat_msg" />
+    </LinearLayout>
+</LinearLayout>

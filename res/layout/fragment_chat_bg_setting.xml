@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/syc_c" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.soft.blued.customview.LabeledTextView android:id="@id/chat_setting_select_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" app:label_bottom_line="true" app:label_text="@string/biao_v4_chat_setting_select_bg" />
+    <com.soft.blued.customview.LabeledTextView android:id="@id/chat_setting_select_picture" android:layout_width="fill_parent" android:layout_height="wrap_content" app:label_bottom_line="true" app:label_text="@string/biao_v4_chat_setting_select_picture" />
+    <com.soft.blued.customview.LabeledTextView android:id="@id/chat_setting_take_photo" android:layout_width="fill_parent" android:layout_height="wrap_content" app:label_bottom_line="false" app:label_text="@string/take_photo" />
+    <TextView android:textColor="@color/nafio_a" android:gravity="center" android:id="@id/chat_setting_set_default" android:background="@drawable/selector_textview_bgcolor" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="49.0dip" android:layout_marginTop="20.0dip" android:text="@string/biao_v4_chat_setting_set_all_default" />
+</LinearLayout>

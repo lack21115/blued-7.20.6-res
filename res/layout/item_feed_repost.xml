@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/frame_head" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip">
+        <ImageView android:id="@id/header_view" android:background="@drawable/user_bg_round" android:layout_width="44.0dip" android:layout_height="44.0dip" />
+        <ImageView android:layout_gravity="bottom|center|right" android:id="@id/img_verify" android:layout_width="15.0dip" android:layout_height="15.0dip" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/ll_right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_toRightOf="@id/frame_head">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="28.0dip" android:layout_marginTop="8.0dip">
+            <TextView android:textSize="13.0sp" android:textColor="@color/syc_h" android:autoLink="web" android:layout_gravity="center_vertical" android:id="@id/name_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="170.0dip" android:singleLine="true" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_anonymous" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginLeft="4.0dip" android:src="@drawable/anonymous_icon" android:scaleType="fitXY" />
+            <ImageView android:id="@id/img_vip_icon" style="@style/blued_vip_icon" />
+            <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+        <TextView android:textSize="12.0sp" android:textColor="@color/syc_j" android:id="@id/time_view" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/my_relativeLayout" android:background="@drawable/selector_bgcolor_text_button" android:focusable="false" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.blued.community.view.TextViewFixTouchForDynamic android:textSize="15.0sp" android:textColor="@color/syc_h" android:gravity="center_vertical" android:autoLink="email" android:id="@id/content_view" android:focusable="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_weight="1.0" android:lineSpacingExtra="5.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/syc_c" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/ll_right" />
+</RelativeLayout>

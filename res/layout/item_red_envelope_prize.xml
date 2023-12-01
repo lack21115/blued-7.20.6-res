@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_item_root" android:paddingTop="@dimen/dp_15" android:paddingBottom="@dimen/dp_15" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/tv_prize_img" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:src="@drawable/user_bg_round" />
+    <TextView android:textSize="@dimen/sp_12" android:textColor="@color/syc_dark_b" android:ellipsize="end" android:id="@id/tv_prize_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:maxLines="1" android:singleLine="true" android:includeFontPadding="false" />
+    <TextView android:textSize="@dimen/sp_12" android:textColor="@color/syc_dark_b" android:ellipsize="end" android:id="@id/tv_prize_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:includeFontPadding="false" />
+    <TextView android:textSize="@dimen/sp_12" android:textColor="@color/syc_FDE3AE" android:ellipsize="end" android:id="@id/tv_prize_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" android:maxLines="1" android:singleLine="true" android:includeFontPadding="false" />
+</LinearLayout>

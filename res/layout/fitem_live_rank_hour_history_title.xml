@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="26.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Space android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <ImageView android:id="@id/iv_hour_star" android:layout_width="65.0dip" android:layout_height="15.0dip" android:src="@drawable/live_rank_hour_star_text_top" />
+    <Space android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/syc_dark_j" android:id="@id/tv_date" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <Space android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <ImageView android:id="@id/iv_potential_star" android:layout_width="68.0dip" android:layout_height="15.0dip" android:src="@drawable/live_rank_hour_star_text_potential" />
+    <Space android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

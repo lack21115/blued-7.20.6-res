@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/emotion_detail_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/emotion_detail_banner_iv" android:layout_width="fill_parent" android:layout_height="120.0dip" android:scaleType="fitXY" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/syc_h" android:id="@id/emotion_detail_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:includeFontPadding="false" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/syc_h" android:id="@id/emotion_detail_des" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="15.0dip" android:includeFontPadding="false" />
+            <View android:background="@color/syc_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_margin="15.0dip" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/syc_h" android:id="@id/emotion_detail_download_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/syc_h" android:id="@id/emotion_detail_use_condition" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:includeFontPadding="false" />
+                </LinearLayout>
+                <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <androidx.cardview.widget.CardView android:id="@id/emotion_detail_btn_cv" android:layout_width="70.0dip" android:layout_height="30.0dip" app:cardBackgroundColor="@color/syc_x" app:cardCornerRadius="12.0dip" app:cardElevation="0.0dip">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/syc_h" android:layout_gravity="center" android:id="@id/emotion_detail_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <com.blued.community.view.PhotoGridView android:id="@id/emotion_detail_grid" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:horizontalSpacing="15.0dip" android:verticalSpacing="15.0dip" android:numColumns="4" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/syc_h" android:layout_gravity="center" android:id="@id/emotion_detail_anchor_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:includeFontPadding="false" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/syc_h" android:layout_gravity="center" android:id="@id/emotion_detail_anchor_detail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" android:includeFontPadding="false" />
+            <View android:background="@color/syc_line" android:layout_width="fill_parent" android:layout_height="5.0dip" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/syc_h" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:text="@string/emotion_recommend_emotion" android:includeFontPadding="false" />
+            <com.blued.android.module.common.view.ListViewForScroll android:id="@id/emotion_detail_lv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:divider="@color/transparent" android:dividerHeight="0.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

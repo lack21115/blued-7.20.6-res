@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="91.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_constellation_gift_bg" android:layout_width="fill_parent" android:layout_height="91.0dip" android:scaleType="fitXY" />
+    <ImageView android:id="@id/iv_constellation_normal_view" android:layout_width="@dimen/dp_113" android:layout_height="@dimen/dp_33" android:layout_marginTop="@dimen/dp_18" android:src="@drawable/live_constellation_hall" android:layout_marginStart="@dimen/dp_7" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/tv_constellation_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_21" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/dp_8" />
+    <ImageView android:id="@id/iv_constellation_arrow" android:layout_width="@dimen/dp_6" android:layout_height="@dimen/dp_6" android:layout_marginBottom="@dimen/dp_25" android:src="@drawable/live_constellation_bar_forward" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/dp_2" android:layout_toEndOf="@id/tv_constellation_title" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerVertical="true" android:layout_toStartOf="@id/ll_to_unlock" android:layout_toEndOf="@id/iv_constellation_arrow">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <RelativeLayout android:id="@id/ll_avatars" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+                <ImageView android:id="@id/iv_audience_avatar" android:layout_width="@dimen/dp_32" android:layout_height="@dimen/dp_32" android:layout_marginStart="33.0dip" />
+                <ImageView android:layout_width="@dimen/dp_32" android:layout_height="@dimen/dp_32" android:src="@drawable/live_constellation_user_frame" android:layout_marginStart="33.0dip" />
+                <ImageView android:id="@id/iv_anchor_avatar" android:layout_width="@dimen/dp_32" android:layout_height="@dimen/dp_32" android:layout_marginStart="@dimen/dp_3" />
+                <ImageView android:layout_width="@dimen/dp_32" android:layout_height="@dimen/dp_32" android:src="@drawable/live_constellation_anchor_frame" android:layout_marginStart="@dimen/dp_3" />
+            </RelativeLayout>
+            <ImageView android:id="@id/iv_constellation" android:layout_width="@dimen/dp_68" android:layout_height="@dimen/dp_32" android:layout_marginTop="-8.0dip" android:src="@drawable/live_constellation_top_bg" android:layout_below="@id/ll_avatars" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/white" android:id="@id/iv_constellation_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-3.0dip" android:layout_below="@id/ll_avatars" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_to_unlock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dp_7" android:layout_alignParentEnd="true">
+        <TextView android:textSize="@dimen/sp_10" android:textColor="@color/white" android:id="@id/tv_need_num_to_peak" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dp_4" android:alpha="0.8" />
+        <ImageView android:id="@id/iv_to_peak" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_constellation_unlock_to_peak" />
+    </LinearLayout>
+</RelativeLayout>

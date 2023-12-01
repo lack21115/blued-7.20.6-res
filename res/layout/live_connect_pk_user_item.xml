@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="113.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_avatar" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="12.0dip" android:src="@drawable/live_connet_pk_user_bg_round" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/syc_dark_777777" android:ellipsize="end" android:id="@id/tv_nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginTop="7.5dip" android:layout_marginRight="3.0dip" android:maxLines="1" android:includeFontPadding="false" android:layout_below="@id/iv_avatar" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:id="@id/rl_switch" android:padding="4.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/tv_nickname" android:layout_centerHorizontal="true" android:alpha="0.0">
+        <ImageView android:id="@id/iv_switch" android:layout_width="12.0dip" android:layout_height="12.0dip" android:src="@drawable/live_connet_pk_group_switch" android:layout_centerVertical="true" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/syc_dark_C933CC" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.5dip" android:text="@string/group_pk_switch" android:includeFontPadding="false" android:layout_toRightOf="@id/iv_switch" />
+    </RelativeLayout>
+</RelativeLayout>

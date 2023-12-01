@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.blued.android.framework.view.shape.ShapeFrameLayout android:orientation="horizontal" android:id="@id/sfl_gift_backpack_item_rootview" android:layout_width="wrap_content" android:layout_height="30.0dip" app:corner_radius="17.0dip" app:solid_color="@color/colorText_0FFFFFFF"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="@style/TextAppearance.FontPath.Medium" android:textSize="12.0sp" android:textColor="@color/syc_989898" android:gravity="center" android:id="@id/live_gift_tab_item_name" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="18.0dip" android:paddingEnd="18.0dip" />
+    <ImageView android:layout_gravity="right" android:id="@id/live_gift_tab_item_dot" android:visibility="gone" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginTop="5.0dip" android:src="@drawable/icon_red_dot" android:layout_marginEnd="15.0dip" />
+</com.blued.android.framework.view.shape.ShapeFrameLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@id/root_layout" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@color/transparent" app:cardCornerRadius="6.0dip" app:cardElevation="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/comm_auto_scroll_banner_lo" android:layout_width="fill_parent" android:layout_height="90.0dip">
+            <com.blued.android.module.common.view.AutoScrollViewPager android:id="@id/comm_auto_scroll_banner_vp" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.blued.android.module.common.view.LinePageIndicator android:layout_gravity="bottom" android:id="@id/comm_auto_scroll_banner_indicator" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" app:centered="true" app:gapWidth="3.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:lineHeight="4.0dip" app:lineWidth="4.0dip" app:roundRadius="2.0dip" app:selectedColor="@color/sara_f" app:selectedLineWidth="14.0dip" app:strokeWidth="4.0dip" app:unselectedColor="#73ffffff" />
+        </FrameLayout>
+        <androidx.cardview.widget.CardView android:id="@id/comm_auto_scroll_banner_svga_layout" android:layout_width="fill_parent" android:layout_height="263.0dip" app:cardBackgroundColor="@color/syc_b" app:cardCornerRadius="6.0dip" app:cardElevation="0.0dip">
+            <com.blued.android.module.svgaplayer.SVGAImageView android:id="@id/comm_auto_scroll_banner_svga" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" app:clearsAfterStop="false" />
+            <ImageView android:id="@id/comm_auto_scroll_banner_static" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+</androidx.cardview.widget.CardView>

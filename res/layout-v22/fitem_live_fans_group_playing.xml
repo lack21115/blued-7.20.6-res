@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/shape_live_fans_group_item" android:layout_width="fill_parent" android:layout_height="92.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="3.0dip" android:layout_marginHorizontal="15.0dip" android:layout_marginVertical="3.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_live_fans_group" />
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/syc_dark_BABABA" android:id="@id/tv_already_join" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/live_fans_apply_already_join_group" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

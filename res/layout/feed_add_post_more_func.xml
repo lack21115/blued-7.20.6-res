@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="13.5dip" android:paddingRight="13.5dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="27.0dip">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/feed_func_more_template_id" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/feed_func_more_template_iv" android:layout_width="60.0dip" android:layout_height="60.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/syc_j" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/feed_post_template_note" android:includeFontPadding="false" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/feed_func_more_vote_id" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/feed_func_more_vote_iv" android:layout_width="60.0dip" android:layout_height="60.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/syc_j" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/feed_post_vote" android:includeFontPadding="false" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/feed_func_more_introduce_id" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/feed_func_more_introduce_iv" android:layout_width="60.0dip" android:layout_height="60.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/syc_j" android:gravity="center_horizontal" android:id="@id/feed_func_more_introduce_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/feed_post_self_introduce" android:maxLines="1" android:includeFontPadding="false" />
+        </LinearLayout>
+        <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+</FrameLayout>

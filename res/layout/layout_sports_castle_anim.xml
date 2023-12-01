@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/cloud_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center" android:id="@id/cloud1" android:layout_width="47.0dip" android:layout_height="28.0dip" android:src="@drawable/plane_cloud1" />
+        <ImageView android:layout_gravity="center" android:id="@id/cloud2" android:layout_width="58.0dip" android:layout_height="29.0dip" android:src="@drawable/plane_cloud2" />
+        <ImageView android:layout_gravity="center" android:id="@id/cloud3" android:layout_width="103.0dip" android:layout_height="60.0dip" android:src="@drawable/plane_cloud3" />
+    </FrameLayout>
+    <ImageView android:layout_gravity="center" android:id="@id/fireworks1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="75.0dip" android:layout_marginBottom="75.0dip" android:src="@drawable/fireworks_0" />
+    <ImageView android:layout_gravity="center" android:id="@id/fireworks2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="75.0dip" android:layout_marginBottom="55.0dip" android:src="@drawable/fireworks_0" />
+    <ImageView android:layout_gravity="center" android:id="@id/fireworks3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginBottom="110.0dip" android:src="@drawable/fireworks_0" />
+    <ImageView android:layout_gravity="center" android:id="@id/fireworks4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="85.0dip" android:layout_marginBottom="75.0dip" android:src="@drawable/fireworks_0" />
+    <ImageView android:layout_gravity="center" android:id="@id/fireworks5" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="70.0dip" android:layout_marginBottom="55.0dip" android:src="@drawable/fireworks_0" />
+    <FrameLayout android:id="@id/castle_root" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center" android:id="@id/super_castle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/super_castle" />
+        <ImageView android:layout_gravity="center" android:id="@id/castle_flag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginBottom="150.0dip" android:src="@drawable/castle_flag_0" />
+    </FrameLayout>
+</FrameLayout>

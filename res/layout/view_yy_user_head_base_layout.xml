@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.module.svgaplayer.SVGAImageView android:id="@id/talking_anim_view" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:layout_centerInParent="true" />
+    <RelativeLayout android:id="@id/rl_head_bottom" android:layout_width="@dimen/dp_50" android:layout_height="@dimen/dp_50" android:layout_centerInParent="true">
+        <com.blued.android.framework.view.shape.ShapeFrameLayout android:id="@id/car_head" android:padding="@dimen/dp_1" android:layout_width="fill_parent" android:layout_height="fill_parent" app:corner_radius="@dimen/dp_100" app:gradient_end_color="@color/syc_dark_b" app:gradient_start_color="@color/syc_dark_b">
+            <androidx.cardview.widget.CardView android:layout_gravity="center" android:id="@id/card_1" android:layout_width="fill_parent" android:layout_height="fill_parent" app:cardBackgroundColor="@color/syc_dark_b" app:cardCornerRadius="@dimen/dp_25" app:cardElevation="0.0dip">
+                <ImageView android:id="@id/iv_audience_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/user_bg_round" android:scaleType="centerCrop" />
+                <TextView android:textSize="@dimen/sp_8" android:textColor="@color/syc_dark_b" android:gravity="center" android:layout_gravity="bottom" android:id="@id/tv_role" android:background="@color/syc_alpha_8_000000" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/dp_15" />
+            </androidx.cardview.widget.CardView>
+        </com.blued.android.framework.view.shape.ShapeFrameLayout>
+        <androidx.cardview.widget.CardView android:layout_gravity="center_horizontal" android:id="@id/fl_no_audience" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" app:cardBackgroundColor="@color/syc_alpha_3_000000" app:cardCornerRadius="@dimen/dp_25" app:cardElevation="0.0dip">
+            <com.blued.android.module.common.view.SquareImageView android:layout_gravity="center" android:id="@id/iv_apply_seat" android:layout_width="@dimen/dp_14" android:layout_height="wrap_content" android:src="@drawable/icon_apply_seat" android:scaleType="centerInside" />
+        </androidx.cardview.widget.CardView>
+        <com.blued.android.framework.view.shape.ShapeTextView android:textSize="@dimen/sp_16" android:textColor="@color/syc_dark_b" android:gravity="center" android:id="@id/fl_disable_audience" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/yy_seal" app:corner_radius="@dimen/dp_100" app:solid_color="@color/syc_alpha_3_000000" />
+    </RelativeLayout>
+    <ImageView android:layout_gravity="center" android:id="@id/iv_headwear" android:visibility="invisible" android:layout_width="@dimen/dp_60" android:layout_height="@dimen/dp_60" android:scaleType="fitXY" android:layout_centerInParent="true" />
+    <FrameLayout android:layout_gravity="center" android:id="@id/rl_head_top" android:layout_width="@dimen/dp_50" android:layout_height="@dimen/dp_50" android:layout_centerInParent="true">
+        <ImageView android:id="@id/iv_apng" android:visibility="gone" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        <ImageView android:layout_gravity="bottom|center|right" android:id="@id/iv_microphone_status" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_microphone_open" />
+    </FrameLayout>
+</RelativeLayout>

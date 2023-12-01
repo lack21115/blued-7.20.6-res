@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="@color/syc_dark_5cf8ff" android:gravity="center" android:id="@id/tv_num" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="15.0dip" />
+    <ImageView android:id="@id/iv_pic" android:layout_width="34.0dip" android:layout_height="34.0dip" android:layout_marginLeft="10.0dip" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/syc_dark_5cf8ff" android:ellipsize="end" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:maxWidth="96.0dip" android:maxLines="1" />
+    <ImageView android:id="@id/img_live_recommend" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="4.0dip" />
+    <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/syc_dark_ffa632" android:id="@id/tv_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginRight="14.0dip" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_goods" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginRight="14.0dip" />
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/msg_item_root" android:paddingTop="@dimen/chat_two_item_root_top" android:paddingBottom="@dimen/chat_two_item_root_bottom" style="@style/layout_fill_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/msg_safe_common_system" />
+    <include layout="@layout/msg_date_layout" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/chat_content_root" android:layout_marginLeft="@dimen/chat_two_item_left_right_root" android:layout_marginRight="@dimen/chat_two_item_left_qp_marginright" style="@style/layout_fill_wrap">
+        <include android:id="@id/msg_group_show_root" app:layout_constraintLeft_toRightOf="@id/msg_include_avatar_left" app:layout_constraintTop_toTopOf="parent" layout="@layout/item_chat_group_head_layout" style="@style/chat_group_nickname_root" />
+        <include android:id="@id/msg_include_avatar_left" android:layout_width="@dimen/chat_two_item_avatar_size" android:layout_height="@dimen/chat_two_item_avatar_size" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toBottomOf="@id/msg_group_show_root" layout="@layout/msg_include_avatar_left" />
+        <RelativeLayout android:id="@id/chat_content_in" android:background="@drawable/selector_chat_left_qp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintLeft_toRightOf="@id/msg_include_avatar_left" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="@id/msg_include_avatar_left" style="@style/chat_chat_content_in_left_style">
+            <include android:id="@id/chat_include_gift" layout="@layout/item_chat_pager_gift_include" />
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_msg_bottom_tips_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_item_root" android:layout_width="@dimen/dp_70" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_8" android:layout_marginRight="@dimen/dp_8" android:layout_marginBottom="@dimen/dp_32"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.framework.view.shape.ShapeFrameLayout android:layout_gravity="center_horizontal" android:layout_width="@dimen/dp_70" android:layout_height="@dimen/dp_70" app:corner_radius="@dimen/dp_35" app:solid_color="@color/syc_dark_b">
+        <androidx.cardview.widget.CardView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardBackgroundColor="@color/syc_dark_b" app:cardCornerRadius="@dimen/dp_33" app:cardElevation="0.0dip">
+            <ImageView android:id="@id/iv_user_img" android:layout_width="@dimen/dp_66" android:layout_height="@dimen/dp_66" android:src="@drawable/user_bg_round" />
+        </androidx.cardview.widget.CardView>
+    </com.blued.android.framework.view.shape.ShapeFrameLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10">
+        <TextView android:textSize="@dimen/sp_11" android:textColor="@color/syc_dark_b" android:gravity="center" android:id="@id/tv_user_index" android:background="@color/syc_alpha_8_000000" android:paddingLeft="@dimen/dp_2" android:paddingRight="@dimen/dp_2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/sp_14" android:textColor="@color/syc_dark_b" android:ellipsize="end" android:id="@id/tv_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_5" android:maxLines="1" android:singleLine="true" />
+    </LinearLayout>
+    <com.blued.android.framework.view.shape.ShapeTextView android:textSize="@dimen/sp_14" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_select" android:layout_width="@dimen/dp_70" android:layout_height="@dimen/dp_33" android:layout_marginTop="@dimen/dp_10" android:text="@string/yy_cp_like_text" app:corner_radius="@dimen/dp_17" app:gradient_end_color="@color/syc_3883FD" app:gradient_start_color="@color/syc_00E0AB" />
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="31.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" app:cardCornerRadius="31.0dip" app:cardElevation="0.0dip">
+        <FrameLayout android:background="@drawable/live_gift_set_banner_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.blued.android.framework.view.shape.ShapeFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:corner_radius="31.0dip" app:stroke_color="@color/syc_dark_4DFFE385" app:stroke_width="1.0dip" />
+        <ImageView android:id="@id/iv_anim_one" android:layout_width="44.0dip" android:layout_height="30.0dip" android:src="@drawable/live_gift_set_banner_cover" />
+        <ImageView android:id="@id/iv_anim_two" android:visibility="gone" android:layout_width="44.0dip" android:layout_height="30.0dip" android:src="@drawable/live_gift_set_banner_cover" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="12.0sp" android:textColor="@color/syc_ffffff" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" />
+            <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_list" android:fadingEdgeLength="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.5dip" android:layout_marginRight="11.0dip" android:requiresFadingEdge="horizontal" />
+            </FrameLayout>
+            <TextView android:textSize="9.0sp" android:textColor="@color/syc_ffffff" android:gravity="center" android:id="@id/tv_look" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/live_gift_info_detail" android:alpha="0.7" />
+            <com.blued.android.module.live.base.view.clickanimview.BamFrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip">
+                <com.blued.android.framework.view.shape.ShapeTextView android:textSize="11.0sp" android:textColor="@color/syc_ffffff" android:gravity="center" android:id="@id/all_send" android:layout_width="59.0dip" android:layout_height="23.0dip" android:text="@string/live_gift_set_all_send" app:corner_radius="12.0dip" app:gradient_angle="TOP_BOTTOM" app:gradient_center_color="@color/syc_dark_F2A43B" app:gradient_end_color="@color/syc_dark_F4BC40" app:gradient_start_color="@color/syc_dark_EE4f27" />
+            </com.blued.android.module.live.base.view.clickanimview.BamFrameLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

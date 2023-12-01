@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:orientation="vertical" android:id="@id/fl_main" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" app:cardCornerRadius="6.0dip" app:cardElevation="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/header_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <ImageView android:layout_gravity="center" android:id="@id/icon_play" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_play_chat_live" />
+    <ImageView android:id="@id/img_lock" android:visibility="gone" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:src="@drawable/icon_userinfo_new_album_lock" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/syc_b" android:gravity="center" android:layout_gravity="center" android:id="@id/lock_state" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_profile_apply_album" />
+</androidx.cardview.widget.CardView>

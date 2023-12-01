@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="@color/nafio_b" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0sp" android:textColor="@color/syc_h" android:id="@id/tv_login_protection" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:text="@string/login_protection" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/syc_j" android:id="@id/tv_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="14.0dip" android:text="@string/login_protection_desc" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="@id/tv_login_protection" app:layout_constraintTop_toBottomOf="@id/tv_login_protection" />
+        <ToggleButton android:id="@id/tglbtn_login_protection_onoff" android:layout_width="40.0dip" android:layout_height="23.0dip" android:layout_marginRight="15.0dip" android:textOn="" android:textOff="" app:layout_constraintBottom_toBottomOf="@id/tv_login_protection" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="@id/tv_login_protection" style="@style/toggle_button" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@color/nafio_k" android:id="@id/tv_list_sticker" android:background="@color/nafio_c" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/device_login_protected" />
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.framework.view.shape.ShapeFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:solid_color="@color/syc_dark_14151C" app:top_left_radius="12.0dip" app:top_right_radius="12.0dip">
+        <View android:id="@id/view_bg_top" android:background="@drawable/live_pocket_top_bg" android:layout_width="fill_parent" android:layout_height="150.0dip" />
+    </com.blued.android.framework.view.shape.ShapeFrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_dialog_root" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0">
+        <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/tv_title" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_pocket_title" android:includeFontPadding="false" android:layout_centerInParent="true" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_record" android:paddingLeft="15.0dip" android:paddingTop="15.0dip" android:paddingRight="15.0dip" android:paddingBottom="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <TextView android:textSize="12.0sp" android:textColor="@color/syc_dark_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:text="@string/live_pocket_record" android:includeFontPadding="false" android:alpha="0.6" />
+                <ImageView android:layout_width="10.0dip" android:layout_height="10.0dip" android:src="@drawable/live_pocket_arrow_right" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginTop="2.0dip">
+            <View android:background="@color/white" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" android:alpha="0.1" />
+            <com.blued.android.module.common.view.TabPageIndicatorWithDot android:id="@id/tab_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" app:indicatorHeight="4.0dip" app:indicatorRadius="10.0dip" app:indicatorWidth="20.0dip" app:shouldExpand="true" app:tabTextColor="@color/white_alpha70" app:tabTextSelectdSize="15.0sp" app:tabTextSize="15.0sp" app:textChangeColor="@color/white" />
+        </RelativeLayout>
+        <androidx.viewpager.widget.ViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.google.android.material.appbar.AppBarLayout android:id="@id/appbar" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip">
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="scroll">
+                <androidx.viewpager.widget.ViewPager android:id="@id/user_view_pager" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintDimensionRatio="H,750:1129" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                <com.blued.android.framework.view.shape.ShapeFrameLayout android:id="@id/ll_vp_pro" android:layout_width="wrap_content" android:layout_height="@dimen/dp_4" android:layout_marginBottom="@dimen/dp_45" app:corner_radius="@dimen/dp_2" app:layout_constraintBottom_toBottomOf="@id/user_view_pager" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent">
+                    <com.blued.android.framework.view.shape.ShapeTextView android:id="@id/vp_pro_view" android:layout_width="@dimen/dp_15" android:layout_height="fill_parent" app:corner_radius="@dimen/dp_2" />
+                </com.blued.android.framework.view.shape.ShapeFrameLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <com.blued.android.framework.view.shape.ShapeConstraintLayout android:id="@id/bg_shape_content" android:layout_width="fill_parent" android:layout_height="wrap_content" app:gradient_angle="TOP_BOTTOM" app:layout_behavior="@string/appbar_scrolling_view_behavior" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent">
+            <com.blued.android.framework.view.shape.ShapeTextView android:id="@id/bg_shape_line" android:layout_width="0.0dip" android:layout_height="@dimen/dp_11" android:layout_marginLeft="@dimen/dp_7" android:layout_marginTop="@dimen/dp_19" android:layout_marginRight="@dimen/dp_7" app:corner_radius="@dimen/dp_6" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" app:solid_color="@color/color_FF727B" />
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+                <ImageView android:layout_width="wrap_content" android:layout_height="@dimen/dp_19" />
+                <com.blued.android.framework.view.shape.ShapeFrameLayout android:id="@id/shape_fra_users" android:paddingBottom="@dimen/dp_11" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_15" android:layout_marginRight="@dimen/dp_15" android:layout_marginBottom="@dimen/dp_50" app:bottom_left_radius="@dimen/dp_15" app:bottom_right_radius="@dimen/dp_15" app:solid_color="@color/black_alpha10">
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/rec_user" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="@dimen/dp_700" />
+                    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/iv_user_null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_yy_relation_to_invited_null" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/white_alpha60" android:id="@id/tv_null_user" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="暂无可邀请配对关系对象~" />
+                    </LinearLayout>
+                </com.blued.android.framework.view.shape.ShapeFrameLayout>
+                <com.blued.android.framework.view.shape.ShapeFrameLayout android:id="@id/shape_fra_task" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_15" android:layout_marginRight="@dimen/dp_15" android:layout_weight="1.0">
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/rec_task" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </com.blued.android.framework.view.shape.ShapeFrameLayout>
+            </LinearLayout>
+        </com.blued.android.framework.view.shape.ShapeConstraintLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

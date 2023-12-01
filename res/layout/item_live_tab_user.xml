@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/live_user_layout" android:layout_width="200.0dip" android:layout_height="177.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/aariv_cover_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" app:cardCornerRadius="6.0dip" app:cardElevation="0.0px" app:cardUseCompatPadding="false">
+        <ImageView android:id="@id/aariv_cover" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <com.blued.android.module.live_china.view.LiveAutoPlayView android:id="@id/fl_video_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/iv_cover_box" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <ImageView android:id="@id/iv_top_left" android:layout_width="wrap_content" android:layout_height="20.0dip" />
+        <LinearLayout android:gravity="end|bottom|center" android:layout_gravity="bottom" android:orientation="horizontal" android:background="@drawable/live_list_item_cover" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/live_record_level" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.5dip" />
+                    <TextView android:textSize="12.0sp" android:textColor="@color/syc_dark_b" android:id="@id/tv_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <TextView android:textSize="12.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/tv_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.5dip" android:lines="1" android:maxEms="10" />
+            </LinearLayout>
+            <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="end" android:id="@id/tv_audience_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

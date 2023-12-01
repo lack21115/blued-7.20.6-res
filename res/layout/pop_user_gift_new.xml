@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/viewStub" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ll_root" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_root" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <FrameLayout android:id="@id/fm_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_top_hint" android:background="@drawable/shape_user_gift_pop_top" android:paddingBottom="25.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.blued.android.framework.view.shape.ShapeTextView android:textSize="12.0sp" android:textColor="@color/syc_j" android:id="@id/tv_top" android:paddingLeft="5.0dip" android:paddingTop="3.0dip" android:paddingRight="5.0dip" android:paddingBottom="3.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="@string/msg_gift_top" android:layout_alignParentRight="true" app:corner_radius="12.0dip" app:stroke_color="@color/syc_j" app:stroke_width="1.0dip" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/syc_dark_h" android:id="@id/tv_top_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="礼物送出后，可获得2小时消息置顶" />
+            </LinearLayout>
+            <RelativeLayout android:id="@id/cl_fu_top" android:background="@drawable/shape_user_gift_pop_top" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/iv_fu" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:src="@drawable/card_recommend_icon" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="10.0dip" android:layout_toRightOf="@id/iv_fu">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/syc_dark_h" android:id="@id/tv_fu_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="福袋规则" />
+                    <com.soft.blued.ui.msg.customview.JustifyTextView android:textColor="@color/syc_j" android:id="@id/tv_fu_hint" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="32.0dip" android:text="1.本次福袋活动时间为：2020年X月X日 00:00:00至2020年X月X日23:59:59；\n2.福袋购买后，将自动抽取礼物，抽取出的礼物将存放至礼物背包，用户可打开背包选择礼物送出；\n 3.福袋礼物有效期为X天，有效期将在开出礼物后进行计算，到期时福袋礼物未送出将过期不能使用" />
+                </LinearLayout>
+            </RelativeLayout>
+        </FrameLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_content" android:background="@drawable/shape_user_gift_pop_top_white" android:layout_width="fill_parent" android:layout_height="52.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/syc_dark_h" android:layout_gravity="center_vertical" android:id="@id/tv_gift" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="@string/biao_v4_chat_b_gift" />
+            <View android:layout_gravity="center_vertical" android:background="@color/syc_dark_x" android:layout_width="1.0px" android:layout_height="14.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" />
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="@color/syc_dark_j" android:id="@id/tv_package" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/given_gift_backpack" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                <com.blued.android.framework.view.shape.ShapeTextView android:id="@id/red" android:visibility="gone" android:layout_width="6.0dip" android:layout_height="6.0dip" app:corner_radius="22.0dip" app:layout_constraintLeft_toRightOf="@id/tv_package" app:layout_constraintTop_toTopOf="parent" app:solid_color="@color/sara_q" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+        <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.soft.blued.ui.msg.customview.AutoHeightViewPager android:id="@id/auto_vp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root_layout" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="right" android:id="@id/content_layout" android:background="@drawable/feed_bubble_say_hi_bg" android:layout_width="wrap_content" android:layout_height="113.5dip" android:minWidth="180.0dip">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="27.0dip">
+            <TextView android:textSize="12.0sp" android:textColor="@color/syc_h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/select_a_emotion_to_say_hi" android:maxLines="1" android:includeFontPadding="false" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/emotion_rv" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_marginTop="9.0dip" android:overScrollMode="never" />
+        </LinearLayout>
+        <View android:layout_gravity="bottom|center|right" android:id="@id/feed_interact_anim_end_view" android:layout_width="5.0dip" android:layout_height="5.0dip" android:layout_marginRight="25.0dip" />
+    </FrameLayout>
+</FrameLayout>

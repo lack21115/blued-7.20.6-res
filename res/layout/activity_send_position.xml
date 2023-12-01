@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/top_title" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ImageView android:textColor="@drawable/selector_textview_fontcolor_default_blue" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tv_search" android:padding="10.0dip" android:src="@drawable/icon_search" style="@style/common_button_blue" />
+    <TextView style="@style/common_cutter_gray" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.tencent.tencentmap.mapsdk.maps.TextureMapView android:id="@id/map" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:src="@drawable/locationpin" />
+    </FrameLayout>
+    <TextView style="@style/common_cutter_gray" />
+    <com.blued.android.framework.view.pulltorefresh.RenrenPullToRefreshListView android:id="@id/list_view" android:layout_width="fill_parent" android:layout_height="200.0dip" style="@style/PullToRefreshListView" xmlns:app="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

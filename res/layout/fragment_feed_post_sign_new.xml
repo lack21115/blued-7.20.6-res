@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.blued.android.framework.activity.keyboardpage.KeyboardListenLinearLayout android:id="@id/keyboardLinearLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/feed_post_title" android:layout_width="fill_parent" android:layout_height="44.0dip" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <ImageView android:id="@id/feed_post_title_close" android:padding="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:src="@drawable/icon_title_close" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <TextView android:textAppearance="@style/TextAppearance.FontPath.Medium" android:textSize="13.0sp" android:textColor="@color/syc_dark_b" android:gravity="center" android:id="@id/feed_post_title_send_btn" android:background="@drawable/gradient_feed_post_sign_btn_bg" android:layout_width="75.0dip" android:layout_height="27.0dip" android:layout_marginRight="15.0dip" android:text="@string/feed_post_sign_send" />
+        </LinearLayout>
+        <ScrollView android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/ll_bottom" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/feed_post_title">
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_all" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/feed_post_sign_state_layout" android:layout_width="wrap_content" android:layout_height="49.0dip" android:layout_marginLeft="15.0dip">
+                    <ImageView android:id="@id/feed_post_sign_state_iv" android:layout_width="21.0dip" android:layout_height="21.0dip" android:scaleType="centerCrop" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/syc_j" android:id="@id/feed_post_sign_state_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:includeFontPadding="false" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:src="@drawable/feed_sign_edit_right_arrow" />
+                </LinearLayout>
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+                    <View android:background="@drawable/gradient_feed_post_sign_edit_bg" android:layout_width="fill_parent" android:layout_height="120.0dip" android:layout_marginTop="8.699982dip" />
+                    <ImageView android:id="@id/feed_post_sign_et_bg_corner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/feed_post_sign_et_bg_corner" />
+                    <com.blued.community.view.SelectionEditText android:textSize="18.0sp" android:textColor="@color/syc_h" android:textColorHint="@color/syc_k" android:gravity="center|left|top" android:id="@id/feed_post_content_et" android:background="@null" android:paddingRight="10.0dip" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="38.69998dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip" android:hint="@string/feed_post_sign_et_hint" android:lineSpacingMultiplier="1.1" app:emojiconSize="18.0sp" />
+                    <com.blued.community.view.EditInputNumView android:textSize="12.0sp" android:layout_gravity="bottom|center|right" android:id="@id/feed_post_content_num_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:layout_marginBottom="12.0dip" app:editMaxLength="512" app:editShowType="has_focus" app:inTextColor="@color/syc_k" app:outTextColor="@color/syc_g" />
+                </FrameLayout>
+                <com.blued.community.ui.send.view.FeedPostAuthView android:layout_gravity="right" android:id="@id/feed_post_auth_view" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip" />
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_bottom" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent">
+            <View android:background="@color/syc_o_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_tools" android:background="@color/syc_b" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <ImageView android:id="@id/iv_emoji" android:padding="3.0dip" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/feed_post_emoji" android:scaleType="fitXY" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toRightOf="@id/iv_at" app:layout_constraintRight_toLeftOf="@id/iv_voting" app:layout_constraintTop_toTopOf="parent" />
+            </LinearLayout>
+            <com.blued.android.module.common.widget.emoji.view.EmojiKeyboardLayout android:id="@id/emoticon_layout" android:background="@color/syc_b" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <View android:id="@id/space_image_select" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.blued.android.framework.activity.keyboardpage.KeyboardListenLinearLayout>

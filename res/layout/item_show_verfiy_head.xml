@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/fl_header" android:layout_width="fill_parent" android:layout_height="92.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip">
+        <FrameLayout android:id="@id/fl_avatar" android:layout_width="52.0dip" android:layout_height="52.0dip" android:layout_marginLeft="30.0dip" android:layout_alignParentRight="true">
+            <ImageView android:layout_gravity="center" android:id="@id/header_view" android:focusable="true" android:clickable="false" android:layout_width="52.0dip" android:layout_height="52.0dip" android:src="@drawable/user_bg_round" android:contentDescription="@string/app_name" />
+            <ImageView android:layout_gravity="bottom|center|right" android:id="@id/img_verify" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginRight="2.0dip" android:src="@drawable/v_profile_personal_3" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="70.0dip">
+            <TextView android:textSize="18.0sp" android:textColor="@color/syc_h" android:layout_gravity="left" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/personal_verify_sign" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/syc_h" android:gravity="left" android:layout_gravity="center" android:id="@id/tv_verify_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/verify_description" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

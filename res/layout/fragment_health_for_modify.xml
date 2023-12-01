@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/top_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:id="@id/ll_hiv_detection_result" style="@style/modify_user_info_text_layout">
+        <TextView android:text="@string/hiv_result" style="@style/modify_user_info_left_text" />
+        <TextView android:textColor="@color/syc_h" android:id="@id/tv_hiv_detection_result" android:text="@string/hidden" style="@style/modify_user_info_right_text" />
+        <ImageView style="@style/icon_right_arrow" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/ll_hiv_detection_time" style="@style/modify_user_info_text_layout">
+        <TextView android:id="@id/tv_hiv_detection_title" android:text="@string/hiv_time" style="@style/modify_user_info_left_text" />
+        <TextView android:textColor="@color/syc_h" android:id="@id/tv_hiv_detection_time" android:text="@string/hidden" style="@style/modify_user_info_right_text" />
+        <ImageView style="@style/icon_right_arrow" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/ll_hiv_detection_prep" style="@style/modify_user_info_text_layout">
+        <TextView android:text="@string/hiv_prep" style="@style/modify_user_info_left_text" />
+        <TextView android:textColor="@color/syc_h" android:id="@id/tv_hiv_detection_prep" android:text="@string/hidden" style="@style/modify_user_info_right_text" />
+        <ImageView style="@style/icon_right_arrow" />
+    </LinearLayout>
+    <TextView android:background="@color/syc_x" android:layout_height="10.0dip" style="@style/large_cut_line_12D5" />
+    <LinearLayout android:id="@id/ll_encyclopedia_of_health" style="@style/modify_user_info_text_layout">
+        <TextView android:text="@string/encyclopedia_of_health" style="@style/modify_user_info_left_text" />
+        <TextView android:textColor="@color/syc_h" android:id="@id/tv_encyclopedia_of_health" android:text="@string/encyclopedia_of_health_des" style="@style/modify_user_info_right_text" />
+        <ImageView style="@style/icon_right_arrow" />
+    </LinearLayout>
+</LinearLayout>

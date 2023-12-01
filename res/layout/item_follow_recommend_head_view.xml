@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="#ff777777" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:text="还没有关注的主播\n有超多值得被看见的宝藏男孩快去关注吧！" android:lineSpacingExtra="2.0dip" />
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/syc_dark_1e1f23" android:paddingLeft="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="猜你喜欢" />
+</LinearLayout>

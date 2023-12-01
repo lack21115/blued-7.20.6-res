@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/syc_c" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/guide_content_layout_id" android:background="@color/syc_b" android:layout_width="fill_parent" android:layout_height="1.0dip">
+        <TextView android:textAppearance="@style/TextAppearance.FontPath.Medium" android:textSize="16.0sp" android:textColor="@color/syc_h" android:gravity="center_horizontal" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="24.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:text="主动冒泡，吸引更多人找你聊天" android:maxLines="1" android:includeFontPadding="false" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycle_view" android:layout_width="wrap_content" android:layout_height="111.0dip" android:layout_marginTop="15.0dip" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/send_btn" android:background="@drawable/gradient_feed_post_sign_btn_bg" android:layout_width="105.0dip" android:layout_height="36.0dip" android:text="@string/nearby_guide_bubble_btn_str" android:includeFontPadding="false" />
+    </LinearLayout>
+    <include android:id="@id/view_btm_line" layout="@layout/item_feed_line" />
+</LinearLayout>

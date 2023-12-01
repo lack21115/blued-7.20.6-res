@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.blued.android.module.common.view.SquareLayout android:layout_gravity="center" android:id="@id/sl_lucky_bag_bg" android:background="@drawable/live_lucky_bag_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:alpha="0.0" />
+    <ImageView android:layout_gravity="center" android:id="@id/iv_lucky_bag" android:layout_width="150.0dip" android:layout_height="150.0dip" android:src="@drawable/live_lucky_bag" android:alpha="0.0" />
+    <ImageView android:layout_gravity="center" android:id="@id/iv_gift" android:layout_width="150.0dip" android:layout_height="150.0dip" android:src="@drawable/super_castle" android:alpha="0.0" />
+</FrameLayout>

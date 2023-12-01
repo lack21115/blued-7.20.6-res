@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_card_root" android:layout_width="@dimen/dp_60" android:layout_height="@dimen/dp_100" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_constellation_icon" android:layout_width="@dimen/dp_44" android:layout_height="@dimen/dp_44" android:layout_marginTop="2.0dip" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/iv_constellation_icon_frame" android:layout_width="@dimen/dp_48" android:layout_height="@dimen/dp_48" android:src="@drawable/shape_constellation_award_frame" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/tv_constellation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_2" android:maxWidth="@dimen/dp_60" android:maxLines="1" android:layout_below="@id/iv_constellation_icon_frame" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/tv_constellation_award" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/dp_60" android:maxLines="1" android:layout_below="@id/tv_constellation" android:layout_centerHorizontal="true" android:alpha="0.6" />
+</RelativeLayout>

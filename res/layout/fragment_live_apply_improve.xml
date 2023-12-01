@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.blued.android.module.common.view.CommonTopTitleNoTrans android:id="@id/top_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_main" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="14.0sp" android:textColor="@color/syc_h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="17.0dip" android:layout_marginRight="20.0dip" android:text="@string/live_apply_bind_card" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/nafio_g" android:id="@id/live_id_card_error" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:text="@string/Live_applyHost_id_card_error" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="105.0dip" android:layout_marginTop="10.0dip">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+                <FrameLayout android:layout_gravity="bottom" android:id="@id/live_card_viewer1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="160.0dip" android:layout_height="100.0dip" android:src="@drawable/live_id_card_front" />
+                    <ImageView android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_id_card_icon" />
+                </FrameLayout>
+                <FrameLayout android:layout_width="165.0dip" android:layout_height="105.0dip" android:layout_marginLeft="15.0dip">
+                    <androidx.cardview.widget.CardView android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="160.0dip" android:layout_height="100.0dip" app:cardBackgroundColor="@color/nafio_n" app:cardCornerRadius="7.0dip" app:cardElevation="0.0px" app:cardUseCompatPadding="false">
+                        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/live_add_card_layout1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="23.0dip" android:src="@drawable/live_id_card_add" />
+                            <TextView android:textSize="10.0sp" android:textColor="@color/syc_d" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/Live_applyHost_id_card_front" />
+                            <TextView android:textSize="10.0sp" android:textColor="@color/syc_d" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Live_applyHost_id_card_front_detail" />
+                        </LinearLayout>
+                        <ImageView android:id="@id/live_card1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+                    </androidx.cardview.widget.CardView>
+                    <ImageView android:layout_gravity="right" android:id="@id/cover_del_btn1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cover_del_btn" />
+                </FrameLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView android:textSize="10.0sp" android:textColor="@color/nafio_g" android:layout_gravity="right" android:id="@id/live_id_card_failed" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:text="@string/Live_applyHost_id_card_failed" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="105.0dip" android:layout_marginTop="10.0dip">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+                <FrameLayout android:layout_gravity="bottom" android:id="@id/live_card_viewer2" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="160.0dip" android:layout_height="100.0dip" android:src="@drawable/live_id_card_back" />
+                    <ImageView android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/live_id_card_icon" />
+                </FrameLayout>
+                <FrameLayout android:layout_width="165.0dip" android:layout_height="105.0dip" android:layout_marginLeft="15.0dip">
+                    <androidx.cardview.widget.CardView android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="160.0dip" android:layout_height="100.0dip" app:cardBackgroundColor="@color/syc_n" app:cardCornerRadius="7.0dip" app:cardElevation="0.0px" app:cardUseCompatPadding="false">
+                        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/live_add_card_layout2" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="23.0dip" android:src="@drawable/live_id_card_add" />
+                            <TextView android:textSize="10.0sp" android:textColor="@color/syc_d" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/Live_applyHost_id_card_back" />
+                            <TextView android:textSize="10.0sp" android:textColor="@color/syc_d" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Live_applyHost_id_card_back_detail" />
+                        </LinearLayout>
+                        <ImageView android:id="@id/live_card2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+                    </androidx.cardview.widget.CardView>
+                    <ImageView android:layout_gravity="right" android:id="@id/cover_del_btn2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cover_del_btn" />
+                </FrameLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_apply_bind_bank" android:layout_alignParentLeft="true" style="@style/text_verify_privilege" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <TextView android:textSize="14.0sp" android:textColor="@color/syc_a" android:gravity="center|right" android:id="@id/tv_binding_credit_card_status" android:layout_width="72.0dip" android:layout_height="22.0dip" android:text="@string/live_change_card" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/syc_a" android:gravity="center|right" android:id="@id/tv_binding_credit_card" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="22.0dip" android:text="@string/Live_applyHost_goBinding" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_card_binded" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/live_verify_success_icon" />
+            </LinearLayout>
+        </RelativeLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:layout_gravity="bottom" android:id="@id/ll_bottom_button" android:background="@color/common_v4_blue_frame_font" android:layout_width="fill_parent" android:layout_height="49.0dip">
+                <TextView android:textSize="15.0sp" android:textColor="@color/syc_b" android:gravity="center" android:id="@id/tv_start_verify" android:background="@drawable/selector_bgcolor_text_button" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/live_apply_improve_submit" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <include layout="@layout/live_request_error" />
+</LinearLayout>

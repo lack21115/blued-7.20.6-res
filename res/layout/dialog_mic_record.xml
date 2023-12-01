@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="left" android:orientation="horizontal" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <View android:background="@drawable/shape_mic_dot" android:layout_marginTop="5.0dip" style="@style/style_mic_dot" />
+        <TextView android:textSize="16.0sp" android:id="@id/tv_recordTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-3.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:visibility="invisible" android:layout_width="240.0dip" android:layout_height="1.0dip" />
+    <RelativeLayout android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ImageView android:id="@id/iv_mic1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mic_1" android:contentDescription="@string/app_name" />
+        <ImageView android:id="@id/iv_mic2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mic_1" android:layout_alignBottom="@id/iv_mic1" android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+    <TextView android:textColor="#ff999590" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_remind" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_marginBottom="18.0dip" android:text="@string/record_cancel_remind" />
+</LinearLayout>

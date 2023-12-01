@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/syc_b" style="@style/layout_fill"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/syc_h" android:gravity="center" android:id="@id/tv_normal_followed" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/normal_followed" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/syc_i" android:gravity="center" android:id="@id/tv_secret_followed" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/follow_secretly" android:layout_weight="1.0" />
+    </LinearLayout>
+    <TextView android:background="@color/syc_o_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <com.soft.blued.customview.CustomViewPager android:id="@id/main_find_viewpager" style="@style/layout_fill" />
+</LinearLayout>

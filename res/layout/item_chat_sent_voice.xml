@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/msg_item_root" android:paddingTop="@dimen/chat_two_item_root_top" android:paddingBottom="@dimen/chat_two_item_root_bottom" style="@style/layout_fill_wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/tv_date" android:layout_centerHorizontal="true" style="@style/msg_time_style" />
+    <LinearLayout android:id="@id/chat_content_root" android:layout_marginLeft="@dimen/chat_two_item_right_qp_marginleft" android:layout_marginRight="@dimen/chat_two_item_left_right_root" android:layout_below="@id/tv_date" android:layout_alignParentRight="true" style="@style/layout_wrap_content">
+        <ImageView android:id="@id/chat_sending_img" android:layout_marginRight="0.0dip" android:contentDescription="@string/app_name" style="@style/chat_send_state_sending" />
+        <ImageView android:id="@id/chat_state_error" android:visibility="gone" android:layout_marginRight="0.0dip" android:contentDescription="@string/app_name" style="@style/chat_send_state_error" />
+        <LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.soft.blued.customview.selectabletextview.SelectFrameLayout android:id="@id/select_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/chat_content_in" android:background="@drawable/voice_right" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_marginRight="2.0dip" style="@style/chat_content_voice_style">
+                    <RelativeLayout android:id="@id/rl_anim" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7.0dip" android:layout_toLeftOf="@id/chat_tv_time_audio" android:layout_centerVertical="true">
+                        <ImageView android:id="@id/chat_img_audio" android:background="@drawable/chat_audio_right_play" android:visibility="invisible" android:layout_centerVertical="true" style="@style/layout_wrap_content" />
+                        <ImageView android:id="@id/chat_img_audio_custom" android:layout_width="17.0dip" android:layout_height="17.0dip" android:src="@drawable/voice_right_play" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <com.soft.blued.customview.adapttextview.FontAdjustTextView android:textSize="16.0sp" android:textColor="@color/sara_f" android:id="@id/chat_tv_time_audio" android:layout_marginRight="2.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/layout_wrap_content" />
+                </RelativeLayout>
+            </com.soft.blued.customview.selectabletextview.SelectFrameLayout>
+            <com.soft.blued.customview.selectabletextview.SelectFrameLayout android:id="@id/select_layout2" android:background="@drawable/bubble_right" android:padding="13.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-6.0dip" android:layout_marginRight="2.0dip" android:layout_marginBottom="2.0dip">
+                <com.soft.blued.customview.adapttextview.FontAdjustTextView android:textColor="@color/syc_b" android:layout_gravity="center_vertical" android:id="@id/tv_turn_text" android:maxWidth="200.0dip" style="@style/chat_content_style" />
+            </com.soft.blued.customview.selectabletextview.SelectFrameLayout>
+        </LinearLayout>
+        <include android:id="@id/msg_include_avatar_right" android:layout_width="@dimen/chat_two_item_avatar_size" android:layout_height="@dimen/chat_two_item_avatar_size" android:layout_marginTop="@dimen/msg_item_header_margin_top" layout="@layout/msg_include_avatar_right" />
+    </LinearLayout>
+    <TextView android:id="@id/tv_state" android:visibility="gone" android:layout_below="@id/chat_content_root" android:layout_alignParentRight="true" style="@style/chat_send_state_style" />
+    <include android:id="@id/view_process" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="16.0dip" android:layout_marginLeft="30.0dip" android:layout_marginTop="-5.0dip" android:layout_below="@id/chat_content_root" android:layout_alignLeft="@id/chat_content_root" layout="@layout/layout_chat_turn_text_process" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_msg_bottom_tips_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/view_process" />
+</RelativeLayout>

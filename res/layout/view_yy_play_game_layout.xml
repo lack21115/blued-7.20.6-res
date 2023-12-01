@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/shape_raduis_topleft_topright_15_ffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dp_300"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_data_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/sp_16" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/tv_game_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" android:layout_centerHorizontal="true" />
+        <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="@dimen/dp_100" android:layout_height="@dimen/dp_103" android:layout_marginTop="@dimen/dp_32">
+            <com.blued.android.module.yy_china.view.BluedGradientStrokeView android:id="@id/select_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.2" app:radius="@dimen/dp_6" app:storke_color="@drawable/shape_raduis_6dp_66ffa3_3e93ff_4e9bff" app:stroke_width="1.0dip" />
+            <androidx.cardview.widget.CardView android:id="@id/cv_conver" android:layout_width="fill_parent" android:layout_height="fill_parent" app:cardBackgroundColor="@color/syc_tran5_00E0AB" app:cardCornerRadius="@dimen/dp_6" app:cardElevation="0.0dip" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:id="@id/iv_game_img" android:layout_width="@dimen/dp_44" android:layout_height="@dimen/dp_44" android:layout_marginTop="@dimen/dp_18" android:src="@drawable/gift_default_icon" android:scaleType="centerCrop" />
+                <TextView android:textSize="@dimen/sp_14" android:textColor="@color/syc_dark_b" android:ellipsize="end" android:id="@id/tv_game_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_14" android:maxLines="1" android:singleLine="true" />
+            </LinearLayout>
+        </FrameLayout>
+        <com.blued.android.framework.view.shape.ShapeTextView android:textSize="@dimen/sp_16" android:textColor="@color/syc_dark_b" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_join_game" android:layout_width="@dimen/dp_70" android:layout_height="@dimen/dp_33" android:layout_marginTop="@dimen/dp_10" android:layout_marginBottom="@dimen/dp_90" android:text="@string/yy_choice_member" app:corner_radius="@dimen/dp_17" app:gradient_end_color="@color/syc_3883FD" app:gradient_start_color="@color/syc_00E0AB" app:solid_color="@color/syc_272727" />
+    </LinearLayout>
+    <com.blued.android.framework.view.shape.ShapeTextView android:textSize="@dimen/sp_14" android:textColor="@color/syc_dark_b" android:gravity="center" android:layout_gravity="center" android:id="@id/no_data_view" android:paddingLeft="@dimen/dp_15" android:paddingRight="@dimen/dp_15" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/dp_30" android:text="@string/reload" app:corner_radius="@dimen/dp_17" app:gradient_end_color="@color/syc_3883FD" app:gradient_start_color="@color/syc_00E0AB" />
+</FrameLayout>
